@@ -1,0 +1,42 @@
+[
+  {
+    "stage_id": 1,
+    "start_step_id": 1,
+    "end_step_id": 3
+  },
+  {
+    "stage_id": 2,
+    "start_step_id": 4,
+    "end_step_id": 4
+  },
+  {
+    "stage_id": 3,
+    "start_step_id": 5,
+    "end_step_id": 26
+  },
+  {
+    "stage_id": 4,
+    "start_step_id": 27,
+    "end_step_id": 34
+  },
+  {
+    "stage_id": 5,
+    "start_step_id": 35,
+    "end_step_id": 40
+  },
+  {
+    "stage_id": 6,
+    "start_step_id": 41,
+    "end_step_id": 52
+  },
+  {
+    "stage_id": 7,
+    "start_step_id": 53,
+    "end_step_id": 58
+  },
+  {
+    "stage_id": 8,
+    "start_step_id": 59,
+    "end_step_id": 60
+  }
+]

@@ -1,0 +1,17 @@
+You're using a PreTrainedTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+prefix 64/18636; elapsed=9.7s
+prefix 1344/18636; elapsed=197.9s
+prefix 2624/18636; elapsed=386.0s
+prefix 3904/18636; elapsed=574.3s
+prefix 5184/18636; elapsed=762.8s
+prefix 6464/18636; elapsed=951.1s
+prefix 7744/18636; elapsed=1139.8s
+prefix 9024/18636; elapsed=1328.5s
+prefix 10304/18636; elapsed=1508.7s
+prefix 11584/18636; elapsed=1697.4s
+prefix 12864/18636; elapsed=1886.1s
+prefix 14144/18636; elapsed=2066.5s
+prefix 15424/18636; elapsed=2254.3s
+prefix 16704/18636; elapsed=2443.2s
+prefix 17984/18636; elapsed=2632.2s
+{"signature": {"revision": {"repo": "answerdotai/ModernBERT-base", "revision": "8949b909ec900327062f0ebf497f51aef5e6f0c8"}, "text_sha256": "faead2cb4409f2d9b943657a6f4781ab8e89ca7878de15a4a728370d12cbe11d", "policy": "headtail", "shape": [3160441, 768], "split_before_layer": 21, "tokens_sha256": "36ef50ee025f30fc8a68ad944aba7471654cbba1621d7eb68e09aadacd830425"}, "next_row": 18636, "complete": true, "min_cosine": 0.9999997615814209}

@@ -1,0 +1,62 @@
+[
+  {
+    "stage_id": 1,
+    "start_step_id": 1,
+    "end_step_id": 2
+  },
+  {
+    "stage_id": 2,
+    "start_step_id": 3,
+    "end_step_id": 3
+  },
+  {
+    "stage_id": 3,
+    "start_step_id": 4,
+    "end_step_id": 9
+  },
+  {
+    "stage_id": 4,
+    "start_step_id": 10,
+    "end_step_id": 13
+  },
+  {
+    "stage_id": 5,
+    "start_step_id": 14,
+    "end_step_id": 18
+  },
+  {
+    "stage_id": 6,
+    "start_step_id": 19,
+    "end_step_id": 19
+  },
+  {
+    "stage_id": 7,
+    "start_step_id": 20,
+    "end_step_id": 26
+  },
+  {
+    "stage_id": 8,
+    "start_step_id": 27,
+    "end_step_id": 30
+  },
+  {
+    "stage_id": 9,
+    "start_step_id": 31,
+    "end_step_id": 31
+  },
+  {
+    "stage_id": 10,
+    "start_step_id": 32,
+    "end_step_id": 32
+  },
+  {
+    "stage_id": 11,
+    "start_step_id": 33,
+    "end_step_id": 39
+  },
+  {
+    "stage_id": 12,
+    "start_step_id": 40,
+    "end_step_id": 45
+  }
+]

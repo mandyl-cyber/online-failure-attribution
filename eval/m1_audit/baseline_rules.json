@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "shell": {
+    "wrappers": "^(?:sudo(\\s+-\\S+)*|time|nohup|timeout\\s+(-\\S+\\s+)*\\S+|stdbuf\\s+\\S+|nice|xvfb-run(\\s+-\\S+)*)\\s+",
+    "irreversible": [
+      "^rm\\s+(-\\S+\\s+)*-[a-zA-Z]*([rR][a-zA-Z]*f|f[a-zA-Z]*[rR])",
+      "^git\\s+push\\b",
+      "^git\\s+reset\\s+--hard\\b",
+      "^git\\s+clean\\s+-[a-zA-Z]*f",
+      "^git\\s+branch\\s+-D\\b",
+      "^(twine\\s+upload|npm\\s+publish|cargo\\s+publish|gh\\s+(pr|release)\\s+(create|merge))\\b",
+      "^(docker|podman)\\s+(rm|rmi|system\\s+prune|volume\\s+rm)\\b",
+      "^kubectl\\s+(delete|apply)\\b",
+      "(?i)\\b(DROP|TRUNCATE)\\s+(TABLE|DATABASE|SCHEMA)\\b",
+      "^(mkfs\\S*|dd|shred)\\b",
+      "^curl\\b.*\\s-X\\s*(POST|PUT|DELETE|PATCH)\\b",
+      "^find\\b.*\\s-delete\\b"
+    ],
+    "irreversible_exempt": "(^|[\\s/])(/tmp/\\S*|build|dist|__pycache__|node_modules|\\.pytest_cache|\\.mypy_cache|\\.tox|target|\\S+\\.egg-info|\\S+\\.pyc|\\S+\\.o|\\S+\\.log)/?\\s*$",
+    "verify": {
+      "test": [
+        "^(python[\\d.]*\\s+-m\\s+)?(pytest|py\\.test)\\b",
+        "^python[\\d.]*\\s+-m\\s+(unittest|nose|nose2|tox|nox)\\b",
+        "^(tox|nox|nosetests)\\b",
+        "^python[\\d.]*\\s+\\S*(runtests|run_tests)\\.py\\b",
+        "^python[\\d.]*\\s+\\S*manage\\.py\\s+test\\b",
+        "^(bash\\s+|sh\\s+|\\./)?\\S*(run_?tests?|test_?all)\\S*\\.sh\\b",
+        "^(npm|yarn|pnpm|bun)\\s+(-\\S+\\s+)*(run\\s+)?test\\b",
+        "^(npx\\s+)?(jest|vitest|mocha|ava|playwright\\s+test|cypress\\s+run)\\b",
+        "^go\\s+test\\b",
+        "^cargo\\s+(test|nextest)\\b",
+        "^(mvn|\\./mvnw)\\b.*\\b(test|verify)\\b",
+        "^(gradle|\\./gradlew)\\b.*\\b(test|check)\\b",
+        "^make\\s+(\\S+\\s+)*(tests?|check)\\b",
+        "^(ctest|rspec|phpunit|dotnet\\s+test|bundle\\s+exec\\s+(rspec|rake\\s+test)|rake\\s+test|mix\\s+test|swift\\s+test|sbt\\s+test|bazel\\s+test)\\b"
+      ],
+      "repro": [
+        "^python[\\d.]*\\s+(-\\S+\\s+)*\\S*(repro|reproduce|test|verify|check|debug|demo|example)\\S*\\.py\\b",
+        "^(node|ruby|php|bash|sh)\\s+\\S*(repro|reproduce|test|verify|check)\\S*\\.\\w+\\b"
+      ],
+      "build": [
+        "^(make|cmake|ninja)\\b(?!.*\\b(install|clean)\\b)",
+        "^(cargo|go)\\s+(build|check|vet)\\b",
+        "^(npm|yarn|pnpm)\\s+run\\s+(build|lint|typecheck|type-check)\\b",
+        "^(tsc|mypy|pyright|flake8|pylint)\\b",
+        "^(ruff|eslint)\\b(?!.*(--fix|\\bformat\\b))",
+        "^(gcc|g\\+\\+|clang|clang\\+\\+|javac|rustc)\\b",
+        "^python[\\d.]*\\s+-m\\s+(py_compile|compileall)\\b"
+      ]
+    },
+    "install": [
+      "^(pip[\\d.]*|python[\\d.]*\\s+-m\\s+pip|uv\\s+pip|uv)\\s+(install|uninstall|sync|add)\\b",
+      "^(conda|mamba|micromamba)\\s+(install|create|env\\s+create|remove)\\b",
+      "^(apt|apt-get|yum|dnf|apk|brew|pacman)\\s+(-\\S+\\s+)*(install|add|update|upgrade|remove)\\b",
+      "^(npm|pnpm|yarn|bun)\\s+(install|ci|add|i|remove)\\b",
+      "^yarn\\s*$",
+      "^(cargo\\s+(install|add)|go\\s+(get|install|mod\\s+(tidy|download))|gem\\s+install|bundle\\s+install|poetry\\s+(install|add)|composer\\s+install)\\b",
+      "^python[\\d.]*\\s+setup\\.py\\s+(install|develop|build_ext)\\b",
+      "^make\\s+install\\b"
+    ],
+    "state_change": [
+      "^sed\\s+(-\\S+\\s+)*-[a-zA-Z]*i",
+      "^perl\\s+(-\\S+\\s+)*-[a-zA-Z]*i",
+      "^(mv|cp|rm|mkdir|rmdir|touch|chmod|chown|ln|truncate|unzip|patch|applypatch|apply_patch)\\b",
+      "^tar\\s+-?[a-zA-Z]*x",
+      "^git\\s+(apply|am|checkout|switch|restore|stash|reset|revert|commit|merge|rebase|cherry-pick|rm|mv|pull|clone|init)\\b",
+      "^git\\s+branch\\s+[^-\\s]",
+      "^(tee|dd)\\b",
+      "^(wget|curl)\\b.*\\s(-O|-o|--output)\\b",
+      "^(black|isort|autopep8|gofmt\\s+-w|cargo\\s+fmt)\\b",
+      "^(prettier|eslint|ruff)\\b.*(--write|--fix|\\bformat\\b)",
+      "^find\\b.*-exec\\s+(rm|sed\\s+-i|mv|chmod)\\b",
+      "^(docker|podman)\\s+(run|build|compose|start|stop)\\b",
+      "^(alembic\\s+upgrade|python[\\d.]*\\s+\\S*manage\\.py\\s+(migrate|makemigrations))\\b"
+    ],
+    "undo": [
+      "^git\\s+(checkout\\s+(--\\s|\\S+\\s+--\\s|HEAD\\b|\\.)|restore\\b|stash\\b(?!\\s+(pop|apply|list|show))|reset\\b|revert\\b)"
+    ],
+    "redirect_exempt": "^(/dev/|/tmp/|/proc/|&)",
+    "probe": [
+      "^(python[\\d.]*|node|ruby|php|perl|bash|sh)\\s+(-\\S+\\s+)*-?\\s*<<",
+      "^python[\\d.]*\\s+(-[A-Za-z]+\\s+)*-c\\b",
+      "^(node|ruby|perl)\\s+-e\\b",
+      "^(python[\\d.]*|node|ruby|php|bash|sh|Rscript|julia)\\s+(-\\S+\\s+)*\\S+\\.(py|js|mjs|ts|rb|php|sh|R|jl)\\b",
+      "^\\./\\S+"
+    ],
+    "noop": "^(C-[a-z]|q|exit|)$",
+    "env_check": [
+      "^(which|whereis|type|command\\s+-v|uname|whoami|hostname|id|nproc|free|df|env|printenv|locale|date|nvidia-smi|lscpu)\\b",
+      "^\\S+\\s+(--version|-V|-version|version)\\s*$",
+      "^(pip[\\d.]*|python[\\d.]*\\s+-m\\s+pip)\\s+(list|show|freeze|--version|check)\\b",
+      "^(conda\\s+(list|info|env\\s+list)|npm\\s+(ls|list)|node\\s+-v|go\\s+(version|env)|java\\s+-version)\\b",
+      "^python[\\d.]*\\s+-c\\s+.*(__version__|sys\\.version|sys\\.path|__file__)",
+      "^(pwd|echo\\s+\\$\\w+)\\s*$"
+    ],
+    "search": [
+      "^(grep|egrep|fgrep|rg|ag|ack|find|fd|locate)\\b",
+      "^git\\s+grep\\b"
+    ],
+    "read": [
+      "^(cat|head|tail|less|more|bat|nl|wc|file|stat|strings|xxd|hexdump|od|diff|cmp|md5sum|sha256sum|jq|sort|uniq|cut|column|tr|awk)\\b",
+      "^sed\\s+-n\\b",
+      "^git\\s+(status|diff|log|show|blame|branch|remote|ls-files|rev-parse|describe|shortlog|tag)\\b",
+      "^(ls|ll|tree|du|pwd|cd|echo|printf|true|test|\\[|sleep|wait|ps|jobs|history|clear|export|unset|source|set)\\b"
+    ],
+    "ipython_write": "(open\\([^)]*,\\s*['\"][wa]|\\.write_text\\(|\\.write\\(|os\\.(remove|rename|makedirs)|shutil\\.|%%writefile|!\\s*(sed\\s+-i|pip\\s+install))",
+    "unknown_exec_as": "EXEC"
+  },
+  "events": {
+    "edit_failed": [
+      "No replacement was performed",
+      "did not appear verbatim",
+      "Multiple occurrences of old_str",
+      "Invalid `?path`? parameter",
+      "File already exists at",
+      "^ERROR:",
+      "old_str.{0,40}(not found|does not exist)",
+      "The path \\S+ does not exist"
+    ],
+    "verify": {
+      "fail": [
+        "(?m)^(FAILED|ERROR)\\s+\\S+",
+        "(?m)^(FAIL|ERROR):\\s",
+        "FAILED \\((failures|errors)=",
+        "(?m)^--- FAIL",
+        "test result: FAILED",
+        "Traceback \\(most recent call last\\)",
+        "(?m)^\\S*(Error|Exception):\\s",
+        "(?i)\\b(compilation failed|build failed|command not found)\\b"
+      ],
+      "pass": [
+        "(?m)^OK(\\s+\\(.*\\))?\\s*$",
+        "(?m)^ok\\s+\\S+\\s+[\\d.]+s",
+        "test result: ok\\.",
+        "(?i)\\ball\\s+(\\d+\\s+)?tests?\\s+pass(ed)?\\b",
+        "(?i)\\b(issue|bug)\\s+(is\\s+)?(resolved|fixed)\\b",
+        "(?i)\\bSuccess: no issues found\\b"
+      ]
+    },
+    "plan_switch": [
+      "(?i)\\b(let me|let's|i'll|i will|i should|we should|i need to)\\s+(try|take|use|consider)\\s+(a|an|another)\\s+(different|alternative|new|simpler|better)\\s+(approach|strategy|way|method|solution|fix)",
+      "(?i)\\b(different|alternative|another|new)\\s+(approach|strategy|plan)\\b",
+      "(?i)\\b(that|this)\\s+(approach|fix|change|attempt)\\s+(did\\s*n[o']t|does\\s*n[o']t|won't|is\\s*n[o']t)\\s+work",
+      "(?i)\\b(step back|start over|start from scratch|rethink|reconsider|change (of |my |the )?(plan|course|strategy))\\b",
+      "(?i)\\b(revert|undo|roll\\s?back)\\s+(my|the|these|those|that|this)\\s+(change|edit|modification)s?",
+      "(?i)\\bi was wrong\\b|\\bmy (previous|earlier) (assumption|hypothesis|understanding) was (wrong|incorrect)",
+      "换(一种|个)(思路|方法|方案)|重新(考虑|规划)|推倒重来"
+    ],
+    "handoff": {
+      "submit_commands": [
+        "^submit\\b"
+      ],
+      "message_requires_wait": false
+    },
+    "reference": {
+      "sources": [
+        "thought_symbol",
+        "thought_path",
+        "write_path"
+      ],
+      "min_symbol_len": 4,
+      "stop_symbols": [
+        "main",
+        "test",
+        "tests",
+        "self",
+        "init",
+        "__init__",
+        "setup",
+        "setUp",
+        "tearDown",
+        "name",
+        "data",
+        "value",
+        "result",
+        "args",
+        "kwargs",
+        "error",
+        "type",
+        "None",
+        true,
+        false,
+        "run",
+        "get",
+        "set",
+        "call",
+        "path",
+        "file",
+        "line",
+        "func",
+        "wrapper",
+        "inner",
+        "helper",
+        "update",
+        "create",
+        "delete",
+        "check",
+        "validate",
+        "process",
+        "handle",
+        "parse",
+        "load",
+        "save",
+        "read",
+        "write",
+        "open",
+        "close",
+        "start",
+        "stop",
+        "index",
+        "items",
+        "keys",
+        "values",
+        "config",
+        "info",
+        "debug",
+        "print",
+        "return",
+        "class",
+        "import",
+        "from",
+        "with",
+        "pass",
+        "this",
+        "that"
+      ],
+      "stop_basenames": [
+        "__init__.py",
+        "setup.py",
+        "conftest.py",
+        "README.md",
+        "Makefile",
+        "package.json",
+        "index.js",
+        "main.py",
+        "utils.py",
+        "test.py"
+      ]
+    },
+    "drift": {
+      "enabled": false
+    }
+  },
+  "tree": {
+    "merge_consecutive_edits": true,
+    "close_on_failed_verify": false,
+    "explore_gap": 3,
+    "max_node_steps": 40,
+    "verify_pass_closes_empty_node": true
+  },
+  "segment": {
+    "mode": "node",
+    "min_stage_len": 2,
+    "phase_pull_back_neutral": true,
+    "phase_min_run": {
+      "ENV": 2,
+      "INSTALL": 1,
+      "INSPECT": 3,
+      "PATCH": 1,
+      "VERIFY": 1
+    }
+  },
+  "claims": {
+    "max_per_step": 8,
+    "max_len": 240,
+    "plan_step": [
+      "(?i)^\\s*(first|next|then|now|finally|after that)[,:]?\\s+(i|we|let)\\b",
+      "(?i)^\\s*(i will|i'll|i am going to|i'm going to|i need to|i should|i plan to|let me|let's|we need to|we should)\\b",
+      "(?i)^\\s*(plan|todo|step\\s*\\d+)\\s*[:：]",
+      "^\\s*(\\d+[.)]|[-*])\\s+\\S",
+      "^\\s*(首先|然后|接下来|下一步|我(需要|要|打算|将))"
+    ],
+    "completion": [
+      "(?i)\\b(fixed|resolved|completed|finished|implemented|done)\\b",
+      "(?i)\\ball\\s+(the\\s+)?tests?\\s+(now\\s+)?pass",
+      "(?i)\\b(now|successfully)\\s+(works?|passes|passing|runs)\\b",
+      "(?i)\\b(works?|working)\\s+(correctly|as expected|properly|now)\\b",
+      "(?i)\\bthe\\s+(issue|bug|problem|task)\\s+(is|has been|should be)\\s+(now\\s+)?(fixed|resolved|solved|addressed|complete)",
+      "已(经)?(修复|解决|完成)|测试(全部)?通过"
+    ],
+    "completion_negation": "(?i)\\b(not|n't|never|no longer|still|yet to|need to|should|will|to be|haven't|hasn't|todo)\\b.{0,30}\\b(fixed|resolved|completed|finished|implemented|done|works?|working|pass)",
+    "env_assertion_obs": [
+      "(?m)^(Python|pip|node|npm|go|rustc|cargo|java|gcc|git|conda|pytest)\\s+v?\\d+\\.\\d+\\S*.*$",
+      "(?m)^.*\\b(command not found|No such file or directory|Permission denied)\\b.*$",
+      "(?m)^.*\\b(ModuleNotFoundError|ImportError):.*$",
+      "(?m)^Successfully installed .*$",
+      "(?m)^Requirement already satisfied: \\S+",
+      "(?m)^(Name|Version): \\S+$"
+    ],
+    "env_assertion_thought": [
+      "(?i)\\b(is|are|was|were)\\s+(already\\s+|not\\s+|now\\s+)?(installed|available|missing|present|configured|set up)\\b",
+      "(?i)\\b(file|directory|module|package|dependency|environment|version|branch|repo(sitory)?)\\b.{0,60}\\b(exists?|does\\s*n[o']t exist|is missing|is \\d+\\.\\d+)",
+      "(?i)\\b(using|running|runs on)\\s+(python|node|java|go|rust)\\s*\\d"
+    ]
+  },
+  "trigger": {
+    "dep_k": 2,
+    "sync": [
+      "HANDOFF",
+      "VERIFY_PASS",
+      "IRREVERSIBLE"
+    ]
+  }
+}

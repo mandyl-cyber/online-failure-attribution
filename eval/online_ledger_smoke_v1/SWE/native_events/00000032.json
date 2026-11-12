@@ -1,0 +1,1 @@
+{"event":{"action":"run","args":{"command":"ls -la /workspace/sympy__sympy__1.12/.git","security_risk":"LOW"},"id":"call_ZBsnEWr5y7AygD1VvkiH3JvD","source":"agent"},"kind":"event","sha256":"79e99e88f5bc940d68286214dc52edee861f8c42487a86314f14b1b2844639c2"}

@@ -1,0 +1,1 @@
+{"name": "fusion_lr", "threshold": 0.2, "input_dimension": 4002, "cache": "eval\\boundary_encoder\\modernbert_headtail", "seed": 41}

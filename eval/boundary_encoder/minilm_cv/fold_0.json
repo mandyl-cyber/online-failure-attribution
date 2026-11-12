@@ -1,0 +1,236 @@
+{
+  "fold": 0,
+  "selected": {
+    "name": "struct_mlp",
+    "dev_D0": 0.5329815303430079,
+    "threshold": 0.25,
+    "curve": [
+      {
+        "epoch": 1,
+        "dev_D0": 0.36204059243006037,
+        "threshold": 0.15
+      },
+      {
+        "epoch": 2,
+        "dev_D0": 0.406,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 3,
+        "dev_D0": 0.4509466437177281,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 4,
+        "dev_D0": 0.4853479853479853,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 5,
+        "dev_D0": 0.49860465116279074,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 6,
+        "dev_D0": 0.515230635335074,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 7,
+        "dev_D0": 0.5199306759098787,
+        "threshold": 0.3
+      },
+      {
+        "epoch": 8,
+        "dev_D0": 0.5271317829457365,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 9,
+        "dev_D0": 0.5329815303430079,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 10,
+        "dev_D0": 0.5264069264069263,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 11,
+        "dev_D0": 0.5222121486854034,
+        "threshold": 0.25
+      }
+    ]
+  },
+  "trials": [
+    {
+      "name": "struct_lr",
+      "dev_D0": 0.5271593944790739,
+      "threshold": 0.25,
+      "curve": []
+    },
+    {
+      "name": "struct_mlp",
+      "dev_D0": 0.5329815303430079,
+      "threshold": 0.25,
+      "curve": [
+        {
+          "epoch": 1,
+          "dev_D0": 0.36204059243006037,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 2,
+          "dev_D0": 0.406,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 3,
+          "dev_D0": 0.4509466437177281,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 4,
+          "dev_D0": 0.4853479853479853,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 5,
+          "dev_D0": 0.49860465116279074,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 6,
+          "dev_D0": 0.515230635335074,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 7,
+          "dev_D0": 0.5199306759098787,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 8,
+          "dev_D0": 0.5271317829457365,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 9,
+          "dev_D0": 0.5329815303430079,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 10,
+          "dev_D0": 0.5264069264069263,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 11,
+          "dev_D0": 0.5222121486854034,
+          "threshold": 0.25
+        }
+      ]
+    },
+    {
+      "name": "newtext_tfidf",
+      "dev_D0": 0.5289403383793411,
+      "threshold": 0.25,
+      "curve": []
+    },
+    {
+      "name": "semantic_lr",
+      "dev_D0": 0.4766283524904214,
+      "threshold": 0.2,
+      "curve": []
+    },
+    {
+      "name": "fusion_lr",
+      "dev_D0": 0.522331566994701,
+      "threshold": 0.2,
+      "curve": []
+    },
+    {
+      "name": "fusion_mlp",
+      "dev_D0": 0.5303030303030303,
+      "threshold": 0.25,
+      "curve": [
+        {
+          "epoch": 1,
+          "dev_D0": 0.3426415094339623,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 2,
+          "dev_D0": 0.43183897529734677,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 3,
+          "dev_D0": 0.4769101595298069,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 4,
+          "dev_D0": 0.4991596638655463,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 5,
+          "dev_D0": 0.5018518518518519,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 6,
+          "dev_D0": 0.5111111111111111,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 7,
+          "dev_D0": 0.5125107851596203,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 8,
+          "dev_D0": 0.5124884366327475,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 9,
+          "dev_D0": 0.5193798449612403,
+          "threshold": 0.35
+        },
+        {
+          "epoch": 10,
+          "dev_D0": 0.5222502099076406,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 11,
+          "dev_D0": 0.5189620758483035,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 12,
+          "dev_D0": 0.5253218884120171,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 13,
+          "dev_D0": 0.5303030303030303,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 14,
+          "dev_D0": 0.5294619982920581,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 15,
+          "dev_D0": 0.5258693808312129,
+          "threshold": 0.2
+        }
+      ]
+    }
+  ],
+  "seconds": 33.05997819999902
+}

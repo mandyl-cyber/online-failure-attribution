@@ -1,0 +1,160 @@
+{
+  "fold": 0,
+  "selected": {
+    "name": "fusion_lr",
+    "dev_D0": 0.537182852143482,
+    "threshold": 0.25,
+    "curve": []
+  },
+  "trials": [
+    {
+      "name": "struct_lr",
+      "dev_D0": 0.5271593944790739,
+      "threshold": 0.25,
+      "curve": []
+    },
+    {
+      "name": "struct_mlp",
+      "dev_D0": 0.5329815303430079,
+      "threshold": 0.25,
+      "curve": [
+        {
+          "epoch": 1,
+          "dev_D0": 0.36204059243006037,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 2,
+          "dev_D0": 0.406,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 3,
+          "dev_D0": 0.4509466437177281,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 4,
+          "dev_D0": 0.4853479853479853,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 5,
+          "dev_D0": 0.49860465116279074,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 6,
+          "dev_D0": 0.515230635335074,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 7,
+          "dev_D0": 0.5199306759098787,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 8,
+          "dev_D0": 0.5271317829457365,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 9,
+          "dev_D0": 0.5329815303430079,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 10,
+          "dev_D0": 0.5264069264069263,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 11,
+          "dev_D0": 0.5222121486854034,
+          "threshold": 0.25
+        }
+      ]
+    },
+    {
+      "name": "newtext_tfidf",
+      "dev_D0": 0.5288376220053239,
+      "threshold": 0.25,
+      "curve": []
+    },
+    {
+      "name": "semantic_lr",
+      "dev_D0": 0.43446601941747576,
+      "threshold": 0.15,
+      "curve": []
+    },
+    {
+      "name": "fusion_lr",
+      "dev_D0": 0.537182852143482,
+      "threshold": 0.25,
+      "curve": []
+    },
+    {
+      "name": "fusion_mlp",
+      "dev_D0": 0.5207413945278022,
+      "threshold": 0.3,
+      "curve": [
+        {
+          "epoch": 1,
+          "dev_D0": 0.3751080380293863,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 2,
+          "dev_D0": 0.4405286343612335,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 3,
+          "dev_D0": 0.47627264883520276,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 4,
+          "dev_D0": 0.4875267284390591,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 5,
+          "dev_D0": 0.49881235154394304,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 6,
+          "dev_D0": 0.49801113762927607,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 7,
+          "dev_D0": 0.5095194922937445,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 8,
+          "dev_D0": 0.516728624535316,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 9,
+          "dev_D0": 0.5207413945278022,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 10,
+          "dev_D0": 0.5194805194805195,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 11,
+          "dev_D0": 0.5143796220213641,
+          "threshold": 0.2
+        }
+      ]
+    }
+  ],
+  "seconds": 47.24646639999992
+}

@@ -1,0 +1,1 @@
+{"event":{"action":"run","args":{"command":"[ -f /workspace/sympy__sympy__1.12/.gitignore ] && echo has || echo missing","security_risk":"LOW"},"id":"call_4QXuKPJCDSqwlPgA7NP296Nx","source":"agent"},"kind":"event","sha256":"fe998e9b0cf39056bd29c85ec5869df3a7d9f7ab60ba37dfbd0f3f8d45f995a1"}

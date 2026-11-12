@@ -1,0 +1,67 @@
+fold 0 struct_lr dev D0=0.5272
+fold 0 struct_mlp dev D0=0.5330
+fold 0 newtext_tfidf dev D0=0.5288
+fold 0 semantic_lr dev D0=0.4345
+fold 0 fusion_lr dev D0=0.5372
+fold 0 fusion_mlp dev D0=0.5207
+fold 1 struct_lr dev D0=0.5021
+fold 1 struct_mlp dev D0=0.5262
+fold 1 newtext_tfidf dev D0=0.4972
+fold 1 semantic_lr dev D0=0.4324
+fold 1 fusion_lr dev D0=0.5038
+fold 1 fusion_mlp dev D0=0.5165
+fold 2 struct_lr dev D0=0.5171
+fold 2 struct_mlp dev D0=0.5393
+fold 2 newtext_tfidf dev D0=0.5254
+fold 2 semantic_lr dev D0=0.4408
+fold 2 fusion_lr dev D0=0.5212
+fold 2 fusion_mlp dev D0=0.5195
+fold 3 struct_lr dev D0=0.5321
+fold 3 struct_mlp dev D0=0.5557
+fold 3 newtext_tfidf dev D0=0.5330
+fold 3 semantic_lr dev D0=0.4484
+fold 3 fusion_lr dev D0=0.5309
+fold 3 fusion_mlp dev D0=0.5235
+fold 4 struct_lr dev D0=0.4704
+fold 4 struct_mlp dev D0=0.4868
+fold 4 newtext_tfidf dev D0=0.4701
+fold 4 semantic_lr dev D0=0.4231
+fold 4 fusion_lr dev D0=0.4815
+fold 4 fusion_mlp dev D0=0.4848
+{
+  "struct_lr": {
+    "tol0_eventual": 0.4368,
+    "tol1_eventual": 0.5576,
+    "tol1_D0": 0.5044
+  },
+  "struct_mlp": {
+    "tol0_eventual": 0.4549,
+    "tol1_eventual": 0.5645,
+    "tol1_D0": 0.5149
+  },
+  "newtext_tfidf": {
+    "tol0_eventual": 0.4372,
+    "tol1_eventual": 0.5566,
+    "tol1_D0": 0.5029
+  },
+  "semantic_lr": {
+    "tol0_eventual": 0.3776,
+    "tol1_eventual": 0.4824,
+    "tol1_D0": 0.4305
+  },
+  "fusion_lr": {
+    "tol0_eventual": 0.4495,
+    "tol1_eventual": 0.5633,
+    "tol1_D0": 0.5123
+  },
+  "fusion_mlp": {
+    "tol0_eventual": 0.4463,
+    "tol1_eventual": 0.559,
+    "tol1_D0": 0.5055
+  },
+  "selected": {
+    "tol0_eventual": 0.4553,
+    "tol1_eventual": 0.567,
+    "tol1_D0": 0.5162
+  }
+}

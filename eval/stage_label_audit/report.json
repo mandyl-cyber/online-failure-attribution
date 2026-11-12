@@ -1,0 +1,59 @@
+{
+  "verified": {
+    "sha256": "bd02d3dafa145146567e87f7d55b158ef0dd30043d4a4c2c03e631c2056ff92e",
+    "trajectories": 1000,
+    "unique_ids": 1000,
+    "tasks": 558,
+    "agents": {
+      "mini-SWE-agent": 150,
+      "OpenHands": 520,
+      "SWE-agent": 108,
+      "Terminus2": 222
+    },
+    "stages": 6739,
+    "stage_keys": {
+      "stage_id": 6739,
+      "start_step_id": 6739,
+      "end_step_id": 6739
+    },
+    "stage_length_median": 6,
+    "singleton_stages": 207,
+    "invalid_coverage_ids": [],
+    "openhands": 520
+  },
+  "full": {
+    "sha256": "2b5e4fbd9a0dae81adccb8967088dfc7dd2dcc3a63e83fdbb4415777b060aee7",
+    "trajectories": 3316,
+    "unique_ids": 3316,
+    "tasks": 662,
+    "agents": {
+      "mini-SWE-agent": 1024,
+      "OpenHands": 1242,
+      "Terminus2": 923,
+      "SWE-agent": 127
+    },
+    "stages": 22246,
+    "stage_keys": {
+      "stage_id": 22246,
+      "start_step_id": 22246,
+      "end_step_id": 22246
+    },
+    "stage_length_median": 5.0,
+    "singleton_stages": 1158,
+    "invalid_coverage_ids": [
+      "terminus2-OpenAI__GPT-5-play-zork-5c2b9e8f",
+      "terminus2-OpenAI__GPT-5-protocol-analysis-rs-5e36dbac"
+    ],
+    "openhands": 1242
+  },
+  "overlap": {
+    "trajectory_ids": 1000,
+    "task_names": 558,
+    "full_rows_on_verified_tasks": 2905,
+    "differing_stage_annotations": 0
+  },
+  "openhands_verified": {
+    "stages": 3430,
+    "stage_length_median": 5.0
+  }
+}

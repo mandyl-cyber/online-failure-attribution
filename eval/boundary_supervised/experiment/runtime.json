@@ -1,0 +1,87 @@
+{
+  "checks": [
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-0fd88717c953b92ed8a50495d55e630eb5d59166-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-5b83347a",
+      "steps": 33,
+      "fold": 4,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2-e6e185ca",
+      "steps": 26,
+      "fold": 4,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1b70260d5aa2f6c9782fd2b848e8d16566e50d85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-e20126a5",
+      "steps": 40,
+      "fold": 4,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86-28be7ce9",
+      "steps": 55,
+      "fold": 0,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-5260527c4a71bfed99d803e687dd19619423b134-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-f32bf751",
+      "steps": 40,
+      "fold": 1,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-3d-model-format-legacy-7498555b",
+      "steps": 95,
+      "fold": 4,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-adaptive-rejection-sampler-749f8ad5",
+      "steps": 41,
+      "fold": 4,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-add-benchmark-lm-eval-harness-9f75877e",
+      "steps": 80,
+      "fold": 2,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-attention-mil-5bba2487",
+      "steps": 26,
+      "fold": 0,
+      "prefix_consistent": true
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-audio-synth-stft-peaks-a7283b5d",
+      "steps": 24,
+      "fold": 3,
+      "prefix_consistent": true
+    }
+  ],
+  "steps": 460,
+  "model_ms": {
+    "p50": 0.5569500008277828,
+    "p95": 1.5608850020726088,
+    "p99": 2.1161829982520417
+  },
+  "feed_with_disk_ms": {
+    "p50": 1.2616999993042555,
+    "p95": 4.768624998541778,
+    "p99": 5.940925001159481
+  },
+  "live_file_smoke": {
+    "events": 8,
+    "steps": 4,
+    "poll_seconds": 0.005,
+    "partial_lines": true,
+    "post_write_to_feed_ms": {
+      "p50": 4.693599998063291,
+      "p95": 7.1822100020654025,
+      "p99": 7.429482002480653
+    }
+  },
+  "limitation": "local sequential replay and synthetic live file; not a deployed real agent or concurrent load test; adapter time excluded from replay feed timing"
+}

@@ -1,0 +1,1 @@
+{"event":{"action":"run","args":{"command":"git status --porcelain","security_risk":"LOW"},"id":"call_7uR72J9lfJoewn2XV8nTOK6w","source":"agent"},"kind":"event","sha256":"ac5169e05a3d2403a589ede48874fc9170470d7492a7dd809d85ff1d9dd50c70"}

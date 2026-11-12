@@ -1,0 +1,1 @@
+{"event":{"action":"run","args":{"command":"ls -la /workspace","security_risk":"LOW"},"id":"call_65iEbXpty2B2OTzN6SK9r1mi","source":"agent"},"kind":"event","sha256":"4c6848a49f14ade5e74c48d91557cef9c15c29c47b5178510cd45253acb21349"}

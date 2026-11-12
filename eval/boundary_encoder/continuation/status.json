@@ -1,0 +1,19 @@
+{
+  "status": "running",
+  "completed": [
+    "modernbert_cv",
+    "minilm_runtime",
+    "modernbert_runtime",
+    "prefix_cache"
+  ],
+  "running": "modernbert_finetune",
+  "updated_unix": 1794482318.2341995,
+  "command": [
+    "F:\\Yang\\online_failure_attributor\\.venv-encoder\\Scripts\\python.exe",
+    "-u",
+    "-m",
+    "segmenter.finetune_encoder_boundary",
+    "train"
+  ],
+  "child_pid": 40788
+}

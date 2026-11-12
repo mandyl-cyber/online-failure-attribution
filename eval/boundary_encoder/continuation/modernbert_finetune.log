@@ -1,0 +1,168 @@
+fold 0 epoch 1 samples 0/10688 elapsed 2.1s
+Resource probe complete: eval\boundary_encoder\modernbert_finetune\resource_probe.json
+fold 0 epoch 1 samples 1600/10688 elapsed 162.5s
+fold 0 epoch 1 samples 3200/10688 elapsed 323.0s
+fold 0 epoch 1 samples 4800/10688 elapsed 482.7s
+fold 0 epoch 1 samples 6400/10688 elapsed 642.8s
+fold 0 epoch 1 samples 8000/10688 elapsed 803.6s
+fold 0 epoch 1 samples 9600/10688 elapsed 964.5s
+{"epoch": 1, "dev_D0": 0.49522409992652455, "threshold": 0.2, "loss": 0.37568436633282437, "seconds": 1105.877182600001}
+fold 0 epoch 2 samples 0/10688 elapsed 1.6s
+fold 0 epoch 2 samples 1600/10688 elapsed 160.8s
+fold 0 epoch 2 samples 3200/10688 elapsed 320.7s
+fold 0 epoch 2 samples 4800/10688 elapsed 481.1s
+fold 0 epoch 2 samples 6400/10688 elapsed 641.5s
+fold 0 epoch 2 samples 8000/10688 elapsed 801.7s
+fold 0 epoch 2 samples 9600/10688 elapsed 962.2s
+{"epoch": 2, "dev_D0": 0.5196428571428572, "threshold": 0.3, "loss": 0.3388536657669587, "seconds": 1103.042372099997}
+fold 0 epoch 3 samples 0/10688 elapsed 1.6s
+fold 0 epoch 3 samples 1600/10688 elapsed 162.0s
+fold 0 epoch 3 samples 3200/10688 elapsed 322.0s
+fold 0 epoch 3 samples 4800/10688 elapsed 482.3s
+fold 0 epoch 3 samples 6400/10688 elapsed 642.5s
+fold 0 epoch 3 samples 8000/10688 elapsed 802.8s
+fold 0 epoch 3 samples 9600/10688 elapsed 963.2s
+{"epoch": 3, "dev_D0": 0.5140271493212669, "threshold": 0.3, "loss": 0.32832052699195413, "seconds": 1104.3972768999956}
+fold 0 epoch 4 samples 0/10688 elapsed 1.6s
+fold 0 epoch 4 samples 1600/10688 elapsed 161.8s
+fold 0 epoch 4 samples 3200/10688 elapsed 5068.0s
+fold 0 epoch 4 samples 4800/10688 elapsed 5228.6s
+fold 0 epoch 4 samples 6400/10688 elapsed 5389.1s
+fold 0 epoch 4 samples 8000/10688 elapsed 5549.2s
+fold 0 epoch 4 samples 9600/10688 elapsed 5709.5s
+{"epoch": 4, "dev_D0": 0.5026455026455026, "threshold": 0.15, "loss": 0.3187430262632534, "seconds": 5852.131005700001}
+fold 1 epoch 1 samples 0/10719 elapsed 1.7s
+Resource probe complete: eval\boundary_encoder\modernbert_finetune\resource_probe.json
+fold 1 epoch 1 samples 1600/10719 elapsed 162.8s
+fold 1 epoch 1 samples 3200/10719 elapsed 323.7s
+fold 1 epoch 1 samples 4800/10719 elapsed 483.9s
+fold 1 epoch 1 samples 6400/10719 elapsed 650.8s
+fold 1 epoch 1 samples 8000/10719 elapsed 811.2s
+fold 1 epoch 1 samples 9600/10719 elapsed 972.3s
+{"epoch": 1, "dev_D0": 0.48391812865497075, "threshold": 0.2, "loss": 0.37128628281070225, "seconds": 1130.8053990999979}
+fold 1 epoch 2 samples 0/10719 elapsed 1.6s
+fold 1 epoch 2 samples 1600/10719 elapsed 164.2s
+fold 1 epoch 2 samples 3200/10719 elapsed 333.7s
+fold 1 epoch 2 samples 4800/10719 elapsed 499.5s
+fold 1 epoch 2 samples 6400/10719 elapsed 662.5s
+fold 1 epoch 2 samples 8000/10719 elapsed 827.0s
+fold 1 epoch 2 samples 9600/10719 elapsed 993.9s
+{"epoch": 2, "dev_D0": 0.49497716894977173, "threshold": 0.2, "loss": 0.3404870361534517, "seconds": 1148.5101527000006}
+fold 1 epoch 3 samples 0/10719 elapsed 1.7s
+fold 1 epoch 3 samples 1600/10719 elapsed 164.7s
+fold 1 epoch 3 samples 3200/10719 elapsed 334.5s
+fold 1 epoch 3 samples 4800/10719 elapsed 506.1s
+fold 1 epoch 3 samples 6400/10719 elapsed 671.6s
+fold 1 epoch 3 samples 8000/10719 elapsed 837.2s
+fold 1 epoch 3 samples 9600/10719 elapsed 1001.9s
+{"epoch": 3, "dev_D0": 0.5064935064935066, "threshold": 0.25, "loss": 0.328451016434093, "seconds": 1154.749547200001}
+fold 1 epoch 4 samples 0/10719 elapsed 1.6s
+fold 1 epoch 4 samples 1600/10719 elapsed 168.1s
+fold 1 epoch 4 samples 3200/10719 elapsed 335.3s
+fold 1 epoch 4 samples 4800/10719 elapsed 500.9s
+fold 1 epoch 4 samples 6400/10719 elapsed 666.1s
+fold 1 epoch 4 samples 8000/10719 elapsed 831.4s
+fold 1 epoch 4 samples 9600/10719 elapsed 997.6s
+{"epoch": 4, "dev_D0": 0.5155367231638418, "threshold": 0.25, "loss": 0.31699016246555456, "seconds": 1144.6597623999987}
+fold 1 epoch 5 samples 0/10719 elapsed 1.6s
+fold 1 epoch 5 samples 1600/10719 elapsed 162.4s
+fold 1 epoch 5 samples 3200/10719 elapsed 322.9s
+fold 1 epoch 5 samples 4800/10719 elapsed 483.4s
+fold 1 epoch 5 samples 6400/10719 elapsed 644.1s
+fold 1 epoch 5 samples 8000/10719 elapsed 804.6s
+fold 1 epoch 5 samples 9600/10719 elapsed 964.8s
+{"epoch": 5, "dev_D0": 0.5080291970802919, "threshold": 0.2, "loss": 0.30170086770137744, "seconds": 1112.3915038999985}
+fold 2 epoch 1 samples 0/10903 elapsed 1.6s
+Resource probe complete: eval\boundary_encoder\modernbert_finetune\resource_probe.json
+fold 2 epoch 1 samples 1600/10903 elapsed 161.2s
+fold 2 epoch 1 samples 3200/10903 elapsed 321.5s
+fold 2 epoch 1 samples 4800/10903 elapsed 481.8s
+fold 2 epoch 1 samples 6400/10903 elapsed 642.3s
+fold 2 epoch 1 samples 8000/10903 elapsed 802.1s
+fold 2 epoch 1 samples 9600/10903 elapsed 962.4s
+{"epoch": 1, "dev_D0": 0.5066904549509366, "threshold": 0.2, "loss": 0.3718040496810091, "seconds": 1124.0779919999986}
+fold 2 epoch 2 samples 0/10903 elapsed 1.6s
+fold 2 epoch 2 samples 1600/10903 elapsed 162.6s
+fold 2 epoch 2 samples 3200/10903 elapsed 323.4s
+fold 2 epoch 2 samples 4800/10903 elapsed 484.7s
+fold 2 epoch 2 samples 6400/10903 elapsed 645.3s
+fold 2 epoch 2 samples 8000/10903 elapsed 809.9s
+fold 2 epoch 2 samples 9600/10903 elapsed 974.4s
+{"epoch": 2, "dev_D0": 0.5012964563526361, "threshold": 0.3, "loss": 0.33638327591711126, "seconds": 1140.2852904000029}
+fold 2 epoch 3 samples 0/10903 elapsed 1.6s
+fold 2 epoch 3 samples 1600/10903 elapsed 170.1s
+fold 2 epoch 3 samples 3200/10903 elapsed 335.3s
+fold 2 epoch 3 samples 4800/10903 elapsed 501.0s
+fold 2 epoch 3 samples 6400/10903 elapsed 663.3s
+fold 2 epoch 3 samples 8000/10903 elapsed 823.7s
+fold 2 epoch 3 samples 9600/10903 elapsed 983.6s
+{"epoch": 3, "dev_D0": 0.5200327064595258, "threshold": 0.15, "loss": 0.32393044801401605, "seconds": 1144.394051000003}
+fold 2 epoch 4 samples 0/10903 elapsed 1.6s
+fold 2 epoch 4 samples 1600/10903 elapsed 163.1s
+fold 2 epoch 4 samples 3200/10903 elapsed 323.0s
+fold 2 epoch 4 samples 4800/10903 elapsed 506.6s
+fold 2 epoch 4 samples 6400/10903 elapsed 674.4s
+fold 2 epoch 4 samples 8000/10903 elapsed 839.5s
+fold 2 epoch 4 samples 9600/10903 elapsed 999.9s
+{"epoch": 4, "dev_D0": 0.5270142180094787, "threshold": 0.25, "loss": 0.31091030752641363, "seconds": 1160.7873104999962}
+fold 2 epoch 5 samples 0/10903 elapsed 1.6s
+fold 2 epoch 5 samples 1600/10903 elapsed 161.9s
+fold 2 epoch 5 samples 3200/10903 elapsed 321.6s
+fold 2 epoch 5 samples 4800/10903 elapsed 481.6s
+fold 2 epoch 5 samples 6400/10903 elapsed 641.9s
+fold 2 epoch 5 samples 8000/10903 elapsed 802.4s
+fold 2 epoch 5 samples 9600/10903 elapsed 963.1s
+{"epoch": 5, "dev_D0": 0.5290437890974085, "threshold": 0.3, "loss": 0.3025472708964103, "seconds": 1124.8142737999951}
+fold 3 epoch 1 samples 0/11392 elapsed 1.7s
+Resource probe complete: eval\boundary_encoder\modernbert_finetune\resource_probe.json
+fold 3 epoch 1 samples 1600/11392 elapsed 162.3s
+fold 3 epoch 1 samples 3200/11392 elapsed 322.8s
+fold 3 epoch 1 samples 4800/11392 elapsed 483.4s
+fold 3 epoch 1 samples 6400/11392 elapsed 644.2s
+fold 3 epoch 1 samples 8000/11392 elapsed 805.3s
+fold 3 epoch 1 samples 9600/11392 elapsed 966.2s
+fold 3 epoch 1 samples 11200/11392 elapsed 1127.1s
+{"epoch": 1, "dev_D0": 0.5079365079365079, "threshold": 0.15, "loss": 0.37057789960311033, "seconds": 1177.5313803999961}
+fold 3 epoch 2 samples 0/11392 elapsed 1.6s
+fold 3 epoch 2 samples 1600/11392 elapsed 162.0s
+fold 3 epoch 2 samples 3200/11392 elapsed 322.1s
+fold 3 epoch 2 samples 4800/11392 elapsed 482.3s
+fold 3 epoch 2 samples 6400/11392 elapsed 643.1s
+fold 3 epoch 2 samples 8000/11392 elapsed 803.1s
+fold 3 epoch 2 samples 9600/11392 elapsed 963.3s
+fold 3 epoch 2 samples 11200/11392 elapsed 1123.7s
+{"epoch": 2, "dev_D0": 0.5465116279069768, "threshold": 0.35, "loss": 0.33407322863598216, "seconds": 1174.0522801999978}
+fold 3 epoch 3 samples 0/11392 elapsed 1.6s
+fold 3 epoch 3 samples 1600/11392 elapsed 161.5s
+fold 3 epoch 3 samples 3200/11392 elapsed 321.5s
+fold 3 epoch 3 samples 4800/11392 elapsed 481.5s
+fold 3 epoch 3 samples 6400/11392 elapsed 641.8s
+fold 3 epoch 3 samples 8000/11392 elapsed 802.6s
+fold 3 epoch 3 samples 9600/11392 elapsed 963.5s
+fold 3 epoch 3 samples 11200/11392 elapsed 1124.9s
+{"epoch": 3, "dev_D0": 0.5112781954887218, "threshold": 0.15, "loss": 0.3265180911115381, "seconds": 1175.0407539000007}
+fold 3 epoch 4 samples 0/11392 elapsed 1.6s
+fold 3 epoch 4 samples 1600/11392 elapsed 162.2s
+fold 3 epoch 4 samples 3200/11392 elapsed 322.9s
+fold 3 epoch 4 samples 4800/11392 elapsed 484.2s
+fold 3 epoch 4 samples 6400/11392 elapsed 645.1s
+fold 3 epoch 4 samples 8000/11392 elapsed 806.5s
+fold 3 epoch 4 samples 9600/11392 elapsed 967.9s
+fold 3 epoch 4 samples 11200/11392 elapsed 1128.1s
+{"epoch": 4, "dev_D0": 0.5379061371841155, "threshold": 0.3, "loss": 0.31207023875976214, "seconds": 1178.7779034999985}
+fold 4 epoch 1 samples 0/10823 elapsed 1.6s
+Resource probe complete: eval\boundary_encoder\modernbert_finetune\resource_probe.json
+fold 4 epoch 1 samples 1600/10823 elapsed 161.0s
+fold 4 epoch 1 samples 3200/10823 elapsed 321.2s
+fold 4 epoch 1 samples 4800/10823 elapsed 481.6s
+fold 4 epoch 1 samples 6400/10823 elapsed 641.3s
+fold 4 epoch 1 samples 8000/10823 elapsed 801.5s
+fold 4 epoch 1 samples 9600/10823 elapsed 961.8s
+{"epoch": 1, "dev_D0": 0.4527260179434092, "threshold": 0.25, "loss": 0.37485566296156614, "seconds": 1120.7972768000036}
+fold 4 epoch 2 samples 0/10823 elapsed 1.6s
+fold 4 epoch 2 samples 1600/10823 elapsed 162.6s
+fold 4 epoch 2 samples 3200/10823 elapsed 322.7s
+fold 4 epoch 2 samples 4800/10823 elapsed 483.2s
+fold 4 epoch 2 samples 6400/10823 elapsed 643.8s
+fold 4 epoch 2 samples 8000/10823 elapsed 803.9s
+fold 4 epoch 2 samples 9600/10823 elapsed 964.4s

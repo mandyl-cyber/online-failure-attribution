@@ -1,0 +1,27 @@
+{
+  "model": "modernbert",
+  "model_path": "vendor\\encoder_models\\modernbert",
+  "revision": {
+    "repo": "answerdotai/ModernBERT-base",
+    "revision": "8949b909ec900327062f0ebf497f51aef5e6f0c8"
+  },
+  "parameters": 149014272,
+  "shape": [
+    18636,
+    768
+  ],
+  "policy": "headtail",
+  "pack_version": 1,
+  "max_tokens": 256,
+  "device": "cuda",
+  "dtype": "float16",
+  "attention": "sdpa",
+  "preprocessing_seconds": 28.301085499999317,
+  "encoding_seconds": 3149.2750452,
+  "peak_cuda_bytes": 585317888,
+  "text_sha256": "faead2cb4409f2d9b943657a6f4781ab8e89ca7878de15a4a728370d12cbe11d",
+  "action_truncated_steps": 3715,
+  "observation_truncated_steps": 8233,
+  "frozen_pretrained": true,
+  "labels_used": false
+}

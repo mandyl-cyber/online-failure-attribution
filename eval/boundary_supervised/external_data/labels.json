@@ -1,0 +1,4874 @@
+{
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-aimo-airline-departures-56d18bbc": {
+    "boundaries": [
+      3,
+      6,
+      11,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 15,
+        "end_step_id": 15
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-cancel-async-tasks-7deaf6ad": {
+    "boundaries": [
+      2,
+      3,
+      7,
+      9
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 1
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 2,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 3,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 7,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 9,
+        "end_step_id": 11
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-decommissioning-service-with-sensitive-data-2acf97b7": {
+    "boundaries": [
+      3,
+      5,
+      7,
+      9,
+      10
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 7,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 9,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 10,
+        "end_step_id": 12
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-flood-monitoring-basic-4dd77334": {
+    "boundaries": [
+      6,
+      8
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 14
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-git-leak-recovery-7e949936": {
+    "boundaries": [
+      4,
+      8,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 17,
+        "end_step_id": 20
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-log-summary-a4fdafa1": {
+    "boundaries": [
+      6,
+      9,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 11
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-new-encrypt-command-f27fdcce": {
+    "boundaries": [
+      7,
+      10
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 10,
+        "end_step_id": 12
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-prove-plus-comm-4b1a67fa": {
+    "boundaries": [
+      6,
+      10,
+      13,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 10,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-raman-fitting-87e0e128": {
+    "boundaries": [
+      6,
+      10,
+      11,
+      16,
+      21
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 10,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 16,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 21,
+        "end_step_id": 23
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-recover-accuracy-log-746a7615": {
+    "boundaries": [
+      4,
+      6,
+      13,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-recover-obfuscated-files-155a474f": {
+    "boundaries": [
+      5,
+      7,
+      10,
+      13
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 10,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 13,
+        "end_step_id": 14
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-schedule-vacation-862edca6": {
+    "boundaries": [
+      5,
+      13,
+      18,
+      20
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 18,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 20,
+        "end_step_id": 21
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-sparql-university-b03ba08d": {
+    "boundaries": [
+      4,
+      5,
+      9
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 5,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 9,
+        "end_step_id": 11
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-sqlite-db-truncate-3b6f6b3d": {
+    "boundaries": [
+      6,
+      9,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 15,
+        "end_step_id": 17
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-sudo-llvm-ir-ae15d02f": {
+    "boundaries": [
+      7,
+      13,
+      23,
+      41,
+      50,
+      58,
+      76,
+      81,
+      95,
+      103
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 23,
+        "end_step_id": 40
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 41,
+        "end_step_id": 49
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 50,
+        "end_step_id": 57
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 58,
+        "end_step_id": 75
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 76,
+        "end_step_id": 80
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 81,
+        "end_step_id": 94
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 95,
+        "end_step_id": 102
+      },
+      {
+        "stage_id": 11,
+        "start_step_id": 103,
+        "end_step_id": 110
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-swe-bench-langcodes-3d08d6ec": {
+    "boundaries": [
+      5,
+      7,
+      11,
+      13,
+      15,
+      23,
+      28,
+      30
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 13,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 15,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 23,
+        "end_step_id": 27
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 28,
+        "end_step_id": 29
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 30,
+        "end_step_id": 30
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-torch-pipeline-parallelism-53c3a1e6": {
+    "boundaries": [
+      8,
+      18,
+      23,
+      28,
+      37
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 8,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 18,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 23,
+        "end_step_id": 27
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 28,
+        "end_step_id": 36
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 37,
+        "end_step_id": 40
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-torch-tensor-parallelism-94051bef": {
+    "boundaries": [
+      5,
+      15,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 15,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 17,
+        "end_step_id": 23
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-vertex-solver-19ac64da": {
+    "boundaries": [
+      6,
+      8,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 14
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-vimscript-vim-quine-cfb81b83": {
+    "boundaries": [
+      4,
+      10,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 10,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 15,
+        "end_step_id": 15
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-vulnerable-secret-dac67572": {
+    "boundaries": [
+      3,
+      9,
+      19,
+      24,
+      36,
+      43,
+      50,
+      61,
+      67,
+      71,
+      75,
+      82,
+      86,
+      90,
+      95
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 18
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 19,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 24,
+        "end_step_id": 35
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 36,
+        "end_step_id": 42
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 43,
+        "end_step_id": 49
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 50,
+        "end_step_id": 60
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 61,
+        "end_step_id": 66
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 67,
+        "end_step_id": 70
+      },
+      {
+        "stage_id": 11,
+        "start_step_id": 71,
+        "end_step_id": 74
+      },
+      {
+        "stage_id": 12,
+        "start_step_id": 75,
+        "end_step_id": 81
+      },
+      {
+        "stage_id": 13,
+        "start_step_id": 82,
+        "end_step_id": 85
+      },
+      {
+        "stage_id": 14,
+        "start_step_id": 86,
+        "end_step_id": 89
+      },
+      {
+        "stage_id": 15,
+        "start_step_id": 90,
+        "end_step_id": 94
+      },
+      {
+        "stage_id": 16,
+        "start_step_id": 95,
+        "end_step_id": 95
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-aimo-airline-departures-031d1188": {
+    "boundaries": [
+      5,
+      14,
+      18,
+      21
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 14,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 18,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 21,
+        "end_step_id": 23
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-analyze-access-logs-bd67be51": {
+    "boundaries": [
+      4,
+      7,
+      13
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 15
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-cancel-async-tasks-fd464cf2": {
+    "boundaries": [
+      3,
+      7,
+      17,
+      21,
+      23
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 17,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 21,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 23,
+        "end_step_id": 25
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-constraints-scheduling-da7103f2": {
+    "boundaries": [
+      5,
+      13
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-decommissioning-service-with-sensitive-data-8980b612": {
+    "boundaries": [
+      4,
+      6,
+      9,
+      14,
+      17,
+      21
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 9,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 14,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 17,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 21,
+        "end_step_id": 21
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-fix-permissions-8e0b6dc2": {
+    "boundaries": [
+      4,
+      5,
+      11,
+      16
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 5,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 16,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-flood-monitoring-basic-d6133d9e": {
+    "boundaries": [
+      7,
+      17,
+      20,
+      24
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 17,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 20,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 24,
+        "end_step_id": 26
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-git-leak-recovery-76a8fe75": {
+    "boundaries": [
+      6,
+      16,
+      20,
+      24,
+      39,
+      47,
+      53
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 16,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 20,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 24,
+        "end_step_id": 38
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 39,
+        "end_step_id": 46
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 47,
+        "end_step_id": 52
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 53,
+        "end_step_id": 58
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-jsonl-aggregator-8dc0c28a": {
+    "boundaries": [
+      5,
+      7
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 14
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-log-summary-f91a5f53": {
+    "boundaries": [
+      4,
+      8,
+      11,
+      18
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 18,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-log-summary-date-ranges-8edecc55": {
+    "boundaries": [
+      4,
+      7,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 13
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-new-encrypt-command-513a5055": {
+    "boundaries": [
+      8,
+      10,
+      16
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 8,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 10,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 16,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-pandas-etl-522639f1": {
+    "boundaries": [
+      7,
+      16,
+      18,
+      21,
+      24,
+      27
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 16,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 18,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 21,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 24,
+        "end_step_id": 26
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 27,
+        "end_step_id": 28
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-png-generation-42db12a0": {
+    "boundaries": [
+      4,
+      6,
+      8,
+      14
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 8,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 14,
+        "end_step_id": 16
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-prove-plus-comm-c45ffb06": {
+    "boundaries": [
+      6,
+      11,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 11,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 15,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-raman-fitting-e8884911": {
+    "boundaries": [
+      6,
+      17,
+      25,
+      31,
+      34,
+      40
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 17,
+        "end_step_id": 24
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 25,
+        "end_step_id": 30
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 31,
+        "end_step_id": 33
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 34,
+        "end_step_id": 39
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 40,
+        "end_step_id": 48
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-recover-accuracy-log-40125a0c": {
+    "boundaries": [
+      6,
+      9,
+      14,
+      18,
+      21,
+      24,
+      30
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 14,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 18,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 21,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 24,
+        "end_step_id": 29
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 30,
+        "end_step_id": 30
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-recover-obfuscated-files-37757918": {
+    "boundaries": [
+      4,
+      9,
+      12,
+      17,
+      24,
+      28
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 12,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 24,
+        "end_step_id": 27
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 28,
+        "end_step_id": 28
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-regex-log-0294974c": {
+    "boundaries": [
+      5,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 11,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-schedule-vacation-d12bebf4": {
+    "boundaries": [
+      4,
+      12,
+      16,
+      18,
+      27
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 12,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 16,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 18,
+        "end_step_id": 26
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 27,
+        "end_step_id": 30
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-security-vulhub-minio-4c82b58c": {
+    "boundaries": [
+      17,
+      26,
+      33,
+      37,
+      43,
+      48,
+      51,
+      57,
+      61,
+      67,
+      76,
+      79,
+      88
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 17,
+        "end_step_id": 25
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 26,
+        "end_step_id": 32
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 33,
+        "end_step_id": 36
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 37,
+        "end_step_id": 42
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 43,
+        "end_step_id": 47
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 48,
+        "end_step_id": 50
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 51,
+        "end_step_id": 56
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 57,
+        "end_step_id": 60
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 61,
+        "end_step_id": 66
+      },
+      {
+        "stage_id": 11,
+        "start_step_id": 67,
+        "end_step_id": 75
+      },
+      {
+        "stage_id": 12,
+        "start_step_id": 76,
+        "end_step_id": 78
+      },
+      {
+        "stage_id": 13,
+        "start_step_id": 79,
+        "end_step_id": 87
+      },
+      {
+        "stage_id": 14,
+        "start_step_id": 88,
+        "end_step_id": 92
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-sha-puzzle-3b107dd6": {
+    "boundaries": [
+      3,
+      9,
+      11,
+      16,
+      20
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 16,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 20,
+        "end_step_id": 20
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-simple-sheets-put-d8b3f14e": {
+    "boundaries": [
+      12,
+      17,
+      20,
+      25
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 12,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 17,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 20,
+        "end_step_id": 24
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 25,
+        "end_step_id": 25
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-sparql-professors-universities-558cf290": {
+    "boundaries": [
+      5,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 11,
+        "end_step_id": 22
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-sparql-university-d5e5f596": {
+    "boundaries": [
+      6,
+      18,
+      24,
+      32
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 18,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 24,
+        "end_step_id": 31
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 32,
+        "end_step_id": 45
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-sql-injection-attack-0a04c77a": {
+    "boundaries": [
+      6,
+      12,
+      25,
+      29,
+      34,
+      45,
+      63,
+      68,
+      73
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 12,
+        "end_step_id": 24
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 25,
+        "end_step_id": 28
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 29,
+        "end_step_id": 33
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 34,
+        "end_step_id": 44
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 45,
+        "end_step_id": 62
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 63,
+        "end_step_id": 67
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 68,
+        "end_step_id": 72
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 73,
+        "end_step_id": 74
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-sudo-llvm-ir-8f7b32b2": {
+    "boundaries": [
+      7,
+      13,
+      23,
+      36,
+      38,
+      46,
+      58,
+      79,
+      82
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 23,
+        "end_step_id": 35
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 36,
+        "end_step_id": 37
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 38,
+        "end_step_id": 45
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 46,
+        "end_step_id": 57
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 58,
+        "end_step_id": 78
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 79,
+        "end_step_id": 81
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 82,
+        "end_step_id": 82
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-swe-bench-langcodes-09de3259": {
+    "boundaries": [
+      4,
+      14
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 14,
+        "end_step_id": 17
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-torch-pipeline-parallelism-b82f2d21": {
+    "boundaries": [
+      5,
+      7,
+      9,
+      20,
+      30,
+      35,
+      38
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 9,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 20,
+        "end_step_id": 29
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 30,
+        "end_step_id": 34
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 35,
+        "end_step_id": 37
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 38,
+        "end_step_id": 48
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-torch-tensor-parallelism-7b0df27c": {
+    "boundaries": [
+      20,
+      23,
+      37,
+      48
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 20,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 23,
+        "end_step_id": 36
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 37,
+        "end_step_id": 47
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 48,
+        "end_step_id": 57
+      }
+    ],
+    "solved": false
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-vertex-solver-fc602c6f": {
+    "boundaries": [
+      5,
+      8,
+      14,
+      19,
+      21,
+      25,
+      26
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 14,
+        "end_step_id": 18
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 19,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 21,
+        "end_step_id": 24
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 25,
+        "end_step_id": 25
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 26,
+        "end_step_id": 30
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-vimscript-vim-quine-da007b60": {
+    "boundaries": [
+      9,
+      14,
+      21,
+      31,
+      41
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 9,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 14,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 21,
+        "end_step_id": 30
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 31,
+        "end_step_id": 40
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 41,
+        "end_step_id": 45
+      }
+    ],
+    "solved": true
+  },
+  "openhands-DeepSeek__DeepSeek-V3.2-vulnerable-secret-14bc7b5c": {
+    "boundaries": [
+      4,
+      6,
+      10,
+      14,
+      15,
+      16,
+      20
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 10,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 14,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 15,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 16,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 20,
+        "end_step_id": 20
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-constraints-scheduling-fc102566": {
+    "boundaries": [
+      5,
+      6,
+      8,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 8,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 11,
+        "end_step_id": 11
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-custom-memory-heap-crash-7f1d897b": {
+    "boundaries": [
+      5,
+      13,
+      24,
+      32,
+      45,
+      61,
+      76,
+      93,
+      106,
+      116,
+      132,
+      138,
+      152
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 24,
+        "end_step_id": 31
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 32,
+        "end_step_id": 44
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 45,
+        "end_step_id": 60
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 61,
+        "end_step_id": 75
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 76,
+        "end_step_id": 92
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 93,
+        "end_step_id": 105
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 106,
+        "end_step_id": 115
+      },
+      {
+        "stage_id": 11,
+        "start_step_id": 116,
+        "end_step_id": 131
+      },
+      {
+        "stage_id": 12,
+        "start_step_id": 132,
+        "end_step_id": 137
+      },
+      {
+        "stage_id": 13,
+        "start_step_id": 138,
+        "end_step_id": 151
+      },
+      {
+        "stage_id": 14,
+        "start_step_id": 152,
+        "end_step_id": 153
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-decommissioning-service-with-sensitive-data-248e2725": {
+    "boundaries": [
+      4,
+      6,
+      9,
+      14,
+      15,
+      16
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 9,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 14,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 15,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 16,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-flood-monitoring-basic-34086c3d": {
+    "boundaries": [
+      5,
+      7,
+      13
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 13
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-git-leak-recovery-91bdc6bb": {
+    "boundaries": [
+      6,
+      7,
+      12,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 12,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-jsonl-aggregator-4c7d6378": {
+    "boundaries": [
+      4,
+      6,
+      12,
+      16,
+      19
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 12,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 16,
+        "end_step_id": 18
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 19,
+        "end_step_id": 20
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-log-summary-42158d85": {
+    "boundaries": [
+      5,
+      8,
+      10
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 10,
+        "end_step_id": 11
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-log-summary-date-ranges-aa695097": {
+    "boundaries": [
+      4,
+      6,
+      12
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 12,
+        "end_step_id": 13
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-new-encrypt-command-1b7deff9": {
+    "boundaries": [
+      3,
+      8,
+      12,
+      16
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 12,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 16,
+        "end_step_id": 21
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-pandas-etl-d9c79890": {
+    "boundaries": [
+      3,
+      13,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 17,
+        "end_step_id": 20
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-prove-plus-comm-5c2eb1a9": {
+    "boundaries": [
+      6,
+      12,
+      18,
+      20,
+      23
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 12,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 18,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 20,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 23,
+        "end_step_id": 24
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-raman-fitting-d18a717a": {
+    "boundaries": [
+      3,
+      8,
+      13,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 20
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-recover-accuracy-log-695c2e74": {
+    "boundaries": [
+      5,
+      8
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 15
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-recover-obfuscated-files-f05642dd": {
+    "boundaries": [
+      5,
+      7,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 12
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-schedule-vacation-b23b802c": {
+    "boundaries": [
+      5,
+      11,
+      14,
+      16
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 11,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 14,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 16,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-security-vulhub-minio-8c5ae687": {
+    "boundaries": [
+      12,
+      19,
+      27,
+      36,
+      45,
+      50,
+      58,
+      68,
+      77,
+      81
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 12,
+        "end_step_id": 18
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 19,
+        "end_step_id": 26
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 27,
+        "end_step_id": 35
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 36,
+        "end_step_id": 44
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 45,
+        "end_step_id": 49
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 50,
+        "end_step_id": 57
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 58,
+        "end_step_id": 67
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 68,
+        "end_step_id": 76
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 77,
+        "end_step_id": 80
+      },
+      {
+        "stage_id": 11,
+        "start_step_id": 81,
+        "end_step_id": 82
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-simple-sheets-put-e968770f": {
+    "boundaries": [
+      4,
+      7,
+      10,
+      12
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 10,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 12,
+        "end_step_id": 12
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-sparql-professors-universities-14b4a1f3": {
+    "boundaries": [
+      3,
+      4,
+      12,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 4,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 12,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 19
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-sql-injection-attack-db120198": {
+    "boundaries": [
+      3,
+      13,
+      16,
+      22,
+      25,
+      39,
+      44,
+      53,
+      57,
+      63,
+      67,
+      69
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 16,
+        "end_step_id": 21
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 22,
+        "end_step_id": 24
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 25,
+        "end_step_id": 38
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 39,
+        "end_step_id": 43
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 44,
+        "end_step_id": 52
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 53,
+        "end_step_id": 56
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 57,
+        "end_step_id": 62
+      },
+      {
+        "stage_id": 11,
+        "start_step_id": 63,
+        "end_step_id": 66
+      },
+      {
+        "stage_id": 12,
+        "start_step_id": 67,
+        "end_step_id": 68
+      },
+      {
+        "stage_id": 13,
+        "start_step_id": 69,
+        "end_step_id": 74
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-sqlite-db-truncate-a1e69b03": {
+    "boundaries": [
+      3,
+      4,
+      8,
+      10
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 4,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 8,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 10,
+        "end_step_id": 11
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-sudo-llvm-ir-f15bca89": {
+    "boundaries": [
+      9,
+      13,
+      25,
+      30,
+      42
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 9,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 24
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 25,
+        "end_step_id": 29
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 30,
+        "end_step_id": 41
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 42,
+        "end_step_id": 44
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-swe-bench-langcodes-e85adcea": {
+    "boundaries": [
+      6,
+      7,
+      17,
+      19,
+      23,
+      25
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 17,
+        "end_step_id": 18
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 19,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 23,
+        "end_step_id": 24
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 25,
+        "end_step_id": 27
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-torch-pipeline-parallelism-db92e966": {
+    "boundaries": [
+      11,
+      23
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 11,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 23,
+        "end_step_id": 33
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-torch-tensor-parallelism-75375021": {
+    "boundaries": [
+      6,
+      26,
+      30,
+      43,
+      57
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 25
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 26,
+        "end_step_id": 29
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 30,
+        "end_step_id": 42
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 43,
+        "end_step_id": 56
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 57,
+        "end_step_id": 61
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Moonshot__Kimi-K2-250905-vertex-solver-16392279": {
+    "boundaries": [
+      6,
+      8,
+      12,
+      14
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 12,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 14,
+        "end_step_id": 16
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Moonshot__Kimi-K2-250905-vulnerable-secret-e5db04a0": {
+    "boundaries": [
+      11,
+      26,
+      31,
+      34
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 11,
+        "end_step_id": 25
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 26,
+        "end_step_id": 30
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 31,
+        "end_step_id": 33
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 34,
+        "end_step_id": 35
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-sudo-llvm-ir-8bbb4e38": {
+    "boundaries": [
+      5,
+      11,
+      13,
+      18
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 11,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 18,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-aimo-airline-departures-39d66bf8": {
+    "boundaries": [
+      2,
+      8,
+      9,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 1
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 2,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 9,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 11,
+        "end_step_id": 11
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-analyze-access-logs-c85e4ea2": {
+    "boundaries": [
+      4,
+      6,
+      14,
+      23
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 14,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 23,
+        "end_step_id": 23
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-decommissioning-service-with-sensitive-data-b374b8e3": {
+    "boundaries": [
+      3,
+      6,
+      10
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 10,
+        "end_step_id": 13
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-flood-monitoring-basic-944f9afb": {
+    "boundaries": [
+      5,
+      7,
+      9,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 9,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 11,
+        "end_step_id": 11
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-git-leak-recovery-40c54ddb": {
+    "boundaries": [
+      8,
+      9,
+      12,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 8,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 12,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-heterogeneous-dates-7ae7a86e": {
+    "boundaries": [
+      6,
+      8,
+      13
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 13
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-jsonl-aggregator-bfcc85e0": {
+    "boundaries": [
+      4,
+      8
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 12
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-new-encrypt-command-b43af6ee": {
+    "boundaries": [
+      9,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 9,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 17,
+        "end_step_id": 22
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-pandas-etl-3318de4e": {
+    "boundaries": [
+      4,
+      6,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 17,
+        "end_step_id": 22
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-prove-plus-comm-da989e5a": {
+    "boundaries": [
+      3,
+      5,
+      8,
+      12,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 5,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 8,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 12,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 15,
+        "end_step_id": 15
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-raman-fitting-82d8e72c": {
+    "boundaries": [
+      7,
+      21,
+      31,
+      40
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 21,
+        "end_step_id": 30
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 31,
+        "end_step_id": 39
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 40,
+        "end_step_id": 41
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-recover-obfuscated-files-d275a9a1": {
+    "boundaries": [
+      5,
+      7,
+      11,
+      14,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 14,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 17,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-regex-log-974164b9": {
+    "boundaries": [
+      3,
+      9,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 15,
+        "end_step_id": 16
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-schedule-vacation-83baceb3": {
+    "boundaries": [
+      4,
+      12,
+      16,
+      18,
+      20
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 12,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 16,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 18,
+        "end_step_id": 19
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 20,
+        "end_step_id": 20
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-sha-puzzle-1452a6f6": {
+    "boundaries": [
+      6,
+      16
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 16,
+        "end_step_id": 20
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-sparql-university-6927d1eb": {
+    "boundaries": [
+      7,
+      16
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 16,
+        "end_step_id": 16
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-sqlite-db-truncate-69eb0769": {
+    "boundaries": [
+      8,
+      19,
+      26,
+      34,
+      48,
+      58,
+      70,
+      84
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 8,
+        "end_step_id": 18
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 19,
+        "end_step_id": 25
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 26,
+        "end_step_id": 33
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 34,
+        "end_step_id": 47
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 48,
+        "end_step_id": 57
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 58,
+        "end_step_id": 69
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 70,
+        "end_step_id": 83
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 84,
+        "end_step_id": 94
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-sudo-llvm-ir-c429fecd": {
+    "boundaries": [
+      6,
+      16,
+      24,
+      31,
+      37,
+      45,
+      55,
+      67,
+      84,
+      94,
+      108,
+      122,
+      137,
+      149,
+      161,
+      171,
+      191,
+      201,
+      222,
+      242,
+      261,
+      276,
+      289,
+      301,
+      313,
+      324,
+      337,
+      367,
+      387,
+      406,
+      415,
+      438,
+      454,
+      467,
+      480,
+      495
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 16,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 24,
+        "end_step_id": 30
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 31,
+        "end_step_id": 36
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 37,
+        "end_step_id": 44
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 45,
+        "end_step_id": 54
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 55,
+        "end_step_id": 66
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 67,
+        "end_step_id": 83
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 84,
+        "end_step_id": 93
+      },
+      {
+        "stage_id": 11,
+        "start_step_id": 94,
+        "end_step_id": 107
+      },
+      {
+        "stage_id": 12,
+        "start_step_id": 108,
+        "end_step_id": 121
+      },
+      {
+        "stage_id": 13,
+        "start_step_id": 122,
+        "end_step_id": 136
+      },
+      {
+        "stage_id": 14,
+        "start_step_id": 137,
+        "end_step_id": 148
+      },
+      {
+        "stage_id": 15,
+        "start_step_id": 149,
+        "end_step_id": 160
+      },
+      {
+        "stage_id": 16,
+        "start_step_id": 161,
+        "end_step_id": 170
+      },
+      {
+        "stage_id": 17,
+        "start_step_id": 171,
+        "end_step_id": 190
+      },
+      {
+        "stage_id": 18,
+        "start_step_id": 191,
+        "end_step_id": 200
+      },
+      {
+        "stage_id": 19,
+        "start_step_id": 201,
+        "end_step_id": 221
+      },
+      {
+        "stage_id": 20,
+        "start_step_id": 222,
+        "end_step_id": 241
+      },
+      {
+        "stage_id": 21,
+        "start_step_id": 242,
+        "end_step_id": 260
+      },
+      {
+        "stage_id": 22,
+        "start_step_id": 261,
+        "end_step_id": 275
+      },
+      {
+        "stage_id": 23,
+        "start_step_id": 276,
+        "end_step_id": 288
+      },
+      {
+        "stage_id": 24,
+        "start_step_id": 289,
+        "end_step_id": 300
+      },
+      {
+        "stage_id": 25,
+        "start_step_id": 301,
+        "end_step_id": 312
+      },
+      {
+        "stage_id": 26,
+        "start_step_id": 313,
+        "end_step_id": 323
+      },
+      {
+        "stage_id": 27,
+        "start_step_id": 324,
+        "end_step_id": 336
+      },
+      {
+        "stage_id": 28,
+        "start_step_id": 337,
+        "end_step_id": 366
+      },
+      {
+        "stage_id": 29,
+        "start_step_id": 367,
+        "end_step_id": 386
+      },
+      {
+        "stage_id": 30,
+        "start_step_id": 387,
+        "end_step_id": 405
+      },
+      {
+        "stage_id": 31,
+        "start_step_id": 406,
+        "end_step_id": 414
+      },
+      {
+        "stage_id": 32,
+        "start_step_id": 415,
+        "end_step_id": 437
+      },
+      {
+        "stage_id": 33,
+        "start_step_id": 438,
+        "end_step_id": 453
+      },
+      {
+        "stage_id": 34,
+        "start_step_id": 454,
+        "end_step_id": 466
+      },
+      {
+        "stage_id": 35,
+        "start_step_id": 467,
+        "end_step_id": 479
+      },
+      {
+        "stage_id": 36,
+        "start_step_id": 480,
+        "end_step_id": 494
+      },
+      {
+        "stage_id": 37,
+        "start_step_id": 495,
+        "end_step_id": 500
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-swe-bench-langcodes-ed59da58": {
+    "boundaries": [
+      14,
+      16,
+      17,
+      21,
+      39
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 14,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 16,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 17,
+        "end_step_id": 20
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 21,
+        "end_step_id": 38
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 39,
+        "end_step_id": 40
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-torch-pipeline-parallelism-96476ab0": {
+    "boundaries": [
+      3,
+      7,
+      18,
+      24,
+      34
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 18,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 24,
+        "end_step_id": 33
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 34,
+        "end_step_id": 43
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-torch-tensor-parallelism-253f4b40": {
+    "boundaries": [
+      3,
+      24,
+      26,
+      29,
+      36,
+      41
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 23
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 24,
+        "end_step_id": 25
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 26,
+        "end_step_id": 28
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 29,
+        "end_step_id": 35
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 36,
+        "end_step_id": 40
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 41,
+        "end_step_id": 56
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-vertex-solver-e0ce0dc4": {
+    "boundaries": [
+      6,
+      8,
+      11,
+      14,
+      16
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 14,
+        "end_step_id": 15
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 16,
+        "end_step_id": 19
+      }
+    ],
+    "solved": true
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-vimscript-vim-quine-b2b4d301": {
+    "boundaries": [
+      3,
+      11,
+      15,
+      22,
+      37,
+      43,
+      56,
+      70,
+      100
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 11,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 15,
+        "end_step_id": 21
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 22,
+        "end_step_id": 36
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 37,
+        "end_step_id": 42
+      },
+      {
+        "stage_id": 7,
+        "start_step_id": 43,
+        "end_step_id": 55
+      },
+      {
+        "stage_id": 8,
+        "start_step_id": 56,
+        "end_step_id": 69
+      },
+      {
+        "stage_id": 9,
+        "start_step_id": 70,
+        "end_step_id": 99
+      },
+      {
+        "stage_id": 10,
+        "start_step_id": 100,
+        "end_step_id": 109
+      }
+    ],
+    "solved": false
+  },
+  "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-vulnerable-secret-473b1d94": {
+    "boundaries": [
+      8,
+      14,
+      19,
+      23,
+      30
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 8,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 14,
+        "end_step_id": 18
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 19,
+        "end_step_id": 22
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 23,
+        "end_step_id": 29
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 30,
+        "end_step_id": 33
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-astropy__astropy-13579-5642ba76": {
+    "boundaries": [
+      3,
+      6,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 15,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-astropy__astropy-14309-f1105f6a": {
+    "boundaries": [
+      5,
+      6,
+      7
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 7,
+        "end_step_id": 10
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-astropy__astropy-7606-fed58415": {
+    "boundaries": [
+      7,
+      10,
+      13,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 10,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 15,
+        "end_step_id": 17
+      }
+    ],
+    "solved": false
+  },
+  "openhands-OpenAI__GPT-5-django__django-14787-477bbfba": {
+    "boundaries": [
+      5,
+      6,
+      8,
+      14
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 4
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 5,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 6,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 8,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 14,
+        "end_step_id": 15
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-django__django-14915-c39021a7": {
+    "boundaries": [
+      7,
+      8,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 7,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 8,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 15,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-django__django-16527-28b1af01": {
+    "boundaries": [
+      8,
+      12,
+      18
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 8,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 12,
+        "end_step_id": 17
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 18,
+        "end_step_id": 19
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24149-6cb0332a": {
+    "boundaries": [
+      2,
+      9,
+      11
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 1
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 2,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 13
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-pydata__xarray-7233-3861baee": {
+    "boundaries": [
+      6,
+      11,
+      13,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 11,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 19
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-13439-b8455ed5": {
+    "boundaries": [
+      8,
+      9,
+      13
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 7
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 8,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 12
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-14141-261f75af": {
+    "boundaries": [
+      3,
+      11,
+      14,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 11,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 14,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 17,
+        "end_step_id": 19
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-15100-17d231ff": {
+    "boundaries": [
+      4,
+      7,
+      9,
+      11,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 6
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 7,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 9,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 11,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 6,
+        "start_step_id": 15,
+        "end_step_id": 18
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-9288-933bb686": {
+    "boundaries": [
+      4,
+      10,
+      11,
+      15
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 9
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 10,
+        "end_step_id": 10
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 11,
+        "end_step_id": 14
+      },
+      {
+        "stage_id": 5,
+        "start_step_id": 15,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-sympy__sympy-23824-509bb914": {
+    "boundaries": [
+      3,
+      9,
+      14
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 9,
+        "end_step_id": 13
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 14,
+        "end_step_id": 17
+      }
+    ],
+    "solved": true
+  },
+  "openhands-OpenAI__GPT-5-sympy__sympy-24213-9b588ba7": {
+    "boundaries": [
+      9,
+      12,
+      17
+    ],
+    "stages": [
+      {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 8
+      },
+      {
+        "stage_id": 2,
+        "start_step_id": 9,
+        "end_step_id": 11
+      },
+      {
+        "stage_id": 3,
+        "start_step_id": 12,
+        "end_step_id": 16
+      },
+      {
+        "stage_id": 4,
+        "start_step_id": 17,
+        "end_step_id": 19
+      }
+    ],
+    "solved": true
+  }
+}

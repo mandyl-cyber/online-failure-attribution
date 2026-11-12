@@ -1,0 +1,90 @@
+[
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-chem-rf-271f890f",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-lean4-proof-c2cf74ba",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-mteb-eval-09ae8a74",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-train-fasttext-b326259b",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-3d-model-format-legacy-109d1beb",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-adaptive-rejection-sampler-5191debf",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-add-benchmark-lm-eval-harness-f672ceba",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-break-filter-js-from-html-eb19b6bc",
+    "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-break-filter-js-from-html-eb19b6bc（试过 6 个位置，根目录 codetrace_bench）"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-caffe-cifar-10-f7852850",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-cross-entropy-method-5d3f18d2",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-db-wal-recovery-2063f818",
+    "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-db-wal-recovery-2063f818（试过 6 个位置，根目录 codetrace_bench）"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-dna-assembly-1d47c200",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-feal-differential-cryptanalysis-5a64f808",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-fibonacci-server-b246383b",
+    "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-fibonacci-server-b246383b（试过 6 个位置，根目录 codetrace_bench）"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-filter-js-from-html-0661aa2d",
+    "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-filter-js-from-html-0661aa2d（试过 6 个位置，根目录 codetrace_bench）"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-4cb80bf9",
+    "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-4cb80bf9（试过 6 个位置，根目录 codetrace_bench）"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-install-windows-3.11-17800883",
+    "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-install-windows-3.11-17800883（试过 6 个位置，根目录 codetrace_bench）"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-largest-eigenval-d5360284",
+    "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-largest-eigenval-d5360284（试过 6 个位置，根目录 codetrace_bench）"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-lean4-proof-313ecb3f",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-llm-inference-batching-scheduler-bb7aecc5",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-make-mips-interpreter-45083164",
+    "reason": "misaligned"
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-neuron-to-jaxley-conversion-e342c3ae",
+    "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-neuron-to-jaxley-conversion-e342c3ae（试过 6 个位置，根目录 codetrace_bench）"
+  }
+]

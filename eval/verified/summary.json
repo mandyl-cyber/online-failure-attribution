@@ -1,0 +1,153 @@
+{
+ "n_traj": 498,
+ "skipped": {
+  "misaligned": 14,
+  "not_found": 8
+ },
+ "n_steps": 20595,
+ "tol": 1,
+ "boundary": {
+  "node": {
+   "precision": 0.483,
+   "recall": 0.3153,
+   "f1": 0.3815,
+   "macro_f1": 0.3456,
+   "n_pred": 1795,
+   "n_gold": 2750
+  },
+  "phase": {
+   "precision": 0.3824,
+   "recall": 0.6687,
+   "f1": 0.4866,
+   "macro_f1": 0.5237,
+   "n_pred": 4809,
+   "n_gold": 2750
+  }
+ },
+ "boundary_uniform_baseline": {
+  "precision": 0.439,
+  "recall": 0.4727,
+  "f1": 0.4553
+ },
+ "error_landing": {
+  "n": 594,
+  "missing": 0,
+  "state_change_rate": 0.6347,
+  "verify_rate": 0.0859,
+  "by_tool_class": {
+   "EDIT": 266,
+   "EXEC": 89,
+   "EXEC_WRITE": 83,
+   "INSTALL": 83,
+   "OTHER": 23,
+   "PLAN": 19,
+   "FINISH": 13,
+   "READ": 8,
+   "VERIFY": 7,
+   "SEARCH": 3
+  }
+ },
+ "window_proxy": {
+  "any": {
+   "n": 209,
+   "closed": 166,
+   "never_closed_rate": 0.2057,
+   "median": 4.0,
+   "mean": 6.84,
+   "p25": 2,
+   "p75": 9,
+   "p90": 16,
+   "share_eq_1": 0.1867,
+   "share_ge_3": 0.6627,
+   "hist": {
+    "1": 31,
+    "2": 25,
+    "3": 16,
+    "4": 15,
+    "5": 8,
+    "6": 16,
+    "7": 4,
+    "8": 6,
+    "9": 5,
+    "10": 3,
+    "11": 2,
+    "12": 3,
+    "13": 4,
+    "14": 6,
+    "15": 5,
+    "16": 3,
+    "17": 3,
+    "18": 1,
+    "19": 2,
+    "21": 8
+   }
+  },
+  "targeted": {
+   "n": 209,
+   "closed": 136,
+   "never_closed_rate": 0.3493,
+   "median": 6.0,
+   "mean": 7.39,
+   "p25": 3,
+   "p75": 10,
+   "p90": 16,
+   "share_eq_1": 0.0735,
+   "share_ge_3": 0.7868,
+   "hist": {
+    "1": 10,
+    "2": 19,
+    "3": 11,
+    "4": 17,
+    "5": 9,
+    "6": 17,
+    "7": 9,
+    "8": 6,
+    "9": 4,
+    "10": 4,
+    "11": 5,
+    "12": 2,
+    "13": 2,
+    "14": 3,
+    "15": 4,
+    "16": 3,
+    "17": 1,
+    "18": 2,
+    "19": 2,
+    "21": 6
+   }
+  },
+  "faap_reference": {
+   "median": 1,
+   "share_ge_3": 0.44
+  }
+ },
+ "event_recall": {
+  "instances": {
+   "n": 209,
+   "recall": 0.4115
+  },
+  "incorrect_steps": {
+   "n": 594,
+   "recall": 0.4141
+  }
+ },
+ "recall_k": 3,
+ "event_rate_per_step": {
+  "EXPLORE": 0.6321,
+  "STATE_CHANGE": 0.1884,
+  "VERIFY_RUN": 0.1663,
+  "REFERENCE": 0.094,
+  "VERIFY_PASS": 0.0598,
+  "HANDOFF": 0.0343,
+  "PLAN_SWITCH": 0.0231,
+  "IRREVERSIBLE": 0.0051
+ },
+ "per_step_ms": {
+  "median": 0.262,
+  "p99": 5.532
+ },
+ "gates": {
+  "boundary_f1>=0.70": false,
+  "event_recall>=0.60": false
+ }
+}

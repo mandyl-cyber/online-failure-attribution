@@ -1,0 +1,175 @@
+{
+  "sample_method": "two existing archives per source/agent stratum, SHA256(41:traj_id) ascending",
+  "sampled": 12,
+  "results": [
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-7233-3861baee",
+      "source": "SWE",
+      "agent": "OpenHands",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\openhands-OpenAI__GPT-5-pydata__xarray-7233-3861baee.tar.zst",
+      "annotation_relpath": "merged_cleaned_three_waves/openhands__verified/pydata__xarray-7233",
+      "annotation_path_exists": false,
+      "members": 26,
+      "top_level_prefixes": [
+        "swe_raw"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-f8e7fea0becae25ae20606f1422068137189fe9e-7348b67b",
+      "source": "SWE",
+      "agent": "OpenHands",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-f8e7fea0becae25ae20606f1422068137189fe9e-7348b67b.tar.zst",
+      "annotation_relpath": "merged_cleaned_step25/openhands__pro/instance_qutebrowser__qutebrowser-f8e7fea0becae25ae20606f1422068137189fe9e",
+      "annotation_path_exists": false,
+      "members": 46,
+      "top_level_prefixes": [
+        "swe_raw"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "sweagent-OpenAI__GPT-5-huggingface__transformers-19590-6ee9899a",
+      "source": "SWE",
+      "agent": "SWE-agent",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\sweagent-OpenAI__GPT-5-huggingface__transformers-19590-6ee9899a.tar.zst",
+      "annotation_relpath": "merged_cleaned_step25/swe_agent__poly/huggingface__transformers-19590",
+      "annotation_path_exists": false,
+      "members": 10,
+      "top_level_prefixes": [
+        "swe_raw"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "sweagent-OpenAI__GPT-5-fasterxml__jackson-databind-4050-31d6dd30",
+      "source": "SWE",
+      "agent": "SWE-agent",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\sweagent-OpenAI__GPT-5-fasterxml__jackson-databind-4050-31d6dd30.tar.zst",
+      "annotation_relpath": "merged_cleaned_three_waves/swe_agent__multi/fasterxml__jackson-databind-4050",
+      "annotation_path_exists": false,
+      "members": 4,
+      "top_level_prefixes": [
+        "swe_raw"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "miniswe-OpenAI__GPT-5-instance_ansible__ansible-942424e10b2095a173dbd78e7128f52f7995849b-v30a923fb5c164d6cd18280c02422f75e611e8fb2-f0eb08e8",
+      "source": "SWE",
+      "agent": "mini-SWE-agent",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\miniswe-OpenAI__GPT-5-instance_ansible__ansible-942424e10b2095a173dbd78e7128f52f7995849b-v30a923fb5c164d6cd18280c02422f75e611e8fb2-f0eb08e8.tar.zst",
+      "annotation_relpath": "merged_cleaned_three_waves/mini_swe_agent__pro/instance_ansible__ansible-942424e10b2095a173dbd78e7128f52f7995849b-v30a923fb5c164d6cd18280c02422f75e611e8fb2",
+      "annotation_path_exists": false,
+      "members": 2,
+      "top_level_prefixes": [
+        "swe_raw"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "miniswe-OpenAI__GPT-5-sveltejs__svelte-12649-2e0c7be4",
+      "source": "SWE",
+      "agent": "mini-SWE-agent",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\miniswe-OpenAI__GPT-5-sveltejs__svelte-12649-2e0c7be4.tar.zst",
+      "annotation_relpath": "merged_cleaned_three_waves/mini_swe_agent__multi/sveltejs__svelte-12649",
+      "annotation_path_exists": false,
+      "members": 2,
+      "top_level_prefixes": [
+        "swe_raw"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "openhands-Moonshot__Kimi-K2-250905-install-windows-xp-8f7eb364",
+      "source": "Terminal-Bench",
+      "agent": "OpenHands",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\openhands-Moonshot__Kimi-K2-250905-install-windows-xp-8f7eb364.tar.zst",
+      "annotation_relpath": "agent_failure_analysis/step_annotations_all/openhands/Moonshot__Kimi-K2-250905/openhands-kimi/install-windows-xp",
+      "annotation_path_exists": false,
+      "members": 142,
+      "top_level_prefixes": [
+        "openhands"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-feal-linear-cryptanalysis-a0347850",
+      "source": "Terminal-Bench",
+      "agent": "OpenHands",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-feal-linear-cryptanalysis-a0347850.tar.zst",
+      "annotation_relpath": "agent_failure_analysis/step_annotations_all/openhands/Qwen__Qwen3-Coder-480B-A35B-Instruct/openhands-480b/feal-linear-cryptanalysis",
+      "annotation_path_exists": false,
+      "members": 146,
+      "top_level_prefixes": [
+        "openhands"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "terminus2-Anthropic__Claude-Sonnet-4-20250514-Thinking-gcode-to-text-04074693",
+      "source": "Terminal-Bench",
+      "agent": "Terminus2",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\terminus2-Anthropic__Claude-Sonnet-4-20250514-Thinking-gcode-to-text-04074693.tar.zst",
+      "annotation_relpath": "agent_failure_analysis/step_annotations_all/terminus2/Anthropic__Claude-Sonnet-4-20250514-Thinking/terminus2-claude/gcode-to-text",
+      "annotation_path_exists": false,
+      "members": 51,
+      "top_level_prefixes": [
+        "terminus2"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "terminus2-Anthropic__Claude-Sonnet-4-20250514-Thinking-triton-interpret-13f3a750",
+      "source": "Terminal-Bench",
+      "agent": "Terminus2",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\terminus2-Anthropic__Claude-Sonnet-4-20250514-Thinking-triton-interpret-13f3a750.tar.zst",
+      "annotation_relpath": "agent_failure_analysis/step_annotations_all/terminus2/Anthropic__Claude-Sonnet-4-20250514-Thinking/terminus2-claude/triton-interpret",
+      "annotation_path_exists": false,
+      "members": 123,
+      "top_level_prefixes": [
+        "terminus2"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "miniswe-Moonshot__Kimi-K2-250905-sqlite-with-gcov-f77cae20",
+      "source": "Terminal-Bench",
+      "agent": "mini-SWE-agent",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\miniswe-Moonshot__Kimi-K2-250905-sqlite-with-gcov-f77cae20.tar.zst",
+      "annotation_relpath": "agent_failure_analysis/step_annotations_all/miniswe/Moonshot__Kimi-K2-250905/miniswe-kimi/sqlite-with-gcov",
+      "annotation_path_exists": false,
+      "members": 10,
+      "top_level_prefixes": [
+        "miniswe"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    },
+    {
+      "traj_id": "miniswe-DeepSeek__DeepSeek-V3.2-mteb-eval-de672501",
+      "source": "Terminal-Bench",
+      "agent": "mini-SWE-agent",
+      "archive": "codetrace_bench\\bench_artifacts\\full\\miniswe-DeepSeek__DeepSeek-V3.2-mteb-eval-de672501.tar.zst",
+      "annotation_relpath": "agent_failure_analysis/step_annotations_all/miniswe/DeepSeek__DeepSeek-V3.2/miniswe_ds3.2/mteb-eval",
+      "annotation_path_exists": false,
+      "members": 10,
+      "top_level_prefixes": [
+        "miniswe"
+      ],
+      "candidate_files": [],
+      "json_structures": []
+    }
+  ],
+  "limitation": "Absence in sampled raw-artifact archives does not prove absence in every archive or upstream annotation repository; semantic key candidates require provenance verification."
+}

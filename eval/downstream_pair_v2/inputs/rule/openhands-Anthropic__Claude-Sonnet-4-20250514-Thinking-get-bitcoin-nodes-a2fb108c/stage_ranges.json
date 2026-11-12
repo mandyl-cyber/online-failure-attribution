@@ -1,0 +1,117 @@
+[
+  {
+    "stage_id": 1,
+    "start_step_id": 1,
+    "end_step_id": 1
+  },
+  {
+    "stage_id": 2,
+    "start_step_id": 2,
+    "end_step_id": 2
+  },
+  {
+    "stage_id": 3,
+    "start_step_id": 3,
+    "end_step_id": 5
+  },
+  {
+    "stage_id": 4,
+    "start_step_id": 6,
+    "end_step_id": 7
+  },
+  {
+    "stage_id": 5,
+    "start_step_id": 8,
+    "end_step_id": 8
+  },
+  {
+    "stage_id": 6,
+    "start_step_id": 9,
+    "end_step_id": 10
+  },
+  {
+    "stage_id": 7,
+    "start_step_id": 11,
+    "end_step_id": 15
+  },
+  {
+    "stage_id": 8,
+    "start_step_id": 16,
+    "end_step_id": 19
+  },
+  {
+    "stage_id": 9,
+    "start_step_id": 20,
+    "end_step_id": 20
+  },
+  {
+    "stage_id": 10,
+    "start_step_id": 21,
+    "end_step_id": 22
+  },
+  {
+    "stage_id": 11,
+    "start_step_id": 23,
+    "end_step_id": 23
+  },
+  {
+    "stage_id": 12,
+    "start_step_id": 24,
+    "end_step_id": 25
+  },
+  {
+    "stage_id": 13,
+    "start_step_id": 26,
+    "end_step_id": 32
+  },
+  {
+    "stage_id": 14,
+    "start_step_id": 33,
+    "end_step_id": 33
+  },
+  {
+    "stage_id": 15,
+    "start_step_id": 34,
+    "end_step_id": 34
+  },
+  {
+    "stage_id": 16,
+    "start_step_id": 35,
+    "end_step_id": 36
+  },
+  {
+    "stage_id": 17,
+    "start_step_id": 37,
+    "end_step_id": 40
+  },
+  {
+    "stage_id": 18,
+    "start_step_id": 41,
+    "end_step_id": 41
+  },
+  {
+    "stage_id": 19,
+    "start_step_id": 42,
+    "end_step_id": 42
+  },
+  {
+    "stage_id": 20,
+    "start_step_id": 43,
+    "end_step_id": 45
+  },
+  {
+    "stage_id": 21,
+    "start_step_id": 46,
+    "end_step_id": 51
+  },
+  {
+    "stage_id": 22,
+    "start_step_id": 52,
+    "end_step_id": 58
+  },
+  {
+    "stage_id": 23,
+    "start_step_id": 59,
+    "end_step_id": 60
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "n_pairs": 40,
+  "official_commit": "2d302191dd07e7c0c2da6f7a5e9451c7cbb62d34",
+  "normalizer_validated": true,
+  "prompt_stage_injection_validated": true,
+  "identical_nonstage_inputs": true,
+  "inference_completed": false,
+  "compatibility_adapter": "BlankSafeStore guards upstream whitespace-only action IndexError; raw actions unchanged",
+  "selection": "existing stratified 40-task M2 CodeTraceBench subset",
+  "limitation": "trajectory-only diagnostic ablation, no original executable task sandbox",
+  "missing": [
+    "model/API configuration",
+    "budget",
+    "POSIX isolated execution environment"
+  ]
+}

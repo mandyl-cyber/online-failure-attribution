@@ -1,0 +1,1 @@
+{"event":{"action":"run","args":{"command":"git config user.name || true; git config user.email || true","security_risk":"LOW"},"id":"call_3hfd9j9W02BQYHAf4QKhJ6A6","source":"agent"},"kind":"event","sha256":"e47a872600b749f67960cf5deb4aac671956e7725cae20c370ec43786d85b13d"}

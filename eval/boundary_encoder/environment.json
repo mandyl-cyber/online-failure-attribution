@@ -1,0 +1,12 @@
+{
+  "python_environment": ".venv-encoder",
+  "torch": "2.7.1+cu128",
+  "transformers": "4.51.3",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_matrix_test": "64x64 ones multiplication returned 64.0 on CUDA",
+  "cuda_available": true,
+  "driver": "577.02",
+  "observed_during_minilm_encoding": {"pstate": "P8", "sm_clock_mhz": 52, "power_watts": 4.94, "memory_mib": 342},
+  "power_settings_changed": false,
+  "note": "Observed low GPU clock; timing is specific to current machine conditions, not advertised GPU capacity. Existing CPU environment remains unchanged."
+}

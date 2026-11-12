@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-12",
+  "status": "research_only_no_encoder_download_or_training",
+  "hardware": {
+    "cpu": "Intel Core Ultra 9 185H",
+    "physical_cores": 16,
+    "logical_processors": 22,
+    "physical_memory_bytes": 33945935872,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "gpu_memory_mib": 8188,
+    "driver": "577.02"
+  },
+  "environment": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.19.0",
+    "torch_cuda_build": null,
+    "torch_cuda_available": false,
+    "torch_threads": 16,
+    "onnxruntime_installed": false,
+    "sentence_transformers_installed": false
+  },
+  "data": {
+    "path": "eval/boundary_supervised/data_fixed",
+    "trajectories": 461,
+    "steps": 18636,
+    "candidate_positions_excluding_first": 18175,
+    "positive_boundaries": 2564,
+    "positive_rate": 0.14107290233837688,
+    "action_chars_median": 62,
+    "observation_chars_median": 464,
+    "action_over_1000_chars": 1609,
+    "observation_over_600_chars": 8325,
+    "length_method": "Recovered rounded raw lengths using expm1 of cached log1p length features; not token lengths",
+    "exact_false_positive_transition_top": {"EXEC->EDIT": 160, "PLAN->READ": 142, "EXEC->READ": 132, "VERIFY->EDIT": 116, "PLAN->VERIFY": 103, "EXEC_WRITE->PLAN": 103},
+    "exact_false_negative_transition_top": {"EXEC->EXEC": 122, "READ->READ": 68, "READ->SEARCH": 59, "READ->EXEC": 54, "EXEC->READ": 54, "SEARCH->READ": 49},
+    "error_method": "Existing supervised out-of-fold predictions, exact boundary set differences, not tolerance-1 matching"
+  }
+}

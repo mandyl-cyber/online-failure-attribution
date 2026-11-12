@@ -1,0 +1,1 @@
+{"name": "newtext_tfidf", "threshold": 0.25, "input_dimension": 16158, "cache": "eval\\boundary_encoder\\minilm_headtail", "seed": 41}

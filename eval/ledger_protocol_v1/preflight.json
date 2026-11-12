@@ -1,0 +1,36 @@
+{
+  "status": "prepared_not_executed",
+  "trajectories": 40,
+  "task_groups": 40,
+  "seed": 41,
+  "input_sha256": {
+    "docs\\ledger\\experiment_v1.json": "52424bbbb2cee95f9a129964d7ce3268d3fdfdeb2377e6cfcbae05c928269e1a",
+    "eval\\boundary_supervised\\data_fixed\\records.json": "b9cf9924e747576c527e4351f1db34c52420526c5379fde0b8900eaa4517a4af",
+    "codetrace_bench\\bench_manifest.verified.jsonl": "bd02d3dafa145146567e87f7d55b158ef0dd30043d4a4c2c03e631c2056ff92e",
+    "eval\\plan_payload_audit\\report.json": "ea7a72bb027b2d19e7b4fdd82c83f213aae56354880e994b13ffc7daf9747b31",
+    "eval\\plan_payload_audit\\payloads.jsonl": "cbaa24b055a6ba57f0e45b0bf30674b1ada17eefe07cc1580a7f179445aaa62a"
+  },
+  "plan_audit_counts": {
+    "task_tracking_steps": 1649,
+    "empty_action_steps": 1378,
+    "affected_trajectories": 270,
+    "recovered_empty_steps": 1378,
+    "unrecovered_empty_steps": 0
+  },
+  "checks": [
+    "unique_trajectory_ids",
+    "unique_selected_task_groups",
+    "exact_stage_coverage",
+    "raw_sources_exist_and_hashed",
+    "four_equal_source_outcome_strata"
+  ],
+  "blockers": [
+    "public-plan-v2 runtime input not implemented",
+    "ledger writer not implemented",
+    "API provider/model/prompt/cost cap/data release scope unset",
+    "task text evidence export and cross-dataset overlap audit pending"
+  ],
+  "network_calls": 0,
+  "training_started": false,
+  "limitations": "Previously inspected development data; coverage checks do not prove raw alignment or semantic fidelity."
+}

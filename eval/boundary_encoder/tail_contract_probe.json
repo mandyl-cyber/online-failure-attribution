@@ -1,0 +1,11 @@
+{
+  "model": "vendor/encoder_models/modernbert",
+  "device": "cpu",
+  "dtype": "float32",
+  "attention": "sdpa",
+  "input": "run pytest and inspect output",
+  "prefix_roundtrip_dtype": "float16",
+  "prefix_reconstruction_cosine": 0.9999999403953552,
+  "last_layer_gradient_finite": true,
+  "scope": "Single-example reconstruction and gradient smoke check, not a full training or quality evaluation"
+}

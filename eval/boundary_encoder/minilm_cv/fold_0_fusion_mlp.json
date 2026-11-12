@@ -1,0 +1,1 @@
+{"name": "fusion_mlp", "threshold": 0.25, "input_dimension": 2082, "cache": "eval\\boundary_encoder\\minilm_headtail", "seed": 41}

@@ -1,0 +1,259 @@
+{
+  "n_traj": 461,
+  "n_steps": 18636,
+  "groups": 424,
+  "folds": {
+    "4": 90,
+    "0": 93,
+    "1": 94,
+    "3": 89,
+    "2": 95
+  },
+  "sources": {
+    "SWE": 276,
+    "Terminal-Bench": 185
+  },
+  "skipped": [
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-942424e10b2095a173dbd78e7128f52f7995849b-v30a923fb5c164d6cd18280c02422f75e611e8fb2-83422c29",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-13398-3106f9b1",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12143-d3ae8e5d",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12273-1b422a26",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12406-31e1b541",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12663-bd7310c4",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12858-d5428d4f",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13158-2005ee30",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13279-1ee67b92",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13551-37eed156",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14351-058e4e93",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15382-b02d3059",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15563-19924064",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15814-08049bd6",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15930-f153f9fc",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15957-a39a6ef5",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-16032-20a5e8c7",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-16631-025f3fd2",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-16819-bf405b1f",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-20676-6de044eb",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-20826-a8689b03",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-23299-b99579d0",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-25775-154f8978",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-26342-77c050b8",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-7229-fd493310",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pylint-dev__pylint-4604-4102688b",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-10356-178189eb",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-11445-6f9d933b",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8551-41e5e5f0",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-12489-79c94620",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-23413-767fb95b",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-153121-9abfbc86",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-160342-be2f227f",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-23229-7eece48c",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-28186-58517160",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-6604-f6c47d03",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15278-f285d65e",
+      "reason": "Unexplained extra steps"
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-chem-rf-271f890f",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-lean4-proof-c2cf74ba",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-mteb-eval-09ae8a74",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-train-fasttext-b326259b",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-3d-model-format-legacy-109d1beb",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-adaptive-rejection-sampler-5191debf",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-add-benchmark-lm-eval-harness-f672ceba",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-break-filter-js-from-html-eb19b6bc",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-break-filter-js-from-html-eb19b6bc（试过 6 个位置，根目录 codetrace_bench）"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-caffe-cifar-10-f7852850",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-cross-entropy-method-5d3f18d2",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-db-wal-recovery-2063f818",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-db-wal-recovery-2063f818（试过 6 个位置，根目录 codetrace_bench）"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-dna-assembly-1d47c200",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-feal-differential-cryptanalysis-5a64f808",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-fibonacci-server-b246383b",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-fibonacci-server-b246383b（试过 6 个位置，根目录 codetrace_bench）"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-filter-js-from-html-0661aa2d",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-filter-js-from-html-0661aa2d（试过 6 个位置，根目录 codetrace_bench）"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-4cb80bf9",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-get-bitcoin-nodes-4cb80bf9（试过 6 个位置，根目录 codetrace_bench）"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-install-windows-3.11-17800883",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-install-windows-3.11-17800883（试过 6 个位置，根目录 codetrace_bench）"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-largest-eigenval-d5360284",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-largest-eigenval-d5360284（试过 6 个位置，根目录 codetrace_bench）"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-lean4-proof-313ecb3f",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-llm-inference-batching-scheduler-bb7aecc5",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-make-mips-interpreter-45083164",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-neuron-to-jaxley-conversion-e342c3ae",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-neuron-to-jaxley-conversion-e342c3ae（试过 6 个位置，根目录 codetrace_bench）"
+    }
+  ],
+  "feature_version": 1,
+  "manifest_sha256": "bd02d3dafa145146567e87f7d55b158ef0dd30043d4a4c2c03e631c2056ff92e",
+  "label_policy": "start-of-stage binary target; first step excluded",
+  "alignment_scope": "offline benchmark normalized steps; not proof of native live-event alignment",
+  "evaluation_scope": "grouped cross-validation on previously inspected development corpus, not pristine test"
+}

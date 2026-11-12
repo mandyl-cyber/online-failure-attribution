@@ -1,0 +1,114 @@
+{
+  "baseline": "previous_lr, tol1_D0 one-to-one matching",
+  "counts": {
+    "FN:late_nearby_prediction": 180,
+    "FN:visible_tool_transition": 626,
+    "FP:visible_tool_transition": 2077,
+    "FN:same_tool": 181,
+    "FP:same_tool": 19
+  },
+  "top_transitions": [
+    [
+      "FP:PLAN -> READ",
+      161
+    ],
+    [
+      "FP:EXEC -> EDIT",
+      158
+    ],
+    [
+      "FP:VERIFY -> EDIT",
+      123
+    ],
+    [
+      "FP:EXEC -> READ",
+      114
+    ],
+    [
+      "FN:EXEC -> EXEC",
+      110
+    ],
+    [
+      "FP:PLAN -> VERIFY",
+      109
+    ],
+    [
+      "FP:PLAN -> EXEC",
+      102
+    ],
+    [
+      "FP:EXEC_WRITE -> PLAN",
+      92
+    ],
+    [
+      "FP:READ -> EDIT",
+      88
+    ],
+    [
+      "FP:EXEC -> EXEC_WRITE",
+      70
+    ],
+    [
+      "FN:READ -> READ",
+      64
+    ],
+    [
+      "FP:VERIFY -> READ",
+      63
+    ],
+    [
+      "FN:READ -> SEARCH",
+      54
+    ],
+    [
+      "FP:READ -> SEARCH",
+      50
+    ],
+    [
+      "FN:READ -> EXEC",
+      48
+    ],
+    [
+      "FN:SEARCH -> READ",
+      46
+    ],
+    [
+      "FP:PLAN -> SEARCH",
+      46
+    ],
+    [
+      "FP:EXEC -> PLAN",
+      44
+    ],
+    [
+      "FN:EXEC -> READ",
+      43
+    ],
+    [
+      "FP:READ -> EXEC_WRITE",
+      39
+    ]
+  ],
+  "FN_recovery": {
+    "0": 49,
+    "1": 77,
+    "2": 110
+  },
+  "by_source": {
+    "SWE": {
+      "FN:late_nearby_prediction": 104,
+      "FN:visible_tool_transition": 289,
+      "FP:visible_tool_transition": 1123,
+      "FN:same_tool": 46,
+      "FP:same_tool": 3
+    },
+    "Terminal-Bench": {
+      "FN:same_tool": 135,
+      "FP:visible_tool_transition": 954,
+      "FN:visible_tool_transition": 337,
+      "FN:late_nearby_prediction": 76,
+      "FP:same_tool": 16
+    }
+  },
+  "limitations": "Observable proxies only. A missed boundary does not prove evidence was insufficient; recovery after lookahead does not prove future evidence was necessary. Label ambiguity cannot be inferred from a single annotation."
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "stage_id": 1,
+    "start_step_id": 1,
+    "end_step_id": 5
+  },
+  {
+    "stage_id": 2,
+    "start_step_id": 6,
+    "end_step_id": 21
+  },
+  {
+    "stage_id": 3,
+    "start_step_id": 22,
+    "end_step_id": 27
+  },
+  {
+    "stage_id": 4,
+    "start_step_id": 28,
+    "end_step_id": 31
+  },
+  {
+    "stage_id": 5,
+    "start_step_id": 32,
+    "end_step_id": 34
+  }
+]

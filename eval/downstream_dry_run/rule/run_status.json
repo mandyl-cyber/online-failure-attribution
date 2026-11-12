@@ -1,0 +1,14 @@
+{
+  "model": null,
+  "cost_limit": null,
+  "step_limit": 60,
+  "input_hashes": {
+    "steps.json": "5495023e4fa6f74ff27592dfb9cb9ecba2bda26a952e0abf10e08a9cee4e4f3d",
+    "task.md": "a28aa4a3f75ca600a4ce0a78bc6e25bee373a178c8203aebaab3be60ef04c109",
+    "tree.md": "b23d7a6d2a6242e2387256bfbf5b0d0f82cbea3600eeefd6dacb6ed35487c68a",
+    "stage_ranges.json": "2308ab554ac9491759f79150dab85829f5765f2b07ff1e171e0f61671fbbea7f"
+  },
+  "memory": false,
+  "dry_run": true,
+  "completed": false
+}

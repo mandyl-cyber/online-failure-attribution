@@ -1,0 +1,1 @@
+{"event":{"action":"run","args":{"command":"pytest -q sympy/polys/tests/test_rings.py::test_PolyElement_as_expr  -q","security_risk":"LOW","timeout":120},"id":"call_BXSYVs5OKEr43flfuJBsJyRH","source":"agent"},"kind":"event","sha256":"a6bac7037062f375051996763ab5123370ccd8420bc70e379694b81a1aa607dc"}

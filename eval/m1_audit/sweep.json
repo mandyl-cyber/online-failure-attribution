@@ -1,0 +1,434 @@
+[
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.2922077922077922,
+      "recall": 0.7766990291262136,
+      "f1": 0.4246534945443821,
+      "tp": 720,
+      "pred": 2464,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.3103290676416819,
+      "recall": 0.732470334412082,
+      "f1": 0.43595505617977526,
+      "tp": 679,
+      "pred": 2188,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.318876293740759,
+      "recall": 0.697950377562028,
+      "f1": 0.4377537212449255,
+      "tp": 647,
+      "pred": 2029,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.37962962962962965,
+      "recall": 0.6192017259978425,
+      "f1": 0.47068470684706853,
+      "tp": 574,
+      "pred": 1512,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.4159869494290375,
+      "recall": 0.5501618122977346,
+      "f1": 0.4737575476079889,
+      "tp": 510,
+      "pred": 1226,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.43838193791157104,
+      "recall": 0.5026968716289104,
+      "f1": 0.4683417085427136,
+      "tp": 466,
+      "pred": 1063,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.39536679536679536,
+      "recall": 0.552319309600863,
+      "f1": 0.46084608460846077,
+      "tp": 512,
+      "pred": 1295,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.4393638170974155,
+      "recall": 0.47680690399137,
+      "f1": 0.45732022762545266,
+      "tp": 442,
+      "pred": 1006,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 1,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.4708680142687277,
+      "recall": 0.42718446601941745,
+      "f1": 0.4479638009049774,
+      "tp": 396,
+      "pred": 841,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.3694915254237288,
+      "recall": 0.5879180151024811,
+      "f1": 0.4537885095753539,
+      "tp": 545,
+      "pred": 1475,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.393507521773555,
+      "recall": 0.5361380798274002,
+      "f1": 0.45388127853881277,
+      "tp": 497,
+      "pred": 1263,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.39610963748894784,
+      "recall": 0.48327939590075514,
+      "f1": 0.43537414965986393,
+      "tp": 448,
+      "pred": 1131,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.41735537190082644,
+      "recall": 0.43581445523193096,
+      "f1": 0.42638522427440634,
+      "tp": 404,
+      "pred": 968,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.4475955610357583,
+      "recall": 0.39158576051779936,
+      "f1": 0.4177215189873417,
+      "tp": 363,
+      "pred": 811,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.45685997171145687,
+      "recall": 0.3484358144552319,
+      "f1": 0.39534883720930236,
+      "tp": 323,
+      "pred": 707,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.43309002433090027,
+      "recall": 0.38403451995685006,
+      "f1": 0.4070897655803316,
+      "tp": 356,
+      "pred": 822,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.46953937592867756,
+      "recall": 0.3408845738942826,
+      "f1": 0.39499999999999996,
+      "tp": 316,
+      "pred": 673,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 2,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.4868189806678383,
+      "recall": 0.2988133764832794,
+      "f1": 0.37032085561497324,
+      "tp": 277,
+      "pred": 569,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.38654012079378774,
+      "recall": 0.48327939590075514,
+      "f1": 0.4295302013422819,
+      "tp": 448,
+      "pred": 1159,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.4043887147335423,
+      "recall": 0.4174757281553398,
+      "f1": 0.41082802547770697,
+      "tp": 387,
+      "pred": 957,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 1,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.4002375296912114,
+      "recall": 0.3635382955771305,
+      "f1": 0.3810062182023742,
+      "tp": 337,
+      "pred": 842,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.43568464730290457,
+      "recall": 0.33980582524271846,
+      "f1": 0.3818181818181818,
+      "tp": 315,
+      "pred": 723,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.4497528830313015,
+      "recall": 0.29449838187702265,
+      "f1": 0.3559322033898305,
+      "tp": 273,
+      "pred": 607,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 2,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.448210922787194,
+      "recall": 0.25674217907227614,
+      "f1": 0.32647462277091904,
+      "tp": 238,
+      "pred": 531,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 2
+    },
+    "dev": {
+      "precision": 0.44991511035653653,
+      "recall": 0.2858683926645092,
+      "f1": 0.34960422163588395,
+      "tp": 265,
+      "pred": 589,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 3
+    },
+    "dev": {
+      "precision": 0.4690082644628099,
+      "recall": 0.24487594390507011,
+      "f1": 0.32175761871013464,
+      "tp": 227,
+      "pred": 484,
+      "gold": 927,
+      "n": 145
+    }
+  },
+  {
+    "overrides": {
+      "segment.phase_min_run.PATCH": 3,
+      "segment.phase_min_run.VERIFY": 3,
+      "segment.phase_min_run.INSPECT": 4
+    },
+    "dev": {
+      "precision": 0.47058823529411764,
+      "recall": 0.20711974110032363,
+      "f1": 0.2876404494382023,
+      "tp": 192,
+      "pred": 408,
+      "gold": 927,
+      "n": 145
+    }
+  }
+]

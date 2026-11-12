@@ -1,0 +1,103 @@
+{
+  "n_traj": 119,
+  "n_steps": 3838,
+  "groups": 50,
+  "folds": {
+    "2": 25,
+    "4": 24,
+    "1": 24,
+    "0": 25,
+    "3": 21
+  },
+  "sources": {
+    "Terminal-Bench": 104,
+    "unknown": 1,
+    "SWE": 14
+  },
+  "skipped": [
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-spring-messaging-vul-b9d38a1e",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-sqlite-db-truncate-046e2d43",
+      "reason": "FileNotFoundError: 找不到轨迹 openhands-DeepSeek__DeepSeek-V3.2-sqlite-db-truncate-046e2d43（试过 6 个位置，根目录 codetrace_bench）"
+    },
+    {
+      "traj_id": "openhands-Moonshot__Kimi-K2-250905-spring-messaging-vul-9f1766df",
+      "reason": "Raw trajectory step count does not align"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-custom-memory-heap-crash-ccb1ba42",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-custom-memory-heap-crash-ccb1ba42.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-find-restaurant-fd9ef9a6",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-find-restaurant-fd9ef9a6.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-fix-permissions-2bbc8e2d",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-fix-permissions-2bbc8e2d.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-home-server-https-af791665",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-home-server-https-af791665.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-play-lord-7413c06b",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-play-lord-7413c06b.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-raman-fitting-5b6353cd",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-raman-fitting-5b6353cd.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sanitize-git-repo-fa8206db",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-sanitize-git-repo-fa8206db.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-schedule-vacation-dc56b91c",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-schedule-vacation-dc56b91c.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-security-celery-redis-rce-999b4f07",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-security-celery-redis-rce-999b4f07.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-security-vulhub-minio-33fe9f01",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-security-vulhub-minio-33fe9f01.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-simple-sheets-put-28d34f12",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-simple-sheets-put-28d34f12.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sqlite-db-truncate-28e7900e",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-sqlite-db-truncate-28e7900e.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-swe-bench-langcodes-9dc7a598",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-swe-bench-langcodes-9dc7a598.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-vertex-solver-7e1773f4",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-vertex-solver-7e1773f4.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-vulnerable-secret-e1393875",
+      "reason": "RuntimeError: openhands-OpenAI__GPT-5-vulnerable-secret-e1393875.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    },
+    {
+      "traj_id": "openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-constraints-scheduling-12f4e16a",
+      "reason": "RuntimeError: openhands-Qwen__Qwen3-Coder-480B-A35B-Instruct-constraints-scheduling-12f4e16a.tar.zst 里没有找到轨迹文件（events/*.json、steps.json 或 completion 日志）"
+    }
+  ],
+  "feature_version": 1,
+  "exclude_task_manifest": "codetrace_bench/bench_manifest.verified.jsonl",
+  "exclude_data": "eval/boundary_supervised/data_fixed",
+  "selected_openhands": 138,
+  "manifest_sha256": "2b5e4fbd9a0dae81adccb8967088dfc7dd2dcc3a63e83fdbb4415777b060aee7",
+  "label_policy": "start-of-stage binary target; first step excluded",
+  "alignment_scope": "offline benchmark normalized steps; not proof of native live-event alignment",
+  "evaluation_scope": "grouped cross-validation on previously inspected development corpus, not pristine test"
+}

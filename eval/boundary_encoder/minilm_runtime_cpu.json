@@ -1,0 +1,36 @@
+{
+  "model": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "hardware": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "torch": "2.7.1+cu128",
+  "batch_size": 1,
+  "warmup": 8,
+  "results": {
+    "cpu": {
+      "dtype": "float32",
+      "threads": 4,
+      "samples": 128,
+      "load_seconds": 4.079180400000041,
+      "preprocess_ms": {
+        "p50": 1.1812000011559576,
+        "p95": 13.047175000792768,
+        "p99": 16.884910000881064
+      },
+      "forward_pool_transfer_ms": {
+        "p50": 50.13189999772294,
+        "p95": 72.91356500045367,
+        "p99": 80.74487600275462
+      },
+      "total_ms": {
+        "p50": 51.98249999739346,
+        "p95": 78.87473000064347,
+        "p99": 88.82935400120918
+      },
+      "min_cosine_with_cached": 0.9999985694885254,
+      "max_cuda_allocated": null
+    }
+  },
+  "scope": "128 representative steps, 4 CPU threads; includes tokenization, pooling and transfer; excludes classification head, event I/O and queueing; not concurrent-load or real-agent benchmark"
+}

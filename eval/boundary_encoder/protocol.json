@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "dataset": "eval/boundary_supervised/data_fixed",
+  "text": "eval/boundary_encoder/text_v1",
+  "n_steps": 18636,
+  "n_trajectories": 461,
+  "splits": "unchanged five task/content-group folds, dev=(test+1)%5",
+  "frozen_models": ["sentence-transformers/all-MiniLM-L6-v2", "answerdotai/ModernBERT-base"],
+  "first_stage": "MiniLM headtail single-step 256-token frozen embeddings",
+  "heads": ["struct_lr", "struct_mlp", "newtext_tfidf", "semantic_lr", "fusion_lr", "fusion_mlp"],
+  "context_steps": 4,
+  "primary_seed": 41,
+  "mlp_max_epochs": 20,
+  "mlp_early_stopping_patience": 2,
+  "selection": "inner-development D0 boundary F1; never outer-test or external score",
+  "next_stage": "One controlled ModernBERT partial-finetuning experiment if frozen semantic gain insufficient",
+  "advance_target": "at least 3 pp eventual F1 improvement over current LR, task bootstrap supports gain, D0 no decline, source breakdown checked",
+  "external_policy": "119 previously reported external tasks remain unused for configuration selection; only fixed final comparison",
+  "limits": "no thought or future steps; no autoregressive API; no claims of real agent deployment from replay"
+}

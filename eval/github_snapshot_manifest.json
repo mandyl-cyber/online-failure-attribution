@@ -1,0 +1,134 @@
+{
+  "limit_bytes": 10485760,
+  "selected_files": 4823,
+  "selected_bytes": 135682387,
+  "by_root": {
+    "eval": {
+      "files": 4823,
+      "bytes": 135682387
+    }
+  },
+  "skipped": [
+    {
+      "path": "eval/boundary_confirmation/probabilities.jsonl",
+      "bytes": 11485558,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/minilm_headtail/embeddings.npy",
+      "bytes": 28625024,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/minilm_headtail/tokens.json",
+      "bytes": 19441442,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_finetune/fold_0.safetensors",
+      "bytes": 22114244,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_finetune/fold_1.safetensors",
+      "bytes": 22114244,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_finetune/fold_2.safetensors",
+      "bytes": 22114244,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_finetune/fold_3.safetensors",
+      "bytes": 22114244,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_finetune/fold_4.safetensors",
+      "bytes": 22114244,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_headtail/embeddings.npy",
+      "bytes": 57249920,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_headtail/packed_texts.json",
+      "bytes": 10729406,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_headtail/tokens.json",
+      "bytes": 17259884,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/modernbert_prefix/hidden.npy",
+      "bytes": 4854437504,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_encoder/text_v1/steps.jsonl",
+      "bytes": 53275677,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_supervised/data/features.jsonl",
+      "bytes": 77546331,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_supervised/data_fixed/features.jsonl",
+      "bytes": 77546331,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_supervised/external_data/features.jsonl",
+      "bytes": 15217087,
+      "reason": "over_10_MiB"
+    },
+    {
+      "path": "eval/boundary_supervised/external_data/selected_manifest.jsonl",
+      "reason": "credential_pattern_review_required"
+    },
+    {
+      "path": "eval/ledger_local_v1_complete/df0207c82020c8164fbe2c49/evidence.jsonl",
+      "reason": "credential_pattern_review_required"
+    },
+    {
+      "path": "eval/ledger_local_v1_complete/df0207c82020c8164fbe2c49/source.bin",
+      "reason": "credential_pattern_review_required"
+    },
+    {
+      "path": "eval/ledger_local_v1_complete/df0207c82020c8164fbe2c49/journal/00000032.json",
+      "reason": "credential_pattern_review_required"
+    },
+    {
+      "path": "eval/ledger_local_v1_final/df0207c82020c8164fbe2c49/evidence.jsonl",
+      "reason": "credential_pattern_review_required"
+    },
+    {
+      "path": "eval/ledger_local_v1_final/df0207c82020c8164fbe2c49/source.bin",
+      "reason": "credential_pattern_review_required"
+    },
+    {
+      "path": "eval/ledger_local_v1_final/df0207c82020c8164fbe2c49/journal/00000032.json",
+      "reason": "credential_pattern_review_required"
+    }
+  ],
+  "excluded_directory_names": [
+    ".agents",
+    ".aws",
+    ".cache",
+    ".codex",
+    ".git",
+    ".pytest_cache",
+    "__pycache__",
+    "_extracted",
+    "vendor",
+    "venv",
+    ".venv*"
+  ]
+}

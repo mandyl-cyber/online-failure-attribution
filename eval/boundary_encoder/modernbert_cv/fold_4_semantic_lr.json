@@ -1,0 +1,1 @@
+{"name": "semantic_lr", "threshold": 0.15, "input_dimension": 3844, "cache": "eval\\boundary_encoder\\modernbert_headtail", "seed": 41}

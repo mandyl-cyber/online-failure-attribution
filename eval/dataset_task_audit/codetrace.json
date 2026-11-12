@@ -1,0 +1,1433 @@
+{
+  "full": {
+    "trajectories": 3316,
+    "unique_task_names": 662,
+    "sources": {
+      "Terminal-Bench": 2670,
+      "SWE": 646
+    },
+    "agents": {
+      "mini-SWE-agent": 1024,
+      "OpenHands": 1242,
+      "Terminus2": 923,
+      "SWE-agent": 127
+    },
+    "categories": {
+      "software-engineering": {
+        "trajectories": 1222,
+        "tasks": 473,
+        "sources": {
+          "Terminal-Bench": 576,
+          "SWE": 646
+        },
+        "examples": [
+          "add-benchmark-lm-eval-harness",
+          "blind-maze-explorer-algorithm",
+          "broken-python"
+        ]
+      },
+      "system-administration": {
+        "trajectories": 259,
+        "tasks": 25,
+        "sources": {
+          "Terminal-Bench": 259
+        },
+        "examples": [
+          "build-initramfs-qemu",
+          "build-linux-kernel-qemu",
+          "build-tcc-qemu"
+        ]
+      },
+      "data-science": {
+        "trajectories": 221,
+        "tasks": 19,
+        "sources": {
+          "Terminal-Bench": 221
+        },
+        "examples": [
+          "analyze-access-logs",
+          "bank-trans-filter",
+          "causal-inference-r"
+        ]
+      },
+      "security": {
+        "trajectories": 221,
+        "tasks": 20,
+        "sources": {
+          "Terminal-Bench": 221
+        },
+        "examples": [
+          "break-filter-js-from-html",
+          "catch-me-if-you-can",
+          "crack-7z-hash"
+        ]
+      },
+      "scientific-computing": {
+        "trajectories": 215,
+        "tasks": 18,
+        "sources": {
+          "Terminal-Bench": 215
+        },
+        "examples": [
+          "audio-synth-stft-peaks",
+          "bn-fit-modify",
+          "chem-property-targeting"
+        ]
+      },
+      "model-training": {
+        "trajectories": 179,
+        "tasks": 13,
+        "sources": {
+          "Terminal-Bench": 179
+        },
+        "examples": [
+          "attention-mil",
+          "cartpole-rl-training",
+          "chem-rf"
+        ]
+      },
+      "debugging": {
+        "trajectories": 177,
+        "tasks": 17,
+        "sources": {
+          "Terminal-Bench": 177
+        },
+        "examples": [
+          "build-cython-ext",
+          "cpp-compatibility",
+          "custom-memory-heap-crash"
+        ]
+      },
+      "file-operations": {
+        "trajectories": 154,
+        "tasks": 15,
+        "sources": {
+          "Terminal-Bench": 154
+        },
+        "examples": [
+          "ancient-puzzle",
+          "create-bucket",
+          "db-wal-recovery"
+        ]
+      },
+      "mathematics": {
+        "trajectories": 140,
+        "tasks": 13,
+        "sources": {
+          "Terminal-Bench": 140
+        },
+        "examples": [
+          "feal-differential-cryptanalysis",
+          "implement-eigenvectors-from-eigenvalues-research-paper",
+          "largest-eigenval"
+        ]
+      },
+      "machine-learning": {
+        "trajectories": 113,
+        "tasks": 9,
+        "sources": {
+          "Terminal-Bench": 113
+        },
+        "examples": [
+          "distribution-search",
+          "leelachess0-pytorch-conversion",
+          "llm-inference-batching-scheduler"
+        ]
+      },
+      "games": {
+        "trajectories": 97,
+        "tasks": 9,
+        "sources": {
+          "Terminal-Bench": 97
+        },
+        "examples": [
+          "blind-maze-explorer-5x5",
+          "chess-best-move",
+          "mahjong-winninghand"
+        ]
+      },
+      "data-processing": {
+        "trajectories": 73,
+        "tasks": 8,
+        "sources": {
+          "Terminal-Bench": 73
+        },
+        "examples": [
+          "financial-document-processor",
+          "flood-monitoring-basic",
+          "jq-data-processing"
+        ]
+      },
+      "algorithms": {
+        "trajectories": 70,
+        "tasks": 6,
+        "sources": {
+          "Terminal-Bench": 70
+        },
+        "examples": [
+          "assign-seats",
+          "ode-solver-rk4",
+          "puzzle-solver"
+        ]
+      },
+      "personal-assistant": {
+        "trajectories": 33,
+        "tasks": 3,
+        "sources": {
+          "Terminal-Bench": 33
+        },
+        "examples": [
+          "constraints-scheduling",
+          "find-restaurant",
+          "form-filling"
+        ]
+      },
+      "optimization": {
+        "trajectories": 17,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 17
+        },
+        "examples": [
+          "portfolio-optimization"
+        ]
+      },
+      "file-system": {
+        "trajectories": 17,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 17
+        },
+        "examples": [
+          "tree-directory-parser"
+        ]
+      },
+      "game": {
+        "trajectories": 16,
+        "tasks": 2,
+        "sources": {
+          "Terminal-Bench": 16
+        },
+        "examples": [
+          "interactive-maze-game",
+          "gomoku-planner"
+        ]
+      },
+      "audio-processing": {
+        "trajectories": 16,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 16
+        },
+        "examples": [
+          "speech-to-text"
+        ]
+      },
+      "data-querying": {
+        "trajectories": 14,
+        "tasks": 2,
+        "sources": {
+          "Terminal-Bench": 14
+        },
+        "examples": [
+          "sparql-university",
+          "sparql-professors-universities"
+        ]
+      },
+      "research": {
+        "trajectories": 13,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 13
+        },
+        "examples": [
+          "find-official-code"
+        ]
+      },
+      "reproducible-builds": {
+        "trajectories": 12,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 12
+        },
+        "examples": [
+          "deterministic-tarball"
+        ]
+      },
+      "video-processing": {
+        "trajectories": 11,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 11
+        },
+        "examples": [
+          "video-processing"
+        ]
+      },
+      "computer-vision": {
+        "trajectories": 9,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 9
+        },
+        "examples": [
+          "magsac-install"
+        ]
+      },
+      "protocol-analysis": {
+        "trajectories": 9,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 9
+        },
+        "examples": [
+          "protocol-analysis-rs"
+        ]
+      },
+      "math": {
+        "trajectories": 6,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 6
+        },
+        "examples": [
+          "multistep-definite-integral"
+        ]
+      },
+      "file_operations": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "png-generation"
+        ]
+      }
+    },
+    "source_categories": {
+      "SWE": {
+        "software-engineering": 646
+      },
+      "Terminal-Bench": {
+        "software-engineering": 576,
+        "data-science": 221,
+        "file-operations": 154,
+        "algorithms": 70,
+        "model-training": 179,
+        "scientific-computing": 215,
+        "games": 97,
+        "security": 221,
+        "debugging": 177,
+        "system-administration": 259,
+        "personal-assistant": 33,
+        "reproducible-builds": 12,
+        "machine-learning": 113,
+        "mathematics": 140,
+        "data-processing": 73,
+        "research": 13,
+        "game": 16,
+        "math": 6,
+        "optimization": 17,
+        "data-querying": 14,
+        "audio-processing": 16,
+        "file-system": 17,
+        "video-processing": 11,
+        "computer-vision": 9,
+        "protocol-analysis": 9,
+        "file_operations": 2
+      }
+    },
+    "difficulty": {
+      "medium": 1597,
+      "easy": 748,
+      "hard": 971
+    },
+    "solved": {
+      "False": 1903,
+      "True": 1307,
+      "None": 106
+    },
+    "steps": 147628,
+    "step_median": 30.0,
+    "stages": 22246,
+    "stage_length_median": 5.0,
+    "stage_fields": {
+      "stage_id": 22246,
+      "start_step_id": 22246,
+      "end_step_id": 22246
+    },
+    "incorrect_stage_fields": {
+      "stage_id": 4039,
+      "incorrect_step_ids": 4039,
+      "unuseful_step_ids": 4039,
+      "steps": 4039
+    },
+    "annotated_step_fields": {
+      "step_id": 19169,
+      "labels": 19169,
+      "action_ref": 19169,
+      "observation_ref": 19169
+    },
+    "step_label_values": {
+      "incorrect": 17701,
+      "unuseful": 1468
+    },
+    "incorrect_steps": 17701,
+    "unuseful_steps": 1468,
+    "both_flags": 0,
+    "stage_coverage_invalid": [
+      "terminus2-OpenAI__GPT-5-play-zork-5c2b9e8f",
+      "terminus2-OpenAI__GPT-5-protocol-analysis-rs-5e36dbac"
+    ],
+    "missing_raw_paths": 146,
+    "existing_annotation_paths": 0,
+    "existing_archives": 3291,
+    "manifest_sha256": "2b5e4fbd9a0dae81adccb8967088dfc7dd2dcc3a63e83fdbb4415777b060aee7"
+  },
+  "verified": {
+    "trajectories": 1000,
+    "unique_task_names": 558,
+    "sources": {
+      "SWE": 489,
+      "Terminal-Bench": 511
+    },
+    "agents": {
+      "mini-SWE-agent": 150,
+      "OpenHands": 520,
+      "SWE-agent": 108,
+      "Terminus2": 222
+    },
+    "categories": {
+      "software-engineering": {
+        "trajectories": 605,
+        "tasks": 411,
+        "sources": {
+          "SWE": 489,
+          "Terminal-Bench": 116
+        },
+        "examples": [
+          "clap-rs__clap-2501",
+          "clap-rs__clap-2758",
+          "clap-rs__clap-3179"
+        ]
+      },
+      "system-administration": {
+        "trajectories": 65,
+        "tasks": 19,
+        "sources": {
+          "Terminal-Bench": 65
+        },
+        "examples": [
+          "build-initramfs-qemu",
+          "build-linux-kernel-qemu",
+          "build-tcc-qemu"
+        ]
+      },
+      "scientific-computing": {
+        "trajectories": 43,
+        "tasks": 17,
+        "sources": {
+          "Terminal-Bench": 43
+        },
+        "examples": [
+          "adaptive-rejection-sampler",
+          "audio-synth-stft-peaks",
+          "dna-assembly"
+        ]
+      },
+      "data-science": {
+        "trajectories": 40,
+        "tasks": 17,
+        "sources": {
+          "Terminal-Bench": 40
+        },
+        "examples": [
+          "causal-inference-r",
+          "mteb-eval",
+          "mteb-retrieve"
+        ]
+      },
+      "debugging": {
+        "trajectories": 39,
+        "tasks": 14,
+        "sources": {
+          "Terminal-Bench": 39
+        },
+        "examples": [
+          "cprofiling-python",
+          "fix-pandas-version",
+          "incompatible-python-fasttext"
+        ]
+      },
+      "model-training": {
+        "trajectories": 35,
+        "tasks": 13,
+        "sources": {
+          "Terminal-Bench": 35
+        },
+        "examples": [
+          "attention-mil",
+          "cartpole-rl-training",
+          "chem-rf"
+        ]
+      },
+      "security": {
+        "trajectories": 32,
+        "tasks": 11,
+        "sources": {
+          "Terminal-Bench": 32
+        },
+        "examples": [
+          "break-filter-js-from-html",
+          "filter-js-from-html",
+          "git-workflow-hack"
+        ]
+      },
+      "file-operations": {
+        "trajectories": 30,
+        "tasks": 11,
+        "sources": {
+          "Terminal-Bench": 30
+        },
+        "examples": [
+          "db-wal-recovery",
+          "download-youtube",
+          "extract-elf"
+        ]
+      },
+      "mathematics": {
+        "trajectories": 27,
+        "tasks": 10,
+        "sources": {
+          "Terminal-Bench": 27
+        },
+        "examples": [
+          "implement-eigenvectors-from-eigenvalues-research-paper",
+          "lean4-proof",
+          "mixed-integer-programming"
+        ]
+      },
+      "machine-learning": {
+        "trajectories": 24,
+        "tasks": 8,
+        "sources": {
+          "Terminal-Bench": 24
+        },
+        "examples": [
+          "caffe-cifar-10",
+          "distribution-search",
+          "leelachess0-pytorch-conversion"
+        ]
+      },
+      "games": {
+        "trajectories": 15,
+        "tasks": 7,
+        "sources": {
+          "Terminal-Bench": 15
+        },
+        "examples": [
+          "chess-best-move",
+          "play-zork",
+          "play-zork-easy"
+        ]
+      },
+      "algorithms": {
+        "trajectories": 8,
+        "tasks": 5,
+        "sources": {
+          "Terminal-Bench": 8
+        },
+        "examples": [
+          "huarong-dao-solver",
+          "puzzle-solver",
+          "solve-maze-challenge"
+        ]
+      },
+      "data-processing": {
+        "trajectories": 8,
+        "tasks": 3,
+        "sources": {
+          "Terminal-Bench": 8
+        },
+        "examples": [
+          "jq-data-processing",
+          "multi-source-data-merger",
+          "financial-document-processor"
+        ]
+      },
+      "reproducible-builds": {
+        "trajectories": 4,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 4
+        },
+        "examples": [
+          "deterministic-tarball"
+        ]
+      },
+      "game": {
+        "trajectories": 4,
+        "tasks": 2,
+        "sources": {
+          "Terminal-Bench": 4
+        },
+        "examples": [
+          "interactive-maze-game",
+          "gomoku-planner"
+        ]
+      },
+      "personal-assistant": {
+        "trajectories": 3,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 3
+        },
+        "examples": [
+          "form-filling"
+        ]
+      },
+      "computer-vision": {
+        "trajectories": 3,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 3
+        },
+        "examples": [
+          "magsac-install"
+        ]
+      },
+      "optimization": {
+        "trajectories": 3,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 3
+        },
+        "examples": [
+          "portfolio-optimization"
+        ]
+      },
+      "audio-processing": {
+        "trajectories": 3,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 3
+        },
+        "examples": [
+          "speech-to-text"
+        ]
+      },
+      "file-system": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "tree-directory-parser"
+        ]
+      },
+      "research": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "find-official-code"
+        ]
+      },
+      "math": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "multistep-definite-integral"
+        ]
+      },
+      "protocol-analysis": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "protocol-analysis-rs"
+        ]
+      },
+      "video-processing": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "video-processing"
+        ]
+      }
+    },
+    "source_categories": {
+      "SWE": {
+        "software-engineering": 489
+      },
+      "Terminal-Bench": {
+        "software-engineering": 116,
+        "scientific-computing": 43,
+        "model-training": 35,
+        "security": 32,
+        "system-administration": 65,
+        "machine-learning": 24,
+        "data-science": 40,
+        "games": 15,
+        "debugging": 39,
+        "file-operations": 30,
+        "reproducible-builds": 4,
+        "personal-assistant": 3,
+        "algorithms": 8,
+        "mathematics": 27,
+        "data-processing": 8,
+        "computer-vision": 3,
+        "optimization": 3,
+        "audio-processing": 3,
+        "file-system": 2,
+        "video-processing": 1,
+        "research": 2,
+        "game": 4,
+        "math": 2,
+        "protocol-analysis": 2
+      }
+    },
+    "difficulty": {
+      "hard": 316,
+      "medium": 424,
+      "easy": 260
+    },
+    "solved": {
+      "True": 504,
+      "False": 468,
+      "None": 28
+    },
+    "steps": 46539,
+    "step_median": 37.0,
+    "stages": 6739,
+    "stage_length_median": 6,
+    "stage_fields": {
+      "stage_id": 6739,
+      "start_step_id": 6739,
+      "end_step_id": 6739
+    },
+    "incorrect_stage_fields": {
+      "stage_id": 547,
+      "incorrect_step_ids": 547,
+      "unuseful_step_ids": 547,
+      "steps": 547
+    },
+    "annotated_step_fields": {
+      "step_id": 1919,
+      "labels": 1919,
+      "action_ref": 1919,
+      "observation_ref": 1919
+    },
+    "step_label_values": {
+      "incorrect": 1695,
+      "unuseful": 224
+    },
+    "incorrect_steps": 1695,
+    "unuseful_steps": 224,
+    "both_flags": 0,
+    "stage_coverage_invalid": [],
+    "missing_raw_paths": 8,
+    "existing_annotation_paths": 0,
+    "existing_archives": 992,
+    "manifest_sha256": "bd02d3dafa145146567e87f7d55b158ef0dd30043d4a4c2c03e631c2056ff92e"
+  },
+  "current_461": {
+    "trajectories": 461,
+    "unique_task_names": 424,
+    "sources": {
+      "SWE": 276,
+      "Terminal-Bench": 185
+    },
+    "agents": {
+      "OpenHands": 461
+    },
+    "categories": {
+      "software-engineering": {
+        "trajectories": 314,
+        "tasks": 307,
+        "sources": {
+          "SWE": 276,
+          "Terminal-Bench": 38
+        },
+        "examples": [
+          "instance_ansible__ansible-0fd88717c953b92ed8a50495d55e630eb5d59166-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+          "instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2",
+          "instance_ansible__ansible-1b70260d5aa2f6c9782fd2b848e8d16566e50d85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5"
+        ]
+      },
+      "system-administration": {
+        "trajectories": 22,
+        "tasks": 14,
+        "sources": {
+          "Terminal-Bench": 22
+        },
+        "examples": [
+          "build-initramfs-qemu",
+          "build-linux-kernel-qemu",
+          "build-tcc-qemu"
+        ]
+      },
+      "debugging": {
+        "trajectories": 16,
+        "tasks": 13,
+        "sources": {
+          "Terminal-Bench": 16
+        },
+        "examples": [
+          "cprofiling-python",
+          "fix-pandas-version",
+          "incompatible-python-fasttext"
+        ]
+      },
+      "scientific-computing": {
+        "trajectories": 15,
+        "tasks": 15,
+        "sources": {
+          "Terminal-Bench": 15
+        },
+        "examples": [
+          "adaptive-rejection-sampler",
+          "audio-synth-stft-peaks",
+          "dna-assembly"
+        ]
+      },
+      "data-science": {
+        "trajectories": 15,
+        "tasks": 14,
+        "sources": {
+          "Terminal-Bench": 15
+        },
+        "examples": [
+          "causal-inference-r",
+          "mteb-retrieve",
+          "pandas-sql-query"
+        ]
+      },
+      "model-training": {
+        "trajectories": 12,
+        "tasks": 9,
+        "sources": {
+          "Terminal-Bench": 12
+        },
+        "examples": [
+          "attention-mil",
+          "cartpole-rl-training",
+          "hf-lora-adapter"
+        ]
+      },
+      "security": {
+        "trajectories": 11,
+        "tasks": 10,
+        "sources": {
+          "Terminal-Bench": 11
+        },
+        "examples": [
+          "break-filter-js-from-html",
+          "filter-js-from-html",
+          "git-workflow-hack"
+        ]
+      },
+      "file-operations": {
+        "trajectories": 10,
+        "tasks": 6,
+        "sources": {
+          "Terminal-Bench": 10
+        },
+        "examples": [
+          "db-wal-recovery",
+          "download-youtube",
+          "extract-elf"
+        ]
+      },
+      "mathematics": {
+        "trajectories": 10,
+        "tasks": 7,
+        "sources": {
+          "Terminal-Bench": 10
+        },
+        "examples": [
+          "implement-eigenvectors-from-eigenvalues-research-paper",
+          "mixed-integer-programming",
+          "model-extraction-relu-logits"
+        ]
+      },
+      "machine-learning": {
+        "trajectories": 9,
+        "tasks": 7,
+        "sources": {
+          "Terminal-Bench": 9
+        },
+        "examples": [
+          "caffe-cifar-10",
+          "distribution-search",
+          "leelachess0-pytorch-conversion"
+        ]
+      },
+      "games": {
+        "trajectories": 6,
+        "tasks": 5,
+        "sources": {
+          "Terminal-Bench": 6
+        },
+        "examples": [
+          "chess-best-move",
+          "play-zork",
+          "play-zork-easy"
+        ]
+      },
+      "data-processing": {
+        "trajectories": 5,
+        "tasks": 3,
+        "sources": {
+          "Terminal-Bench": 5
+        },
+        "examples": [
+          "jq-data-processing",
+          "multi-source-data-merger",
+          "financial-document-processor"
+        ]
+      },
+      "algorithms": {
+        "trajectories": 4,
+        "tasks": 4,
+        "sources": {
+          "Terminal-Bench": 4
+        },
+        "examples": [
+          "huarong-dao-solver",
+          "puzzle-solver",
+          "solve-maze-challenge"
+        ]
+      },
+      "reproducible-builds": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "deterministic-tarball"
+        ]
+      },
+      "personal-assistant": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "form-filling"
+        ]
+      },
+      "computer-vision": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "magsac-install"
+        ]
+      },
+      "optimization": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "portfolio-optimization"
+        ]
+      },
+      "audio-processing": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "speech-to-text"
+        ]
+      },
+      "file-system": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "tree-directory-parser"
+        ]
+      },
+      "video-processing": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "video-processing"
+        ]
+      },
+      "research": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "find-official-code"
+        ]
+      },
+      "game": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "interactive-maze-game"
+        ]
+      },
+      "math": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "multistep-definite-integral"
+        ]
+      }
+    },
+    "source_categories": {
+      "SWE": {
+        "software-engineering": 276
+      },
+      "Terminal-Bench": {
+        "software-engineering": 38,
+        "scientific-computing": 15,
+        "model-training": 12,
+        "security": 11,
+        "system-administration": 22,
+        "machine-learning": 9,
+        "data-science": 15,
+        "games": 6,
+        "debugging": 16,
+        "file-operations": 10,
+        "reproducible-builds": 2,
+        "personal-assistant": 2,
+        "algorithms": 4,
+        "mathematics": 10,
+        "data-processing": 5,
+        "computer-vision": 1,
+        "optimization": 1,
+        "audio-processing": 1,
+        "file-system": 1,
+        "video-processing": 1,
+        "research": 1,
+        "game": 1,
+        "math": 1
+      }
+    },
+    "difficulty": {
+      "hard": 111,
+      "easy": 165,
+      "medium": 185
+    },
+    "solved": {
+      "False": 198,
+      "True": 263
+    },
+    "steps": 18636,
+    "step_median": 35,
+    "stages": 3025,
+    "stage_length_median": 5,
+    "stage_fields": {
+      "stage_id": 3025,
+      "start_step_id": 3025,
+      "end_step_id": 3025
+    },
+    "incorrect_stage_fields": {
+      "stage_id": 193,
+      "incorrect_step_ids": 193,
+      "unuseful_step_ids": 193,
+      "steps": 193
+    },
+    "annotated_step_fields": {
+      "step_id": 586,
+      "labels": 586,
+      "action_ref": 586,
+      "observation_ref": 586
+    },
+    "step_label_values": {
+      "incorrect": 542,
+      "unuseful": 44
+    },
+    "incorrect_steps": 542,
+    "unuseful_steps": 44,
+    "both_flags": 0,
+    "stage_coverage_invalid": [],
+    "missing_raw_paths": 0,
+    "existing_annotation_paths": 0,
+    "existing_archives": 461
+  },
+  "verified_openhands": {
+    "trajectories": 520,
+    "unique_task_names": 466,
+    "sources": {
+      "SWE": 313,
+      "Terminal-Bench": 207
+    },
+    "agents": {
+      "OpenHands": 520
+    },
+    "categories": {
+      "software-engineering": {
+        "trajectories": 357,
+        "tasks": 345,
+        "sources": {
+          "SWE": 313,
+          "Terminal-Bench": 44
+        },
+        "examples": [
+          "instance_ansible__ansible-0fd88717c953b92ed8a50495d55e630eb5d59166-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5",
+          "instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2",
+          "instance_ansible__ansible-1b70260d5aa2f6c9782fd2b848e8d16566e50d85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5"
+        ]
+      },
+      "system-administration": {
+        "trajectories": 23,
+        "tasks": 14,
+        "sources": {
+          "Terminal-Bench": 23
+        },
+        "examples": [
+          "build-initramfs-qemu",
+          "build-linux-kernel-qemu",
+          "build-tcc-qemu"
+        ]
+      },
+      "scientific-computing": {
+        "trajectories": 18,
+        "tasks": 15,
+        "sources": {
+          "Terminal-Bench": 18
+        },
+        "examples": [
+          "adaptive-rejection-sampler",
+          "audio-synth-stft-peaks",
+          "dna-assembly"
+        ]
+      },
+      "data-science": {
+        "trajectories": 16,
+        "tasks": 14,
+        "sources": {
+          "Terminal-Bench": 16
+        },
+        "examples": [
+          "causal-inference-r",
+          "mteb-eval",
+          "mteb-retrieve"
+        ]
+      },
+      "debugging": {
+        "trajectories": 16,
+        "tasks": 13,
+        "sources": {
+          "Terminal-Bench": 16
+        },
+        "examples": [
+          "cprofiling-python",
+          "fix-pandas-version",
+          "incompatible-python-fasttext"
+        ]
+      },
+      "model-training": {
+        "trajectories": 14,
+        "tasks": 10,
+        "sources": {
+          "Terminal-Bench": 14
+        },
+        "examples": [
+          "attention-mil",
+          "cartpole-rl-training",
+          "chem-rf"
+        ]
+      },
+      "mathematics": {
+        "trajectories": 14,
+        "tasks": 10,
+        "sources": {
+          "Terminal-Bench": 14
+        },
+        "examples": [
+          "implement-eigenvectors-from-eigenvalues-research-paper",
+          "lean4-proof",
+          "mixed-integer-programming"
+        ]
+      },
+      "security": {
+        "trajectories": 13,
+        "tasks": 10,
+        "sources": {
+          "Terminal-Bench": 13
+        },
+        "examples": [
+          "break-filter-js-from-html",
+          "filter-js-from-html",
+          "git-workflow-hack"
+        ]
+      },
+      "machine-learning": {
+        "trajectories": 11,
+        "tasks": 7,
+        "sources": {
+          "Terminal-Bench": 11
+        },
+        "examples": [
+          "caffe-cifar-10",
+          "distribution-search",
+          "leelachess0-pytorch-conversion"
+        ]
+      },
+      "file-operations": {
+        "trajectories": 11,
+        "tasks": 6,
+        "sources": {
+          "Terminal-Bench": 11
+        },
+        "examples": [
+          "db-wal-recovery",
+          "download-youtube",
+          "extract-elf"
+        ]
+      },
+      "games": {
+        "trajectories": 6,
+        "tasks": 5,
+        "sources": {
+          "Terminal-Bench": 6
+        },
+        "examples": [
+          "chess-best-move",
+          "play-zork",
+          "play-zork-easy"
+        ]
+      },
+      "data-processing": {
+        "trajectories": 5,
+        "tasks": 3,
+        "sources": {
+          "Terminal-Bench": 5
+        },
+        "examples": [
+          "jq-data-processing",
+          "multi-source-data-merger",
+          "financial-document-processor"
+        ]
+      },
+      "algorithms": {
+        "trajectories": 4,
+        "tasks": 4,
+        "sources": {
+          "Terminal-Bench": 4
+        },
+        "examples": [
+          "huarong-dao-solver",
+          "puzzle-solver",
+          "solve-maze-challenge"
+        ]
+      },
+      "reproducible-builds": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "deterministic-tarball"
+        ]
+      },
+      "personal-assistant": {
+        "trajectories": 2,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 2
+        },
+        "examples": [
+          "form-filling"
+        ]
+      },
+      "computer-vision": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "magsac-install"
+        ]
+      },
+      "optimization": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "portfolio-optimization"
+        ]
+      },
+      "audio-processing": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "speech-to-text"
+        ]
+      },
+      "file-system": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "tree-directory-parser"
+        ]
+      },
+      "video-processing": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "video-processing"
+        ]
+      },
+      "research": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "find-official-code"
+        ]
+      },
+      "game": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "interactive-maze-game"
+        ]
+      },
+      "math": {
+        "trajectories": 1,
+        "tasks": 1,
+        "sources": {
+          "Terminal-Bench": 1
+        },
+        "examples": [
+          "multistep-definite-integral"
+        ]
+      }
+    },
+    "source_categories": {
+      "SWE": {
+        "software-engineering": 313
+      },
+      "Terminal-Bench": {
+        "software-engineering": 44,
+        "scientific-computing": 18,
+        "model-training": 14,
+        "security": 13,
+        "system-administration": 23,
+        "machine-learning": 11,
+        "data-science": 16,
+        "games": 6,
+        "debugging": 16,
+        "file-operations": 11,
+        "reproducible-builds": 2,
+        "personal-assistant": 2,
+        "algorithms": 4,
+        "mathematics": 14,
+        "data-processing": 5,
+        "computer-vision": 1,
+        "optimization": 1,
+        "audio-processing": 1,
+        "file-system": 1,
+        "video-processing": 1,
+        "research": 1,
+        "game": 1,
+        "math": 1
+      }
+    },
+    "difficulty": {
+      "hard": 128,
+      "easy": 178,
+      "medium": 214
+    },
+    "solved": {
+      "False": 232,
+      "True": 288
+    },
+    "steps": 21581,
+    "step_median": 37.0,
+    "stages": 3430,
+    "stage_length_median": 5.0,
+    "stage_fields": {
+      "stage_id": 3430,
+      "start_step_id": 3430,
+      "end_step_id": 3430
+    },
+    "incorrect_stage_fields": {
+      "stage_id": 220,
+      "incorrect_step_ids": 220,
+      "unuseful_step_ids": 220,
+      "steps": 220
+    },
+    "annotated_step_fields": {
+      "step_id": 679,
+      "labels": 679,
+      "action_ref": 679,
+      "observation_ref": 679
+    },
+    "step_label_values": {
+      "incorrect": 627,
+      "unuseful": 52
+    },
+    "incorrect_steps": 627,
+    "unuseful_steps": 52,
+    "both_flags": 0,
+    "stage_coverage_invalid": [],
+    "missing_raw_paths": 8,
+    "existing_annotation_paths": 0,
+    "existing_archives": 512
+  },
+  "overlap": {
+    "verified_in_full": 1000,
+    "differing_stages": 0
+  },
+  "source_inference": "SWE from swe_raw or merged_cleaned annotation prefix; Terminal-Bench from agent_failure_analysis annotation prefix. Missing source paths do not imply unknown task source."
+}

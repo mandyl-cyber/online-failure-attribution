@@ -1,0 +1,442 @@
+[
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2-e6e185ca",
+    "n_steps": 26,
+    "hashes": {
+      "steps.json": "5495023e4fa6f74ff27592dfb9cb9ecba2bda26a952e0abf10e08a9cee4e4f3d",
+      "task.md": "a28aa4a3f75ca600a4ce0a78bc6e25bee373a178c8203aebaab3be60ef04c109",
+      "tree.md": "b23d7a6d2a6242e2387256bfbf5b0d0f82cbea3600eeefd6dacb6ed35487c68a"
+    },
+    "gold_stages": 6,
+    "rule_stages": 7
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+    "n_steps": 32,
+    "hashes": {
+      "steps.json": "978fa066a8d93e8d3154424fbe9628bdf4ee70a5edafa38d111be36c8aba7721",
+      "task.md": "b45c0d2d43b0f876589533d6435c276986464ad6a221700a4dee596a08bc24cc",
+      "tree.md": "b2124db6ce43a5cd7faff82f70d8a58ca2ed588acdef166870896a54b6b720fe"
+    },
+    "gold_stages": 9,
+    "rule_stages": 11
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-11133-5e845215",
+    "n_steps": 31,
+    "hashes": {
+      "steps.json": "4c326c411fcff570231bf36c2c9e66f395b3e80c9182e2c24de321c5d25f2c5e",
+      "task.md": "7de12e7a755ed38fc2dccb97382a6b1feaf6f102ee24dc1ea792d9b2b165604c",
+      "tree.md": "c73a3aa123a1f774cd395934ab77ea10fce9a0e8cfcce5aac1530677a1a7b1c6"
+    },
+    "gold_stages": 5,
+    "rule_stages": 8
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-13023-8e73db95",
+    "n_steps": 41,
+    "hashes": {
+      "steps.json": "469f1cd5e1d403499578ead1dc3b392c980935e5f8b7f9ccde0d7d29e4e2e8d3",
+      "task.md": "caf3ca2fc01fdd4d7b4bd0aa5561eef91857abdf67697898a77665e5b135aa8e",
+      "tree.md": "73ea5ffd5e2ea0f71e1cad230da1d00169da688de1331dfa18d53cd589a7bf47"
+    },
+    "gold_stages": 7,
+    "rule_stages": 5
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-14351-058e4e93",
+    "n_steps": 48,
+    "hashes": {
+      "steps.json": "9b000d7349ea55b627f8a8b3410f740e89de6ee88b33f0b93319236fc8235f49",
+      "task.md": "0deebe7ec5082ffb836be1e35226d14b421a73af1ac4dec8afe53058fed17812",
+      "tree.md": "4a6b5c41820e5b82d2a3df52577ac1da02c5c507232ca5cac048abba444e1e71"
+    },
+    "gold_stages": 8,
+    "rule_stages": 8
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-14623-8f9f7df9",
+    "n_steps": 46,
+    "hashes": {
+      "steps.json": "99a74140c18106dad11193bdf60430ba3d90d9bf4c055e6e75579aae37a5ab64",
+      "task.md": "305683556500b657991698397b39e23e0deddf8f3f55561212e6106dd4ec3edd",
+      "tree.md": "0dcc75f816f888b153e0227fd1f37ae1f893fcfb525d1d8d8a01916287f67993"
+    },
+    "gold_stages": 6,
+    "rule_stages": 8
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-25479-fcab7ab1",
+    "n_steps": 34,
+    "hashes": {
+      "steps.json": "eb4932eb5e12bf03cc39652f34c6be684ea40fae55e35f30bc1d18814b85a6ac",
+      "task.md": "8cb35b752428891935f257cbeb9d2c6959be6f79fcce9e9dd83ea579b132c2af",
+      "tree.md": "aa9e8decc337e3707fa8dc830dd848445c9aa9013f1bf90664a8a0b1c618b30e"
+    },
+    "gold_stages": 5,
+    "rule_stages": 6
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7205-282aadca",
+    "n_steps": 39,
+    "hashes": {
+      "steps.json": "2808f95cfb5edc881d722d05641f88086a0674ca49c65a5801443bb818e1f8a4",
+      "task.md": "e7fbe0565c41f0f9a95d1364589b6bc0df7b6e1d5cdcea161030b88677870754",
+      "tree.md": "3675c586decffb8790af88496beb0a6ebacdb930933183c1e89ec45ddaefc3ba"
+    },
+    "gold_stages": 7,
+    "rule_stages": 7
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-25747-66b09602",
+    "n_steps": 26,
+    "hashes": {
+      "steps.json": "fa1177b70bd44e638759efa76cce374363c86b452b333e2a748caca26e119cce",
+      "task.md": "6208068d998723ee327bc4d78e09d9aa3953e8d60c1039bab6e0569c2deb91b2",
+      "tree.md": "a4188854a51b480c966097793a49b7191629280ce1315236383426404f6b0417"
+    },
+    "gold_stages": 4,
+    "rule_stages": 4
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-11445-6f9d933b",
+    "n_steps": 48,
+    "hashes": {
+      "steps.json": "6643d6ef46b435aa8c960f20dda133261004dea32e386f4ff1ddf09b3b279d25",
+      "task.md": "723046f41d97b21452150b522d40779c3e398d86d6024f24dd901b8940e80589",
+      "tree.md": "ea6d691ca3cc380f4ddebebf5a0c1c4fe7b004346f6462ee483e29196faa3dff"
+    },
+    "gold_stages": 4,
+    "rule_stages": 9
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-7910-bd976fac",
+    "n_steps": 29,
+    "hashes": {
+      "steps.json": "3a1ba5fc169a7f1664d397645e09bb79a3ebc1e4060384733c9b8ffee13539e5",
+      "task.md": "309ba5caf9621d3f088679432cafc173e46ef83a66de614f313ec8ad56efa74c",
+      "tree.md": "487164a18ef0241ea40bf5226dd5a73ca53f0e695a000798acd3948415e5d6e7"
+    },
+    "gold_stages": 8,
+    "rule_stages": 8
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8120-08ef8931",
+    "n_steps": 32,
+    "hashes": {
+      "steps.json": "20c2c54f3106efc2fc26db821dbb607e95db0dd71db94a615f57707456c0df24",
+      "task.md": "157f649ba09a2531a5d0ee3bb7b67f668d8aa4047950c845170c16dc11ca4b0e",
+      "tree.md": "20925813b3eb5ec118bf63b343e4b14a23f72274b626e59f4d182adda8b59fe3"
+    },
+    "gold_stages": 7,
+    "rule_stages": 7
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13647-61fd1639",
+    "n_steps": 28,
+    "hashes": {
+      "steps.json": "278e604423c24582aab4eea6f1562b3b822ef049ffd4d56dbfc77d4caa4b029f",
+      "task.md": "e471afe89a097dfa539e83ce99d87e4ac7d418f04f4281dc89eb1aa1bf049ab3",
+      "tree.md": "12cedc7f2af8bf4d4c12b2e81fab71791bcff9af2b0d44a8a8437e56991442de"
+    },
+    "gold_stages": 5,
+    "rule_stages": 7
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-20801-9aaa527b",
+    "n_steps": 36,
+    "hashes": {
+      "steps.json": "df2ce1e09bd8d452f6c504c373a6a7cca4378c690e3142540f07b42318294f61",
+      "task.md": "26811c81c8cccd09c1b0b6d0ccc7c75cffdeec159edb217b98fb657105683206",
+      "tree.md": "da5e3f356a879e923ceaeadeae966e6457738b822df7a80fe92d4de7df6c887c"
+    },
+    "gold_stages": 5,
+    "rule_stages": 6
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-29311-edd5529b",
+    "n_steps": 42,
+    "hashes": {
+      "steps.json": "75eef88a5a4eb2293700e803856ea77f13bd0ea6694f48476fda452b21137cd1",
+      "task.md": "2d6cd9572d109a520684ca51ba4d72991e3a29e6c14285c0bea6eccb7100f8db",
+      "tree.md": "451e8dd4d6a5d08ab03d1b3df364d6568b05aca5b37a6b818c7e4847eb62f6e9"
+    },
+    "gold_stages": 4,
+    "rule_stages": 7
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19484-74f5c884",
+    "n_steps": 33,
+    "hashes": {
+      "steps.json": "b8ad1fb2dce2f66df5cea8f3298dd22e2d913df0ab6e2b2db0b0d057896bbeda",
+      "task.md": "0df93d4e7b779dfc8f21a4e0285f7d3cfe17224a9e7dbf5d70930fe10a33741d",
+      "tree.md": "b1990b3d6ca1c8cbdb4f1356f14e661e18f765501d0247a9219549db0600a299"
+    },
+    "gold_stages": 7,
+    "rule_stages": 8
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-5609-4096132f",
+    "n_steps": 34,
+    "hashes": {
+      "steps.json": "e6a5fee6bafae8c97ec7192e84c8ffd2aa7348a475171bcb01df5236b7f6a8e2",
+      "task.md": "1557d63b6efa6849801694034001db5de80994a7a082c2c7d538d415c9fa8da3",
+      "tree.md": "08aa8dc1fb8b649fedf9d0728104043d31c724693553e12dbea08da92d594fc7"
+    },
+    "gold_stages": 9,
+    "rule_stages": 14
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-23229-7eece48c",
+    "n_steps": 24,
+    "hashes": {
+      "steps.json": "c29e71f00642c71652a3f17f92c2d4843304bb74436f583a80b4da5c7606ed06",
+      "task.md": "0ebcb1176d11c207fbaffc553702241aabf3787fac8db1996845a11848d8f87f",
+      "tree.md": "b9f63e8d238887a377ac2bfaf6830b4c2d046c7401e5d55546060702250482c6"
+    },
+    "gold_stages": 4,
+    "rule_stages": 5
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-12907-f99e6267",
+    "n_steps": 23,
+    "hashes": {
+      "steps.json": "31f16ab9e9c235f2b6964ac6717c77d1251297197cda7d9f7b8189c46501c9a1",
+      "task.md": "9a247b779ad8f2a653c95c0846adc1ca6d85229a144a9230be8afa762e065867",
+      "tree.md": "be2ead96d5c58eaa47efc66a727ad9338542280d4b3d00656d8b3287cbbffd2f"
+    },
+    "gold_stages": 6,
+    "rule_stages": 4
+  },
+  {
+    "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13852-1ded1568",
+    "n_steps": 24,
+    "hashes": {
+      "steps.json": "b8ea67d47d14af2bb34551eaffd525d0406ff4539c0194089b5e44e4a6a86e4c",
+      "task.md": "ac9b76ae925e52cb708e9a63e182b2ae6f2d02ef223f75100040997976fba080",
+      "tree.md": "254e305ca409920b20f41d11ed96b4087e2d326c63de6a979ec11b6890ff2182"
+    },
+    "gold_stages": 7,
+    "rule_stages": 7
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-add-benchmark-lm-eval-harness-9f75877e",
+    "n_steps": 80,
+    "hashes": {
+      "steps.json": "7578fb9f312a2a07f1db174569ab249bbf8889f5411b02484b24c8a8a4795806",
+      "task.md": "d4b7ee8bfc07caac1189744be94b894ec65f8f7479178c4a0210d1abeb306fc3",
+      "tree.md": "dcba8f4267cf1d459bd646e7e64166c4aba0647bd25f00ba8aaed966f6571c9c"
+    },
+    "gold_stages": 8,
+    "rule_stages": 19
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-caffe-cifar-10-11a22d9a",
+    "n_steps": 31,
+    "hashes": {
+      "steps.json": "aac03e7b0474c12b080d27430b2f6f89f53b6994213c81ec6c3d1264982b8876",
+      "task.md": "423e09c3637cf659f3401d0358ab8b365b9e04fcea823bae2a386a6dc3123cdf",
+      "tree.md": "32a97e34d0f0208ba0d7be6b42ced5eaca6f9053b85ff1e523722d82e5e7ce70"
+    },
+    "gold_stages": 6,
+    "rule_stages": 11
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-code-from-image-daf9d1a8",
+    "n_steps": 25,
+    "hashes": {
+      "steps.json": "9428558f080ed50b61a67721a405c225f102d097ddfcad61107ae69c0ec59b1e",
+      "task.md": "8bb6dab70f2abfae7f52ed8a15ca1434f46fdc2ec5e6539ccbe8b6e57c838592",
+      "tree.md": "f88fb19800d52bc8f329c9f276f73855f4ca3c2a434714cb6f9f0c4ef4563046"
+    },
+    "gold_stages": 5,
+    "rule_stages": 10
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-db-wal-recovery-644b805f",
+    "n_steps": 48,
+    "hashes": {
+      "steps.json": "511e9fd400edcef575beec1936c9cb702a4c6e5d059877b812cba1ba2dbad73f",
+      "task.md": "5ea1b0e339fddd5bbfd3ad7c4e999102a08298c2621f312ec2e7e985e700822a",
+      "tree.md": "b48aade6b22e71cd1f6d640f57dc44674b099f7956f2db64fb8351b8ff62b0c3"
+    },
+    "gold_stages": 7,
+    "rule_stages": 7
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-get-bitcoin-nodes-a2fb108c",
+    "n_steps": 60,
+    "hashes": {
+      "steps.json": "74e7f4d02663d22015b7acead7d182e6e11c86f6c9cf864e7da37003b9ac6833",
+      "task.md": "395dc545a2e159e1dbdbb4d2a43eff9c301242d5f825fed0e474693efeec8a1d",
+      "tree.md": "8e97649dcb52914dc2ee3b4ecc11cf7022019a234c7e93b7f27b7b15e39dcdcc"
+    },
+    "gold_stages": 8,
+    "rule_stages": 23
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-hydra-debug-slurm-mode-a14c39ed",
+    "n_steps": 32,
+    "hashes": {
+      "steps.json": "cabef7cc4d59bebed9f840ca01c326ae69e903e6860bf7a1991dc7908baa128e",
+      "task.md": "c8bb3cdce9490b4d77741ad7e905c668d032ae4f6fc816fd2ee9d6efedaa5350",
+      "tree.md": "fb900bc62489a250f1e48921e07797b5ae26db0c5393ffa24e6f6d4e014bcf26"
+    },
+    "gold_stages": 7,
+    "rule_stages": 14
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-llm-spec-decoding-8e6aad94",
+    "n_steps": 22,
+    "hashes": {
+      "steps.json": "174f5f8972fc487ac4dbb9540d3889d15dec29b06e64caa8990ddfe92918712f",
+      "task.md": "4b5a8bb2020e8b00e78edbf64710fd2f13f6cae3812eec6c5aab2c5826ffcc44",
+      "tree.md": "2a1533e1bfbfbaa7fb780b91a8d134b8095512906a97fd79afaabf592720d7bf"
+    },
+    "gold_stages": 6,
+    "rule_stages": 8
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-mteb-retrieve-c75bcebb",
+    "n_steps": 25,
+    "hashes": {
+      "steps.json": "f6b3210461d8e07c37a329068bccde4e5395a9cd7c4970b71419fdc276de39e7",
+      "task.md": "6bf0ce83e26e74b4b52cd001d3fbe3256384fef314eebf84715cc7e95ef5ab7e",
+      "tree.md": "638691ae72af89d48eb89c990641cfed03ab6bc46d9ee8ed96de7875bbda3d75"
+    },
+    "gold_stages": 5,
+    "rule_stages": 13
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-parallel-particle-simulator-6cd5c6fc",
+    "n_steps": 45,
+    "hashes": {
+      "steps.json": "3f9ca5ec1d4edb75d30271b2244150eee48907a194bb567956f09c379114b7b0",
+      "task.md": "6633bb08fdf43c1962ead48f033f0effc245079000a6a792f4bcf80f3e8086b3",
+      "tree.md": "cc9dfdb52245013cfa7b0ed8c48fa77a50668c71c24613a86f7b11c4c750ffdf"
+    },
+    "gold_stages": 10,
+    "rule_stages": 12
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-processing-pipeline-75a87f10",
+    "n_steps": 23,
+    "hashes": {
+      "steps.json": "36be9e25b39f73ed31f1292f48e8f2af4902d00fc63eed701f16c6a45e55eb3f",
+      "task.md": "7a9c4bb4a0dc465131074c3924471408c263890e76cd6a9c244d036981bdd1b3",
+      "tree.md": "e0faaf70ff4a1ff121aba1e2a2a4521ac1cc2552cc822fd94fb6a06a0dd93c5a"
+    },
+    "gold_stages": 4,
+    "rule_stages": 4
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-swe-bench-astropy-1-dd62e491",
+    "n_steps": 42,
+    "hashes": {
+      "steps.json": "994ffa61e8e0d24357ecf76b8e4da09fb01473c3653a683e2976688b68ca4351",
+      "task.md": "5c015edf38ea1e41a57f26c1750dbaafd6f76acb0ea25653c72b6a73b68fe674",
+      "tree.md": "c38872b130458b8c28bbe396f7f45df7b2250ec875a58cb855958000565314fd"
+    },
+    "gold_stages": 7,
+    "rule_stages": 19
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-tree-directory-parser-005b0d76",
+    "n_steps": 38,
+    "hashes": {
+      "steps.json": "3bead808054a4e26b8da848549fedfa97808c766b606ad56a3c211db8bc78fe3",
+      "task.md": "cd9f72efc1749b6fd63396514738eb7025fd46b90597e09c192cb1a42e0efe80",
+      "tree.md": "776a9cf4f98fa62653c7329316bd3fdc96d674a5e7a95dcaa00de0bdbd444fb2"
+    },
+    "gold_stages": 6,
+    "rule_stages": 21
+  },
+  {
+    "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-weighted-max-sat-solver-812d2c67",
+    "n_steps": 30,
+    "hashes": {
+      "steps.json": "3d3ac65ae4eb1bb23b6e4238cf33dc28145cabeb4e4e76e55336f2716f07d67b",
+      "task.md": "2985c86eede7126447a8ac7768df7f560809c0679e87f8d886e94b970fd6fdb8",
+      "tree.md": "2aaea7817aea3c308f3dfbc739581a2c772eafb4b355a8ae449635450c024a11"
+    },
+    "gold_stages": 6,
+    "rule_stages": 6
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-amuse-install-4d9725f6",
+    "n_steps": 28,
+    "hashes": {
+      "steps.json": "bfc5a2501eae8aa444c3513dc60b6acfb03ff2d8a76bc2eb1ebb1aad06064a32",
+      "task.md": "1a80ecf2c6e3ff396f6c539db85aaaa0cfa43b781163e441399d80a7489e698b",
+      "tree.md": "dfae6aaa45da3c846a391c580a12d6a9cf96ed8e7bd705e06c7f57ce92aece54"
+    },
+    "gold_stages": 6,
+    "rule_stages": 5
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-build-linux-kernel-qemu-338ec29e",
+    "n_steps": 41,
+    "hashes": {
+      "steps.json": "554cda98470fedf6029935d15fd42cd562cb9e1feda4458f486eb39f18222cb4",
+      "task.md": "337b6a2642b75168130f9b6557a237a94070dcb1329a146f42be0c736baa22e3",
+      "tree.md": "ffb113e1a0930c2f8fd954a98d2ec07c58c36aec9eeb68e66327c1e274b5a206"
+    },
+    "gold_stages": 8,
+    "rule_stages": 7
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-build-pmars-fa5a7cae",
+    "n_steps": 40,
+    "hashes": {
+      "steps.json": "bbd8f647eb29ed26efacd40e91e0a094fee043f0f4beb250b9022f6c77de302a",
+      "task.md": "5daae61086687be58c8360d10ceb8e9e84e2f7437f763a9e88ee33fb21f28c5f",
+      "tree.md": "35807203b8fad5e6da843b2405566fa4eadce961588d03e3eb81ba7aa6bad0f9"
+    },
+    "gold_stages": 6,
+    "rule_stages": 8
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-causal-inference-r-7fe0b56f",
+    "n_steps": 31,
+    "hashes": {
+      "steps.json": "56e23fd0242c8342bc1ddcb762e37d163f95d989cde7fe42fa4e9e31643bba40",
+      "task.md": "4ef5d2707e86bb5130bfd93e9513d63d7497bddff1376fe77245a1b78ef6271a",
+      "tree.md": "744a96deb784bfcdf587135fe69640ba704ee20440dbbcc30ba2fbf4cc9bf4d0"
+    },
+    "gold_stages": 8,
+    "rule_stages": 8
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-git-workflow-hack-4b497bc9",
+    "n_steps": 45,
+    "hashes": {
+      "steps.json": "4f43748e67f5bcf56c55020cfbc063c411f9818a8894c1bc088398cdfe2a430f",
+      "task.md": "8860d1dd56602ee09385c11eb4d7cc8d3e326b11520e2eb7d5233fef23039e8a",
+      "tree.md": "063faca9f64d1046033fa011dd305633327770ee38602e5c19154fe29e6adafb"
+    },
+    "gold_stages": 8,
+    "rule_stages": 11
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-merge-diff-arc-agi-task-dc402527",
+    "n_steps": 31,
+    "hashes": {
+      "steps.json": "20c93622efaba1380653be707bfa023618e4886a18d07a86f987b72a0412b99f",
+      "task.md": "09ecdf89909a34019fe8f88034d0dae09af6caef6589ebffce1a304f06e0efd9",
+      "tree.md": "6a914de16717d36382f22d7f5f948d963a009d5d58880c4b3dbe0c211fe69d4d"
+    },
+    "gold_stages": 4,
+    "rule_stages": 9
+  },
+  {
+    "traj_id": "openhands-DeepSeek__DeepSeek-V3.2-mixed-integer-programming-b8149b32",
+    "n_steps": 52,
+    "hashes": {
+      "steps.json": "ddae9aee0afba32af175bf5ea17e1573d3e448075b19ded6f2f5b9a9b1820750",
+      "task.md": "7b026f48e645922a67b6b69043712b7b2cbcee7a7099b199153d075ca3b7aa61",
+      "tree.md": "732d17a4ce95b2cc10a72ee8a119745b5b032def24d41589ea76767ae8fb00ba"
+    },
+    "gold_stages": 9,
+    "rule_stages": 18
+  }
+]

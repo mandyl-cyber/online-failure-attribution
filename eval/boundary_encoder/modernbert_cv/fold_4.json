@@ -1,0 +1,281 @@
+{
+  "fold": 4,
+  "selected": {
+    "name": "struct_mlp",
+    "dev_D0": 0.4868327402135231,
+    "threshold": 0.25,
+    "curve": [
+      {
+        "epoch": 1,
+        "dev_D0": 0.34277484397503605,
+        "threshold": 0.15
+      },
+      {
+        "epoch": 2,
+        "dev_D0": 0.38729828214471623,
+        "threshold": 0.15
+      },
+      {
+        "epoch": 3,
+        "dev_D0": 0.3984198645598194,
+        "threshold": 0.15
+      },
+      {
+        "epoch": 4,
+        "dev_D0": 0.4412532637075718,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 5,
+        "dev_D0": 0.44808743169398907,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 6,
+        "dev_D0": 0.4560216508795669,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 7,
+        "dev_D0": 0.4667571234735413,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 8,
+        "dev_D0": 0.46964155084125825,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 9,
+        "dev_D0": 0.47260273972602734,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 10,
+        "dev_D0": 0.4782951854775059,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 11,
+        "dev_D0": 0.4832826747720365,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 12,
+        "dev_D0": 0.4868327402135231,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 13,
+        "dev_D0": 0.48334514528703043,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 14,
+        "dev_D0": 0.48502556610664715,
+        "threshold": 0.25
+      }
+    ]
+  },
+  "trials": [
+    {
+      "name": "struct_lr",
+      "dev_D0": 0.4704301075268817,
+      "threshold": 0.2,
+      "curve": []
+    },
+    {
+      "name": "struct_mlp",
+      "dev_D0": 0.4868327402135231,
+      "threshold": 0.25,
+      "curve": [
+        {
+          "epoch": 1,
+          "dev_D0": 0.34277484397503605,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 2,
+          "dev_D0": 0.38729828214471623,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 3,
+          "dev_D0": 0.3984198645598194,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 4,
+          "dev_D0": 0.4412532637075718,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 5,
+          "dev_D0": 0.44808743169398907,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 6,
+          "dev_D0": 0.4560216508795669,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 7,
+          "dev_D0": 0.4667571234735413,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 8,
+          "dev_D0": 0.46964155084125825,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 9,
+          "dev_D0": 0.47260273972602734,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 10,
+          "dev_D0": 0.4782951854775059,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 11,
+          "dev_D0": 0.4832826747720365,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 12,
+          "dev_D0": 0.4868327402135231,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 13,
+          "dev_D0": 0.48334514528703043,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 14,
+          "dev_D0": 0.48502556610664715,
+          "threshold": 0.25
+        }
+      ]
+    },
+    {
+      "name": "newtext_tfidf",
+      "dev_D0": 0.470125786163522,
+      "threshold": 0.25,
+      "curve": []
+    },
+    {
+      "name": "semantic_lr",
+      "dev_D0": 0.423076923076923,
+      "threshold": 0.15,
+      "curve": []
+    },
+    {
+      "name": "fusion_lr",
+      "dev_D0": 0.4814565070802428,
+      "threshold": 0.2,
+      "curve": []
+    },
+    {
+      "name": "fusion_mlp",
+      "dev_D0": 0.48480662983425415,
+      "threshold": 0.25,
+      "curve": [
+        {
+          "epoch": 1,
+          "dev_D0": 0.36719817767653756,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 2,
+          "dev_D0": 0.3940578577013292,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 3,
+          "dev_D0": 0.4376811594202898,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 4,
+          "dev_D0": 0.4530864197530864,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 5,
+          "dev_D0": 0.45891931902294597,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 6,
+          "dev_D0": 0.46943078004216443,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 7,
+          "dev_D0": 0.47034482758620694,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 8,
+          "dev_D0": 0.4725925925925926,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 9,
+          "dev_D0": 0.4711177794448612,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 10,
+          "dev_D0": 0.4789473684210526,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 11,
+          "dev_D0": 0.480942480942481,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 12,
+          "dev_D0": 0.4787997390737116,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 13,
+          "dev_D0": 0.48122392211404724,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 14,
+          "dev_D0": 0.48248407643312097,
+          "threshold": 0.3
+        },
+        {
+          "epoch": 15,
+          "dev_D0": 0.48183839881393625,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 16,
+          "dev_D0": 0.48480662983425415,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 17,
+          "dev_D0": 0.4800550206327373,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 18,
+          "dev_D0": 0.48012470771628996,
+          "threshold": 0.2
+        }
+      ]
+    }
+  ],
+  "seconds": 45.62941850000061
+}

@@ -1,0 +1,1368 @@
+{
+  "counts": {
+    "task_tracking_steps": 1649,
+    "empty_action_steps": 1378,
+    "affected_trajectories": 270,
+    "recovered_empty_steps": 1378,
+    "unrecovered_empty_steps": 0
+  },
+  "missing": [],
+  "sources": [
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-0fd88717c953b92ed8a50495d55e630eb5d59166-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-5b83347a",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-0fd88717c953b92ed8a50495d55e630eb5d59166-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5\\gpt-5-1769101155.9400706.json",
+      "sha256": "84ee153f5a75cb4358bf905de910b351f39eaeea5dac84d6804dcca5ab0749ce"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2-e6e185ca",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2\\gpt-5-1769105412.8705485.json",
+      "sha256": "819f4b6957b3e4559228f63e1c956e380a6a3ec863f96f02454348429ecb1479"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1b70260d5aa2f6c9782fd2b848e8d16566e50d85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-e20126a5",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-1b70260d5aa2f6c9782fd2b848e8d16566e50d85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5\\gpt-5-1769101407.1035376.json",
+      "sha256": "5bdfd1884d8954c09e4598f48ac2c4b5eb923db9bd3b63dd54df98d842272420"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86-28be7ce9",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86\\gpt-5-1769084416.3247547.json",
+      "sha256": "4a9dde920bbd81bca310a220d065b8cde3f8e069b4120ed826217ab89a9a3bd3"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-5260527c4a71bfed99d803e687dd19619423b134-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-f32bf751",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-5260527c4a71bfed99d803e687dd19619423b134-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5\\gpt-5-1769238027.13028.json",
+      "sha256": "083380092bdc998adb36b4c463eedbbf9c09a23b86d94fb640a65505e5a9f6bb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-5640093f1ca63fd6af231cc8a7fb7d40e1907b8c-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-b3954c1c",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-5640093f1ca63fd6af231cc8a7fb7d40e1907b8c-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5\\gpt-5-1769101367.1562452.json",
+      "sha256": "cc09b827577ce01369a8960285f14f6af2a25c1e83101696cea850866787a5c6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59\\gpt-5-1769075203.4988124.json",
+      "sha256": "d182313d5d2e2bad823fae557693e560f805e24ca889fd8f4f6c08b12b873baf"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-77658704217d5f166404fc67997203c25381cb6e-v390e508d27db7a51eece36bb6d9698b63a5b638a-b30050fb",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-77658704217d5f166404fc67997203c25381cb6e-v390e508d27db7a51eece36bb6d9698b63a5b638a\\gpt-5-1769080422.712101.json",
+      "sha256": "098d856bf0d2f18984062f3fe3726e4616b0cca898e38bfa3d0c70a28c503940"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-8127abbc298cabf04aaa89a478fc5e5e3432a6fc-v30a923fb5c164d6cd18280c02422f75e611e8fb2-b2c3dcef",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-8127abbc298cabf04aaa89a478fc5e5e3432a6fc-v30a923fb5c164d6cd18280c02422f75e611e8fb2\\gpt-5-1769236758.6888561.json",
+      "sha256": "a69c0a772f5cbd31d93d85a0deae58f3bf2d532315139e71f9f1a8193fed13d7"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-83909bfa22573777e3db5688773bda59721962ad-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-dda94ca0",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-83909bfa22573777e3db5688773bda59721962ad-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5\\gpt-5-1769108140.0193167.json",
+      "sha256": "37b02aa12087809c801263e7a243127d2de220fa99d54d013e5d36250e8ed2b8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-9142be2f6cabbe6597c9254c5bb9186d17036d55-v0f01c69f1e2528b935359cfe578530722bca2c59-6f557e16",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-9142be2f6cabbe6597c9254c5bb9186d17036d55-v0f01c69f1e2528b935359cfe578530722bca2c59\\gpt-5-1769073820.2226436.json",
+      "sha256": "4f76ccd388040fb678935721b493914f3bfff5d97e8c43b17679576ebdcf5c6e"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-949c503f2ef4b2c5d668af0492a5c0db1ab86140-v0f01c69f1e2528b935359cfe578530722bca2c59-9a3f4648",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-949c503f2ef4b2c5d668af0492a5c0db1ab86140-v0f01c69f1e2528b935359cfe578530722bca2c59\\gpt-5-1769079455.8190005.json",
+      "sha256": "556f3c461837caf12c83100bb14328786abe101513a1fbc54128b7b0e3438056"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-a7d2a4e03209cff1e97e59fd54bb2b05fdbdbec6-v0f01c69f1e2528b935359cfe578530722bca2c59-1c0382c3",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-a7d2a4e03209cff1e97e59fd54bb2b05fdbdbec6-v0f01c69f1e2528b935359cfe578530722bca2c59\\gpt-5-1769109398.3145988.json",
+      "sha256": "9688397ff156672d07d8eb0077856cd0c8e005d4b7ee0ac6283b1de71175c0ba"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-b2a289dcbb702003377221e25f62c8a3608f0e89-v173091e2e36d38c978002990795f66cfc0af30ad-733b07ca",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-b2a289dcbb702003377221e25f62c8a3608f0e89-v173091e2e36d38c978002990795f66cfc0af30ad\\gpt-5-1769103753.4315183.json",
+      "sha256": "4ab82e9335bd0f7b2d644356970e31efe6eb0cfa9e4f1825a99d8fc37430db92"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-b5e0293645570f3f404ad1dbbe5f006956ada0df-v0f01c69f1e2528b935359cfe578530722bca2c59-9cc4c3d7",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-b5e0293645570f3f404ad1dbbe5f006956ada0df-v0f01c69f1e2528b935359cfe578530722bca2c59\\gpt-5-1769072851.9677324.json",
+      "sha256": "e5e2d6b14c3fac808dfb7a5d66d85d7a756cfff31dff547da207faf1ef235c0a"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-bec27fb4c0a40c5f8bbcf26a475704227d65ee73-v30a923fb5c164d6cd18280c02422f75e611e8fb2-9aee5e69",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-bec27fb4c0a40c5f8bbcf26a475704227d65ee73-v30a923fb5c164d6cd18280c02422f75e611e8fb2\\gpt-5-1769082641.7864187.json",
+      "sha256": "c188cb40da38e22e87321fa5f5625895b248dc8a9f1cee43701a7cd2206ce643"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-bf98f031f3f5af31a2d78dc2f0a58fe92ebae0bb-v1055803c3a812189a1133297f7f5468579283f86-c62b0ad0",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-bf98f031f3f5af31a2d78dc2f0a58fe92ebae0bb-v1055803c3a812189a1133297f7f5468579283f86\\gpt-5-1769106308.7611802.json",
+      "sha256": "63aa1662811dedffb57ec9f3e0d4e40aaa064707425b3ae8bcafa32643596c89"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-cb94c0cc550df9e98f1247bc71d8c2b861c75049-v1055803c3a812189a1133297f7f5468579283f86-6e13d2fc",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-cb94c0cc550df9e98f1247bc71d8c2b861c75049-v1055803c3a812189a1133297f7f5468579283f86\\gpt-5-1769086264.479515.json",
+      "sha256": "97d25a69e45eaafb231ef965da604b1f7117af2e9625fcb64ff3b8e0f8497931"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-d58e69c82d7edd0583dd8e78d76b075c33c3151e-v173091e2e36d38c978002990795f66cfc0af30ad-51499bc6",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-d58e69c82d7edd0583dd8e78d76b075c33c3151e-v173091e2e36d38c978002990795f66cfc0af30ad\\gpt-5-1769077799.6749997.json",
+      "sha256": "15a33caf3dd88364940a2752eeda0452da2939ca3b236c32e27a73ee1437e31e"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-f8ef34672b961a95ec7282643679492862c688ec-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-9a7ccdd2",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-f8ef34672b961a95ec7282643679492862c688ec-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5\\gpt-5-1769107358.854936.json",
+      "sha256": "4bd6276e0e216f26777ccfb100d44941486bb9a7b92b389ecd516812edec898c"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-fb144c44144f8bd3542e71f5db62b6d322c7bd85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-57b35ea6",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_ansible__ansible-fb144c44144f8bd3542e71f5db62b6d322c7bd85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5\\gpt-5-1769102781.459022.json",
+      "sha256": "92139b90d7bbebc6b02dfd20fa702739b66056eac69177bf47146ae6dc027bca"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-5dfde12c1c1c0b6e48f17e3405468593e39d9492-vnan-c55fbc3d",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_element-hq__element-web-5dfde12c1c1c0b6e48f17e3405468593e39d9492-vnan\\gpt-5-1769236099.507481.json",
+      "sha256": "79ed3593dd6d32c32cc29d9e3da5da46bb5e58a017bcff384f979644d5cc2127"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-aeabf3b18896ac1eb7ae9757e66ce886120f8309-vnan-11132852",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_element-hq__element-web-aeabf3b18896ac1eb7ae9757e66ce886120f8309-vnan\\gpt-5-1769239102.0076177.json",
+      "sha256": "f7caea26e9331e6249eea9be0a391be26697a7f757eb8f07a7ce5e72b20c0967"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan\\gpt-5-1769260596.5938492.json",
+      "sha256": "6f565cc271c098eacd759760c5e4062b7d47f942eeeb219d815bbf1868ef67a4"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-60725705782832a2cb22e17c49697948a42a9d03-v298a7a812ceed28c4c18355a091f1b268fe56d86-ae669a0a",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_internetarchive__openlibrary-60725705782832a2cb22e17c49697948a42a9d03-v298a7a812ceed28c4c18355a091f1b268fe56d86\\gpt-5-1769235098.719296.json",
+      "sha256": "d16a4c3d86b80793556aeb28bad1380516a12c70c3c9d668fb6e9fb979b769c3"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-bb152d23c004f3d68986877143bb0f83531fe401-ve8c8d62a2b60610a3c4631f5f23ed866bada9818-75152ca2",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_internetarchive__openlibrary-bb152d23c004f3d68986877143bb0f83531fe401-ve8c8d62a2b60610a3c4631f5f23ed866bada9818\\gpt-5-1769115833.1913977.json",
+      "sha256": "60a8649b08bb2c162dd3d2ed0a486a6a5a8e7ece854d2a637fa23c8d959b860b"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb\\gpt-5-1769235637.5134482.json",
+      "sha256": "b93588f24aed74b9df3cbd9b21267c8c068ce3ca1dd0619d0bececa29d056688"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-2dd8966fdcf11972062c540b7a787e4d0de8d372-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d-a9fc6e37",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_qutebrowser__qutebrowser-2dd8966fdcf11972062c540b7a787e4d0de8d372-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d\\gpt-5-1769081584.7726483.json",
+      "sha256": "3686d4233bcb83b00c6ba1d387b0a5c97eaddddabbf2e6cba38f2d4ceff0a729"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-473a15f7908f2bb6d670b0e908ab34a28d8cf7e2-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d-3f5c4067",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_qutebrowser__qutebrowser-473a15f7908f2bb6d670b0e908ab34a28d8cf7e2-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d\\gpt-5-1769080294.1081593.json",
+      "sha256": "343eebf7373afb66b325052c9081292f956b36937e61060ebd01dcb2c165434d"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-bedc9f7fadf93f83d8dee95feeecb9922b6f063f-v2ef375ac784985212b1805e1d0431dc8f1b3c171-974761f6",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_qutebrowser__qutebrowser-bedc9f7fadf93f83d8dee95feeecb9922b6f063f-v2ef375ac784985212b1805e1d0431dc8f1b3c171\\gpt-5-1769236879.7764258.json",
+      "sha256": "973a82fa5858fdc317d92d17b4c357fc005c7e58d741a5027dc2e2343c307b2c"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-de4a1c1a2839b5b49c3d4ce21d39de48d24e2091-v2ef375ac784985212b1805e1d0431dc8f1b3c171-6735e9d7",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_qutebrowser__qutebrowser-de4a1c1a2839b5b49c3d4ce21d39de48d24e2091-v2ef375ac784985212b1805e1d0431dc8f1b3c171\\gpt-5-1769077416.0226417.json",
+      "sha256": "95c4e8882609b1cc4aab0ddf87dbe6933e68eee0e80ac3c6c39baeb212f405b5"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-f8e7fea0becae25ae20606f1422068137189fe9e-7348b67b",
+      "path": "codetrace_bench\\swe_raw\\openhands__pro\\instance_qutebrowser__qutebrowser-f8e7fea0becae25ae20606f1422068137189fe9e\\gpt-5-1769102532.2227037.json",
+      "sha256": "9b31062f5d3194d5c6bd71c3cfc9da6f2523d27f75a6a604927d40d8ac869843"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\astropy__astropy-14096\\tensorblock__gpt-5-1768892107.237449.json",
+      "sha256": "5ca8ced259244fba8289a7e2cf8892dd64d93edcc7481c6d97f211525d518437"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14369-0fb54358",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\astropy__astropy-14369\\tensorblock__gpt-5-1768841761.1828084.json",
+      "sha256": "16562261a351204af14b3158bce18c77f68dee7bda681af8dba58e3c50b1e4e6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14598-36c01790",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\astropy__astropy-14598\\tensorblock__gpt-5-1768896684.501333.json",
+      "sha256": "6fb5837c552eedb1ea64f5669c6948d3a613487ccea86b866f3972f4c71eb37f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14995-e541781d",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\astropy__astropy-14995\\tensorblock__gpt-5-1768904317.3054466.json",
+      "sha256": "73a5a1213ee4e7b66cf85a670563cee5b087f1273a4ff9d26a1180902874a8e3"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-10880-70bbaa14",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-10880\\tensorblock__gpt-5-1768895619.6242948.json",
+      "sha256": "5d876e5f88e108f16855d30a5b4b48cc4f11f28880dca31c0c50f2f9935fb9c6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11099-c6998918",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11099\\tensorblock__gpt-5-1768906208.4417686.json",
+      "sha256": "5349e502e68c77e76faffda92019bce146433348cc9a3290f53cfd4948f49aed"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11133-5e845215",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11133\\tensorblock__gpt-5-1768840817.922238.json",
+      "sha256": "a3d3c45204171965bbd79482b21ca2e466946446202cf79c85cd5a8f74af76b8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11163-0e408098",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11163\\tensorblock__gpt-5-1768908090.2855592.json",
+      "sha256": "bb79d8dc46d994a3690f3b588043fe6c3c89d14be328dd49d9228349ff3cf148"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11179-4a42f87b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11179\\tensorblock__gpt-5-1768888045.637905.json",
+      "sha256": "bfcefe6c66ffb67a2a3fad73cedc3a1b727fa5418ab3bd6e850a895a0431b3a6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11206-3eaa47a7",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11206\\tensorblock__gpt-5-1768845303.4332488.json",
+      "sha256": "39aaafcb6e8d30e15709f9b4eafdaf9244e855bc66c0767e93a18fd50080c3ca"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11333-10687a03",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11333\\tensorblock__gpt-5-1768845391.714389.json",
+      "sha256": "f21ed67b0db07056e14099254208e5e936598ea6ed4d6a3de78949d74fcddc42"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11400-9d308b38",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11400\\tensorblock__gpt-5-1768896927.8996432.json",
+      "sha256": "cb46b107c1fd098223caa63ca58bfcdf4385cab393be631b2b9afa02c764c3a7"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11433-a1e8e3a8",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11433\\tensorblock__gpt-5-1768895006.1182036.json",
+      "sha256": "a31ee5d9f04e20bb48cc8b92e84aa48182c5ac798926a76c7df7375f73913483"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11451-8cce118d",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11451\\tensorblock__gpt-5-1768889721.4172606.json",
+      "sha256": "f9041e8b28e8fccc9a3188beb770a679140a967d856b54411359467091f1f83c"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11555-a1f1a268",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11555\\tensorblock__gpt-5-1768908355.6699696.json",
+      "sha256": "a4c329b3e661fde9312b06991479fcb1b3223aed868d1842c167cc7bac95d2ca"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11603-c7fd0824",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11603\\tensorblock__gpt-5-1768843652.7987704.json",
+      "sha256": "909aa8af52a0579bc00c11bfe5926d3e9afa281def708d64d2506c81f2d69f88"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11749-24e171f6",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11749\\tensorblock__gpt-5-1768886183.3717766.json",
+      "sha256": "039e145a53c67073c703d8c50467a1c1531bb2c516325c151e6b41c192d32314"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11790-6f214212",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11790\\tensorblock__gpt-5-1768889100.8916051.json",
+      "sha256": "9a63a4fd8b4f2519b7a1e4879ac364d068ba145cb0c3b7987f208e12da9d6d28"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11815-5d01671e",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11815\\tensorblock__gpt-5-1768910732.1114748.json",
+      "sha256": "39000659d00bd0c528dc7c8a3a5f1a41f8ea1aa773302dd86adc0ea5b849eb2f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11820-628d9793",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11820\\tensorblock__gpt-5-1768890009.1018136.json",
+      "sha256": "6bd7c3773e6124e4615241319f8fef2d507322287231c6bd2cccc043e8cb395d"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11999-e5bbeaf0",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11999\\tensorblock__gpt-5-1768834169.3176706.json",
+      "sha256": "750e40b7a7148f7319c697d1700654456e3e9b1e4a913bd3d5371d714a2c6a8a"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12039-99ff4f8b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12039\\tensorblock__gpt-5-1768848175.974172.json",
+      "sha256": "a793d0f1d4b59a2f5529e46970254d01bf7b9a06b4b87a993b2a85737e0ff394"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12050-ab113e49",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12050\\tensorblock__gpt-5-1768839708.114152.json",
+      "sha256": "1c8d99cf8992707c06485be40c94cca02120ffc5a3a1f0d2f72f566c8b7b2271"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12125-737fa0e8",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12125\\tensorblock__gpt-5-1768889223.7889605.json",
+      "sha256": "87b80ccf9416fa44ad7589d1fe1857443f222c72bfb121fa6911b2b450ef6da3"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12155-0d6da542",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12155\\tensorblock__gpt-5-1768832978.2532854.json",
+      "sha256": "798c02cb319f110dd749961b3630fbe56f24f628a3f5624b1400b0d17cae2b2b"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12193-417f2e5e",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12193\\tensorblock__gpt-5-1768894076.7853074.json",
+      "sha256": "b8158ed255d0dfb64cef52a8cf9fd50ba18ce290466bbe46bb45a8bb7eb98d04"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12262-41e946b2",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12262\\tensorblock__gpt-5-1768837256.5799508.json",
+      "sha256": "1b4c37966a13b3f9fbb3778ac540457d6e2fbf3aed20daa2fa85f0cd723a34c8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12276-800efa61",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12276\\tensorblock__gpt-5-1768844292.988471.json",
+      "sha256": "7b5488f834129ba4710d72874ffa43d6b59b2aafbb0e24b925ee352df24c2ff1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12304-cc2965e3",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12304\\tensorblock__gpt-5-1768845212.8124366.json",
+      "sha256": "3e649159beaa84517ff00cc3f7c4ff2cd0007533619b26bf433e807762d1a140"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13012-5c9c6d0d",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13012\\tensorblock__gpt-5-1768898682.1049736.json",
+      "sha256": "d78c13342254540d80fa3deb359b4c1e490d89682ae3f09b84cbed7a88c549a1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13023-8e73db95",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13023\\tensorblock__gpt-5-1768840451.242981.json",
+      "sha256": "af155cca676c1075960a34c8e9117c794a9cafbf817ee3172baa10216a60c911"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13028-da573811",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13028\\tensorblock__gpt-5-1768889765.5262773.json",
+      "sha256": "92fef91ea84200642b5d68e6e515705d9941db0a1cfaee024e924c186c930fa6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13109-f3ebc647",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13109\\tensorblock__gpt-5-1768887054.927073.json",
+      "sha256": "0912071565c0209c21c316471fcb7c5a6bd589e0be9b11c46c6b50ddf51314a1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13343-70b942cf",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13343\\tensorblock__gpt-5-1768905683.5285795.json",
+      "sha256": "0dff53b03d8911f0e33fab41ffca7d22bf12abf7505dfe9c684b25f79541607f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13417-b9cf6b23",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13417\\tensorblock__gpt-5-1768905194.637711.json",
+      "sha256": "761aa5539af02a3fb6e170674990c480cff7a51821cb347555ffc1aa9e7bf9fb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13449-d4928e17",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13449\\tensorblock__gpt-5-1768894084.9147036.json",
+      "sha256": "13632a7722d1c6f8984e1993a793db4b6830ef2d4cb31fc0ccd64e7061b2f119"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13516-0b062160",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13516\\tensorblock__gpt-5-1768891126.313726.json",
+      "sha256": "dcffcbdd36f387a691ef2492ad20ef147ae6438c927cd41f78532cd2a77ad750"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13670-b062ecad",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13670\\tensorblock__gpt-5-1768833605.695662.json",
+      "sha256": "cc8379175c7a3d6bf74181869ef04a0a9b49337db7f833488dddf7ba0e955fd0"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13809-9b66eaec",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13809\\tensorblock__gpt-5-1768898804.1006315.json",
+      "sha256": "29e32af1854efaa6d49ac836c58e90a0b4fb3a32a239e5bed7a1f17fbbadc3a4"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13820-836691f8",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13820\\tensorblock__gpt-5-1768842767.5969508.json",
+      "sha256": "f9aea5e86400e875b1d08245d663e22ac3957280f836186007015457abcda7bb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-13925-2f10aef5",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-13925\\tensorblock__gpt-5-1768888927.8883345.json",
+      "sha256": "a6a472565c9f2f5d55a2359265cab8d4ca218135c37479d964097ac75f21a761"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14089-7cc2152c",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14089\\tensorblock__gpt-5-1768885327.7515774.json",
+      "sha256": "af2895984cfc2ae82ddbb7c130c0c8749bb125d307fc8fcb38ca1784f7d7d9a3"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14140-193e0ceb",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14140\\tensorblock__gpt-5-1768906290.8615491.json",
+      "sha256": "b1f1f7738e947cbb7c64da144d23dea48fb7d99f660cf6eb159d0c6da0981b61"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14311-5d70c3a7",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14311\\tensorblock__gpt-5-1768843524.8796434.json",
+      "sha256": "205d9cef1ef3dbdb6370ae4296f1894876987aa2382f96854962c4c84e9b9c27"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14349-2d317299",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14349\\tensorblock__gpt-5-1768886537.9341455.json",
+      "sha256": "b57bc0838492f335d5e0c43d76d24bd8bd46fea95f8575d00a8d72992df2eecf"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14404-25e14391",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14404\\tensorblock__gpt-5-1768848553.4017396.json",
+      "sha256": "ab93bc708e361549ec0fed3ae23a1aec2c22308f184a48bd0d5f27cb6e062272"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14434-9f5a43d6",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14434\\tensorblock__gpt-5-1768832959.805031.json",
+      "sha256": "c005c6ac4d6ef3ca82a90e70e72db44d2b9dedc5f2569b42e2bfa7b5f358d9de"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14500-bc22e241",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14500\\tensorblock__gpt-5-1768904977.605819.json",
+      "sha256": "59650ffd6cd7f6ed6f6a9e5463fd41675d2eb6a12682a9408fbf205915f71b28"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14539-fdad2178",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14539\\tensorblock__gpt-5-1768911995.907388.json",
+      "sha256": "e72613f8762990539dc048803812c114f3f55d9b7ec8f3bae750fb7e6befbdb4"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14765-924f3ce4",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14765\\tensorblock__gpt-5-1768886981.3418586.json",
+      "sha256": "b294709aacc661095c215dc6574f40fad31dbcdaf7379e027aba8b523499f141"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14999-fb59f194",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-14999\\tensorblock__gpt-5-1768839154.7284038.json",
+      "sha256": "6a8becb344710ad4c0887df1b4f64b0500ed8106342e4215a31fa6488f2daf46"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15103-8f250680",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15103\\tensorblock__gpt-5-1768888451.809163.json",
+      "sha256": "d2b4c0d8a007a382edc00f77c95b2b68ffeb115063e08e25e6e6e102fb35c60b"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15104-148b1e60",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15104\\tensorblock__gpt-5-1768912011.843004.json",
+      "sha256": "65380f7e1ae174e2f2c0fbf1f513f41a1da1de6befe367579a7574ced15bd958"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15368-d7c3d139",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15368\\tensorblock__gpt-5-1768908335.24166.json",
+      "sha256": "8ffc9b1384f6ba6ac957f7d637a21ecc71caeef460aa0eab0cac44156a482e5f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15380-e8b3a566",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15380\\tensorblock__gpt-5-1768886162.0956988.json",
+      "sha256": "29849727704bdb7a4d7388c9c91b530fe36e6916a8a965cf1fcdb8bb51514e09"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15467-da5dc0ae",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15467\\tensorblock__gpt-5-1768903534.3016086.json",
+      "sha256": "14905317b2309a16f2d23a532480470e85f74daf03bcc25b16315a9976cda08d"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15569-62054620",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15569\\tensorblock__gpt-5-1768885953.594075.json",
+      "sha256": "d0e93b578dc14256b19a3b689c90d1189806c75bf667a95dea1a77bd202c8084"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15732-4b352587",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15732\\tensorblock__gpt-5-1768843860.8558133.json",
+      "sha256": "8b1b3ada874b48f41f7637b86f441b50ee140109b610dfc893555d30c017ead6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15987-d0ca733a",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15987\\tensorblock__gpt-5-1768902831.4933429.json",
+      "sha256": "234152d89cdffbefe7af57e21c5c6a86786b3507067aa31e26bb314787d892b2"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-16454-7ceddd3b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-16454\\tensorblock__gpt-5-1768905707.4965694.json",
+      "sha256": "435a8da422e258bb4cea8bac8a8379a755f42942c2ceab53354281016356db92"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-17029-3798d1c6",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-17029\\tensorblock__gpt-5-1768907240.3109498.json",
+      "sha256": "5e94bd94a10839aaed163d1c49d0335bc3905b599bda7487724abd589caac12f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-17087-fa8d1e0f",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-17087\\tensorblock__gpt-5-1768900119.6265402.json",
+      "sha256": "26ea573154876e3b19e225424e2f0fc2c0a7dc75f50cf4a636611c4adcaa3dc3"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-7530-638247b7",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-7530\\tensorblock__gpt-5-1768894010.0590937.json",
+      "sha256": "408acb561431ed2bcf6bb139c9183e4bb43fd065678440fd524bd50616f036fb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-14623-8f9f7df9",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-14623\\tensorblock__gpt-5-1768901040.2733104.json",
+      "sha256": "b0c491c619993b622f6952bab0fa25a551f80ab948f0e641093a0a99e343c5b2"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-22719-3a0e9135",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-22719\\tensorblock__gpt-5-1768908128.472999.json",
+      "sha256": "f1497935943c1fe19f4047ac700a256aaf29eca7b8a683ab6cd3673d6d6ca21c"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-22865-993404bc",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-22865\\tensorblock__gpt-5-1768892961.1193678.json",
+      "sha256": "a203b06a3b9ade013afb2c022de533204be96b0923d57174551f9fe08d20fd76"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-22871-6809a417",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-22871\\tensorblock__gpt-5-1768921095.9887917.json",
+      "sha256": "61045f589df5e79de8df4f93939d1185673f4ddd2bd2e3e453b7ae1ccd4fd29f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-23314-a839906b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-23314\\tensorblock__gpt-5-1768896647.9786754.json",
+      "sha256": "2366800191e9e8db827459f4cc2e134c08ce5b0cd5239d8df9d8df8ada65ac53"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24570-8e729dfb",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-24570\\tensorblock__gpt-5-1768901926.3499608.json",
+      "sha256": "f13c6d42b2b544fac34f35f8a2523d808bb4175d07a938c8943189b7a4e32734"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24627-6dc008f4",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-24627\\tensorblock__gpt-5-1768898999.1687703.json",
+      "sha256": "fa8a0edd0d3156b2f237d3f9d6bb69bd0b74e0dcc5e57be3154a3e832f7d7a81"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-25122-eaeaac2b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-25122\\tensorblock__gpt-5-1768895047.2542677.json",
+      "sha256": "49cb6032830b139a85d0e9c2b5671894db3e6e9d8f81d7748068428df58b4b32"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-25311-b8a88259",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-25311\\tensorblock__gpt-5-1768846790.9122603.json",
+      "sha256": "6b761e3279be3e65bd85066261eef37c4668b0b8f19d3e8a42a98e76bc7997bf"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-25332-e85f2eff",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-25332\\tensorblock__gpt-5-1768891493.7616405.json",
+      "sha256": "72ea3f3dc4ad4b02b8de9584bb857caa81bd67ff6468402526d08cab6c9c0a27"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-25479-fcab7ab1",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-25479\\tensorblock__gpt-5-1768915292.4631257.json",
+      "sha256": "418a6e95930c0b3091ba24139e1fb97a6e34e6e3f44d9e3bebe2238c6e35bd3a"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-26113-3e60723a",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-26113\\tensorblock__gpt-5-1768901661.8470492.json",
+      "sha256": "c0642fb5d96965aa635658e5c5769acd6f573d8486fc635031988f820f6c5c49"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-26208-7d6b7705",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\matplotlib__matplotlib-26208\\tensorblock__gpt-5-1768885147.1378706.json",
+      "sha256": "4d9e1f9c300f87b2d94a14bbd3d4635da42c8170f7e47b364320311cb2907df8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pallets__flask-5014-6bf53d93",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pallets__flask-5014\\tensorblock__gpt-5-1768915296.2263033.json",
+      "sha256": "43926bd84a751e122c87a6a3794fe709bdcea866d42990c741d5c611715ab3de"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-psf__requests-6028-1508a463",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\psf__requests-6028\\tensorblock__gpt-5-1768904238.4251523.json",
+      "sha256": "4e36f71a115147f63c3b8b1cce9f0910b7c5d28668aa251ef326f94a130415fc"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-4075-6aab4c69",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pydata__xarray-4075\\tensorblock__gpt-5-1768848022.0500283.json",
+      "sha256": "19c6bd94e1ad89bb771e8cc398937dbc38c358fa3daf7f40e3db2b23e7d6aade"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-4695-759c8995",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pydata__xarray-4695\\tensorblock__gpt-5-1768892913.0051544.json",
+      "sha256": "a4e097f1cda78ddace071ad9d833bc479ce257ccac58c755e7a6002f3f24f9e0"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-6461-050b4d36",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pydata__xarray-6461\\tensorblock__gpt-5-1768907246.277206.json",
+      "sha256": "88b98bddeb232e2bda64d2b7f3e63736966da9790adbe2f9604f8276eab55c33"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-6599-8f177c3f",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pydata__xarray-6599\\tensorblock__gpt-5-1768903884.1476576.json",
+      "sha256": "482226b5e9b27210da86818b33c0d46b40d711a18fb4479bbc815ada831d0858"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-6721-6c1f0e24",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pydata__xarray-6721\\tensorblock__gpt-5-1768886489.885975.json",
+      "sha256": "8068e00fa80f57d069f8bed025dba5c74981d565c440169752e5973fe7abe395"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pylint-dev__pylint-4970-a70c1ebe",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pylint-dev__pylint-4970\\tensorblock__gpt-5-1768844768.4078066.json",
+      "sha256": "6a14d0535275bf889bd88f4df7a4d01d1868467980fca560ed5d5028988fc90d"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pylint-dev__pylint-8898-2e57fc74",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pylint-dev__pylint-8898\\tensorblock__gpt-5-1768893495.6725607.json",
+      "sha256": "e2d87c9d9afd130575ce8ce6a239a47c0b4b10b137a71e065972eb9b526a32c8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-5262-96194eee",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pytest-dev__pytest-5262\\tensorblock__gpt-5-1768839516.6156003.json",
+      "sha256": "c0eba40accca4c02e54ec9eb44f351367cb80be46e6e214a220f93e60a6ce153"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-5631-b90dbe02",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pytest-dev__pytest-5631\\tensorblock__gpt-5-1768838371.9575298.json",
+      "sha256": "8cb1cebf5bfb9291e1b087dbc6e855ee98675719ec65e98801f61ee3ff655493"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-5809-af0c5e4a",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pytest-dev__pytest-5809\\tensorblock__gpt-5-1768839053.0684257.json",
+      "sha256": "a841d58371ad317638b3dd842c399007e45cae2054c830d542376769e29f2ae1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7205-282aadca",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pytest-dev__pytest-7205\\tensorblock__gpt-5-1768890505.1993084.json",
+      "sha256": "32da340bdc2445709df67550d3930c623439c02273f1ab2f858471e42b62df19"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7324-b33c996d",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pytest-dev__pytest-7324\\tensorblock__gpt-5-1768901057.919177.json",
+      "sha256": "c16addb9e378c525d8678f0e5209e3be6123b221a4cfcd3bda8cdedfe8aca453"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7432-e4da5e95",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pytest-dev__pytest-7432\\tensorblock__gpt-5-1768896647.6931186.json",
+      "sha256": "12ffedb1b6d68a92fff06f17091144bfc145e0bd397aaac8d7db4842becd48a5"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-11310-952013b4",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-11310\\tensorblock__gpt-5-1768847571.9650407.json",
+      "sha256": "7e525a5a469742bb9221624f215759d47b087ef20f258946752c3253fe6cee6f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-13142-ff36aa97",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-13142\\tensorblock__gpt-5-1768903691.1318288.json",
+      "sha256": "eed84719ea4cbf121bf9891a0ba0338cac3ccd781b786149d2e9d3696b3c8810"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-14983-00a17867",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-14983\\tensorblock__gpt-5-1768835467.864418.json",
+      "sha256": "f0b7fa4ac2fff75e04684ccb640759fed34293855baa2dec2d4112d67a186a07"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-25232-3a0749ba",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-25232\\tensorblock__gpt-5-1768833022.147838.json",
+      "sha256": "d37a7be5dfdd4ffd9d5c29841b9cf6b30b5555f01da8f5da3a51fa087387d60f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-25747-66b09602",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-25747\\tensorblock__gpt-5-1768913566.2866635.json",
+      "sha256": "d184bf5c4f79617b19e1e2697634560e34027f6a95ae35af92dc56dbb7af3fc8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-25931-cdaff695",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-25931\\tensorblock__gpt-5-1768914385.723619.json",
+      "sha256": "efe9b8574957782a51ad27fb83448c0c2e826dcd4c526c30f47af1c30ddb2f60"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-25973-f3c53bd1",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-25973\\tensorblock__gpt-5-1768833560.0458028.json",
+      "sha256": "6339ce165714462495d14cc7bf4c68f298eff66857bedf185bfd050f2d7edcd8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-10449-05e1a89c",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-10449\\tensorblock__gpt-5-1768907120.4112139.json",
+      "sha256": "c6d7ff4c9ba87d15cb6841ddefa75c6acb7c319f51a264d7e40dc4413d41f034"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-10614-34b85a5c",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-10614\\tensorblock__gpt-5-1768911057.7820194.json",
+      "sha256": "b0ccea3b736f4c695ec995e62dc3e137dbe2eaac63a00999722d75a15b793e36"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-11510-a1d5f441",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-11510\\tensorblock__gpt-5-1768835596.9915955.json",
+      "sha256": "1c43cbf72b78d9f795eac59466ade99b0601751c25647b2e3b22474a3831a1c1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-7757-7d0865d6",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-7757\\tensorblock__gpt-5-1768833584.505425.json",
+      "sha256": "b1b33c24ff0b17b4c622ac05c3ee7b9c89639ecbb7a78fd95bf1975ab1ceec49"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-7910-bd976fac",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-7910\\tensorblock__gpt-5-1768888055.6607375.json",
+      "sha256": "bc708f2db4c2ae2047a278b5efda897c53615d8c1e04c54cc40280b21c78f230"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8120-08ef8931",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-8120\\tensorblock__gpt-5-1768885257.1357427.json",
+      "sha256": "84590b9d1175e357041ea581f5f51f6694a9e2deb76eb9c25add9842d4a21e63"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8265-f92e7569",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-8265\\tensorblock__gpt-5-1768891124.1727443.json",
+      "sha256": "cd47963a78c0c34aaa20935963708761fb4ac7cb79326ccd3ae64ef4f9c20b7b"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8595-632717ba",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-8595\\tensorblock__gpt-5-1768836227.3833375.json",
+      "sha256": "87523c7585707511bde97d060eb18f6a4d947b4a8b2a303846a6d1c9e0fff9b8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8621-b27cbcfa",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-8621\\tensorblock__gpt-5-1768839898.5859435.json",
+      "sha256": "4793a1f6805d8f8f0d468d97b4d8dd08f49d893b07790b102b0de82aa390c2c1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8638-a4ab3472",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-8638\\tensorblock__gpt-5-1768843110.63094.json",
+      "sha256": "b6858ecf25d27bae57ac277381a52b233708a3a0c5f90539996ae6ddcb203136"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9281-ed84e737",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-9281\\tensorblock__gpt-5-1768841538.5022051.json",
+      "sha256": "4b7405e909d6e2c847d4cc1ce26c3084743210dac755c716cc31c7948a6be910"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9367-8dde1fee",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-9367\\tensorblock__gpt-5-1768903337.9957957.json",
+      "sha256": "f8d656768504909ee4d7796d9a6ccea2a2733f51bd899a37d1207edf46b13ef2"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9461-6aa30bf2",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-9461\\tensorblock__gpt-5-1768890875.0581803.json",
+      "sha256": "2398552722c6beb7e72ac7b57b24e13dffb2c5d256328da7a365a63dd74d2f41"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9602-8d033150",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-9602\\tensorblock__gpt-5-1768895268.274284.json",
+      "sha256": "ce980f1de0caf984845c361279168792ab06df4c8fb20158b555bd1dc53841cc"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9698-006ed41f",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-9698\\tensorblock__gpt-5-1768884596.9611897.json",
+      "sha256": "9dba89971c5b7c0e8dd603af105ebdbe988d146f42cab8c063da01bbb1cfff81"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-12419-8dd07e79",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-12419\\tensorblock__gpt-5-1768902494.3104866.json",
+      "sha256": "6027156fa9f828480c75d209448a0df67db5d221c5e0fa278c928ab38bc4e488"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13372-ce1ad32b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-13372\\tensorblock__gpt-5-1768892123.710831.json",
+      "sha256": "ed2e7b92f2919bc3597c70c19a2bdf91d61fbee7f16ca18a32fcbd1b9cb58562"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13551-63e267c0",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-13551\\tensorblock__gpt-5-1768914478.4444368.json",
+      "sha256": "1cd84432814c2a79df80787bd48087247fd41db128774247bb15fc46e1266f50"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13647-61fd1639",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-13647\\tensorblock__gpt-5-1768915877.607497.json",
+      "sha256": "9ea64921ade49f333f2096bc5ca01b3504ab499b4aee11cf2885457dcde38dbc"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-15017-9641c826",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-15017\\tensorblock__gpt-5-1768884768.785762.json",
+      "sha256": "2d08fe1e6fc8c6de95c404c266495b17530b6dc8c030267a4cc6a37552a6cfc4"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-15976-9e6bc719",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-15976\\tensorblock__gpt-5-1768904884.9204965.json",
+      "sha256": "b3fcb3f090adb58a8d02b42a7a0fb0da295d44974a1bf3a3e4829d4ae4f56225"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-16597-fdf109a2",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-16597\\tensorblock__gpt-5-1768848210.6497178.json",
+      "sha256": "4c2ea04311edf88983e423d683697c08fd21a3c6b32b0febd8675d583e8e4632"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-17318-8d1c8af1",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-17318\\tensorblock__gpt-5-1768911469.5813434.json",
+      "sha256": "4715ebaf3857636502d2d446bc473a9f1dc9e072419c3e22891f6859578b6b45"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-18211-ca7a3c16",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-18211\\tensorblock__gpt-5-1768848258.348407.json",
+      "sha256": "244f37a6afd9147146ed29286bc0459046c5236cc9b8bb4ac490b2db86b4655a"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-19954-c947e93d",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-19954\\tensorblock__gpt-5-1768891967.3423822.json",
+      "sha256": "7d819b59a37342d32c2af5420123da0139b91ad9f87cdc6ec468b097af11b6a2"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-20428-37b735e3",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-20428\\tensorblock__gpt-5-1768838588.2702866.json",
+      "sha256": "c8371dcc76369a3814453ce0fb3aafdf78698ea23ca01a6e207095a0c017cc7b"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-20590-d2e851e8",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-20590\\tensorblock__gpt-5-1768848708.9073207.json",
+      "sha256": "8f970e42667a463eb8d97e1c4eb234be6f1950934fe6e48b368d43ea2d07bd18"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-20801-9aaa527b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-20801\\tensorblock__gpt-5-1768891063.5975919.json",
+      "sha256": "b781b58f908af6bea60bbaaa67fd6d8afdae5dc38566a85305e1960c6c45b5c6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-21612-53350494",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-21612\\tensorblock__gpt-5-1768913598.046213.json",
+      "sha256": "3cf8b672d442f0da46409a0068fb296d8095ff8f9cfeb340a134575d8e430b4c"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-21847-ac120eb6",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-21847\\tensorblock__gpt-5-1768844756.722674.json",
+      "sha256": "f57ddb60f1fb6e47c192291bb6f39aba0e732b6db9f5d30125e264b0686b9163"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-21930-9cf36182",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-21930\\tensorblock__gpt-5-1768888413.4658349.json",
+      "sha256": "3f07b55e6413c91b12caa204cbffb285ffab5ccb5fc3b9e8b86516138d725b92"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-22080-28be9927",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-22080\\tensorblock__gpt-5-1768840628.8899863.json",
+      "sha256": "12d790e2e820902083b8a699c37b6e7d936a052c8f5b4bfbda7da0b02d2f46d8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-22714-c0148acc",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-22714\\tensorblock__gpt-5-1768901231.032433.json",
+      "sha256": "cd68e712acaebc31efd02712e86578bc00d8542503946046de1d57d052f6b85c"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-23262-ed66febb",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-23262\\tensorblock__gpt-5-1768912014.0478566.json",
+      "sha256": "dada1ec1f37e64f30bb3d0021c872dbb4a83a1c53aa7035e6ad6b364b621dc62"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-24066-4e6e5ad3",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-24066\\tensorblock__gpt-5-1768844647.6317031.json",
+      "sha256": "4f09fd7d7200719d8194f0f68fcfb4231e13a582daedb33d38fb98ed15772f38"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-12981-bb6ea81f",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-12981\\tensorblock__gpt-5-1769000517.0689225.json",
+      "sha256": "1ec903f4d9b5908603af8aa3dc01e64a64fabedf81cb8c6ecc999e62575101a8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-13693-22a78bfd",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-13693\\tensorblock__gpt-5-1768878806.1512136.json",
+      "sha256": "e4ac0cd8033272f2d5bc719c7698da54bd1517cf76a8af3be2eb993d6c8afe63"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-13865-a6eb1183",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-13865\\gpt-5-1769098439.436025.json",
+      "sha256": "53107eebf57b58ac109fff518b5152597648cd67faa03285e79e4f9233830dbb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-13989-6ebe445f",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-13989\\gpt-5-1769102658.4974172.json",
+      "sha256": "7cee5ba525609cb7d25c1fcee8c8fed0f47d7121f7be7790b31e72c9af5b3b5e"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-15158-f2e4f9e6",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-15158\\tensorblock__gpt-5-1768882861.022711.json",
+      "sha256": "ec460d267ab8d2afa0e2d62c7064d86a9582e9a6bf0bb4b2391e82758ece6ff0"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-15795-743fd3d3",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-15795\\tensorblock__gpt-5-1768846580.1607585.json",
+      "sha256": "27c8a3dfd8c2c09ade2ed660a02b6f491ad7555db22c9a04bf658f2d4567d272"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-16198-298e0a94",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-16198\\tensorblock__gpt-5-1769001614.600956.json",
+      "sha256": "5f750436f6a4901a8127abb70a522de38844d38be69462791e6829102dc112b9"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-17082-8d986335",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-17082\\tensorblock__gpt-5-1768884875.987823.json",
+      "sha256": "b6c2ded1878aa66434a2bb7f8aebcc376d5cb1f1878988a50777ceccdbe730ec"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-19590-8adf6ec7",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-19590\\gpt-5-1769104104.4159057.json",
+      "sha256": "16296cef954f01f05fd76da6cd8c6174873c572878fcb216ecbf6ddca73921e1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-20136-9ef8b462",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-20136\\gpt-5-1769081436.6514752.json",
+      "sha256": "a073a5216a6b55f120bed62f76f3b07c20833f082dc9eb42625aa1c7bd3b83ba"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-21768-3d7857a2",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-21768\\tensorblock__gpt-5-1768842381.361866.json",
+      "sha256": "bad5ada5bf4e5364e504b91118c044878026c1f49bdb3ce0d37bf56307fa13e6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-21969-9e70f015",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-21969\\tensorblock__gpt-5-1768910890.8477743.json",
+      "sha256": "96e76028feedaf8c82b27e4bfb2f491c34ba242c9b33d933066ee3411eeb7058"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-22458-ebb9ca50",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-22458\\gpt-5-1769105288.609218.json",
+      "sha256": "a6d09c9790b6b6a2f12dc4d02a98d48bef4cea35a085dc3f64462aa52f3b1767"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-22920-0188fcc0",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-22920\\gpt-5-1769106271.5723968.json",
+      "sha256": "7c3dd0f379fe243a9d2365e80b29d32156aa8635509cad301d4b3e283d4b0e74"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-23126-d6300910",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-23126\\tensorblock__gpt-5-1769002720.796909.json",
+      "sha256": "3cc69a0db5e3a3834735a8011bee72c1b592351f400a17d16e644dd658c343fe"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-23223-bf8abbe6",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-23223\\tensorblock__gpt-5-1768848577.9266899.json",
+      "sha256": "14f68066b48552026adfa178fb947eab4459bcd40698fbae95fd1cf87d0837b9"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-24238-2d178ce3",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-24238\\tensorblock__gpt-5-1768998146.221264.json",
+      "sha256": "40e900417cae5bc9dcc8b1e6b02c892796a56f59f5020b34cb636aad2fed23f4"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-27463\\gpt-5-1769084714.196264.json",
+      "sha256": "c18cb9d6cb6cae283729dccc132a251b1b80eeb50f7d891a66c0c6ca569b7d58"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-28535-2ccf9291",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-28535\\tensorblock__gpt-5-1768898886.9536905.json",
+      "sha256": "c1610dd48a8bd1bb11a83b0c117e2ec46a007c8e2a040677d17415a836c74a10"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-29311-edd5529b",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-29311\\tensorblock__gpt-5-1769003494.1234372.json",
+      "sha256": "c161ae86e2e68d9e82705da835d22a279ec949ea322e19a365dd9dc82a21dba2"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-29449-febb45eb",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-29449\\tensorblock__gpt-5-1769004447.5539155.json",
+      "sha256": "62e19e116cfeabaf3643e6a7cef39f8ab503cccd3444bc18364112d61ec3e69c"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-30556-fb7d24c5",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-30556\\tensorblock__gpt-5-1769005254.4802964.json",
+      "sha256": "d143bc1373d33550fd88939b9ab337cee9dff5627d895c547a5d55d386b8cdb3"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-3716-b90a1926",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-3716\\tensorblock__gpt-5-1768998259.2722714.json",
+      "sha256": "454de8837dd49499658b0fd643b210e49a5aefb4073253a86a4f401fafd43c44"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-5122-27a9c664",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-5122\\tensorblock__gpt-5-1768909469.1515057.json",
+      "sha256": "62d982d3fd5ddc47259808a74105c5eb8b4541226b19a3a2c28a8e99959101f0"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-6098-6fbefef7",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-6098\\tensorblock__gpt-5-1768916534.0897572.json",
+      "sha256": "4a3d3bcf2efe30db24133e8273515c60cb6af62db58164e3c509332d0bb0edc2"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-7078-c48fab49",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-7078\\tensorblock__gpt-5-1768880475.5676806.json",
+      "sha256": "aea211e41c3e0f2a811db8341a7d0db7346ff610914198a97601123473818396"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-8624-ec8fe9b3",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-8624\\tensorblock__gpt-5-1768999523.3623753.json",
+      "sha256": "b6dd9e5fbd947b45ca768fe7b2caa04945efd134d41d0eec40b5878f5030e38f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-18553-96879c97",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-18553\\tensorblock__gpt-5-1769001015.0533292.json",
+      "sha256": "f23bc3da113ad6e30254278997f2481102c048981adfb51ddbd4e035725bb1dd"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-18871-9b44c674",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-18871\\gpt-5-1769107847.521346.json",
+      "sha256": "53a51be220724c6db5cb0bfc5e8536c17ff357e8c530fcf8889038ae1718abc4"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19201-78909bc7",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-19201\\tensorblock__gpt-5-1768881580.4243538.json",
+      "sha256": "042793d7b1e0af84fea4c786a4d7ed4808a93ef4a64bfe4a211e52a3d52c69c6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19484-74f5c884",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-19484\\tensorblock__gpt-5-1768847772.5205352.json",
+      "sha256": "cddc28f5169668ede375cf80a83e3086787564141b0531489487108520cd8f5f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19636-c39cfb90",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-19636\\tensorblock__gpt-5-1768841512.761572.json",
+      "sha256": "432fdf080184d8b83f595b05c86902a3e12ddc5932c1e2efc52b08ecb71037e8"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-19775\\tensorblock__gpt-5-1769001828.0257974.json",
+      "sha256": "190bd7edc8dbae7dd9eb845e64fd207948d39817f0c3c2a20eef0e62817033ff"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19844-006a5734",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-19844\\tensorblock__gpt-5-1768877883.6044285.json",
+      "sha256": "b58cecba4f15e8836fa5c56529ae8b4e18577f18d2c3fa50af8769ec63c310c1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19863-31ae5ddf",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-19863\\tensorblock__gpt-5-1768883493.275813.json",
+      "sha256": "63017e72a29ac4fd508aa638001e1b2c81cf87f560b6723d6df5c5b149e26740"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19924-22577cfd",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-19924\\gpt-5-1769092089.9582207.json",
+      "sha256": "ee375332a9590cd6b3d98747f8482887543cb9ca59c43ca723a93ba65b96bebd"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19973-1562718f",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\keras-team__keras-19973\\tensorblock__gpt-5-1768914751.5112321.json",
+      "sha256": "cc8bcc27606db4e3bcbc88af8923c07b807e3243b42f216d73e29f4425413de3"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-19331-4460742e",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\langchain-ai__langchain-19331\\tensorblock__gpt-5-1768919141.353889.json",
+      "sha256": "52a0f266c70b84fd6b066ba22ad738ad5e4f467a0c57ef82cf11c134e85f1909"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-4009-6c1ad563",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\langchain-ai__langchain-4009\\tensorblock__gpt-5-1769006121.0989516.json",
+      "sha256": "bcc883158c74ea096bbca52617270748cb22ceca83473cc8a98550a083cf3dae"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-5609-4096132f",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\langchain-ai__langchain-5609\\tensorblock__gpt-5-1768845325.8704443.json",
+      "sha256": "17bd59e8c72fa942b0a24cf685107ea35bde22ff31a62eeb57a97042f504286a"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-109750-0071ea66",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\microsoft__vscode-109750\\tensorblock__gpt-5-1768917673.881968.json",
+      "sha256": "ac0bf73924818461a88309b8481bd83a1ab2465faed652b11c1b330e98709cbb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-110094-a10dde1e",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\microsoft__vscode-110094\\tensorblock__gpt-5-1768922023.1295414.json",
+      "sha256": "26b9a4bf37da2885d128bca1e4ad5dcf8134343609b98473ce45ef59afdac5eb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-135197-309ff193",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\microsoft__vscode-135197\\tensorblock__gpt-5-1769006066.66155.json",
+      "sha256": "afd1c09e459d7e1c2d47d072df7d9bb2a10590fd6ecb63e5fff1142dbad78ee1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-153857-2ba91a64",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\microsoft__vscode-153857\\gpt-5-1769078006.378336.json",
+      "sha256": "02afe2fd51ba761187e85f8b099bd64369c79c3e8027adf4be3d8ec574f79828"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-177084-3281322c",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\microsoft__vscode-177084\\tensorblock__gpt-5-1768894716.2240746.json",
+      "sha256": "7d747899b05914b52147e0855bfcc977d2cffd3d4f631799eeb54162dfad0dcd"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-11451-bfbf6f73",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-11451\\tensorblock__gpt-5-1768902699.2486398.json",
+      "sha256": "226315cafa7d2e0d0c8bdd6de5060e086f98694e4d2ca162413c4b0b2efa7eee"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-11987-55b4bbe6",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-11987\\tensorblock__gpt-5-1768920317.7047715.json",
+      "sha256": "4c8b25958b8d008624f1deb70abe918752a8147bccb521a8e26072ccae224110"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-12236-867e02cd",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-12236\\gpt-5-1769079320.2119048.json",
+      "sha256": "9a90e84777009605e327604339b4c0ac29b11f9695b6c6959aa072afe540d359"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-13534-53934742",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-13534\\tensorblock__gpt-5-1768913493.252486.json",
+      "sha256": "55638f9a0e6cf3811d887bed47ab4e3258e0c74dd76173b5cec3e8ef63af54ca"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-13778-83d0b364",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-13778\\tensorblock__gpt-5-1768896448.331862.json",
+      "sha256": "b40ba4ce51f3415680f9eee8def0cc544724da882e05aa035357dbbdaaf6d469"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-15359-ef60852f",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-15359\\gpt-5-1769079865.2070231.json",
+      "sha256": "97d571bca97cb8d3dd7d7e559237974782103de26ef1c3ec14919138521781ef"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-18141-f3954aea",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-18141\\tensorblock__gpt-5-1768897019.8978155.json",
+      "sha256": "d43bc76d8268b2338ad2508df58bbfb1200b0ce0e4ae9c2ddf1c8b7bd49f730e"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-18257-2e939e36",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-18257\\tensorblock__gpt-5-1768891852.1164746.json",
+      "sha256": "718c83ac011756cf454440f97a1b89e675d0dfed5884061f7c3acf8ce358f1b6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-18683-5753f295",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-18683\\tensorblock__gpt-5-1768909526.3616762.json",
+      "sha256": "eb7ba11fe6b550fccf7c0307eccb231d3029d3ae377001b563d5b13d342f3ed1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-19072-fca4d8ee",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-19072\\gpt-5-1769073689.491759.json",
+      "sha256": "ae1b7b013a3a9ad860fe67b1a26865ad88fab2e890826c60ac094a44a0bd1edd"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-19121-ef420de9",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-19121\\tensorblock__gpt-5-1768889938.5772843.json",
+      "sha256": "117da0cea98743394db6efb93ebe04a4a44100918d2b566eaf3cfdf7d145c155"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-26061-eb46fa1b",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-26061\\tensorblock__gpt-5-1768919864.703082.json",
+      "sha256": "93011edaf74ca5d6fdda597260ca84a895db4fb80b5764e973ec73af2491e740"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-26807-24b87c4a",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-26807\\tensorblock__gpt-5-1768904608.5923553.json",
+      "sha256": "75c60d76741f3b74e75b4da250166c2db174c12b42783c410948aa828cde3bfb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-28813-3ba6cc10",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-28813\\tensorblock__gpt-5-1768900326.106003.json",
+      "sha256": "04293afac5cfba64adff4cee610ba3c939f8ca92148c192fec392493efe90d33"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-34610-216c0048",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-34610\\gpt-5-1769079953.281377.json",
+      "sha256": "c98a7aec31696fd15d98c62d5ec2c47db5a245e293ddc7eff95aa8b811625089"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-42412-077fc45c",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\mui__material-ui-42412\\gpt-5-1769072452.4454901.json",
+      "sha256": "3d8f222dd4c78455fa68360ee6b448672b2cfe3c8e03b66736af3c8038316251"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-12930-5da56ae8",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\prettier__prettier-12930\\tensorblock__gpt-5-1769010559.4393797.json",
+      "sha256": "8ea2b4e2fba96c9394459833a4f8b74d8a90c12cfa12dbe65f79b3ab120e5096"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-14400-9207921a",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\prettier__prettier-14400\\tensorblock__gpt-5-1768901170.0804348.json",
+      "sha256": "e33ccf3e133c99bf8fa00923a4b6b4752ea4c624c2bb534b433171e1b9fc98bf"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-3515-0d82b41d",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\prettier__prettier-3515\\tensorblock__gpt-5-1769003425.6438892.json",
+      "sha256": "8f3933e508f4e66cfb2aafff181eb890df10f8321e228e2db38fc84e3f44ddc4"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-361-7d8d70b7",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\prettier__prettier-361\\tensorblock__gpt-5-1768899600.142939.json",
+      "sha256": "9d362686220b197dc3b32661c4e677ead5c91289ffd96540acaadfab8e1ef6ee"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-3723-0d4bb0b6",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\prettier__prettier-3723\\gpt-5-1769077578.788454.json",
+      "sha256": "9e29180c9ba6ef9785671be816a4e50b5b845eec9b1c3dbd4a8a3c6ee4dbd647"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\prettier__prettier-459\\tensorblock__gpt-5-1768912176.5150223.json",
+      "sha256": "0922d93bea12005174d21ea236bc3b00a7c208cf9ce3bba994fa01914d99d5a7"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-8046-0bb849c5",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\prettier__prettier-8046\\tensorblock__gpt-5-1768900779.615549.json",
+      "sha256": "e41bacac85999632017ac19bcbc71327e36189246225afe0daf945f751136050"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-2576-370c7644",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\serverless__serverless-2576\\tensorblock__gpt-5-1768901358.6368864.json",
+      "sha256": "adc0d54ee334d797449f641e665bb5a059a3efdb2485ed033c50fd7f52cfe364"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-2945-1c469acc",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\serverless__serverless-2945\\tensorblock__gpt-5-1768911906.1272295.json",
+      "sha256": "d10549cb4c061744108dde30ca29c3ac2d14cd345e7972747515c082056361ba"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-3457-9fc6d45a",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\serverless__serverless-3457\\tensorblock__gpt-5-1769004894.1264303.json",
+      "sha256": "16c06f8de8acc889055ffab1baf6ee0f1cba0147bb2340484c3dd6597039d1b9"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-7374-19778028",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\serverless__serverless-7374\\tensorblock__gpt-5-1769004330.286935.json",
+      "sha256": "f09a0a42f3ea9f2ad3125cd465e3059a5ab9757dbafa6c3f630c82ce831a12a9"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-yt-dlp__yt-dlp-5933-e15ee7cf",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\yt-dlp__yt-dlp-5933\\gpt-5-1769089098.2983787.json",
+      "sha256": "f832e2e180d324364c74b8eeb472150847434f85c934996d28098d04930cc294"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-yt-dlp__yt-dlp-9862-378895f4",
+      "path": "codetrace_bench\\swe_raw\\openhands__poly\\yt-dlp__yt-dlp-9862\\tensorblock__gpt-5-1769008343.0823803.json",
+      "sha256": "91330587342e8b5b2c0bb31b628aeb686bd84afe2cc64fab0c2fc33773c6d50e"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-12907-f99e6267",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\astropy__astropy-12907\\tensorblock__gpt-5-1768841307.5671816.json",
+      "sha256": "d6c0c052e072b34c7f751549637e7c82b5dbecc557574149b32f67538bab0717"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14539-ab9134cc",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\astropy__astropy-14539\\tensorblock__gpt-5-1768904794.0115292.json",
+      "sha256": "7b7b9f2f39bfad26a30d29f7c7095f98e398f592e69f1fc9cbef973799190d36"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11848-227c856d",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-11848\\tensorblock__gpt-5-1768840025.1400647.json",
+      "sha256": "5ac208da950e28057f4b8321efbcfb798f4a7358acd71006d27afee474299ef6"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-12419-2511c632",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-12419\\tensorblock__gpt-5-1768899318.7482085.json",
+      "sha256": "60058b98cba71763884304723752398d6b92c66e5792d0bb97fdd85809569fa4"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15022-484c1b35",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15022\\tensorblock__gpt-5-1768887744.570741.json",
+      "sha256": "e754c4650cfe88baae065a2c360cc2ec27d3b9b5843761d0e0ad6fb668b382dc"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15503-d939f22a",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15503\\tensorblock__gpt-5-1768834435.3465781.json",
+      "sha256": "df337acee6fac3b141b6adcb3116200daac04019e549e0d249dccf3ad40f2332"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15741-d7b75d95",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15741\\tensorblock__gpt-5-1768895167.062654.json",
+      "sha256": "263beb03669565401ad1c1a86286a11a20112abd1e0c3ac1ff513d14497de48e"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15863-816738f2",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15863\\tensorblock__gpt-5-1768906432.9883697.json",
+      "sha256": "e4f8e9dbfb83ddb06a97dd52be9c719a88f60024a5d7a531177b6bc788be17f1"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-16429-66fad31a",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-16429\\tensorblock__gpt-5-1768895499.4538116.json",
+      "sha256": "91bae2b52d0336c45699c9e06eca24303b5664e73c898bee04713a56c794230d"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-16485-3e4d6956",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-16485\\tensorblock__gpt-5-1768889443.950241.json",
+      "sha256": "c2efd0bd6eb915d35b18a11663fd36beda546c82ad34dd462cd12adad5df3ef9"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-16661-6655407b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-16661\\tensorblock__gpt-5-1768845894.613678.json",
+      "sha256": "1ffff758fab20ea65012c85562a00af3b68ee4e0c65457ba50a79c08423d2fac"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-2905-6eb6cd67",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pydata__xarray-2905\\tensorblock__gpt-5-1768917831.3018794.json",
+      "sha256": "2f5bb155a1f167e05f6496b298bf24ae84a16dc8e923711b248f63ae7a2ef813"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-4966-a48c05ba",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pydata__xarray-4966\\tensorblock__gpt-5-1768889173.9240758.json",
+      "sha256": "c3996aadd9feaf12dc385e0e8da3fa29cd79f3e3ccb21e9fe3e37d6ef40a2b97"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-10081-e80cbf24",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pytest-dev__pytest-10081\\tensorblock__gpt-5-1768915439.543572.json",
+      "sha256": "4ad58188212d64fabb0e81f19dd924a410d3e42cc8c996053dbbc5fa3728fcf9"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7236-8ee7fd31",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\pytest-dev__pytest-7236\\tensorblock__gpt-5-1768846376.473888.json",
+      "sha256": "724d5a5c553ac67664359c7dc6692f445a2613ca12600602bb8a3aecf6dd6d04"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-12973-35ea9547",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-12973\\tensorblock__gpt-5-1768837193.8906116.json",
+      "sha256": "7263319ee95f8ecc9951e1450af87f1eed5671e5c2a66b912aedfc104bb2c82f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-14894-70e56c10",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-14894\\tensorblock__gpt-5-1768899426.6865835.json",
+      "sha256": "d603cd5100d733ed0472388ddfc750d06e4cb4aa2118bce74daffa3952dd158f"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-26323-2c2c571b",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-26323\\tensorblock__gpt-5-1768908782.3294404.json",
+      "sha256": "4052ef790ccb23ee77b6a14f40137488494acc83c67ac1706dbae3770edec363"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-10466-cc5abeef",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-10466\\tensorblock__gpt-5-1768840273.934915.json",
+      "sha256": "8c4b56b273411172f2a1d6ed133208afd4ea50f37941614ed0d2604690e33bd7"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-7462-016dd538",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-7462\\tensorblock__gpt-5-1768845898.2374308.json",
+      "sha256": "8bfb11b2d6802ba1eb3d84b5d45110e3e105a79a85d6c9175680b9c54c26c27b"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13615-ad7739f0",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-13615\\tensorblock__gpt-5-1768893015.8606977.json",
+      "sha256": "0809ac8f9aabdeae204ccb3cd846cdb2b73e06091d19f9da2d27f3bb96235419"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13852-1ded1568",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-13852\\tensorblock__gpt-5-1768910692.678508.json",
+      "sha256": "67e13d17d80700b894c7e68506ec5f30a1ebbd9de4217a27e806eb944492762d"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-14976-a089d82e",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-14976\\tensorblock__gpt-5-1768887765.2546053.json",
+      "sha256": "8ed9674608943d02c7a3571052a361478e7ea25c5391ef2cac65bb45cdaff47a"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-15599-e177c7b0",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-15599\\tensorblock__gpt-5-1768834523.5557168.json",
+      "sha256": "e36d817d8a1820cc6658ce81e7b984e15d6690c52e9281e58b787fcfd51dd8fb"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-15809-a80dd4e3",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-15809\\tensorblock__gpt-5-1768845645.4216347.json",
+      "sha256": "eb14bf9c5e4f290aa1af01743bf451a27f12c8092da35a2f6a8140b09c21c623"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-16886-e79072fe",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-16886\\tensorblock__gpt-5-1768908623.3933616.json",
+      "sha256": "4995ec0efb59ef7ac631f1c38805ea00aa6585cc93e29d4c3b839d8453b4f936"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-17630-fbbfeb9e",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-17630\\tensorblock__gpt-5-1768837848.809906.json",
+      "sha256": "53e3100ff5591373fbfdb602846a6a09c6c236c49cae808a7c467c642514a72c"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-22456-5de916b9",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-22456\\tensorblock__gpt-5-1768913394.4557936.json",
+      "sha256": "f45a600fc42ab440b71e22c0f056e449b9efc1c62e50ff6c6b9da3ef66217067"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-22914-bfa0d42d",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-22914\\tensorblock__gpt-5-1768897474.8513591.json",
+      "sha256": "ec13b58f4e543bcea7d44d894e0e1f931abef5f8d7de592d2981ec75a98b28d2"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-23534-93d4ba22",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-23534\\tensorblock__gpt-5-1768836666.9182756.json",
+      "sha256": "920077ac10e35b61786ae25487a2eb657c5f6a0b53bae04cf07fdf12adcd4bee"
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-24539-ff71090d",
+      "path": "codetrace_bench\\swe_raw\\openhands__verified\\sympy__sympy-24539\\tensorblock__gpt-5-1768837711.1737404.json",
+      "sha256": "28f801be1ea92d6e9b9abe66519b7a64f7b673fa2ee44021673bb990b39039c7"
+    }
+  ],
+  "cause": "adapters.openhands._s treats every dictionary in a list as a text content part and reads only its text key; task dictionaries use id/title/status",
+  "interpretation": "Public tool input was dropped, not absent from the source. This limits conclusions from old text representations. No evidence yet that restoring it improves boundary quality.",
+  "next_input_version": "Use this exact-call-ID sidecar for a separate controlled input repair; keep original cached features, splits and experiments immutable",
+  "thought_included": false,
+  "labels_used": false,
+  "legacy_files_modified": false
+}

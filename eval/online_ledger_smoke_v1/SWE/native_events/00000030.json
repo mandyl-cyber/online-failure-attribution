@@ -1,0 +1,1 @@
+{"event":{"action":"run","args":{"command":"grep -Rn \"as_expr(\" -n sympy | head -n 50","security_risk":"LOW"},"id":"call_9CNsPSbtZ3geTF275p2hz8zt","source":"agent"},"kind":"event","sha256":"18ab304f50de98215628928947b55b0345c287c9089a21d72f7393fe88a0b0a0"}

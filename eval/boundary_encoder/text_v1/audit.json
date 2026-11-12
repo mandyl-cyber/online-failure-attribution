@@ -1,0 +1,13 @@
+{
+  "trajectories": 461,
+  "steps": 18636,
+  "text_version": 1,
+  "scan_limit": 65536,
+  "scan_truncated_steps": 0,
+  "source": "eval/boundary_supervised/data_fixed",
+  "source_records_sha256": "b9cf9924e747576c527e4351f1db34c52420526c5379fde0b8900eaa4517a4af",
+  "text_sha256": "faead2cb4409f2d9b943657a6f4781ab8e89ca7878de15a4a728370d12cbe11d",
+  "labels_in_text": false,
+  "thought_in_text": false,
+  "all_raw_fingerprints_verified": true
+}

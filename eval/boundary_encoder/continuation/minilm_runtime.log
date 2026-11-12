@@ -1,0 +1,63 @@
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Token indices sequence length is longer than the specified maximum sequence length for this model (609 > 512). Running this sequence through the model will result in indexing errors
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Token indices sequence length is longer than the specified maximum sequence length for this model (609 > 512). Running this sequence through the model will result in indexing errors
+{
+  "model": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "hardware": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "torch": "2.7.1+cu128",
+  "batch_size": 1,
+  "warmup": 8,
+  "results": {
+    "cpu": {
+      "dtype": "float32",
+      "threads": 4,
+      "samples": 128,
+      "load_seconds": 3.162130299999262,
+      "preprocess_ms": {
+        "p50": 0.8675499993842095,
+        "p95": 9.443174999614712,
+        "p99": 14.623095001807094
+      },
+      "forward_pool_transfer_ms": {
+        "p50": 34.04984999906446,
+        "p95": 53.83997500084661,
+        "p99": 59.74667600177783
+      },
+      "total_ms": {
+        "p50": 35.29445000094711,
+        "p95": 60.089719998723005,
+        "p99": 64.26039800160652
+      },
+      "min_cosine_with_cached": 0.9999985694885254,
+      "max_cuda_allocated": null
+    },
+    "cuda": {
+      "dtype": "float16",
+      "threads": 4,
+      "samples": 128,
+      "load_seconds": 0.2313992999988841,
+      "preprocess_ms": {
+        "p50": 0.8272499999293359,
+        "p95": 8.664524999403506,
+        "p99": 12.715843999139908
+      },
+      "forward_pool_transfer_ms": {
+        "p50": 10.578499999610358,
+        "p95": 12.649274999785119,
+        "p99": 15.566535000180014
+      },
+      "total_ms": {
+        "p50": 11.408999998820946,
+        "p95": 19.720009999400638,
+        "p99": 24.4285940001646
+      },
+      "min_cosine_with_cached": 0.9999990463256836,
+      "max_cuda_allocated": 59040768
+    }
+  },
+  "scope": "128 representative steps, 4 CPU threads; includes tokenization, pooling and transfer; excludes classification head, event I/O and queueing; not concurrent-load or real-agent benchmark"
+}

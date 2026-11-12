@@ -1,0 +1,26 @@
+{
+  "model": "minilm",
+  "model_path": "vendor\\encoder_models\\minilm",
+  "revision": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "parameters": 22713216,
+  "shape": [
+    18636,
+    384
+  ],
+  "policy": "headtail",
+  "pack_version": 1,
+  "max_tokens": 256,
+  "device": "cuda",
+  "dtype": "float16",
+  "preprocessing_seconds": 20.38510949999909,
+  "encoding_seconds": 425.2269395000003,
+  "peak_cuda_bytes": 199365120,
+  "text_sha256": "faead2cb4409f2d9b943657a6f4781ab8e89ca7878de15a4a728370d12cbe11d",
+  "action_truncated_steps": 3816,
+  "observation_truncated_steps": 8262,
+  "frozen_pretrained": true,
+  "labels_used": false
+}

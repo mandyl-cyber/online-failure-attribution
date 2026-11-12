@@ -1,0 +1,186 @@
+{
+  "fold": 3,
+  "selected": {
+    "name": "struct_mlp",
+    "dev_D0": 0.5556594948550047,
+    "threshold": 0.25,
+    "curve": [
+      {
+        "epoch": 1,
+        "dev_D0": 0.36067193675889325,
+        "threshold": 0.15
+      },
+      {
+        "epoch": 2,
+        "dev_D0": 0.4320766008378217,
+        "threshold": 0.15
+      },
+      {
+        "epoch": 3,
+        "dev_D0": 0.47275775356244765,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 4,
+        "dev_D0": 0.5163147792706333,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 5,
+        "dev_D0": 0.5373376623376623,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 6,
+        "dev_D0": 0.5383275261324042,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 7,
+        "dev_D0": 0.5408079142621599,
+        "threshold": 0.2
+      },
+      {
+        "epoch": 8,
+        "dev_D0": 0.5556594948550047,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 9,
+        "dev_D0": 0.5475989890480202,
+        "threshold": 0.25
+      },
+      {
+        "epoch": 10,
+        "dev_D0": 0.5525423728813559,
+        "threshold": 0.25
+      }
+    ]
+  },
+  "trials": [
+    {
+      "name": "struct_lr",
+      "dev_D0": 0.5320930232558139,
+      "threshold": 0.25,
+      "curve": []
+    },
+    {
+      "name": "struct_mlp",
+      "dev_D0": 0.5556594948550047,
+      "threshold": 0.25,
+      "curve": [
+        {
+          "epoch": 1,
+          "dev_D0": 0.36067193675889325,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 2,
+          "dev_D0": 0.4320766008378217,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 3,
+          "dev_D0": 0.47275775356244765,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 4,
+          "dev_D0": 0.5163147792706333,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 5,
+          "dev_D0": 0.5373376623376623,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 6,
+          "dev_D0": 0.5383275261324042,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 7,
+          "dev_D0": 0.5408079142621599,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 8,
+          "dev_D0": 0.5556594948550047,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 9,
+          "dev_D0": 0.5475989890480202,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 10,
+          "dev_D0": 0.5525423728813559,
+          "threshold": 0.25
+        }
+      ]
+    },
+    {
+      "name": "newtext_tfidf",
+      "dev_D0": 0.532967032967033,
+      "threshold": 0.25,
+      "curve": []
+    },
+    {
+      "name": "semantic_lr",
+      "dev_D0": 0.4483925549915398,
+      "threshold": 0.2,
+      "curve": []
+    },
+    {
+      "name": "fusion_lr",
+      "dev_D0": 0.530920060331825,
+      "threshold": 0.2,
+      "curve": []
+    },
+    {
+      "name": "fusion_mlp",
+      "dev_D0": 0.5234685759745424,
+      "threshold": 0.25,
+      "curve": [
+        {
+          "epoch": 1,
+          "dev_D0": 0.3677248677248677,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 2,
+          "dev_D0": 0.45088161209068006,
+          "threshold": 0.15
+        },
+        {
+          "epoch": 3,
+          "dev_D0": 0.5032727272727272,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 4,
+          "dev_D0": 0.5140562248995985,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 5,
+          "dev_D0": 0.5234685759745424,
+          "threshold": 0.25
+        },
+        {
+          "epoch": 6,
+          "dev_D0": 0.5230234578627281,
+          "threshold": 0.2
+        },
+        {
+          "epoch": 7,
+          "dev_D0": 0.520572450805009,
+          "threshold": 0.2
+        }
+      ]
+    }
+  ],
+  "seconds": 42.83390249999866
+}
