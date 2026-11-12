@@ -1,0 +1,272 @@
+
+# 交接文档：划分器（M1）
+
+## 最新接手入口（2026-11-13；优先于下方历史记录）
+
+### 用户已确定的目标与粒度
+
+实现在线阶段划分 → stage 结束触发账本生成 → 每阶段提取零到多条 claim，claim 为节点 → 建立阶段内/跨阶段支持、依赖、反驳、替代或回退关系 → 准确做 failure attribution。stage 不是固定的一节点；阶段内保存证据和候选，正式 claim 在封口后入账。每步划分不调用生成模型；阶段抽取异步执行。用户暂不新增人工标注。
+
+最新偏好：不用外部 API，优先复用以前配置的本地 Qwen 7B。只找到 `F:\Yang\AgentForesight\outputs\outputs\qwen25_7b_coding_paper_test.log`，其中记录 `Qwen/Qwen2.5-7B-Instruct` 加载与实验产物输出。尚未找到当前权重位置、确认运行环境或成功启动；不能把旧日志当成当前已部署证明。当前项目和默认 Hugging Face 缓存未找到该权重，PATH 中未发现 ollama/gh。未下载新模型。
+
+### 实现与证据
+
+| 模块 | 入口 | 当前状态 |
+| --- | --- | --- |
+| 原划分器 | `segmenter/run_online.py`、`segment.py` | 规则 node/phase；旧入口可选监督模型。新账本入口目前固定 phase 规则 |
+| 本地证据与缓冲 | `segmenter/ledger.py` | public-plan-v2 独立修复、步骤幂等、证据哈希和前缀回查、单写者重放 |
+| 在线封口入账 | `segmenter/online_ledger.py` | 原生事件配对、阶段缓冲、持久化作业、后台批量 claim；暂停不封口，finish 正常封口，abort 标不完整 |
+| 抽取协议 | `segmenter/claim_extraction.py` | 请求白名单、JSON Schema、引用/区间/引文校验、缓存和持久化尝试预算；只有 LocalRuleBackend，无模型推理 |
+| 关系及归因 | 尚无完整实现 | edges 为空；跨阶段语义去重、claim 修订、支持/依赖图与最终归因器待实现 |
+
+已验证：40 条离线人工阶段轨迹共 1,600 步、530 条早期规则账本项、3,200 条证据（`eval/ledger_local_v1_final/`）；此结果不是在线验证。随后两条真实日志不使用人工阶段、按在线顺序回放，中途重启：92 个原生事件、44 个完成步骤、13 个封口阶段、18 条规则 claim（`eval/online_ledger_smoke_v1/`）。真实 JSONL 增量追加/半行测试使用测试事件，不是活跃 agent 长期部署。
+
+抽取 dry-run：`eval/claim_dry_run_v1/` 内 SWE 6 个阶段、Terminal-Bench 7 个阶段，全 ready、0 failed、18 条 claim。校验通过只表示结构与证据引用有效，semantic_correctness=not_evaluated，不是语义准确率。4 项抽取测试、5 项在线测试、3 项 ledger 测试及相关计划/生命周期检查此前通过。
+
+历史划分结果：严格对齐 461 条的结构 LR 边界 F1 约 0.56、即时 D0 约 0.51；不是逐步准确率。冻结 MiniLM/ModernBERT 未证明稳定的大幅提升，未替换默认模型。另有早先启动的受控微调，本轮没有检查进程或最终结果，接手后先看 `eval/boundary_encoder/continuation/status.json` 与日志，不要重复启动。
+
+### 优先执行的下一步
+
+1. 只读追踪 AgentForesight 的推理代码、配置及旧日志，定位 Qwen 权重和 Python 环境；确认显存、量化方式及其他进程占用。找不到再问用户具体路径，不直接重下大模型。
+2. 为 `StageProcessor` 接入本地 Qwen backend；固定权重/tokenizer/提示版本。现有预算是字节与尝试次数，不是 token、显存、超时预算；本地模型需补上下文和生成长度控制、加载复用及推理超时策略。
+3. 先对已有 13 个阶段运行语义抽取，对比规则结果；检查遗漏、臆造、把测试通过扩大成补丁正确、引用保真，同时记录显存、输入/输出 token、耗时和失败率。
+4. 补对象/版本/环境证据后建立有依据的关系。缺少 claim/edge 金标时不能报告语义准确率；不能自动把同路径或相邻时间当因果边。
+5. 再接根因诊断和配对消融：原始轨迹、人工阶段账本、在线阶段账本、移除关系边。CodeTraceBench 错误步 F1 与 LongRCA 根因命中分别评分。
+
+### 命令与约束
+
+```powershell
+python -m segmenter.online_ledger <events.jsonl或events目录> --out out/live_claims --run-id session-001 --claim-extractor dry-run
+python -m segmenter.claim_extraction --jobs eval/online_ledger_smoke_v1/SWE/stage_jobs --out eval/claim_dry_run_new/SWE
+python tests/test_claim_extraction.py
+python tests/test_online_ledger.py
+python tests/test_ledger.py
+```
+
+原生事件要求稳定 ID、有序且输入只追加。重启从头扫描并按 ID 去重；无持久化文件偏移、日志轮转、乱序处理或多写者支持。原始 native_events/source.bin 仅内部恢复审计，可能含 thought/未来记录；模型只能读冻结的白名单请求。不得使用离线消息折叠或人工阶段伪装在线效果。
+
+CodeTraceBench full 3,316，verified 1,000 是其子集；当前严格对齐集合 461。LongRCA full 1,140、mini 200 是包含关系，编码/终端仅 170；原生消息步号不同于动作—观察步。阶段仅区间，未取得五类阶段逐步金标；无 claim/依赖/t_lock 金标。公开计划字段曾丢失 1,378 步，恢复采用独立版本，旧缓存/模型未替换。
+
+详细说明：`docs/ledger/CLAIM_EXTRACTION.md`、`ONLINE_STAGE_CLAIMS.md`、`LOCAL_PROTOTYPE.md`、`INTERFACES.md`；数据审计见根目录 `数据集任务标注审计与stage账本设计.md`。早期接口文件是一部分目标约定，不能把所有字段当成已经实现。
+
+### GitHub 交付状态
+
+用户已要求推送 GitHub，明确目标为 `https://github.com/mandyl-cyber/online-failure-attribution.git`。本地已初始化 main，并设置 origin；推送前远程无分支。已添加 `.gitignore` 排除数据、权重、环境、vendor、eval 和标注轨迹等本地产物。代码仓库不包含这些产物，复现实验需另行准备数据。推送状态应以 Git 分支及远程引用核验为准。
+
+---
+
+以下为历史交接与实施记录，涉及“下一步”“尚未接在线”等旧描述时以上述最新入口为准。
+
+## 当前交接补充：账本接口与开发协议（2026-11-13）
+
+最新补充：`segmenter/claim_extraction.py` 实现阶段输入白名单、版本化输出 Schema、证据 ID/哈希/字符区间/逐字引用校验、可替换 backend、跨重启尝试预算和缓存；在线 `--claim-extractor dry-run` 接入后台处理。13 个真实日志阶段作业 dry-run 生成 18 条规则 claim，结果在 `eval/claim_dry_run_v1/`，全部 ready。详见 `docs/ledger/CLAIM_EXTRACTION.md`。无 API，预算为字节/尝试数，不冒充 token/费用预算；语义蕴含、关系边和归因效果未验证。
+
+最新进展：按用户“stage 封口触发录入、一个 stage 多条 claim”修正并接通在线入口 `segmenter.online_ledger`。原生事件持久化恢复，公开计划直接从当前事件提取，不读 sidecar；phase 在线划分，未封口时仅缓冲证据/候选，封口后后台原子提交多 claim。暂停不封口，finish 正常封口，显式 abort 标不完整。详见 `docs/ledger/ONLINE_STAGE_CLAIMS.md`。5 项在线测试通过；两条真实日志因果回放共 92 个事件、44 个在线完成步骤、13 个阶段、18 条 claim，中途重启和证据回查通过，结果在 `eval/online_ledger_smoke_v1/`。仅规则抽取；没有语义去重、跨阶段修订、关系边或 API；不宣称真实 agent 长期部署和归因准确率已验证。下文“未接在线”的记录为较早原型状态。
+
+后续执行已新增 `segmenter/ledger.py`、`segmenter/replay_ledger.py`、`tests/test_ledger.py`。详见 `docs/ledger/LOCAL_PROTOTYPE.md`。本地原型支持独立 public-plan-v2 恢复、逐步证据/账本写入、单写者原子提交与重放、证据哈希与前缀回查、阶段归属修订；没有语义支持/依赖边、API 或真实在线事件接线。最终开发回放在 `eval/ledger_local_v1_final/`，此前同名前缀目录为调试产物。不得把记录与回查验证解释为归因准确率。默认转换器、训练输入和既有模型未替换。
+
+已完成 `docs/ledger/INTERFACES.md`、`INPUT_AUDIT.md`、`IMPLEMENTATION.md` 和 `experiment_v1.json`。它们规定稳定证据 ID、增量账本、阶段归属修订、关系方向、原文回查、oracle/在线区分与端到端预算；业务模块仍待实现。
+
+新增 `python -m segmenter.prepare_ledger_protocol`，已生成 `eval/ledger_protocol_v1/`：40 条 CodeTraceBench 开发样本、40 个独立任务组，SWE/Terminal-Bench × 成功/失败各 10 条，按长度分桶和固定哈希抽样。检查阶段区间覆盖、原文件存在，记录配置、数据、原文及计划恢复产物哈希。属于此前已分析数据，不能声称独立未见测试。样本清单有 solved 元数据，只供协调与评分，禁止直接喂模型。
+
+本轮无新训练或 API 调用，未修改旧转换器和模型输入。下一步实现版本化计划字段恢复、证据存储及本地增量账本原型；API provider/model/prompt/费用上限/数据外发范围尚未配置。此前训练进程本轮未启动、停止或核查，状态以其自身日志为准。
+
+## 1. 目标和范围
+
+按《总体技术设计：锁定感知的长程编码 agent 在线干预系统》实现「第一步：划分器」。它不训练任何模型，每来一步只用规则和工具类型做事件检测、建状态树、切 stage、捞候选 claim，并用打分脚本检验设计里的几个假设。
+
+代码在 `F:\Yang\online_failure_attributor\segmenter\`，说明在同级的 `README.md`。你原来的 `classifier/events.py` 没有动。
+
+## 2. 做了什么
+
+### 2.1 代码结构
+
+| 文件 | 作用 |
+| --- | --- |
+| `adapters/openhands.py` | 转换器：OpenHands 事件流、chat messages、LLM completion 日志、CodeTracer `steps.json` 统一成"一步 = 一个动作 + 它的观察" |
+| `rules.yaml` / `rules.py` | 全部规则和阈值（命令分类、事件、树、切分、候选 claim、触发） |
+| `shell.py` | shell 命令分类：切子命令、去前缀、归类、读写路径 |
+| `events.py` | 事件检测：STATE_CHANGE / EXPLORE / VERIFY_RUN / VERIFY_PASS / REFERENCE / HANDOFF / IRREVERSIBLE / PLAN_SWITCH（DRIFT 未实现） |
+| `tree.py` | 状态树：节点封口规则、relied_on_by 边、reverts 边 |
+| `segment.py` | 切分，`node`（节点封口）和 `phase`（活动相位）两种模式 |
+| `claims.py` | 候选 claim：test_result / env_assertion / plan_step / completion |
+| `run_online.py` | 在线主循环；`replay` 回放、`follow` 跟读事件流、`bench` 批量 |
+| `bench.py` | CodeTraceBench 读取与解包；`inspect` 打印一条轨迹的全部字段 |
+| `eval_segmenter.py` | 打分：边界 F1、错误步落点、窗口代理、事件召回、等距切分参照、下游 F1 差 |
+| `tests/test_lifecycle.py` | 4 个测试，复现设计文档"一个时间步的生命周期" |
+
+每条轨迹输出 `steps.jsonl`、`events.jsonl`、`tree.json`、`stage_ranges.json`、`claims.jsonl`，下游部件只通过这些文件耦合。
+
+### 2.2 对数据集的发现
+
+数据集卡片没写原始轨迹的结构，下载后核对出来的是：
+
+| 来源 | 条数 | 形态 | 步号规则 |
+| --- | --- | --- | --- |
+| SWE 系（`swe_raw/openhands__*`） | 313 | 每次 LLM 调用一个 JSON（对话历史 + 回复），GPT-5 跑的，没有 thought 文本 | 一步 = 一次工具调用 + 结果；纯文字回合和末尾 finish 不占步号 |
+| Terminal-Bench 系（只在 `bench_artifacts/full/*.tar.zst`） | 199 | 标准 OpenHands `events/` 目录，Claude / DeepSeek 跑的，有 thought | 一步 = 一个 agent 动作；agent 的纯文字消息不占步号 |
+| manifest 里没有路径 | 8 | — | 跳过 |
+
+踩过的坑和处理：
+
+- 同一个 SWE 任务目录混着两次运行，按 manifest 的 `step_count` 选对应那次；日志是累积的，只读最大的文件。
+- 压缩包解出来路径超过 Windows 260 字符，改为只解需要的文件并摊平；一条轨迹的上千个事件小文件合并成一个 `events.jsonl`。解包缓存在 `codetrace_bench/_extracted`，完成标记是 `.ok2`。
+- 有些轨迹结尾 agent 反复发"任务完成"被打回，转换器在步数对不上时自动折叠纯文字消息再对齐。**这个折叠只用于离线对齐，在线使用时保持关闭。**
+
+### 2.3 规则按真实数据修过的地方
+
+内联脚本（`python - <<'PY'`）和直接跑脚本文件在改动之后算验证；带绝对路径的命令、`git -C`、`applypatch`、`npm -s test`、空命令和 `C-c` 能正确归类；失败的编辑不算改状态；`sed`/`grep` 的第一个参数不当作路径。
+
+## 3. 现在的成果
+
+### 3.1 全量结果（verified 的 OpenHands 子集）
+
+498 条进入统计（跳过 14 条步号对不上、8 条无路径），共 20595 步，每步处理中位 0.26 ms、p99 5.5 ms。
+
+| 数字 | 结果 | 门禁 | 结论 |
+| --- | --- | --- | --- |
+| 边界 F1 | 0.487（phase）、0.382（node）；等距切分参照 0.455 | ≥ 0.70 | 没过，规则只比等距切分高约 3 个点 |
+| 错误步落点 | 63.5% 在改状态步，8.6% 在验证步（n = 594） | 预期 > 70% | 略低 |
+| 窗口代理 | 中位 4 步，66% ≥ 3 步，21% 没关上（n = 209）；指向错误所在节点的口径：中位 6、79% ≥ 3 | 对照 FaaP：中位 1、44% ≥ 3 | 窗口存在且比 FaaP 长 |
+| 事件召回（3 步内） | 0.41（n = 209） | ≥ 0.60 | 没过 |
+| 下游影响（数字 4） | 未做 | 差 ≤ 5 点 | 需要另跑 CodeTracer |
+
+### 3.2 两半数据差别很大
+
+下面是我用"全量减去只含 SWE 系的那次运行"推算的，**脚本没有直接按来源输出，数字是近似的**：
+
+| | SWE 系（无 thought） | Terminal-Bench 系（有 thought） |
+| --- | --- | --- |
+| 事件召回 | 约 0.23（n = 90） | 约 0.55（n = 约 119） |
+| 边界 F1（phase） | 0.54 | 约 0.44，低于等距参照；预测切点是人标的两倍多 |
+
+### 3.3 能得出的判断
+
+1. **窗口存在而且长。** 这是对"可以在窗口内干预"最有利的证据，可以作为论文的第一张图（`eval/verified/window_proxy.png`）。
+2. **事件召回主要受限于有没有 thought 文本。** 有 thought 的一半已接近门禁，所以设计的赌注没被否定，但依赖 agent 输出推理。
+3. **边界 F1 门禁对纯规则大概率够不着。** 人标 stage 是语义子目标，中位只有 5 步，没有任何一种步型转换的切点率超过 0.45。
+4. **"3 步内"的召回定义与窗口中位 4–6 步矛盾**，应报成随 k 变化的曲线。
+
+## 4. 已知问题和局限
+
+- 错误实例、"接受时刻"都是代理：用人标的 incorrect 步当错误，用规则事件当接受，没有人标的 t_lock，所以事件召回回答的是代理问题。
+- 划分器的详细技术文档不在文件夹里，节点粒度、VERIFY_PASS 的补发时机、REFERENCE 的判定都是我按总体设计推的，选择列在 `README.md`，阈值都在 `rules.yaml`。
+- 认不出的命令（EXEC）占错误步的约 15%（89 个）。
+- 14 条轨迹步号仍对不上（不到 3%），原因没查。
+- Terminal-Bench 那一半切得太碎，规则还没针对它调过。
+- 打分只覆盖 OpenHands；AgentRx 没有转换器。
+- 我这边没法在你机器上直接运行（磁盘不足），所有全量数字都是你跑完贴回来的。
+
+## 5. 还要做什么
+
+按优先级：
+
+1. **打分脚本加"按来源拆分"和"召回随 k 的曲线"**（k = 3、6、10；SWE 与 Terminal-Bench 分开列）。现在的拆分是推算的，要换成直接输出。
+2. **调 Terminal-Bench 的切分**，重点是 `segment.phase_min_run` 和 `tree.explore_gap`，用 `--set key=value` 临时覆盖，不用改文件。
+3. **补认不出的命令。** 把 EXEC 类里频次最高的命令列出来，补进 `rules.yaml` 后复跑，目标是错误步落点过 70%。
+4. **决定要不要加第五种接受事件"在其上继续构建"**（出错改动之后不回退、继续在同一文件上编辑或运行）。会提高召回，但比 FaaP 的 t_lock 宽，我建议加但单独成一类、单独报数。
+5. **第四个数字：下游影响。** 用 `eval_segmenter run --export-stages` 导出规则的 `stage_ranges.json`，让 CodeTracer 分别喂人标和规则切分，再用 `eval_segmenter downstream` 比较。这比边界 F1 更能说明划分好不好。
+6. **边界 F1 门禁重新定**：建议改成"相对等距参照的提升"，或降为参考指标。
+7. **M2 标注 pilot**（设计里的 40 + 40 条、两人标）：划分器检出的结构事件可以直接当候选给标注者，同时测"人认为的接受时刻有多少落在规则事件上"。这是回答赌注是否成立的真正依据。在此之前不建议加小分类器。
+8. **后续里程碑接口：** 触发位里"σ → consequential"要等账本写入器（M4）；DRIFT 和 embedding 留了开关（`events.drift.enabled`），第二轮再做；AgentRx 需要写转换器，或用 `--gold-jsonl` 接入。
+9. 查那 14 条步号对不上的轨迹（运行时会打印 `[skip] ... 转出 X 步，manifest 说 Y 步`）。
+
+## 6. 怎么运行
+
+```powershell
+pip install pyyaml zstandard matplotlib
+python -m pytest -q tests
+
+# 看一条轨迹的全部字段
+python -m segmenter.bench inspect --manifest codetrace_bench/bench_manifest.verified.jsonl --artifacts codetrace_bench
+
+# 回放单条轨迹并逐步打印事件
+python -m segmenter.run_online replay <轨迹目录> --out out/<id> --print
+
+# 全量打分（约几分钟，有进度行；第一次要解 199 个压缩包）
+python -m segmenter.eval_segmenter run --manifest codetrace_bench/bench_manifest.verified.jsonl --artifacts codetrace_bench --out eval/verified
+#   --recall-k 6        改召回窗口
+#   --set tree.explore_gap=2 --set segment.min_stage_len=3     临时覆盖规则
+#   --export-stages eval/verified/stage_ranges                 导出给 CodeTracer
+#   --dump                                                     每条轨迹的 events/tree/claims 也落盘
+
+# 接在正在运行的 OpenHands 上
+python -m segmenter.run_online follow <session>/events --out out/live
+```
+
+重跑前如果解包出过问题，先清缓存：`cmd /c rmdir /s /q codetrace_bench\_extracted`。
+
+## 7. 待你决定的事
+
+- 事件召回的 k 是保持设计里的 3，还是按实测窗口长度调大并报曲线（我建议两个都报）。
+- 是否加"在其上继续构建"这一类弱接受事件。
+- 边界 F1 的门禁是否保留。
+
+## 8. 接续实施状态（2026-11-12）
+
+本节为当前工作区核验结果；前文保留原始交接记录。
+
+- 已实现按来源拆分和 k=3/6/10 召回曲线。全量基线见 eval/verified_command_audit/summary.json：498 条、20595 步，phase F1 约 0.4866，错误步落在改状态步约 63.64%，k=3 代理事件召回约 0.4115。仍未达到原门禁。
+- Terminal-Bench 阈值扫描在开发集提升、留出集下降，未修改默认阈值。执行上下文实验也未改善总体指标，保持关闭。
+- M2 两批各 40 条材料已准备（pilot/m2_codetrace、pilot/m2_longrca），尚未人工标注；用户暂不标注。不能据此声称 t_lock 已验证。
+- 下游对照已生成 40 对输入：eval/downstream_pair_v2。官方 CodeTracer normalizer 和提示词注入校验通过；每对 steps/task/tree 完全相同，仅 stage 不同。eval/downstream_pair 是首次失败留下的不完整包，不使用。
+- 官方源码提交为 2d302191dd07e7c0c2da6f7a5e9451c7cbb62d34；附带 LFS 数据未完整下载。纯空白动作通过本地适配器保护，未改动原始动作。
+- 一对 gold/rule 样本已完成本地 --dry-run，见 eval/downstream_dry_run；没有 API 调用，没有下游 F1。
+- 下游执行入口 downstream/run_one.py、容器定义与说明见 downstream/README.md。Docker 客户端存在，但 Linux 引擎连接失败；镜像尚未构建或验证。实际诊断还需要模型、API 配置和费用预算。密钥只在本机环境变量配置。
+- 14 条步号异常报告见 eval/alignment_audit/report.json。没有统一的折叠或删 finish 修复方案；部分计数相等不能证明语义对齐，继续排除，不强行截断。
+- 比较脚本报告 paired/expected，结果不齐时 gate_pass=null。当前未执行 80 次模型诊断，不能声称下游门禁通过。
+- 实验只检验轨迹材料上的 stage 对照，不包含原始任务可执行沙箱，不是完整论文复现。
+
+下一步：启动 Docker Linux 引擎并完成容器 dry-run；配置模型/API/预算后先运行一对真实诊断，再执行其余配对样本并报告完整覆盖率与 F1 差。M2 人工标注、M4 账本及在线干预效果仍待完成。
+
+## 9. 阶段监督路线调整计划（2026-11-12）
+
+按用户要求重新检索数据集、论文和划分标准，已保存 [划分器调整计划.md](划分器调整计划.md)。此为研究与实施计划，尚未训练新模型。当前优先级更新为利用已有阶段边界建立监督划分基线及因果评测；不再等待 t_lock 标注或 CodeTracer API 才推进划分器。
+
+新审计 `python -m segmenter.audit_stage_labels` 输出 `eval/stage_label_audit/report.json`：verified 的 1000 条均在 full 中且边界相同；两者不能直接作为独立训练/测试集。manifest 有起止位置而无阶段语义名称；适合直接生成边界二分类标签。full 有两条阶段覆盖异常，与既有 14 条原始轨迹对齐异常分开处理。
+
+纠正：CodeTracer 附录 A 的阶段规范是工作阶段连续区间，并非任意语义子目标；状态节点、工作阶段和 t_lock 需要分别建模与评测。默认规则未修改，部署与下游效果仍待验证。
+
+## 10. 监督划分已实施（2026-11-12，接续更新）
+
+已完成任务隔离数据构建、候选切点规则修复、轻量模型训练、严格前缀评分、外部任务评价及本地流式检查。详细说明与命令见 [segmenter/BOUNDARY_SUPERVISED.md](segmenter/BOUNDARY_SUPERVISED.md)。第 9 节“尚未训练、规则未修改”是当时状态，以本节为准。
+
+五折使用 461 条严格覆盖轨迹：最终 ±1 边界 F1 从修复规则 0.4780 提高到 0.5599；不晚于金标步确认的 D0 F1 从 0.3385 提高到 0.5057。相比此前 498 条，新增保守排除 37 条含未解释非结束后缀动作的 SWE 轨迹，不能跨样本直接比较。
+
+全 verified 任务之外的 119 条 full 轨迹上，固定模型最终 F1=0.5811，修复规则=0.4914；D0 为 0.5203 对 0.3592。模型不读 thought、不调用生成 API，最终候选是四步结构特征的 Logistic Regression。尚未达到 0.70。
+
+在线入口支持显式 --boundary-model，另写 supervised_stage_ranges.json，不替换原规则默认输出。10 条共 460 步的回放中，含落盘 feed p99≈5.94ms；半行追加文件模拟通过。未完成真实 agent 长时部署、恢复机制和付费下游诊断。
+
+## 11. 小编码器专项调研（2026-11-12）
+
+按用户要求完成 [小编码器在线划分器调研与实施计划.md](小编码器在线划分器调研与实施计划.md)。主方案为独立编码当前 step、缓存短历史向量、融合结构特征的小分类头；先 MiniLM 冻结探测，再按收益试 ModernBERT 局部微调。在线不调用生成式 LLM。
+
+本机有 RTX 4060 Laptop 8GB，但当前 torch 2.14.1+cpu 无 CUDA，GPU训练需独立环境准备。本次只做调研、数据/硬件核查和计划，没有下载模型、安装依赖或训练编码器。旧 119 条外部任务已有基线成绩，后续不能反复据此调参并称盲测。
+
+## 12. 小编码器实验执行中（2026-11-12，后续更新）
+
+第 11 节是调研时的历史状态。现已建立 `.venv-encoder` CUDA 环境，下载锁定 MiniLM/ModernBERT，完成 461 条、18,636 步输入指纹复核，以及 MiniLM 六种分类头的完整五折实验。
+
+MiniLM+结构 LR 最终 ±1 F1=0.5618、D0=0.5115；仅结构 MLP=0.5645/0.5149。按开发折选择头的最终 F1=0.5590、D0=0.5078，相对旧模型 D0 增益的任务组 bootstrap 95% 区间为 [-0.8054,+1.2546] 个百分点，未证明稳定收益，未替换原在线模型。
+
+ModernBERT 冻结编码与后续实验仍在执行。串行续跑状态见 `eval/boundary_encoder/continuation/status.json`，完成后会依次输出冻结对照、独占单步耗时、冻结前缀缓存及最后一层受控五折微调；失败即停止并记录日志。不要将等待中的实验视为已完成，不要重复启动。GPU 持续低频（52 MHz、约 5 W），未修改用户电源设置。
+
+详细结果、文件接口、运行命令和未完成项见 [segmenter/ENCODER_EXPERIMENT.md](segmenter/ENCODER_EXPERIMENT.md)。仍未启动新的人工标注、外部任务调参、生成式 API 调用或真实 agent 部署。
+
+后续进展：ModernBERT 冻结五折已完成。融合 LR 最终 F1/D0=0.5633/0.5123，开发选择头为 0.5670/0.5162，但其中四折选择了纯结构 MLP。最终 F1 增益置信区间覆盖零、未达到提升 3 点目标，不能认为语义模型已胜出。MiniLM 独占单步 p99：CPU 64.26 ms、GPU 24.43 ms，不含分类头及落盘。后续耗时测量和最后一层受控微调继续串行运行，当前阶段以 `continuation/status.json` 为准。
+
+## 13. 延迟确认、错误审计与输入缺陷（2026-11-12）
+
+已执行即时/看后续一步/两步的固定五折，以及只等待不看新证据的对照。最终 F1 为 0.5576/0.5703/0.5608；共同 D1 时限下即时模型 0.5576、看一步 0.5128，且 Terminal-Bench 下降，未启用统一延迟。误报 2,096 个中 2,077 个落在工具类别切换处；这是相关性诊断，不能自动判断边界是否当时可知或标签错误。
+
+审计定位 `_s()` 将 task_list 字典误按 text 内容片段处理，导致 1,378 个计划动作变空（270 条轨迹）。已按原始 call ID 全量恢复至 `eval/plan_payload_audit/`，未改写旧缓存或默认适配器。旧“指纹一致”只证明新旧转换输出一致，不证明转换无字段损失。一次恢复计划状态特征的即时 LR 探测得到 F1=0.5653、D0=0.5083，改善有限，未发布新模型。
+
+ModernBERT 前缀缓存已完成，原输入协议的最后一层微调正在训练，尚无完整五折结果。新增测试通过，详细证据、限制和产物见 [segmenter/CONFIRMATION_AUDIT.md](segmenter/CONFIRMATION_AUDIT.md)。未启动人工标注、外部任务调参或付费 API。
+
+## 14. 先研究任务与标注，再定义 stage 和账本（2026-11-12）
+
+按用户新要求完成 [数据集任务标注审计与stage账本设计.md](数据集任务标注审计与stage账本设计.md)，机器可读全量统计在 `eval/dataset_task_audit/`。CodeTraceBench full 3,316 条（SWE 646、Terminal 2,670），verified 1,000 全部是其子集；当前训练 461 条中 SWE 276、Terminal 185，含 23 个原领域类别。LongRCA full 1,140、mini 200 为包含关系；编码/终端部分仅 SWE-bench Pro 128 + Terminal-Bench 2 42 = 170 条。
+
+核实了公开逐步 labels 只有 incorrect/unuseful；stage 对象只有编号与起止。论文五类阶段规范不等于本地已获得五分类金标。3,316 个原 annotation_relpath 均不在当前根目录；按六个来源/agent 组合抽查 12 个原始包，未发现已知命名的逐步阶段标注文件。上游读取代码支持 step_N.jsonl 的 llm_analysis.stage_label，但这些文件尚未取得；不能据接口推定标签已发布或已人工核验。
+
+新设计提案：任务画像（领域、工作目标、产物/验收约束）约束阶段判断；以 stage 组织 claim 账本、按事件持续更新；跨阶段依赖、反驳和状态版本显式记录。任务 category、工作阶段、状态树节点、claim 和 t_lock 分开。没有新增模型实验或改写现有金标；原受控微调继续后台执行。完整账本写入器与语义阶段监督仍未完成。

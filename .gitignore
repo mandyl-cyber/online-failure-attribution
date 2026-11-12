@@ -1,0 +1,33 @@
+# Local environments, downloaded dependencies/models and benchmark corpora
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/vendor/
+/codetrace_bench/
+/longrca_bench/
+/eval/
+/out/
+/outputs/
+/pilot/m2_codetrace/
+/pilot/m2_longrca/
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.joblib
+*.npy
+*.npz
+*.tar.zst
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+*.log
+*.tmp

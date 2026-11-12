@@ -1,0 +1,8 @@
+**
+!vendor/
+!vendor/CodeTracer/
+!vendor/CodeTracer/pyproject.toml
+!vendor/CodeTracer/src/
+!vendor/CodeTracer/src/**
+!downstream/
+!downstream/run_one.py

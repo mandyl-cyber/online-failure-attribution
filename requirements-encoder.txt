@@ -1,0 +1,15 @@
+# Install in .venv-encoder. Torch CUDA wheel uses the official cu128 index.
+# python -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1
+transformers==4.51.3
+huggingface-hub==0.36.2
+tokenizers==0.21.4
+numpy==2.5.4
+scikit-learn==1.9.1
+scipy==1.18.1
+safetensors==0.8.0
+joblib==1.6.0
+pyyaml==6.0.3
+zstandard==0.25.0
+onnxruntime==1.31.1
+onnx==1.23.2
