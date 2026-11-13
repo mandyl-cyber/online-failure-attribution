@@ -1,0 +1,1 @@
+{"attempts":1,"backend":"qwen-quote-v2-bf27a0c5f7c97b185eae6809bca6e7cc9626fbbb3818a91c90c37bc27436be44","cache_key":"231d5048aabdd8b6cc47a77db5a02d51609551835945f8479fa344c2f85236fb","error":"ExtractionError: Every claim needs evidence","network_calls":0,"retryable":false,"semantic_correctness":"not_evaluated","status":"failed"}

@@ -219,8 +219,8 @@ class StageProcessor:
             atomic(state_path, state)  # reserve attempt before backend call
             try:
                 response = self.backend.extract(deepcopy(request))
-                validation = validate_response(response, request, self.max_output_bytes)
                 atomic(audit/f'response_{state["attempts"]}.json', response)
+                validation = validate_response(response, request, self.max_output_bytes)
                 atomic(audit/"validation.json", validation)
                 claims = []
                 for claim in response["claims"]:
@@ -233,7 +233,8 @@ class StageProcessor:
                     claims.append(node)
                 result = dict(job_id=job["job_id"], input_sha256=fingerprint, cache_key=key,
                     stage=job["stage"], detected_at_seq=job["detected_at_seq"], incomplete=job["incomplete"],
-                    claims=claims, edges=[], status="ready", mode="local_dry_run",
+                    claims=claims, edges=[], status="ready", mode=getattr(self.backend, 'mode', 'local_dry_run'),
+                    metrics=getattr(self.backend, 'metrics', {}),
                     validation=validation, completed_at_unix=time.time())
                 atomic(target, result)
                 state.update(status="ready", claim_count=len(claims), request_bytes=len(encoded(request)),
@@ -243,6 +244,11 @@ class StageProcessor:
             except Exception as exc:
                 state.update(status="failed", error=f"{type(exc).__name__}: {exc}", retryable=state["attempts"] < self.max_attempts)
                 atomic(state_path, state)
+            finally:
+                atomic(audit/f'attempt_{state["attempts"]}.json', dict(
+                    raw_output=getattr(self.backend, 'raw_output', None),
+                    model_request=getattr(self.backend, 'model_request', None),
+                    metrics=getattr(self.backend, 'metrics', {}), status=state['status'], error=state.get('error')))
         return state
 
 
@@ -250,15 +256,20 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--jobs", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--qwen-model", type=Path)
     args = parser.parse_args()
     results = args.out/"claim_batches"
     results.mkdir(parents=True, exist_ok=True)
-    processor = StageProcessor()
+    if args.qwen_model:
+        from .qwen_backend import QwenBackend
+        processor = StageProcessor(QwenBackend(args.qwen_model))
+    else:
+        processor = StageProcessor()
     paths = sorted(args.jobs.glob("*.json"))
     if not paths:
         raise SystemExit("No stage jobs found")
     rows = [dict(job=p.name, status=(r := processor(p, results))["status"], claims=len(r.get("claims", []))) for p in paths]
-    report = dict(mode="local_dry_run", network_calls=0, semantic_correctness="not_evaluated", jobs=rows,
+    report = dict(mode=getattr(processor.backend, 'mode', 'local_dry_run'), network_calls=0, semantic_correctness="not_evaluated", jobs=rows,
                   ready=sum(r["status"] == "ready" for r in rows), failed=sum(r["status"] != "ready" for r in rows))
     atomic(args.out/"report.json", report)
     print(json.dumps(report))

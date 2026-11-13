@@ -1,0 +1,1 @@
+{"attempts":1,"backend":"qwen-quote-v2-bf27a0c5f7c97b185eae6809bca6e7cc9626fbbb3818a91c90c37bc27436be44","cache_key":"e02914d052de00929aa49a37827c35b0773d567b235be2ee9566d901dcbb8906","error":"ExtractionError: Invalid kind/basis/text length","network_calls":0,"retryable":false,"semantic_correctness":"not_evaluated","status":"failed"}

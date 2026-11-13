@@ -1,0 +1,1 @@
+{"attempts":2,"backend":"qwen-v1-bf27a0c5f7c97b185eae6809bca6e7cc9626fbbb3818a91c90c37bc27436be44","cache_key":"616274cc14c74f62f4e852fcbfe0f3e4d7c968794fc88cad8f90b638915bd16a","error":"ExtractionError: Invalid Unicode evidence span","network_calls":0,"retryable":false,"semantic_correctness":"not_evaluated","status":"failed"}

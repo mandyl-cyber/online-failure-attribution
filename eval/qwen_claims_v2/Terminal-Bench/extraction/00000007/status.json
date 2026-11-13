@@ -1,0 +1,1 @@
+{"attempts":1,"backend":"qwen-quote-v2-bf27a0c5f7c97b185eae6809bca6e7cc9626fbbb3818a91c90c37bc27436be44","cache_key":"cb70b9235a693025c7b9a23e77486a1f9e7bccb74ba818a0c8de29365a6d93db","error":"ExtractionError: Unknown evidence or empty quote","network_calls":0,"retryable":false,"semantic_correctness":"not_evaluated","status":"failed"}

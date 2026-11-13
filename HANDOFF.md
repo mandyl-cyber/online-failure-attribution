@@ -3,6 +3,26 @@
 
 ## 最新接手入口（2026-11-13；优先于下方历史记录）
 
+### Linux 本地 Qwen 接入与实测更新（2026-11-13；优先于下方旧状态）
+
+- 已找到并实际运行 `Qwen/Qwen2.5-7B-Instruct`。snapshot：`/home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28`，四个权重分片约 15 GB，配置/tokenizer 可离线读取。运行环境：`/home/sjtu/miniconda3/envs/agentforesight/bin/python`，torch 2.14.1+cu130、transformers 5.19.0。RTX 5090 32 GB 在沙箱外正常可用；沙箱内 CUDA 不可见，不要据此判断驱动损坏。此次没有下载新模型。
+- 新增 `segmenter/qwen_backend.py`，通过 `StageProcessor(QwenBackend(path))` 或抽取 CLI 的 `--qwen-model` 使用。BF16 离线加载并复用；输入上限 24576 token、输出上限 4096 token，超限不截输入；生成时间预算 120 秒为协作式 max_time，并非硬进程超时（加载也不受此限）。在线 CLI 仍未增加 Qwen 选项，当前完成的是封口作业批量抽取。
+- v1 要求模型生成字符坐标：SWE 6/6 失败（5 个引用不匹配、1 个 JSON 不完整）。首次并行加载 Terminal-Bench 导致 OOM，是运行安排问题；随后独占重跑仍 7/7 校验失败。记录分别在 `eval/qwen_claims_v1/` 和 `eval/qwen_claims_serial_v1/`。
+- v2 使用逐字引文协议：模型只给 evidence_id/quote，程序在指定证据内唯一匹配，计算 Unicode start/end；不存在、重复匹配、空引文和外来 ID 均拒绝。保留原始模型输出、实际模型提示、每次 token/耗时/峰值显存；校验失败的解析结果也落盘。提示最多 6 条简短 claim（当前通用最终校验仍允许 64 条，尚未强制这个更小上限）。
+- v2 用一个模型实例顺序处理 13 个阶段，每阶段只尝试一次：SWE 3/6、Terminal-Bench 3/7 通过，共 25 条 claim；通过率 46.2%，推理合计 173.88 秒，PyTorch 峰值 allocated 18.52 GiB（非整卡总占用，不含加载耗时）。7 个失败包括：无证据 1、非法类别/字段值 2、引文不存在或歧义 2、JSON 截断 1、未知证据或空引文 1。报告 `eval/qwen_claims_v2/report.json`，逐次记录在各来源的 `extraction/*/attempt_1.json`。
+- 4 项原抽取测试通过；额外运行 Unicode 唯一匹配、重复/缺失/空引文拒绝检查。抽查通过项仍有重复 claim、把读文件归为 state_change 等语义问题。46.2% 仅为结构与引用校验通过率，不能报告语义准确率、召回率或归因效果；25 条与规则 18 条也不能直接解释为覆盖提升。
+- 下一步：分析失败原始输出，改进类别约束、证据选择、去重和输出长度控制；补持久化单元测试、可复现的单实例批处理入口、错误反馈重试及更完整版本指纹。当前 backend identity 仅含路径/预算及手工版本号，没有权重内容和提示内容哈希。再次调整须用新输出目录，保留旧结果，不绕过证据校验。先稳定抽取和语义质量，再接在线 CLI、对象版本关系与归因；不要重复启动两份 BF16 模型。
+
+复跑单来源示例（在可访问 GPU 的环境执行，两个来源串行）：
+
+```bash
+/home/sjtu/miniconda3/envs/agentforesight/bin/python -m segmenter.claim_extraction \
+  --jobs eval/online_ledger_smoke_v1/SWE/stage_jobs --out eval/qwen_claims_new/SWE \
+  --qwen-model /home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+```
+
+注意：CLI 默认最多尝试两次，与 v2 单次实验预算不同。下方“未找到权重”“只有规则 backend”和原下一步 1–3 为本次执行之前的历史状态。
+
 ### 用户已确定的目标与粒度
 
 实现在线阶段划分 → stage 结束触发账本生成 → 每阶段提取零到多条 claim，claim 为节点 → 建立阶段内/跨阶段支持、依赖、反驳、替代或回退关系 → 准确做 failure attribution。stage 不是固定的一节点；阶段内保存证据和候选，正式 claim 在封口后入账。每步划分不调用生成模型；阶段抽取异步执行。用户暂不新增人工标注。

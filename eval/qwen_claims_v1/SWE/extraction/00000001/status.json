@@ -1,0 +1,1 @@
+{"attempts":2,"backend":"qwen-v1-bf27a0c5f7c97b185eae6809bca6e7cc9626fbbb3818a91c90c37bc27436be44","cache_key":"76be04567ca4f344d1b14ee5ad80a0157de96b51cb75f98287263ce92d69765c","error":"ExtractionError: Evidence quote mismatch","network_calls":0,"retryable":false,"semantic_correctness":"not_evaluated","status":"failed"}

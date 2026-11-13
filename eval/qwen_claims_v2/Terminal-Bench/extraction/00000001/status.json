@@ -1,0 +1,1 @@
+{"attempts":1,"backend":"qwen-quote-v2-bf27a0c5f7c97b185eae6809bca6e7cc9626fbbb3818a91c90c37bc27436be44","cache_key":"49f6e28b0f9c47f8a938cfeee7e743207463082ee3a4c198f3953d28d9d3f462","error":"ExtractionError: Quote absent or ambiguous in cited evidence","network_calls":0,"retryable":false,"semantic_correctness":"not_evaluated","status":"failed"}
