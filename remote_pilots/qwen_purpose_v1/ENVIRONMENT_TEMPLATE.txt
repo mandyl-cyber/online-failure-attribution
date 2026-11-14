@@ -1,0 +1,11 @@
+Model name and local weights revision/hash:
+Served model ID:
+Quantization / dtype:
+GPU model/count/VRAM:
+Serving engine and version:
+Python / transformers / torch versions:
+Actual configured max context:
+Chat template / thinking enabled or disabled:
+Exact launch and client commands (REMOVE credentials):
+Start/end time:
+Errors or server-side input truncation (must be disabled):

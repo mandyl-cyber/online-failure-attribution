@@ -1,0 +1,2 @@
+# Preserve package checksums across Windows/Linux checkouts.
+* -text

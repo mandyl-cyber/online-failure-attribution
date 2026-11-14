@@ -1,0 +1,21 @@
+{
+  "protocol": "purpose-prefix-pilot-v1",
+  "trajectories": 20,
+  "requests": 735,
+  "files": {
+    "ENVIRONMENT_TEMPLATE.txt": "4e2d57b9e42614b8965afa0c11eeeb6167f5ef35ee38c3df63d0738a24f583bf",
+    "OUTPUT_SCHEMA.json": "5834dcab9969ce14034e42d6f11c9e272737e7b6ea996f8dbbbeb4882292fbb7",
+    "README.md": "9eb8df4f8032c7fa308d79072163e648afa09a96206495323b0f4ec6f3cd7bea",
+    "remote.py": "943d116b427fcff2346dd3948237df5ded2395f0f46ab9ea2a525b8a3b3c0e59",
+    "run_pilot.sh": "bc5414a3372171c42a3fb5054286f79d2dd95aaec26d72e99ec10be0aa17f2ce",
+    "SYSTEM_PROMPT.txt": "18495e5cf8fcf47623b01cc3c6fdaf1169cb0a29820ab81c98448f022d0d9db1",
+    "trajectories.jsonl": "4267c3f35ffdf9fe2812f19ce44f243ec2078b1a162c5a23c7570d0280d83424"
+  },
+  "selection": "10 SWE + 10 Terminal; task/content-group unique; existing folds 2/3/4; 10-60 steps; SHA256; prefer diverse Terminal categories",
+  "limitations": [
+    "Development data previously used; not pristine holdout.",
+    "All steps exist in source file but client sends prefix only.",
+    "Original conversion truncation flags retained; no additional trimming.",
+    "Model candidates are not human gold."
+  ]
+}
