@@ -1,0 +1,367 @@
+{
+  "protocol": "purpose-ai-assisted-single-review-v1",
+  "reviewer_id": null,
+  "draft_sha256": "c512d945e9d6533751d2ad635ae71ae03c62289df26a23dbd9176379ba1b362d",
+  "labels": {
+    "T01_s00001": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T01_s00003": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T01_s00007": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T02_s00004": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T02_s00010": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T02_s00021": {
+      "suggested_label": "CONSTRUCT",
+      "final_label": "CONSTRUCT",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T03_s00008": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T03_s00010": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T04_s00001": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T04_s00002": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T04_s00003": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T05_s00004": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T05_s00011": {
+      "suggested_label": "CONSTRUCT",
+      "final_label": "CONSTRUCT",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T05_s00018": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T05_s00021": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T06_s00002": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T06_s00006": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T06_s00013": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T06_s00026": {
+      "suggested_label": "CONSTRUCT",
+      "final_label": "CONSTRUCT",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T07_s00009": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T07_s00014": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T07_s00015": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T07_s00031": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T08_s00019": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T09_s00002": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T09_s00011": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T09_s00013": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T10_s00002": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T10_s00005": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T10_s00010": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T11_s00001": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T11_s00005": {
+      "suggested_label": "CONSTRUCT",
+      "final_label": "CONSTRUCT",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T12_s00009": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T12_s00013": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T12_s00016": {
+      "suggested_label": "ENABLE",
+      "final_label": "ENABLE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T12_s00019": {
+      "suggested_label": "CHECK",
+      "final_label": "CHECK",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T13_s00006": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T14_s00002": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T14_s00005": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T14_s00011": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T15_s00013": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T15_s00018": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T15_s00050": {
+      "suggested_label": "OPERATE",
+      "final_label": "OPERATE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T15_s00054": {
+      "suggested_label": "CHECK",
+      "final_label": "CHECK",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T16_s00004": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T16_s00008": {
+      "suggested_label": "ENABLE",
+      "final_label": "ENABLE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T16_s00015": {
+      "suggested_label": "CHECK",
+      "final_label": "CHECK",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T16_s00035": {
+      "suggested_label": "CHECK",
+      "final_label": "CHECK",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T17_s00017": {
+      "suggested_label": "CHECK",
+      "final_label": "CHECK",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T17_s00020": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T17_s00026": {
+      "suggested_label": "CHECK",
+      "final_label": "CHECK",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T17_s00027": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T18_s00001": {
+      "suggested_label": "ACQUIRE",
+      "final_label": "ACQUIRE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T19_s00004": {
+      "suggested_label": "ENABLE",
+      "final_label": "ENABLE",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T19_s00026": {
+      "suggested_label": "CONSTRUCT",
+      "final_label": "CONSTRUCT",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T19_s00030": {
+      "suggested_label": "CONSTRUCT",
+      "final_label": "CONSTRUCT",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T20_s00018": {
+      "suggested_label": "CONSTRUCT",
+      "final_label": "CONSTRUCT",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T20_s00022": {
+      "suggested_label": "CHECK",
+      "final_label": "CHECK",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T20_s00029": {
+      "suggested_label": "CHECK",
+      "final_label": "CHECK",
+      "reviewed": false,
+      "review_note": ""
+    },
+    "T20_s00034": {
+      "suggested_label": "UNKNOWN",
+      "final_label": "UNKNOWN",
+      "reviewed": false,
+      "review_note": ""
+    }
+  }
+}

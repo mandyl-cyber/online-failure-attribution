@@ -141,13 +141,65 @@ def score(probe,out):
     print(json.dumps({k:v for k,v in report.items() if k!='rows'},ensure_ascii=False))
 
 
+def score_assisted(probe,out):
+    """Score a fully human-reviewed AI draft, never call it independent gold."""
+    draft_path=out/'ai_draft.json'
+    draft=json.loads(draft_path.read_text(encoding='utf-8'))
+    review=json.loads((out/'ai_review.json').read_text(encoding='utf-8'))
+    packets=json.loads((out/'blind_packets.json').read_text(encoding='utf-8'))
+    meta=json.loads((out/'selection.json').read_text(encoding='utf-8'))
+    if sha((out/'blind_packets.json').read_bytes())!=meta['blind_packets_sha256']:
+        raise ValueError('Blind packet changed')
+    if review.get('draft_sha256')!=sha(draft_path.read_bytes()):
+        raise ValueError('AI draft changed after review template creation')
+    if not isinstance(review.get('reviewer_id'),str) or not review['reviewer_id'].strip():
+        raise ValueError('Set a nonempty reviewer_id before scoring')
+    ids=[x['request_id'] for x in packets]
+    if len(ids)!=len(set(ids)) or set(ids)!=set(draft['suggestions']) or set(ids)!=set(review.get('labels',{})):
+        raise ValueError('Draft/review IDs differ from blind packet')
+    if json.loads((probe/'manifest.json').read_text())['identity']!=meta['probe_identity']:
+        raise ValueError('Probe identity changed')
+    results=[]
+    for packet in packets:
+        rid=packet['request_id']; item=review['labels'][rid]
+        suggested=draft['suggestions'][rid]['label']
+        if item.get('suggested_label')!=suggested or item.get('reviewed') is not True:
+            raise ValueError('Unreviewed or altered suggestion: '+rid)
+        label=item.get('final_label')
+        if label not in LABELS:
+            raise ValueError('Missing/invalid reviewed label: '+rid)
+        raw=json.loads((probe/'responses'/f'{rid}.json').read_text())
+        if raw['status']!='scored' or raw['input_sha256']!=sha(encoded(packet['packet'])):
+            raise ValueError('Probe response changed: '+rid)
+        results.append(dict(request_id=rid,source=packet['source'],qwen=raw['purpose'],
+                            ai_draft=suggested,reviewed_reference=label,
+                            qwen_agrees=raw['purpose']==label,review_changed_draft=suggested!=label))
+    def stats(rows):
+        n=len(rows);k=sum(x['qwen_agrees'] for x in rows)
+        return dict(n=n,qwen_agrees=k,agreement=k/n if n else None,wilson95=wilson(k,n),
+                    ai_draft_changed=sum(x['review_changed_draft'] for x in rows),
+                    reviewed_label_counts=dict(Counter(x['reviewed_reference'] for x in rows)))
+    report=dict(protocol='purpose-ai-assisted-single-review-v1',reviewer_id=review['reviewer_id'],
+                reference_provenance='AI suggestions exposed before one human review; not independent human gold',
+                overall=stats(results),
+                by_source={source:stats([x for x in results if x['source']==source])
+                           for source in ('SWE','Terminal-Bench')},
+                known_reference=stats([x for x in results if x['reviewed_reference']!='UNKNOWN']),
+                rows=results,draft_sha256=sha(draft_path.read_bytes()),
+                review_sha256=sha((out/'ai_review.json').read_bytes()),
+                limitations=['AI-assisted single-reviewer agreement on stratified sample; not blind human accuracy',
+                             'Not representative of all 735 steps without sample weighting'])
+    atomic(out/'assisted_agreement_report.json',report)
+    print(json.dumps({k:v for k,v in report.items() if k!='rows'},ensure_ascii=False))
+
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('command',choices=['make','score'])
+    ap.add_argument('command',choices=['make','score','score-assisted'])
     ap.add_argument('--probe',type=Path,default=DEFAULT_PROBE)
     ap.add_argument('--out',type=Path,default=Path('eval/purpose_human_audit_v1'))
     args=ap.parse_args()
-    (make if args.command=='make' else score)(args.probe,args.out)
+    {'make':make,'score':score,'score-assisted':score_assisted}[args.command](args.probe,args.out)
 
 
 if __name__=='__main__':main()

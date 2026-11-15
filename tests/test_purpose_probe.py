@@ -66,5 +66,35 @@ class Tests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'Missing/invalid'):
                 load_labels(path,['r'],'A')
 
+    def test_assisted_report_requires_explicit_review(self):
+        from segmenter.ledger import encoded, sha
+        from segmenter.purpose_human_audit import score_assisted
+        with TemporaryDirectory() as directory:
+            root=Path(directory);probe=root/'probe';out=root/'audit'
+            (probe/'responses').mkdir(parents=True);out.mkdir()
+            rid='T01_s00001';packet=dict(trajectory_id='T01',task='task',current_step_id=1,
+                                         steps=[dict(idx=1,action='inspect',observation='found')])
+            packets=[dict(request_id=rid,source='SWE',packet=packet)]
+            (out/'blind_packets.json').write_text(json.dumps(packets))
+            (probe/'manifest.json').write_text(json.dumps(dict(identity='probe-v1')))
+            (probe/'responses'/f'{rid}.json').write_text(json.dumps(dict(
+                status='scored',input_sha256=sha(encoded(packet)),purpose='ACQUIRE')))
+            (out/'selection.json').write_text(json.dumps(dict(
+                blind_packets_sha256=sha((out/'blind_packets.json').read_bytes()),probe_identity='probe-v1')))
+            draft=dict(suggestions={rid:dict(label='ACQUIRE')})
+            (out/'ai_draft.json').write_text(json.dumps(draft))
+            review=dict(reviewer_id='human-1',draft_sha256=sha((out/'ai_draft.json').read_bytes()),
+                        labels={rid:dict(suggested_label='ACQUIRE',final_label='ACQUIRE',reviewed=False)})
+            (out/'ai_review.json').write_text(json.dumps(review))
+            with self.assertRaisesRegex(ValueError,'Unreviewed'):
+                score_assisted(probe,out)
+            self.assertFalse((out/'assisted_agreement_report.json').exists())
+            review['labels'][rid]['reviewed']=True
+            (out/'ai_review.json').write_text(json.dumps(review))
+            score_assisted(probe,out)
+            report=json.loads((out/'assisted_agreement_report.json').read_text())
+            self.assertEqual(report['overall']['qwen_agrees'],1)
+            self.assertIn('not independent human gold',report['reference_provenance'])
+
 
 if __name__ == '__main__': unittest.main()

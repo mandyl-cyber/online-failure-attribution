@@ -3,6 +3,8 @@
 
 ## 当前结论：目的特征全 20 条重评（2026-11-15；优先于下方 10 条历史结果）
 
+2026-11-16 标注接续：七类目的标签的**完整人工判定规范**已保存到 `pilot/purpose_human_audit_v1/LABELING_GUIDE.md`。60 条逐步 AI 初稿及依据见同目录 `ai_draft.json`；用户要亲自审核的表为 `ai_review.json`：逐条对照 `blind_packets.json`，核定 `final_label`、把 `reviewed` 设为 `true`、填顶部 `reviewer_id`，含糊项可写 `review_note`。所有条目复核完后运行 `python -m segmenter.purpose_human_audit score-assisted --out pilot/purpose_human_audit_v1`。此结果只能称 **AI 辅助单人复核一致率**，不能称双人盲审准确率。`annotator_A.json` 已有用户开始独立填写的条目，工作区原样保留；`annotator_B.json` 仍空白。已看过 AI 建议后填写的条目不能混称独立盲审。
+
 详见 `docs/PURPOSE_BOUNDARY_RESULT_FULL_2026-11-15.md`。通过原始编码步骤文本逐项核对，新增 10 条 SWE 的**有界指纹映射**（非完整内容哈希）；原 10 条 Terminal-Bench 仍用完整哈希。20 条、735 步、113 个人标边界均入评分，Qwen 目的分数 531 步可用、204 步因 32K 上限缺失。相同任务组折/因果特征/阈值协议下，即时 D0 ±1 F1：结构 **0.4350**，结构＋目的 **0.4011**，差 **−3.40 点**，20 任务组配对预测 bootstrap 区间 **[−6.77,−0.01] 点**。SWE 和 Terminal-Bench 分来源均下降。下方仅 10 条 Terminal-Bench 的 +7.65 点已被本轮扩样并重训结果取代，不能作为部署依据。
 
 已实现 `segmenter/purpose_human_audit.py` 并将 60 例双人盲审材料放在版本化的 `pilot/purpose_human_audit_v1/`；两名独立人工标注者及分歧裁决尚未完成，**目的类别人工准确率未知**。评分器只接受完整人工标签，不能用模型标签冒充金标。完整前缀 Qwen 推理累计 756.1 秒，不满足每步毫秒级路径；**在线默认划分器保持原状**。`eval/` 被 Git 忽略，本机完整模型响应、映射和逐折预测未随仓库交付；GitHub 上的报告是结果摘要。
