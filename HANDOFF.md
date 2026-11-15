@@ -1,6 +1,10 @@
 
 # 交接文档：划分器（M1）
 
+## CPU 小目的模型试验（2026-11-16；不替换在线默认）
+
+按用户要求，用现有 60 条 AI 复核标签训练了可在 CPU 上运行的目的学生模型，报告见 `docs/PURPOSE_STUDENT_AI60_2026-11-16.md`，权重 `artifacts/purpose_student_ai60_v1/model.json.gz`。按轨迹分组 5 折，对 **AI 参考**的准确率 32/60（53.3%），六个已出现类别 macro F1 0.3379；多数类 28/60。SWE 24/30、Terminal-Bench 仅 8/30，分来源差异大；`DELIVER` 无样本，`ENABLE`/`OPERATE` 留出召回为 0。纯 Python 推理不需要 Qwen、PyTorch、scikit-learn 或 GPU；模型文件 347,607 字节（约 340 KiB），735 步实测 CPU 中位 1.32 ms/步、p95 1.74 ms/步。`run_online.py --purpose-model ... --task-file ...` 只输出 `purpose_events.jsonl`，不参与默认切分。**没有人工语义准确率，也没有小模型目的特征的边界增益结果；不得把 53.3% 写成正式准确率或据此默认部署。**
+
 ## 使用现有 AI 参考分析误切（2026-11-16）
 
 见 `docs/PURPOSE_AI_BOUNDARY_DIAGNOSIS_2026-11-16.md`。结构 218 切点/72 命中，融合 266/76；融合相对结构新增 74 个切点，其中 60 个按即时 D0 ±1 一对一规则未命中，净多 48 个预测只多命中 4 个，是 F1 下降的直接计数原因。60 条 AI 复核样本中仅 3 条恰好落在融合新增未命中切点，三条 Qwen 目的都与 AI 参考不同；另有 6 条融合未命中切点的目的却与 AI 参考一致。结论：目的误判是**可能原因之一**，但现有 AI 样本既非人工金标也非误切定向抽样，不能估计其贡献或据此重训/部署。可复算入口 `python -m segmenter.analyze_purpose_ai_review --out eval/purpose_ai_boundary_diagnostic_new`；在线默认保持原状。

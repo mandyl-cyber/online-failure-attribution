@@ -36,7 +36,8 @@ class OnlineSegmenter:
     """一条轨迹一个实例。feed(step) 返回这一步的事件向量（events.jsonl 的一行）。"""
 
     def __init__(self, rules: Rules | None = None, out_dir: str | Path | None = None,
-                 modes: list[str] | None = None, boundary_model: str | Path | None = None):
+                 modes: list[str] | None = None, boundary_model: str | Path | None = None,
+                 purpose_model: str | Path | None = None, task: str = ''):
         self.rules = rules or default_rules()
         self.detector = EventDetector(self.rules)
         self.context = ExecutionContext()
@@ -49,6 +50,11 @@ class OnlineSegmenter:
         if boundary_model is not None:
             from .boundary_model import OnlineBoundaryPredictor
             self.supervised = OnlineBoundaryPredictor.load(boundary_model)
+        self.purpose = None
+        if purpose_model is not None:
+            from .purpose_student import PurposeStudent
+            self.purpose = PurposeStudent.load(purpose_model)
+        self.task = task
         self.steps: list[Step] = []
         self.rows: list[dict] = []
         self.claims: list[dict] = []
@@ -57,6 +63,8 @@ class OnlineSegmenter:
         if self.out:
             self.out.mkdir(parents=True, exist_ok=True)
             names = ['steps', 'events', 'claims'] + (['boundary_events'] if self.supervised else [])
+            if self.purpose:
+                names.append('purpose_events')
             for name in names:
                 self._fh[name] = open(self.out / f"{name}.jsonl", "w", encoding="utf-8")
 
@@ -75,6 +83,12 @@ class OnlineSegmenter:
 
     def feed(self, step: Step) -> dict:
         t0 = time.perf_counter()
+        purpose_prediction = None
+        if self.purpose:
+            if not self.task.strip():
+                raise ValueError('Purpose model requires task text; pass --task-file if the stream lacks it')
+            prior = [self.steps[-1].to_dict()] if self.steps else []
+            purpose_prediction = self.purpose.predict(self.task,prior+[step.to_dict()])
         if self.rules.raw.get('execution_context', {}).get('enabled', False):
             self.context.apply(step)
         events = self.detector.detect(step)                       # 事件检测
@@ -105,6 +119,9 @@ class OnlineSegmenter:
             "detail": [e.to_dict() for e in events],
             "ms": round((time.perf_counter() - t0) * 1000, 3),
         }
+        if purpose_prediction:
+            row['purpose_prediction'] = purpose_prediction
+            self._append('purpose_events',dict(step_id=step.idx,**purpose_prediction))
         self.steps.append(step)
         self.rows.append(row)
         self.claims += claims
@@ -139,8 +156,9 @@ class OnlineSegmenter:
         return {"rows": self.rows, "tree": self.tree.to_dict(), "claims": self.claims, "stages": stages}
 
 
-def run_steps(steps: list[Step], rules: Rules | None = None, out_dir=None, modes=None, boundary_model=None) -> dict:
-    seg = OnlineSegmenter(rules, out_dir, modes, boundary_model)
+def run_steps(steps: list[Step], rules: Rules | None = None, out_dir=None, modes=None,
+              boundary_model=None,purpose_model=None,task='') -> dict:
+    seg = OnlineSegmenter(rules, out_dir, modes, boundary_model,purpose_model,task)
     for st in steps:
         seg.feed(st)
     return seg.finish()
@@ -170,7 +188,9 @@ def _fmt_row(step: Step, row: dict) -> str:
 def cmd_replay(a) -> None:
     rules = Rules(a.rules) if a.rules else default_rules()
     steps, meta = load_trajectory(a.path, rules, base=a.base)
-    seg = OnlineSegmenter(rules, a.out, [a.mode] if a.mode else None, a.boundary_model)
+    task=Path(a.task_file).read_text(encoding='utf-8') if a.task_file else meta.get('task','')
+    seg = OnlineSegmenter(rules, a.out, [a.mode] if a.mode else None,
+                          a.boundary_model,a.purpose_model,task)
     print(f"# {meta['source']}  format={meta['format']}  steps={len(steps)}", file=sys.stderr)
     for st in steps:
         row = seg.feed(st)
@@ -225,11 +245,15 @@ def _iter_live_events(path: Path, poll: float, idle: float):
 def cmd_follow(a) -> None:
     rules = Rules(a.rules) if a.rules else default_rules()
     ad = OpenHandsStreamAdapter(rules, base=a.base)
-    seg = OnlineSegmenter(rules, a.out, [a.mode] if a.mode else None, a.boundary_model)
+    explicit_task=Path(a.task_file).read_text(encoding='utf-8') if a.task_file else ''
+    seg = OnlineSegmenter(rules, a.out, [a.mode] if a.mode else None,
+                          a.boundary_model,a.purpose_model,explicit_task)
     done = False
     try:
         for ev in _iter_live_events(Path(a.path), a.poll, a.idle):
             for st in ad.feed(ev):
+                if not explicit_task:
+                    seg.task=ad.task
                 row = seg.feed(st)
                 print(_fmt_row(st, row), flush=True)
                 done = done or st.tool == "finish"
@@ -238,6 +262,8 @@ def cmd_follow(a) -> None:
     except KeyboardInterrupt:
         pass
     for st in ad.flush():
+        if not explicit_task:
+            seg.task=ad.task
         print(_fmt_row(st, seg.feed(st)), flush=True)
     seg.finish()
 
@@ -252,8 +278,10 @@ def cmd_bench(a) -> None:
             print(f"[skip] {entry['traj_id']}: {entry['error']}", file=sys.stderr)
             continue
         try:
-            steps, _ = load_trajectory(entry["traj_path"], rules, base=entry["base"], expect_steps=entry.get("step_count"))
-            run_steps(steps, rules, Path(a.out or "out") / entry["traj_id"], [a.mode] if a.mode else None, a.boundary_model)
+            steps, meta = load_trajectory(entry["traj_path"], rules, base=entry["base"], expect_steps=entry.get("step_count"))
+            task=Path(a.task_file).read_text(encoding='utf-8') if a.task_file else meta.get('task','')
+            run_steps(steps, rules, Path(a.out or "out") / entry["traj_id"],
+                      [a.mode] if a.mode else None, a.boundary_model,a.purpose_model,task)
             ok += 1
         except Exception as e:  # noqa: BLE001
             print(f"[fail] {entry['traj_id']}: {type(e).__name__}: {e}", file=sys.stderr)
@@ -271,6 +299,8 @@ def main(argv=None) -> None:
         p.add_argument("--mode", choices=["node", "phase"], help="切分模式（默认读 rules.yaml）")
         p.add_argument("--base", type=int, default=1, help="事件流格式的起始步号（steps.json 用原生步号）")
         p.add_argument("--boundary-model", help="本地训练的受信任 joblib 模型；另写 supervised_stage_ranges.json")
+        p.add_argument("--purpose-model", help="可选小目的模型；只写 purpose_events.jsonl，不改变默认阶段划分")
+        p.add_argument("--task-file", help="小目的模型使用的任务文本；事件流没有任务文本时必需")
 
     p = sub.add_parser("replay", help="回放一条落盘轨迹")
     p.add_argument("path")
