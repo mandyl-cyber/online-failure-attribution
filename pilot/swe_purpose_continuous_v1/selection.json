@@ -1,0 +1,247 @@
+[
+  {
+    "trajectory_id": "TRAIN_001",
+    "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14539-ab9134cc",
+    "split": "train",
+    "group": "9577a656bdca887bda11b04e5d096a999b63303e223cf29d2123cb9528c4ea23",
+    "steps": 24
+  },
+  {
+    "trajectory_id": "TRAIN_002",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-11749-24e171f6",
+    "split": "train",
+    "group": "22aa4ec553acd360f725d644929346e045b1425d5972a6f9414fbcbb519238c0",
+    "steps": 30
+  },
+  {
+    "trajectory_id": "TRAIN_003",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-14500-bc22e241",
+    "split": "train",
+    "group": "5311952a90919e6fb7c15fce81c6b2bad5a9f44d174e858c0b727ec126480c3b",
+    "steps": 30
+  },
+  {
+    "trajectory_id": "TRAIN_004",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-14539-fdad2178",
+    "split": "train",
+    "group": "48d5d4e6455ae6308e36705c8f75ef2a36e97fcda532a3ce5ea1393f5974760a",
+    "steps": 36
+  },
+  {
+    "trajectory_id": "TRAIN_005",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-15104-148b1e60",
+    "split": "train",
+    "group": "317e5baf43c951fe0cc4b239c592fe0ba008363b7bffed4afd2d6848bbc57ab8",
+    "steps": 31
+  },
+  {
+    "trajectory_id": "TRAIN_006",
+    "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e",
+    "split": "train",
+    "group": "a5665d680f00c4b323f8ee88328f9a21f2d82bd9fc1a4a717f3807d21469ebc3",
+    "steps": 85
+  },
+  {
+    "trajectory_id": "TRAIN_007",
+    "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2-e6e185ca",
+    "split": "train",
+    "group": "5dd8e56019abe6c8e7d264b0f4b99577d464101d796bc10f8e63d468e6a5427d",
+    "steps": 26
+  },
+  {
+    "trajectory_id": "TRAIN_008",
+    "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86-28be7ce9",
+    "split": "train",
+    "group": "260b76417d9220db6f8f0f3752a91a54663094e512b93b8dc6a8a6496f673498",
+    "steps": 55
+  },
+  {
+    "trajectory_id": "TRAIN_009",
+    "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-949c503f2ef4b2c5d668af0492a5c0db1ab86140-v0f01c69f1e2528b935359cfe578530722bca2c59-9a3f4648",
+    "split": "train",
+    "group": "76ccf807e0d90d0c1865d97ed6b73172c66699259d8dd8c0a12dbdc95114038f",
+    "steps": 34
+  },
+  {
+    "trajectory_id": "TRAIN_010",
+    "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-cb94c0cc550df9e98f1247bc71d8c2b861c75049-v1055803c3a812189a1133297f7f5468579283f86-6e13d2fc",
+    "split": "train",
+    "group": "db5bc813fe51633f3b932e53bcfc0550f7529472d485aec77049b98c2182ce41",
+    "steps": 44
+  },
+  {
+    "trajectory_id": "TRAIN_011",
+    "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-19331-4460742e",
+    "split": "train",
+    "group": "fe8c5432c2258a9145eb63a3e3284d8e3da4e1b631e0cd47353257256b888c9e",
+    "steps": 64
+  },
+  {
+    "trajectory_id": "TRAIN_012",
+    "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-25311-b8a88259",
+    "split": "train",
+    "group": "fdf3c10affaa44c5d227641984458dde0c2d06b51d3129cc6b8e5c8a6dbb1d67",
+    "steps": 44
+  },
+  {
+    "trajectory_id": "TRAIN_013",
+    "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-153857-2ba91a64",
+    "split": "train",
+    "group": "f2c7b68ee659eb0dcd62de127f34871a916285a7b207eecf201795f4f942de76",
+    "steps": 69
+  },
+  {
+    "trajectory_id": "TRAIN_014",
+    "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-19121-ef420de9",
+    "split": "train",
+    "group": "5c61029c180b164cbac207068e7effb5f46e3e26a523a26ec530d4200bcff53b",
+    "steps": 33
+  },
+  {
+    "trajectory_id": "TRAIN_015",
+    "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+    "split": "train",
+    "group": "210f81048d4a7c43c858300a72f0929c7d1145f98214cc6f8772d00d2bc36546",
+    "steps": 35
+  },
+  {
+    "trajectory_id": "TRAIN_016",
+    "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-2905-6eb6cd67",
+    "split": "train",
+    "group": "efd1f6e6227363c8fca2b6bdfab6e6177750ae993e7837f81b5ea1697df994b0",
+    "steps": 23
+  },
+  {
+    "trajectory_id": "TRAIN_017",
+    "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-4966-a48c05ba",
+    "split": "train",
+    "group": "8a98c6fc092c1dd26a8b4310eb7e5a470501536959a4a898b54204bef82cb20c",
+    "steps": 23
+  },
+  {
+    "trajectory_id": "TRAIN_018",
+    "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-6721-6c1f0e24",
+    "split": "train",
+    "group": "aaf7dd167b18c0407f2226a72d6388df2953e53a41e56104d474e62443bb6ee7",
+    "steps": 40
+  },
+  {
+    "trajectory_id": "TRAIN_019",
+    "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7205-282aadca",
+    "split": "train",
+    "group": "64bbd7ce8ab9bcb94965b5773cea13c1849bc0bf38c4b5bb5713084115f45160",
+    "steps": 39
+  },
+  {
+    "trajectory_id": "TRAIN_020",
+    "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-2576-370c7644",
+    "split": "train",
+    "group": "7ba5d82efc3829611b82cc26995246e547bd1c8356e611bda9aa5a2c324c92b4",
+    "steps": 28
+  },
+  {
+    "trajectory_id": "TRAIN_021",
+    "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-2945-1c469acc",
+    "split": "train",
+    "group": "cf154b179a5cd40b8e71138a1929e21f39f854490d8ce581dbc426aec53785d4",
+    "steps": 34
+  },
+  {
+    "trajectory_id": "TRAIN_022",
+    "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-3457-9fc6d45a",
+    "split": "train",
+    "group": "d83e871b0a053d5bc567f3643da34ec5ea3ecb40253b975bb15bf944c99d5738",
+    "steps": 28
+  },
+  {
+    "trajectory_id": "TRAIN_023",
+    "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-10466-cc5abeef",
+    "split": "train",
+    "group": "be47ccda97a3e65a50ec66a9f9b67bcb1b16e54f436431f0b47aa376e677da2c",
+    "steps": 22
+  },
+  {
+    "trajectory_id": "TRAIN_024",
+    "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-19954-c947e93d",
+    "split": "train",
+    "group": "18326d0c2d6211eca2dd76e06b0acdb7904a16c67b3781297a2a01c3ae6211d7",
+    "steps": 26
+  },
+  {
+    "trajectory_id": "TRAIN_025",
+    "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-22714-c0148acc",
+    "split": "train",
+    "group": "46497fe1794d217d3e343c971d37c12885b450f20ee39e1b8a424ffec6881634",
+    "steps": 32
+  },
+  {
+    "trajectory_id": "DEV_001",
+    "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14995-e541781d",
+    "split": "dev",
+    "group": "3df08d3550d2b47fa4f3a7c1ca98fe5f94ded7a7e48c29fcf79d31aabce456cf",
+    "steps": 28
+  },
+  {
+    "trajectory_id": "DEV_002",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-11179-4a42f87b",
+    "split": "dev",
+    "group": "1b5cc4f48e4d548efec3146b7dac1246d9c397275da1aaa08fd9bd2bdad32fc0",
+    "steps": 32
+  },
+  {
+    "trajectory_id": "DEV_003",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-16485-3e4d6956",
+    "split": "dev",
+    "group": "c32cb4a58a81921f52f6a902ccb119be98debae08c314f2460b7a5ddd8b0e431",
+    "steps": 23
+  },
+  {
+    "trajectory_id": "DEV_004",
+    "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-f8ef34672b961a95ec7282643679492862c688ec-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-9a7ccdd2",
+    "split": "dev",
+    "group": "9f354e752105c6d9f4965457b9fd0c875e41f4d99d0b5dc7f7e2dc66e4a9b273",
+    "steps": 43
+  },
+  {
+    "trajectory_id": "DEV_005",
+    "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-473a15f7908f2bb6d670b0e908ab34a28d8cf7e2-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d-3f5c4067",
+    "split": "dev",
+    "group": "ea464073d51c7848e1d7ea7f8f5a7ac2f6b419caa35a7c95decf3ef05f0b53ab",
+    "steps": 69
+  },
+  {
+    "trajectory_id": "DEV_006",
+    "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-18871-9b44c674",
+    "split": "dev",
+    "group": "ab8bbb7c5bbc3701425992b5a8dbfd5287f7747f8cbbb712c37196c6fb7857d7",
+    "steps": 42
+  },
+  {
+    "trajectory_id": "DEV_007",
+    "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19484-74f5c884",
+    "split": "dev",
+    "group": "66cdb889342f7bf28850b379338a20a0532efe343d4b3103045aff9927df61db",
+    "steps": 33
+  },
+  {
+    "trajectory_id": "DEV_008",
+    "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-4009-6c1ad563",
+    "split": "dev",
+    "group": "f91f33f9f34a197e1cba5fd233041d853d1988341d6f0b461a88eb342630fe8b",
+    "steps": 32
+  },
+  {
+    "trajectory_id": "DEV_009",
+    "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-26323-2c2c571b",
+    "split": "dev",
+    "group": "bbdb972930a7282656ad0b1c5838dcca1fd800411822e3abbd48bef0aae92b7f",
+    "steps": 22
+  },
+  {
+    "trajectory_id": "DEV_010",
+    "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8265-f92e7569",
+    "split": "dev",
+    "group": "bfcd80dfc6cdb26de50848a656349d5d50ed0f43f9d87a91ce4a94b035bc058d",
+    "steps": 26
+  }
+]

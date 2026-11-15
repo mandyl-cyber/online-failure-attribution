@@ -1,0 +1,12 @@
+{
+  "protocol": "swe-continuous-purpose-v1",
+  "trajectories": 25,
+  "requests": 935,
+  "files": {
+    "ENVIRONMENT_TEMPLATE.txt": "0d2ddeee09105ee80d93f125e9a6c3f24074df49358b3bf5d3850de8a2f01ab3",
+    "OUTPUT_SCHEMA.json": "6f2a9c89775561c01720495b78873b02a7f96f28ac676bfcdc0cddb00909e874",
+    "remote.py": "743f7eff1e49f993f1cdf339fe3e82440e61f22bbdd660f21615d3d7dd8f5bd0",
+    "SYSTEM_PROMPT.txt": "e77f50de724cf3580e80304ef39ec35a14033d6bc70c00603f47620c91acef79",
+    "trajectories.jsonl": "3072b4d3bc382627951de9ea2c8c32947f11b7b67287e8bcf90aa45e1a266008"
+  }
+}

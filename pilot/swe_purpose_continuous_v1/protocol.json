@@ -1,0 +1,52 @@
+{
+  "selection": {
+    "train": {
+      "trajectories": 25,
+      "steps": 935,
+      "truncated_steps": 0
+    },
+    "dev": {
+      "trajectories": 10,
+      "steps": 350,
+      "truncated_steps": 0
+    }
+  },
+  "corpus": {
+    "train": 185,
+    "reserved": 43,
+    "dev": 48
+  },
+  "selection_policy": "25 train / 10 dev; one per group; length thirds; deterministic 256 candidate draws closest to 1000/350 steps; no gold used",
+  "task_type_coverage": "Repository repair tasks; semantic task-type diversity not manually verified",
+  "label_policy": "AI weak references, not human gold; independent second pass before adjudication; same labels do not imply same stage",
+  "baseline_policy": "Existing frozen rule events rescored; no new model training or live replay",
+  "historical_exposure": "All data previously exposed; reserved is not pristine test",
+  "input_policy": "Full completed prefix, public intent optional; no gold/failure fields; overflow remains missing",
+  "future_training": "Group cross-fit purpose predictions for boundary training; dev only for selection; reserved untouched",
+  "inputs": {
+    "records": {
+      "path": "eval\\boundary_supervised\\data_fixed\\records.json",
+      "sha256": "b9cf9924e747576c527e4351f1db34c52420526c5379fde0b8900eaa4517a4af"
+    },
+    "labels": {
+      "path": "eval\\boundary_supervised\\data_fixed\\labels.json",
+      "sha256": "d219dee1cf8855a806748ecfb44332301d830ff59190bd9770870b7b04d55907"
+    },
+    "split": {
+      "path": "pilot\\purpose_round2_v1\\split_manifest.json",
+      "sha256": "cde31a1babe2c5e70ca78f329a4e89cd388157fbb3a3369c0e8364caf0398bc5"
+    },
+    "rows": {
+      "path": "eval\\boundary_encoder\\text_v1\\steps.jsonl",
+      "sha256": "faead2cb4409f2d9b943657a6f4781ab8e89ca7878de15a4a728370d12cbe11d"
+    },
+    "contracts": {
+      "path": "eval\\purpose_context_v2b\\contracts.json",
+      "sha256": "91fff2491cf718b77ba0e47d488cfab3903e9fe541be46c8b8f31a9c11b47f1b"
+    },
+    "intents": {
+      "path": "eval\\semantic_input_ablation_v1\\inputs\\intent_provenance.json",
+      "sha256": "bb1773ef4e6a52b87a2b31c313d33a65b01be0695b58cbf72c9077111d95ebe2"
+    }
+  }
+}
