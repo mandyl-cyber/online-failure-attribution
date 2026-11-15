@@ -141,7 +141,7 @@ def score(probe,out):
     print(json.dumps({k:v for k,v in report.items() if k!='rows'},ensure_ascii=False))
 
 
-def score_assisted(probe,out):
+def score_assisted(probe,out,report_path=Path('eval/purpose_human_audit_ai_review/report.json')):
     """Score a fully human-reviewed AI draft, never call it independent gold."""
     draft_path=out/'ai_draft.json'
     draft=json.loads(draft_path.read_text(encoding='utf-8'))
@@ -154,6 +154,9 @@ def score_assisted(probe,out):
         raise ValueError('AI draft changed after review template creation')
     if not isinstance(review.get('reviewer_id'),str) or not review['reviewer_id'].strip():
         raise ValueError('Set a nonempty reviewer_id before scoring')
+    kind=review.get('reviewer_kind')
+    if kind not in ('ai','human'):
+        raise ValueError('Set reviewer_kind to ai or human before scoring')
     ids=[x['request_id'] for x in packets]
     if len(ids)!=len(set(ids)) or set(ids)!=set(draft['suggestions']) or set(ids)!=set(review.get('labels',{})):
         raise ValueError('Draft/review IDs differ from blind packet')
@@ -179,17 +182,21 @@ def score_assisted(probe,out):
         return dict(n=n,qwen_agrees=k,agreement=k/n if n else None,wilson95=wilson(k,n),
                     ai_draft_changed=sum(x['review_changed_draft'] for x in rows),
                     reviewed_label_counts=dict(Counter(x['reviewed_reference'] for x in rows)))
+    provenance=('Second AI review of an AI draft; no human reference or semantic accuracy'
+                if kind=='ai' else 'AI suggestions exposed before one human review; not independent human gold')
     report=dict(protocol='purpose-ai-assisted-single-review-v1',reviewer_id=review['reviewer_id'],
-                reference_provenance='AI suggestions exposed before one human review; not independent human gold',
+                reviewer_kind=kind,reference_provenance=provenance,
                 overall=stats(results),
                 by_source={source:stats([x for x in results if x['source']==source])
                            for source in ('SWE','Terminal-Bench')},
                 known_reference=stats([x for x in results if x['reviewed_reference']!='UNKNOWN']),
                 rows=results,draft_sha256=sha(draft_path.read_bytes()),
                 review_sha256=sha((out/'ai_review.json').read_bytes()),
-                limitations=['AI-assisted single-reviewer agreement on stratified sample; not blind human accuracy',
+                limitations=['Agreement with '+('AI-reviewed' if kind=='ai' else 'AI-assisted human-reviewed')
+                             +' labels on stratified sample; not blind human accuracy',
                              'Not representative of all 735 steps without sample weighting'])
-    atomic(out/'assisted_agreement_report.json',report)
+    report_path.parent.mkdir(parents=True,exist_ok=True)
+    atomic(report_path,report)
     print(json.dumps({k:v for k,v in report.items() if k!='rows'},ensure_ascii=False))
 
 
@@ -198,8 +205,12 @@ def main():
     ap.add_argument('command',choices=['make','score','score-assisted'])
     ap.add_argument('--probe',type=Path,default=DEFAULT_PROBE)
     ap.add_argument('--out',type=Path,default=Path('eval/purpose_human_audit_v1'))
+    ap.add_argument('--report',type=Path,default=Path('eval/purpose_human_audit_ai_review/report.json'))
     args=ap.parse_args()
-    {'make':make,'score':score,'score-assisted':score_assisted}[args.command](args.probe,args.out)
+    if args.command=='score-assisted':
+        score_assisted(args.probe,args.out,args.report)
+    else:
+        {'make':make,'score':score}[args.command](args.probe,args.out)
 
 
 if __name__=='__main__':main()

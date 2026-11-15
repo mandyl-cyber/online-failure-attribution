@@ -29,7 +29,7 @@
 
 ### AI 初稿后由一人复核
 
-`ai_draft.json` 是独立 AI 建议，**不是人类金标，也不是 Qwen 探测预测**。这一路径适合快速诊断模型为何误切，但看过建议的复核者不再是独立盲审者。请逐条对照原始 `blind_packets.json`，在 `ai_review.json` 中核定 `final_label`，每条都把 `reviewed` 改成 JSON 布尔值 `true`（没有引号）；改动标签时可填 `review_note`。`suggested_label` 保留原 AI 建议，不修改；顶部 `reviewer_id` 填你的非空标识。每条 `final_label` 目前预填 AI 建议，**不代表已经过人工确认**。不要把 AI 初稿复制到 `annotator_A/B.json`，不要用双人评分命令或称其为“双人人工准确率”。复核前不得查看 Qwen 目的预测。`annotator_A.json` 已有用户开始填写的条目，原样保留；若这些条目在查看 AI 初稿之前独立完成，可单独记录其来源，但查看初稿后的新条目不应再称为独立盲审。`annotator_B.json` 仍可留给未来独立评审者。
+`ai_draft.json` 是独立 AI 建议，**不是人类金标，也不是 Qwen 探测预测**。这一路径适合快速诊断模型为何误切，但看过建议的复核者不再是独立盲审者。请逐条对照原始 `blind_packets.json`，在 `ai_review.json` 中核定 `final_label`，每条都把 `reviewed` 改成 JSON 布尔值 `true`（没有引号）；改动标签时可填 `review_note`。`suggested_label` 保留原 AI 建议，不修改；顶部 `reviewer_id` 填你的非空标识，`reviewer_kind` 按真实复核者填 `"human"` 或 `"ai"`。每条 `final_label` 最初预填 AI 建议，**不代表已经过人工确认**。不要把 AI 初稿复制到 `annotator_A/B.json`，不要用双人评分命令或称其为“双人人工准确率”。复核前不得查看 Qwen 目的预测。`annotator_A.json` 已有用户开始填写的条目，原样保留；若这些条目在查看 AI 初稿之前独立完成，可单独记录其来源，但查看初稿后的新条目不应再称为独立盲审。`annotator_B.json` 仍可留给未来独立评审者。
 
 全部 60 条都亲自复核完后，在保留 `eval/purpose_probe_v1/` 的本机执行：
 
@@ -37,6 +37,6 @@
 python -m segmenter.purpose_human_audit score-assisted --out pilot/purpose_human_audit_v1
 ```
 
-程序会拒绝未复核、无复核者标识、缺项、非法标签、修改 AI 初稿或更改盲包；只生成 `assisted_agreement_report.json`，以“Qwen 与 AI 辅助单人复核参考的一致率”命名，不生成双人金标准确率。若只想先审几条，可以随时保存 `ai_review.json`，不需要强行把未审条目标为已审。
+程序会拒绝未复核、无复核者标识或类型、缺项、非法标签、修改 AI 初稿或更改盲包；报告默认写在被 Git 忽略的 `eval/purpose_human_audit_ai_review/report.json`，避免把 Qwen 预测放回盲审目录。报告按 `reviewer_kind` 明确标为 Qwen 与 AI 复核或 AI 辅助人工复核参考的一致率，不生成双人金标准确率。若只想先审几条，可以随时保存 `ai_review.json`，不需要强行把未审条目标为已审。
 
 本次 60 例按来源和模型类别分层抽取，人工复核所得一致率只能代表这一组样本，不能直接外推为 735 步总体准确率。目的标签正确也不代表目的变化就是阶段边界；要单独分析融合模型新增的误切点。

@@ -1,6 +1,10 @@
 
 # 交接文档：划分器（M1）
 
+## 目的标签 AI 复核结果（2026-11-16）
+
+`ai_review.json` 现为 `codex-ai-review-2026-11-15` 完成的 **60/60 AI 复核**，不属于人工评审。Qwen 与 AI 复核标签一致 14/60（SWE 3/30、Terminal-Bench 11/30）；最集中分歧是 AI 的 `ACQUIRE` 被 Qwen 判成 `CONSTRUCT`（14 条）。报告见 `docs/PURPOSE_AI_REVIEW_RESULT_2026-11-16.md`，逐例结果仅在被 Git 忽略的 `eval/purpose_human_audit_ai_review/report.json`。这不是目的类别人工准确率，不能据此替换在线默认。评分器现要求标明 `reviewer_kind`，AI 对照报告默认写入 `eval/`，避免向盲审包泄露 Qwen 预测。`annotator_A.json` 的 5 条用户工作区标注未纳入提交，`annotator_B.json` 为空；人工核验仍是待办。
+
 ## 当前结论：目的特征全 20 条重评（2026-11-15；优先于下方 10 条历史结果）
 
 2026-11-16 标注接续：七类目的标签的**完整人工判定规范**已保存到 `pilot/purpose_human_audit_v1/LABELING_GUIDE.md`。60 条逐步 AI 初稿及依据见同目录 `ai_draft.json`；用户要亲自审核的表为 `ai_review.json`：逐条对照 `blind_packets.json`，核定 `final_label`、把 `reviewed` 设为 `true`、填顶部 `reviewer_id`，含糊项可写 `review_note`。所有条目复核完后运行 `python -m segmenter.purpose_human_audit score-assisted --out pilot/purpose_human_audit_v1`。此结果只能称 **AI 辅助单人复核一致率**，不能称双人盲审准确率。`annotator_A.json` 已有用户开始独立填写的条目，工作区原样保留；`annotator_B.json` 仍空白。已看过 AI 建议后填写的条目不能混称独立盲审。

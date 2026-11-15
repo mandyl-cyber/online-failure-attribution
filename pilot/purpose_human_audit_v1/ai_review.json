@@ -1,6 +1,7 @@
 {
   "protocol": "purpose-ai-assisted-single-review-v1",
   "reviewer_id": "codex-ai-review-2026-11-15",
+  "reviewer_kind": "ai",
   "draft_sha256": "c512d945e9d6533751d2ad635ae71ae03c62289df26a23dbd9176379ba1b362d",
   "labels": {
     "T01_s00001": {

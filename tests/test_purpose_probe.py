@@ -83,16 +83,18 @@ class Tests(unittest.TestCase):
                 blind_packets_sha256=sha((out/'blind_packets.json').read_bytes()),probe_identity='probe-v1')))
             draft=dict(suggestions={rid:dict(label='ACQUIRE')})
             (out/'ai_draft.json').write_text(json.dumps(draft))
-            review=dict(reviewer_id='human-1',draft_sha256=sha((out/'ai_draft.json').read_bytes()),
+            review=dict(reviewer_id='human-1',reviewer_kind='human',
+                        draft_sha256=sha((out/'ai_draft.json').read_bytes()),
                         labels={rid:dict(suggested_label='ACQUIRE',final_label='ACQUIRE',reviewed=False)})
             (out/'ai_review.json').write_text(json.dumps(review))
+            report_path=root/'report.json'
             with self.assertRaisesRegex(ValueError,'Unreviewed'):
-                score_assisted(probe,out)
-            self.assertFalse((out/'assisted_agreement_report.json').exists())
+                score_assisted(probe,out,report_path)
+            self.assertFalse(report_path.exists())
             review['labels'][rid]['reviewed']=True
             (out/'ai_review.json').write_text(json.dumps(review))
-            score_assisted(probe,out)
-            report=json.loads((out/'assisted_agreement_report.json').read_text())
+            score_assisted(probe,out,report_path)
+            report=json.loads(report_path.read_text())
             self.assertEqual(report['overall']['qwen_agrees'],1)
             self.assertIn('not independent human gold',report['reference_provenance'])
 
