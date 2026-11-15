@@ -1,6 +1,10 @@
 
 # 交接文档：划分器（M1）
 
+## 当前 challenge 与下一步执行清单（2026-11-16）
+
+完整可执行路线见 `docs/PURPOSE_CHALLENGES_AND_NEXT_STEPS_2026-11-16.md`。眼下的主瓶颈是目的标签无人工准确率、60 条 AI 参考严重类别失衡（`DELIVER` 0）、小目的模型 Terminal-Bench 轨迹留出仅 8/30，以及目的类别到阶段边界的关系未证实。优先冻结独立任务组评价集并补 Terminal-Bench/稀有类别可信标签，再训练比较轻量模型，最后单独验证边界增益及在线端到端时延。现有 CPU 模型只旁路输出；在线默认划分器保持原状。
+
 ## CPU 小目的模型试验（2026-11-16；不替换在线默认）
 
 按用户要求，用现有 60 条 AI 复核标签训练了可在 CPU 上运行的目的学生模型，报告见 `docs/PURPOSE_STUDENT_AI60_2026-11-16.md`，权重 `artifacts/purpose_student_ai60_v1/model.json.gz`。按轨迹分组 5 折，对 **AI 参考**的准确率 32/60（53.3%），六个已出现类别 macro F1 0.3379；多数类 28/60。SWE 24/30、Terminal-Bench 仅 8/30，分来源差异大；`DELIVER` 无样本，`ENABLE`/`OPERATE` 留出召回为 0。纯 Python 推理不需要 Qwen、PyTorch、scikit-learn 或 GPU；模型文件 347,607 字节（约 340 KiB），735 步实测 CPU 中位 1.32 ms/步、p95 1.74 ms/步。`run_online.py --purpose-model ... --task-file ...` 只输出 `purpose_events.jsonl`，不参与默认切分。**没有人工语义准确率，也没有小模型目的特征的边界增益结果；不得把 53.3% 写成正式准确率或据此默认部署。**
