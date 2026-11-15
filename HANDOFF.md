@@ -1,6 +1,10 @@
 
 # 交接文档：划分器（M1）
 
+## 使用现有 AI 参考分析误切（2026-11-16）
+
+见 `docs/PURPOSE_AI_BOUNDARY_DIAGNOSIS_2026-11-16.md`。结构 218 切点/72 命中，融合 266/76；融合相对结构新增 74 个切点，其中 60 个按即时 D0 ±1 一对一规则未命中，净多 48 个预测只多命中 4 个，是 F1 下降的直接计数原因。60 条 AI 复核样本中仅 3 条恰好落在融合新增未命中切点，三条 Qwen 目的都与 AI 参考不同；另有 6 条融合未命中切点的目的却与 AI 参考一致。结论：目的误判是**可能原因之一**，但现有 AI 样本既非人工金标也非误切定向抽样，不能估计其贡献或据此重训/部署。可复算入口 `python -m segmenter.analyze_purpose_ai_review --out eval/purpose_ai_boundary_diagnostic_new`；在线默认保持原状。
+
 ## 目的标签 AI 复核结果（2026-11-16）
 
 `ai_review.json` 现为 `codex-ai-review-2026-11-15` 完成的 **60/60 AI 复核**，不属于人工评审。Qwen 与 AI 复核标签一致 14/60（SWE 3/30、Terminal-Bench 11/30）；最集中分歧是 AI 的 `ACQUIRE` 被 Qwen 判成 `CONSTRUCT`（14 条）。报告见 `docs/PURPOSE_AI_REVIEW_RESULT_2026-11-16.md`，逐例结果仅在被 Git 忽略的 `eval/purpose_human_audit_ai_review/report.json`。这不是目的类别人工准确率，不能据此替换在线默认。评分器现要求标明 `reviewer_kind`，AI 对照报告默认写入 `eval/`，避免向盲审包泄露 Qwen 预测。`annotator_A.json` 的 5 条用户工作区标注未纳入提交，`annotator_B.json` 为空；人工核验仍是待办。
