@@ -1,6 +1,30 @@
 
 # 交接文档：划分器（M1）
 
+## 当前结论：目的特征全 20 条重评（2026-11-15；优先于下方 10 条历史结果）
+
+详见 `docs/PURPOSE_BOUNDARY_RESULT_FULL_2026-11-15.md`。通过原始编码步骤文本逐项核对，新增 10 条 SWE 的**有界指纹映射**（非完整内容哈希）；原 10 条 Terminal-Bench 仍用完整哈希。20 条、735 步、113 个人标边界均入评分，Qwen 目的分数 531 步可用、204 步因 32K 上限缺失。相同任务组折/因果特征/阈值协议下，即时 D0 ±1 F1：结构 **0.4350**，结构＋目的 **0.4011**，差 **−3.40 点**，20 任务组配对预测 bootstrap 区间 **[−6.77,−0.01] 点**。SWE 和 Terminal-Bench 分来源均下降。下方仅 10 条 Terminal-Bench 的 +7.65 点已被本轮扩样并重训结果取代，不能作为部署依据。
+
+已实现 `segmenter/purpose_human_audit.py` 并将 60 例双人盲审材料放在版本化的 `pilot/purpose_human_audit_v1/`；两名独立人工标注者及分歧裁决尚未完成，**目的类别人工准确率未知**。评分器只接受完整人工标签，不能用模型标签冒充金标。完整前缀 Qwen 推理累计 756.1 秒，不满足每步毫秒级路径；**在线默认划分器保持原状**。`eval/` 被 Git 忽略，本机完整模型响应、映射和逐折预测未随仓库交付；GitHub 上的报告是结果摘要。
+
+### 当前必须做的事（按顺序）
+
+1. **完成人工目的核验。** 两名标注者分别只看 `pilot/purpose_human_audit_v1/blind_packets.json` 和七类定义，独立填写 `annotator_A.json`、`annotator_B.json`；第三人仅裁决分歧 ID。`UNKNOWN` 可用，不能根据模型预测填写。标完在保存本机 `eval/purpose_probe_v1/` 的环境执行 `python -m segmenter.purpose_human_audit score --out pilot/purpose_human_audit_v1`，记录一致率、分类准确率及分来源区间。目前此项**待人工输入**，不是代码失败。
+2. **复核 SWE 原始对应关系。** 现有 10 条 SWE 仅通过独立打包文本的逐步有界指纹核对。若取得未经改写的原始 action/observation，补全内容 SHA256 再复评；否则所有报告继续明确称 `packed_step_verified`，不写成严格哈希匹配。
+3. **做独立任务组的边界增益验证。** 当前 20 条是已分析开发集，融合 F1 下降 3.40 点。固定特征、阈值选择和任务组拆分规则后，在此前未用于选择方案的任务组重评结构/目的/可用性对照，报告覆盖率、分来源和配对区间；不要用当前 10 条正向子集重新调出收益。
+4. **解决在线时延与长上下文缺失。** 本次 204/735 步无目的分数，完整前缀推理累计 756.1 秒。候选方案先离线比较固定短窗口、小模型或蒸馏，并计入所有缺失步及真实每步耗时；不能把离线 D0 信息时限当墙钟零时延。
+5. **仅在门槛通过后考虑默认替换。** 至少需要目的语义核验、独立任务组边界增益、完整缺失策略和在线延迟预算。现阶段保留 `segmenter/run_online.py` / `segmenter/online_ledger.py` 的原默认路径。
+
+复核命令：`python -m unittest discover -s tests -p test_purpose_probe.py`；`python -m segmenter.evaluate_purpose_probe --probe eval/purpose_probe_v1 --data eval/boundary_supervised/data_fixed --packed eval/boundary_encoder/minilm_headtail --out eval/purpose_probe_evaluation_new`。后者依赖本机被忽略的 `eval/` 数据和模型响应。接手者可从 `docs/PURPOSE_BOUNDARY_RESULT_FULL_2026-11-15.md` 看完整口径，下面“最新更新”保留的是历史 10 条子集结果。
+
+## 最新更新：目的特征边界试验（2026-11-15）
+
+完整事前方案和执行结果见 `docs/PURPOSE_BOUNDARY_EXECUTION.md`、`docs/PURPOSE_BOUNDARY_RESULT_2026-11-15.md`。Qwen2.5-7B 对 20 条轨迹的 735 个前缀完成独立七选项目的分数探测：531 得分，204 超 32K 上下文明确缺失；不是原 JSON 引文协议的合格标注，也没有人工目的金标。
+
+只有 10 条 Terminal-Bench（383 步、59 个边界）通过完整内容哈希和步号与监督数据匹配。按原任务组折做结构/目的/融合/缺失对照：即时 D0 ±1 F1 为结构 0.3761、仅目的 0.3682、融合 0.4526、结构＋仅缺失标记 0.4023、目的切换直接切分 0.3172。融合相对结构 +7.65 点；10 任务组配对预测计数 bootstrap 区间 [+3.62,+11.70] 点。属于已分析开发集上的小样本信号，折人数 6/3/1，区间不计模型重训波动；无 SWE 金标结果，不能与全 461 条模型直接比较。保持在线默认模型不变。
+
+新入口：`segmenter/purpose_probe.py`（本地 Qwen、单实例、前缀和显存/时延记录、断点重放）、`segmenter/evaluate_purpose_probe.py`（严格映射、折内阈值、配对比较）。`remote_pilots/qwen_purpose_v1/remote.py` 已修复现代 Transformers 的 token 数误计；原自由 JSON 五步试跑仅 1/5 通过，见其 `LOCAL_RUN_2026-11-14.md`。下一步先扩大可验证样本及改善目的标签质量/长前缀策略，再在独立任务组验证增益；不把七选项分数当目的语义正确率。
+
 ## 最新接手入口（2026-11-13；优先于下方历史记录）
 
 ### Linux 本地 Qwen 接入与实测更新（2026-11-13；优先于下方旧状态）

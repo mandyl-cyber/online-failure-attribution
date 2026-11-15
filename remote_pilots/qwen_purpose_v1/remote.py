@@ -116,6 +116,11 @@ def main():
     counts=[]
     for job in selected:
         ids=tokenizer.apply_chat_template(messages(job),tokenize=True,add_generation_prompt=True,**template_kwargs)
+        if hasattr(ids, 'keys'):
+            ids=ids['input_ids']
+        if ids and isinstance(ids[0], list):
+            if len(ids)!=1: raise ValueError('Expected one tokenized conversation')
+            ids=ids[0]
         counts.append(dict(request_id=job['request_id'],input_tokens=len(ids),fits=len(ids)+args.max_output_tokens+args.margin_tokens<=args.context_tokens))
     preflight=dict(total=len(counts),fits=sum(x['fits'] for x in counts),max_input_tokens=max((x['input_tokens'] for x in counts),default=0),context_tokens=args.context_tokens,output_tokens=args.max_output_tokens,margin=args.margin_tokens,requests=counts)
     save(args.out/'preflight.json',preflight)

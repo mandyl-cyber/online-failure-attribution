@@ -1,0 +1,35 @@
+{
+  "total": 5,
+  "fits": 5,
+  "max_input_tokens": 11019,
+  "context_tokens": 32768,
+  "output_tokens": 1200,
+  "margin": 128,
+  "requests": [
+    {
+      "request_id": "T01_s00001",
+      "input_tokens": 2541,
+      "fits": true
+    },
+    {
+      "request_id": "T01_s00002",
+      "input_tokens": 2628,
+      "fits": true
+    },
+    {
+      "request_id": "T01_s00003",
+      "input_tokens": 4006,
+      "fits": true
+    },
+    {
+      "request_id": "T01_s00004",
+      "input_tokens": 7457,
+      "fits": true
+    },
+    {
+      "request_id": "T01_s00005",
+      "input_tokens": 11019,
+      "fits": true
+    }
+  ]
+}

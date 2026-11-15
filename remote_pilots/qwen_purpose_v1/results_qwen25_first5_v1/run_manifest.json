@@ -1,0 +1,18 @@
+{
+  "identity": "fc7cd5f3db76399f8a071bf8e5d3895465d8c53bf764231f1ce4e7d5633ed8bf",
+  "config": {
+    "package_sha256": "d33ea6f1e1a2ec78a15e77c60b77948d5202d09f5b8cc262e47a950abceecbaa",
+    "prompt_sha256": "e77f50de724cf3580e80304ef39ec35a14033d6bc70c00603f47620c91acef79",
+    "model": "qwen-local",
+    "base_url": "http://127.0.0.1:30001/v1",
+    "tokenizer": "/home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+    "tokenizer_vocab_sha256": "54a4e00eec5a8c5f40d137afdde38da75f4c46ffa802b509cb5fb2157b5a5b0d",
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "chat_template_kwargs": {},
+    "context_tokens": 32768,
+    "max_output_tokens": 1200,
+    "margin_tokens": 128,
+    "temperature": 0
+  },
+  "note": "Machine candidate labels; not gold. Server model revision/quantization must be supplied in ENVIRONMENT.txt."
+}
