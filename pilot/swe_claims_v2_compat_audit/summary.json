@@ -1,0 +1,36 @@
+{
+  "jobs": 6,
+  "claims": 29,
+  "verdicts": {
+    "supported": 21,
+    "incomplete_citation": 2,
+    "wrong_citation": 2,
+    "condition_lost": 1,
+    "insufficient_evidence": 1,
+    "object_type_error": 1,
+    "scope_needs_qualification": 1
+  },
+  "schema_and_provenance_valid": 6,
+  "reviewer_type": "AI",
+  "human_accuracy_validation": false,
+  "input_and_source_mapping_verified": true,
+  "runner_verified": true,
+  "claims_at_cap_jobs": 3,
+  "seconds": {
+    "total": 28.230887620011345,
+    "median": 4.442900191497756,
+    "maximum": 6.982180905004498
+  },
+  "server_reported_usage": {
+    "prompt_tokens": 37509,
+    "completion_tokens": 1975,
+    "total_tokens": 39484
+  },
+  "decision": "Hold full run: revise citation discipline, conditional wording and fact prioritization first.",
+  "limitations": [
+    "Two selected development tasks; stages overlap and differ across arms.",
+    "No representative precision or recall estimate; no stage ranking or online alarm score.",
+    "Suggestions are review annotations, not corrected model output.",
+    "No future trajectory steps or final outcomes used for semantic decisions."
+  ]
+}

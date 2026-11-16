@@ -1,0 +1,165 @@
+{
+  "experiment": "swe-claims-prompt-v21",
+  "baseline_instruction_sha256": "0788d29bbff7d97a8a3b73a2c9b89436f0ac9bda3bb8f2209059bd87def58099",
+  "revised_instruction_sha256": "847de148b80d9d11882d23286dce68e92c0791da48fdcb0094515024a6e878cd",
+  "input_sha256": {
+    "development": "38567b0bbbb232347d70101313ce355e394d34af23639bacfbeddffb7f9b0fad",
+    "holdout": "ff63fd1f702bb11b488b3be73cb2eb04965534e4e76952b563b3dbe9ec829662"
+  },
+  "jobs": [
+    {
+      "job_id": "e572a322b543d6df7b5702dc0bec13ebd97c99cc155a4281e17538a248458e9a",
+      "run_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "stage": {
+        "end_step_id": 5,
+        "stage_id": 1,
+        "start_step_id": 1
+      },
+      "split": "development"
+    },
+    {
+      "job_id": "d5cd394a43ab52c51b0f971bf424187057384406c33863d1c22c4fdedbd6d48c",
+      "run_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "stage": {
+        "end_step_id": 3,
+        "stage_id": 1,
+        "start_step_id": 1
+      },
+      "split": "development"
+    },
+    {
+      "job_id": "12d9b2b4324cc948f4c938b30da8826ebf2861621e270248423830f138eb31aa",
+      "run_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "rule",
+      "stage": {
+        "end_step_id": 11,
+        "stage_id": 1,
+        "start_step_id": 1
+      },
+      "split": "development"
+    },
+    {
+      "job_id": "e695cebcc242d52fa687ca145f0c6f9e6d4c849d3949103b469ecf4a1664e216",
+      "run_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "gold",
+      "stage": {
+        "end_step_id": 5,
+        "stage_id": 1,
+        "start_step_id": 1
+      },
+      "split": "development"
+    },
+    {
+      "job_id": "a72b7173b8a5b2f9bf7baff08033e56e94e8f2e786446f24c7f8f4cf57db3747",
+      "run_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "structure",
+      "stage": {
+        "end_step_id": 27,
+        "stage_id": 2,
+        "start_step_id": 27
+      },
+      "split": "development"
+    },
+    {
+      "job_id": "b6c9a1a652074569ab202882be77f7f997a33eb77eecf910caa56fb40385883c",
+      "run_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "rule",
+      "stage": {
+        "end_step_id": 28,
+        "stage_id": 2,
+        "start_step_id": 27
+      },
+      "split": "development"
+    },
+    {
+      "job_id": "6f578c5d14bed3c9815ae8407b0414eb273ea6fe7e56ad7d308959a4f29e15a2",
+      "run_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "gold",
+      "stage": {
+        "end_step_id": 3,
+        "stage_id": 1,
+        "start_step_id": 1
+      },
+      "split": "holdout"
+    },
+    {
+      "job_id": "5a85ef1dea91c3099e5548aa9d7cf45fc4dc7160bba174eb04bcd8ce6de3216f",
+      "run_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "gold",
+      "stage": {
+        "end_step_id": 35,
+        "stage_id": 5,
+        "start_step_id": 33
+      },
+      "split": "holdout"
+    },
+    {
+      "job_id": "2478e7b1d8a9b574e65c2165d6623c37db5e037355d50e9e1e36d503423dabc4",
+      "run_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "stage": {
+        "end_step_id": 3,
+        "stage_id": 1,
+        "start_step_id": 1
+      },
+      "split": "holdout"
+    },
+    {
+      "job_id": "5183805b575f3db388c5077c74530edcd646115ad990422141989d009bedff7f",
+      "run_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "stage": {
+        "end_step_id": 35,
+        "stage_id": 6,
+        "start_step_id": 33
+      },
+      "split": "holdout"
+    },
+    {
+      "job_id": "6a6b4b79e8e26bf1fa287beaaca8471904c6f2311718dc9fad987337c4adb287",
+      "run_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "end_step_id": 2,
+        "stage_id": 1,
+        "start_step_id": 1
+      },
+      "split": "holdout"
+    },
+    {
+      "job_id": "c3c276d0ad84d288890a49b11d01a8578d2115da03fa05a89dea3ff30055296f",
+      "run_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "end_step_id": 35,
+        "stage_id": 9,
+        "start_step_id": 35
+      },
+      "split": "holdout"
+    }
+  ],
+  "calls": {
+    "development_revised": 6,
+    "holdout_baseline": 6,
+    "holdout_revised": 6,
+    "total": 18
+  },
+  "selection": "Same six development jobs. Remaining task sorted by ID; first and last available stage per arm.",
+  "unchanged": [
+    "schema",
+    "evidence chunks",
+    "input text",
+    "six-claim cap",
+    "2048 output tokens",
+    "temperature=0"
+  ],
+  "caveats": [
+    "Holdout means task-disjoint from prompt-development six only, not unseen across project history.",
+    "One additional task, overlapping stages across arms; no population accuracy or stage ranking.",
+    "Selection uses task/arm/stage metadata only, not model quality or task outcome.",
+    "Prompt length and total input token cost change; report this explicitly."
+  ],
+  "review_gate": "Review all outputs, including failures; no automatic full-48 run or automatic semantic approval."
+}
