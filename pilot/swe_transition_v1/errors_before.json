@@ -1,0 +1,2065 @@
+{
+  "groups": [
+    {
+      "transition": "PLAN -> READ",
+      "FP": 138,
+      "TP": 105,
+      "FN": 24,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86-28be7ce9",
+          "idx": 4,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-d58e69c82d7edd0583dd8e78d76b075c33c3151e-v173091e2e36d38c978002990795f66cfc0af30ad-51499bc6",
+          "idx": 4,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-aeabf3b18896ac1eb7ae9757e66ce886120f8309-vnan-11132852",
+          "idx": 23,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13417-b9cf6b23",
+          "idx": 3,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13615-ad7739f0",
+          "idx": 3,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11820-628d9793",
+          "idx": 3,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "PLAN -> VERIFY",
+      "TP": 52,
+      "FP": 88,
+      "FN": 9,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+          "idx": 43,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14369-0fb54358",
+          "idx": 26,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11433-a1e8e3a8",
+          "idx": 12,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-5631-b90dbe02",
+          "idx": 15,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-6461-050b4d36",
+          "idx": 6,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-16485-3e4d6956",
+          "idx": 23,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC_WRITE -> PLAN",
+      "FP": 63,
+      "TP": 37,
+      "FN": 27,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86-28be7ce9",
+          "idx": 54,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-9142be2f6cabbe6597c9254c5bb9186d17036d55-v0f01c69f1e2528b935359cfe578530722bca2c59-6f557e16",
+          "idx": 31,
+          "kind": "FP",
+          "nearest_gold": 3
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13670-b062ecad",
+          "idx": 35,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-26807-24b87c4a",
+          "idx": 40,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-7374-19778028",
+          "idx": 42,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-b2a289dcbb702003377221e25f62c8a3608f0e89-v173091e2e36d38c978002990795f66cfc0af30ad-733b07ca",
+          "idx": 37,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "READ -> SEARCH",
+      "FN": 44,
+      "FP": 31,
+      "TP": 4,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86-28be7ce9",
+          "idx": 9,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+          "idx": 20,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+          "idx": 24,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-aeabf3b18896ac1eb7ae9757e66ce886120f8309-vnan-11132852",
+          "idx": 14,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12039-99ff4f8b",
+          "idx": 17,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13417-b9cf6b23",
+          "idx": 12,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "PLAN -> EXEC",
+      "FN": 20,
+      "FP": 52,
+      "TP": 36,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+          "idx": 28,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11451-8cce118d",
+          "idx": 14,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13417-b9cf6b23",
+          "idx": 33,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9367-8dde1fee",
+          "idx": 19,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-20801-9aaa527b",
+          "idx": 24,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-5260527c4a71bfed99d803e687dd19619423b134-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-f32bf751",
+          "idx": 29,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> READ",
+      "TP": 27,
+      "FN": 14,
+      "FP": 41,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14369-0fb54358",
+          "idx": 31,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11206-3eaa47a7",
+          "idx": 15,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12304-cc2965e3",
+          "idx": 21,
+          "kind": "FP",
+          "nearest_gold": 3
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-13693-22a78bfd",
+          "idx": 25,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14995-e541781d",
+          "idx": 16,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11179-4a42f87b",
+          "idx": 28,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> PLAN",
+      "FP": 35,
+      "TP": 48,
+      "FN": 19,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+          "idx": 53,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11433-a1e8e3a8",
+          "idx": 35,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13670-b062ecad",
+          "idx": 29,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14140-193e0ceb",
+          "idx": 25,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-23126-d6300910",
+          "idx": 29,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-18141-f3954aea",
+          "idx": 21,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> READ",
+      "FN": 40,
+      "FP": 14,
+      "TP": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-709484969c8a4ffd74b839a673431a8c5caa6457-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-fa9c1fc1",
+          "idx": 13,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-aeabf3b18896ac1eb7ae9757e66ce886120f8309-vnan-11132852",
+          "idx": 7,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+          "idx": 6,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24627-6dc008f4",
+          "idx": 6,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-20801-9aaa527b",
+          "idx": 33,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-153857-2ba91a64",
+          "idx": 8,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "PLAN -> SEARCH",
+      "TP": 17,
+      "FN": 26,
+      "FP": 25,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11815-5d01671e",
+          "idx": 5,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13670-b062ecad",
+          "idx": 9,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-22719-3a0e9135",
+          "idx": 5,
+          "kind": "FP",
+          "nearest_gold": 10
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-13693-22a78bfd",
+          "idx": 6,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-28535-2ccf9291",
+          "idx": 6,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14539-ab9134cc",
+          "idx": 10,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "VERIFY -> READ",
+      "TP": 39,
+      "FP": 41,
+      "FN": 7,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+          "idx": 15,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11133-5e845215",
+          "idx": 24,
+          "kind": "FP",
+          "nearest_gold": 4
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-23126-d6300910",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-8127abbc298cabf04aaa89a478fc5e5e3432a6fc-v30a923fb5c164d6cd18280c02422f75e611e8fb2-b2c3dcef",
+          "idx": 25,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-42412-077fc45c",
+          "idx": 13,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14349-2d317299",
+          "idx": 16,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EDIT -> PLAN",
+      "FN": 11,
+      "TP": 51,
+      "FP": 28,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-77658704217d5f166404fc67997203c25381cb6e-v390e508d27db7a51eece36bb6d9698b63a5b638a-b30050fb",
+          "idx": 22,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-16454-7ceddd3b",
+          "idx": 26,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9602-8d033150",
+          "idx": 21,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-28535-2ccf9291",
+          "idx": 30,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-15741-d7b75d95",
+          "idx": 9,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11820-628d9793",
+          "idx": 18,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "READ -> READ",
+      "FN": 37,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86-28be7ce9",
+          "idx": 52,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-77658704217d5f166404fc67997203c25381cb6e-v390e508d27db7a51eece36bb6d9698b63a5b638a-b30050fb",
+          "idx": 31,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-d58e69c82d7edd0583dd8e78d76b075c33c3151e-v173091e2e36d38c978002990795f66cfc0af30ad-51499bc6",
+          "idx": 6,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-aeabf3b18896ac1eb7ae9757e66ce886120f8309-vnan-11132852",
+          "idx": 28,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12039-99ff4f8b",
+          "idx": 23,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24627-6dc008f4",
+          "idx": 9,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "PLAN -> EDIT",
+      "FP": 35,
+      "TP": 21,
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-9142be2f6cabbe6597c9254c5bb9186d17036d55-v0f01c69f1e2528b935359cfe578530722bca2c59-6f557e16",
+          "idx": 28,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-9142be2f6cabbe6597c9254c5bb9186d17036d55-v0f01c69f1e2528b935359cfe578530722bca2c59-6f557e16",
+          "idx": 32,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12039-99ff4f8b",
+          "idx": 25,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-42412-077fc45c",
+          "idx": 23,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "READ -> EDIT",
+      "TP": 113,
+      "FP": 27,
+      "FN": 6,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+          "idx": 13,
+          "kind": "FP",
+          "nearest_gold": 3
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9367-8dde1fee",
+          "idx": 17,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9602-8d033150",
+          "idx": 20,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-18871-9b44c674",
+          "idx": 27,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-24066-4e6e5ad3",
+          "idx": 25,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e",
+          "idx": 66,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "READ -> PLAN",
+      "FN": 24,
+      "TP": 25,
+      "FP": 9,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-9142be2f6cabbe6597c9254c5bb9186d17036d55-v0f01c69f1e2528b935359cfe578530722bca2c59-6f557e16",
+          "idx": 27,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+          "idx": 27,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11433-a1e8e3a8",
+          "idx": 11,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-5809-af0c5e4a",
+          "idx": 9,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-26807-24b87c4a",
+          "idx": 8,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-8127abbc298cabf04aaa89a478fc5e5e3432a6fc-v30a923fb5c164d6cd18280c02422f75e611e8fb2-b2c3dcef",
+          "idx": 19,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "VERIFY -> PLAN",
+      "FP": 30,
+      "FN": 3,
+      "TP": 55,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+          "idx": 44,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+          "idx": 32,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11790-6f214212",
+          "idx": 34,
+          "kind": "FP",
+          "nearest_gold": 4
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11848-227c856d",
+          "idx": 17,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-2576-370c7644",
+          "idx": 16,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "VERIFY -> SEARCH",
+      "FN": 15,
+      "FP": 14,
+      "TP": 9,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+          "idx": 13,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12039-99ff4f8b",
+          "idx": 33,
+          "kind": "FP",
+          "nearest_gold": 3
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13670-b062ecad",
+          "idx": 31,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24627-6dc008f4",
+          "idx": 40,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-5809-af0c5e4a",
+          "idx": 22,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-6461-050b4d36",
+          "idx": 7,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> PLAN",
+      "FN": 19,
+      "FP": 6,
+      "TP": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-aeabf3b18896ac1eb7ae9757e66ce886120f8309-vnan-11132852",
+          "idx": 22,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11206-3eaa47a7",
+          "idx": 27,
+          "kind": "FP",
+          "nearest_gold": 4
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13417-b9cf6b23",
+          "idx": 32,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-25232-3a0749ba",
+          "idx": 13,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-13865-a6eb1183",
+          "idx": 13,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-7462-016dd538",
+          "idx": 16,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> EDIT",
+      "TP": 26,
+      "FP": 23,
+      "FN": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+          "idx": 22,
+          "kind": "FP",
+          "nearest_gold": 4
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+          "idx": 24,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14369-0fb54358",
+          "idx": 16,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-473a15f7908f2bb6d670b0e908ab34a28d8cf7e2-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d-3f5c4067",
+          "idx": 57,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-14623-8f9f7df9",
+          "idx": 29,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> SEARCH",
+      "FN": 11,
+      "TP": 3,
+      "FP": 8,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-23126-d6300910",
+          "idx": 12,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-12930-5da56ae8",
+          "idx": 15,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-de4a1c1a2839b5b49c3d4ce21d39de48d24e2091-v2ef375ac784985212b1805e1d0431dc8f1b3c171-6735e9d7",
+          "idx": 27,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11179-4a42f87b",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-22865-993404bc",
+          "idx": 20,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-15017-9641c826",
+          "idx": 18,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "PLAN -> EXEC_WRITE",
+      "FP": 13,
+      "FN": 5,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-22719-3a0e9135",
+          "idx": 37,
+          "kind": "FP",
+          "nearest_gold": 3
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-18141-f3954aea",
+          "idx": 22,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-7374-19778028",
+          "idx": 40,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13343-70b942cf",
+          "idx": 34,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-18871-9b44c674",
+          "idx": 21,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-42412-077fc45c",
+          "idx": 32,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EDIT -> READ",
+      "FN": 1,
+      "FP": 16,
+      "TP": 5,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+          "idx": 43,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+          "idx": 39,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-8127abbc298cabf04aaa89a478fc5e5e3432a6fc-v30a923fb5c164d6cd18280c02422f75e611e8fb2-b2c3dcef",
+          "idx": 28,
+          "kind": "FP",
+          "nearest_gold": 3
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> EDIT",
+      "TP": 58,
+      "FP": 14,
+      "FN": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-21930-9cf36182",
+          "idx": 15,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-de4a1c1a2839b5b49c3d4ce21d39de48d24e2091-v2ef375ac784985212b1805e1d0431dc8f1b3c171-6735e9d7",
+          "idx": 15,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14999-fb59f194",
+          "idx": 22,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-5640093f1ca63fd6af231cc8a7fb7d40e1907b8c-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-b3954c1c",
+          "idx": 33,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-bf98f031f3f5af31a2d78dc2f0a58fe92ebae0bb-v1055803c3a812189a1133297f7f5468579283f86-c62b0ad0",
+          "idx": 50,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EDIT -> EXEC",
+      "TP": 8,
+      "FP": 11,
+      "FN": 5,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14369-0fb54358",
+          "idx": 23,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-25232-3a0749ba",
+          "idx": 22,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-21930-9cf36182",
+          "idx": 37,
+          "kind": "FP",
+          "nearest_gold": 8
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-de4a1c1a2839b5b49c3d4ce21d39de48d24e2091-v2ef375ac784985212b1805e1d0431dc8f1b3c171-6735e9d7",
+          "idx": 32,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14995-e541781d",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-14623-8f9f7df9",
+          "idx": 37,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "READ -> EXEC",
+      "FN": 15,
+      "TP": 1,
+      "FP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-7078-c48fab49",
+          "idx": 9,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14999-fb59f194",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-20590-d2e851e8",
+          "idx": 15,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-3716-b90a1926",
+          "idx": 12,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-42412-077fc45c",
+          "idx": 11,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-bedc9f7fadf93f83d8dee95feeecb9922b6f063f-v2ef375ac784985212b1805e1d0431dc8f1b3c171-974761f6",
+          "idx": 29,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC_WRITE -> READ",
+      "FP": 8,
+      "TP": 4,
+      "FN": 7,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-d58e69c82d7edd0583dd8e78d76b075c33c3151e-v173091e2e36d38c978002990795f66cfc0af30ad-51499bc6",
+          "idx": 46,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11206-3eaa47a7",
+          "idx": 23,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-16597-fdf109a2",
+          "idx": 31,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-17082-8d986335",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-15158-f2e4f9e6",
+          "idx": 41,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-5609-4096132f",
+          "idx": 26,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "VERIFY -> EDIT",
+      "FP": 15,
+      "TP": 12,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-aeabf3b18896ac1eb7ae9757e66ce886120f8309-vnan-11132852",
+          "idx": 53,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-12930-5da56ae8",
+          "idx": 23,
+          "kind": "FP",
+          "nearest_gold": 0
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-10614-34b85a5c",
+          "idx": 11,
+          "kind": "FP",
+          "nearest_gold": 0
+        }
+      ]
+    },
+    {
+      "transition": "VERIFY -> EXEC",
+      "FN": 6,
+      "TP": 10,
+      "FP": 9,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12039-99ff4f8b",
+          "idx": 30,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13820-836691f8",
+          "idx": 31,
+          "kind": "FP",
+          "nearest_gold": 5
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13820-836691f8",
+          "idx": 40,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-12907-f99e6267",
+          "idx": 20,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-8046-0bb849c5",
+          "idx": 32,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-15569-62054620",
+          "idx": 29,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "READ -> VERIFY",
+      "TP": 7,
+      "FP": 5,
+      "FN": 8,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+          "idx": 8,
+          "kind": "FP",
+          "nearest_gold": 4
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9602-8d033150",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-7374-19778028",
+          "idx": 20,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-28813-3ba6cc10",
+          "idx": 10,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+          "idx": 24,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-5dfde12c1c1c0b6e48f17e3405468593e39d9492-vnan-c55fbc3d",
+          "idx": 11,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> EXEC",
+      "FN": 9,
+      "FP": 1,
+      "TP": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+          "idx": 32,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14140-193e0ceb",
+          "idx": 12,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14539-ab9134cc",
+          "idx": 15,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-16485-3e4d6956",
+          "idx": 9,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24570-8e729dfb",
+          "idx": 15,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-6098-6fbefef7",
+          "idx": 31,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> EXEC_WRITE",
+      "FN": 6,
+      "TP": 4,
+      "FP": 4,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-709484969c8a4ffd74b839a673431a8c5caa6457-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-fa9c1fc1",
+          "idx": 33,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12304-cc2965e3",
+          "idx": 24,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-17318-8d1c8af1",
+          "idx": 25,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-16198-298e0a94",
+          "idx": 39,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-bedc9f7fadf93f83d8dee95feeecb9922b6f063f-v2ef375ac784985212b1805e1d0431dc8f1b3c171-974761f6",
+          "idx": 30,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-4009-6c1ad563",
+          "idx": 30,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> VERIFY",
+      "FP": 3,
+      "FN": 7,
+      "TP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-9142be2f6cabbe6597c9254c5bb9186d17036d55-v0f01c69f1e2528b935359cfe578530722bca2c59-6f557e16",
+          "idx": 9,
+          "kind": "FP",
+          "nearest_gold": 3
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+          "idx": 14,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-b2a289dcbb702003377221e25f62c8a3608f0e89-v173091e2e36d38c978002990795f66cfc0af30ad-733b07ca",
+          "idx": 23,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-15863-816738f2",
+          "idx": 13,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-60725705782832a2cb22e17c49697948a42a9d03-v298a7a812ceed28c4c18355a091f1b268fe56d86-ae669a0a",
+          "idx": 14,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-19121-ef420de9",
+          "idx": 15,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> VERIFY",
+      "FP": 9,
+      "TP": 8,
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14140-193e0ceb",
+          "idx": 22,
+          "kind": "FP",
+          "nearest_gold": 0
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-12907-f99e6267",
+          "idx": 12,
+          "kind": "FP",
+          "nearest_gold": 0
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-20590-d2e851e8",
+          "idx": 23,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pallets__flask-5014-6bf53d93",
+          "idx": 18,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> SEARCH",
+      "FN": 10,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13449-d4928e17",
+          "idx": 14,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-16198-298e0a94",
+          "idx": 8,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-109750-0071ea66",
+          "idx": 19,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-18257-2e939e36",
+          "idx": 30,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13028-da573811",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8638-a4ab3472",
+          "idx": 14,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EDIT -> VERIFY",
+      "FN": 3,
+      "TP": 11,
+      "FP": 6,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-709484969c8a4ffd74b839a673431a8c5caa6457-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-fa9c1fc1",
+          "idx": 28,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-22920-0188fcc0",
+          "idx": 11,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-8127abbc298cabf04aaa89a478fc5e5e3432a6fc-v30a923fb5c164d6cd18280c02422f75e611e8fb2-b2c3dcef",
+          "idx": 16,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-22865-993404bc",
+          "idx": 15,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EDIT -> SEARCH",
+      "FP": 2,
+      "FN": 7,
+      "TP": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-28813-3ba6cc10",
+          "idx": 24,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12419-2511c632",
+          "idx": 15,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-15022-484c1b35",
+          "idx": 9,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11999-e5bbeaf0",
+          "idx": 15,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-17630-fbbfeb9e",
+          "idx": 10,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-15380-e8b3a566",
+          "idx": 14,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "READ -> EXEC_WRITE",
+      "FP": 2,
+      "TP": 2,
+      "FN": 6,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-153857-2ba91a64",
+          "idx": 23,
+          "kind": "FP",
+          "nearest_gold": 0
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8120-08ef8931",
+          "idx": 23,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-135197-309ff193",
+          "idx": 34,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-19072-fca4d8ee",
+          "idx": 34,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7236-8ee7fd31",
+          "idx": 12,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-24238-2d178ce3",
+          "idx": 17,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EDIT -> EDIT",
+      "FN": 7,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+          "idx": 38,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-b2a289dcbb702003377221e25f62c8a3608f0e89-v173091e2e36d38c978002990795f66cfc0af30ad-733b07ca",
+          "idx": 28,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-19331-4460742e",
+          "idx": 50,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-5dfde12c1c1c0b6e48f17e3405468593e39d9492-vnan-c55fbc3d",
+          "idx": 56,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-5dfde12c1c1c0b6e48f17e3405468593e39d9492-vnan-c55fbc3d",
+          "idx": 61,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-bf98f031f3f5af31a2d78dc2f0a58fe92ebae0bb-v1055803c3a812189a1133297f7f5468579283f86-c62b0ad0",
+          "idx": 56,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC_WRITE -> SEARCH",
+      "FN": 4,
+      "FP": 3,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-14096-dbeb6acd",
+          "idx": 30,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24627-6dc008f4",
+          "idx": 44,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-15987-d0ca733a",
+          "idx": 34,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2-e6e185ca",
+          "idx": 23,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC_WRITE -> EXEC",
+      "TP": 3,
+      "FP": 2,
+      "FN": 5,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7205-282aadca",
+          "idx": 18,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-29311-edd5529b",
+          "idx": 36,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-17630-fbbfeb9e",
+          "idx": 20,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12193-417f2e5e",
+          "idx": 24,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-19121-ef420de9",
+          "idx": 24,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13852-1ded1568",
+          "idx": 16,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC_WRITE -> EDIT",
+      "FP": 6,
+      "TP": 4,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-77658704217d5f166404fc67997203c25381cb6e-v390e508d27db7a51eece36bb6d9698b63a5b638a-b30050fb",
+          "idx": 36,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-42412-077fc45c",
+          "idx": 21,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-29449-febb45eb",
+          "idx": 28,
+          "kind": "FP",
+          "nearest_gold": 2
+        }
+      ]
+    },
+    {
+      "transition": "PLAN -> THINK",
+      "FP": 6,
+      "TP": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11133-5e845215",
+          "idx": 4,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9367-8dde1fee",
+          "idx": 4,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-6461-050b4d36",
+          "idx": 4,
+          "kind": "FP",
+          "nearest_gold": 2
+        }
+      ]
+    },
+    {
+      "transition": "PLAN -> PLAN",
+      "FN": 4,
+      "FP": 2,
+      "TP": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-26807-24b87c4a",
+          "idx": 47,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-serverless__serverless-7374-19778028",
+          "idx": 45,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13109-f3ebc647",
+          "idx": 36,
+          "kind": "FP",
+          "nearest_gold": 1
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13109-f3ebc647",
+          "idx": 28,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19863-31ae5ddf",
+          "idx": 7,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "INSTALL -> READ",
+      "TP": 2,
+      "FN": 5,
+      "FP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-bedc9f7fadf93f83d8dee95feeecb9922b6f063f-v2ef375ac784985212b1805e1d0431dc8f1b3c171-974761f6",
+          "idx": 20,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-29311-edd5529b",
+          "idx": 30,
+          "kind": "FP",
+          "nearest_gold": 6
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7",
+          "idx": 25,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-949c503f2ef4b2c5d668af0492a5c0db1ab86140-v0f01c69f1e2528b935359cfe578530722bca2c59-9a3f4648",
+          "idx": 31,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-a7d2a4e03209cff1e97e59fd54bb2b05fdbdbec6-v0f01c69f1e2528b935359cfe578530722bca2c59-1c0382c3",
+          "idx": 32,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-5122-27a9c664",
+          "idx": 31,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "INSTALL -> SEARCH",
+      "FN": 5,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-e1e502986a3b003899a8347ac8a7ff7b08cbfc39-v08d8e8889ec945ab821fb156c04c7d2e2810debb-98f1fc71",
+          "idx": 22,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-12981-bb6ea81f",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-bec27fb4c0a40c5f8bbcf26a475704227d65ee73-v30a923fb5c164d6cd18280c02422f75e611e8fb2-9aee5e69",
+          "idx": 11,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_internetarchive__openlibrary-bb152d23c004f3d68986877143bb0f83531fe401-ve8c8d62a2b60610a3c4631f5f23ed866bada9818-75152ca2",
+          "idx": 13,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1b70260d5aa2f6c9782fd2b848e8d16566e50d85-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-e20126a5",
+          "idx": 8,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "INSTALL -> VERIFY",
+      "TP": 2,
+      "FN": 3,
+      "FP": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14349-2d317299",
+          "idx": 24,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-13647-61fd1639",
+          "idx": 18,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-15809-a80dd4e3",
+          "idx": 17,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> EXEC",
+      "FN": 4,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13449-d4928e17",
+          "idx": 29,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19484-74f5c884",
+          "idx": 30,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-b5e0293645570f3f404ad1dbbe5f006956ada0df-v0f01c69f1e2528b935359cfe578530722bca2c59-9cc4c3d7",
+          "idx": 26,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-34610-216c0048",
+          "idx": 5,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "VERIFY -> EXEC_WRITE",
+      "FN": 2,
+      "TP": 3,
+      "FP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-26113-3e60723a",
+          "idx": 26,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7432-e4da5e95",
+          "idx": 20,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-949c503f2ef4b2c5d668af0492a5c0db1ab86140-v0f01c69f1e2528b935359cfe578530722bca2c59-9a3f4648",
+          "idx": 25,
+          "kind": "FP",
+          "nearest_gold": 4
+        }
+      ]
+    },
+    {
+      "transition": "EDIT -> EXEC_WRITE",
+      "FN": 3,
+      "TP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_qutebrowser__qutebrowser-473a15f7908f2bb6d670b0e908ab34a28d8cf7e2-v363c8a7e5ccdf6968fc7ab84a2053ac78036691d-3f5c4067",
+          "idx": 34,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-12236-867e02cd",
+          "idx": 58,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-20136-9ef8b462",
+          "idx": 44,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "VERIFY -> VERIFY",
+      "FN": 3,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-29449-febb45eb",
+          "idx": 20,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11555-a1f1a268",
+          "idx": 21,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-15599-e177c7b0",
+          "idx": 16,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> INSTALL",
+      "FN": 2,
+      "FP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-22714-c0148acc",
+          "idx": 21,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-23223-bf8abbe6",
+          "idx": 31,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19973-1562718f",
+          "idx": 24,
+          "kind": "FP",
+          "nearest_gold": 3
+        }
+      ]
+    },
+    {
+      "transition": "EDIT -> THINK",
+      "FN": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-24627-6dc008f4",
+          "idx": 36,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13195-cbb7a0ba",
+          "idx": 33,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "OTHER -> SEARCH",
+      "FP": 1,
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-26807-24b87c4a",
+          "idx": 24,
+          "kind": "FP",
+          "nearest_gold": 11
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-21768-3d7857a2",
+          "idx": 23,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "OTHER -> VERIFY",
+      "TP": 2,
+      "FP": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-10081-e80cbf24",
+          "idx": 13,
+          "kind": "FP",
+          "nearest_gold": 2
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-18683-5753f295",
+          "idx": 15,
+          "kind": "FP",
+          "nearest_gold": 4
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> EXEC_WRITE",
+      "FN": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11820-628d9793",
+          "idx": 34,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9281-ed84e737",
+          "idx": 34,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC -> THINK",
+      "FN": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-12276-800efa61",
+          "idx": 35,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14765-924f3ce4",
+          "idx": 29,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "VERIFY -> THINK",
+      "FN": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-6599-8f177c3f",
+          "idx": 27,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-6098-6fbefef7",
+          "idx": 55,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "THINK -> READ",
+      "FN": 2,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-15795-743fd3d3",
+          "idx": 36,
+          "kind": "FN"
+        },
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-30556-fb7d24c5",
+          "idx": 3,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "INSTALL -> EDIT",
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-6cc97447aac5816745278f3735af128afb255c81-v0f01c69f1e2528b935359cfe578530722bca2c59-83adb675",
+          "idx": 59,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC_WRITE -> VERIFY",
+      "TP": 1,
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-13925-2f10aef5",
+          "idx": 34,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> THINK",
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-9602-8d033150",
+          "idx": 28,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "OTHER -> EXEC",
+      "FP": 1,
+      "TP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-153857-2ba91a64",
+          "idx": 56,
+          "kind": "FP",
+          "nearest_gold": 6
+        }
+      ]
+    },
+    {
+      "transition": "OTHER -> READ",
+      "FP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-26807-24b87c4a",
+          "idx": 56,
+          "kind": "FP",
+          "nearest_gold": 4
+        }
+      ]
+    },
+    {
+      "transition": "READ -> INSTALL",
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-5260527c4a71bfed99d803e687dd19619423b134-vba6da65a0f3baefda7a058ebbd0a8dcafb8512f5-f32bf751",
+          "idx": 19,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "PLAN -> INSTALL",
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-14311-5d70c3a7",
+          "idx": 17,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC_WRITE -> EXEC_WRITE",
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-18871-9b44c674",
+          "idx": 37,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "OTHER -> EXEC_WRITE",
+      "TP": 1,
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-4695-759c8995",
+          "idx": 23,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "EXEC_WRITE -> INSTALL",
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19838-9f7e7a04",
+          "idx": 21,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "SEARCH -> INSTALL",
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_element-hq__element-web-fe14847bb9bb07cab1b9c6c54335ff22ca5e516a-vnan-450efae7",
+          "idx": 22,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "INSTALL -> EXEC_WRITE",
+      "FN": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2-e6e185ca",
+          "idx": 19,
+          "kind": "FN"
+        }
+      ]
+    },
+    {
+      "transition": "OTHER -> PLAN",
+      "FP": 1,
+      "examples": [
+        {
+          "traj_id": "openhands-OpenAI__GPT-5-django__django-11603-c7fd0824",
+          "idx": 45,
+          "kind": "FP",
+          "nearest_gold": 3
+        }
+      ]
+    },
+    {
+      "transition": "THINK -> EDIT",
+      "TP": 3,
+      "examples": []
+    },
+    {
+      "transition": "OTHER -> EDIT",
+      "TP": 1,
+      "examples": []
+    },
+    {
+      "transition": "EDIT -> OTHER",
+      "TP": 1,
+      "examples": []
+    },
+    {
+      "transition": "INSTALL -> PLAN",
+      "TP": 1,
+      "examples": []
+    }
+  ],
+  "note": "Maximum one-to-one tol1 D0 assignment; FP/FN categories depend on matching. These are historical development errors, not blind evidence."
+}
