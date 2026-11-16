@@ -117,7 +117,8 @@ def main():
                      usage=dict(prompt_tokens=count,completion_tokens=len(completion),total_tokens=count+len(completion))))
             except (ValueError,KeyError,TypeError,AttributeError) as e:
                 self.send_json(400,dict(error=dict(message=str(e),type='request_or_generation_validation_error')))
-    print(f'Serving tool probe at http://127.0.0.1:{a.port}/v1 (non-streaming only)',flush=True)
+    print(f'Serving tool probe at http://127.0.0.1:{a.port}/v1 '
+          f'(non-streaming only; effective context limit={limit}, including output)',flush=True)
     HTTPServer(('127.0.0.1',a.port),Handler).serve_forever()
 
 

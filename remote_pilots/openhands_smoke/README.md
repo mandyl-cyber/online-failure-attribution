@@ -2,6 +2,20 @@
 
 前置：Linux 上 Docker 可用、两个固定摘要镜像已下载、Qwen 工具服务监听 127.0.0.1:30001，并通过容器内 LiteLLM probe。
 
+完整 CodeAct 请求实测输入已达 16,306 tokens，原服务 16,384 总预算无法再容纳 1,024 输出。启动 Qwen 服务时必须显式使用 `--context-limit 32768`，与本控制器配置对齐；修改控制器不会自动修改已运行的服务。服务启动会打印实际有效上限（仍取模型配置上限与参数的较小值）。保持超限拒绝，不静默截断；后续历史继续增长仍可能超限，此次只验证短任务。
+
+在原 Qwen 服务终端 Ctrl+C 后重启（不要另起第二个模型实例）：
+
+```bash
+conda activate agentforesight
+cd ~/online-failure-attribution
+python remote_pilots/qwen_tool_server/server.py \
+  --model-path /home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 \
+  --model-name qwen-local --port 30001 --context-limit 32768
+```
+
+先同步代码，再重启服务；等待启动成功后在另一个终端运行以下试跑命令。
+
 ```bash
 cd ~/online-failure-attribution
 git pull --ff-only

@@ -28,7 +28,7 @@ async def main():
     config.set_llm_config(LLMConfig(
         model='openai/qwen-local', api_key='local-probe',
         base_url='http://127.0.0.1:30001/v1', native_tool_calling=True,
-        max_input_tokens=16384, max_output_tokens=1024, temperature=0,
+        max_input_tokens=32768, max_output_tokens=1024, temperature=0,
         num_retries=1, timeout=180, disable_vision=True,
         disable_stop_word=True, caching_prompt=False,
         log_completions=True, log_completions_folder='/state/completions',
