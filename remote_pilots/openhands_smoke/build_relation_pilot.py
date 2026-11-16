@@ -9,7 +9,8 @@ def main():
     packets=json.loads((source/'prefix_packets.json').read_text(encoding='utf-8'))
     keys={r['case_id']:r for r in json.loads((source/'answer_key.json').read_text(encoding='utf-8'))}
     cached={r['traj_id']:r['rows'] for r in map(json.loads,Path('eval/boundary_supervised/data_fixed/features.jsonl').read_text(encoding='utf-8').splitlines())}
-    out=Path('pilot/swe_relation_input_v1');out.mkdir(exist_ok=True)
+    # Preserve the frozen v1 evidence artifact when the builder changes.
+    out=Path('pilot/swe_relation_input_v2');out.mkdir(exist_ok=True)
     paired=[]
     for case in packets:
         builder=RelationEvidence(case['initial_user_message'])

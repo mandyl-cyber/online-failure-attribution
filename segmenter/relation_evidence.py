@@ -3,7 +3,7 @@ from collections import deque
 from copy import deepcopy
 import re
 
-VERSION = 'prefix-relations-v1'
+VERSION = 'prefix-relations-v2'
 
 
 def clipped(text, limit):
@@ -36,6 +36,7 @@ class RelationEvidence:
         self.task = task_text(task)
         self.entities = list(dict.fromkeys(re.findall(r'[A-Za-z_][\w.]*(?:\([^\n)]{0,60}\))?',self.task)))[:256]
         self.errors = deque(maxlen=8)
+        self.history = deque(maxlen=8)
         self.last_edit = None
         self.plan = None
         self.last_idx = None
@@ -95,14 +96,29 @@ class RelationEvidence:
                        before.get(t['id']) not in ('done','completed') and
                        re.search(r'test|verif',t['title'],re.I)]
         tension=bool(completed and self.errors)
+        self.history = deque([h for h in self.history if idx-h['step_id']<=32], maxlen=8)
+        for h in self.history:
+            if any(path_related(p,q) for p in paths for q in h['paths']):
+                links.append(dict(kind='shared_lexical_object', from_step=h['step_id'],
+                                  to_step=idx, certainty='not_same_goal_proof'))
+        outcome = ('zero_tests' if zero else 'execution_failed') if failed else (
+            'exit_zero_not_goal_success' if code == 0 else 'unknown')
+        # History includes successful reads/commands, failures and declarations alike.
+        # It excludes the current step, which is already represented separately.
+        history = deepcopy(list(self.history))
+        self.history.append(dict(step_id=idx,tool_class=tool,paths=paths,
+            action=clipped(action,1200),observation=clipped(obs,1600),
+            exit_code=code,outcome=outcome,
+            public_plan=deepcopy(self.plan) if self.plan and self.plan['step_id']==idx else None))
         evidence=dict(version=VERSION, observed_through_step=idx,
             task_issue_excerpt=clipped(self.task,2000),
             relevant_task_entities=[x for x in self.entities if len(x)>=4 and x in action][:24],
             current=dict(step_id=idx,tool_class=tool,action=clipped(action,2400),observation=clipped(obs,3200),exit_code=code),
             recent_failure_candidates=[{k:v for k,v in e.items() if k!='signature'} for e in self.errors],
+            recent_action_history=history,
             recent_edit=self.last_edit, public_plan=self.plan, relation_candidates=links,
             declaration_evidence_tension_candidate=dict(present=tension,completed_items=completed,
-                reason='recent failure remains in bounded memory; relevance and resolution may be unknown'),
+                reason='co-occurrence only, not contradiction; failure may be the intended reproduction outcome'),
             purpose_relation='undetermined', boundary_decision=None,
             limitations=['Lexical evidence only; no goal equivalence inferred.',
                          'Recent failures may have been resolved by a different command.',

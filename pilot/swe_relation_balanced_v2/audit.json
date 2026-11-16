@@ -1,0 +1,144 @@
+{
+  "cases": [
+    {
+      "case_id": "relation_01",
+      "bucket": "FN_far",
+      "suggestion": "undetermined",
+      "history_count": 8,
+      "exit_zero_history": 1,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_02",
+      "bucket": "TN_far",
+      "suggestion": "continue_plausible",
+      "history_count": 8,
+      "exit_zero_history": 7,
+      "relation_count": 6
+    },
+    {
+      "case_id": "relation_03",
+      "bucket": "TN_far",
+      "suggestion": "undetermined",
+      "history_count": 8,
+      "exit_zero_history": 8,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_04",
+      "bucket": "FN_far",
+      "suggestion": "continue_plausible",
+      "history_count": 8,
+      "exit_zero_history": 2,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_05",
+      "bucket": "TP_matched",
+      "suggestion": "switch_plausible",
+      "history_count": 8,
+      "exit_zero_history": 4,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_06",
+      "bucket": "TP_matched",
+      "suggestion": "undetermined",
+      "history_count": 2,
+      "exit_zero_history": 0,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_07",
+      "bucket": "TP_matched",
+      "suggestion": "switch_plausible",
+      "history_count": 8,
+      "exit_zero_history": 2,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_08",
+      "bucket": "FN_far",
+      "suggestion": "continue_plausible",
+      "history_count": 8,
+      "exit_zero_history": 4,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_09",
+      "bucket": "FP_far",
+      "suggestion": "switch_plausible",
+      "history_count": 8,
+      "exit_zero_history": 3,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_10",
+      "bucket": "TP_matched",
+      "suggestion": "undetermined",
+      "history_count": 8,
+      "exit_zero_history": 5,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_11",
+      "bucket": "FP_far",
+      "suggestion": "continue_plausible",
+      "history_count": 8,
+      "exit_zero_history": 5,
+      "relation_count": 1
+    },
+    {
+      "case_id": "relation_12",
+      "bucket": "TN_far",
+      "suggestion": "continue_plausible",
+      "history_count": 8,
+      "exit_zero_history": 7,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_13",
+      "bucket": "FP_far",
+      "suggestion": "continue_plausible",
+      "history_count": 8,
+      "exit_zero_history": 3,
+      "relation_count": 1
+    },
+    {
+      "case_id": "relation_14",
+      "bucket": "FN_far",
+      "suggestion": "undetermined",
+      "history_count": 8,
+      "exit_zero_history": 3,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_15",
+      "bucket": "TN_far",
+      "suggestion": "undetermined",
+      "history_count": 3,
+      "exit_zero_history": 1,
+      "relation_count": 0
+    },
+    {
+      "case_id": "relation_16",
+      "bucket": "FP_far",
+      "suggestion": "continue_plausible",
+      "history_count": 8,
+      "exit_zero_history": 6,
+      "relation_count": 0
+    }
+  ],
+  "counts": {
+    "undetermined": 6,
+    "continue_plausible": 7,
+    "switch_plausible": 3
+  },
+  "prior_pilot_missing_history_restored": {
+    "case_02": 15,
+    "case_06": 18
+  },
+  "checks_passed": true,
+  "accuracy_estimate": null,
+  "caveat": "Selected diagnostic sample; plausible AI judgments are not binary labels or performance measurements."
+}

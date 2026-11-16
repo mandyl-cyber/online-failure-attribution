@@ -1,0 +1,10 @@
+{
+  "pool_sizes": {
+    "TP_matched": 837,
+    "TN_far": 4922,
+    "FP_far": 554,
+    "FN_far": 417
+  },
+  "packet_sha256": "643c9d45b77e5ed022441874ce8e37cdebe930940e87094842b3feedca0188d8",
+  "selected": 16
+}

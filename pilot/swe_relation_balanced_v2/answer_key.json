@@ -1,0 +1,256 @@
+[
+  {
+    "case_id": "relation_01",
+    "bucket": "FN_far",
+    "traj_id": "openhands-OpenAI__GPT-5-psf__requests-6028-1508a463",
+    "target_step": 26,
+    "group": "baaae7642d4aeac2ad8443546e8f4d3cf44065a909712b310a6e2acd312c5e28",
+    "gold_boundaries": [
+      6,
+      17,
+      21,
+      26,
+      34
+    ],
+    "source_sha256": "4e36f71a115147f63c3b8b1cce9f0910b7c5d28668aa251ef326f94a130415fc",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_02",
+    "bucket": "TN_far",
+    "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+    "target_step": 15,
+    "group": "38f2b779f0e2834b1247251544f958257b6e9ae5ec0388aa6b911d18dd9a8cf2",
+    "gold_boundaries": [
+      4,
+      13,
+      24,
+      33
+    ],
+    "source_sha256": "0922d93bea12005174d21ea236bc3b00a7c208cf9ce3bba994fa01914d99d5a7",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_03",
+    "bucket": "TN_far",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-14404-25e14391",
+    "target_step": 14,
+    "group": "79ceb327602eb410e633e2bdd6a9c9460f0fdaab702da7f77cd98f63db19be39",
+    "gold_boundaries": [
+      6,
+      17,
+      23
+    ],
+    "source_sha256": "ab93bc708e361549ec0fed3ae23a1aec2c22308f184a48bd0d5f27cb6e062272",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_04",
+    "bucket": "FN_far",
+    "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-110094-a10dde1e",
+    "target_step": 42,
+    "group": "82f39915ce4ef7f19fe282083b71666d4dab516045ed38b4b36da4d0b85aad6a",
+    "gold_boundaries": [
+      6,
+      12,
+      18,
+      27,
+      34,
+      42
+    ],
+    "source_sha256": "26b9a4bf37da2885d128bca1e4ad5dcf8134343609b98473ce45ef59afdac5eb",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_05",
+    "bucket": "TP_matched",
+    "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+    "target_step": 27,
+    "group": "0748a5228590ebe3876d1d2eb4b8d7396ffd4b054431c5ffdb5d935387d51eb7",
+    "gold_boundaries": [
+      6,
+      22,
+      27
+    ],
+    "source_sha256": "1ada1524baa8dd4b31388d96a65437767dc8239f916d3c6cda5be05a97ce1479",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_06",
+    "bucket": "TP_matched",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-15467-da5dc0ae",
+    "target_step": 3,
+    "group": "c2d79c8271777dae5cbf2dc3023c270cec048fe4c1e54c7c48ba3992217865df",
+    "gold_boundaries": [
+      3,
+      18,
+      23,
+      26
+    ],
+    "source_sha256": "14905317b2309a16f2d23a532480470e85f74daf03bcc25b16315a9976cda08d",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_07",
+    "bucket": "TP_matched",
+    "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-19331-4460742e",
+    "target_step": 42,
+    "group": "06e0e36d52536c957738f6f9d7bd93f9624ff1cd3b7f0f8da3ed2212b08a90fc",
+    "gold_boundaries": [
+      8,
+      15,
+      25,
+      30,
+      42,
+      50,
+      61
+    ],
+    "source_sha256": "52a0f266c70b84fd6b066ba22ad738ad5e4f467a0c57ef82cf11c134e85f1909",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_08",
+    "bucket": "FN_far",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-11749-24e171f6",
+    "target_step": 29,
+    "group": "eeb90b6a7b3c47cc589abf2fc069f3d2dc72f69b1d7e6e2c2dbf50c3620bc7e1",
+    "gold_boundaries": [
+      6,
+      13,
+      21,
+      23,
+      26,
+      29
+    ],
+    "source_sha256": "039e145a53c67073c703d8c50467a1c1531bb2c516325c151e6b41c192d32314",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_09",
+    "bucket": "FP_far",
+    "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-3716-b90a1926",
+    "target_step": 42,
+    "group": "28ea2de718731ae0ab4e8161616911e64e7cdf79e5de0d1d6cbdb97d74fa7062",
+    "gold_boundaries": [
+      6,
+      12,
+      14,
+      16,
+      36,
+      46
+    ],
+    "source_sha256": "454de8837dd49499658b0fd643b210e49a5aefb4073253a86a4f401fafd43c44",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_10",
+    "bucket": "TP_matched",
+    "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+    "target_step": 22,
+    "group": "01c0c5b5efc0eb50747e66ca19da44a5370b3ca74e01b38eb56dde06944ca4dc",
+    "gold_boundaries": [
+      6,
+      12,
+      15,
+      19,
+      23,
+      26
+    ],
+    "source_sha256": "190bd7edc8dbae7dd9eb845e64fd207948d39817f0c3c2a20eef0e62817033ff",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_11",
+    "bucket": "FP_far",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-11099-c6998918",
+    "target_step": 33,
+    "group": "6c5e8c8ef185d11288cb772cc2532cda99ada40678697a400d52f3178a24b09a",
+    "gold_boundaries": [
+      6,
+      14,
+      17,
+      20,
+      22,
+      29
+    ],
+    "source_sha256": "5349e502e68c77e76faffda92019bce146433348cc9a3290f53cfd4948f49aed",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_12",
+    "bucket": "TN_far",
+    "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-3723-0d4bb0b6",
+    "target_step": 15,
+    "group": "65deae1dadd6869ae15af8276157b1b1fb8f1c133d1fce905f62e9fde24c4eda",
+    "gold_boundaries": [
+      9,
+      29,
+      34
+    ],
+    "source_sha256": "9e29180c9ba6ef9785671be816a4e50b5b845eec9b1c3dbd4a8a3c6ee4dbd647",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_13",
+    "bucket": "FP_far",
+    "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7205-282aadca",
+    "target_step": 18,
+    "group": "ac538f4a36be5dbfa3ff5223eb9c56662485e980af5dc0546d979b1c65f93faf",
+    "gold_boundaries": [
+      4,
+      12,
+      16,
+      27,
+      31,
+      35
+    ],
+    "source_sha256": "32da340bdc2445709df67550d3930c623439c02273f1ab2f858471e42b62df19",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_14",
+    "bucket": "FN_far",
+    "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-11310-952013b4",
+    "target_step": 37,
+    "group": "db4807e5e63a4972731f48f59239d4c178218e1f99acab8700f491e16390c27c",
+    "gold_boundaries": [
+      4,
+      17,
+      26,
+      30,
+      34,
+      37,
+      41
+    ],
+    "source_sha256": "7e525a5a469742bb9221624f215759d47b087ef20f258946752c3253fe6cee6f",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_15",
+    "bucket": "TN_far",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-11333-10687a03",
+    "target_step": 4,
+    "group": "b65108c143fcc0c8ac22cbd684f507d580501694afb3b805fd9e4f2c3de40516",
+    "gold_boundaries": [
+      9,
+      20,
+      29
+    ],
+    "source_sha256": "f21ed67b0db07056e14099254208e5e936598ea6ed4d6a3de78949d74fcddc42",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "relation_16",
+    "bucket": "FP_far",
+    "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-23534-93d4ba22",
+    "target_step": 21,
+    "group": "dd8e4fccab518ab241c376fa351a962343a4832f28af0af18b904b575ffad34f",
+    "gold_boundaries": [
+      8,
+      11,
+      16
+    ],
+    "source_sha256": "920077ac10e35b61786ae25487a2eb657c5f6a0b53bae04cf07fdf12adcd4bee",
+    "alignment_verified": true
+  }
+]

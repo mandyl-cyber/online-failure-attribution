@@ -52,5 +52,20 @@ class RelationTests(unittest.TestCase):
         s['tool_class']='READ'
         self.assertFalse(b.feed(s)['recent_failure_candidates'])
 
+    def test_successful_history_retained_without_goal_claim(self):
+        b=RelationEvidence('x')
+        b.feed(step(1,'pytest test_x.py','2 passed',exit_code=0))
+        out=b.feed(step(2,'cat test_x.py','source'))
+        self.assertEqual(out['recent_action_history'][0]['outcome'],'exit_zero_not_goal_success')
+        self.assertEqual(out['relation_candidates'][0]['from_step'],1)
+        self.assertEqual(out['purpose_relation'],'undetermined')
+
+    def test_history_is_bounded_and_never_contains_current_or_future(self):
+        b=RelationEvidence('x')
+        for i in range(1,20):
+            out=b.feed(step(i,'echo ok','ok',exit_code=0))
+        self.assertEqual([h['step_id'] for h in out['recent_action_history']],list(range(11,19)))
+        self.assertEqual(b.feed(step(100,'echo ok'))['recent_action_history'],[])
+
 
 if __name__=='__main__':unittest.main()

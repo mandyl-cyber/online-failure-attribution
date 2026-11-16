@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "per_bucket": 4,
+  "seed": "relation-balanced-v2",
+  "buckets": [
+    "TP_matched",
+    "TN_far",
+    "FP_far",
+    "FN_far"
+  ],
+  "matching": "Existing task-group OOF SWE predictions; tolerance 1, delay 0.",
+  "sampling": "SHA256 order; distinct groups globally; exclude six v1 case groups. No manual substitutions.",
+  "definitions": {
+    "TP_matched": "matched prediction target; gold can be one step later",
+    "TN_far": "noninitial step; no prediction here and no gold within +/-1",
+    "FP_far": "unmatched prediction with no gold within +/-1",
+    "FN_far": "unmatched gold with no prediction boundary within +/-1"
+  },
+  "purpose": "Diagnostic enriched sample, not representative accuracy or held-out test.",
+  "review": "AI review of bounded evidence; not human labels. No training authorization from labels."
+}
