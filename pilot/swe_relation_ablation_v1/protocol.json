@@ -1,0 +1,38 @@
+{
+  "arms": {
+    "baseline4": 4,
+    "history9": 9,
+    "history9_relations": 9
+  },
+  "thresholds": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8
+  ],
+  "C": 1,
+  "text": false,
+  "folds": "Existing five task-group folds: test=f, dev=(f+1)%5, remaining train; SWE only.",
+  "features": "history9 adds lag4..8 from prior cached lag0; relations add ten numeric features on same eight prior steps plus current. No plan/task text or AI labels.",
+  "matching": "tol1 D0, after current observation; threshold maximizes dev F1, ties choose larger threshold.",
+  "gate": "F1 and precision improve; task-group paired F1 CI lower >0. Historical development data only; no deployment.",
+  "hashes": {
+    "eval\\boundary_supervised\\data_fixed\\records.json": "b9cf9924e747576c527e4351f1db34c52420526c5379fde0b8900eaa4517a4af",
+    "eval\\boundary_supervised\\data_fixed\\features.jsonl": "db9f7b601adf8f48a533c72a3583d7ede9e9f0b5ce43bec935d2426792167d0d",
+    "eval\\boundary_supervised\\data_fixed\\labels.json": "d219dee1cf8855a806748ecfb44332301d830ff59190bd9770870b7b04d55907",
+    "F:\\Yang\\online_failure_attributor\\remote_pilots\\openhands_smoke\\experiment_relations.py": "21f37150cbc22fecc5d8a84a7a63268d51b5896017641594e34616b82d32ac62",
+    "segmenter\\relation_features.py": "3e2948ea18555de132e8798b970322a2ff638a1ab2b18c76ebbfa3ae23574005",
+    "segmenter\\relation_evidence.py": "1636651b739bb3faf45ee0d94b5e4bd16123fb076304a700c0f3c982f5c9a891"
+  }
+}
