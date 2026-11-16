@@ -1,0 +1,97 @@
+[
+  {
+    "case_id": "case_01",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-15732-4b352587",
+    "kind": "FP_outside_tolerance",
+    "target_step": 37,
+    "gold_boundaries": [
+      6,
+      16,
+      28,
+      30,
+      44
+    ],
+    "source": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15732\\tensorblock__gpt-5-1768843860.8558133.json",
+    "source_sha256": "8b1b3ada874b48f41f7637b86f441b50ee140109b610dfc893555d30c017ead6",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "case_02",
+    "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-10614-34b85a5c",
+    "kind": "FP_outside_tolerance",
+    "target_step": 16,
+    "gold_boundaries": [
+      4,
+      9,
+      11,
+      20
+    ],
+    "source": "codetrace_bench\\swe_raw\\openhands__verified\\sphinx-doc__sphinx-10614\\tensorblock__gpt-5-1768911057.7820194.json",
+    "source_sha256": "b0ccea3b736f4c695ec995e62dc3e137dbe2eaac63a00999722d75a15b793e36",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "case_03",
+    "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-27463-9129234e",
+    "kind": "FP_outside_tolerance",
+    "target_step": 81,
+    "gold_boundaries": [
+      6,
+      7,
+      22,
+      35,
+      47,
+      66
+    ],
+    "source": "codetrace_bench\\swe_raw\\openhands__poly\\huggingface__transformers-27463\\gpt-5-1769084714.196264.json",
+    "source_sha256": "c18cb9d6cb6cae283729dccc132a251b1b80eeb50f7d891a66c0c6ca569b7d58",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "case_04",
+    "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-12973-35ea9547",
+    "kind": "FN_no_nearby_prediction",
+    "target_step": 21,
+    "gold_boundaries": [
+      11,
+      21,
+      23
+    ],
+    "source": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-12973\\tensorblock__gpt-5-1768837193.8906116.json",
+    "source_sha256": "7263319ee95f8ecc9951e1450af87f1eed5671e5c2a66b912aedfc104bb2c82f",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "case_05",
+    "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-26323-2c2c571b",
+    "kind": "FN_no_nearby_prediction",
+    "target_step": 20,
+    "gold_boundaries": [
+      6,
+      15,
+      17,
+      20
+    ],
+    "source": "codetrace_bench\\swe_raw\\openhands__verified\\scikit-learn__scikit-learn-26323\\tensorblock__gpt-5-1768908782.3294404.json",
+    "source_sha256": "4052ef790ccb23ee77b6a14f40137488494acc83c67ac1706dbae3770edec363",
+    "alignment_verified": true
+  },
+  {
+    "case_id": "case_06",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-15569-62054620",
+    "kind": "FN_no_nearby_prediction",
+    "target_step": 19,
+    "gold_boundaries": [
+      4,
+      19,
+      21,
+      25,
+      28,
+      29,
+      39
+    ],
+    "source": "codetrace_bench\\swe_raw\\openhands__verified\\django__django-15569\\tensorblock__gpt-5-1768885953.594075.json",
+    "source_sha256": "d0e93b578dc14256b19a3b689c90d1189806c75bf667a95dea1a77bd202c8084",
+    "alignment_verified": true
+  }
+]
