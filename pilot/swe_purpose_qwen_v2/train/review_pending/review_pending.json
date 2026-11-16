@@ -1,7 +1,7 @@
 {
   "reviewer_kind": "ai",
-  "reviewer_id": null,
-  "note": "Blind packets omit the first candidate. Review independently before opening review_pending.json. No entry is approved; agreement and structural validity are not semantic accuracy.",
+  "reviewer_id": "codex-blind-v2-sample",
+  "note": "Blind packets omit the first candidate. Review independently before opening review_pending.json. No entry is approved; agreement and structural validity are not semantic accuracy. Exactly 130 sampled TRAIN entries have been reviewed by Codex AI blind to first labels; remaining entries are pending.",
   "first_run_identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
   "labels": {
     "TRAIN_001_s00001": {
@@ -26,9 +26,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Inspects repository contents to establish current state."
     },
     "TRAIN_001_s00003": {
       "input_sha256": "79db236013f1a0d974466b5d06d2ecfee3258261cada6d706abc71543971aed6",
@@ -65,9 +65,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates TableDataDiff class for issue investigation."
     },
     "TRAIN_001_s00006": {
       "input_sha256": "d851ecefa03e01542593bacef65a5d6e97c50d9b0393f1826f1d96c35d97ab1f",
@@ -208,9 +208,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Changes FITSDiff VLA handling."
     },
     "TRAIN_001_s00017": {
       "input_sha256": "343a464497506c6878dff15554fa4f1f8962f72353d8fd0dcef9a05217fcd443",
@@ -221,9 +221,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_001_s00018": {
       "input_sha256": "0bdbda137bff7afaedec4f586019b9c14470b2277c19aed8f7039259a9b4fa59",
@@ -585,9 +585,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits Django management option parsing."
     },
     "TRAIN_002_s00022": {
       "input_sha256": "6ef68cca93583f40842db3eef11ccdf7daba060321e36efc2acbd9319c9f4d1f",
@@ -715,9 +715,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_003_s00002": {
       "input_sha256": "33dc8447465e85cc8b8d153aed5f102fba1a343fb3192b1b94a1a8a035442daf",
@@ -754,9 +754,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_003_s00005": {
       "input_sha256": "4390520264c30bfef7c0a2e45466f0646ec79550e9c67c2684d505ece049eb97",
@@ -988,9 +988,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits migration executor to fix status bookkeeping."
     },
     "TRAIN_003_s00023": {
       "input_sha256": "103190937f83bed6a21030ca281af946f27eb387b1fd80faaec8753fdec446c5",
@@ -1053,9 +1053,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Checks git identity setting before committing."
     },
     "TRAIN_003_s00028": {
       "input_sha256": "21d96b9f8ae961ea53ff2c3969ab20c42268410e5b3f440feef9957ff704888d",
@@ -1066,9 +1066,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate migration fix."
     },
     "TRAIN_003_s00029": {
       "input_sha256": "fd8252d49d1b5fc617273bab4ccd98c38a99ef3ddfc6b806cea5bc1a84d4d770",
@@ -1131,9 +1131,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_004_s00004": {
       "input_sha256": "0aa1516bd8e99ca94b8682624fbfea018d598a8ec7094d3b62971cad725af25a",
@@ -1313,9 +1313,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Runs baseline urlize tests before any visible source edit."
     },
     "TRAIN_004_s00018": {
       "input_sha256": "9a7ae850bd4c80f049537202096562e26c989f91522772a84317b11953bb801b",
@@ -1508,9 +1508,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Checks git identity setting before committing."
     },
     "TRAIN_004_s00033": {
       "input_sha256": "262cd8d7956fbefe3fcc352e3ebab18a4fb9fdfae9e9b9514f0db7179af29cae",
@@ -1534,9 +1534,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_004_s00035": {
       "input_sha256": "923ec7d02e3135497ea79aa9ae12c20ec435239d931b28b2b798a1a99a2f603d",
@@ -1872,9 +1872,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts migration tests after source edit."
     },
     "TRAIN_005_s00025": {
       "input_sha256": "3544a1a54018e18ea342f2ec2486db3c54443c04578a19afa64082fe83d6cc02",
@@ -1898,9 +1898,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Runs migrations tests after candidate fix."
     },
     "TRAIN_005_s00027": {
       "input_sha256": "dd9455211dcc90195ffd3a57458da96fed3e51b981c8063258c054ea0e6cec4c",
@@ -1911,9 +1911,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Inspects worktree state after candidate tests."
     },
     "TRAIN_005_s00028": {
       "input_sha256": "957fc57bc6a554521012afc1d0aa67c2f9c38c4af2709acf9a3233b2de27bc33",
@@ -1950,9 +1950,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate Django fix."
     },
     "TRAIN_005_s00031": {
       "input_sha256": "e15a04bcca259e2b2c0078ba26f1a67a0235f3d473731146119eae68667b99ed",
@@ -2522,9 +2522,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads image transformation code to locate implementation."
     },
     "TRAIN_006_s00044": {
       "input_sha256": "afaee32fee15a697ca3c68044bdc07e0d32ccda6cfcd91cfc4193f5988c5437c",
@@ -2665,9 +2665,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits SAM image padding implementation."
     },
     "TRAIN_006_s00055": {
       "input_sha256": "fa3047ef97f8f9175ea8a03b70e83fc6dc6da340326326a05e27865c071bc4c3",
@@ -2691,9 +2691,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits SAM mask preprocessing."
     },
     "TRAIN_006_s00057": {
       "input_sha256": "79fedc0bc9108afbdbdd149dab3124ad8ce3b9c867a39e2bfda85c10ea7d0ad8",
@@ -2704,9 +2704,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Reads just-edited SAM processor region to inspect candidate."
     },
     "TRAIN_006_s00058": {
       "input_sha256": "f3f0ed038ac09e2a70a374d9918c2e5c930948b1600edc0c5a7011ad0ed6eb4a",
@@ -2756,9 +2756,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Attempts to edit SAM padding implementation; failed edit retains purpose."
     },
     "TRAIN_006_s00062": {
       "input_sha256": "be48fe18b1b068d51f05e184070b10023e681bd3881b1bab08b847499c43692b",
@@ -2782,9 +2782,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Attempts another SAM processor edit; failure retains work purpose."
     },
     "TRAIN_006_s00064": {
       "input_sha256": "b33f94e8f824647e73658c68edda5b8453e89b29dc2ef066045a0702ed47a457",
@@ -2821,9 +2821,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits SAM image processor output."
     },
     "TRAIN_006_s00067": {
       "input_sha256": "56f325bdb685318d6b603518e3995df2c0f6d542063ae73382dc1c77eed4617f",
@@ -2834,9 +2834,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts import of edited SAM processor."
     },
     "TRAIN_006_s00068": {
       "input_sha256": "927c7275501c269ca71a4991011dd33cc6bb824acd97dc0250aa98b11ea51786",
@@ -2847,9 +2847,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts import of edited SAM processor implementation."
     },
     "TRAIN_006_s00069": {
       "input_sha256": "158f07d27f5987af6691ad046f1c38180535f85d3f6f1a6da8819c38e8d9bf84",
@@ -3107,9 +3107,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Inspects repository layout."
     },
     "TRAIN_007_s00004": {
       "input_sha256": "57d5e17d2fb436774531f07cbd1ab6d137f12020e9b91f5d131f3d2f0a7b61e0",
@@ -3159,9 +3159,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads connection plugin code before a candidate change."
     },
     "TRAIN_007_s00008": {
       "input_sha256": "f215924101e495009cf2d3f86c29db5dfdfc3888570a15794039a57c65a25057",
@@ -3172,9 +3172,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Changes PSRP connection option."
     },
     "TRAIN_007_s00009": {
       "input_sha256": "c6d675c368dcb9b614af72b509edc8c46dfde5172977f868bdb33ba919294490",
@@ -3341,9 +3341,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Removes an unused import in candidate code."
     },
     "TRAIN_007_s00022": {
       "input_sha256": "175faaa469ae1847096c69c2b13583d107672091451c19af0ae4c0c73f7b5072",
@@ -3354,9 +3354,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits candidate PSRP cleanup."
     },
     "TRAIN_007_s00023": {
       "input_sha256": "e6083849f7aef55b4e010c44914b7a2ad70cb913a1210a1450330fa03009e966",
@@ -3367,9 +3367,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Checks that obsolete extras references are gone after a commit."
     },
     "TRAIN_007_s00024": {
       "input_sha256": "8322ba10d591aae4e056fc1867456602f0ab1ff9cd0a80f4f2fab525d352bd3a",
@@ -3484,9 +3484,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Attempts baseline tests before any visible candidate edit."
     },
     "TRAIN_008_s00007": {
       "input_sha256": "45da1a1ed194ff0c9b2dd9adc61a15ad40f643ff9f34bdf6cc8fdc64e0a53eeb",
@@ -3510,9 +3510,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Inspects test layout to find how to run checks."
     },
     "TRAIN_008_s00009": {
       "input_sha256": "cd69f16306b0f487f2359d3b592358abf5aa474cf8959594245b807eb7af8ae9",
@@ -3666,9 +3666,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Attempts baseline tests while locating the issue."
     },
     "TRAIN_008_s00021": {
       "input_sha256": "cfbcd724fbe31c8dcf3ee304147ce75e25faedca94a152e5704d5cb724f44cef",
@@ -4043,9 +4043,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates dnf import handling before candidate change."
     },
     "TRAIN_008_s00050": {
       "input_sha256": "cec73d662c7f89df21053d377c2d3ffd4d7f1e5a6ebb77d174040ecf5ad25783",
@@ -4095,9 +4095,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate source change."
     },
     "TRAIN_008_s00054": {
       "input_sha256": "40f60d176ee98579d824b66a3ed50e11bc11abb1cb4b8a3893be62eb79b488f7",
@@ -4108,9 +4108,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_008_s00055": {
       "input_sha256": "32f6b86a5a744efaa5a18992ce8e7cc173972a4bd9e76ad6d487da5856e74f0a",
@@ -4147,9 +4147,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_009_s00003": {
       "input_sha256": "eff2dcc228dcc8f04cb63c8c58449aeafae4527f267ea9d196568ee52f4b3bab",
@@ -4251,9 +4251,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads configuration manager code to locate behavior."
     },
     "TRAIN_009_s00011": {
       "input_sha256": "5829c2f2953a2ce7c44de2fff4ac16f4034ed4d1a10358e59a406547b0d7f20e",
@@ -4472,9 +4472,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads configuration definitions while diagnosing behavior."
     },
     "TRAIN_009_s00028": {
       "input_sha256": "fcb5bf32a545b881bf5ae9f9a9f82a5af61585eacec4e1f792622c366dfd86d8",
@@ -4667,9 +4667,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches ad hoc command implementation."
     },
     "TRAIN_010_s00009": {
       "input_sha256": "2290426ed69ca406baea1149f2ea716c9caf7840377753cdc94ee3dddb1decc0",
@@ -4771,9 +4771,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads task include implementation before candidate work."
     },
     "TRAIN_010_s00017": {
       "input_sha256": "f0c8aea0dfbdbfd0655940daa2ef33ab61783b0530ed06654a708da1d36480f9",
@@ -4823,9 +4823,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads task executor and playbook implementation."
     },
     "TRAIN_010_s00021": {
       "input_sha256": "b3d0b29929ab0fbc221620cb998df441745aeb8a372deedcee3141fcf0ee88e6",
@@ -4888,9 +4888,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads existing CLI tests to understand expected behavior."
     },
     "TRAIN_010_s00026": {
       "input_sha256": "fe8d1144f32d8a6618a062bf277ef9c6351f4bf3d18bcd3901ccf756688d917a",
@@ -4927,9 +4927,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates CLI play prerequisite code."
     },
     "TRAIN_010_s00029": {
       "input_sha256": "865baf6d7e8f6caf21c5f35a4c077af7b82c2dcb33069ae3323c11d69766585d",
@@ -4953,9 +4953,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches existing task timeout and console tests."
     },
     "TRAIN_010_s00031": {
       "input_sha256": "aa73bb1c4e8370f95e5c84e824f9ff49f3955386fc9d9302a3c897d7672c9bb4",
@@ -5031,9 +5031,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits Ansible console implementation."
     },
     "TRAIN_010_s00037": {
       "input_sha256": "6d6e0bc06560a6fc4412c250cb5803a5c52eed8dbf842674a09542bd6c5d7b94",
@@ -5109,9 +5109,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Runs a focused CLI probe after candidate edits."
     },
     "TRAIN_010_s00043": {
       "input_sha256": "61f307d4ff8662a919da4f8b84d00151a304b9aff42aa6a8cc84916745abcb40",
@@ -5200,9 +5200,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads BaseLLM implementation before modification."
     },
     "TRAIN_011_s00006": {
       "input_sha256": "473648e97ab3be62931dab80ad62232e749c658913124c76fb870d24f98791f0",
@@ -5460,9 +5460,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads BaseLLM implementation before candidate work."
     },
     "TRAIN_011_s00026": {
       "input_sha256": "553c2d487057769652d8f9e038f88b8e755ddda0e5c763a86d32d16184e2983e",
@@ -5525,9 +5525,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Changes import in candidate cache code."
     },
     "TRAIN_011_s00031": {
       "input_sha256": "c07fc3f88422605ff9bc19286f5b902aa9ced101b49fcfeda7375496d7cb12f4",
@@ -5642,9 +5642,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits cache update implementation."
     },
     "TRAIN_011_s00040": {
       "input_sha256": "a2dfb1fca40e2d992b4e23095e46257d7b1c2d1b2e7ff6fa7845a2fa9a34ce32",
@@ -5668,9 +5668,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits language-model cache implementation."
     },
     "TRAIN_011_s00042": {
       "input_sha256": "ec48a732ac0e90a77550983d4c9931288b73dcd31759ee185d9dda947e32a642",
@@ -5746,9 +5746,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits asynchronous cache path."
     },
     "TRAIN_011_s00048": {
       "input_sha256": "3b46f22f2409cfcc3aebfc571f597447ff6d9b9af7d4daa5562e26dc29f60140",
@@ -5759,9 +5759,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits cache update call in candidate implementation."
     },
     "TRAIN_011_s00049": {
       "input_sha256": "3bf042b66b0ff123d5957f3136914cc8857c77779bd05c19c50b3585d6d55d6c",
@@ -5798,9 +5798,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Reads recently edited cache path to inspect the candidate."
     },
     "TRAIN_011_s00052": {
       "input_sha256": "55c2836d8fe6089c2fcb64c0edb0f9bbe176f79a8e2bf39759fc5c6cb854c9b0",
@@ -5967,9 +5967,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits candidate cache implementation."
     },
     "TRAIN_012_s00001": {
       "input_sha256": "2ae49819443b422f71cbc57e88660de0b545cf280996d0f9299ed1bf3b5f0341",
@@ -6357,9 +6357,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Adds legend pickling implementation."
     },
     "TRAIN_012_s00031": {
       "input_sha256": "a708c39e16a19f531ddbf7c47c95f2c9f12e120d9d8e10274b5b816148111986",
@@ -6409,9 +6409,9 @@
       },
       "label_source": "codex_ai_adjudication",
       "priority_reason": "codex_ai_adjudication",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Inserts candidate pickling implementation."
     },
     "TRAIN_012_s00035": {
       "input_sha256": "482d1d87d4ef90178e32c5ccc188a78756f9d30370a969e756f1080e7c8cdbed",
@@ -6422,9 +6422,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Reads newly edited text.py region to inspect the candidate."
     },
     "TRAIN_012_s00036": {
       "input_sha256": "afc1d5d6057f4cb730e9f1cb3b24bf59c98900c9d00d581c86757b27571416a8",
@@ -6474,9 +6474,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Undoes an edit to revise the candidate implementation."
     },
     "TRAIN_012_s00040": {
       "input_sha256": "4a22477b9d50e8a88a9b312e9aec9aeb6c6450f36e8b1f660ea1af130b7fb928",
@@ -6591,9 +6591,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Inspects repository layout."
     },
     "TRAIN_013_s00005": {
       "input_sha256": "7c3781640fd9aaa30d325d3c8fa565a5de910e5cc9f0a9edc4279e6bc592fc1d",
@@ -6604,9 +6604,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches link parsing implementation."
     },
     "TRAIN_013_s00006": {
       "input_sha256": "eec94a8fc5d1f3f89f496bc9f2f3748e4cbddc6dccbeb99b470c28690c68cd95",
@@ -6786,9 +6786,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads link parser source before candidate change."
     },
     "TRAIN_013_s00020": {
       "input_sha256": "ec49a5835daec993917ddf03bd04e58636717b05f1636e79c8a468f0f5c7e1f3",
@@ -6825,9 +6825,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads existing link parser tests before candidate edit."
     },
     "TRAIN_013_s00023": {
       "input_sha256": "d2ed3b796de6ff969969e8bbf63b5501142a698f8b98d5a636dd6bd8a2e19138",
@@ -6955,9 +6955,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Checks the edited link parser source for the expected pattern."
     },
     "TRAIN_013_s00033": {
       "input_sha256": "2b95a913bf1306b768c4efa2745fbd1c600b515358aa299a7dcac42eb70bf2c5",
@@ -6994,9 +6994,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Compiles the edited project to assess the candidate."
     },
     "TRAIN_013_s00036": {
       "input_sha256": "9f4f860793b795f04ebc3e1f776afa928049f161077e00dfecaf80446db1d7cc",
@@ -7046,9 +7046,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts parser test through built loader after candidate work."
     },
     "TRAIN_013_s00040": {
       "input_sha256": "16d81ee3a55353bd4c7e7ae42c9603b07ca1e33c87388e3c6a00614a856eeb99",
@@ -7111,9 +7111,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates built link parser module while diagnosing test setup."
     },
     "TRAIN_013_s00045": {
       "input_sha256": "162c574a5405dcc1ba40c4eb72dd7956d92abf225903a96fec2d274e8eaa8c0d",
@@ -7163,9 +7163,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates the built loader while diagnosing the test setup."
     },
     "TRAIN_013_s00049": {
       "input_sha256": "35771b0f464857dd847d8c27fb9956c3eaef0adc9fe7c9f737b0e8e474b61350",
@@ -7176,9 +7176,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts to load built parser module after candidate work."
     },
     "TRAIN_013_s00050": {
       "input_sha256": "f63c8a2c458f54e4a2615405f24925fdcf35670eded3ff93bb9c56a99c1ba6cd",
@@ -7319,9 +7319,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Inspects edited link parser after build checks."
     },
     "TRAIN_013_s00061": {
       "input_sha256": "a4b120fa09550315df840c56413547f0bce1674eac0c38e483535ee813763f43",
@@ -7332,9 +7332,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Inspects edited link parser region after candidate work."
     },
     "TRAIN_013_s00062": {
       "input_sha256": "213bafc15b1ccbbe8eaf70abe8f98821ee631b27d7220260b286190f400156c3",
@@ -7345,9 +7345,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Inspects edited link parser code after candidate work."
     },
     "TRAIN_013_s00063": {
       "input_sha256": "c64675f04022324bd2f665f9b88b261700e1ed0125ab92254e51bc380c29ad07",
@@ -7384,9 +7384,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Runs hygiene check after formatting candidate source."
     },
     "TRAIN_013_s00066": {
       "input_sha256": "b1e020869733a12f6857cd86a315c80052d70e835027f9507aa36f7f2669ace9",
@@ -7410,9 +7410,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Compiles the candidate after a code commit."
     },
     "TRAIN_013_s00068": {
       "input_sha256": "4c66b3736ff160c1cc674a0b5eda990e1b3c782a625ec7adb9894230d6de3481",
@@ -7423,9 +7423,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts to test built parser after compile and candidate commit."
     },
     "TRAIN_013_s00069": {
       "input_sha256": "28700f1b1637f7f6ef0c38fc4e927ccb05b856183989f99bc484ca452e4d395b",
@@ -7644,9 +7644,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits autocomplete grouping logic."
     },
     "TRAIN_014_s00017": {
       "input_sha256": "098c49dd7bd2136a5627141a90d607d8bd9f76d7fb164bf0f4e819d49a69495b",
@@ -7683,9 +7683,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only polls a pending command and receives no new output."
     },
     "TRAIN_014_s00020": {
       "input_sha256": "ba1008552986a0904e29d4bc1e86915191f36afdeb13d886d2272262bdde64f9",
@@ -7696,9 +7696,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Continues attempt to commit candidate autocomplete fix."
     },
     "TRAIN_014_s00021": {
       "input_sha256": "e7bbe52228e74af03c45f47b22ad4b6c6e4a76d67d7c8363cd985fbe9f9b9de1",
@@ -7969,9 +7969,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads printer implementation before a candidate change."
     },
     "TRAIN_015_s00009": {
       "input_sha256": "a4521966d1dcf5bfc409feace120ec522dc75e3b3112f01aaa7ca96c572a1867",
@@ -8008,9 +8008,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates printer logic for decorators."
     },
     "TRAIN_015_s00012": {
       "input_sha256": "e3383d579ebc9efcb6f7ebeae40e3cb31ae8656b1a7d897635223402108aa788",
@@ -8112,9 +8112,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Attempts to patch candidate printer logic; command failure does not change purpose."
     },
     "TRAIN_015_s00020": {
       "input_sha256": "f13cf29cc905f72daf201315d433fc0f9c131a96f38d967d042b263c71044ad1",
@@ -8229,9 +8229,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts to run the formatter on a case after editing it."
     },
     "TRAIN_015_s00029": {
       "input_sha256": "204ffcd8f68da598499bc44613d94719dd29356597490d3978bcf6023274b7e2",
@@ -8320,9 +8320,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits candidate printer fix."
     },
     "TRAIN_016_s00001": {
       "input_sha256": "a1471a7daf5e93b04d1b12181d9462bb087811ad5e03462e4d7295ba9e0f2b4d",
@@ -8372,9 +8372,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Inspects xarray repository layout."
     },
     "TRAIN_016_s00005": {
       "input_sha256": "fdb545bb4c2f5c4286992c71343cb08fe0cc622f69da3dbad5b9437744e60cc1",
@@ -8385,9 +8385,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads xarray variable implementation before a fix."
     },
     "TRAIN_016_s00006": {
       "input_sha256": "873fdb932fc5d04127827cc1c22b634c6caee284a2343a5d96a7c4470c981ad3",
@@ -8528,9 +8528,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_016_s00017": {
       "input_sha256": "a4ca82a2a7a0b3b793b3d75e4d9007411c29f3a82974edd6f9c2053eb7da374f",
@@ -8554,9 +8554,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Runs baseline xarray tests before a visible candidate edit."
     },
     "TRAIN_016_s00019": {
       "input_sha256": "956657daf174634d2c8ab0e705143d51b769d21d287386b3079dac1344a24beb",
@@ -8593,9 +8593,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Attempts to add ignore rules while preparing candidate repository state."
     },
     "TRAIN_016_s00022": {
       "input_sha256": "bc72cd470b894bf1b68a6440200dddf27b26cb500c54df1add04c9d7febbc5b9",
@@ -8606,9 +8606,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits candidate xarray fix."
     },
     "TRAIN_016_s00023": {
       "input_sha256": "73a6ce7ea8a18b474d89dac73901c19cc1fe3ac2e1952eadac15472138610cb3",
@@ -8645,9 +8645,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_017_s00003": {
       "input_sha256": "cf43cbcd00426e5b246a38412ba2e7f7b35509caf5949f08b0a5248cc20558cb",
@@ -8710,9 +8710,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits unsigned integer decode implementation."
     },
     "TRAIN_017_s00008": {
       "input_sha256": "e93c0c3350ffd597cb18ce78c49bea05a4af90851dd0f51601c6d81bf042cee2",
@@ -8879,9 +8879,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits candidate unsigned decoding fix."
     },
     "TRAIN_017_s00021": {
       "input_sha256": "bd7de54bd76bdf661ccb353866165c295a43e5a2c9c6656ddd9386f4537cf622",
@@ -9035,9 +9035,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads Dataset.chunks implementation before candidate work."
     },
     "TRAIN_018_s00010": {
       "input_sha256": "badbcfaab9e22d222a656c1a470b718c802b73aab76ba7eaf6fa7e4581bba9c1",
@@ -9191,9 +9191,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Finds remaining get_chunksizes call sites to guide a further change."
     },
     "TRAIN_018_s00022": {
       "input_sha256": "8b146fc111b2feb1544520026189d7a462766f26370d17aecc00bb602c686d6b",
@@ -9282,9 +9282,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Inspects repository status after candidate edits."
     },
     "TRAIN_018_s00029": {
       "input_sha256": "dfa7332800a913c074902b64f4fff7d1067b0e70cc4178fe844ccb4af7e2e6a1",
@@ -9399,9 +9399,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Updates a task plan without performing repository work."
     },
     "TRAIN_018_s00038": {
       "input_sha256": "3d120ff1eb19f3e2fe35457ea5ac2b179e428cf9a5561ca7be98904420077d4d",
@@ -9672,9 +9672,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts a focused reproduction test after an edit."
     },
     "TRAIN_019_s00019": {
       "input_sha256": "56957e304fc6ac7e5fc06050cc11ba100f56e9c34d7feedcafc5f6375747bb60",
@@ -9750,9 +9750,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Inspects the reproduction test file to understand the warning."
     },
     "TRAIN_019_s00025": {
       "input_sha256": "3aa4accd9ea4dac4329c4568d9292122cf82f27ff027f0c960d7fa407169a221",
@@ -9880,9 +9880,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate pytest fix."
     },
     "TRAIN_019_s00035": {
       "input_sha256": "5991a57d7980a3ae02de4c83867aa463204e18b08e7c91a29e3fc25ad6236b3f",
@@ -9945,9 +9945,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_020_s00001": {
       "input_sha256": "e36a272a1722c5072ccca60ec63ae8bce4b1d3effa9790de8441c821ac2a6ca7",
@@ -9984,9 +9984,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_020_s00004": {
       "input_sha256": "1052525adf230974471b27d5774b6c4913c70fa72965459773ce6d048eac944e",
@@ -10036,9 +10036,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_020_s00008": {
       "input_sha256": "350ddfbbad5983757dd83785e4608cbb573609373fc0c222513fc6a8adba2e2c",
@@ -10140,9 +10140,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Runs a reproduction script to observe the issue."
     },
     "TRAIN_020_s00016": {
       "input_sha256": "2f6d215569bfab648e2d2e36305ca3942d48d81233aac08da8442bb24bdf8152",
@@ -10257,9 +10257,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Runs tests after changing the candidate implementation."
     },
     "TRAIN_020_s00025": {
       "input_sha256": "737e0eb987a0dc090b8c6251ed416a39570ba81b523f846ba509983d74b12379",
@@ -10309,9 +10309,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_021_s00001": {
       "input_sha256": "a68cc422a9e162eefa20b07d8d34a30e41dc94db154b21ea5b3b66a9f13c32b6",
@@ -10322,9 +10322,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_021_s00002": {
       "input_sha256": "45fa5415dd7d361edf57f0680503fc226bcae97ac50c163f41745f331cc78d99",
@@ -10348,9 +10348,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_021_s00004": {
       "input_sha256": "6601f98f1f2c1a441452bb6f97314b7b3c65a87a5a3dce5f1e0ebad67060e65f",
@@ -10374,9 +10374,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_021_s00006": {
       "input_sha256": "254471e274365b25dde74ccaed82227bdb557b0f5eac540158b140fba9390295",
@@ -10608,9 +10608,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_021_s00024": {
       "input_sha256": "1262a2a6ec6b3e4485283d3daf2302a11acacc87d1c3d26e58cfc6b64fb3433a",
@@ -10699,9 +10699,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Inspects worktree status after candidate edits."
     },
     "TRAIN_021_s00031": {
       "input_sha256": "1eba442d59b8eae6710c62daadf314a0c086424dec3971fa3c53771b4ce8feb3",
@@ -11206,9 +11206,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches tests for gettext location behavior."
     },
     "TRAIN_023_s00008": {
       "input_sha256": "bc73aef3b046857df8beb4326fa439ab4dc00335d5ce2e54e721a852af418223",
@@ -11219,9 +11219,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates gettext Message implementation."
     },
     "TRAIN_023_s00009": {
       "input_sha256": "20f9ac0163906c845b768c673f95a898e511687332e68ab6ea31f4136d796025",
@@ -11232,9 +11232,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_023_s00010": {
       "input_sha256": "07cfaee23ced1f9d42bc8e8233db68411683a459d26554679f599243f956e0eb",
@@ -11271,9 +11271,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Runs baseline test suite before visible source edits."
     },
     "TRAIN_023_s00013": {
       "input_sha256": "d4bdbe0ff114d67ba6c49e055b3f3e71dfa680a27d88c805acb12a4caf11d567",
@@ -11297,9 +11297,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits gettext message implementation."
     },
     "TRAIN_023_s00015": {
       "input_sha256": "3d6c75929d19dd395012acf597d0e22a15806b468b664aafc67f467d5da2a1fa",
@@ -11349,9 +11349,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches tests for gettext location behavior to guide further work."
     },
     "TRAIN_023_s00019": {
       "input_sha256": "efd975526f76ef7b5c9331545d97b66959426974460003837db441eb9e1b7828",
@@ -11401,9 +11401,9 @@
       },
       "label_source": "codex_ai_adjudication",
       "priority_reason": "codex_ai_adjudication",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Updates task plan without performing repository work."
     },
     "TRAIN_024_s00001": {
       "input_sha256": "6e3d804b38b875c78df33894b0bbbc5abc6b41ce1e73bb76feca42450d93a137",
@@ -11453,9 +11453,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Inspects repository before issue work."
     },
     "TRAIN_024_s00005": {
       "input_sha256": "e36ef678198ca2a79e6ee326d5859fdd1712383b18106c61a01801dd3b0796f5",
@@ -11466,9 +11466,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches minimal_blocks implementation and tests."
     },
     "TRAIN_024_s00006": {
       "input_sha256": "b789f6a74abd43a629af8d8417ab33f4aee6b364e281fd41df5591665ac1c706",
@@ -11531,9 +11531,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reproduces sylow subgroup IndexError before a fix."
     },
     "TRAIN_024_s00011": {
       "input_sha256": "e28ff782095055e7f3cf563cd7e88b54b1e38dca4b57648a04b3d4a14e50d55c",
@@ -11557,9 +11557,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "TRAIN_024_s00013": {
       "input_sha256": "7a10adb5f47f557b6133666baed2a7447a77a4ed283e11ee02c0a0b3a9cdd18a",
@@ -11687,9 +11687,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Inspects candidate diff after reproduction and edits."
     },
     "TRAIN_024_s00023": {
       "input_sha256": "1f0a084af89c39ef660c212ac047f3580b35a11f876b16659119709b02338bb4",
@@ -11700,9 +11700,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate source fix."
     },
     "TRAIN_024_s00024": {
       "input_sha256": "24617e80f948bfcf1794f2333faa10bdad67be1eb7f30a09d8ae7767e1b772a8",
@@ -11726,9 +11726,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Removes reproduction file and verifies worktree cleanliness after commit."
     },
     "TRAIN_024_s00026": {
       "input_sha256": "c13b350198d59474f18949da1665c12027d380fb9fd16fe2db7a29801dfa48f5",
@@ -11895,9 +11895,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Attempts baseline point tests before visible source edit."
     },
     "TRAIN_025_s00013": {
       "input_sha256": "08e643c9608d12dcc9661a39897d612b509fb68e20e918bf5d76c9dbb1d03338",
@@ -12051,9 +12051,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Probes numeric predicates to refine the candidate after tests."
     },
     "TRAIN_025_s00025": {
       "input_sha256": "18ab953f60685c423110fba2d1dfd8e491735f22c1afa8e916bdb89b4c7b2226",

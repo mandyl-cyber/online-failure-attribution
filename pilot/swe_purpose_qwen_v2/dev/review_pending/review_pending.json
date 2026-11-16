@@ -1,7 +1,7 @@
 {
   "reviewer_kind": "ai",
-  "reviewer_id": null,
-  "note": "Blind packets omit the first candidate. Review independently before opening review_pending.json. No entry is approved; agreement and structural validity are not semantic accuracy.",
+  "reviewer_id": "codex-blind-v2-sample",
+  "note": "Blind packets omit the first candidate. Review independently before opening review_pending.json. No entry is approved; agreement and structural validity are not semantic accuracy. Exactly 70 sampled DEV entries have been reviewed by Codex AI blind to first labels; remaining entries are pending.",
   "first_run_identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
   "labels": {
     "DEV_001_s00001": {
@@ -78,9 +78,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads NDDataRef implementation before a fix."
     },
     "DEV_001_s00007": {
       "input_sha256": "be28e97768a2022f53b51a996c5ac9d5b8f8b360502cc637a652311bba00473f",
@@ -182,9 +182,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Runs tests before a visible edit to reproduce or locate the issue."
     },
     "DEV_001_s00015": {
       "input_sha256": "7f2a1696e8eff0c32aba3676a8a2a90265f56ab965b4db5a4fe7b20461365b58",
@@ -208,9 +208,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads arithmetic mask implementation before editing it."
     },
     "DEV_001_s00017": {
       "input_sha256": "aa71e74e662e68940ab37791731118f76ec816914740606b8637aacd5c774a37",
@@ -299,9 +299,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_001_s00024": {
       "input_sha256": "6f66be90b1eb583278eca080fb31bd3921b68bc65d9fa7b994759c60b01a830e",
@@ -351,9 +351,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Creates a versioned candidate commit; no explicit handoff is visible."
     },
     "DEV_001_s00028": {
       "input_sha256": "f57c57e2d6e366ffd67d163c64727858c84328509c907d32dbe2c57f9bd71526",
@@ -429,9 +429,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads deletion source before any candidate change."
     },
     "DEV_002_s00006": {
       "input_sha256": "07cc1fe605b9fcd1878cc30210b699a7ed6614e2d054b0bbbc731399e4ef9146",
@@ -442,9 +442,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches existing tests for deletion behavior."
     },
     "DEV_002_s00007": {
       "input_sha256": "f33a6155bee63ac6d2e0ed4adfe85aaf39e48a6fc3f085e74a02a38cc9b9351b",
@@ -520,9 +520,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads existing delete tests before candidate modification."
     },
     "DEV_002_s00013": {
       "input_sha256": "7bcfd087e0c136f1a57e6cdfcf986e05c66ed1e2e185e12ab94fb58c465899b6",
@@ -533,9 +533,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads existing deletion tests to understand behavior."
     },
     "DEV_002_s00014": {
       "input_sha256": "ef734b158edbff730f822849614eb8b619ffeccb3914a042372dc2bb31ece644",
@@ -585,9 +585,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Runs baseline deletion tests before any visible source edit."
     },
     "DEV_002_s00018": {
       "input_sha256": "b823319c0cd622245c0afbd9886b41b22bb6bb8fa71332dadfd80a9c920afdee",
@@ -676,9 +676,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Runs a focused model deletion probe after candidate work."
     },
     "DEV_002_s00025": {
       "input_sha256": "cfd26f0d0852bb63ba4e416b9414b3376aabdbb0ff2c9dd5bad75cc4f1633a6e",
@@ -702,9 +702,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_002_s00027": {
       "input_sha256": "bc68e974c32ae637a905631fe5b6a996b00cca2db4656d9fc742d906072dd6f9",
@@ -741,9 +741,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate fix as a versioned artifact."
     },
     "DEV_002_s00030": {
       "input_sha256": "b360c2c5bdedce88350f7169769161550167841f45f08ec2264cb2161a9f7115",
@@ -858,9 +858,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates the floatformat implementation."
     },
     "DEV_003_s00007": {
       "input_sha256": "dc2a664f7f9a55bc261e1d86d48088190f2bc5db40b04cec6f075b0c2728f7fb",
@@ -897,9 +897,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reproduces the reported floatformat crash before an edit."
     },
     "DEV_003_s00010": {
       "input_sha256": "8cff27055e5a7dc1a03f2d7572cf73999d0c5398ba37c140977bb94a9b218d4b",
@@ -910,9 +910,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads floatformat source after initial reproduction, before a fix."
     },
     "DEV_003_s00011": {
       "input_sha256": "d4704f1db1d1ba9b590a03ca7059b26bf3264ad2f3ac7bfe08f2ca07822b062e",
@@ -936,9 +936,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits defaultfilters implementation."
     },
     "DEV_003_s00013": {
       "input_sha256": "993a91b6c971ccd8f4a9472014a10a68d6423bc51fc4be7b24a78d3d3c8dfdcb",
@@ -1053,9 +1053,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Runs targeted tests after the candidate change."
     },
     "DEV_003_s00022": {
       "input_sha256": "c6037245d511c252ea52eb5171f7c45ec50a69cf51cd657f5debccad2fb97649",
@@ -1079,9 +1079,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Runs the full template test suite after candidate changes."
     },
     "DEV_004_s00001": {
       "input_sha256": "11971d408c3967348871fbf9bcd02e210e7b4a4e9bf8424fb9c209867a9c0b3f",
@@ -1144,9 +1144,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Locates AnsibleParserError definition."
     },
     "DEV_004_s00006": {
       "input_sha256": "9b455c95cb03c312ad575a59c46e94a017dac64fda024caa515b6e480b45d808",
@@ -1170,9 +1170,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads error-handling source before a visible candidate change."
     },
     "DEV_004_s00008": {
       "input_sha256": "905d36fd3b56f6197009372536d82eabe5153cd137a82b0ad820d6ea5dbe9f7b",
@@ -1183,9 +1183,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches Vault handling code to locate relevant implementation."
     },
     "DEV_004_s00009": {
       "input_sha256": "b2721b34adbf22034212ab9b528d6f325321e0e0679f96b1c187bbfdeae14499",
@@ -1222,9 +1222,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads vault parsing source to locate behavior."
     },
     "DEV_004_s00012": {
       "input_sha256": "c55a212d3a4913278de3cd92abc5e087d68d366a4c46bb2fb31ab805fb33bd58",
@@ -1339,9 +1339,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads task-loading implementation before modification."
     },
     "DEV_004_s00021": {
       "input_sha256": "55eccf84e37aee34571f21efd15bf8164b16554cebb7e1144581bc2fced92dcb",
@@ -1378,9 +1378,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits Ansible error implementation."
     },
     "DEV_004_s00024": {
       "input_sha256": "363e1a2c8c63b543f05e3c957d244d6d70fcdc8557e97046e66322d3fbac6a3a",
@@ -1404,9 +1404,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Adds YAML position propagation in the candidate implementation."
     },
     "DEV_004_s00026": {
       "input_sha256": "54083b05f2a9a81d0b8705de508f46f64814185f82733bf1500b118bc3044e8d",
@@ -1456,9 +1456,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts tests after source edits; missing pytest does not change the purpose."
     },
     "DEV_004_s00030": {
       "input_sha256": "4950ae8901252ebd34da917989b6793431d5817205e191bd5856713b6bff1584",
@@ -1469,9 +1469,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits vault object decryption implementation."
     },
     "DEV_004_s00031": {
       "input_sha256": "62d61f6174200605b2eff527e7860735bc71c8271accec05677ae3dfb58e8c2a",
@@ -1508,9 +1508,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads parsing splitter code to locate behavior."
     },
     "DEV_004_s00034": {
       "input_sha256": "01f019fdeb688dd90c120ee7612b3d2868bd120558300da676819b18276d0e85",
@@ -1573,9 +1573,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Runs a focused vault parser probe after candidate edits."
     },
     "DEV_004_s00039": {
       "input_sha256": "dc52cc8cba6b43f5c532baa8a423ff8f766d96ad655df5d988bae17392a3ec57",
@@ -1599,9 +1599,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits a versioned candidate after implementation and probes."
     },
     "DEV_004_s00041": {
       "input_sha256": "e2cf03d855a925eb105a73465f75ee334ffba2dc60d54450f49c89d7c4a6a18c",
@@ -1625,9 +1625,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads requirements to understand dependency state after a commit."
     },
     "DEV_004_s00043": {
       "input_sha256": "ce195ff617ba040fb2c9d5e7794546aef1fc821e1ced89c4b262ddd1b6db761e",
@@ -1664,9 +1664,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_005_s00003": {
       "input_sha256": "966790caa29f5ef0c6fc0800341fd16bf00bd03f83bfc378da66d3a162c4cddc",
@@ -1677,9 +1677,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_005_s00004": {
       "input_sha256": "d9b5643cee90e5d801fce5f15d7e481e484781919950494df1b5fa283ae86bb0",
@@ -1716,9 +1716,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Attempts initial test run to discover baseline state; pytest is missing."
     },
     "DEV_005_s00007": {
       "input_sha256": "b311ad8c4ef83aca18d94180a4871086b50d21fddb86c24e3e647702f6a4ec0d",
@@ -1755,9 +1755,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Inspects existing test layout after installing pytest."
     },
     "DEV_005_s00010": {
       "input_sha256": "8411ab480c42c06940da0d6615fb99448b5edaecae828da61b617096edf75e15",
@@ -1963,9 +1963,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches locale-related code before the candidate change."
     },
     "DEV_005_s00026": {
       "input_sha256": "e062ac65b4829f4e87cb821ce8e5aac5f4981da5af29fb9276b325d5e5699369",
@@ -2054,9 +2054,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits Qt argument handling in the candidate module."
     },
     "DEV_005_s00033": {
       "input_sha256": "2566ff66e58e856b4e70b0e89c223fe98fa9fcc18e13fa09f1782a9bb26fd435",
@@ -2106,9 +2106,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Reads newly edited configuration to inspect the candidate."
     },
     "DEV_005_s00037": {
       "input_sha256": "0c455fcf4d2e43260fe719f590de87d1b49d0b0de04dfdbb59b68b42b4cb5a66",
@@ -2262,9 +2262,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Reads the just-edited module after a static import check; candidate inspection."
     },
     "DEV_005_s00049": {
       "input_sha256": "cf934d558e02f1fee8d01e1f6ca8b85a2844799cd249fb41ad9f47d1b407ce86",
@@ -2275,9 +2275,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Modifies QtWebEngine settings argument logic."
     },
     "DEV_005_s00050": {
       "input_sha256": "3569763dc636a1aafa3f415aa6c044c3dd8f00c65df3e668ef44b21131ab4f12",
@@ -2379,9 +2379,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits QtWebEngine settings logic."
     },
     "DEV_005_s00058": {
       "input_sha256": "54616a24a1a40c9043583aec8554f47aa73334bd4692f50d91e4e1660cfa43a3",
@@ -2418,9 +2418,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Tests import of edited module; missing PyQt does not change the purpose."
     },
     "DEV_005_s00061": {
       "input_sha256": "3acc6e3c432c7d11c5d595a1e8f7bf0e6f862a67fd959486d609328c084f9869",
@@ -2444,9 +2444,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_005_s00063": {
       "input_sha256": "39ff25adc2329a69697e3851efbce1ef280e9bfce0482dd81c286ffb2c31eca6",
@@ -2691,9 +2691,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads saving implementation before visible candidate changes."
     },
     "DEV_006_s00013": {
       "input_sha256": "3df44566e1b214cbf00059b6cf36fc2cbdc9810d5a1181c855c9a91707978d94",
@@ -2743,9 +2743,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Edits Keras model.save implementation."
     },
     "DEV_006_s00017": {
       "input_sha256": "35285cf5d7ef95ca44504fdcbec4203b9b74af03cac52e1d37ca2fd237208bf8",
@@ -2756,9 +2756,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_006_s00018": {
       "input_sha256": "6d9e064a6df22f39e47af557ac8cfb7d8305b4272977817a46255810f5be9265",
@@ -2769,9 +2769,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches for API export locations after an initial edit."
     },
     "DEV_006_s00019": {
       "input_sha256": "b2eb40ed754e91619f0944412b8402edf57b5288b2b6afd00033743263304a0f",
@@ -2795,9 +2795,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_006_s00021": {
       "input_sha256": "42c65493358a22ee5c1bba5da4b6de4a24b48223d48e242b05d6b03efcee3b77",
@@ -2847,9 +2847,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads requirements to understand available test dependencies."
     },
     "DEV_006_s00025": {
       "input_sha256": "d1a598fa63717ea471e772f23af97c9a55fd92ad90d2e3444a4aac5975c91d3c",
@@ -2977,9 +2977,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ENABLE",
+      "review_note": "Installs dependencies required for subsequent work."
     },
     "DEV_006_s00035": {
       "input_sha256": "a06b5ee9c13e921c955e3df983075ff0f4c9184857a64ba57f0a0e4ffb9384ea",
@@ -3016,9 +3016,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate refactor as a versioned artifact."
     },
     "DEV_006_s00038": {
       "input_sha256": "330eb1eabee4c4fc6f03277533f867880e5577c040eff490bb9fe4f1cc447e54",
@@ -3068,9 +3068,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Verifies signatures and callability after the refactor."
     },
     "DEV_006_s00042": {
       "input_sha256": "0c581dc5bbf72c3f2fa53ade545cbf2f80a1f8189395c75f5276c36615a8efb1",
@@ -3185,9 +3185,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches optimizer code for callable handling."
     },
     "DEV_007_s00009": {
       "input_sha256": "2d68bfc0d1fb94eb0b5814cf80ff7ab8c3e43fedbf14a298c92c1aa8d24a5878",
@@ -3315,9 +3315,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Changes optimizer learning-rate handling."
     },
     "DEV_007_s00019": {
       "input_sha256": "efd9e4540111d08c1437db8e359c964c874e5071d14c17093176f2d2a0ea8227",
@@ -3666,9 +3666,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Searches implementation locations for the callback issue."
     },
     "DEV_008_s00013": {
       "input_sha256": "faf1221109ecfc082175a70cfd823ef5cc5caeefc94ce60bebbc88675797d62b",
@@ -3809,9 +3809,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts tests after a candidate source edit."
     },
     "DEV_008_s00024": {
       "input_sha256": "2fa5678ab42e4d23d366a59f55a9262af29a41f459e9d2909edb689cddc303bf",
@@ -3900,9 +3900,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate implementation as a versioned artifact; no explicit handoff."
     },
     "DEV_008_s00031": {
       "input_sha256": "da0f8b44fa31ec9cf460d7bb7cc45fc630b459d57c85154971f8cb0d4273d8bc",
@@ -4069,9 +4069,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads output-wrapping source to locate the bug."
     },
     "DEV_009_s00012": {
       "input_sha256": "2866fe6efc5d74425f49e1e9e8f3a66cff942f06e64aead751e69c7ea8ec18f6",
@@ -4160,9 +4160,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_009_s00019": {
       "input_sha256": "290d04dde602da76dad316231be9f69ad0a903b33a310496392041639e8b7cd3",
@@ -4173,9 +4173,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Attempts targeted test after candidate edit; environment import mismatch does not change purpose."
     },
     "DEV_009_s00020": {
       "input_sha256": "a1dc90eaaaefdc2ab45ff33a352ff8064a60420175c4ed24a390b3b210d897da",
@@ -4186,9 +4186,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "check_before_candidate_construction",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CHECK",
+      "review_note": "Inspects repository status after a candidate edit and test."
     },
     "DEV_009_s00021": {
       "input_sha256": "da87d59188dc35eb63de3fd3d8c69c5736e20e69d55b5b3e6b5ac47fa6a7705a",
@@ -4199,9 +4199,9 @@
       },
       "label_source": "qwen",
       "priority_reason": "delivery_before_trajectory_end",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate source change as a versioned artifact."
     },
     "DEV_009_s00022": {
       "input_sha256": "af0d8561b746dc5e4a6d9ff6f0b5ae952eae60e6a83a1b7b054f5897decef106",
@@ -4212,9 +4212,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_010_s00001": {
       "input_sha256": "3a0e2ce3244180056a7b1e7c8710b0f78f2fd42860b9bb27f4039ea5ad848590",
@@ -4290,9 +4290,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Reads inspect helper code to locate cause of formatting bug."
     },
     "DEV_010_s00007": {
       "input_sha256": "13909e6bcca96c197e0aa994688586b7767c048fde414599f7375266817b4c24",
@@ -4303,9 +4303,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Continues reading inspect helper implementation."
     },
     "DEV_010_s00008": {
       "input_sha256": "2e698061fa33813eb28a6faab061f1fee3b18ca21bf6aa16eab25a6041e6db1f",
@@ -4433,9 +4433,9 @@
       },
       "label_source": "deterministic_control_rule",
       "priority_reason": "control_rule",
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "UNKNOWN",
+      "review_note": "Only a task list update is visible."
     },
     "DEV_010_s00018": {
       "input_sha256": "c7d5e09e17a8f0b9f6a69b9a96c8ce07eeecbc5b049b43e422cc1e1ce48576ef",
@@ -4524,9 +4524,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Checks current git identity setting before commit."
     },
     "DEV_010_s00025": {
       "input_sha256": "063b889150db97b7568ce77e6e5787aa7f7580c0c53a389843816f09dd19340b",
@@ -4537,9 +4537,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "ACQUIRE",
+      "review_note": "Checks git identity configuration before a commit."
     },
     "DEV_010_s00026": {
       "input_sha256": "05cb99ddf3788618ea746aed5751b69681efa00cd91eb8512578961c8ed01962",
@@ -4550,9 +4550,9 @@
       },
       "label_source": "qwen",
       "priority_reason": null,
-      "reviewed": false,
-      "final_label": null,
-      "review_note": ""
+      "reviewed": true,
+      "final_label": "CONSTRUCT",
+      "review_note": "Commits the candidate fix as a versioned artifact."
     }
   }
 }

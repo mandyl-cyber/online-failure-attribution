@@ -1,0 +1,904 @@
+{
+  "structure": {
+    "DEV_001": [
+      {
+        "boundary_step_id": 14,
+        "detected_at_step_id": 14
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 19,
+        "detected_at_step_id": 19
+      },
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 23
+      },
+      {
+        "boundary_step_id": 24,
+        "detected_at_step_id": 24
+      }
+    ],
+    "DEV_002": [
+      {
+        "boundary_step_id": 2,
+        "detected_at_step_id": 2
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 20
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 31,
+        "detected_at_step_id": 31
+      }
+    ],
+    "DEV_003": [
+      {
+        "boundary_step_id": 4,
+        "detected_at_step_id": 4
+      },
+      {
+        "boundary_step_id": 12,
+        "detected_at_step_id": 12
+      },
+      {
+        "boundary_step_id": 18,
+        "detected_at_step_id": 18
+      },
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 20
+      }
+    ],
+    "DEV_004": [
+      {
+        "boundary_step_id": 5,
+        "detected_at_step_id": 5
+      },
+      {
+        "boundary_step_id": 25,
+        "detected_at_step_id": 25
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 29,
+        "detected_at_step_id": 29
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 34,
+        "detected_at_step_id": 34
+      },
+      {
+        "boundary_step_id": 37,
+        "detected_at_step_id": 37
+      },
+      {
+        "boundary_step_id": 41,
+        "detected_at_step_id": 41
+      },
+      {
+        "boundary_step_id": 42,
+        "detected_at_step_id": 42
+      }
+    ],
+    "DEV_005": [
+      {
+        "boundary_step_id": 6,
+        "detected_at_step_id": 6
+      },
+      {
+        "boundary_step_id": 28,
+        "detected_at_step_id": 28
+      },
+      {
+        "boundary_step_id": 31,
+        "detected_at_step_id": 31
+      },
+      {
+        "boundary_step_id": 33,
+        "detected_at_step_id": 33
+      },
+      {
+        "boundary_step_id": 43,
+        "detected_at_step_id": 43
+      },
+      {
+        "boundary_step_id": 45,
+        "detected_at_step_id": 45
+      },
+      {
+        "boundary_step_id": 48,
+        "detected_at_step_id": 48
+      },
+      {
+        "boundary_step_id": 57,
+        "detected_at_step_id": 57
+      }
+    ],
+    "DEV_006": [
+      {
+        "boundary_step_id": 5,
+        "detected_at_step_id": 5
+      },
+      {
+        "boundary_step_id": 7,
+        "detected_at_step_id": 7
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 26,
+        "detected_at_step_id": 26
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 42,
+        "detected_at_step_id": 42
+      }
+    ],
+    "DEV_007": [
+      {
+        "boundary_step_id": 15,
+        "detected_at_step_id": 15
+      },
+      {
+        "boundary_step_id": 24,
+        "detected_at_step_id": 24
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      }
+    ],
+    "DEV_008": [
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 23
+      },
+      {
+        "boundary_step_id": 28,
+        "detected_at_step_id": 28
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 31,
+        "detected_at_step_id": 31
+      }
+    ],
+    "DEV_009": [
+      {
+        "boundary_step_id": 4,
+        "detected_at_step_id": 4
+      },
+      {
+        "boundary_step_id": 15,
+        "detected_at_step_id": 15
+      },
+      {
+        "boundary_step_id": 18,
+        "detected_at_step_id": 18
+      },
+      {
+        "boundary_step_id": 19,
+        "detected_at_step_id": 19
+      },
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 20
+      }
+    ],
+    "DEV_010": [
+      {
+        "boundary_step_id": 10,
+        "detected_at_step_id": 10
+      },
+      {
+        "boundary_step_id": 17,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 19,
+        "detected_at_step_id": 19
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 23
+      }
+    ]
+  },
+  "structure_purpose": {
+    "DEV_001": [
+      {
+        "boundary_step_id": 13,
+        "detected_at_step_id": 13
+      },
+      {
+        "boundary_step_id": 14,
+        "detected_at_step_id": 14
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 19,
+        "detected_at_step_id": 19
+      },
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 23
+      },
+      {
+        "boundary_step_id": 24,
+        "detected_at_step_id": 24
+      },
+      {
+        "boundary_step_id": 25,
+        "detected_at_step_id": 25
+      },
+      {
+        "boundary_step_id": 28,
+        "detected_at_step_id": 28
+      }
+    ],
+    "DEV_002": [
+      {
+        "boundary_step_id": 2,
+        "detected_at_step_id": 2
+      },
+      {
+        "boundary_step_id": 4,
+        "detected_at_step_id": 4
+      },
+      {
+        "boundary_step_id": 15,
+        "detected_at_step_id": 15
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 20
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 22,
+        "detected_at_step_id": 22
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 31,
+        "detected_at_step_id": 31
+      }
+    ],
+    "DEV_003": [
+      {
+        "boundary_step_id": 4,
+        "detected_at_step_id": 4
+      },
+      {
+        "boundary_step_id": 6,
+        "detected_at_step_id": 6
+      },
+      {
+        "boundary_step_id": 12,
+        "detected_at_step_id": 12
+      },
+      {
+        "boundary_step_id": 18,
+        "detected_at_step_id": 18
+      },
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 20
+      }
+    ],
+    "DEV_004": [
+      {
+        "boundary_step_id": 5,
+        "detected_at_step_id": 5
+      },
+      {
+        "boundary_step_id": 25,
+        "detected_at_step_id": 25
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 29,
+        "detected_at_step_id": 29
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 34,
+        "detected_at_step_id": 34
+      },
+      {
+        "boundary_step_id": 37,
+        "detected_at_step_id": 37
+      },
+      {
+        "boundary_step_id": 38,
+        "detected_at_step_id": 38
+      },
+      {
+        "boundary_step_id": 40,
+        "detected_at_step_id": 40
+      },
+      {
+        "boundary_step_id": 41,
+        "detected_at_step_id": 41
+      },
+      {
+        "boundary_step_id": 42,
+        "detected_at_step_id": 42
+      }
+    ],
+    "DEV_005": [
+      {
+        "boundary_step_id": 4,
+        "detected_at_step_id": 4
+      },
+      {
+        "boundary_step_id": 6,
+        "detected_at_step_id": 6
+      },
+      {
+        "boundary_step_id": 28,
+        "detected_at_step_id": 28
+      },
+      {
+        "boundary_step_id": 31,
+        "detected_at_step_id": 31
+      },
+      {
+        "boundary_step_id": 33,
+        "detected_at_step_id": 33
+      },
+      {
+        "boundary_step_id": 43,
+        "detected_at_step_id": 43
+      },
+      {
+        "boundary_step_id": 44,
+        "detected_at_step_id": 44
+      },
+      {
+        "boundary_step_id": 45,
+        "detected_at_step_id": 45
+      },
+      {
+        "boundary_step_id": 48,
+        "detected_at_step_id": 48
+      },
+      {
+        "boundary_step_id": 50,
+        "detected_at_step_id": 50
+      },
+      {
+        "boundary_step_id": 57,
+        "detected_at_step_id": 57
+      },
+      {
+        "boundary_step_id": 62,
+        "detected_at_step_id": 62
+      }
+    ],
+    "DEV_006": [
+      {
+        "boundary_step_id": 5,
+        "detected_at_step_id": 5
+      },
+      {
+        "boundary_step_id": 7,
+        "detected_at_step_id": 7
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 17,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 18,
+        "detected_at_step_id": 18
+      },
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 20
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 26,
+        "detected_at_step_id": 26
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 38,
+        "detected_at_step_id": 38
+      },
+      {
+        "boundary_step_id": 41,
+        "detected_at_step_id": 41
+      },
+      {
+        "boundary_step_id": 42,
+        "detected_at_step_id": 42
+      }
+    ],
+    "DEV_007": [
+      {
+        "boundary_step_id": 15,
+        "detected_at_step_id": 15
+      },
+      {
+        "boundary_step_id": 17,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 24,
+        "detected_at_step_id": 24
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 32,
+        "detected_at_step_id": 32
+      }
+    ],
+    "DEV_008": [
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 17,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 23
+      },
+      {
+        "boundary_step_id": 28,
+        "detected_at_step_id": 28
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 31,
+        "detected_at_step_id": 31
+      },
+      {
+        "boundary_step_id": 32,
+        "detected_at_step_id": 32
+      }
+    ],
+    "DEV_009": [
+      {
+        "boundary_step_id": 4,
+        "detected_at_step_id": 4
+      },
+      {
+        "boundary_step_id": 6,
+        "detected_at_step_id": 6
+      },
+      {
+        "boundary_step_id": 9,
+        "detected_at_step_id": 9
+      },
+      {
+        "boundary_step_id": 15,
+        "detected_at_step_id": 15
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 17,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 18,
+        "detected_at_step_id": 18
+      },
+      {
+        "boundary_step_id": 19,
+        "detected_at_step_id": 19
+      },
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 20
+      },
+      {
+        "boundary_step_id": 22,
+        "detected_at_step_id": 22
+      }
+    ],
+    "DEV_010": [
+      {
+        "boundary_step_id": 10,
+        "detected_at_step_id": 10
+      },
+      {
+        "boundary_step_id": 17,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 18,
+        "detected_at_step_id": 18
+      },
+      {
+        "boundary_step_id": 19,
+        "detected_at_step_id": 19
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 23
+      }
+    ]
+  },
+  "phase_rule": {
+    "DEV_001": [
+      {
+        "boundary_step_id": 13,
+        "detected_at_step_id": 14
+      },
+      {
+        "boundary_step_id": 17,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 18,
+        "detected_at_step_id": 18
+      },
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 26
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      }
+    ],
+    "DEV_002": [
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 20
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 22
+      },
+      {
+        "boundary_step_id": 29,
+        "detected_at_step_id": 29
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 31
+      }
+    ],
+    "DEV_003": [
+      {
+        "boundary_step_id": 12,
+        "detected_at_step_id": 12
+      },
+      {
+        "boundary_step_id": 13,
+        "detected_at_step_id": 14
+      }
+    ],
+    "DEV_004": [
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 23
+      },
+      {
+        "boundary_step_id": 29,
+        "detected_at_step_id": 29
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 32,
+        "detected_at_step_id": 32
+      },
+      {
+        "boundary_step_id": 33,
+        "detected_at_step_id": 35
+      },
+      {
+        "boundary_step_id": 37,
+        "detected_at_step_id": 38
+      },
+      {
+        "boundary_step_id": 40,
+        "detected_at_step_id": 40
+      },
+      {
+        "boundary_step_id": 43,
+        "detected_at_step_id": 43
+      }
+    ],
+    "DEV_005": [
+      {
+        "boundary_step_id": 5,
+        "detected_at_step_id": 6
+      },
+      {
+        "boundary_step_id": 8,
+        "detected_at_step_id": 8
+      },
+      {
+        "boundary_step_id": 9,
+        "detected_at_step_id": 11
+      },
+      {
+        "boundary_step_id": 28,
+        "detected_at_step_id": 28
+      },
+      {
+        "boundary_step_id": 36,
+        "detected_at_step_id": 38
+      },
+      {
+        "boundary_step_id": 40,
+        "detected_at_step_id": 40
+      },
+      {
+        "boundary_step_id": 43,
+        "detected_at_step_id": 44
+      },
+      {
+        "boundary_step_id": 45,
+        "detected_at_step_id": 45
+      },
+      {
+        "boundary_step_id": 47,
+        "detected_at_step_id": 47
+      },
+      {
+        "boundary_step_id": 49,
+        "detected_at_step_id": 49
+      },
+      {
+        "boundary_step_id": 52,
+        "detected_at_step_id": 52
+      },
+      {
+        "boundary_step_id": 55,
+        "detected_at_step_id": 55
+      },
+      {
+        "boundary_step_id": 56,
+        "detected_at_step_id": 56
+      },
+      {
+        "boundary_step_id": 57,
+        "detected_at_step_id": 57
+      },
+      {
+        "boundary_step_id": 60,
+        "detected_at_step_id": 60
+      },
+      {
+        "boundary_step_id": 61,
+        "detected_at_step_id": 64
+      }
+    ],
+    "DEV_006": [
+      {
+        "boundary_step_id": 6,
+        "detected_at_step_id": 7
+      },
+      {
+        "boundary_step_id": 8,
+        "detected_at_step_id": 10
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 16
+      },
+      {
+        "boundary_step_id": 22,
+        "detected_at_step_id": 24
+      },
+      {
+        "boundary_step_id": 27,
+        "detected_at_step_id": 27
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      },
+      {
+        "boundary_step_id": 31,
+        "detected_at_step_id": 33
+      },
+      {
+        "boundary_step_id": 34,
+        "detected_at_step_id": 34
+      },
+      {
+        "boundary_step_id": 35,
+        "detected_at_step_id": 35
+      },
+      {
+        "boundary_step_id": 38,
+        "detected_at_step_id": 41
+      }
+    ],
+    "DEV_007": [
+      {
+        "boundary_step_id": 15,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 22
+      },
+      {
+        "boundary_step_id": 25,
+        "detected_at_step_id": 25
+      },
+      {
+        "boundary_step_id": 26,
+        "detected_at_step_id": 26
+      },
+      {
+        "boundary_step_id": 28,
+        "detected_at_step_id": 28
+      },
+      {
+        "boundary_step_id": 29,
+        "detected_at_step_id": 29
+      },
+      {
+        "boundary_step_id": 31,
+        "detected_at_step_id": 31
+      }
+    ],
+    "DEV_008": [
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 22,
+        "detected_at_step_id": 23
+      },
+      {
+        "boundary_step_id": 30,
+        "detected_at_step_id": 30
+      }
+    ],
+    "DEV_009": [
+      {
+        "boundary_step_id": 15,
+        "detected_at_step_id": 15
+      },
+      {
+        "boundary_step_id": 16,
+        "detected_at_step_id": 17
+      },
+      {
+        "boundary_step_id": 21,
+        "detected_at_step_id": 21
+      }
+    ],
+    "DEV_010": [
+      {
+        "boundary_step_id": 19,
+        "detected_at_step_id": 19
+      },
+      {
+        "boundary_step_id": 20,
+        "detected_at_step_id": 21
+      },
+      {
+        "boundary_step_id": 23,
+        "detected_at_step_id": 25
+      },
+      {
+        "boundary_step_id": 26,
+        "detected_at_step_id": 26
+      }
+    ]
+  }
+}

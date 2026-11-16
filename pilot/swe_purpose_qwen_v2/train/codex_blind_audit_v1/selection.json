@@ -1,0 +1,937 @@
+{
+  "seed": "swe-v2-codex-audit-2026-11-16:train",
+  "quota": {
+    "ACQUIRE": 30,
+    "CHECK": 30,
+    "UNKNOWN": 20,
+    "CONSTRUCT": 20,
+    "DELIVER": 10,
+    "OPERATE": 7,
+    "ENABLE": 5
+  },
+  "stratum_sizes": {
+    "ACQUIRE": 466,
+    "CHECK": 249,
+    "UNKNOWN": 139,
+    "CONSTRUCT": 42,
+    "DELIVER": 20,
+    "OPERATE": 14,
+    "ENABLE": 5
+  },
+  "items": [
+    {
+      "request_id": "TRAIN_013_s00067",
+      "stratum": "OPERATE",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00043",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_019_s00024",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_020_s00015",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_019_s00039",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00032",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_020_s00024",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_007_s00007",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_010_s00025",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_004_s00032",
+      "stratum": "ENABLE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_025_s00024",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_014_s00019",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00035",
+      "stratum": "OPERATE",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_008_s00053",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_021_s00030",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_001_s00017",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_019_s00034",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_019_s00018",
+      "stratum": "OPERATE",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_004_s00017",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "TRAIN_011_s00048",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_004_s00003",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_024_s00023",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00054",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_001_s00016",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_015_s00008",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_018_s00037",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_001_s00002",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_020_s00028",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_010_s00020",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_008_s00054",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_010_s00036",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_017_s00020",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00048",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "TRAIN_013_s00019",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_010_s00008",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00062",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "TRAIN_012_s00039",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_003_s00004",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_015_s00028",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_014_s00016",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_001_s00005",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_005_s00030",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_010_s00042",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_003_s00028",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_011_s00041",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_020_s00003",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_017_s00002",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00068",
+      "stratum": "ENABLE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_007_s00023",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00061",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "TRAIN_016_s00005",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_018_s00021",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_008_s00020",
+      "stratum": "OPERATE",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_011_s00047",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_024_s00025",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_008_s00008",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_007_s00021",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_003_s00001",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_024_s00022",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_015_s00019",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_005_s00024",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_012_s00030",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00060",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_010_s00030",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_011_s00064",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_007_s00008",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_024_s00010",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_009_s00010",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_024_s00005",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "TRAIN_016_s00022",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_021_s00003",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_011_s00005",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_016_s00016",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_017_s00007",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_005_s00026",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_015_s00011",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_011_s00051",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_023_s00012",
+      "stratum": "OPERATE",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_003_s00022",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_010_s00016",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00044",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00066",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00065",
+      "stratum": "OPERATE",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_024_s00004",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00061",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_025_s00012",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_018_s00009",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00057",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_010_s00028",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_008_s00049",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_016_s00021",
+      "stratum": "ENABLE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00056",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_015_s00035",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_021_s00005",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00049",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_002_s00021",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_014_s00020",
+      "stratum": "OPERATE",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_008_s00006",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_021_s00023",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00063",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_023_s00009",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_007_s00003",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_016_s00004",
+      "stratum": "ENABLE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_023_s00018",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_020_s00007",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_004_s00034",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_007_s00022",
+      "stratum": "DELIVER",
+      "inclusion_probability": 0.5,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_023_s00014",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_006_s00067",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_003_s00027",
+      "stratum": "ENABLE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00068",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "TRAIN_013_s00005",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "TRAIN_013_s00022",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00004",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_012_s00034",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_011_s00030",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_023_s00007",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_005_s00027",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "TRAIN_023_s00008",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_011_s00025",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_009_s00002",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_012_s00035",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_009_s00027",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_016_s00018",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_024_s00012",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_021_s00001",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_018_s00028",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.12048192771084337,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_013_s00039",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.06437768240343347,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_023_s00022",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.14388489208633093,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "TRAIN_011_s00039",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.47619047619047616,
+      "sampling": "probability"
+    }
+  ],
+  "package_manifest_sha256": "72a1da867c29ae21efd17e95ff8e615c05dc863495817cb146525de334745006",
+  "review_sha256": "15d9e92da14796dcd708ab86444183d225e4353edc0ae50a5b104faa9cc772b3",
+  "candidate_sha256": {
+    "TRAIN_013_s00067": "0e29cdf136efaf9bfc800117c5f6c153c625a0b3841a2a0442ad697dd7bb51ab",
+    "TRAIN_006_s00043": "c2f7afb36371e049af6d062152f17d8943099eada58089c1eb05fa948f30b535",
+    "TRAIN_019_s00024": "2a7fa5fe840ee0a08e40461a8780866130241c8f25ff5764816a6b8036f52893",
+    "TRAIN_020_s00015": "5355fb1104b9c6862c6250f43b989c941e49b3b01e800f6ac60d163ff90bb0a5",
+    "TRAIN_019_s00039": "e0452d76287b63468cd05fe80550a081678d4076d6f8b29cf8ec7a17789fea37",
+    "TRAIN_013_s00032": "3d8f31f3397a5de4348ff37d98cca84acc1d6459538fc24c8bb4d3339838243e",
+    "TRAIN_020_s00024": "0b58ce21dd3ebff2a76320fd157256808306893673218826c0b2aa13e7dad5ae",
+    "TRAIN_007_s00007": "784cece51bb79b58e1a2f1b2961b528f55796c642e013dc034c05a05bc4c24cc",
+    "TRAIN_010_s00025": "76a130da3c4e887a5eda4ee8b8370c331baa7d580d55f2726e760c6215e4c3e6",
+    "TRAIN_004_s00032": "428321a80683437148cabd53fd9a35f261e00156198f0168a4f46765bb854b6b",
+    "TRAIN_025_s00024": "eeccdc5b341f3de82b95f1e523c7dca1872710dbc28b8b8687f87df1a85f9e86",
+    "TRAIN_014_s00019": "21c05ad1cd2dbb7736cb504bb87d8c0a674452641a71ce55ac12256c37e43b43",
+    "TRAIN_013_s00035": "b5ae073a77eb8f99f880578e89d0ff8323186a9e6c78d34efa269b2a789f2116",
+    "TRAIN_008_s00053": "f5f07872f3f62d15d96a37bc789af8af1454fb2bab126a01ec80733aa4390d2b",
+    "TRAIN_021_s00030": "7737c939461916726c96f14e6038efbfb62e4524f2058d6d27699462ef29ee6d",
+    "TRAIN_001_s00017": "520ea0c02a091cad2d34e9de84cb49040fe2e61956343a2bd80b725429110c54",
+    "TRAIN_019_s00034": "cf5849e200a8288be21bfdcb334a31b209205f8dcc568e26792202d3b04e7ed4",
+    "TRAIN_019_s00018": "7aa0b0ddc9872fe1fd600d8957beb296ec09cb64a04cdef23e145c64434c94f9",
+    "TRAIN_004_s00017": "b89518a715fff7c3fd960b68e6fe22135b35ccf40d81669f71b12b5e345e84f1",
+    "TRAIN_011_s00048": "4425e9ff1d6899c85d55559c1ac2967232bc607b51bb93628e75858dbec9ed0b",
+    "TRAIN_004_s00003": "4fef17adc859c38891a17bbf7f308d9dd7d3822c9efb964cf81bba18326adc77",
+    "TRAIN_024_s00023": "19292ceb135f2dca51277a2ec6e7c4258f692f9e7224d52afc0634fc26c82325",
+    "TRAIN_006_s00054": "7e946caa9ae34ffca5acda76451c24ba256cc9d51297e53aba02849185103422",
+    "TRAIN_001_s00016": "09bd6cb3c679cc2c02fa435a76296a2b10b7fc015bb8b1d6612f059236683fe0",
+    "TRAIN_015_s00008": "242638f4081749d80650a367f4ebccfccc609210da3bc6f1bff0597c7ce56d92",
+    "TRAIN_018_s00037": "81509641b005c58ff2cf77ac8381f33cdffb3352926ec5b46e92eb8bb559e8a3",
+    "TRAIN_001_s00002": "592a01cd0301f02d6e4cfc5f2f8397acd5a9c4420bd9e446996969439e897bbd",
+    "TRAIN_020_s00028": "4e1ca48e1e007d5101235cd155d3223fe979ab749622fc30ab74af0aecc12d0a",
+    "TRAIN_010_s00020": "dff77d918d53484c19083329682756582e08fc55c7e3dd8f83ee551f2aa47bc2",
+    "TRAIN_008_s00054": "0ad6d9c6ab516e6ad0201cb9fb3c4dba5ecac471b4c86fe6a53d1145627b0bdb",
+    "TRAIN_010_s00036": "4db2f0aebd6708b9c7a7bfa3f3401654089e87cbb11eeb3e4c93a3da09ac84e4",
+    "TRAIN_017_s00020": "7cbea6acd584cdc9c9fc514e8f81cfd954050e2ba863e1fb49f586c926f1ae19",
+    "TRAIN_013_s00048": "8387917b43ee69320d63b1618e3320061883286a6668b833603d09ae6dd2fdda",
+    "TRAIN_013_s00019": "67c690449e5f239eedc042a505e19cd48143fddc03282156a84e1858df76c057",
+    "TRAIN_010_s00008": "daf523953f16dc82e7b72c0cf2100434c8b56f1d9f76efe209c3b4319b899ccd",
+    "TRAIN_013_s00062": "4e317980af0d117105242e5143e49fdd234c967b5b2184c2aac4bbd03c7c979a",
+    "TRAIN_012_s00039": "b72a2ca2bd0ab4dbcf1df117d690b8c4c985769c810fd21b0c3862cf9967c245",
+    "TRAIN_003_s00004": "138c47eadd57a1fe845186b3b9af508b17eec1bfc0a2cee0f885b83f98153a27",
+    "TRAIN_015_s00028": "bd2d0aae172034640bc40895b21d09ef035c5cdba678dcbfb4b9052bab639834",
+    "TRAIN_014_s00016": "c152925622897515aa64c7ac8fa29810847d21b6b9f38e99c8ef035f578890d0",
+    "TRAIN_001_s00005": "be4dad6c5ed6939cc5f7cd9a7f8919b8ceb38b152897547bd199c940b983c934",
+    "TRAIN_005_s00030": "33f0cbd0a0b0ec73f1861317942de91b94d9a8d00a20ab54a01f5e7eaba86828",
+    "TRAIN_010_s00042": "1c2af14ed3314a236c8daf966e37ecc78cc8af9d8e10057a9c22b88454b4fc18",
+    "TRAIN_003_s00028": "356c7872263c5e9ab68c881edf990eb3185a92d934dd35bbcb948f1933143c96",
+    "TRAIN_011_s00041": "96178d13ec23aea44c73be5cbd0fa90a6c7256208bd824d121f9814ef1a74dd9",
+    "TRAIN_020_s00003": "b9d7120f18d24306f256a73adecf68eb885c9b2be1b2e5671b81fbeab5cee50c",
+    "TRAIN_017_s00002": "adbf79e6180bac84739456378faadf953e12fd1a9a4618abf8277a9b38ed9ce5",
+    "TRAIN_006_s00068": "e2bb32091e74187bb5b079116e67f4361eb4c406aee558cde50afa29009635fa",
+    "TRAIN_007_s00023": "e8bd6c3837f4c708b30df43a1cd38e293ec16126a53404ecb97bef4ec6a16156",
+    "TRAIN_013_s00061": "358a13b2c2261e35e1275755f3f3ed9130aadf81842b9cccfaa50f6938866a6c",
+    "TRAIN_016_s00005": "0fef291c8260f91bf7b3b750b6a239a2663f6025022bd975b86125a8880fd73c",
+    "TRAIN_018_s00021": "1a8adf80c0f281e99903dd7d36d7578934317432ba042f518bf35526775cf78f",
+    "TRAIN_008_s00020": "dd776d6de74688a53dd37c56ad87419525c3b30d43845d714832b1a5c56d9147",
+    "TRAIN_011_s00047": "3dd4c84d77d9c1d88b72c9d015766147fc41905ff0f9c5218e3b0744d25e1c86",
+    "TRAIN_024_s00025": "c95039ff81ef511b72a9316cf8f1936c4be5721e70096886712b2169572dfaa6",
+    "TRAIN_008_s00008": "b0bc4ec63a22d52c94f1c37dbf59cfbf26108aad41a28e0684650e34328dd8c0",
+    "TRAIN_007_s00021": "40a74bfd7872ee3a3ed0b9d4412470234c92a850b3e9ba77feea346c01dcd2a7",
+    "TRAIN_003_s00001": "9c6f8bce89ecd72d20ac2f8fcb9a339a8d2b1a1087059b61e9dc22a5713dc17b",
+    "TRAIN_024_s00022": "13b68e17cc4b43be3424f3e812efa77e957d2aa2458e96668a93fe534bbe882a",
+    "TRAIN_015_s00019": "e2369a0815d2c1975f1626d5190d66c9fa11e4f8c270b2382f441f0bd1325ba6",
+    "TRAIN_005_s00024": "553b6f61fb82cf76a3347ebd3375cfe6ba87970e8bc09fb24f7d6eca552e372d",
+    "TRAIN_012_s00030": "06bb07cf37ec86700b7dfcf53fd2abbd3a21677a449fd73fbf24cb807fbc74de",
+    "TRAIN_013_s00060": "bfb2e7bb28c9d96e68607b7a32759862eb001d6a2dc03d4b5c06cdc71912da97",
+    "TRAIN_010_s00030": "1cc87ab6fb2dce2a3b08dc06d72bad568731c42876984626395928327ddb02cf",
+    "TRAIN_011_s00064": "ae9f7265fbecc4e99b5f96ab6c3d4b19fb680203b0fcf13e312f361e30a08056",
+    "TRAIN_007_s00008": "720c379379d767cdebd30b408150fd3f5e8f0a419776025c46760bdc61c464ed",
+    "TRAIN_024_s00010": "560132534597f0e7fdf4ea089f3b565282b0c94c374f9da64205b51805d5edd2",
+    "TRAIN_009_s00010": "1752b1254b63711c2b0908db05a8b4bf67636d345dfccacc5cdf6e872ea245c1",
+    "TRAIN_024_s00005": "8ef8e4b3b7a37cb5d0521669df40c7619260e84efd9683b838211d3a8d0a8c44",
+    "TRAIN_016_s00022": "822dd3043377bc05985144131d248ae5f13961a2db451a13b502724c540da2a5",
+    "TRAIN_021_s00003": "45551de6b3f8a232c8a80d6c7557f71866491ca52483dc275cbfac35bd754400",
+    "TRAIN_011_s00005": "385cbada1fffca9b2fa0cc0894bdf7e52d1605aa7465cc31f2e5cacc6dec16ec",
+    "TRAIN_016_s00016": "45f3fd9aad506c186af5d25ec9b6af3590e1c49b205d3421006c4613a373bcc3",
+    "TRAIN_017_s00007": "60abe1a91df10e3292853e2cbfe46f9d1acfe9609a91cdec8179d85d60660868",
+    "TRAIN_005_s00026": "8664539e8251188cf6b757d836a3c52b0588e4af210ccf7b0e9e09c2be108d21",
+    "TRAIN_015_s00011": "1ad50e111a29d213a3618ecfae4b756a577aa9d9d7571e707ff75928365d8f22",
+    "TRAIN_011_s00051": "ad8e08b3fa54931d0f87bff56b62c1eea7a75a5a3d0aa075d1d52f3fad92307d",
+    "TRAIN_023_s00012": "1d5fae255b59581fc6f57adc76584e1f1b3b56120518ba1924e974bf8e044331",
+    "TRAIN_003_s00022": "6f9b91e59ecc04b2a06a8d46c23daf023d615ff373c97229c6ae3c82f1037fcb",
+    "TRAIN_010_s00016": "4ebb5237e3798705c13e828474466781744db9f664106fe0de06bf80bf32e21f",
+    "TRAIN_013_s00044": "561bd3444fd36dd42440939b6de9cd9e495b6bef8cba3e4bb6e246d0df3a1a30",
+    "TRAIN_006_s00066": "07ad41aea064006d62980f085217156e50d95113ea8468157dd5b8c9444ebbd6",
+    "TRAIN_013_s00065": "341992d479940d82d427deb685489f0a3707e5f3d68a14fc72c70e6560e8541b",
+    "TRAIN_024_s00004": "ff7c8940bc7c22f01687e1ea82a7e4424d99e762ac1e8c88b2d7ea76a21d2ac5",
+    "TRAIN_006_s00061": "ddeffebc8770541cf3466a9ca1118ddb56d8d69001874d8aaded8f1441445b16",
+    "TRAIN_025_s00012": "a8c5885b53ee06c89088b24a18b6b065d5c8a2ac49e43f10e872ecd933de141d",
+    "TRAIN_018_s00009": "c7f31d789314719b0fe0d453d68a08faf22d1996cb06bef866f670de2488a396",
+    "TRAIN_006_s00057": "d258d47da84683273dab87a92a7ffcb11f5532cd6d6b9ad4a682257bafb7d460",
+    "TRAIN_010_s00028": "8926780ddf1de0b2ee016bd863e18352fb268512f33dd22aa069b6c1578fa0be",
+    "TRAIN_008_s00049": "03c2da8d81a41b63ccaea64badaeed1e51dfaba18c1d6102475ee627f2136734",
+    "TRAIN_016_s00021": "1c10435fc8480284fe54fe9d57bd3eab114ea28978572ff22f97a05e4b91d245",
+    "TRAIN_006_s00056": "3854bac553380843f4410c1db37f9d69a10bef79c0a33ab2353d38c26cc20336",
+    "TRAIN_015_s00035": "9d063abe317c532b7a9f2d78c790beaf4079a6038aab938668032d9d4624adfe",
+    "TRAIN_021_s00005": "ec96babdca3940467efcc3b18a40f19985fb1123089f4ebc4169db0dcfb9fcfc",
+    "TRAIN_013_s00049": "fc29e9f16f830ef681853fe3e5f2ad93afb37aabe2ac7b7aa1e9ce8fb53b38ff",
+    "TRAIN_002_s00021": "6bdbcc17cb8e321c9b6b2b2b0b6eaaebe5b9f31f5b9d5edb95bb3751c6325f22",
+    "TRAIN_014_s00020": "a7548afc05a502abedec695dd1368475fed9f70409a5725f5c0f796fedfa8830",
+    "TRAIN_008_s00006": "dbe2ae583bfb0e786eb8a0aa1b2259e0f5794e6d1dce92bb831d7082650e06e9",
+    "TRAIN_021_s00023": "8936d94911346e824d340d4f8ce66e3754c7f4442e71fc4b459d1277a80d23f0",
+    "TRAIN_006_s00063": "2ec220c0c3707fc12f13a5fe0d19ed7bbc99c9d2729ce5849ec7b32a2699b008",
+    "TRAIN_023_s00009": "85d6fe0aaae11dffb87bbc96cbbb9ec1300325141500cff5bda9e3cd0d519d32",
+    "TRAIN_007_s00003": "a2b1beda1624dc411c21e2d685123f18dd341c115556213c725b7f3487fd0fc5",
+    "TRAIN_016_s00004": "7a39b9edb031286e3875bc9599f002ff3f513527193086d87a0d68e64620796c",
+    "TRAIN_023_s00018": "9d4b65012a9f0dee8ae65939cc6a6aaf5dfa71e21ae5b93640b60ae50c5700fb",
+    "TRAIN_020_s00007": "be1e6272666d89527d93db0b938007348484c24eafa91bf2cde152281d5ec3c1",
+    "TRAIN_004_s00034": "6e63b24f9e3f0e696f4adf9edb8087f54788b0bd3fe158abd9ebbd9e2a55eda4",
+    "TRAIN_007_s00022": "e27f4a1aca45155949443b9c59aec6c1828beb6da239fcf33b52290762933ce6",
+    "TRAIN_023_s00014": "daf70e6863b3939fa376787751445832b0277d1f3b0e05eee4df4de53238b0c0",
+    "TRAIN_006_s00067": "557cefa0471a7be7c9c2d300e9330e7e46bc4d6b47ef7f7da4fb3a69f619571b",
+    "TRAIN_003_s00027": "3ce25434b2a6f6354f52dbc7b983b8fc5460e751fb87cf77cdc66e281d3a33b1",
+    "TRAIN_013_s00068": "bc278b755ccab0de50c9c6a26b497cb5c4982ae25fe61b155713a3fe2078ac5d",
+    "TRAIN_013_s00005": "abb7f6933e79fcf52c01e020376c774eb72d267db6a36318532487753c82af44",
+    "TRAIN_013_s00022": "e9f956cd05b1563aa4f885d7ed34b6d7c9f84cc339a6187e5e34e5a59acaf3c2",
+    "TRAIN_013_s00004": "4b7bc25b2fb1657fe81fcbc780a7c7811b61b6c9b28172fe0d91e57de53fb47b",
+    "TRAIN_012_s00034": "d66944c1949baefbf92e79cc8d621fd9b35b39d14593baa488a197c44c40e73e",
+    "TRAIN_011_s00030": "558d8d4c11d970c367246b28d45ab3780e4465d4cc323f60fba9be60ddc17eda",
+    "TRAIN_023_s00007": "a79a6cdb4646f5760a5febee7b7a0276336403e4a99a0636c5cb7157a3e07a2b",
+    "TRAIN_005_s00027": "8feb74b250654d33d68e8bf104de98470f03d1961cecf206df687df79d1e6bc4",
+    "TRAIN_023_s00008": "37dd2fc61a6e930b58dfa3a989f80311579a4a69ab55ffb66373fad663b4215b",
+    "TRAIN_011_s00025": "58cf689b047877c214695802139ad7fcd41440c817fa22bd15616dfdcb81127e",
+    "TRAIN_009_s00002": "657df282edbd68608eb5980d0bb903c0ba017301cec36ab958ac0238a3048111",
+    "TRAIN_012_s00035": "55c5b1dd568ec3bb263a6a40583763e2ec75f21cd49363f5d5df4729054625ee",
+    "TRAIN_009_s00027": "055bcee72165aa6ebd6f88d61114def74b2ba3bb67eeaf59dad7b817d3b09af0",
+    "TRAIN_016_s00018": "fc6dc397429118cfc501ecdbe27b22e0df45545b09738248a101aa7ba840c4ab",
+    "TRAIN_024_s00012": "8aa751e77a298fbec7da27349e687b8a89287f33e1686a5ddd5c67c52c383d30",
+    "TRAIN_021_s00001": "1c2286c66f8194bbf6d136ad9fe4ce0057c86897cdc97c5ec4b6dbe2c1afe589",
+    "TRAIN_018_s00028": "55be2a7931fdb3cbe186db9263291609fab5dd1eb7a25ac009b0cdc48e5c007e",
+    "TRAIN_013_s00039": "9abb372fa5e8a80b26112b7bcb534dfd600432c331823accfe6151a2af549545",
+    "TRAIN_023_s00022": "eaa430a40d34c9652c0bfeb7d7600870c3a61505febb4a7729abed138a0c3c23",
+    "TRAIN_011_s00039": "a00e7a2a330b764ed131369895327eda3ebd4490e60479f7c4852a2dcbcaa3ed"
+  }
+}

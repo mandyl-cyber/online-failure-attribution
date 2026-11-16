@@ -1,0 +1,311 @@
+{
+  "protocol": "swe-purpose-reviewed-ai200-boundary-v1",
+  "scope": "25 SWE train trajectories; 10 disjoint SWE dev trajectories; previously exposed corpus",
+  "reviewed_train": 130,
+  "reviewed_dev": 70,
+  "reviewer_kind": "ai",
+  "human_accuracy_evaluated": false,
+  "purpose_train_classes": {
+    "ACQUIRE": 46,
+    "CONSTRUCT": 35,
+    "UNKNOWN": 22,
+    "CHECK": 27
+  },
+  "purpose_unlearned_classes": [
+    "ENABLE",
+    "OPERATE",
+    "DELIVER"
+  ],
+  "purpose_dev_audit": {
+    "n": 70,
+    "unweighted_accuracy": 0.8,
+    "probability_sample_weighted_accuracy": 0.7738571428571429,
+    "macro_f1": 0.4418089558872551,
+    "reference_counts": {
+      "CONSTRUCT": 16,
+      "CHECK": 12,
+      "ACQUIRE": 31,
+      "UNKNOWN": 10,
+      "ENABLE": 1
+    },
+    "prediction_counts": {
+      "CONSTRUCT": 19,
+      "CHECK": 7,
+      "ACQUIRE": 25,
+      "UNKNOWN": 19
+    }
+  },
+  "threshold_selection": {
+    "structure": {
+      "train_nested_oof_f1": 0.4660194174757281,
+      "threshold": 0.6
+    },
+    "structure_purpose": {
+      "train_nested_oof_f1": 0.43454038997214484,
+      "threshold": 0.55
+    }
+  },
+  "boundary_dev": {
+    "structure": {
+      "exact_D0": {
+        "counts": [
+          23,
+          58,
+          54
+        ],
+        "precision": 0.39655172413793105,
+        "recall": 0.42592592592592593,
+        "f1": 0.41071428571428575
+      },
+      "tol1_D0": {
+        "counts": [
+          29,
+          58,
+          54
+        ],
+        "precision": 0.5,
+        "recall": 0.5370370370370371,
+        "f1": 0.5178571428571428
+      }
+    },
+    "structure_purpose": {
+      "exact_D0": {
+        "counts": [
+          32,
+          89,
+          54
+        ],
+        "precision": 0.3595505617977528,
+        "recall": 0.5925925925925926,
+        "f1": 0.44755244755244755
+      },
+      "tol1_D0": {
+        "counts": [
+          37,
+          89,
+          54
+        ],
+        "precision": 0.4157303370786517,
+        "recall": 0.6851851851851852,
+        "f1": 0.5174825174825175
+      }
+    },
+    "phase_rule": {
+      "exact_D0": {
+        "counts": [
+          13,
+          62,
+          54
+        ],
+        "precision": 0.20967741935483872,
+        "recall": 0.24074074074074073,
+        "f1": 0.22413793103448276
+      },
+      "tol1_D0": {
+        "counts": [
+          25,
+          62,
+          54
+        ],
+        "precision": 0.4032258064516129,
+        "recall": 0.46296296296296297,
+        "f1": 0.4310344827586207
+      }
+    }
+  },
+  "boundary_delta_points": -0.037462537462529255,
+  "paired_group_bootstrap_ci95": [
+    -7.718385905086673,
+    9.61832726837478
+  ],
+  "purpose_model_bytes": 248050,
+  "inference_ms": {
+    "median": 1.3482320064213127,
+    "p95": 1.6505422929185443,
+    "n": 350
+  },
+  "exported_probability_error": 7.771561172376096e-16,
+  "purpose_folds": [
+    {
+      "fold": 0,
+      "train_groups": [
+        "18326d0c2d6211eca2dd76e06b0acdb7904a16c67b3781297a2a01c3ae6211d7",
+        "210f81048d4a7c43c858300a72f0929c7d1145f98214cc6f8772d00d2bc36546",
+        "22aa4ec553acd360f725d644929346e045b1425d5972a6f9414fbcbb519238c0",
+        "260b76417d9220db6f8f0f3752a91a54663094e512b93b8dc6a8a6496f673498",
+        "46497fe1794d217d3e343c971d37c12885b450f20ee39e1b8a424ffec6881634",
+        "48d5d4e6455ae6308e36705c8f75ef2a36e97fcda532a3ce5ea1393f5974760a",
+        "5311952a90919e6fb7c15fce81c6b2bad5a9f44d174e858c0b727ec126480c3b",
+        "5c61029c180b164cbac207068e7effb5f46e3e26a523a26ec530d4200bcff53b",
+        "64bbd7ce8ab9bcb94965b5773cea13c1849bc0bf38c4b5bb5713084115f45160",
+        "76ccf807e0d90d0c1865d97ed6b73172c66699259d8dd8c0a12dbdc95114038f",
+        "7ba5d82efc3829611b82cc26995246e547bd1c8356e611bda9aa5a2c324c92b4",
+        "8a98c6fc092c1dd26a8b4310eb7e5a470501536959a4a898b54204bef82cb20c",
+        "a5665d680f00c4b323f8ee88328f9a21f2d82bd9fc1a4a717f3807d21469ebc3",
+        "aaf7dd167b18c0407f2226a72d6388df2953e53a41e56104d474e62443bb6ee7",
+        "be47ccda97a3e65a50ec66a9f9b67bcb1b16e54f436431f0b47aa376e677da2c",
+        "cf154b179a5cd40b8e71138a1929e21f39f854490d8ce581dbc426aec53785d4",
+        "db5bc813fe51633f3b932e53bcfc0550f7529472d485aec77049b98c2182ce41",
+        "efd1f6e6227363c8fca2b6bdfab6e6177750ae993e7837f81b5ea1697df994b0",
+        "f2c7b68ee659eb0dcd62de127f34871a916285a7b207eecf201795f4f942de76",
+        "fdf3c10affaa44c5d227641984458dde0c2d06b51d3129cc6b8e5c8a6dbb1d67"
+      ],
+      "test_groups": [
+        "317e5baf43c951fe0cc4b239c592fe0ba008363b7bffed4afd2d6848bbc57ab8",
+        "5dd8e56019abe6c8e7d264b0f4b99577d464101d796bc10f8e63d468e6a5427d",
+        "9577a656bdca887bda11b04e5d096a999b63303e223cf29d2123cb9528c4ea23",
+        "d83e871b0a053d5bc567f3643da34ec5ea3ecb40253b975bb15bf944c99d5738",
+        "fe8c5432c2258a9145eb63a3e3284d8e3da4e1b631e0cd47353257256b888c9e"
+      ],
+      "reviewed_train": 107
+    },
+    {
+      "fold": 1,
+      "train_groups": [
+        "18326d0c2d6211eca2dd76e06b0acdb7904a16c67b3781297a2a01c3ae6211d7",
+        "210f81048d4a7c43c858300a72f0929c7d1145f98214cc6f8772d00d2bc36546",
+        "22aa4ec553acd360f725d644929346e045b1425d5972a6f9414fbcbb519238c0",
+        "260b76417d9220db6f8f0f3752a91a54663094e512b93b8dc6a8a6496f673498",
+        "317e5baf43c951fe0cc4b239c592fe0ba008363b7bffed4afd2d6848bbc57ab8",
+        "48d5d4e6455ae6308e36705c8f75ef2a36e97fcda532a3ce5ea1393f5974760a",
+        "5311952a90919e6fb7c15fce81c6b2bad5a9f44d174e858c0b727ec126480c3b",
+        "5c61029c180b164cbac207068e7effb5f46e3e26a523a26ec530d4200bcff53b",
+        "5dd8e56019abe6c8e7d264b0f4b99577d464101d796bc10f8e63d468e6a5427d",
+        "7ba5d82efc3829611b82cc26995246e547bd1c8356e611bda9aa5a2c324c92b4",
+        "8a98c6fc092c1dd26a8b4310eb7e5a470501536959a4a898b54204bef82cb20c",
+        "9577a656bdca887bda11b04e5d096a999b63303e223cf29d2123cb9528c4ea23",
+        "aaf7dd167b18c0407f2226a72d6388df2953e53a41e56104d474e62443bb6ee7",
+        "be47ccda97a3e65a50ec66a9f9b67bcb1b16e54f436431f0b47aa376e677da2c",
+        "cf154b179a5cd40b8e71138a1929e21f39f854490d8ce581dbc426aec53785d4",
+        "d83e871b0a053d5bc567f3643da34ec5ea3ecb40253b975bb15bf944c99d5738",
+        "efd1f6e6227363c8fca2b6bdfab6e6177750ae993e7837f81b5ea1697df994b0",
+        "f2c7b68ee659eb0dcd62de127f34871a916285a7b207eecf201795f4f942de76",
+        "fdf3c10affaa44c5d227641984458dde0c2d06b51d3129cc6b8e5c8a6dbb1d67",
+        "fe8c5432c2258a9145eb63a3e3284d8e3da4e1b631e0cd47353257256b888c9e"
+      ],
+      "test_groups": [
+        "46497fe1794d217d3e343c971d37c12885b450f20ee39e1b8a424ffec6881634",
+        "64bbd7ce8ab9bcb94965b5773cea13c1849bc0bf38c4b5bb5713084115f45160",
+        "76ccf807e0d90d0c1865d97ed6b73172c66699259d8dd8c0a12dbdc95114038f",
+        "a5665d680f00c4b323f8ee88328f9a21f2d82bd9fc1a4a717f3807d21469ebc3",
+        "db5bc813fe51633f3b932e53bcfc0550f7529472d485aec77049b98c2182ce41"
+      ],
+      "reviewed_train": 104
+    },
+    {
+      "fold": 2,
+      "train_groups": [
+        "18326d0c2d6211eca2dd76e06b0acdb7904a16c67b3781297a2a01c3ae6211d7",
+        "22aa4ec553acd360f725d644929346e045b1425d5972a6f9414fbcbb519238c0",
+        "260b76417d9220db6f8f0f3752a91a54663094e512b93b8dc6a8a6496f673498",
+        "317e5baf43c951fe0cc4b239c592fe0ba008363b7bffed4afd2d6848bbc57ab8",
+        "46497fe1794d217d3e343c971d37c12885b450f20ee39e1b8a424ffec6881634",
+        "5311952a90919e6fb7c15fce81c6b2bad5a9f44d174e858c0b727ec126480c3b",
+        "5c61029c180b164cbac207068e7effb5f46e3e26a523a26ec530d4200bcff53b",
+        "5dd8e56019abe6c8e7d264b0f4b99577d464101d796bc10f8e63d468e6a5427d",
+        "64bbd7ce8ab9bcb94965b5773cea13c1849bc0bf38c4b5bb5713084115f45160",
+        "76ccf807e0d90d0c1865d97ed6b73172c66699259d8dd8c0a12dbdc95114038f",
+        "8a98c6fc092c1dd26a8b4310eb7e5a470501536959a4a898b54204bef82cb20c",
+        "9577a656bdca887bda11b04e5d096a999b63303e223cf29d2123cb9528c4ea23",
+        "a5665d680f00c4b323f8ee88328f9a21f2d82bd9fc1a4a717f3807d21469ebc3",
+        "be47ccda97a3e65a50ec66a9f9b67bcb1b16e54f436431f0b47aa376e677da2c",
+        "cf154b179a5cd40b8e71138a1929e21f39f854490d8ce581dbc426aec53785d4",
+        "d83e871b0a053d5bc567f3643da34ec5ea3ecb40253b975bb15bf944c99d5738",
+        "db5bc813fe51633f3b932e53bcfc0550f7529472d485aec77049b98c2182ce41",
+        "f2c7b68ee659eb0dcd62de127f34871a916285a7b207eecf201795f4f942de76",
+        "fdf3c10affaa44c5d227641984458dde0c2d06b51d3129cc6b8e5c8a6dbb1d67",
+        "fe8c5432c2258a9145eb63a3e3284d8e3da4e1b631e0cd47353257256b888c9e"
+      ],
+      "test_groups": [
+        "210f81048d4a7c43c858300a72f0929c7d1145f98214cc6f8772d00d2bc36546",
+        "48d5d4e6455ae6308e36705c8f75ef2a36e97fcda532a3ce5ea1393f5974760a",
+        "7ba5d82efc3829611b82cc26995246e547bd1c8356e611bda9aa5a2c324c92b4",
+        "aaf7dd167b18c0407f2226a72d6388df2953e53a41e56104d474e62443bb6ee7",
+        "efd1f6e6227363c8fca2b6bdfab6e6177750ae993e7837f81b5ea1697df994b0"
+      ],
+      "reviewed_train": 106
+    },
+    {
+      "fold": 3,
+      "train_groups": [
+        "18326d0c2d6211eca2dd76e06b0acdb7904a16c67b3781297a2a01c3ae6211d7",
+        "210f81048d4a7c43c858300a72f0929c7d1145f98214cc6f8772d00d2bc36546",
+        "260b76417d9220db6f8f0f3752a91a54663094e512b93b8dc6a8a6496f673498",
+        "317e5baf43c951fe0cc4b239c592fe0ba008363b7bffed4afd2d6848bbc57ab8",
+        "46497fe1794d217d3e343c971d37c12885b450f20ee39e1b8a424ffec6881634",
+        "48d5d4e6455ae6308e36705c8f75ef2a36e97fcda532a3ce5ea1393f5974760a",
+        "5c61029c180b164cbac207068e7effb5f46e3e26a523a26ec530d4200bcff53b",
+        "5dd8e56019abe6c8e7d264b0f4b99577d464101d796bc10f8e63d468e6a5427d",
+        "64bbd7ce8ab9bcb94965b5773cea13c1849bc0bf38c4b5bb5713084115f45160",
+        "76ccf807e0d90d0c1865d97ed6b73172c66699259d8dd8c0a12dbdc95114038f",
+        "7ba5d82efc3829611b82cc26995246e547bd1c8356e611bda9aa5a2c324c92b4",
+        "8a98c6fc092c1dd26a8b4310eb7e5a470501536959a4a898b54204bef82cb20c",
+        "9577a656bdca887bda11b04e5d096a999b63303e223cf29d2123cb9528c4ea23",
+        "a5665d680f00c4b323f8ee88328f9a21f2d82bd9fc1a4a717f3807d21469ebc3",
+        "aaf7dd167b18c0407f2226a72d6388df2953e53a41e56104d474e62443bb6ee7",
+        "cf154b179a5cd40b8e71138a1929e21f39f854490d8ce581dbc426aec53785d4",
+        "d83e871b0a053d5bc567f3643da34ec5ea3ecb40253b975bb15bf944c99d5738",
+        "db5bc813fe51633f3b932e53bcfc0550f7529472d485aec77049b98c2182ce41",
+        "efd1f6e6227363c8fca2b6bdfab6e6177750ae993e7837f81b5ea1697df994b0",
+        "fe8c5432c2258a9145eb63a3e3284d8e3da4e1b631e0cd47353257256b888c9e"
+      ],
+      "test_groups": [
+        "22aa4ec553acd360f725d644929346e045b1425d5972a6f9414fbcbb519238c0",
+        "5311952a90919e6fb7c15fce81c6b2bad5a9f44d174e858c0b727ec126480c3b",
+        "be47ccda97a3e65a50ec66a9f9b67bcb1b16e54f436431f0b47aa376e677da2c",
+        "f2c7b68ee659eb0dcd62de127f34871a916285a7b207eecf201795f4f942de76",
+        "fdf3c10affaa44c5d227641984458dde0c2d06b51d3129cc6b8e5c8a6dbb1d67"
+      ],
+      "reviewed_train": 97
+    },
+    {
+      "fold": 4,
+      "train_groups": [
+        "210f81048d4a7c43c858300a72f0929c7d1145f98214cc6f8772d00d2bc36546",
+        "22aa4ec553acd360f725d644929346e045b1425d5972a6f9414fbcbb519238c0",
+        "317e5baf43c951fe0cc4b239c592fe0ba008363b7bffed4afd2d6848bbc57ab8",
+        "46497fe1794d217d3e343c971d37c12885b450f20ee39e1b8a424ffec6881634",
+        "48d5d4e6455ae6308e36705c8f75ef2a36e97fcda532a3ce5ea1393f5974760a",
+        "5311952a90919e6fb7c15fce81c6b2bad5a9f44d174e858c0b727ec126480c3b",
+        "5dd8e56019abe6c8e7d264b0f4b99577d464101d796bc10f8e63d468e6a5427d",
+        "64bbd7ce8ab9bcb94965b5773cea13c1849bc0bf38c4b5bb5713084115f45160",
+        "76ccf807e0d90d0c1865d97ed6b73172c66699259d8dd8c0a12dbdc95114038f",
+        "7ba5d82efc3829611b82cc26995246e547bd1c8356e611bda9aa5a2c324c92b4",
+        "9577a656bdca887bda11b04e5d096a999b63303e223cf29d2123cb9528c4ea23",
+        "a5665d680f00c4b323f8ee88328f9a21f2d82bd9fc1a4a717f3807d21469ebc3",
+        "aaf7dd167b18c0407f2226a72d6388df2953e53a41e56104d474e62443bb6ee7",
+        "be47ccda97a3e65a50ec66a9f9b67bcb1b16e54f436431f0b47aa376e677da2c",
+        "d83e871b0a053d5bc567f3643da34ec5ea3ecb40253b975bb15bf944c99d5738",
+        "db5bc813fe51633f3b932e53bcfc0550f7529472d485aec77049b98c2182ce41",
+        "efd1f6e6227363c8fca2b6bdfab6e6177750ae993e7837f81b5ea1697df994b0",
+        "f2c7b68ee659eb0dcd62de127f34871a916285a7b207eecf201795f4f942de76",
+        "fdf3c10affaa44c5d227641984458dde0c2d06b51d3129cc6b8e5c8a6dbb1d67",
+        "fe8c5432c2258a9145eb63a3e3284d8e3da4e1b631e0cd47353257256b888c9e"
+      ],
+      "test_groups": [
+        "18326d0c2d6211eca2dd76e06b0acdb7904a16c67b3781297a2a01c3ae6211d7",
+        "260b76417d9220db6f8f0f3752a91a54663094e512b93b8dc6a8a6496f673498",
+        "5c61029c180b164cbac207068e7effb5f46e3e26a523a26ec530d4200bcff53b",
+        "8a98c6fc092c1dd26a8b4310eb7e5a470501536959a4a898b54204bef82cb20c",
+        "cf154b179a5cd40b8e71138a1929e21f39f854490d8ce581dbc426aec53785d4"
+      ],
+      "reviewed_train": 106
+    }
+  ],
+  "input_sha256": {
+    "selection": "b21f466cd6dd89588d26f98c87a687f0d48fc3ddb30f3fc8c40dbb2fef4563e5",
+    "gold": "f1ead6e3b01a12f766c553682e3ea4158d95e325968362e4490d8e292b502a95",
+    "train_review": "8d347b2639bc4acb5cb77dcfddf56935b21c6a51a7cba299aedd95663c01b18c",
+    "dev_review": "c9fa38f25913d07cf8f589b33e1e10767edf595a64a4d2c512a080e7d052b935"
+  },
+  "seconds": 12.28,
+  "sklearn_version": "1.7.2",
+  "limitations": [
+    "AI-only sparse review; no human purpose accuracy.",
+    "Only four purpose classes were present in reviewed training sample.",
+    "Audit sample was stratified by first-pass Qwen labels and targeted CHECK; not random steps.",
+    "Train and dev trajectories were previously exposed in other experiments.",
+    "No reserved-set or genuinely new-task boundary test.",
+    "Student is exploratory and not enabled in the online default partitioner."
+  ]
+}

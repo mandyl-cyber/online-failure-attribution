@@ -1,0 +1,533 @@
+{
+  "protocol": "candidate-stratified-codex-blind-ai-audit-v1",
+  "reviewer_kind": "ai",
+  "sample_size": 130,
+  "probability_sample": 122,
+  "targeted_sample": 8,
+  "raw_agreement": 0.6384615384615384,
+  "design_weighted_agreement": 0.7398217468805705,
+  "per_stratum": {
+    "ACQUIRE": {
+      "population": 466,
+      "sample": 30,
+      "agree": 25,
+      "rate": 0.8333333333333334
+    },
+    "CHECK": {
+      "population": 249,
+      "sample": 30,
+      "agree": 15,
+      "rate": 0.5
+    },
+    "UNKNOWN": {
+      "population": 139,
+      "sample": 20,
+      "agree": 20,
+      "rate": 1.0
+    },
+    "CONSTRUCT": {
+      "population": 42,
+      "sample": 20,
+      "agree": 19,
+      "rate": 0.95
+    },
+    "DELIVER": {
+      "population": 20,
+      "sample": 10,
+      "agree": 0,
+      "rate": 0.0
+    },
+    "OPERATE": {
+      "population": 14,
+      "sample": 7,
+      "agree": 0,
+      "rate": 0.0
+    },
+    "ENABLE": {
+      "population": 5,
+      "sample": 5,
+      "agree": 0,
+      "rate": 0.0
+    }
+  },
+  "targeted_agreement": 4,
+  "targeted": [
+    {
+      "request_id": "TRAIN_004_s00017",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "TRAIN_013_s00048",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "TRAIN_013_s00062",
+      "first": "CHECK",
+      "ai": "CHECK",
+      "agreed": true
+    },
+    {
+      "request_id": "TRAIN_013_s00061",
+      "first": "CHECK",
+      "ai": "CHECK",
+      "agreed": true
+    },
+    {
+      "request_id": "TRAIN_024_s00005",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "TRAIN_013_s00068",
+      "first": "CHECK",
+      "ai": "CHECK",
+      "agreed": true
+    },
+    {
+      "request_id": "TRAIN_013_s00005",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "TRAIN_005_s00027",
+      "first": "CHECK",
+      "ai": "CHECK",
+      "agreed": true
+    }
+  ],
+  "confusion": [
+    {
+      "first": "ACQUIRE",
+      "ai": "ACQUIRE",
+      "n": 25
+    },
+    {
+      "first": "ACQUIRE",
+      "ai": "CHECK",
+      "n": 3
+    },
+    {
+      "first": "ACQUIRE",
+      "ai": "CONSTRUCT",
+      "n": 2
+    },
+    {
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "n": 15
+    },
+    {
+      "first": "CHECK",
+      "ai": "CHECK",
+      "n": 19
+    },
+    {
+      "first": "CHECK",
+      "ai": "CONSTRUCT",
+      "n": 2
+    },
+    {
+      "first": "CHECK",
+      "ai": "UNKNOWN",
+      "n": 2
+    },
+    {
+      "first": "CONSTRUCT",
+      "ai": "ACQUIRE",
+      "n": 1
+    },
+    {
+      "first": "CONSTRUCT",
+      "ai": "CONSTRUCT",
+      "n": 19
+    },
+    {
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "n": 10
+    },
+    {
+      "first": "ENABLE",
+      "ai": "ACQUIRE",
+      "n": 3
+    },
+    {
+      "first": "ENABLE",
+      "ai": "CHECK",
+      "n": 1
+    },
+    {
+      "first": "ENABLE",
+      "ai": "CONSTRUCT",
+      "n": 1
+    },
+    {
+      "first": "OPERATE",
+      "ai": "ACQUIRE",
+      "n": 2
+    },
+    {
+      "first": "OPERATE",
+      "ai": "CHECK",
+      "n": 4
+    },
+    {
+      "first": "OPERATE",
+      "ai": "CONSTRUCT",
+      "n": 1
+    },
+    {
+      "first": "UNKNOWN",
+      "ai": "UNKNOWN",
+      "n": 20
+    }
+  ],
+  "disagreements": [
+    {
+      "request_id": "TRAIN_013_s00067",
+      "first": "OPERATE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Compiles the candidate after a code commit."
+    },
+    {
+      "request_id": "TRAIN_006_s00043",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Reads image transformation code to locate implementation."
+    },
+    {
+      "request_id": "TRAIN_019_s00024",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Inspects the reproduction test file to understand the warning."
+    },
+    {
+      "request_id": "TRAIN_020_s00015",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Runs a reproduction script to observe the issue."
+    },
+    {
+      "request_id": "TRAIN_004_s00032",
+      "first": "ENABLE",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Checks git identity setting before committing."
+    },
+    {
+      "request_id": "TRAIN_025_s00024",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Probes numeric predicates to refine the candidate after tests."
+    },
+    {
+      "request_id": "TRAIN_014_s00019",
+      "first": "CHECK",
+      "ai": "UNKNOWN",
+      "sampling": "probability",
+      "note": "Only polls a pending command and receives no new output."
+    },
+    {
+      "request_id": "TRAIN_013_s00035",
+      "first": "OPERATE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Compiles the edited project to assess the candidate."
+    },
+    {
+      "request_id": "TRAIN_008_s00053",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate source change."
+    },
+    {
+      "request_id": "TRAIN_019_s00034",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate pytest fix."
+    },
+    {
+      "request_id": "TRAIN_019_s00018",
+      "first": "OPERATE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Attempts a focused reproduction test after an edit."
+    },
+    {
+      "request_id": "TRAIN_004_s00017",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Runs baseline urlize tests before any visible source edit."
+    },
+    {
+      "request_id": "TRAIN_024_s00023",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate source fix."
+    },
+    {
+      "request_id": "TRAIN_018_s00037",
+      "first": "CHECK",
+      "ai": "UNKNOWN",
+      "sampling": "probability",
+      "note": "Updates a task plan without performing repository work."
+    },
+    {
+      "request_id": "TRAIN_017_s00020",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits candidate unsigned decoding fix."
+    },
+    {
+      "request_id": "TRAIN_013_s00048",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Locates the built loader while diagnosing the test setup."
+    },
+    {
+      "request_id": "TRAIN_013_s00019",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Reads link parser source before candidate change."
+    },
+    {
+      "request_id": "TRAIN_012_s00039",
+      "first": "ACQUIRE",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Undoes an edit to revise the candidate implementation."
+    },
+    {
+      "request_id": "TRAIN_005_s00030",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate Django fix."
+    },
+    {
+      "request_id": "TRAIN_003_s00028",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate migration fix."
+    },
+    {
+      "request_id": "TRAIN_006_s00068",
+      "first": "ENABLE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Attempts import of edited SAM processor implementation."
+    },
+    {
+      "request_id": "TRAIN_008_s00020",
+      "first": "OPERATE",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Attempts baseline tests while locating the issue."
+    },
+    {
+      "request_id": "TRAIN_008_s00008",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Inspects test layout to find how to run checks."
+    },
+    {
+      "request_id": "TRAIN_024_s00022",
+      "first": "ACQUIRE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Inspects candidate diff after reproduction and edits."
+    },
+    {
+      "request_id": "TRAIN_015_s00019",
+      "first": "CHECK",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Attempts to patch candidate printer logic; command failure does not change purpose."
+    },
+    {
+      "request_id": "TRAIN_005_s00024",
+      "first": "ACQUIRE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Attempts migration tests after source edit."
+    },
+    {
+      "request_id": "TRAIN_011_s00064",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits candidate cache implementation."
+    },
+    {
+      "request_id": "TRAIN_024_s00005",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Searches minimal_blocks implementation and tests."
+    },
+    {
+      "request_id": "TRAIN_016_s00022",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits candidate xarray fix."
+    },
+    {
+      "request_id": "TRAIN_011_s00005",
+      "first": "CONSTRUCT",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Reads BaseLLM implementation before modification."
+    },
+    {
+      "request_id": "TRAIN_023_s00012",
+      "first": "OPERATE",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Runs baseline test suite before visible source edits."
+    },
+    {
+      "request_id": "TRAIN_013_s00044",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Locates built link parser module while diagnosing test setup."
+    },
+    {
+      "request_id": "TRAIN_013_s00065",
+      "first": "OPERATE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Runs hygiene check after formatting candidate source."
+    },
+    {
+      "request_id": "TRAIN_006_s00061",
+      "first": "CHECK",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Attempts to edit SAM padding implementation; failed edit retains purpose."
+    },
+    {
+      "request_id": "TRAIN_025_s00012",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Attempts baseline point tests before visible source edit."
+    },
+    {
+      "request_id": "TRAIN_008_s00049",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Locates dnf import handling before candidate change."
+    },
+    {
+      "request_id": "TRAIN_016_s00021",
+      "first": "ENABLE",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Attempts to add ignore rules while preparing candidate repository state."
+    },
+    {
+      "request_id": "TRAIN_015_s00035",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits candidate printer fix."
+    },
+    {
+      "request_id": "TRAIN_014_s00020",
+      "first": "OPERATE",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Continues attempt to commit candidate autocomplete fix."
+    },
+    {
+      "request_id": "TRAIN_008_s00006",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Attempts baseline tests before any visible candidate edit."
+    },
+    {
+      "request_id": "TRAIN_006_s00063",
+      "first": "ACQUIRE",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Attempts another SAM processor edit; failure retains work purpose."
+    },
+    {
+      "request_id": "TRAIN_016_s00004",
+      "first": "ENABLE",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Inspects xarray repository layout."
+    },
+    {
+      "request_id": "TRAIN_007_s00022",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits candidate PSRP cleanup."
+    },
+    {
+      "request_id": "TRAIN_003_s00027",
+      "first": "ENABLE",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Checks git identity setting before committing."
+    },
+    {
+      "request_id": "TRAIN_013_s00005",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Searches link parsing implementation."
+    },
+    {
+      "request_id": "TRAIN_016_s00018",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Runs baseline xarray tests before a visible candidate edit."
+    },
+    {
+      "request_id": "TRAIN_013_s00039",
+      "first": "ACQUIRE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Attempts parser test through built loader after candidate work."
+    }
+  ],
+  "blind_packets_sha256": "807813f5f8e631bf097e01df8e962a39c6ef8d92f36909ee0af124e832996958",
+  "ai_labels_sha256": "fabb2ff85c06fcf007ac487bd36139a81a7302a874f75e3f523abb59cf685023",
+  "first_review_sha256": "15d9e92da14796dcd708ab86444183d225e4353edc0ae50a5b104faa9cc772b3",
+  "current_review_sha256": "8d347b2639bc4acb5cb77dcfddf56935b21c6a51a7cba299aedd95663c01b18c",
+  "limitations": [
+    "Codex AI reference is not human gold.",
+    "70 items are drawn from 10 previously exposed development trajectories.",
+    "64 are candidate-stratified probability samples; 6 are targeted CHECK cases.",
+    "Weighted agreement is descriptive; no valid independence-based confidence interval is claimed.",
+    "Same trajectory steps are correlated and prior work may have exposed the corpus."
+  ]
+}

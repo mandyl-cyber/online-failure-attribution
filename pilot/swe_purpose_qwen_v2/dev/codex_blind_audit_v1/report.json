@@ -1,0 +1,342 @@
+{
+  "protocol": "candidate-stratified-codex-blind-ai-audit-v1",
+  "reviewer_kind": "ai",
+  "sample_size": 70,
+  "probability_sample": 64,
+  "targeted_sample": 6,
+  "raw_agreement": 0.6428571428571429,
+  "design_weighted_agreement": 0.8248571428571428,
+  "per_stratum": {
+    "ACQUIRE": {
+      "population": 179,
+      "sample": 20,
+      "agree": 18,
+      "rate": 0.9
+    },
+    "CHECK": {
+      "population": 81,
+      "sample": 15,
+      "agree": 9,
+      "rate": 0.6
+    },
+    "UNKNOWN": {
+      "population": 56,
+      "sample": 10,
+      "agree": 10,
+      "rate": 1.0
+    },
+    "CONSTRUCT": {
+      "population": 23,
+      "sample": 8,
+      "agree": 8,
+      "rate": 1.0
+    },
+    "DELIVER": {
+      "population": 7,
+      "sample": 7,
+      "agree": 0,
+      "rate": 0.0
+    },
+    "OPERATE": {
+      "population": 3,
+      "sample": 3,
+      "agree": 0,
+      "rate": 0.0
+    },
+    "ENABLE": {
+      "population": 1,
+      "sample": 1,
+      "agree": 0,
+      "rate": 0.0
+    }
+  },
+  "targeted_agreement": 0,
+  "targeted": [
+    {
+      "request_id": "DEV_006_s00012",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "DEV_006_s00018",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "DEV_003_s00010",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "DEV_002_s00012",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "DEV_002_s00005",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    },
+    {
+      "request_id": "DEV_005_s00009",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "agreed": false
+    }
+  ],
+  "confusion": [
+    {
+      "first": "ACQUIRE",
+      "ai": "ACQUIRE",
+      "n": 18
+    },
+    {
+      "first": "ACQUIRE",
+      "ai": "CHECK",
+      "n": 1
+    },
+    {
+      "first": "ACQUIRE",
+      "ai": "ENABLE",
+      "n": 1
+    },
+    {
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "n": 11
+    },
+    {
+      "first": "CHECK",
+      "ai": "CHECK",
+      "n": 9
+    },
+    {
+      "first": "CHECK",
+      "ai": "CONSTRUCT",
+      "n": 1
+    },
+    {
+      "first": "CONSTRUCT",
+      "ai": "CONSTRUCT",
+      "n": 8
+    },
+    {
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "n": 7
+    },
+    {
+      "first": "ENABLE",
+      "ai": "ACQUIRE",
+      "n": 1
+    },
+    {
+      "first": "OPERATE",
+      "ai": "ACQUIRE",
+      "n": 1
+    },
+    {
+      "first": "OPERATE",
+      "ai": "CHECK",
+      "n": 2
+    },
+    {
+      "first": "UNKNOWN",
+      "ai": "UNKNOWN",
+      "n": 10
+    }
+  ],
+  "disagreements": [
+    {
+      "request_id": "DEV_001_s00014",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Runs tests before a visible edit to reproduce or locate the issue."
+    },
+    {
+      "request_id": "DEV_002_s00013",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Reads existing deletion tests to understand behavior."
+    },
+    {
+      "request_id": "DEV_006_s00016",
+      "first": "CHECK",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Edits Keras model.save implementation."
+    },
+    {
+      "request_id": "DEV_001_s00027",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Creates a versioned candidate commit; no explicit handoff is visible."
+    },
+    {
+      "request_id": "DEV_003_s00021",
+      "first": "OPERATE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Runs targeted tests after the candidate change."
+    },
+    {
+      "request_id": "DEV_006_s00012",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Reads saving implementation before visible candidate changes."
+    },
+    {
+      "request_id": "DEV_008_s00030",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate implementation as a versioned artifact; no explicit handoff."
+    },
+    {
+      "request_id": "DEV_010_s00024",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Checks current git identity setting before commit."
+    },
+    {
+      "request_id": "DEV_003_s00009",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Reproduces the reported floatformat crash before an edit."
+    },
+    {
+      "request_id": "DEV_002_s00024",
+      "first": "OPERATE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Runs a focused model deletion probe after candidate work."
+    },
+    {
+      "request_id": "DEV_004_s00040",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits a versioned candidate after implementation and probes."
+    },
+    {
+      "request_id": "DEV_006_s00018",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Searches for API export locations after an initial edit."
+    },
+    {
+      "request_id": "DEV_003_s00010",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Reads floatformat source after initial reproduction, before a fix."
+    },
+    {
+      "request_id": "DEV_006_s00037",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate refactor as a versioned artifact."
+    },
+    {
+      "request_id": "DEV_001_s00016",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Reads arithmetic mask implementation before editing it."
+    },
+    {
+      "request_id": "DEV_010_s00025",
+      "first": "ENABLE",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Checks git identity configuration before a commit."
+    },
+    {
+      "request_id": "DEV_002_s00012",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Reads existing delete tests before candidate modification."
+    },
+    {
+      "request_id": "DEV_002_s00029",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate fix as a versioned artifact."
+    },
+    {
+      "request_id": "DEV_006_s00034",
+      "first": "ACQUIRE",
+      "ai": "ENABLE",
+      "sampling": "probability",
+      "note": "Installs dependencies required for subsequent work."
+    },
+    {
+      "request_id": "DEV_009_s00021",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate source change as a versioned artifact."
+    },
+    {
+      "request_id": "DEV_002_s00005",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Reads deletion source before any candidate change."
+    },
+    {
+      "request_id": "DEV_005_s00009",
+      "first": "CHECK",
+      "ai": "ACQUIRE",
+      "sampling": "targeted",
+      "note": "Inspects existing test layout after installing pytest."
+    },
+    {
+      "request_id": "DEV_004_s00038",
+      "first": "ACQUIRE",
+      "ai": "CHECK",
+      "sampling": "probability",
+      "note": "Runs a focused vault parser probe after candidate edits."
+    },
+    {
+      "request_id": "DEV_010_s00026",
+      "first": "DELIVER",
+      "ai": "CONSTRUCT",
+      "sampling": "probability",
+      "note": "Commits the candidate fix as a versioned artifact."
+    },
+    {
+      "request_id": "DEV_002_s00017",
+      "first": "OPERATE",
+      "ai": "ACQUIRE",
+      "sampling": "probability",
+      "note": "Runs baseline deletion tests before any visible source edit."
+    }
+  ],
+  "blind_packets_sha256": "14d99695c2821be8cfacc92c4626fc1a4ecb33d5573d335db2469e4958ac31e0",
+  "ai_labels_sha256": "81f6927ae8e13154c08f743715a6def806e9b07b87abad3643a545aeae4f107f",
+  "first_review_sha256": "a3db3b6f4a15b4763adc7bcad89ef236e0573d94892089cb7db3342e8fc8bcec",
+  "current_review_sha256": "c9fa38f25913d07cf8f589b33e1e10767edf595a64a4d2c512a080e7d052b935",
+  "limitations": [
+    "Codex AI reference is not human gold.",
+    "70 items are drawn from 10 previously exposed development trajectories.",
+    "64 are candidate-stratified probability samples; 6 are targeted CHECK cases.",
+    "Weighted agreement is descriptive; no valid independence-based confidence interval is claimed.",
+    "Same trajectory steps are correlated and prior work may have exposed the corpus."
+  ]
+}

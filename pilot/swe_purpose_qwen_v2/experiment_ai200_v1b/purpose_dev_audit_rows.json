@@ -1,0 +1,492 @@
+[
+  {
+    "request_id": "DEV_003_s00012",
+    "sampling": "probability",
+    "stratum": "CONSTRUCT",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_005_s00048",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "CHECK"
+  },
+  {
+    "request_id": "DEV_004_s00007",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_001_s00014",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "ACQUIRE",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_008_s00012",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_005_s00025",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_002_s00006",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_003_s00006",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_002_s00013",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_003_s00023",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_005_s00032",
+    "sampling": "probability",
+    "stratum": "CONSTRUCT",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_004_s00042",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_005_s00049",
+    "sampling": "probability",
+    "stratum": "CONSTRUCT",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_006_s00016",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_009_s00020",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "CHECK"
+  },
+  {
+    "request_id": "DEV_005_s00006",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_001_s00027",
+    "sampling": "probability",
+    "stratum": "DELIVER",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_003_s00021",
+    "sampling": "probability",
+    "stratum": "OPERATE",
+    "reference": "CHECK",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_006_s00012",
+    "sampling": "targeted",
+    "stratum": "priority_check",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_010_s00006",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_004_s00011",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_008_s00030",
+    "sampling": "probability",
+    "stratum": "DELIVER",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_010_s00024",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_003_s00009",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_007_s00008",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_004_s00020",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_004_s00029",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_002_s00024",
+    "sampling": "probability",
+    "stratum": "OPERATE",
+    "reference": "CHECK",
+    "prediction": "CHECK"
+  },
+  {
+    "request_id": "DEV_004_s00040",
+    "sampling": "probability",
+    "stratum": "DELIVER",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_005_s00062",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_009_s00011",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_006_s00018",
+    "sampling": "targeted",
+    "stratum": "priority_check",
+    "reference": "ACQUIRE",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_006_s00024",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_006_s00020",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_003_s00010",
+    "sampling": "targeted",
+    "stratum": "priority_check",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_010_s00007",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_006_s00037",
+    "sampling": "probability",
+    "stratum": "DELIVER",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_001_s00016",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_004_s00030",
+    "sampling": "probability",
+    "stratum": "CONSTRUCT",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_010_s00025",
+    "sampling": "probability",
+    "stratum": "ENABLE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_009_s00022",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_009_s00018",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_001_s00023",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_005_s00002",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_001_s00006",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_005_s00060",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_002_s00012",
+    "sampling": "targeted",
+    "stratum": "priority_check",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_002_s00029",
+    "sampling": "probability",
+    "stratum": "DELIVER",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_004_s00023",
+    "sampling": "probability",
+    "stratum": "CONSTRUCT",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_006_s00041",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "CHECK"
+  },
+  {
+    "request_id": "DEV_009_s00019",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "CHECK"
+  },
+  {
+    "request_id": "DEV_005_s00003",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_010_s00017",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_004_s00008",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_006_s00034",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ENABLE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_005_s00036",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_004_s00025",
+    "sampling": "probability",
+    "stratum": "CONSTRUCT",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_007_s00018",
+    "sampling": "probability",
+    "stratum": "CONSTRUCT",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_002_s00026",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_004_s00005",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_004_s00033",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_009_s00021",
+    "sampling": "probability",
+    "stratum": "DELIVER",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_005_s00057",
+    "sampling": "probability",
+    "stratum": "CONSTRUCT",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_002_s00005",
+    "sampling": "targeted",
+    "stratum": "priority_check",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_005_s00009",
+    "sampling": "targeted",
+    "stratum": "priority_check",
+    "reference": "ACQUIRE",
+    "prediction": "ACQUIRE"
+  },
+  {
+    "request_id": "DEV_004_s00038",
+    "sampling": "probability",
+    "stratum": "ACQUIRE",
+    "reference": "CHECK",
+    "prediction": "CHECK"
+  },
+  {
+    "request_id": "DEV_008_s00023",
+    "sampling": "probability",
+    "stratum": "CHECK",
+    "reference": "CHECK",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_006_s00017",
+    "sampling": "probability",
+    "stratum": "UNKNOWN",
+    "reference": "UNKNOWN",
+    "prediction": "UNKNOWN"
+  },
+  {
+    "request_id": "DEV_010_s00026",
+    "sampling": "probability",
+    "stratum": "DELIVER",
+    "reference": "CONSTRUCT",
+    "prediction": "CONSTRUCT"
+  },
+  {
+    "request_id": "DEV_002_s00017",
+    "sampling": "probability",
+    "stratum": "OPERATE",
+    "reference": "ACQUIRE",
+    "prediction": "CHECK"
+  }
+]

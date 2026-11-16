@@ -1,0 +1,787 @@
+{
+  "reviewer_kind": "ai",
+  "reviewer_id": "codex-blind-v2",
+  "blind_packets_sha256": "807813f5f8e631bf097e01df8e962a39c6ef8d92f36909ee0af124e832996958",
+  "labels": {
+    "TRAIN_013_s00067": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Compiles the candidate after a code commit.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00043": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads image transformation code to locate implementation.",
+      "reviewed": true
+    },
+    "TRAIN_019_s00024": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects the reproduction test file to understand the warning.",
+      "reviewed": true
+    },
+    "TRAIN_020_s00015": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Runs a reproduction script to observe the issue.",
+      "reviewed": true
+    },
+    "TRAIN_019_s00039": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00032": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Checks the edited link parser source for the expected pattern.",
+      "reviewed": true
+    },
+    "TRAIN_020_s00024": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Runs tests after changing the candidate implementation.",
+      "reviewed": true
+    },
+    "TRAIN_007_s00007": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads connection plugin code before a candidate change.",
+      "reviewed": true
+    },
+    "TRAIN_010_s00025": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads existing CLI tests to understand expected behavior.",
+      "reviewed": true
+    },
+    "TRAIN_004_s00032": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Checks git identity setting before committing.",
+      "reviewed": true
+    },
+    "TRAIN_025_s00024": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Probes numeric predicates to refine the candidate after tests.",
+      "reviewed": true
+    },
+    "TRAIN_014_s00019": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only polls a pending command and receives no new output.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00035": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Compiles the edited project to assess the candidate.",
+      "reviewed": true
+    },
+    "TRAIN_008_s00053": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate source change.",
+      "reviewed": true
+    },
+    "TRAIN_021_s00030": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects worktree status after candidate edits.",
+      "reviewed": true
+    },
+    "TRAIN_001_s00017": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_019_s00034": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate pytest fix.",
+      "reviewed": true
+    },
+    "TRAIN_019_s00018": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts a focused reproduction test after an edit.",
+      "reviewed": true
+    },
+    "TRAIN_004_s00017": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Runs baseline urlize tests before any visible source edit.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00048": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits cache update call in candidate implementation.",
+      "reviewed": true
+    },
+    "TRAIN_004_s00003": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_024_s00023": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate source fix.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00054": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits SAM image padding implementation.",
+      "reviewed": true
+    },
+    "TRAIN_001_s00016": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Changes FITSDiff VLA handling.",
+      "reviewed": true
+    },
+    "TRAIN_015_s00008": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads printer implementation before a candidate change.",
+      "reviewed": true
+    },
+    "TRAIN_018_s00037": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_ACTION",
+      "note": "Updates a task plan without performing repository work.",
+      "reviewed": true
+    },
+    "TRAIN_001_s00002": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects repository contents to establish current state.",
+      "reviewed": true
+    },
+    "TRAIN_020_s00028": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_010_s00020": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads task executor and playbook implementation.",
+      "reviewed": true
+    },
+    "TRAIN_008_s00054": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_010_s00036": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits Ansible console implementation.",
+      "reviewed": true
+    },
+    "TRAIN_017_s00020": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits candidate unsigned decoding fix.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00048": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates the built loader while diagnosing the test setup.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00019": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads link parser source before candidate change.",
+      "reviewed": true
+    },
+    "TRAIN_010_s00008": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches ad hoc command implementation.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00062": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects edited link parser code after candidate work.",
+      "reviewed": true
+    },
+    "TRAIN_012_s00039": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Undoes an edit to revise the candidate implementation.",
+      "reviewed": true
+    },
+    "TRAIN_003_s00004": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_015_s00028": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts to run the formatter on a case after editing it.",
+      "reviewed": true
+    },
+    "TRAIN_014_s00016": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits autocomplete grouping logic.",
+      "reviewed": true
+    },
+    "TRAIN_001_s00005": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates TableDataDiff class for issue investigation.",
+      "reviewed": true
+    },
+    "TRAIN_005_s00030": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate Django fix.",
+      "reviewed": true
+    },
+    "TRAIN_010_s00042": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Runs a focused CLI probe after candidate edits.",
+      "reviewed": true
+    },
+    "TRAIN_003_s00028": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate migration fix.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00041": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits language-model cache implementation.",
+      "reviewed": true
+    },
+    "TRAIN_020_s00003": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_017_s00002": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00068": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts import of edited SAM processor implementation.",
+      "reviewed": true
+    },
+    "TRAIN_007_s00023": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Checks that obsolete extras references are gone after a commit.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00061": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects edited link parser region after candidate work.",
+      "reviewed": true
+    },
+    "TRAIN_016_s00005": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads xarray variable implementation before a fix.",
+      "reviewed": true
+    },
+    "TRAIN_018_s00021": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Finds remaining get_chunksizes call sites to guide a further change.",
+      "reviewed": true
+    },
+    "TRAIN_008_s00020": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts baseline tests while locating the issue.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00047": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits asynchronous cache path.",
+      "reviewed": true
+    },
+    "TRAIN_024_s00025": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Removes reproduction file and verifies worktree cleanliness after commit.",
+      "reviewed": true
+    },
+    "TRAIN_008_s00008": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects test layout to find how to run checks.",
+      "reviewed": true
+    },
+    "TRAIN_007_s00021": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Removes an unused import in candidate code.",
+      "reviewed": true
+    },
+    "TRAIN_003_s00001": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_024_s00022": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects candidate diff after reproduction and edits.",
+      "reviewed": true
+    },
+    "TRAIN_015_s00019": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts to patch candidate printer logic; command failure does not change purpose.",
+      "reviewed": true
+    },
+    "TRAIN_005_s00024": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts migration tests after source edit.",
+      "reviewed": true
+    },
+    "TRAIN_012_s00030": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Adds legend pickling implementation.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00060": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects edited link parser after build checks.",
+      "reviewed": true
+    },
+    "TRAIN_010_s00030": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches existing task timeout and console tests.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00064": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits candidate cache implementation.",
+      "reviewed": true
+    },
+    "TRAIN_007_s00008": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Changes PSRP connection option.",
+      "reviewed": true
+    },
+    "TRAIN_024_s00010": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reproduces sylow subgroup IndexError before a fix.",
+      "reviewed": true
+    },
+    "TRAIN_009_s00010": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads configuration manager code to locate behavior.",
+      "reviewed": true
+    },
+    "TRAIN_024_s00005": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches minimal_blocks implementation and tests.",
+      "reviewed": true
+    },
+    "TRAIN_016_s00022": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits candidate xarray fix.",
+      "reviewed": true
+    },
+    "TRAIN_021_s00003": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00005": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads BaseLLM implementation before modification.",
+      "reviewed": true
+    },
+    "TRAIN_016_s00016": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_017_s00007": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits unsigned integer decode implementation.",
+      "reviewed": true
+    },
+    "TRAIN_005_s00026": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Runs migrations tests after candidate fix.",
+      "reviewed": true
+    },
+    "TRAIN_015_s00011": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates printer logic for decorators.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00051": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Reads recently edited cache path to inspect the candidate.",
+      "reviewed": true
+    },
+    "TRAIN_023_s00012": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Runs baseline test suite before visible source edits.",
+      "reviewed": true
+    },
+    "TRAIN_003_s00022": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits migration executor to fix status bookkeeping.",
+      "reviewed": true
+    },
+    "TRAIN_010_s00016": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads task include implementation before candidate work.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00044": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates built link parser module while diagnosing test setup.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00066": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits SAM image processor output.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00065": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Runs hygiene check after formatting candidate source.",
+      "reviewed": true
+    },
+    "TRAIN_024_s00004": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects repository before issue work.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00061": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts to edit SAM padding implementation; failed edit retains purpose.",
+      "reviewed": true
+    },
+    "TRAIN_025_s00012": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts baseline point tests before visible source edit.",
+      "reviewed": true
+    },
+    "TRAIN_018_s00009": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads Dataset.chunks implementation before candidate work.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00057": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Reads just-edited SAM processor region to inspect candidate.",
+      "reviewed": true
+    },
+    "TRAIN_010_s00028": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates CLI play prerequisite code.",
+      "reviewed": true
+    },
+    "TRAIN_008_s00049": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates dnf import handling before candidate change.",
+      "reviewed": true
+    },
+    "TRAIN_016_s00021": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts to add ignore rules while preparing candidate repository state.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00056": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits SAM mask preprocessing.",
+      "reviewed": true
+    },
+    "TRAIN_015_s00035": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits candidate printer fix.",
+      "reviewed": true
+    },
+    "TRAIN_021_s00005": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00049": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts to load built parser module after candidate work.",
+      "reviewed": true
+    },
+    "TRAIN_002_s00021": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits Django management option parsing.",
+      "reviewed": true
+    },
+    "TRAIN_014_s00020": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Continues attempt to commit candidate autocomplete fix.",
+      "reviewed": true
+    },
+    "TRAIN_008_s00006": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts baseline tests before any visible candidate edit.",
+      "reviewed": true
+    },
+    "TRAIN_021_s00023": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00063": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts another SAM processor edit; failure retains work purpose.",
+      "reviewed": true
+    },
+    "TRAIN_023_s00009": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_007_s00003": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects repository layout.",
+      "reviewed": true
+    },
+    "TRAIN_016_s00004": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects xarray repository layout.",
+      "reviewed": true
+    },
+    "TRAIN_023_s00018": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches tests for gettext location behavior to guide further work.",
+      "reviewed": true
+    },
+    "TRAIN_020_s00007": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_004_s00034": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_007_s00022": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits candidate PSRP cleanup.",
+      "reviewed": true
+    },
+    "TRAIN_023_s00014": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits gettext message implementation.",
+      "reviewed": true
+    },
+    "TRAIN_006_s00067": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts import of edited SAM processor.",
+      "reviewed": true
+    },
+    "TRAIN_003_s00027": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Checks git identity setting before committing.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00068": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts to test built parser after compile and candidate commit.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00005": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches link parsing implementation.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00022": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads existing link parser tests before candidate edit.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00004": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects repository layout.",
+      "reviewed": true
+    },
+    "TRAIN_012_s00034": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Inserts candidate pickling implementation.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00030": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Changes import in candidate cache code.",
+      "reviewed": true
+    },
+    "TRAIN_023_s00007": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches tests for gettext location behavior.",
+      "reviewed": true
+    },
+    "TRAIN_005_s00027": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects worktree state after candidate tests.",
+      "reviewed": true
+    },
+    "TRAIN_023_s00008": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates gettext Message implementation.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00025": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads BaseLLM implementation before candidate work.",
+      "reviewed": true
+    },
+    "TRAIN_009_s00002": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_012_s00035": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Reads newly edited text.py region to inspect the candidate.",
+      "reviewed": true
+    },
+    "TRAIN_009_s00027": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads configuration definitions while diagnosing behavior.",
+      "reviewed": true
+    },
+    "TRAIN_016_s00018": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Runs baseline xarray tests before a visible candidate edit.",
+      "reviewed": true
+    },
+    "TRAIN_024_s00012": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_021_s00001": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "TRAIN_018_s00028": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects repository status after candidate edits.",
+      "reviewed": true
+    },
+    "TRAIN_013_s00039": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts parser test through built loader after candidate work.",
+      "reviewed": true
+    },
+    "TRAIN_023_s00022": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_ACTION",
+      "note": "Updates task plan without performing repository work.",
+      "reviewed": true
+    },
+    "TRAIN_011_s00039": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits cache update implementation.",
+      "reviewed": true
+    }
+  }
+}

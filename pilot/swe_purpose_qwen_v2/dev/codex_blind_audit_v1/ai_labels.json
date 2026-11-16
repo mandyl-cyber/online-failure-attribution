@@ -1,0 +1,427 @@
+{
+  "reviewer_kind": "ai",
+  "reviewer_id": "codex-blind-v2",
+  "blind_packets_sha256": "14d99695c2821be8cfacc92c4626fc1a4ecb33d5573d335db2469e4958ac31e0",
+  "labels": {
+    "DEV_003_s00012": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits defaultfilters implementation.",
+      "reviewed": true
+    },
+    "DEV_005_s00048": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Reads the just-edited module after a static import check; candidate inspection.",
+      "reviewed": true
+    },
+    "DEV_004_s00007": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads error-handling source before a visible candidate change.",
+      "reviewed": true
+    },
+    "DEV_001_s00014": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Runs tests before a visible edit to reproduce or locate the issue.",
+      "reviewed": true
+    },
+    "DEV_008_s00012": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches implementation locations for the callback issue.",
+      "reviewed": true
+    },
+    "DEV_005_s00025": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches locale-related code before the candidate change.",
+      "reviewed": true
+    },
+    "DEV_002_s00006": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches existing tests for deletion behavior.",
+      "reviewed": true
+    },
+    "DEV_003_s00006": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates the floatformat implementation.",
+      "reviewed": true
+    },
+    "DEV_002_s00013": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads existing deletion tests to understand behavior.",
+      "reviewed": true
+    },
+    "DEV_003_s00023": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Runs the full template test suite after candidate changes.",
+      "reviewed": true
+    },
+    "DEV_005_s00032": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits Qt argument handling in the candidate module.",
+      "reviewed": true
+    },
+    "DEV_004_s00042": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads requirements to understand dependency state after a commit.",
+      "reviewed": true
+    },
+    "DEV_005_s00049": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Modifies QtWebEngine settings argument logic.",
+      "reviewed": true
+    },
+    "DEV_006_s00016": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits Keras model.save implementation.",
+      "reviewed": true
+    },
+    "DEV_009_s00020": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects repository status after a candidate edit and test.",
+      "reviewed": true
+    },
+    "DEV_005_s00006": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts initial test run to discover baseline state; pytest is missing.",
+      "reviewed": true
+    },
+    "DEV_001_s00027": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Creates a versioned candidate commit; no explicit handoff is visible.",
+      "reviewed": true
+    },
+    "DEV_003_s00021": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Runs targeted tests after the candidate change.",
+      "reviewed": true
+    },
+    "DEV_006_s00012": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads saving implementation before visible candidate changes.",
+      "reviewed": true
+    },
+    "DEV_010_s00006": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads inspect helper code to locate cause of formatting bug.",
+      "reviewed": true
+    },
+    "DEV_004_s00011": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads vault parsing source to locate behavior.",
+      "reviewed": true
+    },
+    "DEV_008_s00030": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate implementation as a versioned artifact; no explicit handoff.",
+      "reviewed": true
+    },
+    "DEV_010_s00024": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Checks current git identity setting before commit.",
+      "reviewed": true
+    },
+    "DEV_003_s00009": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reproduces the reported floatformat crash before an edit.",
+      "reviewed": true
+    },
+    "DEV_007_s00008": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches optimizer code for callable handling.",
+      "reviewed": true
+    },
+    "DEV_004_s00020": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads task-loading implementation before modification.",
+      "reviewed": true
+    },
+    "DEV_004_s00029": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts tests after source edits; missing pytest does not change the purpose.",
+      "reviewed": true
+    },
+    "DEV_002_s00024": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Runs a focused model deletion probe after candidate work.",
+      "reviewed": true
+    },
+    "DEV_004_s00040": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits a versioned candidate after implementation and probes.",
+      "reviewed": true
+    },
+    "DEV_005_s00062": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_009_s00011": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads output-wrapping source to locate the bug.",
+      "reviewed": true
+    },
+    "DEV_006_s00018": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches for API export locations after an initial edit.",
+      "reviewed": true
+    },
+    "DEV_006_s00024": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads requirements to understand available test dependencies.",
+      "reviewed": true
+    },
+    "DEV_006_s00020": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_003_s00010": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads floatformat source after initial reproduction, before a fix.",
+      "reviewed": true
+    },
+    "DEV_010_s00007": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Continues reading inspect helper implementation.",
+      "reviewed": true
+    },
+    "DEV_006_s00037": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate refactor as a versioned artifact.",
+      "reviewed": true
+    },
+    "DEV_001_s00016": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads arithmetic mask implementation before editing it.",
+      "reviewed": true
+    },
+    "DEV_004_s00030": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits vault object decryption implementation.",
+      "reviewed": true
+    },
+    "DEV_010_s00025": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Checks git identity configuration before a commit.",
+      "reviewed": true
+    },
+    "DEV_009_s00022": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_009_s00018": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_001_s00023": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_005_s00002": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_001_s00006": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads NDDataRef implementation before a fix.",
+      "reviewed": true
+    },
+    "DEV_005_s00060": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Tests import of edited module; missing PyQt does not change the purpose.",
+      "reviewed": true
+    },
+    "DEV_002_s00012": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads existing delete tests before candidate modification.",
+      "reviewed": true
+    },
+    "DEV_002_s00029": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate fix as a versioned artifact.",
+      "reviewed": true
+    },
+    "DEV_004_s00023": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits Ansible error implementation.",
+      "reviewed": true
+    },
+    "DEV_006_s00041": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Verifies signatures and callability after the refactor.",
+      "reviewed": true
+    },
+    "DEV_009_s00019": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts targeted test after candidate edit; environment import mismatch does not change purpose.",
+      "reviewed": true
+    },
+    "DEV_005_s00003": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_010_s00017": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_004_s00008": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Searches Vault handling code to locate relevant implementation.",
+      "reviewed": true
+    },
+    "DEV_006_s00034": {
+      "label": "ENABLE",
+      "evidence_id": "C_ACTION",
+      "note": "Installs dependencies required for subsequent work.",
+      "reviewed": true
+    },
+    "DEV_005_s00036": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Reads newly edited configuration to inspect the candidate.",
+      "reviewed": true
+    },
+    "DEV_004_s00025": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Adds YAML position propagation in the candidate implementation.",
+      "reviewed": true
+    },
+    "DEV_007_s00018": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Changes optimizer learning-rate handling.",
+      "reviewed": true
+    },
+    "DEV_002_s00026": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_004_s00005": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Locates AnsibleParserError definition.",
+      "reviewed": true
+    },
+    "DEV_004_s00033": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads parsing splitter code to locate behavior.",
+      "reviewed": true
+    },
+    "DEV_009_s00021": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate source change as a versioned artifact.",
+      "reviewed": true
+    },
+    "DEV_005_s00057": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Edits QtWebEngine settings logic.",
+      "reviewed": true
+    },
+    "DEV_002_s00005": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Reads deletion source before any candidate change.",
+      "reviewed": true
+    },
+    "DEV_005_s00009": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Inspects existing test layout after installing pytest.",
+      "reviewed": true
+    },
+    "DEV_004_s00038": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Runs a focused vault parser probe after candidate edits.",
+      "reviewed": true
+    },
+    "DEV_008_s00023": {
+      "label": "CHECK",
+      "evidence_id": "C_ACTION",
+      "note": "Attempts tests after a candidate source edit.",
+      "reviewed": true
+    },
+    "DEV_006_s00017": {
+      "label": "UNKNOWN",
+      "evidence_id": "C_OBSERVATION",
+      "note": "Only a task list update is visible.",
+      "reviewed": true
+    },
+    "DEV_010_s00026": {
+      "label": "CONSTRUCT",
+      "evidence_id": "C_ACTION",
+      "note": "Commits the candidate fix as a versioned artifact.",
+      "reviewed": true
+    },
+    "DEV_002_s00017": {
+      "label": "ACQUIRE",
+      "evidence_id": "C_ACTION",
+      "note": "Runs baseline deletion tests before any visible source edit.",
+      "reviewed": true
+    }
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "seed": "swe-v2-codex-audit-2026-11-16",
+  "quota": {
+    "ACQUIRE": 20,
+    "CHECK": 15,
+    "UNKNOWN": 10,
+    "CONSTRUCT": 8,
+    "DELIVER": 7,
+    "OPERATE": 3,
+    "ENABLE": 1
+  },
+  "stratum_sizes": {
+    "ACQUIRE": 179,
+    "CHECK": 81,
+    "UNKNOWN": 56,
+    "CONSTRUCT": 23,
+    "DELIVER": 7,
+    "OPERATE": 3,
+    "ENABLE": 1
+  },
+  "items": [
+    {
+      "request_id": "DEV_003_s00012",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.34782608695652173,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00048",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00007",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_001_s00014",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_008_s00012",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00025",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_002_s00006",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_003_s00006",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_002_s00013",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_003_s00023",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00032",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.34782608695652173,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00042",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00049",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.34782608695652173,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_006_s00016",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_009_s00020",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00006",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_001_s00027",
+      "stratum": "DELIVER",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_003_s00021",
+      "stratum": "OPERATE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_006_s00012",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "DEV_010_s00006",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00011",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_008_s00030",
+      "stratum": "DELIVER",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_010_s00024",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_003_s00009",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_007_s00008",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00020",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00029",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_002_s00024",
+      "stratum": "OPERATE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00040",
+      "stratum": "DELIVER",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00062",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_009_s00011",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_006_s00018",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "DEV_006_s00024",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_006_s00020",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_003_s00010",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "DEV_010_s00007",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_006_s00037",
+      "stratum": "DELIVER",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_001_s00016",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00030",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.34782608695652173,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_010_s00025",
+      "stratum": "ENABLE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_009_s00022",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_009_s00018",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_001_s00023",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00002",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_001_s00006",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00060",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_002_s00012",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "DEV_002_s00029",
+      "stratum": "DELIVER",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00023",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.34782608695652173,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_006_s00041",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_009_s00019",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00003",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_010_s00017",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00008",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_006_s00034",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00036",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00025",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.34782608695652173,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_007_s00018",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.34782608695652173,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_002_s00026",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00005",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_004_s00033",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_009_s00021",
+      "stratum": "DELIVER",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_005_s00057",
+      "stratum": "CONSTRUCT",
+      "inclusion_probability": 0.34782608695652173,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_002_s00005",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "DEV_005_s00009",
+      "stratum": "priority_check",
+      "inclusion_probability": null,
+      "sampling": "targeted"
+    },
+    {
+      "request_id": "DEV_004_s00038",
+      "stratum": "ACQUIRE",
+      "inclusion_probability": 0.11173184357541899,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_008_s00023",
+      "stratum": "CHECK",
+      "inclusion_probability": 0.18518518518518517,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_006_s00017",
+      "stratum": "UNKNOWN",
+      "inclusion_probability": 0.17857142857142858,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_010_s00026",
+      "stratum": "DELIVER",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    },
+    {
+      "request_id": "DEV_002_s00017",
+      "stratum": "OPERATE",
+      "inclusion_probability": 1.0,
+      "sampling": "probability"
+    }
+  ],
+  "package_manifest_sha256": "23ca681fdb85b7c6fc5f73d9bd15e1b867081ea4e73d0224e6a2c27b6ca430d7",
+  "review_sha256": "a3db3b6f4a15b4763adc7bcad89ef236e0573d94892089cb7db3342e8fc8bcec",
+  "candidate_sha256": {
+    "DEV_003_s00012": "7a70378de2cdb0f25ae6b12de5bc472232194ec109f674c967e9b7b4b06a38f9",
+    "DEV_005_s00048": "3e77b97aaf94627f66e28b196f9c337c6c856eb7506a0921e5f2016d745f62cc",
+    "DEV_004_s00007": "ed41e5a0f1689fe27dc5b5f123417a015b9e29049effaa5da5fde892de490f2b",
+    "DEV_001_s00014": "cf56da824531a1e2733b6fc7e0262eb807ed799634a8c31aaa69253c8265e79a",
+    "DEV_008_s00012": "41395d2cdc73e7c91f17aaee64b44667abe927518b2e485e22f769ebe3f8eb42",
+    "DEV_005_s00025": "ed99479ced91727bbe1503b83ebe671b73cb5eb8f25fc6e30f06dfcade86fcce",
+    "DEV_002_s00006": "1808dcb59abb1294036adc27ece9fc7a2787c2b5fd81710a234a844d2f5ffeca",
+    "DEV_003_s00006": "540a6db3c873dd1dfb4fb74ed597b7109b0d26e9c3c812b45f996b7b992033b5",
+    "DEV_002_s00013": "7bf11d31b2db14a13980f0f821b22e496bb428583402eb374ab2540bc8baff5e",
+    "DEV_003_s00023": "0ab4d1b6a1a2cf95ac6de7d33c56d0a23d023bc4586a8bf78c18ca7348a0b16b",
+    "DEV_005_s00032": "f29109952223dffe5e5bb806b69bb005433d31231a18542c36f931068ec622c6",
+    "DEV_004_s00042": "059a170126b4de45c6adf6d93505c54f0683450ad51a12f5aa947826d503454d",
+    "DEV_005_s00049": "b6533e22f54963c97b5ab3286eb5a927bb0688311eae70f06a2046e233c78b62",
+    "DEV_006_s00016": "a848c6b6a226d16d13ec55892f7e03e6f257da19527f5f8dae88894a348d2858",
+    "DEV_009_s00020": "2fb5556d35f884f3ed79b81bd3d7c28c97e8a3cb83731f8d501ae51997672550",
+    "DEV_005_s00006": "f6448b21728d7b3352bd5c89d5f272a0f1bbf29b9f2dd2b91339eafbdd8c4c80",
+    "DEV_001_s00027": "f49140b37a28b8400cc93b11cf0ecd60f95a1076662943bacd5699d67fd69fb6",
+    "DEV_003_s00021": "28cfbed59cc261bf3d32f9eaa6f07eca97addef9aca9090b8697c9c5758f3bde",
+    "DEV_006_s00012": "3eb382063ce49455b13020f9c40c45c80d861ed2edb576af3dfd933623e56264",
+    "DEV_010_s00006": "f57e90654790f9ef5b9e298bdb332918d8b57f640ba3ed4f1e80db2d7ab0c614",
+    "DEV_004_s00011": "568b13998c20d3c9e2bbf0d6596347cb2060344946bbbde7919bdf7eaa9aa56c",
+    "DEV_008_s00030": "e095ba8d1380985dd253909177dd8398b08932c750bb537770fb82362570f778",
+    "DEV_010_s00024": "860c58d1e5977ec19b63689acf3bd451d85da5b03ea8bac6f4e87a93f3e8e20b",
+    "DEV_003_s00009": "a9ef742e789189e998b218feecbd01dc308deceeae836bc63ebf1f141e1f0f60",
+    "DEV_007_s00008": "10328cdc16df00eba7cf42f56404f79a830834a061b48101b3c7a726d144da9c",
+    "DEV_004_s00020": "e24d743a632b259b7d8211c791f9965f78aca65ee3b2b8ff3166d62d5ce414e0",
+    "DEV_004_s00029": "e4dc4864eb6d7123867e0c34d76368a38ab006431906bfa01000c6c4e499e2f0",
+    "DEV_002_s00024": "c08a8aefab954ba0eda38b237f8be945cf0efb493325a1ca005dfd39e4690ef2",
+    "DEV_004_s00040": "2f71e635d377e8759c560478a3fe5d8e5c50a12329656dfdd615623091289e78",
+    "DEV_005_s00062": "6c631ac0e6d50b8577126a92aafcfd3728958706f3a67285a85d2bf317f9f79f",
+    "DEV_009_s00011": "0e097b6427e1049abbd34062f218ef2a16ea72639d7cb5540b0459ff1c774fa4",
+    "DEV_006_s00018": "11f329126c34a632cb85c9ca385ed82f51cde2b41b735006fcbe2d5da84bdb51",
+    "DEV_006_s00024": "0225f8b9df19283f3e0bf6799f5308be09fa5b32250fef22a07ac14cc6b3f90f",
+    "DEV_006_s00020": "58a8d2b43ea92183be97ad3250fea20b4c824cd5aed00d83d750ab54e9dec9ab",
+    "DEV_003_s00010": "7ee5fc860d7782675c5e33ad25942a04c386beb2dc8b02b28692405198ae1b75",
+    "DEV_010_s00007": "6e891876bb3921c4f435e0cf5ebe0243ad4f8ed407a76ec59a679c3a79371985",
+    "DEV_006_s00037": "af3c14ef13afc6a17d11482d89ac76d428610c72d599bb3916a820a17149c16e",
+    "DEV_001_s00016": "a9b4de2e298dd60f708abc01b9340e1af7a43874ff0c972f2139729181ec8504",
+    "DEV_004_s00030": "463cf8f48560bbb0eeedb7afd2d0b535ae8f74ff4f0a335e49a74f968f2f2675",
+    "DEV_010_s00025": "2213e27af77ac4d36e327fa1f8c748a1e521fd71bc813b311230984a7eed301a",
+    "DEV_009_s00022": "6dd1a61fdaad92f72a2f1adb31d8f4c2ac5727c8490e0f7e1d83e5ba379c3608",
+    "DEV_009_s00018": "9b0efad2ee4c3a671c59c4b052970e289dca6dc4c03646aa2768a70efd9a5c58",
+    "DEV_001_s00023": "793426bfbfd00dd980aede92f825b2995830b4c51f667e164b83f6860b8714ba",
+    "DEV_005_s00002": "a41145a063087b808b5b46a0bb448478b7a0095e227d719e40abe4b1b9ed6b71",
+    "DEV_001_s00006": "1926387534a96168af61a3982d216caf4bf688cac1c951087379a5a5e7465ff2",
+    "DEV_005_s00060": "36026509f29f4d8358bd186ef235536fd4f7b614195cfba0b8cc9aa8b49c84b1",
+    "DEV_002_s00012": "76ceca2dbf2ece1c76d44c40b42f98bba44837b8c797b8a1d25dd032ac2c040c",
+    "DEV_002_s00029": "409eb9ed8d6559befb86c1f93d706fd5e20382f8197d175098bed3e9d28c868c",
+    "DEV_004_s00023": "3986b43568a3e453beb7755954aeb74525d694c922c741190f4cd365fa13dc87",
+    "DEV_006_s00041": "7ff31fb061fb58cb49c0fa4fc2cf9a987fbb5a4a184479791dc8f9e6d5a5fccb",
+    "DEV_009_s00019": "44701af2597d8ff8870ed5c981a541c381982e9a985372f59620d2ef6b67ee3d",
+    "DEV_005_s00003": "153ff36a7451335bac58a8df73bd65bd7d7b682d48ce2af17ba0175151999407",
+    "DEV_010_s00017": "e2cfb7e938a2901b0774410143023f56eda4d367d5f629695aedbf613261d0b8",
+    "DEV_004_s00008": "84a55eb29fff40087e4db62e663a471af2698f7f5965e5768225ac0cc7fd604e",
+    "DEV_006_s00034": "db9de99cc257c3db3d501879334f9055887d7ab923a7577425bfbaf66775eec6",
+    "DEV_005_s00036": "60522e696f6813b94418c1642b6126f5f5d4813b58aa6db27fd6034d0f193bb8",
+    "DEV_004_s00025": "6659f3184441873b97b4aeb912644e7e17634fe2f67ee487117a795c7d8df74a",
+    "DEV_007_s00018": "035613b88d32befc9f49665f3d7edbbf255ef47e03e248a2186b7e6807f07e45",
+    "DEV_002_s00026": "fa0f3d083aa93cb0a9395aff9320ad559ca13f294a127c632dd9511c2ca1ee92",
+    "DEV_004_s00005": "f56fba527e33af5c20d1d3862a444bc847bb1de035fe4477e8feee715afa2071",
+    "DEV_004_s00033": "72dea3f630568ba14c06c1462569ee4d6b110727c7206d4edd2699320c3da0a9",
+    "DEV_009_s00021": "c9ededb04e4a39800b5eaa744e26b44121c985b5cb079e4717a6266988c82d64",
+    "DEV_005_s00057": "990b73c48daac482f5ffb81463a5350bd8f4a07c45a82fc88a2de74123e6a368",
+    "DEV_002_s00005": "4e3808a52cb00daa818b8b56c829a1a817491aea0581655a616a00d3e422f128",
+    "DEV_005_s00009": "8e433825596b79856cd1e8352ed6ac7882cd05248c25b5d87786e7c317561e43",
+    "DEV_004_s00038": "23d938f01cb27ffd4bf46f767c988c76dd24c9dc4773a47dc892fb040e198806",
+    "DEV_008_s00023": "ea1c4ab7777535a0ae6840756844b9787414135dd6c87719fe3aa7576287f7be",
+    "DEV_006_s00017": "407066c64a21a80f48b82d22bbbdae270dc07d9d2b2e7ce8ea9e1e0232c15ba9",
+    "DEV_010_s00026": "1e29104c416bfbb6d2771a414e1a0fd68c1a7ca98c91c8b43c3f80e26eb38dc6",
+    "DEV_002_s00017": "acd6bd2959af8ad8c4666a4a0921dd64c25d72c8ae93f4583b6b589ced5bd3c4"
+  }
+}
