@@ -7,9 +7,15 @@ import urllib.error
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--base-url',default='http://127.0.0.1:30001/v1')
+    p.add_argument('--client',choices=['urllib','litellm'],default='urllib')
     a=p.parse_args()
     def ask(messages,tools,choice):
-        body=dict(model='qwen-local',messages=messages,tools=tools,tool_choice=choice,temperature=0,max_tokens=512)
+        body=dict(model='qwen-local',messages=messages,tools=tools,tool_choice=choice,temperature=0,max_completion_tokens=512)
+        if a.client=='litellm':
+            from litellm import completion
+            body['model']='openai/qwen-local'
+            result=completion(**body,api_base=a.base_url,api_key='local-probe',stream=False,timeout=180).model_dump()
+            print(json.dumps(result,ensure_ascii=False,indent=2));return result['choices'][0]
         req=urllib.request.Request(a.base_url+'/chat/completions',data=json.dumps(body).encode(),headers={'Content-Type':'application/json'})
         try:
             with urllib.request.urlopen(req,timeout=180) as response:result=json.load(response)
@@ -18,7 +24,7 @@ def main():
         print(json.dumps(result,ensure_ascii=False,indent=2));return result['choices'][0]
     tools=[dict(type='function',function=dict(name='get_probe_status',description='Return diagnostic probe status.',
            parameters=dict(type='object',properties=dict(probe_id=dict(type='string')),required=['probe_id'])))]
-    messages=[dict(role='user',content="Call get_probe_status with probe_id='swe-online-001'. After receiving its result, repeat its receipt exactly.")]
+    messages=[dict(role='user',content=[dict(type='text',text="Call get_probe_status with probe_id='swe-online-001'. After receiving its result, repeat its receipt exactly.")])]
     first=ask(messages,tools,'auto')
     calls=first['message'].get('tool_calls',[])
     if first['finish_reason']!='tool_calls' or len(calls)!=1:raise SystemExit('FAIL: expected one structured tool call')

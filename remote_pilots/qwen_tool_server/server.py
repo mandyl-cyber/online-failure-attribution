@@ -8,6 +8,14 @@ import time
 import uuid
 
 
+def output_budget(request):
+    values=[request[k] for k in ('max_tokens','max_completion_tokens') if request.get(k) is not None]
+    if any(isinstance(v,bool) or not isinstance(v,int) or v<1 for v in values):
+        raise ValueError('Output token budget must be a positive integer')
+    if len(set(values))>1:raise ValueError('Conflicting max_tokens and max_completion_tokens')
+    return values[0] if values else 1024
+
+
 def prepare(request):
     if request.get('stream'):
         raise ValueError('Streaming is not supported by this probe server')
@@ -34,6 +42,11 @@ def prepare(request):
             if not isinstance(args,dict):raise ValueError('Tool arguments must be an object')
             fn['arguments']=args
         if m.get('content') is None:m['content']=''
+        if isinstance(m['content'],list):
+            parts=m['content']
+            if any(not isinstance(x,dict) or x.get('type')!='text' or not isinstance(x.get('text'),str) for x in parts):
+                raise ValueError('Only text content parts supported; images are not accepted')
+            m['content']='\n'.join(x['text'] for x in parts)
         if not isinstance(m['content'],str):raise ValueError('Only string message content supported')
     if choice=='none':tools=[]
     if request.get('response_format'):
@@ -87,7 +100,7 @@ def main():
                 r=json.loads(self.rfile.read(size))
                 if r.get('model')!=a.model_name:raise ValueError('Unexpected model ID')
                 messages,tools=prepare(r)
-                maximum=int(r.get('max_tokens',1024));temp=float(r.get('temperature',0))
+                maximum=output_budget(r);temp=float(r.get('temperature',0))
                 if maximum<1 or temp<0:raise ValueError('Invalid generation parameters')
                 inputs=tokenizer.apply_chat_template(messages,tools=tools or None,add_generation_prompt=True,
                        return_dict=True,return_tensors='pt').to('cuda')

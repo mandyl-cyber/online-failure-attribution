@@ -1,10 +1,19 @@
 import unittest
-from remote_pilots.qwen_tool_server.server import prepare,parse_completion
+from remote_pilots.qwen_tool_server.server import prepare,parse_completion,output_budget
 
 TOOLS=[dict(type='function',function=dict(name='probe',parameters={'type':'object'}))]
 
 
 class ToolServerTests(unittest.TestCase):
+    def test_completion_budget_alias(self):
+        self.assertEqual(output_budget({'max_completion_tokens':256}),256)
+        self.assertEqual(output_budget({'max_tokens':256,'max_completion_tokens':256}),256)
+        for r in [{'max_tokens':128,'max_completion_tokens':256},{'max_completion_tokens':True},{'max_tokens':0}]:
+            with self.assertRaises(ValueError):output_budget(r)
+    def test_text_parts(self):
+        messages,_=prepare({'messages':[{'role':'user','content':[{'type':'text','text':'one'},{'type':'text','text':'two'}]}]})
+        self.assertEqual(messages[0]['content'],'one\ntwo')
+        with self.assertRaises(ValueError):prepare({'messages':[{'role':'user','content':[{'type':'image_url','image_url':{}}]}]})
     def test_call(self):
         m,r=parse_completion('<tool_call>{"name":"probe","arguments":{"id":"x"}}</tool_call>',TOOLS,True)
         self.assertEqual(r,'tool_calls');self.assertEqual(m['tool_calls'][0]['function']['arguments'],'{"id": "x"}')
