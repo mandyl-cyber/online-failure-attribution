@@ -1,0 +1,495 @@
+{
+  "trajectories": 276,
+  "gold_boundaries": 1362,
+  "policy": "Fixed predictions and thresholds; tol=1; D0/D1 scored separately. Matching may reassign pairs. Competition is structural, not proof of redundant semantic stages.",
+  "input_sha256": {
+    "pilot\\swe_only_boundary_v1\\predictions.json": "fc04be795dd1d9784a50b47a44459d015c13e5f246d8cdb3428345a02a589171",
+    "pilot\\swe_transition_v1\\predictions.json": "6ba045242fc3583222a49bba15d372c68be934a47c4f616efcaea8a7649e3a9d",
+    "eval\\boundary_supervised\\data_fixed\\labels.json": "d219dee1cf8855a806748ecfb44332301d830ff59190bd9770870b7b04d55907",
+    "eval\\boundary_supervised\\data_fixed\\records.json": "b9cf9924e747576c527e4351f1db34c52420526c5379fde0b8900eaa4517a4af"
+  },
+  "arms": {
+    "mixed_train_mixed_dev": {
+      "scores": {
+        "tol0_D0": {
+          "precision": 0.38589211618257263,
+          "recall": 0.6145374449339207,
+          "f1": 0.47408666100254887,
+          "counts": [
+            837,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.47148728704203874
+        },
+        "tol1_D0": {
+          "precision": 0.43706777316735823,
+          "recall": 0.6960352422907489,
+          "f1": 0.5369583687340697,
+          "counts": [
+            948,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5377067040573232
+        },
+        "tol1_D1": {
+          "precision": 0.4817888427846934,
+          "recall": 0.7672540381791483,
+          "f1": 0.5919003115264798,
+          "counts": [
+            1045,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5949126041221209
+        },
+        "tol1_D2": {
+          "precision": 0.4817888427846934,
+          "recall": 0.7672540381791483,
+          "f1": 0.5919003115264798,
+          "counts": [
+            1045,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5949126041221209
+        },
+        "tol1_eventual": {
+          "precision": 0.4817888427846934,
+          "recall": 0.7672540381791483,
+          "f1": 0.5919003115264798,
+          "counts": [
+            1045,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5949126041221209
+        }
+      },
+      "decomposition": {
+        "D0": {
+          "tp": 948,
+          "fp": {
+            "competition": 150,
+            "outside_tolerance": 796,
+            "timing_only": 275
+          },
+          "fn": {
+            "no_nearby_prediction": 304,
+            "timing_only": 98,
+            "competition": 12
+          },
+          "matched_position_offsets": {
+            "0": 685,
+            "-1": 263
+          }
+        },
+        "D1": {
+          "tp": 1045,
+          "fp": {
+            "competition": 328,
+            "outside_tolerance": 796
+          },
+          "fn": {
+            "no_nearby_prediction": 304,
+            "competition": 13
+          },
+          "matched_position_offsets": {
+            "0": 665,
+            "-1": 261,
+            "1": 119
+          }
+        }
+      },
+      "net_additional_matches_D1": 97,
+      "all_emissions_at_boundary": true
+    },
+    "mixed_train_swe_dev": {
+      "scores": {
+        "tol0_D0": {
+          "precision": 0.43020457280385077,
+          "recall": 0.5249632892804699,
+          "f1": 0.47288359788359785,
+          "counts": [
+            715,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.46954476623594266
+        },
+        "tol1_D0": {
+          "precision": 0.49217809867629364,
+          "recall": 0.6005873715124816,
+          "f1": 0.541005291005291,
+          "counts": [
+            818,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.538707662045258
+        },
+        "tol1_D1": {
+          "precision": 0.5499398315282792,
+          "recall": 0.671071953010279,
+          "f1": 0.6044973544973545,
+          "counts": [
+            914,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.603111771126477
+        },
+        "tol1_D2": {
+          "precision": 0.5499398315282792,
+          "recall": 0.671071953010279,
+          "f1": 0.6044973544973545,
+          "counts": [
+            914,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.603111771126477
+        },
+        "tol1_eventual": {
+          "precision": 0.5499398315282792,
+          "recall": 0.671071953010279,
+          "f1": 0.6044973544973545,
+          "counts": [
+            914,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.603111771126477
+        }
+      },
+      "decomposition": {
+        "D0": {
+          "tp": 818,
+          "fp": {
+            "competition": 79,
+            "outside_tolerance": 556,
+            "timing_only": 209
+          },
+          "fn": {
+            "no_nearby_prediction": 433,
+            "timing_only": 96,
+            "competition": 15
+          },
+          "matched_position_offsets": {
+            "0": 634,
+            "-1": 184
+          }
+        },
+        "D1": {
+          "tp": 914,
+          "fp": {
+            "competition": 192,
+            "outside_tolerance": 556
+          },
+          "fn": {
+            "no_nearby_prediction": 433,
+            "competition": 15
+          },
+          "matched_position_offsets": {
+            "0": 626,
+            "-1": 177,
+            "1": 111
+          }
+        }
+      },
+      "net_additional_matches_D1": 96,
+      "all_emissions_at_boundary": true
+    },
+    "swe_train_swe_dev": {
+      "scores": {
+        "tol0_D0": {
+          "precision": 0.43506493506493504,
+          "recall": 0.5411160058737151,
+          "f1": 0.48232984293193715,
+          "counts": [
+            737,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.47889252579956465
+        },
+        "tol1_D0": {
+          "precision": 0.49409681227863045,
+          "recall": 0.6145374449339207,
+          "f1": 0.5477748691099477,
+          "counts": [
+            837,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.5444992183438753
+        },
+        "tol1_D1": {
+          "precision": 0.5448642266824085,
+          "recall": 0.6776798825256976,
+          "f1": 0.6040575916230366,
+          "counts": [
+            923,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6047748664903674
+        },
+        "tol1_D2": {
+          "precision": 0.5448642266824085,
+          "recall": 0.6776798825256976,
+          "f1": 0.6040575916230366,
+          "counts": [
+            923,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6047748664903674
+        },
+        "tol1_eventual": {
+          "precision": 0.5448642266824085,
+          "recall": 0.6776798825256976,
+          "f1": 0.6040575916230366,
+          "counts": [
+            923,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6047748664903674
+        }
+      },
+      "decomposition": {
+        "D0": {
+          "tp": 837,
+          "fp": {
+            "competition": 86,
+            "outside_tolerance": 554,
+            "timing_only": 217
+          },
+          "fn": {
+            "no_nearby_prediction": 417,
+            "competition": 16,
+            "timing_only": 92
+          },
+          "matched_position_offsets": {
+            "0": 650,
+            "-1": 187
+          }
+        },
+        "D1": {
+          "tp": 923,
+          "fp": {
+            "competition": 217,
+            "outside_tolerance": 554
+          },
+          "fn": {
+            "no_nearby_prediction": 417,
+            "competition": 22
+          },
+          "matched_position_offsets": {
+            "0": 635,
+            "-1": 186,
+            "1": 102
+          }
+        }
+      },
+      "net_additional_matches_D1": 86,
+      "all_emissions_at_boundary": true
+    },
+    "transition": {
+      "scores": {
+        "tol0_D0": {
+          "precision": 0.428024083196497,
+          "recall": 0.5741556534508077,
+          "f1": 0.49043587331451866,
+          "counts": [
+            782,
+            1827,
+            1362
+          ],
+          "macro_f1": 0.4858538634719085
+        },
+        "tol1_D0": {
+          "precision": 0.48111658456486045,
+          "recall": 0.6453744493392071,
+          "f1": 0.5512699905926622,
+          "counts": [
+            879,
+            1827,
+            1362
+          ],
+          "macro_f1": 0.5483355452723074
+        },
+        "tol1_D1": {
+          "precision": 0.5314723590585659,
+          "recall": 0.7129221732745962,
+          "f1": 0.6089683286296644,
+          "counts": [
+            971,
+            1827,
+            1362
+          ],
+          "macro_f1": 0.6073485171926869
+        },
+        "tol1_D2": {
+          "precision": 0.5314723590585659,
+          "recall": 0.7129221732745962,
+          "f1": 0.6089683286296644,
+          "counts": [
+            971,
+            1827,
+            1362
+          ],
+          "macro_f1": 0.6073485171926869
+        },
+        "tol1_eventual": {
+          "precision": 0.5314723590585659,
+          "recall": 0.7129221732745962,
+          "f1": 0.6089683286296644,
+          "counts": [
+            971,
+            1827,
+            1362
+          ],
+          "macro_f1": 0.6073485171926869
+        }
+      },
+      "decomposition": {
+        "D0": {
+          "tp": 879,
+          "fp": {
+            "competition": 105,
+            "outside_tolerance": 606,
+            "timing_only": 237
+          },
+          "fn": {
+            "no_nearby_prediction": 379,
+            "competition": 10,
+            "timing_only": 94
+          },
+          "matched_position_offsets": {
+            "0": 675,
+            "-1": 204
+          }
+        },
+        "D1": {
+          "tp": 971,
+          "fp": {
+            "competition": 250,
+            "outside_tolerance": 606
+          },
+          "fn": {
+            "no_nearby_prediction": 379,
+            "competition": 12
+          },
+          "matched_position_offsets": {
+            "0": 652,
+            "-1": 208,
+            "1": 111
+          }
+        }
+      },
+      "net_additional_matches_D1": 92,
+      "all_emissions_at_boundary": true
+    },
+    "rules": {
+      "scores": {
+        "tol0_D0": {
+          "precision": 0.1709211986681465,
+          "recall": 0.2261380323054332,
+          "f1": 0.19469026548672566,
+          "counts": [
+            308,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.20153583694963834
+        },
+        "tol1_D0": {
+          "precision": 0.3091009988901221,
+          "recall": 0.4089574155653451,
+          "f1": 0.35208596713021495,
+          "counts": [
+            557,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.3601111592731049
+        },
+        "tol1_D1": {
+          "precision": 0.4078801331853496,
+          "recall": 0.539647577092511,
+          "f1": 0.4646017699115044,
+          "counts": [
+            735,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.479250487397772
+        },
+        "tol1_D2": {
+          "precision": 0.44950055493895674,
+          "recall": 0.5947136563876652,
+          "f1": 0.5120101137800253,
+          "counts": [
+            810,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.5242176041083354
+        },
+        "tol1_eventual": {
+          "precision": 0.46614872364039955,
+          "recall": 0.6167400881057269,
+          "f1": 0.5309734513274337,
+          "counts": [
+            840,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.54298422987624
+        }
+      },
+      "decomposition": {
+        "D0": {
+          "tp": 557,
+          "fp": {
+            "timing_only": 474,
+            "outside_tolerance": 737,
+            "competition": 34
+          },
+          "fn": {
+            "no_nearby_prediction": 500,
+            "timing_only": 288,
+            "competition": 17
+          },
+          "matched_position_offsets": {
+            "0": 273,
+            "-1": 284
+          }
+        },
+        "D1": {
+          "tp": 735,
+          "fp": {
+            "timing_only": 219,
+            "outside_tolerance": 737,
+            "competition": 111
+          },
+          "fn": {
+            "no_nearby_prediction": 500,
+            "competition": 23,
+            "timing_only": 104
+          },
+          "matched_position_offsets": {
+            "0": 342,
+            "1": 123,
+            "-1": 270
+          }
+        }
+      },
+      "net_additional_matches_D1": 178,
+      "all_emissions_at_boundary": false
+    }
+  }
+}
