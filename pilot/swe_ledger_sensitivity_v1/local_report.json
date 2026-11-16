@@ -1,0 +1,989 @@
+{
+  "complete": true,
+  "semantic_quality": "not_evaluated",
+  "dependencies": "not_evaluated",
+  "attribution": "not_evaluated",
+  "network_calls": 0,
+  "metrics": {
+    "gold": {
+      "trajectories": 16,
+      "stages": 94,
+      "observations": 595,
+      "available_evidence": 1184,
+      "ready_jobs": 85,
+      "claims": 487,
+      "failed_jobs": 9,
+      "request_bytes": 1868821,
+      "accepted_evidence": 968,
+      "cited_observations": 487,
+      "duplicate_refs": 0,
+      "duplicate_texts": 75
+    },
+    "structure": {
+      "trajectories": 16,
+      "stages": 113,
+      "observations": 595,
+      "available_evidence": 1184,
+      "ready_jobs": 103,
+      "claims": 439,
+      "request_bytes": 1694353,
+      "accepted_evidence": 873,
+      "cited_observations": 439,
+      "duplicate_refs": 0,
+      "duplicate_texts": 72,
+      "failed_jobs": 10
+    },
+    "rule": {
+      "trajectories": 16,
+      "stages": 123,
+      "observations": 595,
+      "available_evidence": 1184,
+      "ready_jobs": 113,
+      "claims": 421,
+      "request_bytes": 1628549,
+      "accepted_evidence": 836,
+      "cited_observations": 421,
+      "duplicate_refs": 0,
+      "duplicate_texts": 66,
+      "failed_jobs": 10
+    }
+  },
+  "details": [
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-psf__requests-6028-1508a463",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 6,
+        "observations": 40,
+        "available_evidence": 80,
+        "ready_jobs": 5,
+        "claims": 29,
+        "failed_jobs": 1,
+        "request_bytes": 127992,
+        "accepted_evidence": 58,
+        "cited_observations": 29,
+        "duplicate_refs": 0,
+        "duplicate_texts": 5
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-psf__requests-6028-1508a463",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 10,
+        "observations": 40,
+        "available_evidence": 80,
+        "ready_jobs": 10,
+        "claims": 40,
+        "request_bytes": 213768,
+        "accepted_evidence": 80,
+        "cited_observations": 40,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-psf__requests-6028-1508a463",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 13,
+        "observations": 40,
+        "available_evidence": 80,
+        "ready_jobs": 13,
+        "claims": 40,
+        "request_bytes": 220044,
+        "accepted_evidence": 80,
+        "cited_observations": 40,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 5,
+        "observations": 35,
+        "available_evidence": 70,
+        "ready_jobs": 5,
+        "claims": 35,
+        "request_bytes": 166999,
+        "accepted_evidence": 70,
+        "cited_observations": 35,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 6,
+        "observations": 35,
+        "available_evidence": 70,
+        "ready_jobs": 6,
+        "claims": 35,
+        "request_bytes": 169094,
+        "accepted_evidence": 70,
+        "cited_observations": 35,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 9,
+        "observations": 35,
+        "available_evidence": 70,
+        "ready_jobs": 9,
+        "claims": 35,
+        "request_bytes": 175376,
+        "accepted_evidence": 70,
+        "cited_observations": 35,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14404-25e14391",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 35,
+        "available_evidence": 69,
+        "ready_jobs": 4,
+        "claims": 35,
+        "request_bytes": 132936,
+        "accepted_evidence": 69,
+        "cited_observations": 35,
+        "duplicate_refs": 0,
+        "duplicate_texts": 5
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14404-25e14391",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 35,
+        "available_evidence": 69,
+        "failed_jobs": 1,
+        "ready_jobs": 3,
+        "claims": 16,
+        "request_bytes": 41904,
+        "accepted_evidence": 31,
+        "cited_observations": 16,
+        "duplicate_refs": 0,
+        "duplicate_texts": 1
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-14404-25e14391",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 3,
+        "observations": 35,
+        "available_evidence": 69,
+        "failed_jobs": 1,
+        "ready_jobs": 2,
+        "claims": 15,
+        "request_bytes": 36597,
+        "accepted_evidence": 29,
+        "cited_observations": 15,
+        "duplicate_refs": 0,
+        "duplicate_texts": 1
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-110094-a10dde1e",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 43,
+        "available_evidence": 86,
+        "ready_jobs": 4,
+        "claims": 22,
+        "failed_jobs": 3,
+        "request_bytes": 56544,
+        "accepted_evidence": 44,
+        "cited_observations": 22,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 3
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-110094-a10dde1e",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 8,
+        "observations": 43,
+        "available_evidence": 86,
+        "ready_jobs": 7,
+        "claims": 28,
+        "failed_jobs": 1,
+        "request_bytes": 115235,
+        "accepted_evidence": 56,
+        "cited_observations": 28,
+        "duplicate_refs": 0,
+        "duplicate_texts": 7
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-110094-a10dde1e",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 5,
+        "observations": 43,
+        "available_evidence": 86,
+        "failed_jobs": 1,
+        "ready_jobs": 4,
+        "claims": 21,
+        "request_bytes": 74771,
+        "accepted_evidence": 42,
+        "cited_observations": 21,
+        "duplicate_refs": 0,
+        "duplicate_texts": 5
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 33,
+        "available_evidence": 66,
+        "ready_jobs": 3,
+        "claims": 17,
+        "failed_jobs": 1,
+        "request_bytes": 90466,
+        "accepted_evidence": 34,
+        "cited_observations": 17,
+        "duplicate_refs": 0,
+        "duplicate_texts": 0
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 33,
+        "available_evidence": 66,
+        "failed_jobs": 1,
+        "ready_jobs": 3,
+        "claims": 7,
+        "request_bytes": 39594,
+        "accepted_evidence": 14,
+        "cited_observations": 7,
+        "duplicate_refs": 0,
+        "duplicate_texts": 0
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 5,
+        "observations": 33,
+        "available_evidence": 66,
+        "failed_jobs": 1,
+        "ready_jobs": 4,
+        "claims": 7,
+        "request_bytes": 41689,
+        "accepted_evidence": 14,
+        "cited_observations": 7,
+        "duplicate_refs": 0,
+        "duplicate_texts": 0
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15467-da5dc0ae",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 5,
+        "observations": 31,
+        "available_evidence": 61,
+        "ready_jobs": 4,
+        "claims": 16,
+        "failed_jobs": 1,
+        "request_bytes": 32172,
+        "accepted_evidence": 31,
+        "cited_observations": 16,
+        "duplicate_refs": 0,
+        "duplicate_texts": 1
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15467-da5dc0ae",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 10,
+        "observations": 31,
+        "available_evidence": 61,
+        "ready_jobs": 10,
+        "claims": 31,
+        "request_bytes": 117306,
+        "accepted_evidence": 61,
+        "cited_observations": 31,
+        "duplicate_refs": 0,
+        "duplicate_texts": 2
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-15467-da5dc0ae",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 5,
+        "observations": 31,
+        "available_evidence": 61,
+        "failed_jobs": 1,
+        "ready_jobs": 4,
+        "claims": 14,
+        "request_bytes": 30429,
+        "accepted_evidence": 27,
+        "cited_observations": 14,
+        "duplicate_refs": 0,
+        "duplicate_texts": 0
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-19331-4460742e",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 8,
+        "observations": 64,
+        "available_evidence": 127,
+        "ready_jobs": 7,
+        "claims": 52,
+        "failed_jobs": 1,
+        "request_bytes": 260784,
+        "accepted_evidence": 103,
+        "cited_observations": 52,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-19331-4460742e",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 6,
+        "observations": 64,
+        "available_evidence": 127,
+        "failed_jobs": 3,
+        "ready_jobs": 3,
+        "claims": 23,
+        "request_bytes": 81834,
+        "accepted_evidence": 46,
+        "cited_observations": 23,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 3
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-langchain-ai__langchain-19331-4460742e",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 13,
+        "observations": 64,
+        "available_evidence": 127,
+        "failed_jobs": 2,
+        "ready_jobs": 11,
+        "claims": 42,
+        "request_bytes": 174513,
+        "accepted_evidence": 83,
+        "cited_observations": 42,
+        "duplicate_refs": 0,
+        "duplicate_texts": 9
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 2
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11749-24e171f6",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 30,
+        "available_evidence": 60,
+        "ready_jobs": 7,
+        "claims": 30,
+        "request_bytes": 143180,
+        "accepted_evidence": 60,
+        "cited_observations": 30,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11749-24e171f6",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 30,
+        "available_evidence": 60,
+        "failed_jobs": 1,
+        "ready_jobs": 3,
+        "claims": 10,
+        "request_bytes": 50027,
+        "accepted_evidence": 20,
+        "cited_observations": 10,
+        "duplicate_refs": 0,
+        "duplicate_texts": 0
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11749-24e171f6",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 30,
+        "available_evidence": 60,
+        "failed_jobs": 1,
+        "ready_jobs": 3,
+        "claims": 12,
+        "request_bytes": 51787,
+        "accepted_evidence": 24,
+        "cited_observations": 12,
+        "duplicate_refs": 0,
+        "duplicate_texts": 1
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-3716-b90a1926",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 48,
+        "available_evidence": 95,
+        "ready_jobs": 7,
+        "claims": 48,
+        "request_bytes": 195612,
+        "accepted_evidence": 95,
+        "cited_observations": 48,
+        "duplicate_refs": 0,
+        "duplicate_texts": 12
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-3716-b90a1926",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 8,
+        "observations": 48,
+        "available_evidence": 95,
+        "ready_jobs": 7,
+        "claims": 38,
+        "failed_jobs": 1,
+        "request_bytes": 131767,
+        "accepted_evidence": 75,
+        "cited_observations": 38,
+        "duplicate_refs": 0,
+        "duplicate_texts": 9
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-huggingface__transformers-3716-b90a1926",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 22,
+        "observations": 48,
+        "available_evidence": 95,
+        "failed_jobs": 1,
+        "ready_jobs": 21,
+        "claims": 35,
+        "request_bytes": 158028,
+        "accepted_evidence": 69,
+        "cited_observations": 35,
+        "duplicate_refs": 0,
+        "duplicate_texts": 8
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 26,
+        "available_evidence": 52,
+        "ready_jobs": 7,
+        "claims": 26,
+        "request_bytes": 112906,
+        "accepted_evidence": 52,
+        "cited_observations": 26,
+        "duplicate_refs": 0,
+        "duplicate_texts": 3
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 26,
+        "available_evidence": 52,
+        "ready_jobs": 7,
+        "claims": 26,
+        "request_bytes": 112906,
+        "accepted_evidence": 52,
+        "cited_observations": 26,
+        "duplicate_refs": 0,
+        "duplicate_texts": 3
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 26,
+        "available_evidence": 52,
+        "ready_jobs": 4,
+        "claims": 26,
+        "request_bytes": 106621,
+        "accepted_evidence": 52,
+        "cited_observations": 26,
+        "duplicate_refs": 0,
+        "duplicate_texts": 3
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11099-c6998918",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 33,
+        "available_evidence": 66,
+        "ready_jobs": 7,
+        "claims": 33,
+        "request_bytes": 89623,
+        "accepted_evidence": 66,
+        "cited_observations": 33,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11099-c6998918",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 8,
+        "observations": 33,
+        "available_evidence": 66,
+        "ready_jobs": 8,
+        "claims": 33,
+        "request_bytes": 91716,
+        "accepted_evidence": 66,
+        "cited_observations": 33,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11099-c6998918",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 5,
+        "observations": 33,
+        "available_evidence": 66,
+        "ready_jobs": 5,
+        "claims": 33,
+        "request_bytes": 85440,
+        "accepted_evidence": 66,
+        "cited_observations": 33,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-3723-0d4bb0b6",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 39,
+        "available_evidence": 77,
+        "ready_jobs": 3,
+        "claims": 19,
+        "failed_jobs": 1,
+        "request_bytes": 89121,
+        "accepted_evidence": 37,
+        "cited_observations": 19,
+        "duplicate_refs": 0,
+        "duplicate_texts": 5
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-3723-0d4bb0b6",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 8,
+        "observations": 39,
+        "available_evidence": 77,
+        "ready_jobs": 7,
+        "claims": 18,
+        "failed_jobs": 1,
+        "request_bytes": 96629,
+        "accepted_evidence": 35,
+        "cited_observations": 18,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-3723-0d4bb0b6",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 6,
+        "observations": 39,
+        "available_evidence": 77,
+        "ready_jobs": 5,
+        "claims": 18,
+        "failed_jobs": 1,
+        "request_bytes": 92440,
+        "accepted_evidence": 35,
+        "cited_observations": 18,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7205-282aadca",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 39,
+        "available_evidence": 78,
+        "ready_jobs": 7,
+        "claims": 39,
+        "request_bytes": 122545,
+        "accepted_evidence": 78,
+        "cited_observations": 39,
+        "duplicate_refs": 0,
+        "duplicate_texts": 8
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7205-282aadca",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 9,
+        "observations": 39,
+        "available_evidence": 78,
+        "ready_jobs": 9,
+        "claims": 39,
+        "request_bytes": 126737,
+        "accepted_evidence": 78,
+        "cited_observations": 39,
+        "duplicate_refs": 0,
+        "duplicate_texts": 8
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-pytest-dev__pytest-7205-282aadca",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 39,
+        "available_evidence": 78,
+        "ready_jobs": 7,
+        "claims": 39,
+        "request_bytes": 122548,
+        "accepted_evidence": 78,
+        "cited_observations": 39,
+        "duplicate_refs": 0,
+        "duplicate_texts": 8
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-11310-952013b4",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 8,
+        "observations": 46,
+        "available_evidence": 91,
+        "ready_jobs": 7,
+        "claims": 33,
+        "failed_jobs": 1,
+        "request_bytes": 93760,
+        "accepted_evidence": 65,
+        "cited_observations": 33,
+        "duplicate_refs": 0,
+        "duplicate_texts": 4
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-11310-952013b4",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 6,
+        "observations": 46,
+        "available_evidence": 91,
+        "ready_jobs": 5,
+        "claims": 42,
+        "failed_jobs": 1,
+        "request_bytes": 137017,
+        "accepted_evidence": 83,
+        "cited_observations": 42,
+        "duplicate_refs": 0,
+        "duplicate_texts": 10
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-scikit-learn__scikit-learn-11310-952013b4",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 10,
+        "observations": 46,
+        "available_evidence": 91,
+        "failed_jobs": 1,
+        "ready_jobs": 9,
+        "claims": 31,
+        "request_bytes": 95724,
+        "accepted_evidence": 61,
+        "cited_observations": 31,
+        "duplicate_refs": 0,
+        "duplicate_texts": 3
+      },
+      "errors": {
+        "input_budget_exceeded; no truncation performed": 1
+      }
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11333-10687a03",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 31,
+        "available_evidence": 62,
+        "ready_jobs": 4,
+        "claims": 31,
+        "request_bytes": 79977,
+        "accepted_evidence": 62,
+        "cited_observations": 31,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11333-10687a03",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 31,
+        "available_evidence": 62,
+        "ready_jobs": 7,
+        "claims": 31,
+        "request_bytes": 86256,
+        "accepted_evidence": 62,
+        "cited_observations": 31,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-django__django-11333-10687a03",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 5,
+        "observations": 31,
+        "available_evidence": 62,
+        "ready_jobs": 5,
+        "claims": 31,
+        "request_bytes": 82068,
+        "accepted_evidence": 62,
+        "cited_observations": 31,
+        "duplicate_refs": 0,
+        "duplicate_texts": 6
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-23534-93d4ba22",
+      "arm": "gold",
+      "counts": {
+        "trajectories": 1,
+        "stages": 4,
+        "observations": 22,
+        "available_evidence": 44,
+        "ready_jobs": 4,
+        "claims": 22,
+        "request_bytes": 74204,
+        "accepted_evidence": 44,
+        "cited_observations": 22,
+        "duplicate_refs": 0,
+        "duplicate_texts": 2
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-23534-93d4ba22",
+      "arm": "structure",
+      "counts": {
+        "trajectories": 1,
+        "stages": 8,
+        "observations": 22,
+        "available_evidence": 44,
+        "ready_jobs": 8,
+        "claims": 22,
+        "request_bytes": 82563,
+        "accepted_evidence": 44,
+        "cited_observations": 22,
+        "duplicate_refs": 0,
+        "duplicate_texts": 2
+      },
+      "errors": {}
+    },
+    {
+      "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-23534-93d4ba22",
+      "arm": "rule",
+      "counts": {
+        "trajectories": 1,
+        "stages": 7,
+        "observations": 22,
+        "available_evidence": 44,
+        "ready_jobs": 7,
+        "claims": 22,
+        "request_bytes": 80474,
+        "accepted_evidence": 44,
+        "cited_observations": 22,
+        "duplicate_refs": 0,
+        "duplicate_texts": 2
+      },
+      "errors": {}
+    }
+  ]
+}

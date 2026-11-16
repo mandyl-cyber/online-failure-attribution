@@ -1,0 +1,24 @@
+{
+  "trajectories": 16,
+  "selection": "Frozen balanced-v2 trajectories; not representative or independent.",
+  "arms": [
+    "gold",
+    "structure",
+    "rule"
+  ],
+  "input_bytes_per_job": 64000,
+  "request_bytes_per_trajectory": 512000,
+  "local_backend": "Copies up to 64 literal observation hints; no semantic inference.",
+  "remote_selection": "Three SHA256-first tasks of length <=40 in the same fixed set; stage-only extraction.",
+  "remote_model": "qwen-local",
+  "temperature": 0,
+  "max_output_tokens": 2048,
+  "attempts": 1,
+  "clock": "Retrospective partition sensitivity; source rule detected_at times not used. Not streaming latency.",
+  "no_claims": [
+    "semantic accuracy",
+    "dependency quality",
+    "failure attribution accuracy"
+  ],
+  "contract_sha256": "f04230ae595bad7f95dadde282ad3bd08ef60f0f9fd72000d7b569e41cd3b564"
+}
