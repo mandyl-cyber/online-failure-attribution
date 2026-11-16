@@ -1,0 +1,13 @@
+{
+  "review_type": "AI evidence feasibility review; not human gold or blinded evaluation",
+  "training_allowed": false,
+  "cases": [
+    {"case_id":"case_01","reviewed":true,"assessment":"useful_candidate","note":"35/36 的测试入口与 37 读取路径建立词法联系；36 的零测试不视为通过。支持排查同一测试入口的解释，但不能证明同一目标或强制不切。"},
+    {"case_id":"case_02","reviewed":true,"assessment":"insufficient_history","note":"计划声明可见，但没有保留 15 的成功测试证据，无法检查声明与执行顺序的关系。不能把计划切换直接当边界。"},
+    {"case_id":"case_03","reviewed":true,"assessment":"candidate_needs_semantics","note":"80 导入失败与 81 验证完成声明同时可见；声明明确承认缺依赖，因此不能认定虚假验证或逻辑矛盾。"},
+    {"case_id":"case_04","reviewed":true,"assessment":"candidate_false_alarm","note":"完成的任务是运行测试以观察失败；此前失败不与这一目标矛盾。tension 只是共现候选，不能用作矛盾真值。"},
+    {"case_id":"case_05","reviewed":true,"assessment":"correctly_undetermined","note":"19 失败后 20 git status，可以是排查也可以是检查改动；当前证据不能判定目标延续或交付。"},
+    {"case_id":"case_06","reviewed":true,"assessment":"insufficient_history","note":"当前失败的测试尝试被保留，但之前查找入口的成功动作未进入关系记忆，不能完整表示从找入口到尝试运行的切换。"}
+  ],
+  "decision":"Do not train or deploy from these six selected cases. Expand balanced prefix evidence before any boundary ablation."
+}
