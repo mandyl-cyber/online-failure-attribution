@@ -1,0 +1,72 @@
+{
+  "requests": 48,
+  "config": {
+    "input_sha256": "c537a15681da464a64ce051aed6fb480de2ba67e34e626b25157f62a12b10100",
+    "runner_sha256": "de7839d3dd97e07d6ebb22187dd0c9e848353cfe88af06b2f1d95d4d38067da0",
+    "base_url": "http://127.0.0.1:30001/v1",
+    "model": "qwen-local",
+    "temperature": 0,
+    "max_tokens": 2048,
+    "attempts": 1
+  },
+  "input_lf_sha256": "c537a15681da464a64ce051aed6fb480de2ba67e34e626b25157f62a12b10100",
+  "counts": {
+    "ValueError: quote mismatch": 30,
+    "has_model_response": 48,
+    "complete_json": 35,
+    "schema_valid": 31,
+    "claims_in_complete_json": 96,
+    "ValueError: Incomplete completion": 11,
+    "ValueError: schema enum": 4,
+    "ValueError: invalid span": 1,
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0)": 2
+  },
+  "by_arm": {
+    "gold": {
+      "ValueError: quote mismatch": 10,
+      "ValueError: Incomplete completion": 4,
+      "JSONDecodeError: Expecting value: line 1 column 1 (char 0)": 1
+    },
+    "structure": {
+      "ValueError: Incomplete completion": 3,
+      "ValueError: quote mismatch": 10,
+      "ValueError: schema enum": 2,
+      "JSONDecodeError: Expecting value: line 1 column 1 (char 0)": 1
+    },
+    "rule": {
+      "ValueError: Incomplete completion": 4,
+      "ValueError: schema enum": 2,
+      "ValueError: quote mismatch": 10,
+      "ValueError: invalid span": 1
+    }
+  },
+  "references_in_complete_json": {
+    "total": 118,
+    "wrong_span_but_unique_literal_quote": 94,
+    "quote_not_literal_in_evidence": 20,
+    "wrong_span_ambiguous_literal_quote": 4
+  },
+  "enums": {
+    "kind:conclusion": 33,
+    "basis:agent_assertion": 30,
+    "basis:tool_observation": 66,
+    "kind:state_change": 50,
+    "kind:tool_observation": 7,
+    "kind:agent_assertion": 3,
+    "kind:observation": 2,
+    "kind:verification": 1
+  },
+  "reported_token_usage": {
+    "prompt_tokens": 339398,
+    "completion_tokens": 56032,
+    "total_tokens": 395430
+  },
+  "original_valid": 0,
+  "repaired_claims": 0,
+  "semantic_quality": "not_evaluated",
+  "limitation": "First-error counts overlap underlying problems. Reference counts inspect only complete stop+JSON outputs; not an accuracy score.",
+  "inputs": {
+    "pilot\\swe_ledger_sensitivity_v1\\requests.jsonl": "2b1e8644d44a02d4a414b2b2fdd586e096a73715ecbff2c6e6859814202ca5dd",
+    "swe_ledger_sensitivity_v1\\summary.json": "076b2f65138e03df44d46f3eccf225f3d0c395a312e1a86f163b883a14b2e7ae"
+  }
+}
