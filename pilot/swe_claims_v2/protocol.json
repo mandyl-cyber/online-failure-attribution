@@ -1,0 +1,625 @@
+{
+  "protocol": "stage-claims-evidence-id-v2",
+  "source_rows_sha256": "4c988b387a72817357d3e2267166eb549b7aee9c374d4a922f916d120e1413b5",
+  "tasks": [
+    "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+    "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+    "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52"
+  ],
+  "full_requests": 48,
+  "compat_requests": 6,
+  "compat_job_ids": [
+    "e572a322b543d6df7b5702dc0bec13ebd97c99cc155a4281e17538a248458e9a",
+    "d5cd394a43ab52c51b0f971bf424187057384406c33863d1c22c4fdedbd6d48c",
+    "12d9b2b4324cc948f4c938b30da8826ebf2861621e270248423830f138eb31aa",
+    "e695cebcc242d52fa687ca145f0c6f9e6d4c849d3949103b469ecf4a1664e216",
+    "a72b7173b8a5b2f9bf7baff08033e56e94e8f2e786446f24c7f8f4cf57db3747",
+    "b6c9a1a652074569ab202882be77f7f997a33eb77eecf910caa56fb40385883c"
+  ],
+  "jobs": [
+    {
+      "job_id": "6f578c5d14bed3c9815ae8407b0414eb273ea6fe7e56ad7d308959a4f29e15a2",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "3a0e82c499e2596e6643fc4e291c525ccaf2bd2b5b11fb9e701f484fe2f46c25",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 12
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "147e02837c41caf928abfb1a7e9ec1a357433076d27592e95579d6d362e49159",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 23
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "2c75cbeb671c7d4805867c95a65c8dcd70d90c10af0db37c4db7e35f361e74c8",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 24,
+        "end_step_id": 32
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "5a85ef1dea91c3099e5548aa9d7cf45fc4dc7160bba174eb04bcd8ce6de3216f",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 5,
+        "start_step_id": 33,
+        "end_step_id": 35
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "2478e7b1d8a9b574e65c2165d6623c37db5e037355d50e9e1e36d503423dabc4",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "2f803c7c6ab8abd044527bdc5b86f077bed2c23d15e1a437ad4b502e722116a7",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 12
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "6b2e96fe035498a1b47bf63f05a716b05739aa087110b7b6af43a14590a4bccf",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 13,
+        "end_step_id": 24
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "40639e35b07c2a85213930d2ea452b48899dbb7b6dd6549353f18357ecff91b9",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 25,
+        "end_step_id": 26
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "ae1e47e2460b24c740ad7cf3a93c505ba5bcc6fa2aec07a31c2ec53b46420403",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 5,
+        "start_step_id": 27,
+        "end_step_id": 32
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "5183805b575f3db388c5077c74530edcd646115ad990422141989d009bedff7f",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 6,
+        "start_step_id": 33,
+        "end_step_id": 35
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "6a6b4b79e8e26bf1fa287beaaca8471904c6f2311718dc9fad987337c4adb287",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 2
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "849af3d52fcb0713f0dfc73aa0ea3c563bf67df57d104dcbc7543b9acbc47afa",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 3,
+        "end_step_id": 3
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "d4d6137954f32a5164a633318e1819d9f06bae5068ce19b926f8aac015ff2711",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 4,
+        "end_step_id": 12
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "8f5c6eec54859b20e9f7c11f7473ff59f76d4977c295bd059f6ed2579dec3c33",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 13,
+        "end_step_id": 19
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "48e561ef665d721f262cbd68202615ea397f198f643a572c41f07da14950b068",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 5,
+        "start_step_id": 20,
+        "end_step_id": 23
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "2863e6415e614af5dc3bbb2ceac439eeffc26d5229151f1f74a06e53ef62dee7",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 6,
+        "start_step_id": 24,
+        "end_step_id": 26
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "ebe10dd73becb874e5e35c08840131deaaae2eb3a8d3a9f5931462c24c148b58",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 7,
+        "start_step_id": 27,
+        "end_step_id": 27
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "acb81ee3b766f1ee2d0df3effc1819c136ff3ae9188bdf0620531ff7ed3970c5",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 8,
+        "start_step_id": 28,
+        "end_step_id": 34
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "c3c276d0ad84d288890a49b11d01a8578d2115da03fa05a89dea3ff30055296f",
+      "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-459-d812ee52",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 9,
+        "start_step_id": 35,
+        "end_step_id": 35
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "e695cebcc242d52fa687ca145f0c6f9e6d4c849d3949103b469ecf4a1664e216",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "8a5166713eb45da7c99bbff69fc5138214b2e36719f31fd0fc73bc5afea86c71",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 21
+      },
+      "preflight_error": "input_budget_exceeded; no truncation performed"
+    },
+    {
+      "job_id": "7c2d4a291113bcca5aeb01e71538d60e1907a1ff0b6af5a72a4fff6b8e415bcc",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 22,
+        "end_step_id": 26
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "52fed03238223840dd1203b0b6317bc3a31a99bb9c96f2608578aa4b3eb8959d",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 27,
+        "end_step_id": 33
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "762245dbf0a8e14f1b32f7bdc28a7a2c3d1adfc8e1e541df67f54f318a489f1d",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 26
+      },
+      "preflight_error": "input_budget_exceeded; no truncation performed"
+    },
+    {
+      "job_id": "a72b7173b8a5b2f9bf7baff08033e56e94e8f2e786446f24c7f8f4cf57db3747",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 27,
+        "end_step_id": 27
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "8a43fe940cc68ff0ae7b1bb7af4f76be57fbf303cd2a5039a25ee7aa495f3cca",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 28,
+        "end_step_id": 30
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "127c8878e3c0d0e0e0045627e39e8a3c5ef474e81562dba599ecff898fe1060c",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 31,
+        "end_step_id": 33
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "beff156c2d1fdae55f35cfbf39c3349ed562c4a0e8e304174a6afcf8bda15617",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 26
+      },
+      "preflight_error": "input_budget_exceeded; no truncation performed"
+    },
+    {
+      "job_id": "b6c9a1a652074569ab202882be77f7f997a33eb77eecf910caa56fb40385883c",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 27,
+        "end_step_id": 28
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "555c1a3c87286618f6e691658feb1d26ba77d30ab12f698d5515d7a36064ff36",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 29,
+        "end_step_id": 29
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "5fe0a4aedfd5ff16842c83447feee7a6bef9917668e94d9b61ce65ce0a436d1f",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 30,
+        "end_step_id": 30
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "ca9aeadebf8e9a06b6f83c3b069fe72aa37ef2cd2bdc88ce6610c05f53ab2198",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 5,
+        "start_step_id": 31,
+        "end_step_id": 33
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "e572a322b543d6df7b5702dc0bec13ebd97c99cc155a4281e17538a248458e9a",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 5
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "9a6a497707f5bcd882d557c2af3591e94aa5853a401322bd4c88d8a2e7ff4a6b",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 11
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "104c3813379bb6517cb88fd5374c2fe01128ef8a8d720a87d79943eeea4e6e22",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 12,
+        "end_step_id": 14
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "a16f753d3f5ddb1d85f6ada3fda1a8f86269235c1919c14d620e220814262cdd",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 15,
+        "end_step_id": 18
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "3f68d643d33d8ff8c26465f794479f50dff384068e34081fe78d3e69ee21336d",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 5,
+        "start_step_id": 19,
+        "end_step_id": 22
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "2a029a4f25ce8c72c3f37a3c78e587f2ec9edc0a53fbdb5902ec2c48761b3b42",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 6,
+        "start_step_id": 23,
+        "end_step_id": 25
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "449bb1900599b6c8284d59d641c8c71a9d09adac3a9b75c839f27656c4a8d6b0",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 7,
+        "start_step_id": 26,
+        "end_step_id": 26
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "d5cd394a43ab52c51b0f971bf424187057384406c33863d1c22c4fdedbd6d48c",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 3
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "f91111919c4fb64fa3049548b44179a6a56770dbc4e1d344f9804bc83ba00914",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 4,
+        "end_step_id": 11
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "f69d8c485a772b75b911b425a605ceffb34c9f2d741797065688f11fa1ecff38",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 12,
+        "end_step_id": 18
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "5370120d42441ce65646d1936b86cf5d864140cdf42207b2507399daa0a0f890",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 19,
+        "end_step_id": 21
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "44dd28d91fb6f0dae0337167a34654cd257cab389f92a76c21af612dc154819a",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 5,
+        "start_step_id": 22,
+        "end_step_id": 22
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "1a17daf9c9ac7148a4cbd60f67b2db57df4d7b36b55de6f91b93757cd5656a73",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 6,
+        "start_step_id": 23,
+        "end_step_id": 25
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "52f7ae2e6375e07f0d3b31ddf023e46d44392392dffd516568573ec0de8fdd26",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 7,
+        "start_step_id": 26,
+        "end_step_id": 26
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "12d9b2b4324cc948f4c938b30da8826ebf2861621e270248423830f138eb31aa",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 11
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "c5c0d92f300c186cc7de52917f6d4d61a9f5ec42b44ad2a2c7112fb9a44a7168",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 12,
+        "end_step_id": 13
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "d49ee42e570e5845565059c29441ec6c861c7a379090482a7599af7640b9a78d",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 3,
+        "start_step_id": 14,
+        "end_step_id": 20
+      },
+      "preflight_error": null
+    },
+    {
+      "job_id": "8724ce9137c3f619407f72dec81c3a6b8f61d040de5f15568195495fc843caa8",
+      "traj_id": "openhands-OpenAI__GPT-5-keras-team__keras-19775-44ebc402",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 4,
+        "start_step_id": 21,
+        "end_step_id": 26
+      },
+      "preflight_error": null
+    }
+  ],
+  "source_preflight_failures": [
+    {
+      "job_id": "8a5166713eb45da7c99bbff69fc5138214b2e36719f31fd0fc73bc5afea86c71",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "gold",
+      "stage": {
+        "stage_id": 2,
+        "start_step_id": 6,
+        "end_step_id": 21
+      },
+      "preflight_error": "input_budget_exceeded; no truncation performed"
+    },
+    {
+      "job_id": "762245dbf0a8e14f1b32f7bdc28a7a2c3d1adfc8e1e541df67f54f318a489f1d",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "structure",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 26
+      },
+      "preflight_error": "input_budget_exceeded; no truncation performed"
+    },
+    {
+      "job_id": "beff156c2d1fdae55f35cfbf39c3349ed562c4a0e8e304174a6afcf8bda15617",
+      "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-29023-15b3f749",
+      "arm": "rule",
+      "stage": {
+        "stage_id": 1,
+        "start_step_id": 1,
+        "end_step_id": 26
+      },
+      "preflight_error": "input_budget_exceeded; no truncation performed"
+    }
+  ],
+  "limits": {
+    "chunk_chars": 1200,
+    "max_claims": 6,
+    "max_output_tokens": 2048
+  },
+  "scope": "Compatibility only; selected historical development tasks, not held-out alarm evaluation.",
+  "semantics": "Not evaluated. Valid references do not prove entailment. Six-claim cap is not exhaustive.",
+  "online": "Retrospective stages; no streaming latency claim. Alarm and dependencies not implemented."
+}
