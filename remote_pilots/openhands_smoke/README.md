@@ -40,3 +40,13 @@ python remote_pilots/openhands_smoke/run.py
 已依据固定版本配置代码编写；本地 Windows 只能检查脚本语法及初始测试确实失败，完整 Docker/GPU 验证需远程执行。
 
 接口依据：[controller](https://github.com/OpenHands/OpenHands/blob/0.59.0/openhands/core/main.py)、[sandbox](https://github.com/OpenHands/OpenHands/blob/0.59.0/openhands/core/config/sandbox_config.py)、[LLM](https://github.com/OpenHands/OpenHands/blob/0.59.0/openhands/core/config/llm_config.py)。
+
+## 收集诊断文件
+
+无需重跑任务，指定已有运行目录：
+
+```bash
+python remote_pilots/openhands_smoke/collect.py out/openhands_live_smoke/run-v7gm_ugu
+```
+
+终端只输出 zip 路径、大小及收集错误数。将该文件传回即可。包含完整原生事件、可读事件汇总、控制器日志、模型调用 JSON、最终轨迹和小型测试代码；不包含模型权重、Docker 镜像或序列化 session pickle。读取失败会记录在压缩包的 `collection_summary.json`，不会静默忽略。保留原目录，每次使用独立输出文件名。
