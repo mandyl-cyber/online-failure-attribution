@@ -13,7 +13,8 @@ def collect(run):
     if not run.is_dir() or not (run / 'controller.log').is_file():
         raise ValueError('Expected a smoke run directory containing controller.log')
     candidates = [run / name for name in (
-        'controller.log', 'verification.log', 'manifest.json', 'result.json',
+        'controller.log', 'verification.log', 'manifest.json', 'result.json', 'shadow.log',
+        'shadow/stages.json', 'shadow/timing.jsonl', 'shadow/ready.json',
         'state/controller_result.json', 'state/task.txt', 'state/trajectory.json',
         'workspace/ranges.py', 'workspace/test_ranges.py', 'checks/test_ranges.py',
     )]

@@ -8,6 +8,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import time
 import urllib.request
 
 APP = 'ghcr.io/all-hands-ai/openhands@sha256:00968de77a7b36546413e1f3b5c6b4e2c387d19ade54de7926e10f5b3d265fa6'
@@ -79,6 +80,7 @@ def main():
     parser.add_argument('--prompt-mode', choices=('baseline', 'action-guided'), default='baseline')
     parser.add_argument('--quiet', action='store_true', help='Save full logs without printing them')
     parser.add_argument('--collect', action='store_true', help='Create diagnostics zip after the run')
+    parser.add_argument('--shadow', action='store_true', help='Start the frozen CPU boundary observer before the agent')
     args = parser.parse_args()
     if sys.platform != 'linux':
         raise SystemExit('Run this script on the remote Linux Docker host.')
@@ -120,7 +122,29 @@ def main():
                '-e', f'PILOT_WORKSPACE={workspace}',
                '-e', f'PILOT_UID={os.getuid()}', '-e', f'PILOT_RUNTIME={RUNTIME}',
                '--entrypoint', 'python', APP, '/pilot/controller.py']
-    code = logged(command, run / 'controller.log', args.quiet)
+    observer = None
+    observer_log = None
+    if args.shadow:
+        observer_log = (run / 'shadow.log').open('w', encoding='utf-8')
+        observer = subprocess.Popen([sys.executable, '-m',
+            'remote_pilots.openhands_smoke.shadow', str(run)],
+            stdout=observer_log, stderr=subprocess.STDOUT)
+        deadline = time.monotonic() + 60
+        while not (run / 'shadow/ready.json').exists():
+            if observer.poll() is not None or time.monotonic() > deadline:
+                if observer.poll() is None:
+                    observer.terminate()
+                    observer.wait(timeout=10)
+                observer_log.close()
+                raise RuntimeError(f'Shadow failed to start; see {run / "shadow.log"}')
+            time.sleep(0.2)
+    try:
+        code = logged(command, run / 'controller.log', args.quiet)
+    finally:
+        if observer:
+            (run / 'shadow.stop').touch()
+            observer.wait(timeout=60)
+            observer_log.close()
     # Check the saved implementation against an immutable copy, inside a container.
     verify = ['docker', 'run', '--rm', '--network', 'none',
               '-v', f'{workspace}:/workspace:ro', '-v', f'{checks}:/checks:ro',
@@ -134,6 +158,7 @@ def main():
     result = {'controller_exit_code': code, 'verification_exit_code': verified,
               'event_directories': events, 'run_directory': str(run),
               'prompt_mode': args.prompt_mode,
+              'shadow_exit_code': observer.returncode if observer else None,
               'implementation_changed': (hashlib.sha256((workspace / 'ranges.py').read_bytes()).hexdigest()
                                          != initial_code_hash) if (workspace / 'ranges.py').is_file() else None,
               'visible_tests_unchanged': (hashlib.sha256((workspace / 'test_ranges.py').read_bytes()).hexdigest()

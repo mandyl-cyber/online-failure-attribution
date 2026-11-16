@@ -1,0 +1,17 @@
+{
+  "sha256": "87fd58a6ce89aa0592f67e193d8d7d66b68f4eafb8dd9fc6ce2ba6a5678770c4",
+  "config": {
+    "window": 4,
+    "text": false,
+    "C": 1
+  },
+  "threshold": 0.3,
+  "training_trajectories": 276,
+  "purpose": "frozen SWE structural candidate; no new accuracy evaluation",
+  "versions": {
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  }
+}
