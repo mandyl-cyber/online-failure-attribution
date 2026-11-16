@@ -1,0 +1,17 @@
+{
+  "policy": "Read only after recording prefix judgments. Future actions <=700 chars and observations <=200 chars inspected; original full evidence retained. No future information is supplied to an online model. This is not proof that a boundary is inherently unpredictable.",
+  "cases": [
+    {"case_id":"plan_read_fp_1","evidence_steps":[5,6],"note":"Targeted align_labels search starts at gold step 6; supports treating step 4 listing as initial orientation."},
+    {"case_id":"plan_read_fp_2","evidence_steps":[],"note":"No later steps in aligned trajectory; retain nearby-boundary/D0 explanation, no new semantic evidence."},
+    {"case_id":"plan_read_fp_3","evidence_steps":[5,6],"note":"Subdirectory listing then targeted urls.py read at gold step 6 supports orientation vs focused reading distinction in this case."},
+    {"case_id":"plan_read_fp_4","evidence_steps":[6,7],"note":"Further reading same parser file followed by Python version probe at gold step 7. Current object change alone does not match annotated grouping."},
+    {"case_id":"plan_read_fp_5","evidence_steps":[4,5],"note":"Plan update then rings.py read at gold step 5; initial workspace listing remains weak boundary evidence."},
+    {"case_id":"plan_read_fp_6","evidence_steps":[5,6],"note":"Later plan update and skipping.py read; two-step future does not reach gold step 9, so exact gold rationale remains unresolved."},
+    {"case_id":"read_read_fn_1","evidence_steps":[21,22],"note":"Plan then edit Python domain file. Future provides a plausible read-before-fix interpretation; prefix-only subgoal switch remains uncertain."},
+    {"case_id":"read_read_fn_2","evidence_steps":[23,24],"note":"Directory inspection and another failed type-file read continue. Still cannot confidently explain why gold stage begins at 22."},
+    {"case_id":"read_read_fn_3","evidence_steps":[24,25],"note":"Reads axis.py then searches Artist and axes; continued related-symbol investigation. Exact gold cut remains ambiguous in this local window."},
+    {"case_id":"read_read_fn_4","evidence_steps":[9,10],"note":"Edit password.py immediately after gold step 8, then reread same file. Future supports preparation-for-edit interpretation; not an online-available fact at step 8."},
+    {"case_id":"read_read_fn_5","evidence_steps":[8,9],"note":"Reads test-running instructions and searches json_script tests; reinforces the prefix-visible switch toward testing."},
+    {"case_id":"read_read_fn_6","evidence_steps":[4,5],"note":"Read related debugging implementation then edit unittest.py; consistent with focused code investigation but does not uniquely determine the exact cut."}
+  ]
+}

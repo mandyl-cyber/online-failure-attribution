@@ -1,0 +1,19 @@
+{
+  "reviewer": "AI assistant",
+  "status": "complete_with_separate_future_audit",
+  "scope": "Diagnostic review of last four steps, action excerpt <=1000 chars and observation head <=300 chars. Gold locations were visible: not a blinded annotation or human validation. Full evidence retained in packets.json. No relabeling of training data.",
+  "cases": [
+    {"case_id":"plan_read_fp_1","reviewed":true,"prefix_judgment":"continue_plausible","evidence_steps":[2,4],"note":"Initial plan then repository listing; no concrete new subgoal established. Plan update payload lost in legacy action representation.","future_required":"unknown"},
+    {"case_id":"plan_read_fp_2","reviewed":true,"prefix_judgment":"boundary_nearby_uncertain","evidence_steps":[31,32,33],"note":"Commit then plan update then read optimizer test. Gold is 32, prediction 33 is late under D0 despite distance 1. Must not equate this FP with a clearly needless semantic stage.","future_required":"unknown"},
+    {"case_id":"plan_read_fp_3","reviewed":true,"prefix_judgment":"continue_plausible","evidence_steps":[1,2,3,4],"note":"Initial plan setup and repository listing; listing alone is weak evidence for a new subgoal.","future_required":"unknown"},
+    {"case_id":"plan_read_fp_4","reviewed":true,"prefix_judgment":"uncertain","evidence_steps":[3,4,5],"note":"Directory listing to reading hf_argparser.py is an object-operation change, but gold does not cut here. Generic object switch cannot be a universal boundary rule.","future_required":"unknown"},
+    {"case_id":"plan_read_fp_5","reviewed":true,"prefix_judgment":"continue_plausible","evidence_steps":[2,3],"note":"Plan view followed by listing workspace root; plausibly continued initial orientation.","future_required":"unknown"},
+    {"case_id":"plan_read_fp_6","reviewed":true,"prefix_judgment":"continue_plausible","evidence_steps":[2,3,4],"note":"Plan setup followed by repository listing and git status; weak evidence of a changed work objective.","future_required":"unknown"},
+    {"case_id":"read_read_fn_1","reviewed":true,"prefix_judgment":"uncertain","evidence_steps":[18,19,20],"note":"Base domain source to test fixture to Python domain implementation. Objects change but could be one continuous cross-reference investigation.","future_required":"unknown"},
+    {"case_id":"read_read_fn_2","reviewed":true,"prefix_judgment":"uncertain","evidence_steps":[19,20,21,22],"note":"Type declaration and package inspection followed by failed read of transition declaration. Current failure alone does not prove a new objective.","future_required":"unknown"},
+    {"case_id":"read_read_fn_3","reviewed":true,"prefix_judgment":"continue_plausible","evidence_steps":[21,22,23],"note":"Search for add_artist then inspect Axes and Figure implementations: two files for the same symbol. Path change is not enough to explain gold boundary.","future_required":"unknown"},
+    {"case_id":"read_read_fn_4","reviewed":true,"prefix_judgment":"continue_plausible","evidence_steps":[6,7,8],"note":"Whole password.py view followed by a narrower line range in the same file. File-role or disjoint-path flags cannot distinguish this gold boundary.","future_required":"unknown"},
+    {"case_id":"read_read_fn_5","reviewed":true,"prefix_judgment":"boundary_plausible","evidence_steps":[5,6,7],"note":"Implementation investigation switches to listing tests: an online-visible verification-object cue, although listing is not a test run.","future_required":"unknown"},
+    {"case_id":"read_read_fn_6","reviewed":true,"prefix_judgment":"boundary_plausible","evidence_steps":[2,3],"note":"Repository overview switches to a specific implementation file; online-visible focus change. Similar change appears without gold boundary in plan_read_fp_4.","future_required":"unknown"}
+  ]
+}
