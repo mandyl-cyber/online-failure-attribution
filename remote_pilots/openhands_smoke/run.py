@@ -82,6 +82,8 @@ def main():
     parser.add_argument('--collect', action='store_true', help='Create diagnostics zip after the run')
     parser.add_argument('--shadow', action='store_true', help='Start the frozen CPU boundary observer before the agent')
     args = parser.parse_args()
+    if args.shadow and sys.version_info < (3, 12):
+        raise SystemExit('Frozen shadow dependencies require Python >=3.12; use the ofa-shadow-py312 environment.')
     if sys.platform != 'linux':
         raise SystemExit('Run this script on the remote Linux Docker host.')
     subprocess.run(['docker', 'ps'], check=True, stdout=subprocess.DEVNULL if args.quiet else None)

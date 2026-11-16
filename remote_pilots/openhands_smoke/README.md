@@ -43,12 +43,12 @@ python remote_pilots/openhands_smoke/run.py
 
 ## CPU 结构划分器旁路
 
-在仓库根目录创建独立环境（不改 Qwen 服务环境）：
+在仓库根目录创建独立 Python 3.12 环境（不改 Qwen 服务环境）。固定 NumPy 2.5.4 要求 Python >=3.12；不要直接用当前 Python 创建 venv。各步骤使用 `&&`，安装失败就停止：
 
 ```bash
-python -m venv .venv-shadow
-.venv-shadow/bin/python -m pip install -r remote_pilots/openhands_smoke/shadow-requirements.txt
-.venv-shadow/bin/python remote_pilots/openhands_smoke/run.py --prompt-mode action-guided --shadow --quiet --collect
+conda create -n ofa-shadow-py312 python=3.12 pip -y &&
+conda run -n ofa-shadow-py312 python -m pip install -r remote_pilots/openhands_smoke/shadow-requirements.txt &&
+conda run --no-capture-output -n ofa-shadow-py312 python remote_pilots/openhands_smoke/run.py --prompt-mode action-guided --shadow --quiet --collect
 ```
 
 冻结的 SWE 结构 LR 文件 `swe.joblib` 为本仓库可信模型，校验值与依赖版本见 `swe.json`；4 步窗口、无文本编码器、阈值 0.30。旁路就绪后才启动控制器。agent 失败仍会收集旁路输出；`shadow_exit_code=0` 表示旁路正常退出，不代表 agent 修复成功或边界准确。
@@ -58,7 +58,7 @@ python -m venv .venv-shadow
 重新观察同一运行时重放不可变源事件恢复状态，检查哈希并避免重复步骤；要求保留源 events，不支持两个观察进程同时写同一输出。恢复耗时随历史增长，尚未做长会话压力测试。已有目录可单独运行：
 
 ```bash
-.venv-shadow/bin/python -m remote_pilots.openhands_smoke.shadow out/openhands_live_smoke/run-arxu6xkh --once
+conda run --no-capture-output -n ofa-shadow-py312 python -m remote_pilots.openhands_smoke.shadow out/openhands_live_smoke/run-arxu6xkh --once
 ```
 
 `--once` 明确标记 recorded_replay。2026-11-16 本地两条真实失败轨迹回放：第一条 15 步/1 阶段，第二条 20 步/5 阶段，重启后边界与阶段完全一致；待配对动作恢复及内容冲突检测测试通过。这些结果没有人工阶段金标，不计算准确率；真正实时旁路仍待上述远程命令验证。
