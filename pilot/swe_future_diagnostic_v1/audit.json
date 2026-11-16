@@ -1,0 +1,14 @@
+{
+  "n": 16,
+  "checks_passed": true,
+  "categories": {
+    "granularity_ambiguous": 5,
+    "prefix_supported": 6,
+    "insufficient_suffix": 3,
+    "future_adds_support": 2
+  },
+  "prefix_undetermined": 6,
+  "after_undetermined": 4,
+  "fewer_than_three_future_actions": 4,
+  "caveat": "Counts describe selected AI-reviewed excerpts, not online accuracy, a performance ceiling, or proof of future necessity."
+}

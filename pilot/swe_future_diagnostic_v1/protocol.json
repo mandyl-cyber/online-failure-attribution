@@ -1,0 +1,18 @@
+{
+  "purpose": "Offline diagnostic only; no training, no performance or causal impossibility claim.",
+  "future_actions": 3,
+  "selection": "Same frozen 16 cases, including uncertain and near-end cases; no replacements.",
+  "review": "Prior AI judgments frozen before suffix generation. Reviewer already knows gold buckets; not blinded.",
+  "categories": [
+    "prefix_supported",
+    "future_adds_support",
+    "granularity_ambiguous",
+    "insufficient_suffix"
+  ],
+  "interpretation": "Future support does not prove the boundary could not be inferred from a better prefix representation.",
+  "frozen_hashes": {
+    "pilot\\swe_relation_balanced_v2\\packets.json": "4731d85faca68cf2b85358cc32deabdab049ece7704428962529795467dba115",
+    "pilot\\swe_relation_balanced_v2\\answer_key.json": "a3b613f4f02edba2f48fe7e514a46902fb38df55bdd8265f720fcaa5b9387f20",
+    "pilot\\swe_relation_balanced_v2\\ai_review.json": "497af247342d8b673b2088cee8bc25e958168186ed78714c7a62cfd96fa4b8b8"
+  }
+}

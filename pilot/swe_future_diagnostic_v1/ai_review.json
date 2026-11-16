@@ -1,0 +1,23 @@
+{
+  "reviewer":"AI",
+  "scope":"Compared frozen prefix judgments with up to three subsequent action/observation excerpts and public plans. Gold buckets already known. Not blinded, not human validation, not exhaustive full-trajectory review.",
+  "training_allowed":false,
+  "cases":[
+    {"case_id":"relation_01","category":"granularity_ambiguous","after_suggestion":"undetermined","future_evidence_steps":[27,28,29],"note":"后续持续搜索代理认证测试，但不能确定 26 读取 models.py 是新探索阶段还是原修复排查的延续。未来未定位确切边界。"},
+    {"case_id":"relation_02","category":"prefix_supported","after_suggestion":"continue_plausible","future_evidence_steps":[16,17,18],"note":"前缀已显示修改后读取同一打印器。后续继续处理 methods/properties 的 decorators，支持延续解释；不是由未来首次发现延续。"},
+    {"case_id":"relation_03","category":"granularity_ambiguous","after_suggestion":"undetermined","future_evidence_steps":[15,16,17],"note":"后续在测试入口与 APPEND_SLASH 实现之间切换搜索，仍无法唯一划定探索子目标粒度。"},
+    {"case_id":"relation_04","category":"insufficient_suffix","after_suggestion":"continue_plausible","future_evidence_steps":[43],"note":"仅剩一条全 done 计划更新，没有对应实际复现或测试动作可确认；保留前缀假设，不能据收尾声明证明 42 是新阶段。"},
+    {"case_id":"relation_05","category":"prefix_supported","after_suggestion":"switch_plausible","future_evidence_steps":[28,29,30],"note":"27 已实际修改类型定义，转入实施的证据在前缀内；后续检查 yarn、运行测试、再修改 Tooltip.js 并非识别 27 转换的必要证据。"},
+    {"case_id":"relation_06","category":"future_adds_support","after_suggestion":"switch_plausible","future_evidence_steps":[4,5,6],"note":"3 单纯列目录的目的不明确；4–6 定位目标函数、读取实现并查测试，增加从初始计划进入探索的支持。但精确落在 3 还是 4 仍有歧义，不能断言边界只能靠未来识别。"},
+    {"case_id":"relation_07","category":"prefix_supported","after_suggestion":"switch_plausible","future_evidence_steps":[43,44,45],"note":"42 前从连续修改转向读缓存测试已有转换依据；43–45 继续读 fake model 和搜索缓存使用，支持进入探索/检查，而不是已开始运行测试。"},
+    {"case_id":"relation_08","category":"insufficient_suffix","after_suggestion":"continue_plausible","future_evidence_steps":[30],"note":"仅剩验证与复核改为 done 的计划，没有新执行证据；无法用未来确定 29 是否独立阶段。"},
+    {"case_id":"relation_09","category":"granularity_ambiguous","after_suggestion":"switch_plausible","future_evidence_steps":[43,44,45],"note":"42 修改后立即定向测试并更新计划、再测试；可将单步修补视作新实施阶段，也可放进同一验证修复循环。未来没有消除与原金标的粒度差异。"},
+    {"case_id":"relation_10","category":"granularity_ambiguous","after_suggestion":"undetermined","future_evidence_steps":[23,24,25],"note":"22 声明验证/复核进行中，23 却继续修改 linspace，之后检查并提交。计划不足以预测下一实际活动，不能据未来反推 22 必须是实施边界。"},
+    {"case_id":"relation_11","category":"insufficient_suffix","after_suggestion":"continue_plausible","future_evidence_steps":[],"note":"目标已是对齐轨迹最后一步，没有可对照未来；此前收尾追记解释保留，但没有获得额外验证。"},
+    {"case_id":"relation_12","category":"prefix_supported","after_suggestion":"continue_plausible","future_evidence_steps":[16,17,18],"note":"前缀中实现、测试配置与 fixture 连续探索；后续继续查看 CSS 注册和搜索空输入处理，延续解释在前缀已有支持。"},
+    {"case_id":"relation_13","category":"prefix_supported","after_suggestion":"continue_plausible","future_evidence_steps":[19,20],"note":"17–18 已是同一复现尝试的重试。19–20 继续尝试运行相同测试并遇到模块缺失，强化已有解释；不把外层退出零当成功。"},
+    {"case_id":"relation_14","category":"granularity_ambiguous","after_suggestion":"undetermined","future_evidence_steps":[38,39,40],"note":"后续继续搜索 refit_time_，夹杂计划完成声明；无法明确验证开始于目标 37 还是此前脚本，未来仍未解决时点问题。"},
+    {"case_id":"relation_15","category":"future_adds_support","after_suggestion":"continue_plausible","future_evidence_steps":[5,6,7],"note":"后续读取目标函数文件并搜索测试，增加 3–4 同属仓库探索的支持；5 的计划仍声明阅读问题，不能当执行事实。仅改善解释，不证明前缀不可判断。"},
+    {"case_id":"relation_16","category":"prefix_supported","after_suggestion":"continue_plausible","future_evidence_steps":[22],"note":"前缀已有提交后扩展测试与搜索使用场景；22 测试 function 模块与最终核查一致。后续只有一步，但提供相关执行证据，未新增切分必要性。"}
+  ]
+}
