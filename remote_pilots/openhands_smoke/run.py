@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Run on the Linux Docker host. No OpenHands/PyTorch host dependency."""
+import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -16,6 +18,17 @@ the input list. Inspect the implementation and tests, reproduce the failure,
 make a minimal fix, and run python -m unittest -v. Do not change test_ranges.py.
 Use the finish tool when done. Work autonomously; no dependency installation is
 needed. This is a small local code task, not a request for an example solution.'''
+ACTION_GUIDANCE = '''
+
+Execution discipline:
+- Code shown in your reply does not modify files. To apply a proposed fix,
+  actually call str_replace_editor or execute a shell command that writes it.
+- After reproducing a failure and deciding on a fix, perform the edit before
+  rerunning the same test command. Inspect the tool result to confirm the edit.
+- Do not repeatedly run an unchanged read-and-test command while describing
+  edits in prose. If an edit fails, inspect the error and correct the edit call.
+- Keep the tests unchanged. Verify the saved implementation, then finish.
+'''
 CODE = '''def merge_ranges(intervals):
     intervals.sort()
     merged = []
@@ -49,21 +62,27 @@ if __name__ == '__main__':
 '''
 
 
-def logged(command, path):
+def logged(command, path, quiet=False):
     with path.open('w', encoding='utf-8') as log:
         process = subprocess.Popen(command, stdout=subprocess.PIPE,
                                    stderr=subprocess.STDOUT, text=True)
         for line in process.stdout:
-            print(line, end='', flush=True)
+            if not quiet:
+                print(line, end='', flush=True)
             log.write(line)
             log.flush()
         return process.wait()
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--prompt-mode', choices=('baseline', 'action-guided'), default='baseline')
+    parser.add_argument('--quiet', action='store_true', help='Save full logs without printing them')
+    parser.add_argument('--collect', action='store_true', help='Create diagnostics zip after the run')
+    args = parser.parse_args()
     if sys.platform != 'linux':
         raise SystemExit('Run this script on the remote Linux Docker host.')
-    subprocess.run(['docker', 'ps'], check=True)
+    subprocess.run(['docker', 'ps'], check=True, stdout=subprocess.DEVNULL if args.quiet else None)
     for image in (APP, RUNTIME):
         subprocess.run(['docker', 'image', 'inspect', image], check=True,
                        stdout=subprocess.DEVNULL)
@@ -82,10 +101,16 @@ def main():
     (workspace / 'ranges.py').write_text(CODE, encoding='utf-8')
     (workspace / 'test_ranges.py').write_text(TESTS, encoding='utf-8')
     (checks / 'test_ranges.py').write_text(TESTS, encoding='utf-8')
-    (state / 'task.txt').write_text(TASK, encoding='utf-8')
+    task = TASK + (ACTION_GUIDANCE if args.prompt_mode == 'action-guided' else '')
+    (state / 'task.txt').write_text(task, encoding='utf-8')
+    # Hash actual saved bytes so platform newline handling cannot imply an edit.
+    initial_code_hash = hashlib.sha256((workspace / 'ranges.py').read_bytes()).hexdigest()
+    initial_test_hash = hashlib.sha256((workspace / 'test_ranges.py').read_bytes()).hexdigest()
     (run / 'manifest.json').write_text(json.dumps({
         'app_image': APP, 'runtime_image': RUNTIME, 'host_workspace': str(workspace),
         'max_iterations': 20, 'model': 'qwen-local', 'purpose': 'synthetic transport smoke',
+        'prompt_mode': args.prompt_mode, 'task_sha256': hashlib.sha256(task.encode()).hexdigest(),
+        'initial_code_sha256': initial_code_hash, 'initial_test_sha256': initial_test_hash,
     }, indent=2), encoding='utf-8')
     print(f'RUN_DIR={run}', flush=True)
     source = Path(__file__).resolve().parent
@@ -95,7 +120,7 @@ def main():
                '-e', f'PILOT_WORKSPACE={workspace}',
                '-e', f'PILOT_UID={os.getuid()}', '-e', f'PILOT_RUNTIME={RUNTIME}',
                '--entrypoint', 'python', APP, '/pilot/controller.py']
-    code = logged(command, run / 'controller.log')
+    code = logged(command, run / 'controller.log', args.quiet)
     # Check the saved implementation against an immutable copy, inside a container.
     verify = ['docker', 'run', '--rm', '--network', 'none',
               '-v', f'{workspace}:/workspace:ro', '-v', f'{checks}:/checks:ro',
@@ -104,14 +129,27 @@ def main():
               "suite=unittest.defaultTestLoader.discover('/checks'); "
               "r=unittest.TextTestRunner(verbosity=2).run(suite); "
               "sys.exit(not r.wasSuccessful())"]
-    verified = logged(verify, run / 'verification.log')
+    verified = logged(verify, run / 'verification.log', args.quiet)
     events = [str(p) for p in state.rglob('events') if p.is_dir()]
     result = {'controller_exit_code': code, 'verification_exit_code': verified,
-              'event_directories': events, 'run_directory': str(run)}
+              'event_directories': events, 'run_directory': str(run),
+              'prompt_mode': args.prompt_mode,
+              'implementation_changed': (hashlib.sha256((workspace / 'ranges.py').read_bytes()).hexdigest()
+                                         != initial_code_hash) if (workspace / 'ranges.py').is_file() else None,
+              'visible_tests_unchanged': (hashlib.sha256((workspace / 'test_ranges.py').read_bytes()).hexdigest()
+                                          == initial_test_hash) if (workspace / 'test_ranges.py').is_file() else False}
     (run / 'result.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
     print(json.dumps(result, indent=2), flush=True)
+    if args.collect:
+        if __package__:
+            from .collect import collect
+        else:
+            from collect import collect
+        target, errors = collect(run)
+        print(f'DIAGNOSTICS={target}', flush=True)
+        print(f'collection_errors={len(errors)}', flush=True)
     # Success here means task checks + saved events, not segmentation accuracy.
-    return 0 if code == 0 and verified == 0 and events else 1
+    return 0 if code == 0 and verified == 0 and events and result['visible_tests_unchanged'] else 1
 
 
 if __name__ == '__main__':

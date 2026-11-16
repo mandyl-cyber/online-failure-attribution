@@ -43,6 +43,14 @@ python remote_pilots/openhands_smoke/run.py
 
 ## 收集诊断文件
 
+操作提示对照（同一模型、工具、初始代码、测试和 20 次迭代预算，只追加操作纪律，不提供解题代码）：
+
+```bash
+python remote_pilots/openhands_smoke/run.py --prompt-mode action-guided --quiet --collect
+```
+
+`baseline` 是默认原提示；两种模式均支持 `--quiet --collect`。完整日志仍保存到文件，结束后自动打包并打印 `DIAGNOSTICS=` 路径，无需复制长日志。Qwen 服务保持 32K 配置，无需为此次提示对照重启。`result.json` 记录实现是否改变、可见测试是否保持原样，修复正确性由原始测试副本独立检查；发生改动不等于正确修复。单次对照只能用于诊断，不作为模型或划分准确率结论。
+
 无需重跑任务，指定已有运行目录：
 
 ```bash
