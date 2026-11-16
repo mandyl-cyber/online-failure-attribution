@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00068",
+  "input_sha256": "4c66b3736ff160c1cc674a0b5eda990e1b3c782a625ec7adb9894230d6de3481",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The current step runs a test script to verify the fix, which is a CHECK action."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4137,
+    "completion_tokens": 35,
+    "total_tokens": 4172
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7441899060213473,
+  "attempt": 1
+}

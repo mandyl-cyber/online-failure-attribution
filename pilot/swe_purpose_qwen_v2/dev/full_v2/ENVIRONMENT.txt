@@ -1,0 +1,14 @@
+Model name and local weights revision/hash: Qwen/Qwen2.5-7B-Instruct snapshot a09a35458c702b33eeacc393d103063234e8bc28; config.json SHA256 7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c
+Served model ID: qwen-local
+Quantization / dtype: no quantization, BF16
+GPU model/count/VRAM: 1x NVIDIA GeForce RTX 5090, 32 GiB
+Serving engine and version: /home/sjtu/TrajDebug/serve_local_qwen.py SHA256 c3aa6060164b7a95700f053099bab1301b1980a3d187986d17f87246e5d4c06a; local transformers/torch
+Python / transformers / torch versions: 3.11.17 / 5.19.0 / 2.14.1+cu130
+Actual configured max context: 32768 tokens
+Chat template / thinking enabled or disabled: tokenizer default Qwen2.5 template; no thinking option set; chat_template_kwargs={}
+Exact launch command: /home/sjtu/miniconda3/envs/agentforesight/bin/python /home/sjtu/TrajDebug/serve_local_qwen.py --model-path /home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 --model-name qwen-local --port 30001
+Exact client command: /home/sjtu/miniconda3/envs/agentforesight/bin/python remote_pilots/swe_purpose_v2/dev/remote.py run --package remote_pilots/swe_purpose_v2/dev --out pilot/swe_purpose_qwen_v2/dev/full_v2 --tokenizer /home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 --context-tokens 32768 --model qwen-local --base-url http://127.0.0.1:30001/v1
+Start/end UTC: 2026-11-16T09:35:12.440184+00:00 / 2026-11-16T09:49:57.135237+00:00
+Server-side input truncation: disabled; all requests passed local tokenizer preflight.
+Output budget: 256 tokens; safety margin: 128 tokens; temperature: 0.
+Provenance: see summary.json, response label_source and per-step errors; semantic accuracy not evaluated.

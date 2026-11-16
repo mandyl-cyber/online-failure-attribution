@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_018_s00014",
+  "input_sha256": "a01aea52347ac550842cc7597daf6675c1ffeb994cd608ec719f78155f75325f",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for a specific function within the codebase, which is part of gathering evidence to understand the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3901,
+    "completion_tokens": 42,
+    "total_tokens": 3943
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8138901089841966,
+  "attempt": 1
+}

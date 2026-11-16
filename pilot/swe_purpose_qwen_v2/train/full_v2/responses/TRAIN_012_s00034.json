@@ -1,0 +1,18 @@
+{
+  "request_id": "TRAIN_012_s00034",
+  "input_sha256": "9189613409f999a4974212fcf8f9a46576a86d8e774ada2341dad2266b09c814",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CONSTRUCT",
+    "evidence_id": "C_ACTION",
+    "rationale": "Inserts a __getstate__ implementation into the candidate source file."
+  },
+  "label_source": "codex_ai_adjudication",
+  "review_priority": true,
+  "review_note": "Qwen repeatedly emitted illegal INSERT. Current action changes source code; classify the work purpose as CONSTRUCT. AI adjudication, not independent blind review.",
+  "failed_attempts_sha256": "fb7d5eef3fdc8cf2276650cac6535017d2f6245644befa5f9e3b5fa2a1d6c466",
+  "usage": null,
+  "server_model": null,
+  "seconds": 0,
+  "attempt": 0
+}

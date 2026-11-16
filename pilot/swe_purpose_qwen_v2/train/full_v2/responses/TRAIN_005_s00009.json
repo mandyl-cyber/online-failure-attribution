@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_005_s00009",
+  "input_sha256": "972a928b356db9b685f2fd8bdd51ae6b853dfefb071e2abc086ac024cea9c918",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "This step attempts to reproduce the issue using a custom ForeignKey field, which is intended to discover the bug."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4461,
+    "completion_tokens": 39,
+    "total_tokens": 4500
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8142714250134304,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_005_s00011",
+  "input_sha256": "408ec87f1b9a681d40ca04fb443e0518b295bd636a06f3b1841db1550ce2990b",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for '--lang' in the codebase, which is an attempt to understand the current implementation related to the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3655,
+    "completion_tokens": 45,
+    "total_tokens": 3700
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.6326689520210493,
+  "attempt": 1
+}

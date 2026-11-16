@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_001_s00003",
+  "input_sha256": "7388ef370650b87980e17e90cfe7ec0106afce42d962bb88791fe07559736129",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_INTENT",
+    "rationale": "The user intends to search the repository for relevant code and tests, indicating they are gathering information to understand the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 2311,
+    "completion_tokens": 42,
+    "total_tokens": 2353
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4645460850151721,
+  "attempt": 1
+}

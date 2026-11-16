@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_006_s00053",
+  "input_sha256": "e55652509c1df71e8b97af6cf7564e38e926a3022ea4bdebceb18ed454e5f64a",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Viewing specific lines in the code to check the changes made."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4773,
+    "completion_tokens": 30,
+    "total_tokens": 4803
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7365627069957554,
+  "attempt": 1
+}

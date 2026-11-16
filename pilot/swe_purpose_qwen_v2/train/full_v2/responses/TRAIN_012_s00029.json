@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_012_s00029",
+  "input_sha256": "497306a6f159e102106979b2f78df5c89c3842b5c2fc136525730d79744b5821",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "OPERATE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Executes the provided Python code to pickle a figure with a draggable legend, verifying the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3565,
+    "completion_tokens": 37,
+    "total_tokens": 3602
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5775009940261953,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_004_s00021",
+  "input_sha256": "f2ce93fff7394b9042140f94c7190814bf1201346448b09775f4ab91e7f9aade",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action runs a Python command to unescape HTML entities, which is used to gather information about how HTML escaping works."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3275,
+    "completion_tokens": 42,
+    "total_tokens": 3317
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.751621075993171,
+  "attempt": 1
+}

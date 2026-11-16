@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00050",
+  "input_sha256": "f63c8a2c458f54e4a2615405f24925fdcf35670eded3ff93bb9c56a99c1ba6cd",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user ran 'git status --porcelain' to check the current state of the repository, which is a common action to verify the status after making changes."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3998,
+    "completion_tokens": 49,
+    "total_tokens": 4047
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.9117347229912411,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_006_s00025",
+  "input_sha256": "d1a598fa63717ea471e772f23af97c9a55fd92ad90d2e3444a4aac5975c91d3c",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user is requesting to view the contents of requirements-common.txt to gather information about required dependencies."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3570,
+    "completion_tokens": 37,
+    "total_tokens": 3607
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.560822030005511,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_005_s00025",
+  "input_sha256": "1c534bf2bd1586e9fb5fba2240d0584b63d0f185a1dae5028aed5c6b79e1de64",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The command is searching for occurrences of 'locale' in the codebase to gather relevant information for the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3837,
+    "completion_tokens": 40,
+    "total_tokens": 3877
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.6298430129827466,
+  "attempt": 1
+}

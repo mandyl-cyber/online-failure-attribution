@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_002_s00012",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"SEARCH\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The action uses grep to search for 'mutually_exclusive_group' in the tests directory, indicating a search for relevant code.\"}"
+    },
+    {
+      "attempt": 2,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"SEARCH\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The action uses grep to search for 'mutually_exclusive_group' in the tests directory, indicating a search for relevant code.\"}"
+    },
+    {
+      "attempt": 3,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"SEARCH\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The action uses grep to search for 'mutually_exclusive_group' in the tests directory, indicating a search for relevant code.\"}"
+    }
+  ]
+}

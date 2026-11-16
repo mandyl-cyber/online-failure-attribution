@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_004_s00025",
+  "input_sha256": "1b1b94b24a037e67e6faabc5dc2b2f7d4c08ac6eaea67596224b56901fba2ef1",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CONSTRUCT",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows a code modification action directly addressing the issue by changing the logic in the html.py file."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3714,
+    "completion_tokens": 39,
+    "total_tokens": 3753
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7554330040002242,
+  "attempt": 1
+}

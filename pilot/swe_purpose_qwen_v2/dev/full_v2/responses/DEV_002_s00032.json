@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_002_s00032",
+  "input_sha256": "0414e0adafd70cf294c54748fb3ab5cf0fdf5deec388a216bec1955b306f4273",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action describes planning and summarizing the actions taken, including verifying the fix with a minimal script and running the delete test suite, which checks the implementation against requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3678,
+    "completion_tokens": 50,
+    "total_tokens": 3728
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.617549019982107,
+  "attempt": 1
+}

@@ -1,0 +1,11 @@
+{
+  "request_id": "TRAIN_006_s00062",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Rationale must be 1-240 characters",
+      "raw_content": "{\"purpose\":\"UNKNOWN\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The evidence does not clearly indicate whether the action is for acquiring, enabling, constructing, operating, checking, delivering, or another purpose. It appears to be preparing a patch, but the context is insufficient to determine the exact purpose.\"}"
+    }
+  ]
+}

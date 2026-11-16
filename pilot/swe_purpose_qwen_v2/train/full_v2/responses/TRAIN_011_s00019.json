@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_011_s00019",
+  "input_sha256": "1c74a8f0d2ec6a3d6be37a40838aee078a0b7afeba74d7573e0d15062e5996b3",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user is listing the contents of 'libs/core/tests' to check for existing test files that could be used or modified to implement the required changes."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3936,
+    "completion_tokens": 47,
+    "total_tokens": 3983
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.7518768229929265,
+  "attempt": 1
+}

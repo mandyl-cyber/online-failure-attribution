@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00026",
+  "input_sha256": "0ab91abfae8e803e48d1b2977125e5a8caf8cffdca88e17274ff3025a071c430",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_OBSERVATION",
+    "rationale": "The evidence shows the result of running unit tests after making changes, indicating a check of the candidate solution."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 6253,
+    "completion_tokens": 40,
+    "total_tokens": 6293
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.9920492089877371,
+  "attempt": 1
+}

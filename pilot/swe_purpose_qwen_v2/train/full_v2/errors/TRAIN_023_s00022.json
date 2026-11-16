@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_023_s00022",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"PLAN\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"Plan command with task list updates indicates current step is about planning the next phase.\"}"
+    },
+    {
+      "attempt": 2,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"PLAN\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"Plan command with task list updates indicates current step is about planning the next phase.\"}"
+    },
+    {
+      "attempt": 3,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"PLAN\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"Plan command with task list updates indicates current step is about planning the next phase.\"}"
+    }
+  ]
+}

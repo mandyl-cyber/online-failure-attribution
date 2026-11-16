@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_023_s00001",
+  "input_sha256": "90b8ea05832bcb6b71a61e250247e68e7377d094c49a04886dc1f9f9c68e89fb",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is viewing the task list, which is part of acquiring the current task context."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 2136,
+    "completion_tokens": 36,
+    "total_tokens": 2172
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.5958005819993559,
+  "attempt": 1
+}

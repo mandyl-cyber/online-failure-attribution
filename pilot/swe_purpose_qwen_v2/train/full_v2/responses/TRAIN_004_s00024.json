@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_004_s00024",
+  "input_sha256": "c3ec084301b5e54ca7ca56ca0c9bc369fd73baff048883cd1eb63f971f644b49",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Executes a script to test the urlize function with various inputs to check its behavior and identify issues."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3378,
+    "completion_tokens": 38,
+    "total_tokens": 3416
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7159365169936791,
+  "attempt": 1
+}

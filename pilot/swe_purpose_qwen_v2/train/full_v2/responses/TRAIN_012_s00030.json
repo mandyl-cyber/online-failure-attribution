@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_012_s00030",
+  "input_sha256": "e8a94a6014a373be32687a7c2bd33d3fd703ffbac890b4acd57e693ab98e309e",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CONSTRUCT",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows inserting code into a file to address the issue, which is creating a candidate solution."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3959,
+    "completion_tokens": 38,
+    "total_tokens": 3997
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4173881410097238,
+  "attempt": 1
+}

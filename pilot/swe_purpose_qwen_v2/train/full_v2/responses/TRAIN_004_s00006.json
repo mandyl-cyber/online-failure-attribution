@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_004_s00006",
+  "input_sha256": "98642e3bc203660eb79f8c72931b690e1411b4a6471f2dc8b9de832cf5dc5fd5",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows running a test suite using pytest, which is intended to verify the current state against requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 2480,
+    "completion_tokens": 38,
+    "total_tokens": 2518
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.642501666006865,
+  "attempt": 1
+}

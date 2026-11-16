@@ -1,0 +1,11 @@
+{
+  "request_id": "TRAIN_016_s00014",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"PLAN\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The current step plans the next phase of the task, which involves creating and running a minimal reproduction script to confirm the issue behavior.\"}"
+    }
+  ]
+}

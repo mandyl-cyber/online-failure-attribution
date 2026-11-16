@@ -1,0 +1,19 @@
+{
+  "request_id": "TRAIN_004_s00036",
+  "input_sha256": "aeb405c19cb9e11a8dbf7610fae5e0718dfd3c6c1dcb740c9fd10060dec7b44d",
+  "identity": "66f87dbcf139d1393ca8a6fe696d7297b940d6f44e921da70bd4bf29dd315d4a",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows planning for final review but does not indicate the current step's primary work purpose clearly."
+  },
+  "label_source": "qwen",
+  "usage": {
+    "prompt_tokens": 3311,
+    "completion_tokens": 37,
+    "total_tokens": 3348
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.686402713006828,
+  "attempt": 1
+}

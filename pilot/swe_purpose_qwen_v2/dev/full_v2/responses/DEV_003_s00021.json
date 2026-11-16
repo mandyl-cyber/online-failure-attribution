@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_003_s00021",
+  "input_sha256": "254f797a90e9bc7a549ffeb814bb0313175f0fbb1b8a3693777741e6d3442516",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "OPERATE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Running tests to verify the functionality after some operations."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3332,
+    "completion_tokens": 28,
+    "total_tokens": 3360
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4198098689957988,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_004_s00034",
+  "input_sha256": "01f019fdeb688dd90c120ee7612b3d2868bd120558300da676819b18276d0e85",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The git status command checks the current state of the repository, evaluating the changes made to files against requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4281,
+    "completion_tokens": 38,
+    "total_tokens": 4319
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.693039055011468,
+  "attempt": 1
+}

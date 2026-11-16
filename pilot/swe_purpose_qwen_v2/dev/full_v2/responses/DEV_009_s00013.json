@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_009_s00013",
+  "input_sha256": "19f5d846346dffbf0a43246eaa4357258acb8072b04bb7b78041cb18b8cf69b7",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for '_remainder' in the code to locate its handling."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3890,
+    "completion_tokens": 34,
+    "total_tokens": 3924
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7116784329991788,
+  "attempt": 1
+}

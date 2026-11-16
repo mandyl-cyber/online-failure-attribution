@@ -1,0 +1,11 @@
+{
+  "request_id": "TRAIN_010_s00043",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Rationale must be 1-240 characters",
+      "raw_content": "{\"purpose\":\"CHECK\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"This step runs a Python script to check if the changes made to the codebase satisfy the requirements, including verifying the 'timeout' keyword in TaskInclude and the --task-timeout support in ad-hoc and console commands. The script execution failed due to a ModuleNotFoundError, indicating the check has not passed.\"}"
+    }
+  ]
+}

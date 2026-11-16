@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_012_s00036",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"VIEW\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The user is viewing a specific section of the file /workspace/lib/matplotlib/text.py.\"}"
+    },
+    {
+      "attempt": 2,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"VIEW\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The user is viewing a specific section of the file /workspace/lib/matplotlib/text.py.\"}"
+    },
+    {
+      "attempt": 3,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"VIEW\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The user is viewing a specific section of the file /workspace/lib/matplotlib/text.py.\"}"
+    }
+  ]
+}

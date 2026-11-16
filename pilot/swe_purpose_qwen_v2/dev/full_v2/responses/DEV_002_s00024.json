@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_002_s00024",
+  "input_sha256": "78cef95f3c1d05f221f45b63de26984f1877c8b5432acbe89404616f3b0e115a",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "OPERATE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Executes a Python script to create and delete a model instance to test the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3999,
+    "completion_tokens": 35,
+    "total_tokens": 4034
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5601808390056249,
+  "attempt": 1
+}

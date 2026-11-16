@@ -1,0 +1,7 @@
+{
+  "request_id": "TRAIN_003_s00030",
+  "status": "failed",
+  "error": "Evidence ID must identify an available current-step field",
+  "attempt": 2,
+  "raw_content": "{\"purpose\":\"CHECK\",\"evidence_id\":\"P28_OBSERVATION\",\"rationale\":\"The step observes the result of committing changes to mark squashed migration as unapplied, indicating a check of the implemented fix.\"}"
+}

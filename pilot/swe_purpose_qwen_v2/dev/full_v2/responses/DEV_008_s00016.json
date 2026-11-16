@@ -1,0 +1,15 @@
+{
+  "request_id": "DEV_008_s00016",
+  "input_sha256": "3ff9f47ae6ba820b2e5ad296400505b2433f8848f926e2d2a53961a6a139529c",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_OBSERVATION",
+    "rationale": "Only a task-tracking list update is visible; no task work purpose is supported."
+  },
+  "label_source": "deterministic_control_rule",
+  "usage": null,
+  "server_model": null,
+  "seconds": 0,
+  "attempt": 0
+}

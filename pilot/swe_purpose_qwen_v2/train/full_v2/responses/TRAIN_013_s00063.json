@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00063",
+  "input_sha256": "c64675f04022324bd2f665f9b88b261700e1ed0125ab92254e51bc380c29ad07",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "OPERATE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The step runs a command to format and commit changes to the code, indicating an operational action to advance the target state."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3997,
+    "completion_tokens": 42,
+    "total_tokens": 4039
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8221883779915515,
+  "attempt": 1
+}

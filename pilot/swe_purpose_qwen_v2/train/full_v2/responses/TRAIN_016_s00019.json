@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_016_s00019",
+  "input_sha256": "956657daf174634d2c8ab0e705143d51b769d21d287386b3079dac1344a24beb",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user is running 'git status' to check the current state of the repository before proceeding."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3939,
+    "completion_tokens": 36,
+    "total_tokens": 3975
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7398666450171731,
+  "attempt": 1
+}

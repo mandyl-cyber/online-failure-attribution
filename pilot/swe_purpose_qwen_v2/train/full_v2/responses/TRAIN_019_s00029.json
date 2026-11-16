@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_019_s00029",
+  "input_sha256": "8cb98357cd64be07341b4b73b178dcabf91729b3123725c1c3b052b77493b3ca",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user is viewing the content of a file to acquire information about the test case and its setup."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 5023,
+    "completion_tokens": 38,
+    "total_tokens": 5061
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8478567489946727,
+  "attempt": 1
+}

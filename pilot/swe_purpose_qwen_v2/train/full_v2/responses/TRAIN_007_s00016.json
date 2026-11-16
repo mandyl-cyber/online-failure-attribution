@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_007_s00016",
+  "input_sha256": "122dc34891389f1af97b5c6d54f4476ba52f34ec8f68155dc8c658f2a7f822ac",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Viewing a portion of the test_psrp.py file to inspect the code, which is part of the verification phase."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4116,
+    "completion_tokens": 42,
+    "total_tokens": 4158
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.554693064012099,
+  "attempt": 1
+}

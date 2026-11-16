@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_002_s00023",
+  "input_sha256": "d1e23a366313d92ead16cfaba40717afd1fba11b4b66f01cf77f7430ddfccd13",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "This action attempts to reproduce the issue in a controlled environment, which is an acquisition step to discover the bug."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4084,
+    "completion_tokens": 40,
+    "total_tokens": 4124
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4758461980090942,
+  "attempt": 1
+}

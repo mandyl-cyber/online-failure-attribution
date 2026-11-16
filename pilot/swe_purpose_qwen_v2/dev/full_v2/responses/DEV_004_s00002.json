@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_004_s00002",
+  "input_sha256": "489251049b145c28a1e8c5bc98e28178a82e11b2a3bd8011569430aad229994a",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action indicates the user is viewing the task list, likely to understand the current status and requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 2299,
+    "completion_tokens": 38,
+    "total_tokens": 2337
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5116674900054932,
+  "attempt": 1
+}

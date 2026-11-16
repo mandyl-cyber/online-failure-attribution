@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_019_s00014",
+  "input_sha256": "ad1a743894772f6fed05b7494cb70b3f60267c9dea8b6dec330a098a52ccf6ca",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CONSTRUCT",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action edits the file /workspace/src/_pytest/setuponly.py by replacing a line, indicating a construction of a potential fix."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3661,
+    "completion_tokens": 44,
+    "total_tokens": 3705
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8206976339861285,
+  "attempt": 1
+}

@@ -1,0 +1,20 @@
+{
+  "total": 2,
+  "fits": 2,
+  "max_input_tokens": 3342,
+  "context_tokens": 32768,
+  "output_tokens": 256,
+  "margin": 128,
+  "requests": [
+    {
+      "request_id": "TRAIN_002_s00011",
+      "input_tokens": 3342,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00012",
+      "input_tokens": 3296,
+      "fits": true
+    }
+  ]
+}

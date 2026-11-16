@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_010_s00005",
+  "input_sha256": "56d2533082c867a332db41977559e633fc86da22092fcaf9318d95e310b88fe2",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for occurrences of 'console' in the codebase, which is gathering information about the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3801,
+    "completion_tokens": 41,
+    "total_tokens": 3842
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.941028349014232,
+  "attempt": 1
+}

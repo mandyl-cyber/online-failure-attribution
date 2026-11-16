@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_002_s00005",
+  "input_sha256": "119eeb0ea5f12185be2767ec3fa82f5b0020a1dc625d3f218f47b37a9de31c6a",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Viewing the file content to check for relevant sections and identify potential issues."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3203,
+    "completion_tokens": 32,
+    "total_tokens": 3235
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.516789012006484,
+  "attempt": 1
+}

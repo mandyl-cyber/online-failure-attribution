@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_022_s00020",
+  "input_sha256": "cb5e5fe75568fdd6851e505776df8d5ad3eaddfe26c5e4ad2de05f5c24f8b29b",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Running 'npm test --silent' to test the codebase and check for issues, which is a form of evaluation."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4659,
+    "completion_tokens": 41,
+    "total_tokens": 4700
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8710160510090645,
+  "attempt": 1
+}

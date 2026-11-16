@@ -1,0 +1,11 @@
+{
+  "request_id": "TRAIN_013_s00051",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Rationale must be 1-240 characters",
+      "raw_content": "{\"purpose\":\"CHECK\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The action is a commit message, indicating the developer is preparing to commit changes. The subsequent observation shows a failure due to formatting issues, suggesting the step is part of a CHECK process to ensure the commit meets requirements.\"}"
+    }
+  ]
+}

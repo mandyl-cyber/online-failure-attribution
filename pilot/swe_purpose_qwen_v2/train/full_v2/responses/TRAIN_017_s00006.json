@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_017_s00006",
+  "input_sha256": "5aed5eca2d565698ab302691a4120b1ae135cede09ac5ace62d2c04b3bc66fce",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Viewing the file to check for the presence and handling of unsigned byte attributes."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4131,
+    "completion_tokens": 33,
+    "total_tokens": 4164
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7195779060130008,
+  "attempt": 1
+}

@@ -1,0 +1,11 @@
+{
+  "request_id": "DEV_005_s00050",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"INSERT\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The action involves inserting content into the file /workspace/qutebrowser/config/qtargs.py, which is a candidate deliverable.\"}"
+    }
+  ]
+}

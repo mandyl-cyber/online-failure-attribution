@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_005_s00033",
+  "input_sha256": "2566ff66e58e856b4e70b0e89c223fe98fa9fcc18e13fa09f1782a9bb26fd435",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Modified code to conditionally apply locale override."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4595,
+    "completion_tokens": 26,
+    "total_tokens": 4621
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.2154810659994837,
+  "attempt": 2
+}

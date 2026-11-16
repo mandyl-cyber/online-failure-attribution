@@ -1,0 +1,7 @@
+{
+  "request_id": "DEV_001_s00028",
+  "status": "failed",
+  "error": "Evidence ID must identify an available current-step field",
+  "attempt": 2,
+  "raw_content": "{\"purpose\":\"CHECK\",\"evidence_id\":\"P27_OBSERVATION\",\"rationale\":\"The observation indicates the commit was made and the task list was updated, suggesting the check phase of verifying the fix.\"}"
+}

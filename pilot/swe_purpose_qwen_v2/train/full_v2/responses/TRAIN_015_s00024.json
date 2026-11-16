@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_015_s00024",
+  "input_sha256": "bb30cc19fdff15dd0aafb38c6161109cf285325a9a5ef0eac07d35a99a0583a3",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows running 'npm test --silent', which is a test execution to check the current state of the codebase."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 5214,
+    "completion_tokens": 42,
+    "total_tokens": 5256
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.9230601650197059,
+  "attempt": 1
+}

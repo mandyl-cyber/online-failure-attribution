@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_008_s00002",
+  "input_sha256": "327e260f964f33d1f501162143f013ea3ed0b8cf2415c86351cabb8f88a684a0",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is to view, but the provided text does not specify what is being viewed or how it relates to the task."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 2189,
+    "completion_tokens": 42,
+    "total_tokens": 2231
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4457248960097786,
+  "attempt": 1
+}

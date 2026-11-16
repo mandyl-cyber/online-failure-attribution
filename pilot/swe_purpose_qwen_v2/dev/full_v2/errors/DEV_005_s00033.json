@@ -1,0 +1,11 @@
+{
+  "request_id": "DEV_005_s00033",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Rationale must be 1-240 characters",
+      "raw_content": "{\"purpose\":\"CHECK\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The evidence shows a code change being made to the qtargs.py file, which is a candidate solution to the described issue. This step involves modifying the code to check a configuration value before applying a locale override, indicating a CHECK action.\"}"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_007_s00031",
+  "input_sha256": "2764ae1a6d9039b9b194bbddb12bc1335e3798e30c923845f2a09d503365c7e0",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is a git commit message that describes changes intended to address the issue, indicating a check of the proposed solution."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4449,
+    "completion_tokens": 41,
+    "total_tokens": 4490
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.8093579270062037,
+  "attempt": 1
+}

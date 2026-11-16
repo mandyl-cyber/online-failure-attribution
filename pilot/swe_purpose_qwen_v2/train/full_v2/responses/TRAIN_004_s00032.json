@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_004_s00032",
+  "input_sha256": "7cc50613c452621525b7e9231315b0348caa542f6abefba98dfeb9b1f7aec9c2",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ENABLE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Set git user configuration to enable version control operations."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3123,
+    "completion_tokens": 27,
+    "total_tokens": 3150
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.5570138979819603,
+  "attempt": 1
+}

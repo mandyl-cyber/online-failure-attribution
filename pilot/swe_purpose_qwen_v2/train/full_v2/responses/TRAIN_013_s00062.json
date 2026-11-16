@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00062",
+  "input_sha256": "213bafc15b1ccbbe8eaf70abe8f98821ee631b27d7220260b286190f400156c3",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Viewing specific lines of code to inspect the current state and identify potential issues."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4672,
+    "completion_tokens": 33,
+    "total_tokens": 4705
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7690994660079014,
+  "attempt": 1
+}

@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["purpose", "evidence_id", "rationale"],
+  "properties": {
+    "purpose": {"enum": ["ACQUIRE", "ENABLE", "CONSTRUCT", "OPERATE", "CHECK", "DELIVER", "UNKNOWN"]},
+    "evidence_id": {"type": "string", "pattern": "^C_"},
+    "rationale": {"type": "string", "minLength": 1, "maxLength": 240}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "TRAIN_012_s00034": {
+    "answer": {"purpose": "CONSTRUCT", "evidence_id": "C_ACTION", "rationale": "Inserts a __getstate__ implementation into the candidate source file."},
+    "review_note": "Qwen repeatedly emitted illegal INSERT. Current action changes source code; classify the work purpose as CONSTRUCT. AI adjudication, not independent blind review."
+  },
+  "TRAIN_012_s00036": {
+    "answer": {"purpose": "CHECK", "evidence_id": "C_ACTION", "rationale": "Views the just-edited source region to inspect the candidate change."},
+    "review_note": "Qwen repeatedly emitted illegal VIEW. Two immediately preceding actions inspect the edited source after insertion; CHECK is the best supported candidate, with context ambiguity retained for later review."
+  },
+  "TRAIN_018_s00040": {
+    "answer": {"purpose": "UNKNOWN", "evidence_id": "C_ACTION", "rationale": "Updates a task plan without performing repository work in this step."},
+    "review_note": "Qwen repeatedly emitted illegal PLAN. Current action is a task_tracking plan update, so the label guide assigns UNKNOWN to this control step."
+  },
+  "TRAIN_023_s00022": {
+    "answer": {"purpose": "UNKNOWN", "evidence_id": "C_ACTION", "rationale": "Updates a task plan without performing repository work in this step."},
+    "review_note": "Qwen repeatedly emitted illegal PLAN. Current action is a task_tracking plan update, so the label guide assigns UNKNOWN to this control step."
+  }
+}

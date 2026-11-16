@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_006_s00008",
+  "input_sha256": "ab0ea53caf09e003629b5411d11f57d11444a91d6c7e3547e6e5439bb48fc57d",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Extracts a portion of the SAM image processing code to examine the relevant functionality."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3820,
+    "completion_tokens": 34,
+    "total_tokens": 3854
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6995993909949902,
+  "attempt": 1
+}

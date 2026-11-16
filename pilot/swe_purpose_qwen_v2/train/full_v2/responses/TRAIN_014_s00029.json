@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00029",
+  "input_sha256": "1db2805202d0c0dd2fe8a3b2896c09f70551d5a5f680f0fd0e5613976bd3be1e",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is a keyboard shortcut (C-c), which could be used for various purposes such as interrupting a process or copying text. Without more context, it's unclear."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4266,
+    "completion_tokens": 52,
+    "total_tokens": 4318
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.9644437070237473,
+  "attempt": 1
+}

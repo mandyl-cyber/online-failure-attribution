@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_012_s00001",
+  "input_sha256": "2ae49819443b422f71cbc57e88660de0b545cf280996d0f9299ed1bf3b5f0341",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user performed an action to list the contents of the workspace directory, which is an attempt to gather information about the project structure and identify relevant files for the bug."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3221,
+    "completion_tokens": 51,
+    "total_tokens": 3272
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.7165960660204291,
+  "attempt": 1
+}

@@ -1,0 +1,19 @@
+{
+  "request_id": "TRAIN_003_s00002",
+  "input_sha256": "33dc8447465e85cc8b8d153aed5f102fba1a343fb3192b1b94a1a8a035442daf",
+  "identity": "66f87dbcf139d1393ca8a6fe696d7297b940d6f44e921da70bd4bf29dd315d4a",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The current step is an action to view, but the text is truncated and does not provide enough information to determine the primary work purpose."
+  },
+  "label_source": "qwen",
+  "usage": {
+    "prompt_tokens": 1817,
+    "completion_tokens": 44,
+    "total_tokens": 1861
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6690043800044805,
+  "attempt": 1
+}

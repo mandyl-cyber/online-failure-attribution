@@ -1,0 +1,9 @@
+# SWE purpose candidate labels, protocol v2
+
+Each request labels one completed step with a causal, bounded packet. The package carries the same selected trajectories as v1; `remote.py` constructs packets independently. Task text is clipped to 5,000 characters. The first two and last six earlier steps are included, each with action 600, observation 350, intent 250 character limits. Current action, observation and intent limits are 2,200, 3,000 and 1,000. Clipping keeps both head and tail with an explicit omitted-character marker. Source truncation flags are preserved. Intermediate history outside the selected window is absent, so semantic accuracy needs separate review.
+
+Output is a three-field JSON object: one purpose, one available current-step evidence ID, and a short rationale. Validation checks structure and the ID, but does not prove that the rationale or purpose is correct. These are weak machine labels, not human gold.
+
+The client applies two transparent fallbacks. A task-tracking update with no action or intent becomes `UNKNOWN` with `label_source=deterministic_control_rule`. If Qwen emits the illegal label `SEARCH` for a current action containing a search command, it becomes candidate `ACQUIRE` with `label_source=qwen_search_alias`, the raw answer retained, and `review_priority=true`. The latter is a review hypothesis, since a search after an edit could instead be CHECK. Other invalid output is rejected. Up to three attempts are made; after a failed answer the next request includes the validation error and permitted values.
+
+Run with the actual local tokenizer and model ID. The `inspect`, `preflight`, `run`, `validate`, and `bundle` commands have the same options as v1. Use a distinct output directory for a limited trial because `preflight.json` is rewritten for the selected limit. A full run must pass full train/dev preflight and a representative trial before use. Keep v1 results separate.

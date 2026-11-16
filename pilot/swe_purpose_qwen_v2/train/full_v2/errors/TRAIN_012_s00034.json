@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_012_s00034",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"INSERT\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The current step involves inserting a new code snippet into the text.py file.\"}"
+    },
+    {
+      "attempt": 2,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"INSERT\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The current step involves inserting a new code snippet into the text.py file.\"}"
+    },
+    {
+      "attempt": 3,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"INSERT\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The current step involves inserting a new code snippet into the text.py file.\"}"
+    }
+  ]
+}

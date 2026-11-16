@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_022_s00028",
+  "input_sha256": "22a65fa8d2546c2bef09d4f6799f8822c13881b21fee1047469536afaea43a04",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action removes a temporary file and checks the git status to ensure no changes are staged, indicating the verification step is complete."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3860,
+    "completion_tokens": 42,
+    "total_tokens": 3902
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.812840389990015,
+  "attempt": 1
+}

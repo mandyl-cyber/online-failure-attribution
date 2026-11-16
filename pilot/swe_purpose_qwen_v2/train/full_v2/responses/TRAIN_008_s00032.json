@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_008_s00032",
+  "input_sha256": "0c89980556be0a83b7bd5962846b8252dfd5d8be54e743446f5d1ed0a3815680",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action runs a test suite with a modified PYTHONPATH, indicating an attempt to verify the changes made."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4050,
+    "completion_tokens": 38,
+    "total_tokens": 4088
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5959995950106531,
+  "attempt": 1
+}

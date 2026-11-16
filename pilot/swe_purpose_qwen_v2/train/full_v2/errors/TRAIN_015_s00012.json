@@ -1,0 +1,11 @@
+{
+  "request_id": "TRAIN_015_s00012",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Rationale must be 1-240 characters",
+      "raw_content": "{\"purpose\":\"CHECK\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The current step uses sed to extract a portion of the printer.js file to check for specific patterns or configurations related to decorator handling, which aligns with the CHECK purpose of evaluating an existing candidate against requirements.\"}"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_010_s00043",
+  "input_sha256": "61f307d4ff8662a919da4f8b84d00151a304b9aff42aa6a8cc84916745abcb40",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Runs Python script to verify changes but fails due to missing module."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 5335,
+    "completion_tokens": 30,
+    "total_tokens": 5365
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5506558749766555,
+  "attempt": 2
+}

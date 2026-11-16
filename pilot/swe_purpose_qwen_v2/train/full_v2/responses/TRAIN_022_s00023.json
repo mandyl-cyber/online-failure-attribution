@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_022_s00023",
+  "input_sha256": "0927350f81f7911adb9e0f6432e567bc815e717f5e35dc9c4cd3e69961c71178",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user ran 'git status' to check the current state of the repository, which is a common action to verify changes before committing."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4020,
+    "completion_tokens": 44,
+    "total_tokens": 4064
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.844044909987133,
+  "attempt": 1
+}

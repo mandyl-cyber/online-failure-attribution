@@ -1,0 +1,14 @@
+{
+  "protocol": "swe-causal-bounded-purpose-v2",
+  "source_v1_trajectory_sha256": "3072b4d3bc382627951de9ea2c8c32947f11b7b67287e8bcf90aa45e1a266008",
+  "trajectories": 25,
+  "requests": 935,
+  "files": {
+    "ENVIRONMENT_TEMPLATE.txt": "0d2ddeee09105ee80d93f125e9a6c3f24074df49358b3bf5d3850de8a2f01ab3",
+    "OUTPUT_SCHEMA.json": "1014f8fce09d0f449f904a4527cc6bc900efa63eb7093eced1cc09a05b08ff93",
+    "README.md": "d392a88dab8662dfd379ae1e956271d7b7a019bf5db9690f874d278830dd8f04",
+    "SYSTEM_PROMPT.txt": "3c34dbb8a6d6174a29365b77eccef6a03089b30a923fbfc04325c0c6347049cc",
+    "remote.py": "360ce464e58f3226ac1d8f26a9e119f91ea9a11cae536e9a57fc980c54cccd2e",
+    "trajectories.jsonl": "3072b4d3bc382627951de9ea2c8c32947f11b7b67287e8bcf90aa45e1a266008"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_002_s00022",
+  "input_sha256": "1e5b094df0c1b55b347c7fc11a6dc7edc506e2ff6cd41c3aa5a24258de66ef1a",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "This step attempts to create a minimal reproduction script to verify the issue, which is a CHECK action to validate the problem."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3767,
+    "completion_tokens": 41,
+    "total_tokens": 3808
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4692814050067682,
+  "attempt": 1
+}

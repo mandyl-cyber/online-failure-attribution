@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_001_s00014",
+  "input_sha256": "5330deac27b23196e0dd377791131d473fe4d3d553d849b3ce0dad61ad7dde93",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows running pytest to check the implementation, indicating a check step."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3524,
+    "completion_tokens": 32,
+    "total_tokens": 3556
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5558736319944728,
+  "attempt": 1
+}

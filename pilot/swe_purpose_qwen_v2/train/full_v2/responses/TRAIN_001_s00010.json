@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_001_s00010",
+  "input_sha256": "b6372b45ab8d5f0bb66e0cec3f52615427f51e491a13cb801ec355fc6a30b1fa",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user is gathering information by searching for relevant classes in the codebase."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3668,
+    "completion_tokens": 33,
+    "total_tokens": 3701
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6708599010016769,
+  "attempt": 1
+}

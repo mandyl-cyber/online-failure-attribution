@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_005_s00067",
+  "input_sha256": "934bdf6725592d70b170a94c73d612e349d7bd3571283c6e1cefe274b6fa7060",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for a specific configuration option in the configdata.yml file, which indicates checking the current state against requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3991,
+    "completion_tokens": 42,
+    "total_tokens": 4033
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.8836969589756336,
+  "attempt": 1
+}

@@ -1,0 +1,19 @@
+{
+  "request_id": "DEV_003_s00023",
+  "input_sha256": "3fdc01f90560282e09bac6252d4bb1097a5b269bcf3e892d2e6ed8478da61f74",
+  "identity": "281c5037e8439d1903d3aba8c40452dbc8e738f03db8ee171a5683e5ef6ed59e",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Running tests to verify the implementation and discovered a failure in one test case."
+  },
+  "label_source": "qwen",
+  "usage": {
+    "prompt_tokens": 3666,
+    "completion_tokens": 32,
+    "total_tokens": 3698
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6579675760003738,
+  "attempt": 1
+}

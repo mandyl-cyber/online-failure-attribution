@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_010_s00007",
+  "input_sha256": "209dc4a30c32340ab5c3cfb86cbbede4174ef281c4ff9e4e03d83617156a8645",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is gathering evidence by searching for 'timeout' in the test directory to understand where it is used and relevant files."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4440,
+    "completion_tokens": 43,
+    "total_tokens": 4483
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.8366311710269656,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_008_s00023",
+  "input_sha256": "5088c10e9cdb17b007747a904b510e489f9aa38b4cd9e8847cf0bf50d600c037",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "This step attempts to run tests to check the implementation, which is the primary purpose of a CHECK action."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4158,
+    "completion_tokens": 38,
+    "total_tokens": 4196
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.6878788619942497,
+  "attempt": 1
+}

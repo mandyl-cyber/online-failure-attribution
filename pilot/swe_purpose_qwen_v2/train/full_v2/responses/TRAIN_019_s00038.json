@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_019_s00038",
+  "input_sha256": "73a90d2e59bb694f7c57cd451a2ac79d5365cd9512549ec7035229ddd72988fe",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Gather evidence by searching for filterwarnings in setup.cfg."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3662,
+    "completion_tokens": 30,
+    "total_tokens": 3692
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6414279650198296,
+  "attempt": 1
+}

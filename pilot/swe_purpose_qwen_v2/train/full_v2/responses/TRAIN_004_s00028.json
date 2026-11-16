@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_004_s00028",
+  "input_sha256": "e8fb48b8f515f4edd5752a5f336f8821c8bce305a9b7212082aae4a9ed032059",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "This step runs tests to verify the implementation against the requirements, which is a CHECK action."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4167,
+    "completion_tokens": 35,
+    "total_tokens": 4202
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7438840820104815,
+  "attempt": 1
+}

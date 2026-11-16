@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00057",
+  "input_sha256": "8faf8f189830594314a09cc52650b836a701e60fd5540bda995f37410c735835",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_OBSERVATION",
+    "rationale": "The evidence shows a command was interrupted with C-c, resulting in an npm operation being canceled and logged. This indicates checking the state or outcome of a previous action."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3707,
+    "completion_tokens": 52,
+    "total_tokens": 3759
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.92447558400454,
+  "attempt": 1
+}

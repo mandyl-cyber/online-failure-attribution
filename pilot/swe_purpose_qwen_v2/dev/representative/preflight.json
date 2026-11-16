@@ -1,0 +1,60 @@
+{
+  "total": 10,
+  "fits": 10,
+  "max_input_tokens": 4856,
+  "context_tokens": 32768,
+  "output_tokens": 256,
+  "margin": 128,
+  "requests": [
+    {
+      "request_id": "DEV_001_s00015",
+      "input_tokens": 4240,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00028",
+      "input_tokens": 3662,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00017",
+      "input_tokens": 3319,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00032",
+      "input_tokens": 3678,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00012",
+      "input_tokens": 3543,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00023",
+      "input_tokens": 3666,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00022",
+      "input_tokens": 4856,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00043",
+      "input_tokens": 4305,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00035",
+      "input_tokens": 4721,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00069",
+      "input_tokens": 3830,
+      "fits": true
+    }
+  ]
+}

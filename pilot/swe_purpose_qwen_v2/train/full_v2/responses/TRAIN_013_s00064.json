@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00064",
+  "input_sha256": "3042b8612938faab191f525354e675eaaec70b96b1ddce85f2e516b76ea1c481",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is running a command to format a specific file, indicating an attempt to acquire a formatted version of the file."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3761,
+    "completion_tokens": 42,
+    "total_tokens": 3803
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.797986781981308,
+  "attempt": 1
+}

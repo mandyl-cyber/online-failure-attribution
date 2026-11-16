@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00036",
+  "input_sha256": "9f4f860793b795f04ebc3e1f776afa928049f161077e00dfecaf80446db1d7cc",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is running tests with 'npm run -s test-node --silent', which evaluates an existing candidate against requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4390,
+    "completion_tokens": 41,
+    "total_tokens": 4431
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8451036449987441,
+  "attempt": 1
+}

@@ -1,0 +1,7 @@
+{
+  "request_id": "TRAIN_002_s00011",
+  "status": "failed",
+  "error": "Unknown purpose",
+  "attempt": 2,
+  "raw_content": "{\"purpose\":\"SEARCH\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The action is using grep to search for 'mutually_exclusive_group' in the codebase, indicating a search for relevant code.\"}"
+}

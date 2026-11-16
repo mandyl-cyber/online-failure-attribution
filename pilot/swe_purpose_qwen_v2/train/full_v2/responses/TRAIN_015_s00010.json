@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_015_s00010",
+  "input_sha256": "a3e794bf40077d662e553f9bbd6c9de6be18efa48355149030a22aa20715091e",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The step involves searching for specific patterns (decorator-related) across multiple test files, which is aimed at discovering where the issue might exist."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 5234,
+    "completion_tokens": 46,
+    "total_tokens": 5280
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.9710518250067253,
+  "attempt": 1
+}

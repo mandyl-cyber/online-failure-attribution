@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_006_s00001",
+  "input_sha256": "0b8b6a8dfaf8ac55b00a6dc1598e2cba9a06b6c314c8e4421964dfe90f107f0b",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is to view something, but without additional context, it's unclear what is being viewed or the purpose."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 2002,
+    "completion_tokens": 40,
+    "total_tokens": 2042
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6304588910134044,
+  "attempt": 1
+}

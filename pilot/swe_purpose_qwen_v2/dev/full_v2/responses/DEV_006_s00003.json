@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_006_s00003",
+  "input_sha256": "486c81e4eb2508de04602b4eba859fb2ec736274744eb5bae516605bdc9b2b79",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is a command to view, but without additional context, it's unclear if this step is acquiring, enabling, constructing, operating, checking, or delivering information."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 2195,
+    "completion_tokens": 51,
+    "total_tokens": 2246
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.7466333819902502,
+  "attempt": 1
+}

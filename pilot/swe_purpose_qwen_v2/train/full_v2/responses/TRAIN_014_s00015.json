@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00015",
+  "input_sha256": "4cdc38b25c66e80c4d7a358d80a502812fb802c26ee910e1b9a23b4ae580f742",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user ran 'yarn test:unit' to test the current state of the code, which is a check to evaluate the existing candidate against requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 6132,
+    "completion_tokens": 48,
+    "total_tokens": 6180
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.0759266249951907,
+  "attempt": 1
+}

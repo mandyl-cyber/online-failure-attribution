@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_002_s00024",
+  "input_sha256": "8a5bdd48f6e8e63c137c2143903d5b1c8168ad79dcce548115da93c5fc1f33a9",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Run tests using a custom script to verify the fix, but encountered an unrecognized argument '-q'."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3647,
+    "completion_tokens": 37,
+    "total_tokens": 3684
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7237277949752752,
+  "attempt": 1
+}

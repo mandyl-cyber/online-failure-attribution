@@ -1,0 +1,19 @@
+{
+  "request_id": "TRAIN_002_s00002",
+  "input_sha256": "537bf90c3428a7eb542a5a4ff35ff6cf6d59592ba70c2cf8378df895bd551044",
+  "identity": "66f87dbcf139d1393ca8a6fe696d7297b940d6f44e921da70bd4bf29dd315d4a",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is to view the task list, but the content does not provide enough information to determine the primary work purpose."
+  },
+  "label_source": "qwen",
+  "usage": {
+    "prompt_tokens": 2070,
+    "completion_tokens": 41,
+    "total_tokens": 2111
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6488201679894701,
+  "attempt": 1
+}

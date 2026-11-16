@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00008",
+  "input_sha256": "0bd6527dcbed33bf5b9075c01fbec22649fc6297e6393c3e5d5942154d285f34",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The command searches for 'useAutocomplete' in the repository to locate the relevant code."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3926,
+    "completion_tokens": 36,
+    "total_tokens": 3962
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7437477619969286,
+  "attempt": 1
+}

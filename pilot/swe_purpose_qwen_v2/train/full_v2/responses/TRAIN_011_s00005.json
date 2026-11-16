@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_011_s00005",
+  "input_sha256": "76c025988eb8b3e9a540f9c40fa2b164ac8c26700afb047e0661b16930f63b79",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CONSTRUCT",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user used sed to extract a portion of the code, indicating they are constructing or modifying a candidate implementation."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3609,
+    "completion_tokens": 40,
+    "total_tokens": 3649
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.6327958809852134,
+  "attempt": 1
+}

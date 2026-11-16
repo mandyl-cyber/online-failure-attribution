@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_010_s00023",
+  "input_sha256": "3cc038ad28384354c0050d9b7842541f56a8b787efa4682a7109bad7acd2f5d0",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for specific keywords related to the issue in the test directory, which is an acquisition step to gather relevant information."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4124,
+    "completion_tokens": 44,
+    "total_tokens": 4168
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.8698039159935433,
+  "attempt": 1
+}

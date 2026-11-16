@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_003_s00020",
+  "input_sha256": "b24dfde19e6bc0ba33bf5c77b80bd7b75ab7334c362d8bec0492c46d25b795e5",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The step runs a specific test to check the issue, evaluating the existing candidate against requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3282,
+    "completion_tokens": 35,
+    "total_tokens": 3317
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6697886040201411,
+  "attempt": 1
+}

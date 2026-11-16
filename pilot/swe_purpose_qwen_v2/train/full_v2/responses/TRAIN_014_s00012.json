@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00012",
+  "input_sha256": "27e8eb870c2a0f00944d60c11e82f0e6086d7d3653bd57e0d4b89b8339506357",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The command is searching for occurrences of 'groupBy' in the repository to locate the relevant code."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4331,
+    "completion_tokens": 37,
+    "total_tokens": 4368
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.780591379996622,
+  "attempt": 1
+}

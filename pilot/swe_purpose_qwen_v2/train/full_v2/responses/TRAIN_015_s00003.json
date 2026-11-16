@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_015_s00003",
+  "input_sha256": "ae4e35baa7b3e319dc7cb47baf6dd48e8cfa337997013adc77273c4f39ec1c13",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows running npm test with --silent flag, indicating a check or test execution."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3670,
+    "completion_tokens": 35,
+    "total_tokens": 3705
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7069388850068208,
+  "attempt": 1
+}

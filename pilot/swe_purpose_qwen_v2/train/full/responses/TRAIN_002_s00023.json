@@ -1,0 +1,19 @@
+{
+  "request_id": "TRAIN_002_s00023",
+  "input_sha256": "45349f041a23ed7728ae21053de4799add8989fbb419561a718a56a56508e057",
+  "identity": "66f87dbcf139d1393ca8a6fe696d7297b940d6f44e921da70bd4bf29dd315d4a",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Running pytest to check the implementation against tests."
+  },
+  "label_source": "qwen",
+  "usage": {
+    "prompt_tokens": 3553,
+    "completion_tokens": 26,
+    "total_tokens": 3579
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.5720769659965299,
+  "attempt": 1
+}

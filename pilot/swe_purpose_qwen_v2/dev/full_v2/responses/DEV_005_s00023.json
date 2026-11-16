@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_005_s00023",
+  "input_sha256": "6117648520052291a466d28d6cd69500cf288d8d7f7f2f65540b76b188bbb698",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The command is searching for occurrences of 'QLibraryInfo' in the codebase to gather relevant information about the usage and context of this library."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4100,
+    "completion_tokens": 47,
+    "total_tokens": 4147
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.809992509020958,
+  "attempt": 1
+}

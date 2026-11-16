@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_018_s00040",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"PLAN\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"Plan updates task list marking phase3 as done and notes the focus on Variable/common layers for the fix.\"}"
+    },
+    {
+      "attempt": 2,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"PLAN\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"Plan updates task list marking phase3 as done and notes the focus on Variable/common layers for the fix.\"}"
+    },
+    {
+      "attempt": 3,
+      "error": "Unknown purpose",
+      "raw_content": "{\"purpose\":\"PLAN\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"Plan updates task list marking phase3 as done and notes the focus on Variable/common layers for the fix.\"}"
+    }
+  ]
+}

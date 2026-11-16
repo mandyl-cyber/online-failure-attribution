@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_005_s00028",
+  "input_sha256": "957fc57bc6a554521012afc1d0aa67c2f9c38c4af2709acf9a3233b2de27bc33",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Verify the user's name configuration using git command."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3593,
+    "completion_tokens": 27,
+    "total_tokens": 3620
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.5995890159974806,
+  "attempt": 1
+}

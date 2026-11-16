@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_021_s00014",
+  "input_sha256": "f7b3d064a16d08f4fbef40b234c92550d15d37b4f1f3033184e4de59e174bfe1",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The command is searching for occurrences of 'IAM role' in the codebase to gather information about where IAM roles are handled or referenced."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3988,
+    "completion_tokens": 45,
+    "total_tokens": 4033
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.859552028006874,
+  "attempt": 1
+}

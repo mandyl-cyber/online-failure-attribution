@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00019",
+  "input_sha256": "cc0f6f71f5efb57caade781f881d8ecde611daa28cbcc75ceb625287eaac366b",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_OBSERVATION",
+    "rationale": "The evidence shows the output of a git commit command with no new output after 30 seconds, indicating a check of the commit state."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4009,
+    "completion_tokens": 47,
+    "total_tokens": 4056
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.882496672013076,
+  "attempt": 1
+}

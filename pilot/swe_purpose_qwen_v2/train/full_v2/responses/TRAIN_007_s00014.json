@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_007_s00014",
+  "input_sha256": "0e22ee5f1579a0186327581d3707daf1f88d8009312b8d4f5f4d7e65328638b4",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Run command to discover missing pytest module and failure to execute tests."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3868,
+    "completion_tokens": 31,
+    "total_tokens": 3899
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4621340000012424,
+  "attempt": 1
+}

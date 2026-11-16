@@ -1,0 +1,18 @@
+{
+  "request_id": "TRAIN_012_s00036",
+  "input_sha256": "afc1d5d6057f4cb730e9f1cb3b24bf59c98900c9d00d581c86757b27571416a8",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Views the just-edited source region to inspect the candidate change."
+  },
+  "label_source": "codex_ai_adjudication",
+  "review_priority": true,
+  "review_note": "Qwen repeatedly emitted illegal VIEW. Two immediately preceding actions inspect the edited source after insertion; CHECK is the best supported candidate, with context ambiguity retained for later review.",
+  "failed_attempts_sha256": "a9ef22ca888575fe1d73532eb4f1175c2969c4181c8f6262f31d1fcc0340ec1a",
+  "usage": null,
+  "server_model": null,
+  "seconds": 0,
+  "attempt": 0
+}

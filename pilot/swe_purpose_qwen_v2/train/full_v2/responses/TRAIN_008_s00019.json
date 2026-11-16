@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_008_s00019",
+  "input_sha256": "1ebf6f4ab2685a2ab48a72e4dd163ffec65bbf4f7469e65492e1e803de4d964e",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for 'respawn' in the library directory to locate relevant files."
+  },
+  "label_source": "qwen_search_alias",
+  "raw_answer": "{\"purpose\":\"SEARCH\",\"evidence_id\":\"C_ACTION\",\"rationale\":\"The action is searching for 'respawn' in the library directory to locate relevant files.\"}",
+  "review_priority": true,
+  "usage": {
+    "prompt_tokens": 3726,
+    "completion_tokens": 35,
+    "total_tokens": 3761
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4820842250192072,
+  "attempt": 1
+}

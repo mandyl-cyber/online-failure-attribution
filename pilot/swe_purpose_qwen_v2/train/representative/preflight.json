@@ -1,0 +1,110 @@
+{
+  "total": 20,
+  "fits": 20,
+  "max_input_tokens": 4707,
+  "context_tokens": 32768,
+  "output_tokens": 256,
+  "margin": 128,
+  "requests": [
+    {
+      "request_id": "TRAIN_001_s00013",
+      "input_tokens": 4639,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00024",
+      "input_tokens": 4208,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00016",
+      "input_tokens": 3610,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00030",
+      "input_tokens": 3407,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00016",
+      "input_tokens": 3219,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00030",
+      "input_tokens": 3047,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00019",
+      "input_tokens": 4110,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00036",
+      "input_tokens": 3311,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00016",
+      "input_tokens": 4333,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00031",
+      "input_tokens": 3630,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00043",
+      "input_tokens": 3595,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00085",
+      "input_tokens": 4633,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00014",
+      "input_tokens": 3868,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00026",
+      "input_tokens": 4497,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00028",
+      "input_tokens": 3895,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00055",
+      "input_tokens": 4265,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00018",
+      "input_tokens": 4707,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00034",
+      "input_tokens": 3582,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00023",
+      "input_tokens": 4124,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00044",
+      "input_tokens": 4502,
+      "fits": true
+    }
+  ]
+}

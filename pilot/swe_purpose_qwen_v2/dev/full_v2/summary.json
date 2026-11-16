@@ -1,0 +1,25 @@
+{
+  "total": 350,
+  "valid": 350,
+  "missing": [],
+  "invalid": [],
+  "complete": true,
+  "label_sources": {
+    "deterministic_control_rule": 52,
+    "qwen": 298
+  },
+  "purposes": {
+    "UNKNOWN": 56,
+    "ACQUIRE": 179,
+    "CHECK": 81,
+    "CONSTRUCT": 23,
+    "DELIVER": 7,
+    "OPERATE": 3,
+    "ENABLE": 1
+  },
+  "successful_response_retries": 2,
+  "completion_tokens": 13319,
+  "model_response_seconds": 510.92,
+  "semantic_accuracy_evaluated": false,
+  "run_identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca"
+}

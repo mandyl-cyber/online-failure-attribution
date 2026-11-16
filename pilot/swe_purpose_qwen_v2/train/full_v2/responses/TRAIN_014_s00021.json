@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00021",
+  "input_sha256": "e7bbe52228e74af03c45f47b22ad4b6c6e4a76d67d7c8363cd985fbe9f9b9de1",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is a keyboard interrupt (Ctrl+C) without clear intent or evidence of a specific work purpose."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3996,
+    "completion_tokens": 38,
+    "total_tokens": 4034
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7693537680024747,
+  "attempt": 1
+}

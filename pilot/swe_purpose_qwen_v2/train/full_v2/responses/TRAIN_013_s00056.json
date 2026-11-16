@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00056",
+  "input_sha256": "8504296a0e253f3c3b2586e5b669e09435dd35c13d3c2da25bcd79f3978da867",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Gather evidence by stripping trailing spaces from a specific file."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3744,
+    "completion_tokens": 30,
+    "total_tokens": 3774
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.6507228919945192,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_008_s00012",
+  "input_sha256": "db76a903ce2d49fd6506337f860a8210bb6b07a5f52226aeda1115129b61629f",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user is viewing a specific section of the file to acquire understanding of the code related to SELinux context management."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4709,
+    "completion_tokens": 41,
+    "total_tokens": 4750
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4936541929782834,
+  "attempt": 1
+}

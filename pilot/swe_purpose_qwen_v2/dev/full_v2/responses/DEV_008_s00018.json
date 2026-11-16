@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_008_s00018",
+  "input_sha256": "fdae4e7d68400eab08ee0bfa3eac39bc0c0348509e60a82991410a34956c4c1b",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for a specific string in test files to further understand the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3929,
+    "completion_tokens": 35,
+    "total_tokens": 3964
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.6887801799748559,
+  "attempt": 1
+}

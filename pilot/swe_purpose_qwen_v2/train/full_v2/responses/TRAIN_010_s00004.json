@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_010_s00004",
+  "input_sha256": "235d7e49e8e85d5ed4e2e8d0de6364831d3fc248dfcb9a916d79b2c0dd57ce8f",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for occurrences of 'task_include' in the codebase to identify relevant files for the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3631,
+    "completion_tokens": 41,
+    "total_tokens": 3672
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4331930850166827,
+  "attempt": 1
+}

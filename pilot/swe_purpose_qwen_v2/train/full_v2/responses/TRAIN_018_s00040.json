@@ -1,0 +1,18 @@
+{
+  "request_id": "TRAIN_018_s00040",
+  "input_sha256": "fa4a616290bb79b3a5640fb43674ea303cb0acd881dcd623f71c25a55a9fcc48",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "Updates a task plan without performing repository work in this step."
+  },
+  "label_source": "codex_ai_adjudication",
+  "review_priority": true,
+  "review_note": "Qwen repeatedly emitted illegal PLAN. Current action is a task_tracking plan update, so the label guide assigns UNKNOWN to this control step.",
+  "failed_attempts_sha256": "2e1ce3a58257530e94e455196186a1133dc2a9f72d98588a5aeb0e90b3f5b60c",
+  "usage": null,
+  "server_model": null,
+  "seconds": 0,
+  "attempt": 0
+}

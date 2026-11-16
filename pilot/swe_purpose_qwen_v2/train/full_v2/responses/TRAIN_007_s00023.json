@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_007_s00023",
+  "input_sha256": "e6083849f7aef55b4e010c44914b7a2ad70cb913a1210a1450330fa03009e966",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action uses grep to search for '_extras' in the psrp.py file, indicating a check to ensure the changes have removed all references to undocumented extras."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3840,
+    "completion_tokens": 49,
+    "total_tokens": 3889
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.7820758660091087,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_007_s00024",
+  "input_sha256": "3ae7f110a2bad050a6b65bf2a0a4331d90e1d4dc63e6ee8932d19c7d5eb4cb01",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user is running a git status command to check the current state of the repository, likely to verify changes made to the files."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4509,
+    "completion_tokens": 43,
+    "total_tokens": 4552
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.7891430009913165,
+  "attempt": 1
+}

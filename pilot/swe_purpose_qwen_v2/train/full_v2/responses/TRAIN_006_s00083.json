@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_006_s00083",
+  "input_sha256": "e85ce4f1b1d2412a25b4db947882a6c2b1b99c8fb080b11ae7eb159b7389a052",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence is a plan command with a task list, which does not indicate a specific work purpose."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3761,
+    "completion_tokens": 37,
+    "total_tokens": 3798
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4895199660095386,
+  "attempt": 1
+}

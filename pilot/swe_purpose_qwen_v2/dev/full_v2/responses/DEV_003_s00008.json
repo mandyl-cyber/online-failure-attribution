@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_003_s00008",
+  "input_sha256": "ecae23eaab7866f341f4bac1163e64492d86f849ce4252df0eab5a616f818b76",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Gather evidence by searching for 'floatformat(' in test files."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3723,
+    "completion_tokens": 32,
+    "total_tokens": 3755
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.3469910309941042,
+  "attempt": 1
+}

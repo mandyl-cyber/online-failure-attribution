@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_005_s00069",
+  "input_sha256": "ce8cc4a4190c157b283822d7cce597dca338a53f7c25d0c8ce12952fc0f1d2da",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is planning the final review phase without providing new evidence or performing a specific task."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3830,
+    "completion_tokens": 35,
+    "total_tokens": 3865
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.6655064259830397,
+  "attempt": 1
+}

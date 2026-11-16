@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00017",
+  "input_sha256": "e8d0387368e826155288be129eaf757c343b19afebd4e38058a5b99e9bcb163b",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The command is searching for specific patterns in the codebase to locate relevant files and methods related to link parsing."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4215,
+    "completion_tokens": 40,
+    "total_tokens": 4255
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5893578700197395,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_019_s00034",
+  "input_sha256": "030a5dbd2227c613f97ad745540c9f85b5e630a6590e4613d1967ef8838db721",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "DELIVER",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows a git commit command that adds and commits changes to the repository."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4020,
+    "completion_tokens": 34,
+    "total_tokens": 4054
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7166748869931325,
+  "attempt": 1
+}

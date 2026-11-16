@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_024_s00001",
+  "input_sha256": "6e3d804b38b875c78df33894b0bbbc5abc6b41ce1e73bb76feca42450d93a137",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is viewing the task list, which is part of reading and understanding the problem."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 1900,
+    "completion_tokens": 36,
+    "total_tokens": 1936
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.5758784420031589,
+  "attempt": 1
+}

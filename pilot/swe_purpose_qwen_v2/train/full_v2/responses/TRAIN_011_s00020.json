@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_011_s00020",
+  "input_sha256": "09bb5e0f4a31db751ac0aaa4ba627e2ec754a889f6b9cf40f964f8946853c63d",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is to list files in a directory related to unit tests, indicating a check to verify the existence and structure of relevant test files."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4031,
+    "completion_tokens": 45,
+    "total_tokens": 4076
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.6453846429940313,
+  "attempt": 1
+}

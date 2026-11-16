@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_020_s00027",
+  "input_sha256": "744f1c9e7417b9a233c5118f0ac90ebf8463db10e189d5697f51ab0bc984db0b",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action performs a git commit with a message that describes fixing a specific issue, indicating a check of the candidate solution."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3841,
+    "completion_tokens": 41,
+    "total_tokens": 3882
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8017517229891382,
+  "attempt": 1
+}

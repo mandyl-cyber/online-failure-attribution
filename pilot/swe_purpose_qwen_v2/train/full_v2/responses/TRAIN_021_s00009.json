@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_021_s00009",
+  "input_sha256": "83ae0c664627d3cd2fd6b0cc4e0bf83c97464eb0ce312d0d036e7ee83a5a0f81",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The user is viewing a specific file to understand its contents and context, which is part of gathering information to reproduce and address the issue."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4295,
+    "completion_tokens": 45,
+    "total_tokens": 4340
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8767432009917684,
+  "attempt": 1
+}

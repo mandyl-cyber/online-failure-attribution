@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_002_s00025",
+  "input_sha256": "cfd26f0d0852bb63ba4e416b9414b3376aabdbb0ff2c9dd5bad75cc4f1633a6e",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Running tests to verify the implementation against the specified requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3846,
+    "completion_tokens": 28,
+    "total_tokens": 3874
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4627848840027582,
+  "attempt": 1
+}

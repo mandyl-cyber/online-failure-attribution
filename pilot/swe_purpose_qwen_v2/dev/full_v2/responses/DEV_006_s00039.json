@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_006_s00039",
+  "input_sha256": "ed2dfc497eaf1f01242364820256d1f0778b856cd4941089322de65720f855ca",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_INTENT",
+    "rationale": "The intent describes confirming the implementation and verification without breaking other parts, indicating a check phase."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3775,
+    "completion_tokens": 36,
+    "total_tokens": 3811
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5346473989775404,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_004_s00002",
+  "input_sha256": "fa87da1d9db2e1a31a7c058739f0af4f608c054a6ab644c2415a58adc707fa5c",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The current step is an action to view, but the text is truncated and no specific purpose is evident."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 1856,
+    "completion_tokens": 38,
+    "total_tokens": 1894
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.5970394100004341,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_005_s00009",
+  "input_sha256": "de700ca878e14e816151bd4f7da722911830d8aedfd0dd494fa6097f12b832ba",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is listing and filtering files in the tests directory to check their existence and content."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3806,
+    "completion_tokens": 35,
+    "total_tokens": 3841
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4952852700080257,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_001_s00025",
+  "input_sha256": "f842f549b50508ce836c61100802fc6005d3e84cb7fe37f5d89d4d48daa48a8e",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action checks the git user.name configuration, which is part of verifying the setup before further changes."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3484,
+    "completion_tokens": 37,
+    "total_tokens": 3521
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4994237849896308,
+  "attempt": 1
+}

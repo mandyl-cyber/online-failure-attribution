@@ -1,0 +1,19 @@
+{
+  "request_id": "TRAIN_002_s00021",
+  "input_sha256": "17b6eb5b72fa8936cd06ae3530b20e82185057868316247705b9d043684d94d9",
+  "identity": "66f87dbcf139d1393ca8a6fe696d7297b940d6f44e921da70bd4bf29dd315d4a",
+  "answer": {
+    "purpose": "CONSTRUCT",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows a code modification to handle mutually exclusive groups in the parser."
+  },
+  "label_source": "qwen",
+  "usage": {
+    "prompt_tokens": 4011,
+    "completion_tokens": 33,
+    "total_tokens": 4044
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7048242689925246,
+  "attempt": 1
+}

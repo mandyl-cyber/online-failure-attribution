@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_002_s00031",
+  "input_sha256": "c72b6e17a995e22199f310c5d202387850b05bf3d981b372e12bcc4618b1d1b9",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Running tests to verify the implementation against the issue description."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3489,
+    "completion_tokens": 28,
+    "total_tokens": 3517
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.4199889400042593,
+  "attempt": 1
+}

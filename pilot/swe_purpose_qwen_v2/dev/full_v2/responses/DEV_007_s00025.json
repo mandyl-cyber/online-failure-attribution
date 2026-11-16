@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_007_s00025",
+  "input_sha256": "e3fba368b31f5751d5b0ab80d2b52cd4ebb79ab2e0f12cc22f26f1fbfb34e859",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action installs a package (absl-py) to acquire a dependency needed for further work."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4430,
+    "completion_tokens": 38,
+    "total_tokens": 4468
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.7494538589962758,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_013_s00059",
+  "input_sha256": "f1340a4502646a40c15a6de91caf220bcd68b09cafee597fd0002c39df1f5ead",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Running node ./build/hygiene.js to check the formatting and hygiene of the code, which evaluates an existing candidate against requirements."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3750,
+    "completion_tokens": 43,
+    "total_tokens": 3793
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8122061929898337,
+  "attempt": 1
+}

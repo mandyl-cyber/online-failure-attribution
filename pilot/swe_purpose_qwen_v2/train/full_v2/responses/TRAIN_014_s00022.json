@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00022",
+  "input_sha256": "52076ec0ff7f7eec340b1534f4e1eab8f9b16c6f4eca7eea546f325754f97920",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_OBSERVATION",
+    "rationale": "The evidence shows the output of running 'git status && git add -A && git commit' followed by 'yarn test:unit', indicating an attempt to check the commit and run unit tests, which is a CHECK action."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 6137,
+    "completion_tokens": 65,
+    "total_tokens": 6202
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.298526059021242,
+  "attempt": 1
+}

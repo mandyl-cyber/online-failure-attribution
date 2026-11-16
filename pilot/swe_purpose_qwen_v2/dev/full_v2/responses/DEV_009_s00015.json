@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_009_s00015",
+  "input_sha256": "9c8a107c2eaa3657c654c2a0cc1ce94fff915ed774241671841948872a255856",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence shows a code edit to the file, which is then reviewed to ensure it meets expectations. This step involves checking the proposed change."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 5112,
+    "completion_tokens": 45,
+    "total_tokens": 5157
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.8952445500181057,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_008_s00010",
+  "input_sha256": "3fdb9eb8c810b72e5d340ab4c354208f4314c6796314de9e0f6d9605285a67ba",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "Viewing specific lines of a file to understand its content and context."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4828,
+    "completion_tokens": 32,
+    "total_tokens": 4860
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.617804918991169,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "DEV_004_s00039",
+  "input_sha256": "dc52cc8cba6b43f5c532baa8a423ff8f766d96ad655df5d988bae17392a3ec57",
+  "identity": "561230588093e0cb4f1b60366150c0d8235e47d0d5ff57b925143c61340ea5ca",
+  "answer": {
+    "purpose": "CHECK",
+    "evidence_id": "C_ACTION",
+    "rationale": "Checks if 'yaml' package is available in the current Python environment."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 3906,
+    "completion_tokens": 31,
+    "total_tokens": 3937
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.5080134439922404,
+  "attempt": 1
+}

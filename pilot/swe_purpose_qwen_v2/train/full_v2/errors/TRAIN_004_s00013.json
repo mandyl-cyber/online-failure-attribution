@@ -1,0 +1,11 @@
+{
+  "request_id": "TRAIN_004_s00013",
+  "status": "failed",
+  "failures": [
+    {
+      "attempt": 1,
+      "error": "Rationale must be 1-240 characters",
+      "raw_content": "{\"purpose\":\"CHECK\",\"evidence_id\":\"C_OBSERVATION\",\"rationale\":\"The evidence shows running a grep command to check for 'urlize(' in tests, and then viewing a portion of the test file 'test_html.py' which contains test cases for the urlize function, indicating a check of the candidate implementation against requirements.\"}"
+    }
+  ]
+}

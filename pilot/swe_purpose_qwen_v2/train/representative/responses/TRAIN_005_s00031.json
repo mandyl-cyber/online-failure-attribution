@@ -1,0 +1,18 @@
+{
+  "request_id": "TRAIN_005_s00031",
+  "input_sha256": "e15a04bcca259e2b2c0078ba26f1a67a0235f3d473731146119eae68667b99ed",
+  "identity": "44e61e572ba70b4c15a446da1be9b297ccfe8bb30db4dbd742dcc89735c026e2",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_OBSERVATION",
+    "rationale": "The evidence does not indicate a specific work purpose; it only mentions updating a task list."
+  },
+  "usage": {
+    "prompt_tokens": 3630,
+    "completion_tokens": 37,
+    "total_tokens": 3667
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.7194983429799322,
+  "attempt": 1
+}

@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_014_s00018",
+  "input_sha256": "5af96cfe03fc5e9504b00a024cd84aee342e29ed5bf3735220b499a5c8a85f45",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_ACTION",
+    "rationale": "The evidence indicates a git command is being executed but the command is still running, so the purpose cannot be determined from the current evidence."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4172,
+    "completion_tokens": 44,
+    "total_tokens": 4216
+  },
+  "server_model": "qwen-local",
+  "seconds": 0.8624618790054228,
+  "attempt": 1
+}

@@ -1,0 +1,15 @@
+{
+  "request_id": "TRAIN_010_s00044",
+  "input_sha256": "3a3a0fc3d4033955f99ba6f660c21f1008c960ae7bd63516dbcee7e7d7b0a431",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "UNKNOWN",
+    "evidence_id": "C_OBSERVATION",
+    "rationale": "Only a task-tracking list update is visible; no task work purpose is supported."
+  },
+  "label_source": "deterministic_control_rule",
+  "usage": null,
+  "server_model": null,
+  "seconds": 0,
+  "attempt": 0
+}

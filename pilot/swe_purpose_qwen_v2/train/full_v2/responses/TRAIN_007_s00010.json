@@ -1,0 +1,21 @@
+{
+  "request_id": "TRAIN_007_s00010",
+  "input_sha256": "d0087cb7c24cac5292a4f136b00b56bd11f88f001ca8b09849d6cf152fb61ed0",
+  "identity": "6e88f57fa079ab966737edccc3bfb62829976a6d92c971f42b048bb81203e10c",
+  "answer": {
+    "purpose": "ACQUIRE",
+    "evidence_id": "C_ACTION",
+    "rationale": "The action is searching for 'psrp connection' in test files to identify relevant tests and confirm the issue is found."
+  },
+  "label_source": "qwen",
+  "raw_answer": null,
+  "review_priority": false,
+  "usage": {
+    "prompt_tokens": 4147,
+    "completion_tokens": 42,
+    "total_tokens": 4189
+  },
+  "server_model": "qwen-local",
+  "seconds": 1.6550697580096312,
+  "attempt": 1
+}
