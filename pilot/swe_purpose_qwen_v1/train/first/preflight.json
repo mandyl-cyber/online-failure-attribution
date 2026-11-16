@@ -1,0 +1,4685 @@
+{
+  "total": 935,
+  "fits": 560,
+  "max_input_tokens": 107153,
+  "context_tokens": 32768,
+  "output_tokens": 1200,
+  "margin": 128,
+  "requests": [
+    {
+      "request_id": "TRAIN_001_s00001",
+      "input_tokens": 2397,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00002",
+      "input_tokens": 3562,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00003",
+      "input_tokens": 3684,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00004",
+      "input_tokens": 10562,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00005",
+      "input_tokens": 10680,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00006",
+      "input_tokens": 15541,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00007",
+      "input_tokens": 15685,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00008",
+      "input_tokens": 16120,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00009",
+      "input_tokens": 16207,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00010",
+      "input_tokens": 16345,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00011",
+      "input_tokens": 19580,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00012",
+      "input_tokens": 20140,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00013",
+      "input_tokens": 23693,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00014",
+      "input_tokens": 23835,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00015",
+      "input_tokens": 24515,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00016",
+      "input_tokens": 25056,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00017",
+      "input_tokens": 25144,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00018",
+      "input_tokens": 25452,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00019",
+      "input_tokens": 25614,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00020",
+      "input_tokens": 26277,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00021",
+      "input_tokens": 26365,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00022",
+      "input_tokens": 26591,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00023",
+      "input_tokens": 26928,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00024",
+      "input_tokens": 27093,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00001",
+      "input_tokens": 2167,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00002",
+      "input_tokens": 2365,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00003",
+      "input_tokens": 3379,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00004",
+      "input_tokens": 3505,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00005",
+      "input_tokens": 9545,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00006",
+      "input_tokens": 9651,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00007",
+      "input_tokens": 9764,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00008",
+      "input_tokens": 9880,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00009",
+      "input_tokens": 10124,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00010",
+      "input_tokens": 11638,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00011",
+      "input_tokens": 11780,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00012",
+      "input_tokens": 11890,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00013",
+      "input_tokens": 14056,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00014",
+      "input_tokens": 14654,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00015",
+      "input_tokens": 15390,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00016",
+      "input_tokens": 15493,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00017",
+      "input_tokens": 22084,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00018",
+      "input_tokens": 22552,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00019",
+      "input_tokens": 22639,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00020",
+      "input_tokens": 22726,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00021",
+      "input_tokens": 23598,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00022",
+      "input_tokens": 24316,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00023",
+      "input_tokens": 24418,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00024",
+      "input_tokens": 24675,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00025",
+      "input_tokens": 28834,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00026",
+      "input_tokens": 29005,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00027",
+      "input_tokens": 29491,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00028",
+      "input_tokens": 29717,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00029",
+      "input_tokens": 29801,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_002_s00030",
+      "input_tokens": 29882,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00001",
+      "input_tokens": 1938,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00002",
+      "input_tokens": 2112,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00003",
+      "input_tokens": 3162,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00004",
+      "input_tokens": 3246,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00005",
+      "input_tokens": 3363,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00006",
+      "input_tokens": 8708,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00007",
+      "input_tokens": 8904,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00008",
+      "input_tokens": 10236,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00009",
+      "input_tokens": 11786,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00010",
+      "input_tokens": 15663,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00011",
+      "input_tokens": 15941,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00012",
+      "input_tokens": 21463,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00013",
+      "input_tokens": 24405,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00014",
+      "input_tokens": 24531,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00015",
+      "input_tokens": 24616,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00016",
+      "input_tokens": 24743,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00017",
+      "input_tokens": 24936,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00018",
+      "input_tokens": 25192,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00019",
+      "input_tokens": 25521,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00020",
+      "input_tokens": 25814,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00021",
+      "input_tokens": 27821,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00022",
+      "input_tokens": 28497,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00023",
+      "input_tokens": 28579,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00024",
+      "input_tokens": 28837,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_003_s00025",
+      "input_tokens": 36008,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_003_s00026",
+      "input_tokens": 36107,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_003_s00027",
+      "input_tokens": 36216,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_003_s00028",
+      "input_tokens": 36530,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_003_s00029",
+      "input_tokens": 36612,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_003_s00030",
+      "input_tokens": 36697,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00001",
+      "input_tokens": 1989,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00002",
+      "input_tokens": 2151,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00003",
+      "input_tokens": 2238,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00004",
+      "input_tokens": 3288,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00005",
+      "input_tokens": 3369,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00006",
+      "input_tokens": 3470,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00007",
+      "input_tokens": 4522,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00008",
+      "input_tokens": 4697,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00009",
+      "input_tokens": 6640,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00010",
+      "input_tokens": 12507,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00011",
+      "input_tokens": 14183,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00012",
+      "input_tokens": 16182,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00013",
+      "input_tokens": 16997,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00014",
+      "input_tokens": 24978,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00015",
+      "input_tokens": 27564,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00016",
+      "input_tokens": 27822,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00017",
+      "input_tokens": 28035,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00018",
+      "input_tokens": 28117,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00019",
+      "input_tokens": 31042,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_004_s00020",
+      "input_tokens": 33288,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00021",
+      "input_tokens": 33453,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00022",
+      "input_tokens": 33608,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00023",
+      "input_tokens": 33690,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00024",
+      "input_tokens": 34084,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00025",
+      "input_tokens": 34578,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00026",
+      "input_tokens": 34660,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00027",
+      "input_tokens": 34947,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00028",
+      "input_tokens": 36238,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00029",
+      "input_tokens": 36321,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00030",
+      "input_tokens": 36488,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00031",
+      "input_tokens": 36584,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00032",
+      "input_tokens": 36691,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00033",
+      "input_tokens": 36924,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00034",
+      "input_tokens": 37006,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00035",
+      "input_tokens": 37295,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_004_s00036",
+      "input_tokens": 37479,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_005_s00001",
+      "input_tokens": 4122,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00002",
+      "input_tokens": 6271,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00003",
+      "input_tokens": 6461,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00004",
+      "input_tokens": 6545,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00005",
+      "input_tokens": 6777,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00006",
+      "input_tokens": 7374,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00007",
+      "input_tokens": 7493,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00008",
+      "input_tokens": 7833,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00009",
+      "input_tokens": 8765,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00010",
+      "input_tokens": 9771,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00011",
+      "input_tokens": 9856,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00012",
+      "input_tokens": 10272,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00013",
+      "input_tokens": 12054,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00014",
+      "input_tokens": 12676,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00015",
+      "input_tokens": 13826,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00016",
+      "input_tokens": 14685,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00017",
+      "input_tokens": 14931,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00018",
+      "input_tokens": 15541,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00019",
+      "input_tokens": 17023,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00020",
+      "input_tokens": 17534,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00021",
+      "input_tokens": 17896,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00022",
+      "input_tokens": 17975,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00023",
+      "input_tokens": 18097,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00024",
+      "input_tokens": 18360,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00025",
+      "input_tokens": 18554,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00026",
+      "input_tokens": 18788,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00027",
+      "input_tokens": 18896,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00028",
+      "input_tokens": 18992,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00029",
+      "input_tokens": 19093,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00030",
+      "input_tokens": 19372,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_005_s00031",
+      "input_tokens": 19451,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00001",
+      "input_tokens": 2922,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00002",
+      "input_tokens": 3005,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00003",
+      "input_tokens": 3088,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00004",
+      "input_tokens": 4482,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00005",
+      "input_tokens": 4565,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00006",
+      "input_tokens": 4671,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00007",
+      "input_tokens": 4804,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00008",
+      "input_tokens": 7476,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00009",
+      "input_tokens": 12622,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00010",
+      "input_tokens": 19714,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00011",
+      "input_tokens": 21903,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00012",
+      "input_tokens": 22614,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00013",
+      "input_tokens": 23354,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00014",
+      "input_tokens": 25998,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00015",
+      "input_tokens": 26313,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00016",
+      "input_tokens": 26418,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00017",
+      "input_tokens": 26535,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00018",
+      "input_tokens": 28921,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00019",
+      "input_tokens": 29251,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_006_s00020",
+      "input_tokens": 32075,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00021",
+      "input_tokens": 32814,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00022",
+      "input_tokens": 32962,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00023",
+      "input_tokens": 33133,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00024",
+      "input_tokens": 36092,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00025",
+      "input_tokens": 36446,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00026",
+      "input_tokens": 38703,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00027",
+      "input_tokens": 38824,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00028",
+      "input_tokens": 41439,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00029",
+      "input_tokens": 44409,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00030",
+      "input_tokens": 49100,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00031",
+      "input_tokens": 50482,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00032",
+      "input_tokens": 52419,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00033",
+      "input_tokens": 54374,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00034",
+      "input_tokens": 57038,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00035",
+      "input_tokens": 57345,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00036",
+      "input_tokens": 57579,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00037",
+      "input_tokens": 59492,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00038",
+      "input_tokens": 59752,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00039",
+      "input_tokens": 61006,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00040",
+      "input_tokens": 61685,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00041",
+      "input_tokens": 61825,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00042",
+      "input_tokens": 61967,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00043",
+      "input_tokens": 62081,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00044",
+      "input_tokens": 67998,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00045",
+      "input_tokens": 69527,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00046",
+      "input_tokens": 69665,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00047",
+      "input_tokens": 73968,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00048",
+      "input_tokens": 74095,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00049",
+      "input_tokens": 75321,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00050",
+      "input_tokens": 75870,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00051",
+      "input_tokens": 76765,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00052",
+      "input_tokens": 76926,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00053",
+      "input_tokens": 77991,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00054",
+      "input_tokens": 79391,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00055",
+      "input_tokens": 79879,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00056",
+      "input_tokens": 81532,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00057",
+      "input_tokens": 83493,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00058",
+      "input_tokens": 84453,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00059",
+      "input_tokens": 85045,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00060",
+      "input_tokens": 85730,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00061",
+      "input_tokens": 87098,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00062",
+      "input_tokens": 87495,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00063",
+      "input_tokens": 87682,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00064",
+      "input_tokens": 88963,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00065",
+      "input_tokens": 91575,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00066",
+      "input_tokens": 92587,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00067",
+      "input_tokens": 92746,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00068",
+      "input_tokens": 93048,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00069",
+      "input_tokens": 93131,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00070",
+      "input_tokens": 93536,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00071",
+      "input_tokens": 94113,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00072",
+      "input_tokens": 94569,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00073",
+      "input_tokens": 94649,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00074",
+      "input_tokens": 96375,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00075",
+      "input_tokens": 97478,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00076",
+      "input_tokens": 98183,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00077",
+      "input_tokens": 98262,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00078",
+      "input_tokens": 98581,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00079",
+      "input_tokens": 98937,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00080",
+      "input_tokens": 99589,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00081",
+      "input_tokens": 99667,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00082",
+      "input_tokens": 100075,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00083",
+      "input_tokens": 100205,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00084",
+      "input_tokens": 106229,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_006_s00085",
+      "input_tokens": 107153,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_007_s00001",
+      "input_tokens": 2350,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00002",
+      "input_tokens": 2682,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00003",
+      "input_tokens": 3639,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00004",
+      "input_tokens": 4901,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00005",
+      "input_tokens": 11834,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00006",
+      "input_tokens": 14605,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00007",
+      "input_tokens": 18922,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00008",
+      "input_tokens": 19226,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00009",
+      "input_tokens": 21054,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00010",
+      "input_tokens": 21478,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00011",
+      "input_tokens": 24483,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00012",
+      "input_tokens": 24570,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00013",
+      "input_tokens": 24757,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00014",
+      "input_tokens": 24951,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00015",
+      "input_tokens": 25361,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00016",
+      "input_tokens": 25954,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00017",
+      "input_tokens": 26128,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00018",
+      "input_tokens": 26725,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00019",
+      "input_tokens": 27159,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00020",
+      "input_tokens": 27246,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00021",
+      "input_tokens": 27625,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00022",
+      "input_tokens": 27903,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00023",
+      "input_tokens": 28092,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00024",
+      "input_tokens": 28388,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00025",
+      "input_tokens": 28568,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_007_s00026",
+      "input_tokens": 30486,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00001",
+      "input_tokens": 2314,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00002",
+      "input_tokens": 2484,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00003",
+      "input_tokens": 2573,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00004",
+      "input_tokens": 3556,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00005",
+      "input_tokens": 3645,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00006",
+      "input_tokens": 3821,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00007",
+      "input_tokens": 4171,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00008",
+      "input_tokens": 4601,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00009",
+      "input_tokens": 5826,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00010",
+      "input_tokens": 11521,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00011",
+      "input_tokens": 14093,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00012",
+      "input_tokens": 18910,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00013",
+      "input_tokens": 21453,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00014",
+      "input_tokens": 22187,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00015",
+      "input_tokens": 22495,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00016",
+      "input_tokens": 23079,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00017",
+      "input_tokens": 23604,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00018",
+      "input_tokens": 23784,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00019",
+      "input_tokens": 23966,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00020",
+      "input_tokens": 24157,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00021",
+      "input_tokens": 24448,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00022",
+      "input_tokens": 24695,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00023",
+      "input_tokens": 25129,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_008_s00024",
+      "input_tokens": 31590,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00025",
+      "input_tokens": 33851,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00026",
+      "input_tokens": 34184,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00027",
+      "input_tokens": 34744,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00028",
+      "input_tokens": 34955,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00029",
+      "input_tokens": 37147,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00030",
+      "input_tokens": 39715,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00031",
+      "input_tokens": 40025,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00032",
+      "input_tokens": 40386,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00033",
+      "input_tokens": 40599,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00034",
+      "input_tokens": 40844,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00035",
+      "input_tokens": 41146,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00036",
+      "input_tokens": 47872,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00037",
+      "input_tokens": 48214,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00038",
+      "input_tokens": 48447,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00039",
+      "input_tokens": 49186,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00040",
+      "input_tokens": 51528,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00041",
+      "input_tokens": 52041,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00042",
+      "input_tokens": 52247,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00043",
+      "input_tokens": 52446,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00044",
+      "input_tokens": 52815,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00045",
+      "input_tokens": 53006,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00046",
+      "input_tokens": 54291,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00047",
+      "input_tokens": 56363,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00048",
+      "input_tokens": 56970,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00049",
+      "input_tokens": 57267,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00050",
+      "input_tokens": 57457,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00051",
+      "input_tokens": 58933,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00052",
+      "input_tokens": 59107,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00053",
+      "input_tokens": 59511,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00054",
+      "input_tokens": 59600,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_008_s00055",
+      "input_tokens": 60279,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00001",
+      "input_tokens": 2370,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00002",
+      "input_tokens": 2456,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00003",
+      "input_tokens": 3441,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00004",
+      "input_tokens": 4074,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00005",
+      "input_tokens": 4255,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00006",
+      "input_tokens": 10268,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00007",
+      "input_tokens": 16320,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00008",
+      "input_tokens": 17834,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00009",
+      "input_tokens": 23973,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00010",
+      "input_tokens": 27655,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00011",
+      "input_tokens": 29815,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00012",
+      "input_tokens": 30013,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_009_s00013",
+      "input_tokens": 34442,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00014",
+      "input_tokens": 39505,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00015",
+      "input_tokens": 39705,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00016",
+      "input_tokens": 41262,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00017",
+      "input_tokens": 41915,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00018",
+      "input_tokens": 43683,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00019",
+      "input_tokens": 45966,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00020",
+      "input_tokens": 46821,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00021",
+      "input_tokens": 46908,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00022",
+      "input_tokens": 47085,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00023",
+      "input_tokens": 47269,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00024",
+      "input_tokens": 47459,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00025",
+      "input_tokens": 47852,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00026",
+      "input_tokens": 48283,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00027",
+      "input_tokens": 49122,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00028",
+      "input_tokens": 49669,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00029",
+      "input_tokens": 50081,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00030",
+      "input_tokens": 50700,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00031",
+      "input_tokens": 50873,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00032",
+      "input_tokens": 51293,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00033",
+      "input_tokens": 52298,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_009_s00034",
+      "input_tokens": 52385,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00001",
+      "input_tokens": 3591,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00002",
+      "input_tokens": 3678,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00003",
+      "input_tokens": 3856,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00004",
+      "input_tokens": 5640,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00005",
+      "input_tokens": 6521,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00006",
+      "input_tokens": 6708,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00007",
+      "input_tokens": 13615,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00008",
+      "input_tokens": 14466,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00009",
+      "input_tokens": 16341,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00010",
+      "input_tokens": 19277,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00011",
+      "input_tokens": 20836,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00012",
+      "input_tokens": 22990,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00013",
+      "input_tokens": 25168,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00014",
+      "input_tokens": 27861,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00015",
+      "input_tokens": 30732,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_010_s00016",
+      "input_tokens": 32414,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00017",
+      "input_tokens": 38223,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00018",
+      "input_tokens": 38433,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00019",
+      "input_tokens": 39678,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00020",
+      "input_tokens": 40660,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00021",
+      "input_tokens": 41450,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00022",
+      "input_tokens": 41713,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00023",
+      "input_tokens": 41962,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00024",
+      "input_tokens": 42214,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00025",
+      "input_tokens": 44288,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00026",
+      "input_tokens": 44502,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00027",
+      "input_tokens": 47221,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00028",
+      "input_tokens": 49676,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00029",
+      "input_tokens": 52453,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00030",
+      "input_tokens": 52673,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00031",
+      "input_tokens": 55157,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00032",
+      "input_tokens": 55707,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00033",
+      "input_tokens": 57996,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00034",
+      "input_tokens": 58929,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00035",
+      "input_tokens": 59508,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00036",
+      "input_tokens": 60228,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00037",
+      "input_tokens": 60687,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00038",
+      "input_tokens": 61133,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00039",
+      "input_tokens": 61457,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00040",
+      "input_tokens": 62069,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00041",
+      "input_tokens": 62157,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00042",
+      "input_tokens": 62727,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00043",
+      "input_tokens": 63469,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_010_s00044",
+      "input_tokens": 63557,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00001",
+      "input_tokens": 2314,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00002",
+      "input_tokens": 3191,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00003",
+      "input_tokens": 3380,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00004",
+      "input_tokens": 5520,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00005",
+      "input_tokens": 8240,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00006",
+      "input_tokens": 12181,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00007",
+      "input_tokens": 14593,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00008",
+      "input_tokens": 15160,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00009",
+      "input_tokens": 17705,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00010",
+      "input_tokens": 21665,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00011",
+      "input_tokens": 23537,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00012",
+      "input_tokens": 25400,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00013",
+      "input_tokens": 25659,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00014",
+      "input_tokens": 27033,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00015",
+      "input_tokens": 27119,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00016",
+      "input_tokens": 27504,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00017",
+      "input_tokens": 27643,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00018",
+      "input_tokens": 28052,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00019",
+      "input_tokens": 28333,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00020",
+      "input_tokens": 28649,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00021",
+      "input_tokens": 28903,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00022",
+      "input_tokens": 31209,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00023",
+      "input_tokens": 31359,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_011_s00024",
+      "input_tokens": 32493,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00025",
+      "input_tokens": 39312,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00026",
+      "input_tokens": 39454,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00027",
+      "input_tokens": 39661,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00028",
+      "input_tokens": 40434,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00029",
+      "input_tokens": 40542,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00030",
+      "input_tokens": 40789,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00031",
+      "input_tokens": 40916,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00032",
+      "input_tokens": 43681,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00033",
+      "input_tokens": 47073,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00034",
+      "input_tokens": 47184,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00035",
+      "input_tokens": 48000,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00036",
+      "input_tokens": 55555,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00037",
+      "input_tokens": 56513,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00038",
+      "input_tokens": 57495,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00039",
+      "input_tokens": 58356,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00040",
+      "input_tokens": 59221,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00041",
+      "input_tokens": 59650,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00042",
+      "input_tokens": 61581,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00043",
+      "input_tokens": 62451,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00044",
+      "input_tokens": 62591,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00045",
+      "input_tokens": 63432,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00046",
+      "input_tokens": 66177,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00047",
+      "input_tokens": 67786,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00048",
+      "input_tokens": 68139,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00049",
+      "input_tokens": 68505,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00050",
+      "input_tokens": 69513,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00051",
+      "input_tokens": 70338,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00052",
+      "input_tokens": 70449,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00053",
+      "input_tokens": 70894,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00054",
+      "input_tokens": 71190,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00055",
+      "input_tokens": 71337,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00056",
+      "input_tokens": 71510,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00057",
+      "input_tokens": 73174,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00058",
+      "input_tokens": 73689,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00059",
+      "input_tokens": 75389,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00060",
+      "input_tokens": 75471,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00061",
+      "input_tokens": 75573,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00062",
+      "input_tokens": 75665,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00063",
+      "input_tokens": 75762,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_011_s00064",
+      "input_tokens": 76009,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00001",
+      "input_tokens": 3534,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00002",
+      "input_tokens": 3776,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00003",
+      "input_tokens": 6000,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00004",
+      "input_tokens": 8035,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00005",
+      "input_tokens": 9316,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00006",
+      "input_tokens": 9623,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00007",
+      "input_tokens": 11733,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00008",
+      "input_tokens": 14659,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00009",
+      "input_tokens": 16991,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00010",
+      "input_tokens": 19489,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00011",
+      "input_tokens": 23480,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00012",
+      "input_tokens": 23599,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00013",
+      "input_tokens": 24879,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00014",
+      "input_tokens": 25116,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00015",
+      "input_tokens": 26015,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00016",
+      "input_tokens": 26128,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00017",
+      "input_tokens": 27394,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00018",
+      "input_tokens": 28037,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00019",
+      "input_tokens": 28801,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_012_s00020",
+      "input_tokens": 31660,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00021",
+      "input_tokens": 32561,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00022",
+      "input_tokens": 32911,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00023",
+      "input_tokens": 32996,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00024",
+      "input_tokens": 33333,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00025",
+      "input_tokens": 33939,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00026",
+      "input_tokens": 34024,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00027",
+      "input_tokens": 34131,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00028",
+      "input_tokens": 34855,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00029",
+      "input_tokens": 35060,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00030",
+      "input_tokens": 35503,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00031",
+      "input_tokens": 37453,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00032",
+      "input_tokens": 37852,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00033",
+      "input_tokens": 38144,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00034",
+      "input_tokens": 38484,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00035",
+      "input_tokens": 40701,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00036",
+      "input_tokens": 42004,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00037",
+      "input_tokens": 42349,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00038",
+      "input_tokens": 46326,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00039",
+      "input_tokens": 53285,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00040",
+      "input_tokens": 53365,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00041",
+      "input_tokens": 53795,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00042",
+      "input_tokens": 53974,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00043",
+      "input_tokens": 54370,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_012_s00044",
+      "input_tokens": 54616,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00001",
+      "input_tokens": 2261,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00002",
+      "input_tokens": 2431,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00003",
+      "input_tokens": 2519,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00004",
+      "input_tokens": 3774,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00005",
+      "input_tokens": 11244,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00006",
+      "input_tokens": 11405,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00007",
+      "input_tokens": 11528,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00008",
+      "input_tokens": 13193,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00009",
+      "input_tokens": 13385,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00010",
+      "input_tokens": 13639,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00011",
+      "input_tokens": 15243,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00012",
+      "input_tokens": 17830,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00013",
+      "input_tokens": 19630,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00014",
+      "input_tokens": 19753,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00015",
+      "input_tokens": 20984,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00016",
+      "input_tokens": 22719,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00017",
+      "input_tokens": 30676,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_013_s00018",
+      "input_tokens": 32963,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00019",
+      "input_tokens": 34121,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00020",
+      "input_tokens": 38020,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00021",
+      "input_tokens": 38109,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00022",
+      "input_tokens": 40819,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00023",
+      "input_tokens": 41175,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00024",
+      "input_tokens": 42042,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00025",
+      "input_tokens": 44130,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00026",
+      "input_tokens": 44502,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00027",
+      "input_tokens": 44901,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00028",
+      "input_tokens": 45178,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00029",
+      "input_tokens": 45493,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00030",
+      "input_tokens": 45814,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00031",
+      "input_tokens": 45903,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00032",
+      "input_tokens": 46044,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00033",
+      "input_tokens": 46419,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00034",
+      "input_tokens": 48431,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00035",
+      "input_tokens": 52574,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00036",
+      "input_tokens": 60681,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00037",
+      "input_tokens": 61129,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00038",
+      "input_tokens": 62109,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00039",
+      "input_tokens": 62768,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00040",
+      "input_tokens": 63525,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00041",
+      "input_tokens": 64093,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00042",
+      "input_tokens": 64614,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00043",
+      "input_tokens": 65047,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00044",
+      "input_tokens": 65169,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00045",
+      "input_tokens": 65627,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00046",
+      "input_tokens": 66384,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00047",
+      "input_tokens": 67013,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00048",
+      "input_tokens": 67125,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00049",
+      "input_tokens": 67565,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00050",
+      "input_tokens": 67676,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00051",
+      "input_tokens": 68254,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00052",
+      "input_tokens": 68515,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00053",
+      "input_tokens": 68675,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00054",
+      "input_tokens": 68793,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00055",
+      "input_tokens": 69000,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00056",
+      "input_tokens": 69297,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00057",
+      "input_tokens": 69455,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00058",
+      "input_tokens": 69632,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00059",
+      "input_tokens": 69893,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00060",
+      "input_tokens": 70540,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00061",
+      "input_tokens": 71544,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00062",
+      "input_tokens": 72585,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00063",
+      "input_tokens": 72963,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00064",
+      "input_tokens": 73088,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00065",
+      "input_tokens": 73187,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00066",
+      "input_tokens": 73557,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00067",
+      "input_tokens": 77707,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00068",
+      "input_tokens": 78276,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_013_s00069",
+      "input_tokens": 78365,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00001",
+      "input_tokens": 3903,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00002",
+      "input_tokens": 4052,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00003",
+      "input_tokens": 4136,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00004",
+      "input_tokens": 5633,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00005",
+      "input_tokens": 5717,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00006",
+      "input_tokens": 5896,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00007",
+      "input_tokens": 8817,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00008",
+      "input_tokens": 9279,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00009",
+      "input_tokens": 17374,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00010",
+      "input_tokens": 17585,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00011",
+      "input_tokens": 21751,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00012",
+      "input_tokens": 22221,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00013",
+      "input_tokens": 30217,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00014",
+      "input_tokens": 30821,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_014_s00015",
+      "input_tokens": 33935,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00016",
+      "input_tokens": 34780,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00017",
+      "input_tokens": 34864,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00018",
+      "input_tokens": 35143,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00019",
+      "input_tokens": 35261,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00020",
+      "input_tokens": 35540,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00021",
+      "input_tokens": 35674,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00022",
+      "input_tokens": 39008,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00023",
+      "input_tokens": 39608,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00024",
+      "input_tokens": 40174,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00025",
+      "input_tokens": 40255,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00026",
+      "input_tokens": 43369,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00027",
+      "input_tokens": 44213,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00028",
+      "input_tokens": 44454,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00029",
+      "input_tokens": 44588,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00030",
+      "input_tokens": 47874,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00031",
+      "input_tokens": 48093,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00032",
+      "input_tokens": 48172,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_014_s00033",
+      "input_tokens": 49616,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00001",
+      "input_tokens": 3369,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00002",
+      "input_tokens": 5437,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00003",
+      "input_tokens": 12549,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00004",
+      "input_tokens": 12947,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00005",
+      "input_tokens": 14361,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00006",
+      "input_tokens": 15369,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00007",
+      "input_tokens": 15871,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00008",
+      "input_tokens": 16336,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00009",
+      "input_tokens": 17589,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00010",
+      "input_tokens": 22290,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00011",
+      "input_tokens": 23504,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00012",
+      "input_tokens": 24865,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00013",
+      "input_tokens": 26071,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00014",
+      "input_tokens": 26397,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00015",
+      "input_tokens": 26855,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00016",
+      "input_tokens": 27404,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00017",
+      "input_tokens": 28529,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00018",
+      "input_tokens": 28669,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00019",
+      "input_tokens": 29063,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00020",
+      "input_tokens": 29388,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00021",
+      "input_tokens": 29555,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00022",
+      "input_tokens": 29736,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00023",
+      "input_tokens": 30721,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_015_s00024",
+      "input_tokens": 36498,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00025",
+      "input_tokens": 37425,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00026",
+      "input_tokens": 37966,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00027",
+      "input_tokens": 38495,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00028",
+      "input_tokens": 38986,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00029",
+      "input_tokens": 39075,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00030",
+      "input_tokens": 39164,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00031",
+      "input_tokens": 39472,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00032",
+      "input_tokens": 39557,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00033",
+      "input_tokens": 39693,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00034",
+      "input_tokens": 39846,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_015_s00035",
+      "input_tokens": 40109,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_016_s00001",
+      "input_tokens": 2681,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00002",
+      "input_tokens": 2859,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00003",
+      "input_tokens": 2944,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00004",
+      "input_tokens": 3688,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00005",
+      "input_tokens": 10401,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00006",
+      "input_tokens": 10542,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00007",
+      "input_tokens": 11813,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00008",
+      "input_tokens": 11939,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00009",
+      "input_tokens": 13301,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00010",
+      "input_tokens": 13388,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00011",
+      "input_tokens": 14803,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00012",
+      "input_tokens": 15123,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00013",
+      "input_tokens": 15645,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00014",
+      "input_tokens": 15765,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00015",
+      "input_tokens": 16328,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00016",
+      "input_tokens": 16408,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00017",
+      "input_tokens": 16508,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00018",
+      "input_tokens": 24981,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00019",
+      "input_tokens": 25152,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00020",
+      "input_tokens": 25361,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00021",
+      "input_tokens": 25614,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00022",
+      "input_tokens": 25900,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_016_s00023",
+      "input_tokens": 25982,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00001",
+      "input_tokens": 3295,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00002",
+      "input_tokens": 3382,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00003",
+      "input_tokens": 4418,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00004",
+      "input_tokens": 4846,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00005",
+      "input_tokens": 9748,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00006",
+      "input_tokens": 16747,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00007",
+      "input_tokens": 17891,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00008",
+      "input_tokens": 17978,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00009",
+      "input_tokens": 26974,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00010",
+      "input_tokens": 30806,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_017_s00011",
+      "input_tokens": 31724,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00012",
+      "input_tokens": 31892,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00013",
+      "input_tokens": 33792,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00014",
+      "input_tokens": 34095,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00015",
+      "input_tokens": 34284,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00016",
+      "input_tokens": 36066,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00017",
+      "input_tokens": 37054,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00018",
+      "input_tokens": 37341,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00019",
+      "input_tokens": 37513,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00020",
+      "input_tokens": 37812,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00021",
+      "input_tokens": 38494,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00022",
+      "input_tokens": 38582,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_017_s00023",
+      "input_tokens": 39137,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_018_s00001",
+      "input_tokens": 5181,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00002",
+      "input_tokens": 5357,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00003",
+      "input_tokens": 6496,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00004",
+      "input_tokens": 6581,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00005",
+      "input_tokens": 6684,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00006",
+      "input_tokens": 11552,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00007",
+      "input_tokens": 11631,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00008",
+      "input_tokens": 11909,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00009",
+      "input_tokens": 13595,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00010",
+      "input_tokens": 14822,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00011",
+      "input_tokens": 16328,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00012",
+      "input_tokens": 16450,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00013",
+      "input_tokens": 17813,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00014",
+      "input_tokens": 17941,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00015",
+      "input_tokens": 19205,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00016",
+      "input_tokens": 20212,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00017",
+      "input_tokens": 21145,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00018",
+      "input_tokens": 21498,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00019",
+      "input_tokens": 22091,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00020",
+      "input_tokens": 22199,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00021",
+      "input_tokens": 22350,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00022",
+      "input_tokens": 22430,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00023",
+      "input_tokens": 22731,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00024",
+      "input_tokens": 22984,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00025",
+      "input_tokens": 23305,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00026",
+      "input_tokens": 23723,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00027",
+      "input_tokens": 25867,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00028",
+      "input_tokens": 26051,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00029",
+      "input_tokens": 26131,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00030",
+      "input_tokens": 26211,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00031",
+      "input_tokens": 26376,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00032",
+      "input_tokens": 26482,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00033",
+      "input_tokens": 26603,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00034",
+      "input_tokens": 26763,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00035",
+      "input_tokens": 26843,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00036",
+      "input_tokens": 27163,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00037",
+      "input_tokens": 27306,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00038",
+      "input_tokens": 27434,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00039",
+      "input_tokens": 29412,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_018_s00040",
+      "input_tokens": 29572,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00001",
+      "input_tokens": 3216,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00002",
+      "input_tokens": 3302,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00003",
+      "input_tokens": 3388,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00004",
+      "input_tokens": 4454,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00005",
+      "input_tokens": 5552,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00006",
+      "input_tokens": 5691,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00007",
+      "input_tokens": 7202,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00008",
+      "input_tokens": 7288,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00009",
+      "input_tokens": 7555,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00010",
+      "input_tokens": 7669,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00011",
+      "input_tokens": 8074,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00012",
+      "input_tokens": 8174,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00013",
+      "input_tokens": 9281,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00014",
+      "input_tokens": 9481,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00015",
+      "input_tokens": 9784,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00016",
+      "input_tokens": 9871,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00017",
+      "input_tokens": 10313,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00018",
+      "input_tokens": 10614,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00019",
+      "input_tokens": 10781,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00020",
+      "input_tokens": 11149,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00021",
+      "input_tokens": 11244,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00022",
+      "input_tokens": 11344,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00023",
+      "input_tokens": 11952,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00024",
+      "input_tokens": 12112,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00025",
+      "input_tokens": 12439,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00026",
+      "input_tokens": 12729,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00027",
+      "input_tokens": 12816,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00028",
+      "input_tokens": 13053,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00029",
+      "input_tokens": 16899,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00030",
+      "input_tokens": 20296,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00031",
+      "input_tokens": 20690,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00032",
+      "input_tokens": 20827,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00033",
+      "input_tokens": 20960,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00034",
+      "input_tokens": 21207,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00035",
+      "input_tokens": 21294,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00036",
+      "input_tokens": 23969,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00037",
+      "input_tokens": 26736,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00038",
+      "input_tokens": 26839,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_019_s00039",
+      "input_tokens": 26926,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00001",
+      "input_tokens": 2876,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00002",
+      "input_tokens": 3816,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00003",
+      "input_tokens": 3902,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00004",
+      "input_tokens": 5042,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00005",
+      "input_tokens": 6668,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00006",
+      "input_tokens": 7779,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00007",
+      "input_tokens": 7865,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00008",
+      "input_tokens": 14125,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00009",
+      "input_tokens": 15826,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00010",
+      "input_tokens": 18063,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00011",
+      "input_tokens": 19020,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00012",
+      "input_tokens": 19277,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00013",
+      "input_tokens": 19745,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00014",
+      "input_tokens": 19886,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00015",
+      "input_tokens": 20024,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00016",
+      "input_tokens": 20110,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00017",
+      "input_tokens": 20195,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00018",
+      "input_tokens": 20279,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00019",
+      "input_tokens": 20631,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00020",
+      "input_tokens": 21116,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00021",
+      "input_tokens": 21447,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00022",
+      "input_tokens": 21578,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00023",
+      "input_tokens": 21661,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00024",
+      "input_tokens": 27891,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00025",
+      "input_tokens": 28035,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00026",
+      "input_tokens": 28181,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00027",
+      "input_tokens": 28549,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_020_s00028",
+      "input_tokens": 28630,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00001",
+      "input_tokens": 2658,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00002",
+      "input_tokens": 2835,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00003",
+      "input_tokens": 2921,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00004",
+      "input_tokens": 3933,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00005",
+      "input_tokens": 4013,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00006",
+      "input_tokens": 10784,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00007",
+      "input_tokens": 10864,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00008",
+      "input_tokens": 11404,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00009",
+      "input_tokens": 13387,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00010",
+      "input_tokens": 13928,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00011",
+      "input_tokens": 14092,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00012",
+      "input_tokens": 17211,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00013",
+      "input_tokens": 22032,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00014",
+      "input_tokens": 22386,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00015",
+      "input_tokens": 24473,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00016",
+      "input_tokens": 25013,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00017",
+      "input_tokens": 25183,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00018",
+      "input_tokens": 28029,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00019",
+      "input_tokens": 29590,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00020",
+      "input_tokens": 30613,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00021",
+      "input_tokens": 30963,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_021_s00022",
+      "input_tokens": 31917,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00023",
+      "input_tokens": 31998,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00024",
+      "input_tokens": 32224,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00025",
+      "input_tokens": 32306,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00026",
+      "input_tokens": 39050,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00027",
+      "input_tokens": 39638,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00028",
+      "input_tokens": 39719,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00029",
+      "input_tokens": 39875,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00030",
+      "input_tokens": 40018,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00031",
+      "input_tokens": 41781,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00032",
+      "input_tokens": 42110,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00033",
+      "input_tokens": 42365,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_021_s00034",
+      "input_tokens": 42527,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_022_s00001",
+      "input_tokens": 3611,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00002",
+      "input_tokens": 3942,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00003",
+      "input_tokens": 5725,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00004",
+      "input_tokens": 6379,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00005",
+      "input_tokens": 6683,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00006",
+      "input_tokens": 6930,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00007",
+      "input_tokens": 7390,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00008",
+      "input_tokens": 7645,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00009",
+      "input_tokens": 9700,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00010",
+      "input_tokens": 9836,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00011",
+      "input_tokens": 11367,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00012",
+      "input_tokens": 11740,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00013",
+      "input_tokens": 13979,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00014",
+      "input_tokens": 14354,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00015",
+      "input_tokens": 14491,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00016",
+      "input_tokens": 17778,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00017",
+      "input_tokens": 20752,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00018",
+      "input_tokens": 20970,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00019",
+      "input_tokens": 24107,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00020",
+      "input_tokens": 31013,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_022_s00021",
+      "input_tokens": 32238,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_022_s00022",
+      "input_tokens": 32325,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_022_s00023",
+      "input_tokens": 32532,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_022_s00024",
+      "input_tokens": 32973,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_022_s00025",
+      "input_tokens": 33410,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_022_s00026",
+      "input_tokens": 33561,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_022_s00027",
+      "input_tokens": 33648,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_022_s00028",
+      "input_tokens": 33793,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_023_s00001",
+      "input_tokens": 2897,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00002",
+      "input_tokens": 3952,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00003",
+      "input_tokens": 5921,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00004",
+      "input_tokens": 6992,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00005",
+      "input_tokens": 8246,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00006",
+      "input_tokens": 8727,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00007",
+      "input_tokens": 9047,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00008",
+      "input_tokens": 9204,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00009",
+      "input_tokens": 9291,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00010",
+      "input_tokens": 9380,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00011",
+      "input_tokens": 13990,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00012",
+      "input_tokens": 19293,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00013",
+      "input_tokens": 23843,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00014",
+      "input_tokens": 24409,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00015",
+      "input_tokens": 24497,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00016",
+      "input_tokens": 24617,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00017",
+      "input_tokens": 30489,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00018",
+      "input_tokens": 30602,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00019",
+      "input_tokens": 30703,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00020",
+      "input_tokens": 31030,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00021",
+      "input_tokens": 31113,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_023_s00022",
+      "input_tokens": 31287,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00001",
+      "input_tokens": 2215,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00002",
+      "input_tokens": 2303,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00003",
+      "input_tokens": 2391,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00004",
+      "input_tokens": 3518,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00005",
+      "input_tokens": 3876,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00006",
+      "input_tokens": 5527,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00007",
+      "input_tokens": 6889,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00008",
+      "input_tokens": 8494,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00009",
+      "input_tokens": 11477,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00010",
+      "input_tokens": 11810,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00011",
+      "input_tokens": 12718,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00012",
+      "input_tokens": 12807,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00013",
+      "input_tokens": 13037,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00014",
+      "input_tokens": 13126,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00015",
+      "input_tokens": 13255,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00016",
+      "input_tokens": 14343,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00017",
+      "input_tokens": 14432,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00018",
+      "input_tokens": 14630,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00019",
+      "input_tokens": 14783,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00020",
+      "input_tokens": 14872,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00021",
+      "input_tokens": 15084,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00022",
+      "input_tokens": 15204,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00023",
+      "input_tokens": 15532,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00024",
+      "input_tokens": 15621,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00025",
+      "input_tokens": 15737,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_024_s00026",
+      "input_tokens": 15826,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00001",
+      "input_tokens": 2442,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00002",
+      "input_tokens": 3697,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00003",
+      "input_tokens": 3831,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00004",
+      "input_tokens": 11384,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00005",
+      "input_tokens": 11794,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00006",
+      "input_tokens": 12224,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00007",
+      "input_tokens": 12688,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00008",
+      "input_tokens": 22806,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00009",
+      "input_tokens": 22959,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00010",
+      "input_tokens": 23049,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00011",
+      "input_tokens": 23622,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00012",
+      "input_tokens": 23739,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_025_s00013",
+      "input_tokens": 33693,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00014",
+      "input_tokens": 33868,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00015",
+      "input_tokens": 33970,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00016",
+      "input_tokens": 34077,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00017",
+      "input_tokens": 34807,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00018",
+      "input_tokens": 35232,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00019",
+      "input_tokens": 35468,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00020",
+      "input_tokens": 45545,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00021",
+      "input_tokens": 45728,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00022",
+      "input_tokens": 45951,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00023",
+      "input_tokens": 53812,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00024",
+      "input_tokens": 54044,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00025",
+      "input_tokens": 54463,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00026",
+      "input_tokens": 54585,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00027",
+      "input_tokens": 54707,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00028",
+      "input_tokens": 54831,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00029",
+      "input_tokens": 55052,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00030",
+      "input_tokens": 55430,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00031",
+      "input_tokens": 55821,
+      "fits": false
+    },
+    {
+      "request_id": "TRAIN_025_s00032",
+      "input_tokens": 55910,
+      "fits": false
+    }
+  ]
+}

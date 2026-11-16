@@ -1,0 +1,1760 @@
+{
+  "total": 350,
+  "fits": 253,
+  "max_input_tokens": 70758,
+  "context_tokens": 32768,
+  "output_tokens": 1200,
+  "margin": 128,
+  "requests": [
+    {
+      "request_id": "DEV_001_s00001",
+      "input_tokens": 2722,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00002",
+      "input_tokens": 2805,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00003",
+      "input_tokens": 2872,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00004",
+      "input_tokens": 4071,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00005",
+      "input_tokens": 4216,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00006",
+      "input_tokens": 5100,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00007",
+      "input_tokens": 6492,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00008",
+      "input_tokens": 8031,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00009",
+      "input_tokens": 8149,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00010",
+      "input_tokens": 10794,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00011",
+      "input_tokens": 13900,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00012",
+      "input_tokens": 14009,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00013",
+      "input_tokens": 14093,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00014",
+      "input_tokens": 14251,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00015",
+      "input_tokens": 15142,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00016",
+      "input_tokens": 16080,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00017",
+      "input_tokens": 16899,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00018",
+      "input_tokens": 17674,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00019",
+      "input_tokens": 17757,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00020",
+      "input_tokens": 17839,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00021",
+      "input_tokens": 17982,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00022",
+      "input_tokens": 19505,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00023",
+      "input_tokens": 19585,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00024",
+      "input_tokens": 19763,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00025",
+      "input_tokens": 19862,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00026",
+      "input_tokens": 19966,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00027",
+      "input_tokens": 20263,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_001_s00028",
+      "input_tokens": 20341,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00001",
+      "input_tokens": 1945,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00002",
+      "input_tokens": 2937,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00003",
+      "input_tokens": 3025,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00004",
+      "input_tokens": 3145,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00005",
+      "input_tokens": 8150,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00006",
+      "input_tokens": 8256,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00007",
+      "input_tokens": 8376,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00008",
+      "input_tokens": 8490,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00009",
+      "input_tokens": 9865,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00010",
+      "input_tokens": 11742,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00011",
+      "input_tokens": 12745,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00012",
+      "input_tokens": 14719,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00013",
+      "input_tokens": 17894,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00014",
+      "input_tokens": 18042,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00015",
+      "input_tokens": 18131,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00016",
+      "input_tokens": 18381,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00017",
+      "input_tokens": 18557,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00018",
+      "input_tokens": 18971,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00019",
+      "input_tokens": 19752,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00020",
+      "input_tokens": 20410,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00021",
+      "input_tokens": 20498,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00022",
+      "input_tokens": 21005,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00023",
+      "input_tokens": 21710,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00024",
+      "input_tokens": 22165,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00025",
+      "input_tokens": 22341,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00026",
+      "input_tokens": 22427,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00027",
+      "input_tokens": 22674,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00028",
+      "input_tokens": 23217,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00029",
+      "input_tokens": 23768,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00030",
+      "input_tokens": 23852,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00031",
+      "input_tokens": 27212,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_002_s00032",
+      "input_tokens": 28471,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00001",
+      "input_tokens": 1946,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00002",
+      "input_tokens": 2122,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00003",
+      "input_tokens": 2207,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00004",
+      "input_tokens": 3323,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00005",
+      "input_tokens": 3408,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00006",
+      "input_tokens": 3539,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00007",
+      "input_tokens": 5583,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00008",
+      "input_tokens": 8091,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00009",
+      "input_tokens": 8504,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00010",
+      "input_tokens": 11728,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00011",
+      "input_tokens": 13566,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00012",
+      "input_tokens": 13883,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00013",
+      "input_tokens": 13966,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00014",
+      "input_tokens": 14570,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00015",
+      "input_tokens": 14825,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00016",
+      "input_tokens": 15202,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00017",
+      "input_tokens": 15365,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00018",
+      "input_tokens": 15445,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00019",
+      "input_tokens": 15862,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00020",
+      "input_tokens": 15942,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00021",
+      "input_tokens": 16100,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00022",
+      "input_tokens": 16261,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_003_s00023",
+      "input_tokens": 16890,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00001",
+      "input_tokens": 2649,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00002",
+      "input_tokens": 2824,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00003",
+      "input_tokens": 3793,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00004",
+      "input_tokens": 3878,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00005",
+      "input_tokens": 4069,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00006",
+      "input_tokens": 6566,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00007",
+      "input_tokens": 7567,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00008",
+      "input_tokens": 8897,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00009",
+      "input_tokens": 11666,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00010",
+      "input_tokens": 16812,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00011",
+      "input_tokens": 23633,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00012",
+      "input_tokens": 25414,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00013",
+      "input_tokens": 25612,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00014",
+      "input_tokens": 27569,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00015",
+      "input_tokens": 28884,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00016",
+      "input_tokens": 29073,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00017",
+      "input_tokens": 29269,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_004_s00018",
+      "input_tokens": 36207,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00019",
+      "input_tokens": 38811,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00020",
+      "input_tokens": 42706,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00021",
+      "input_tokens": 43717,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00022",
+      "input_tokens": 48853,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00023",
+      "input_tokens": 49646,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00024",
+      "input_tokens": 54769,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00025",
+      "input_tokens": 55158,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00026",
+      "input_tokens": 57197,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00027",
+      "input_tokens": 57580,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00028",
+      "input_tokens": 58014,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00029",
+      "input_tokens": 58184,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00030",
+      "input_tokens": 58857,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00031",
+      "input_tokens": 62303,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00032",
+      "input_tokens": 63076,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00033",
+      "input_tokens": 66054,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00034",
+      "input_tokens": 66246,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00035",
+      "input_tokens": 66706,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00036",
+      "input_tokens": 68368,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00037",
+      "input_tokens": 68454,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00038",
+      "input_tokens": 69204,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00039",
+      "input_tokens": 69406,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00040",
+      "input_tokens": 69824,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00041",
+      "input_tokens": 69910,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00042",
+      "input_tokens": 70151,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_004_s00043",
+      "input_tokens": 70758,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00001",
+      "input_tokens": 2515,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00002",
+      "input_tokens": 2602,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00003",
+      "input_tokens": 2689,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00004",
+      "input_tokens": 3870,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00005",
+      "input_tokens": 3957,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00006",
+      "input_tokens": 4134,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00007",
+      "input_tokens": 4466,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00008",
+      "input_tokens": 5057,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00009",
+      "input_tokens": 5478,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00010",
+      "input_tokens": 5712,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00011",
+      "input_tokens": 5931,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00012",
+      "input_tokens": 6151,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00013",
+      "input_tokens": 8186,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00014",
+      "input_tokens": 11557,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00015",
+      "input_tokens": 14236,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00016",
+      "input_tokens": 15419,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00017",
+      "input_tokens": 15609,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00018",
+      "input_tokens": 15799,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00019",
+      "input_tokens": 19028,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00020",
+      "input_tokens": 19214,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00021",
+      "input_tokens": 19511,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00022",
+      "input_tokens": 19728,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00023",
+      "input_tokens": 20193,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00024",
+      "input_tokens": 21564,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00025",
+      "input_tokens": 21809,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00026",
+      "input_tokens": 23484,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00027",
+      "input_tokens": 23907,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00028",
+      "input_tokens": 24369,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00029",
+      "input_tokens": 25472,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00030",
+      "input_tokens": 25660,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00031",
+      "input_tokens": 28171,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00032",
+      "input_tokens": 28810,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00033",
+      "input_tokens": 29220,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00034",
+      "input_tokens": 29655,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00035",
+      "input_tokens": 30233,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_005_s00036",
+      "input_tokens": 31528,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00037",
+      "input_tokens": 32222,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00038",
+      "input_tokens": 32938,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00039",
+      "input_tokens": 33419,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00040",
+      "input_tokens": 34126,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00041",
+      "input_tokens": 34727,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00042",
+      "input_tokens": 35238,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00043",
+      "input_tokens": 35325,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00044",
+      "input_tokens": 36030,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00045",
+      "input_tokens": 36368,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00046",
+      "input_tokens": 39935,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00047",
+      "input_tokens": 40513,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00048",
+      "input_tokens": 43428,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00049",
+      "input_tokens": 44818,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00050",
+      "input_tokens": 45075,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00051",
+      "input_tokens": 46392,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00052",
+      "input_tokens": 46722,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00053",
+      "input_tokens": 53562,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00054",
+      "input_tokens": 53985,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00055",
+      "input_tokens": 54788,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00056",
+      "input_tokens": 55113,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00057",
+      "input_tokens": 57602,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00058",
+      "input_tokens": 57838,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00059",
+      "input_tokens": 58206,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00060",
+      "input_tokens": 58531,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00061",
+      "input_tokens": 58720,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00062",
+      "input_tokens": 58805,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00063",
+      "input_tokens": 60370,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00064",
+      "input_tokens": 64558,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00065",
+      "input_tokens": 65121,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00066",
+      "input_tokens": 65340,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00067",
+      "input_tokens": 65796,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00068",
+      "input_tokens": 66347,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_005_s00069",
+      "input_tokens": 66524,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_006_s00001",
+      "input_tokens": 2180,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00002",
+      "input_tokens": 2267,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00003",
+      "input_tokens": 2439,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00004",
+      "input_tokens": 2526,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00005",
+      "input_tokens": 3560,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00006",
+      "input_tokens": 3641,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00007",
+      "input_tokens": 3748,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00008",
+      "input_tokens": 3907,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00009",
+      "input_tokens": 7462,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00010",
+      "input_tokens": 9935,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00011",
+      "input_tokens": 12139,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00012",
+      "input_tokens": 12455,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00013",
+      "input_tokens": 12938,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00014",
+      "input_tokens": 13970,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00015",
+      "input_tokens": 16383,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00016",
+      "input_tokens": 18501,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00017",
+      "input_tokens": 18583,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00018",
+      "input_tokens": 18721,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00019",
+      "input_tokens": 18925,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00020",
+      "input_tokens": 19007,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00021",
+      "input_tokens": 19888,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00022",
+      "input_tokens": 22283,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00023",
+      "input_tokens": 22869,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00024",
+      "input_tokens": 23062,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00025",
+      "input_tokens": 23215,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00026",
+      "input_tokens": 23321,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00027",
+      "input_tokens": 23569,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00028",
+      "input_tokens": 23694,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00029",
+      "input_tokens": 24214,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00030",
+      "input_tokens": 24431,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00031",
+      "input_tokens": 26221,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00032",
+      "input_tokens": 26426,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00033",
+      "input_tokens": 26798,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00034",
+      "input_tokens": 26983,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00035",
+      "input_tokens": 27665,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00036",
+      "input_tokens": 28371,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00037",
+      "input_tokens": 28747,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00038",
+      "input_tokens": 28829,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00039",
+      "input_tokens": 28950,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00040",
+      "input_tokens": 29033,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00041",
+      "input_tokens": 29611,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_006_s00042",
+      "input_tokens": 29693,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00001",
+      "input_tokens": 3546,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00002",
+      "input_tokens": 3717,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00003",
+      "input_tokens": 4813,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00004",
+      "input_tokens": 5027,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00005",
+      "input_tokens": 6573,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00006",
+      "input_tokens": 8958,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00007",
+      "input_tokens": 9336,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00008",
+      "input_tokens": 10992,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00009",
+      "input_tokens": 17018,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00010",
+      "input_tokens": 20914,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00011",
+      "input_tokens": 21705,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00012",
+      "input_tokens": 25268,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00013",
+      "input_tokens": 26729,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00014",
+      "input_tokens": 28413,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00015",
+      "input_tokens": 28499,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00016",
+      "input_tokens": 30578,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00017",
+      "input_tokens": 31073,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_007_s00018",
+      "input_tokens": 31561,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00019",
+      "input_tokens": 33947,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00020",
+      "input_tokens": 35485,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00021",
+      "input_tokens": 35571,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00022",
+      "input_tokens": 36251,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00023",
+      "input_tokens": 37298,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00024",
+      "input_tokens": 37446,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00025",
+      "input_tokens": 37653,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00026",
+      "input_tokens": 38397,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00027",
+      "input_tokens": 38586,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00028",
+      "input_tokens": 38795,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00029",
+      "input_tokens": 39421,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00030",
+      "input_tokens": 39592,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00031",
+      "input_tokens": 39909,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00032",
+      "input_tokens": 39991,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_007_s00033",
+      "input_tokens": 41830,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_008_s00001",
+      "input_tokens": 3209,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00002",
+      "input_tokens": 3424,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00003",
+      "input_tokens": 5070,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00004",
+      "input_tokens": 7559,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00005",
+      "input_tokens": 9461,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00006",
+      "input_tokens": 11285,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00007",
+      "input_tokens": 11482,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00008",
+      "input_tokens": 11630,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00009",
+      "input_tokens": 11980,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00010",
+      "input_tokens": 12282,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00011",
+      "input_tokens": 12942,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00012",
+      "input_tokens": 13193,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00013",
+      "input_tokens": 15449,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00014",
+      "input_tokens": 18668,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00015",
+      "input_tokens": 19732,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00016",
+      "input_tokens": 19821,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00017",
+      "input_tokens": 22469,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00018",
+      "input_tokens": 22623,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00019",
+      "input_tokens": 25407,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00020",
+      "input_tokens": 25552,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00021",
+      "input_tokens": 28068,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00022",
+      "input_tokens": 28156,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00023",
+      "input_tokens": 28311,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00024",
+      "input_tokens": 31035,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00025",
+      "input_tokens": 31208,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_008_s00026",
+      "input_tokens": 32787,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_008_s00027",
+      "input_tokens": 33946,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_008_s00028",
+      "input_tokens": 34083,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_008_s00029",
+      "input_tokens": 35866,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_008_s00030",
+      "input_tokens": 36319,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_008_s00031",
+      "input_tokens": 36404,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_008_s00032",
+      "input_tokens": 36685,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_009_s00001",
+      "input_tokens": 2938,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00002",
+      "input_tokens": 3108,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00003",
+      "input_tokens": 3196,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00004",
+      "input_tokens": 4365,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00005",
+      "input_tokens": 4453,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00006",
+      "input_tokens": 4644,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00007",
+      "input_tokens": 10735,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00008",
+      "input_tokens": 10822,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00009",
+      "input_tokens": 14130,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00010",
+      "input_tokens": 14300,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00011",
+      "input_tokens": 16417,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00012",
+      "input_tokens": 17904,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00013",
+      "input_tokens": 18137,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00014",
+      "input_tokens": 21517,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00015",
+      "input_tokens": 22910,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00016",
+      "input_tokens": 22998,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00017",
+      "input_tokens": 23545,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00018",
+      "input_tokens": 23629,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00019",
+      "input_tokens": 23959,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00020",
+      "input_tokens": 24135,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00021",
+      "input_tokens": 24423,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_009_s00022",
+      "input_tokens": 24506,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00001",
+      "input_tokens": 3459,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00002",
+      "input_tokens": 4768,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00003",
+      "input_tokens": 4902,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00004",
+      "input_tokens": 5290,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00005",
+      "input_tokens": 8898,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00006",
+      "input_tokens": 11028,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00007",
+      "input_tokens": 15492,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00008",
+      "input_tokens": 15653,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00009",
+      "input_tokens": 20574,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00010",
+      "input_tokens": 26920,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00011",
+      "input_tokens": 28939,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00012",
+      "input_tokens": 30684,
+      "fits": true
+    },
+    {
+      "request_id": "DEV_010_s00013",
+      "input_tokens": 31491,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00014",
+      "input_tokens": 32218,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00015",
+      "input_tokens": 32358,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00016",
+      "input_tokens": 32669,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00017",
+      "input_tokens": 32756,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00018",
+      "input_tokens": 33911,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00019",
+      "input_tokens": 34362,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00020",
+      "input_tokens": 34449,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00021",
+      "input_tokens": 43712,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00022",
+      "input_tokens": 44452,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00023",
+      "input_tokens": 44553,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00024",
+      "input_tokens": 44650,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00025",
+      "input_tokens": 44752,
+      "fits": false
+    },
+    {
+      "request_id": "DEV_010_s00026",
+      "input_tokens": 44999,
+      "fits": false
+    }
+  ]
+}

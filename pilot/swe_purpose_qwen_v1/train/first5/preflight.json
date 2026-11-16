@@ -1,0 +1,35 @@
+{
+  "total": 5,
+  "fits": 5,
+  "max_input_tokens": 10680,
+  "context_tokens": 32768,
+  "output_tokens": 1200,
+  "margin": 128,
+  "requests": [
+    {
+      "request_id": "TRAIN_001_s00001",
+      "input_tokens": 2397,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00002",
+      "input_tokens": 3562,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00003",
+      "input_tokens": 3684,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00004",
+      "input_tokens": 10562,
+      "fits": true
+    },
+    {
+      "request_id": "TRAIN_001_s00005",
+      "input_tokens": 10680,
+      "fits": true
+    }
+  ]
+}
