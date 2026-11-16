@@ -7,7 +7,19 @@ import time
 
 from segmenter.adapters.openhands import OpenHandsStreamAdapter
 from segmenter.boundary_model import OnlineBoundaryPredictor
-from segmenter.ledger import atomic
+from segmenter.ledger import atomic as _atomic
+
+
+def atomic(path, value):
+    # Windows readers can briefly deny replacement while opening a snapshot.
+    # Keep the old complete snapshot and retry the same new value, never truncate.
+    for attempt in range(10):
+        try:
+            return _atomic(path, value)
+        except PermissionError:
+            if attempt == 9:
+                raise
+            time.sleep(.02)
 
 
 def follow(run, once=False, poll=0.2):

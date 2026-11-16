@@ -2,11 +2,19 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from remote_pilots.openhands_smoke.shadow import follow
 
 
 class ShadowTests(unittest.TestCase):
+    def test_snapshot_retries_temporary_reader_lock(self):
+        from remote_pilots.openhands_smoke.shadow import atomic
+        with patch('remote_pilots.openhands_smoke.shadow._atomic',
+                   side_effect=[PermissionError('reader lock'), None]) as write:
+            atomic(Path('unused'), {'complete': True})
+            self.assertEqual(write.call_count, 2)
+
     def test_pending_restart_duplicate_and_conflict(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)

@@ -1,0 +1,607 @@
+{
+  "fixed_fold": {
+    "trajectories": 276,
+    "steps": 9600,
+    "metrics": {
+      "mixed_train_mixed_dev": {
+        "tol0_eventual": {
+          "precision": 0.38589211618257263,
+          "recall": 0.6145374449339207,
+          "f1": 0.47408666100254887,
+          "counts": [
+            837,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.47148728704203874
+        },
+        "tol0_D0": {
+          "precision": 0.38589211618257263,
+          "recall": 0.6145374449339207,
+          "f1": 0.47408666100254887,
+          "counts": [
+            837,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.47148728704203874
+        },
+        "tol0_D1": {
+          "precision": 0.38589211618257263,
+          "recall": 0.6145374449339207,
+          "f1": 0.47408666100254887,
+          "counts": [
+            837,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.47148728704203874
+        },
+        "tol0_D2": {
+          "precision": 0.38589211618257263,
+          "recall": 0.6145374449339207,
+          "f1": 0.47408666100254887,
+          "counts": [
+            837,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.47148728704203874
+        },
+        "tol1_eventual": {
+          "precision": 0.4817888427846934,
+          "recall": 0.7672540381791483,
+          "f1": 0.5919003115264798,
+          "counts": [
+            1045,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5949126041221209
+        },
+        "tol1_D0": {
+          "precision": 0.43706777316735823,
+          "recall": 0.6960352422907489,
+          "f1": 0.5369583687340697,
+          "counts": [
+            948,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5377067040573232
+        },
+        "tol1_D1": {
+          "precision": 0.4817888427846934,
+          "recall": 0.7672540381791483,
+          "f1": 0.5919003115264798,
+          "counts": [
+            1045,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5949126041221209
+        },
+        "tol1_D2": {
+          "precision": 0.4817888427846934,
+          "recall": 0.7672540381791483,
+          "f1": 0.5919003115264798,
+          "counts": [
+            1045,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5949126041221209
+        },
+        "tol2_eventual": {
+          "precision": 0.5265099124020286,
+          "recall": 0.8384728340675477,
+          "f1": 0.6468422543188899,
+          "counts": [
+            1142,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.6504947008292008
+        },
+        "tol2_D0": {
+          "precision": 0.4698017519594283,
+          "recall": 0.7481644640234949,
+          "f1": 0.5771736052109884,
+          "counts": [
+            1019,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.5756872577824254
+        },
+        "tol2_D1": {
+          "precision": 0.5071461502996772,
+          "recall": 0.8076358296622613,
+          "f1": 0.6230529595015575,
+          "counts": [
+            1100,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.6242896666755867
+        },
+        "tol2_D2": {
+          "precision": 0.5265099124020286,
+          "recall": 0.8384728340675477,
+          "f1": 0.6468422543188899,
+          "counts": [
+            1142,
+            2169,
+            1362
+          ],
+          "macro_f1": 0.6504947008292008
+        },
+        "no_gold_boundary_trajectories": 0,
+        "predictions_on_no_gold": 0
+      },
+      "mixed_train_swe_dev": {
+        "tol0_eventual": {
+          "precision": 0.43020457280385077,
+          "recall": 0.5249632892804699,
+          "f1": 0.47288359788359785,
+          "counts": [
+            715,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.46954476623594266
+        },
+        "tol0_D0": {
+          "precision": 0.43020457280385077,
+          "recall": 0.5249632892804699,
+          "f1": 0.47288359788359785,
+          "counts": [
+            715,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.46954476623594266
+        },
+        "tol0_D1": {
+          "precision": 0.43020457280385077,
+          "recall": 0.5249632892804699,
+          "f1": 0.47288359788359785,
+          "counts": [
+            715,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.46954476623594266
+        },
+        "tol0_D2": {
+          "precision": 0.43020457280385077,
+          "recall": 0.5249632892804699,
+          "f1": 0.47288359788359785,
+          "counts": [
+            715,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.46954476623594266
+        },
+        "tol1_eventual": {
+          "precision": 0.5499398315282792,
+          "recall": 0.671071953010279,
+          "f1": 0.6044973544973545,
+          "counts": [
+            914,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.603111771126477
+        },
+        "tol1_D0": {
+          "precision": 0.49217809867629364,
+          "recall": 0.6005873715124816,
+          "f1": 0.541005291005291,
+          "counts": [
+            818,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.538707662045258
+        },
+        "tol1_D1": {
+          "precision": 0.5499398315282792,
+          "recall": 0.671071953010279,
+          "f1": 0.6044973544973545,
+          "counts": [
+            914,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.603111771126477
+        },
+        "tol1_D2": {
+          "precision": 0.5499398315282792,
+          "recall": 0.671071953010279,
+          "f1": 0.6044973544973545,
+          "counts": [
+            914,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.603111771126477
+        },
+        "tol2_eventual": {
+          "precision": 0.6131167268351384,
+          "recall": 0.7481644640234949,
+          "f1": 0.673941798941799,
+          "counts": [
+            1019,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.6727792833291554
+        },
+        "tol2_D0": {
+          "precision": 0.5379061371841155,
+          "recall": 0.6563876651982379,
+          "f1": 0.5912698412698412,
+          "counts": [
+            894,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.5860363616917325
+        },
+        "tol2_D1": {
+          "precision": 0.5884476534296029,
+          "recall": 0.7180616740088106,
+          "f1": 0.6468253968253969,
+          "counts": [
+            978,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.6434092643171927
+        },
+        "tol2_D2": {
+          "precision": 0.6131167268351384,
+          "recall": 0.7481644640234949,
+          "f1": 0.673941798941799,
+          "counts": [
+            1019,
+            1662,
+            1362
+          ],
+          "macro_f1": 0.6727792833291554
+        },
+        "no_gold_boundary_trajectories": 0,
+        "predictions_on_no_gold": 0
+      },
+      "swe_train_swe_dev": {
+        "tol0_eventual": {
+          "precision": 0.43506493506493504,
+          "recall": 0.5411160058737151,
+          "f1": 0.48232984293193715,
+          "counts": [
+            737,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.47889252579956465
+        },
+        "tol0_D0": {
+          "precision": 0.43506493506493504,
+          "recall": 0.5411160058737151,
+          "f1": 0.48232984293193715,
+          "counts": [
+            737,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.47889252579956465
+        },
+        "tol0_D1": {
+          "precision": 0.43506493506493504,
+          "recall": 0.5411160058737151,
+          "f1": 0.48232984293193715,
+          "counts": [
+            737,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.47889252579956465
+        },
+        "tol0_D2": {
+          "precision": 0.43506493506493504,
+          "recall": 0.5411160058737151,
+          "f1": 0.48232984293193715,
+          "counts": [
+            737,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.47889252579956465
+        },
+        "tol1_eventual": {
+          "precision": 0.5448642266824085,
+          "recall": 0.6776798825256976,
+          "f1": 0.6040575916230366,
+          "counts": [
+            923,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6047748664903674
+        },
+        "tol1_D0": {
+          "precision": 0.49409681227863045,
+          "recall": 0.6145374449339207,
+          "f1": 0.5477748691099477,
+          "counts": [
+            837,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.5444992183438753
+        },
+        "tol1_D1": {
+          "precision": 0.5448642266824085,
+          "recall": 0.6776798825256976,
+          "f1": 0.6040575916230366,
+          "counts": [
+            923,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6047748664903674
+        },
+        "tol1_D2": {
+          "precision": 0.5448642266824085,
+          "recall": 0.6776798825256976,
+          "f1": 0.6040575916230366,
+          "counts": [
+            923,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6047748664903674
+        },
+        "tol2_eventual": {
+          "precision": 0.6044864226682408,
+          "recall": 0.7518355359765051,
+          "f1": 0.6701570680628272,
+          "counts": [
+            1024,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6696516945737172
+        },
+        "tol2_D0": {
+          "precision": 0.538370720188902,
+          "recall": 0.6696035242290749,
+          "f1": 0.5968586387434555,
+          "counts": [
+            912,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.5911557612184488
+        },
+        "tol2_D1": {
+          "precision": 0.5814639905548996,
+          "recall": 0.7232011747430249,
+          "f1": 0.644633507853403,
+          "counts": [
+            985,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6427365706477238
+        },
+        "tol2_D2": {
+          "precision": 0.6044864226682408,
+          "recall": 0.7518355359765051,
+          "f1": 0.6701570680628272,
+          "counts": [
+            1024,
+            1694,
+            1362
+          ],
+          "macro_f1": 0.6696516945737172
+        },
+        "no_gold_boundary_trajectories": 0,
+        "predictions_on_no_gold": 0
+      },
+      "rules": {
+        "tol0_eventual": {
+          "precision": 0.27081021087680357,
+          "recall": 0.35829662261380324,
+          "f1": 0.30847029077117577,
+          "counts": [
+            488,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.3155954147911831
+        },
+        "tol0_D0": {
+          "precision": 0.1709211986681465,
+          "recall": 0.2261380323054332,
+          "f1": 0.19469026548672566,
+          "counts": [
+            308,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.20153583694963834
+        },
+        "tol0_D1": {
+          "precision": 0.22086570477247502,
+          "recall": 0.2922173274596182,
+          "f1": 0.25158027812895073,
+          "counts": [
+            398,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.2624732180638602
+        },
+        "tol0_D2": {
+          "precision": 0.258046614872364,
+          "recall": 0.34140969162995594,
+          "f1": 0.2939317319848293,
+          "counts": [
+            465,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.3004395330911837
+        },
+        "tol1_eventual": {
+          "precision": 0.46614872364039955,
+          "recall": 0.6167400881057269,
+          "f1": 0.5309734513274337,
+          "counts": [
+            840,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.54298422987624
+        },
+        "tol1_D0": {
+          "precision": 0.3091009988901221,
+          "recall": 0.4089574155653451,
+          "f1": 0.35208596713021495,
+          "counts": [
+            557,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.3601111592731049
+        },
+        "tol1_D1": {
+          "precision": 0.4078801331853496,
+          "recall": 0.539647577092511,
+          "f1": 0.4646017699115044,
+          "counts": [
+            735,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.479250487397772
+        },
+        "tol1_D2": {
+          "precision": 0.44950055493895674,
+          "recall": 0.5947136563876652,
+          "f1": 0.5120101137800253,
+          "counts": [
+            810,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.5242176041083354
+        },
+        "tol2_eventual": {
+          "precision": 0.5443951165371809,
+          "recall": 0.7202643171806168,
+          "f1": 0.6201011378002528,
+          "counts": [
+            981,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.63535468091469
+        },
+        "tol2_D0": {
+          "precision": 0.3779134295227525,
+          "recall": 0.5,
+          "f1": 0.4304677623261694,
+          "counts": [
+            681,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.43704235280180803
+        },
+        "tol2_D1": {
+          "precision": 0.462819089900111,
+          "recall": 0.6123348017621145,
+          "f1": 0.5271807838179519,
+          "counts": [
+            834,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.5397265955626649
+        },
+        "tol2_D2": {
+          "precision": 0.5294117647058824,
+          "recall": 0.7004405286343612,
+          "f1": 0.6030341340075853,
+          "counts": [
+            954,
+            1802,
+            1362
+          ],
+          "macro_f1": 0.6179683640683765
+        },
+        "no_gold_boundary_trajectories": 0,
+        "predictions_on_no_gold": 0
+      }
+    },
+    "predictions_reproduced": true,
+    "group_overlap": false,
+    "scope": "Existing development folds, no retraining or tuning; not pristine test. Full-fit deployment model is not evaluated on its training tasks."
+  },
+  "long_replay": [
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-reverse-engineering-bbdd57de",
+      "source": "Terminal-Bench",
+      "native_events": 441,
+      "annotated_steps": 217,
+      "online_steps": 217,
+      "stages": 16,
+      "full_replay_seconds": 3.206273299991153,
+      "recovery_and_remaining_seconds": 1.4743049999815412,
+      "process_termination_recovered": true,
+      "duplicate_replay_identical": true,
+      "prefix_pending": [
+        221
+      ]
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-tune-mjcf-9828b85f",
+      "source": "Terminal-Bench",
+      "native_events": 388,
+      "annotated_steps": 191,
+      "online_steps": 191,
+      "stages": 15,
+      "full_replay_seconds": 8.912190900009591,
+      "recovery_and_remaining_seconds": 1.6092087000142783,
+      "process_termination_recovered": true,
+      "duplicate_replay_identical": true,
+      "prefix_pending": [
+        195
+      ]
+    },
+    {
+      "traj_id": "openhands-Anthropic__Claude-Sonnet-4-20250514-Thinking-break-filter-js-from-html-05ef5f96",
+      "source": "Terminal-Bench",
+      "native_events": 289,
+      "annotated_steps": 142,
+      "online_steps": 142,
+      "stages": 4,
+      "full_replay_seconds": 8.820666299958248,
+      "recovery_and_remaining_seconds": 1.2810314999660477,
+      "process_termination_recovered": true,
+      "duplicate_replay_identical": true,
+      "prefix_pending": [
+        147
+      ]
+    }
+  ],
+  "limitations": [
+    "Recorded native events, not new live agent tasks; no long-duration soak test.",
+    "Online steps may differ from offline alignment; no gold scoring of native replay.",
+    "Single observer, local filesystem; no power-loss or multi-session test."
+  ]
+}
