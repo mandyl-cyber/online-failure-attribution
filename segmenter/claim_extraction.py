@@ -61,6 +61,9 @@ def text(value, label, allow_empty=False):
 
 
 def build_request(job, max_input_bytes=1_000_000):
+    from .input_gate import blocked
+    if blocked(job):
+        raise ExtractionError("blocked_input: known incomplete stage")
     evidence, seen = [], set()
     stage = job["stage"]
     for item in job["evidence"]:

@@ -33,6 +33,13 @@ def repair_step(step, payload=None, native_call_id=None):
     """Separate version; never mutate legacy Step or accept a different native call."""
     result = deepcopy(step)
     result.thought = ""
+    if payload is None and step.tool == 'task_tracking' and step.attrs.get('input_integrity',{}).get('version') == 2:
+        public = step.attrs.get('public_action_args')
+        if not isinstance(public,dict) or json.loads(step.action)!=public or 'thought' in public:
+            raise ValueError('Adapter public plan integrity mismatch')
+        result.action=encoded(public).decode('utf-8')
+        result.attrs['public_plan']=deepcopy(public)
+        return result
     if payload is not None:
         if step.tool != "task_tracking" or native_call_id is None or native_call_id != step.raw_ref.get("action_id"):
             raise ValueError("Plan payload does not match current native call")

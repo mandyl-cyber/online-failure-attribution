@@ -8,6 +8,7 @@ import time
 from segmenter.adapters.openhands import OpenHandsStreamAdapter
 from segmenter.boundary_model import OnlineBoundaryPredictor
 from segmenter.ledger import atomic as _atomic
+from segmenter.input_timeline import InputTimeline, validate_event
 
 
 def atomic(path, value):
@@ -38,6 +39,7 @@ def follow(run, once=False, poll=0.2):
     # Recover by replaying immutable source events, never flushing pending actions.
     predictor = OnlineBoundaryPredictor.load(model)
     adapter = OpenHandsStreamAdapter(fold_agent_messages=False)
+    timeline = InputTimeline(out/'input_timing', 'replay' if once else 'live')
     atomic(out / 'ready.json', dict(model_sha256=digest, ready_at=time.time()))
     seen, decisions, actions = {}, [], set()
     terminal = None
@@ -66,11 +68,16 @@ def follow(run, once=False, poll=0.2):
                     continue
                 if previous and key in previous['event_hashes'] and previous['event_hashes'][key] != fingerprint:
                     raise ValueError('Native event changed since restart: ' + key)
+                recovery = previous is not None and key in previous['event_hashes']
+                validate_event(adapter, event)
+                timeline.receive(event, recovery=recovery)
                 if 'observation' in event and event.get('cause') is not None and event['cause'] not in actions:
                     raise ValueError('Observation precedes its action')
                 if 'action' in event:
                     actions.add(event['id'])
-                for step in adapter.feed(event):
+                emitted = adapter.feed(event)
+                for step in emitted:
+                    timeline.ready(step, recovery=recovery)
                     prediction = predictor.feed(step)
                     decisions.append({k: v for k, v in prediction.items() if k not in ('ms', 'emitted_at')})
                     with (out / 'timing.jsonl').open('a', encoding='utf-8') as timing:
@@ -90,6 +97,9 @@ def follow(run, once=False, poll=0.2):
                     pending_action_ids=list(adapter._pending),
                     input_mode='recorded_replay' if once else 'live_directory_watch',
                     observed_steps=len(decisions)))
+                for step in emitted:
+                    timeline.published(step.idx, recovery=recovery)
+                timeline.emit('backlog', recovery=recovery, pending_actions=len(adapter._pending))
         if once or (run / 'shadow.stop').exists():
             if previous and not set(previous['event_hashes']).issubset(seen):
                 raise ValueError('Source events missing on recovery')

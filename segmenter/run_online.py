@@ -243,35 +243,78 @@ def _iter_live_events(path: Path, poll: float, idle: float):
 
 
 def cmd_follow(a) -> None:
+    from .durable_input import DurableInput, atomic_json
+    import hashlib
     rules = Rules(a.rules) if a.rules else default_rules()
-    ad = OpenHandsStreamAdapter(rules, base=a.base)
     explicit_task=Path(a.task_file).read_text(encoding='utf-8') if a.task_file else ''
+    if not a.out:
+        raise ValueError('Durable follow requires --out')
+    def model_hash(path):
+        return hashlib.sha256(Path(path).read_bytes()).hexdigest() if path else None
+    journal = None
+    if a.out:
+        root = Path(a.out)
+        if root.exists() and any(root.iterdir()) and not (root / 'input_journal').exists():
+            raise ValueError('Existing output has no input journal; choose a new --out')
+        journal = DurableInput(root / 'input_journal', dict(version=1,
+            source=str(Path(a.path).resolve()), rules=rules.raw, base=a.base,
+            mode=a.mode, input_mode=getattr(a, 'input_mode', 'live'), task=explicit_task, boundary=model_hash(a.boundary_model),
+            purpose=model_hash(a.purpose_model)), rules, a.base)
+        status_file = root / 'follow_status.json'
+        if status_file.exists() and json.loads(status_file.read_text(encoding='utf-8')).get('status') == 'finished':
+            print('Session already finalized; use a new --out for a new session', file=sys.stderr)
+            return
+    ad = journal.adapter if journal else OpenHandsStreamAdapter(rules, base=a.base)
     seg = OnlineSegmenter(rules, a.out, [a.mode] if a.mode else None,
                           a.boundary_model,a.purpose_model,explicit_task)
     done = False
+    status = 'paused'
+    error = None
+    def consume(st, display=True):
+        if not explicit_task:
+            seg.task=ad.task
+        row = seg.feed(st)
+        if journal:
+            journal.timeline.published(st.idx, recovery=not display)
+        if display:
+            print(_fmt_row(st, row), flush=True)
+        return st.tool == 'finish'
     try:
-        for ev in _iter_live_events(Path(a.path), a.poll, a.idle):
-            for st in ad.feed(ev):
-                if not explicit_task:
-                    seg.task=ad.task
-                row = seg.feed(st)
-                print(_fmt_row(st, row), flush=True)
-                done = done or st.tool == "finish"
-            if done:
-                break
+        if journal:
+            for st in journal.recovered:
+                done = consume(st, False) or done
+            journal.recovered.clear()
+        if not done:
+            for ev in _iter_live_events(Path(a.path), a.poll, a.idle):
+                for st in (journal.feed(ev) if journal else ad.feed(ev)):
+                    done = consume(st) or done
+                if done:
+                    break
+        if done or getattr(a, 'finalize', False):
+            for st in ad.flush():
+                consume(st)
+            seg.finish()
+            status = 'finished'
     except KeyboardInterrupt:
         pass
+    except Exception as exc:
+        status = 'error'
+        error = str(exc)
+        raise
     finally:
+        if status != 'finished':
+            seg._dump_structs()
+            for fh in seg._fh.values():
+                fh.close()
+            seg._fh = {}
         if a.out:
             diagnostic_dir=Path(a.out)
             diagnostic_dir.mkdir(parents=True,exist_ok=True)
             (diagnostic_dir/'input_diagnostics.json').write_text(
                 json.dumps(ad.diagnostics,ensure_ascii=False,indent=2),encoding='utf-8')
-    for st in ad.flush():
-        if not explicit_task:
-            seg.task=ad.task
-        print(_fmt_row(st, seg.feed(st)), flush=True)
-    seg.finish()
+            atomic_json(diagnostic_dir / 'follow_status.json', dict(status=status,
+                error=error, steps=len(seg.steps), pending=len(ad._pending),
+                recovery='raw-event replay' if journal else 'unavailable'))
 
 
 def cmd_bench(a) -> None:
@@ -317,6 +360,8 @@ def main(argv=None) -> None:
     p = sub.add_parser("follow", help="跟读正在运行的 OpenHands 事件流")
     p.add_argument("path")
     p.add_argument("--poll", type=float, default=0.5)
+    p.add_argument("--finalize", action="store_true", help="Explicitly end an exhausted source; idle/Ctrl+C otherwise pause")
+    p.add_argument('--input-mode', choices=['live', 'replay'], default='live')
     p.add_argument("--idle", type=float, default=600.0, help="这么多秒没有新事件就结束")
     common(p); p.set_defaults(fn=cmd_follow)
 

@@ -275,6 +275,8 @@ class OpenHandsStreamAdapter:
             self._arrivals[key]=dict(action=self._sequence,action_hash=digest)
             return self._emit_ready()
         if _is_observation(ev):
+            if ev.get('observation') in ('agent_state_changed', 'null', 'recall'):
+                return []  # lifecycle notification, never a tool result
             cause = ev.get("cause")
             slot = self._pending.get(cause)
             pair_key=cause
