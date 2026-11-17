@@ -1,6 +1,10 @@
 
 # 交接文档：划分器（M1）
 
+## 32B 阶段摘要对照已准备（2026-11-17；待远程运行）
+
+此项与下方已完成的目的标签实验不同：复用32B AWQ权重和vLLM，运行6个完整stage＋7个短证据窗口，不训练、不改默认分段、不接账本。入口为 `python -m remote_pilots.openhands_smoke.claims_qwen32 run`，手册见 `remote_pilots/openhands_smoke/CLAIMS_QWEN32.md`。启动前重新核验权重、实际tokenizer的8192总预算（含2048输出），自动保存日志并停止自建服务。7B原始对照冻结在 `pilot/swe_claims_qwen32_comparison_v1/`。回传整个 `out/swe_claims_qwen32_v1/` 后才能评价语义、引用和覆盖；当前无32B摘要质量结果。
+
 ## Qwen2.5-32B-Instruct-AWQ 对照（2026-11-17；当前最新）
 
 完整记录见 `docs/QWEN32_AWQ_COMPARISON_2026-11-17.md`。官方 32B AWQ 固定 revision `5c7cb76a268fc6cfbb9c4777eb24ba6e27f9ee6c` 已下载并核验五个权重 SHA-256；RTX 5090 上 vLLM 0.34.0、单卡 8,192 token 服务运行完成并停止。复用同一 SWE v2 任务包、七类提示和原 7B 标签：训练 **935/935**、开发 **350/350** 的 32B 输出经审计全部有效；三条 JSON 键名笔误仅确定性修复字段名，原始失败保留。与既有 Codex AI 参考的一致为训练 **89/130**（7B 83/130）、开发 **54/70**（7B 45/70）；这不是人工准确率。对 10 条已分析开发任务、54 个边界，同协议即时 ±1 D0 F1 为结构 **0.5225**、结构＋7B 直接标签 **0.4906**、结构＋32B 直接标签 **0.5612**；32B 相对结构 +3.86 点的任务组区间 **[−2.44,+9.34]**，跨零。分别用两套 935 条教师标签训练约 457 KB 的 CPU 目的学生后，边界 F1 为 7B 学生 **0.4959**、32B 学生 **0.4952**，均未超过结构。结论：32B 教师有探索性语义和直接边界信号，当前轻量蒸馏未保住边界收益，不能替换在线默认划分器；下一步需新任务组和人工目的／误切审查。完整原始输出与模型文件在本机 Git 忽略目录 `eval/swe_purpose_qwen32_awq_v1/`、`vendor/models/Qwen2.5-32B-Instruct-AWQ/`。用户原有 `annotator_A.json` 改动及 `swe-ledger-sensitivity-results.tar.gz` 均未动。
