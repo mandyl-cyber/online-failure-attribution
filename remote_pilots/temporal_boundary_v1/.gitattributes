@@ -1,0 +1,3 @@
+data/*.gz binary
+data/*.npz binary
+data/*.json text eol=lf

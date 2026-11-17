@@ -194,6 +194,9 @@ class OnlineLedger:
     def _finish(self, incomplete=False):
         if self.finished:
             return
+        if self.boundary is not None and hasattr(self.boundary, 'finish'):
+            for event in self.boundary.finish(incomplete=incomplete):
+                self.boundary_events.append(dict(event, status='committed'))
         self.segmenter.finish()
         for stage in self._selected_stages(final=True):
             if not (self.jobs/f'{stage["stage_id"]:08d}.json').exists():

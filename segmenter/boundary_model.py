@@ -56,6 +56,9 @@ class OnlineBoundaryPredictor:
 
     @classmethod
     def load(cls, path):
+        if Path(path).suffix == '.json':
+            from .temporal_boundary import TemporalPredictor
+            return TemporalPredictor.load(path)
         return cls(joblib.load(path))
 
     def feed(self, step):

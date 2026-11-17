@@ -1,0 +1,7 @@
+# Prefer an existing working environment. No generative model weights required.
+torch>=2.7,<3
+numpy>=1.26,<3
+scipy>=1.12,<2
+scikit-learn>=1.4,<2
+joblib>=1.3,<2
+PyYAML>=6,<7

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "trajectories": 276,
+  "steps": 9600,
+  "omitted": "Only baseline_rows.text; all numeric/categorical LR features and vectors preserved",
+  "original_records_sha256": "c45dec6ed42aa261a429be3b6aafc451ae36cd2b9033aae175216002a50bc4f8",
+  "files": {
+    "records.json.gz": {
+      "sha256": "7a6720b4738b39bacc0231ae8961c7b91a64069e1104dcafd20ba6ac643633b2",
+      "bytes": 844552
+    },
+    "vectors.npz": {
+      "sha256": "c4c16a6d6099991b87e290b86a5bae99eca1cfecf851f7e17504c77bb9b7ebe9",
+      "bytes": 339245
+    },
+    "audit.json": {
+      "sha256": "4de5a2bf198b9add790c3d70fd0f6d57dca22625f09a1135c0939e38f566bd35",
+      "bytes": 12969
+    }
+  }
+}

@@ -138,6 +138,9 @@ class OnlineSegmenter:
         return row
 
     def finish(self) -> dict:
+        if self.supervised and hasattr(self.supervised, 'finish'):
+            for event in self.supervised.finish():
+                self._append('boundary_events', dict(event, status='committed', reason='stream_end'))
         self.tree.finish()
         for s in self.segmenters.values():
             s.finish()
