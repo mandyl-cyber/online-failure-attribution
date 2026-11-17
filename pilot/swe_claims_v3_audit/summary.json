@@ -1,0 +1,47 @@
+{
+  "status_counts": {
+    "ready": 5,
+    "failed": 1
+  },
+  "accepted_claims": 17,
+  "support_counts": {
+    "supported": 5,
+    "partial": 9,
+    "unsupported": 3
+  },
+  "key_coverage": {
+    "partial": 6,
+    "missing": 2,
+    "unavailable_failed_job": 4,
+    "full": 1
+  },
+  "auxiliary_coverage": {
+    "partial": 1
+  },
+  "seconds": {
+    "total": 20.521502373972908,
+    "median": 3.122415344492765,
+    "maximum": 5.766424506000476
+  },
+  "tokens": {
+    "prompt_tokens": 17961,
+    "completion_tokens": 1554,
+    "total_tokens": 19515
+  },
+  "reviewer_type": "AI",
+  "decision": "do_not_integrate_or_expand_yet",
+  "caveats": [
+    "Six selected historical development stages, not human accuracy or independent generalization.",
+    "Strict support combines all clauses, actual citations and epistemic source.",
+    "Reference points differ in granularity; coverage is diagnostic, not a population recall estimate.",
+    "v2/v21 use different inputs and success subsets: no direct improvement percentage."
+  ],
+  "returned_file_sha256": {
+    "e20deb2ffc98b903c54d2a9bd89ebfd672ac26d4766d84c204f2eb3a9ccd9ea9.json": "7ee31757b5c2e707de6d2796a4be914334caade710b8874fb679f3d53041d14b",
+    "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f.json": "b9262d5ee5bacb057d6c7b5b1d13b1711c21a827c5e5f516fc1e4b2cad6a5db1",
+    "d5c20c9fc5ce10fc372b9d01ea8746893887123bea886ba012ae4f0a8097adfd.json": "8e439705f55c9e7dcb3c1639ada32143834bdaa2795eba576ba9f07fcdc520ee",
+    "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0.json": "95792744d9f767d04ade8ad8986a40ead13e5bd1e501efbbffe76a942fe313a0",
+    "9bbb22ddb0589f912a7d4a36b3ffac4e5c4bd2d89e17a92001807c0943451341.json": "37103ec0e17705f834d753dcd3a1fe04b24ffe79c50c37e6b4968a090c464556",
+    "ba9d3ce2982007f8a943aaa193e1faa88753ee092489252e60a87e635d1b08aa.json": "291cd0ed97af94c9205573f49e321bb2fcc1672ae00513ea18ab5268d28a1406"
+  }
+}

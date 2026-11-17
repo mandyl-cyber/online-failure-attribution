@@ -1,0 +1,419 @@
+[
+  {
+    "job_id": "e20deb2ffc98b903c54d2a9bd89ebfd672ac26d4766d84c204f2eb3a9ccd9ea9",
+    "category": "planning",
+    "status": "ready",
+    "reviewed": true,
+    "reviewer_type": "AI",
+    "claims": [
+      {
+        "claim_id": "e20deb2ffc98b903c54d2a9bd89ebfd672ac26d4766d84c204f2eb3a9ccd9ea9:c1",
+        "text": "The task list has been updated with 8 items.",
+        "evidence_ids": [
+          "S1.observation.1.1",
+          "S2.observation.1.1",
+          "S3.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "supported",
+        "issue": "low_value",
+        "note": "更新8条事项有原文支持，但计数对风险背景价值低。"
+      },
+      {
+        "claim_id": "e20deb2ffc98b903c54d2a9bd89ebfd672ac26d4766d84c204f2eb3a9ccd9ea9:c2",
+        "text": "The task list includes steps such as reading and clarifying the issue description, running tests, exploring the codebase, creating a minimal reproduction script, analyzing the fix approach, implementing the fix, verifying the fix, and final review.",
+        "evidence_ids": [
+          "S2.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "source_mismatch",
+        "note": "所列计划内容有支持，且没有断言已执行；但按契约计划应为 agent_assertion。遗漏 ops.linspace/TensorFlow 对象。"
+      }
+    ],
+    "coverage": [
+      {
+        "point_id": "p1",
+        "priority": "key",
+        "text": "The displayed plan proposes inspecting ops.linspace and TensorFlow code, reproducing the issue, applying a minimal fix and verifying it; these are planned actions.",
+        "status": "partial",
+        "matched_claim_ids": [
+          "e20deb2ffc98b903c54d2a9bd89ebfd672ac26d4766d84c204f2eb3a9ccd9ea9:c2"
+        ],
+        "note": "保留流程但丢失具体目标对象，来源标签错误。"
+      }
+    ],
+    "failed_response_notes": []
+  },
+  {
+    "job_id": "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f",
+    "category": "edit_and_source_conditions",
+    "status": "ready",
+    "reviewed": true,
+    "reviewer_type": "AI",
+    "claims": [
+      {
+        "claim_id": "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f:c1",
+        "text": "The file /workspace/keras-team__keras__a243d91e43b4c43fe8d184b541b608b6ddd80f71/keras/src/backend/tensorflow/numpy.py has been edited to change the way `step` is calculated based on the `num` parameter.",
+        "evidence_ids": [
+          "S12.action.1.1",
+          "S12.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "supported",
+        "issue": "underspecified",
+        "note": "编辑及 step 计算发生变化有支持；缺少 dtype 和分支细节。"
+      },
+      {
+        "claim_id": "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f:c2",
+        "text": "The changes ensure that the `step` calculation uses `tf.cast` to maintain the correct data type consistency.",
+        "evidence_ids": [
+          "S12.action.1.1",
+          "S12.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "overclaim",
+        "note": "tf.cast 语法可见，但 ensure correct consistency 超出所引源码的直接报告；应限定为将除数转成 start.dtype。"
+      },
+      {
+        "claim_id": "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f:c3",
+        "text": "The edited file now correctly handles the `endpoint` parameter and ensures that the `step` is calculated accurately.",
+        "evidence_ids": [
+          "S12.action.1.1",
+          "S12.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "unsupported",
+        "issue": "unverified_correctness",
+        "note": "没有运行证据证明 endpoint 已被正确处理或 step 准确；把修改升级为正确性结论。"
+      },
+      {
+        "claim_id": "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f:c4",
+        "text": "The changes have been reviewed and are as expected, but further edits may be necessary.",
+        "evidence_ids": [
+          "S12.observation.1.2"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "unsupported",
+        "issue": "instruction_as_completed_fact",
+        "note": "原文是 Review the changes ... 命令式提示，并没有已经复核且符合预期的记录。"
+      },
+      {
+        "claim_id": "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f:c5",
+        "text": "The task list has been updated with 7 items, indicating ongoing work on the project.",
+        "evidence_ids": [
+          "S14.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "inference_and_low_value",
+        "note": "7条更新事实有支持，indicating ongoing work 是额外概括，不能从数量推出进展。"
+      }
+    ],
+    "coverage": [
+      {
+        "point_id": "p1",
+        "priority": "key",
+        "text": "The edit initializes the NaN step with start.dtype and casts the divisors to start.dtype in the displayed TensorFlow linspace branches.",
+        "status": "partial",
+        "matched_claim_ids": [
+          "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f:c1",
+          "d9c1dc78e1812a610f91ff833c9cc7c391efa29f9829e006ac1c940207849a7f:c2"
+        ],
+        "note": "概述改动，缺少NaN初始化及明确类型条件；含过度保证。"
+      },
+      {
+        "point_id": "p2",
+        "priority": "key",
+        "text": "The displayed ops implementation passes axis to the backend; its documentation declares axis=0 by default and separately notes a Torch limitation.",
+        "status": "missing",
+        "matched_claim_ids": [],
+        "note": "完全未提 ops源码和 axis 默认/后端限定。"
+      }
+    ],
+    "failed_response_notes": []
+  },
+  {
+    "job_id": "d5c20c9fc5ce10fc372b9d01ea8746893887123bea886ba012ae4f0a8097adfd",
+    "category": "verification_blocked",
+    "status": "failed",
+    "reviewed": true,
+    "reviewer_type": "AI",
+    "claims": [],
+    "coverage": [
+      {
+        "point_id": "p1",
+        "priority": "key",
+        "text": "The reproduction attempt stops during import with missing absl; the later environment check reports absl absent.",
+        "status": "unavailable_failed_job",
+        "matched_claim_ids": [],
+        "note": "协议失败，未生成可入账摘要。"
+      },
+      {
+        "point_id": "p2",
+        "priority": "key",
+        "text": "The subsequent TensorFlow reproduction stops with missing tensorflow, so this invocation does not verify linspace outputs.",
+        "status": "unavailable_failed_job",
+        "matched_claim_ids": [],
+        "note": "协议失败，未生成可入账摘要。"
+      },
+      {
+        "point_id": "p3",
+        "priority": "key",
+        "text": "Git status reports numpy.py modified and Dockerfile untracked.",
+        "status": "unavailable_failed_job",
+        "matched_claim_ids": [],
+        "note": "协议失败，未生成可入账摘要。"
+      },
+      {
+        "point_id": "p4",
+        "priority": "key",
+        "text": "Displayed requirement files list absl-py and tensorflow[and-cuda]~=2.16.1; this does not show installation.",
+        "status": "unavailable_failed_job",
+        "matched_claim_ids": [],
+        "note": "协议失败，未生成可入账摘要。"
+      }
+    ],
+    "failed_response_notes": [
+      "JSON中出现字符串 + 字符串，不是合法JSON；保留原失败，不修补计为成功。",
+      "原始文本把 absl present? False 写成 confirmed the presence，是否定反转。",
+      "原始文本声称 linspace imported successfully，但引用报告 tensorflow 缺失。",
+      "这些仅做失败响应定性审查，不计入17条合法claim的分母。"
+    ]
+  },
+  {
+    "job_id": "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0",
+    "category": "edit_failed_then_successful_example",
+    "status": "ready",
+    "reviewed": true,
+    "reviewer_type": "AI",
+    "claims": [
+      {
+        "claim_id": "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c1",
+        "text": "The file /workspace/prettier__prettier__6e68f7495fba705c4d1e58e63efb5a41dea2df7d/src/printer.js was edited to include inline decorators for class methods.",
+        "evidence_ids": [
+          "S27.action.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "attempt_as_completed_and_source",
+        "note": "只引编辑动作便写 was edited；完整输入有回执但此条未引。agent_assertion 标签不能替代执行确认。"
+      },
+      {
+        "claim_id": "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c2",
+        "text": "The changes in /workspace/prettier__prettier__6e68f7495fba705c4d1e58e63efb5a41dea2df7d/src/printer.js were reviewed, but further edits may be required.",
+        "evidence_ids": [
+          "S27.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "unsupported",
+        "issue": "instruction_as_completed_fact",
+        "note": "工具要求复核，未报告实际已复核。"
+      },
+      {
+        "claim_id": "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c3",
+        "text": "Running a test script using Node.js resulted in an exit code of 1 due to syntax errors and command not found issues.",
+        "evidence_ids": [
+          "S28.observation.1.1",
+          "S28.observation.1.2"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "supported",
+        "issue": "incomplete_detail",
+        "note": "引文包含 Node.js 运行堆栈、shell语法/命令错误和 exit 1；未保留 TypeError 细节。这里视为本次失败的概述，不视为根因诊断。"
+      },
+      {
+        "claim_id": "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c4",
+        "text": "The task list was updated with 8 items after the coding stage.",
+        "evidence_ids": [
+          "S29.observation.1.1",
+          "S30.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "temporal_scope",
+        "note": "更新8条有支持，但发生在阶段内部，after the coding stage 的阶段完成表述不受支持。"
+      },
+      {
+        "claim_id": "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c5",
+        "text": "After correcting the syntax errors, running the test script using Node.js resulted in an exit code of 0.",
+        "evidence_ids": [
+          "S31.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "missing_action_and_causal_overreach",
+        "note": "所引输出支持 exit 0；未引用前后动作，不能据此断言纠正了语法错误，也遗漏具体 babylon 示例及装饰器输出。"
+      },
+      {
+        "claim_id": "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c6",
+        "text": "The task list was updated with 4 items after the final step of the coding stage.",
+        "evidence_ids": [
+          "S32.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "temporal_scope_and_low_value",
+        "note": "步骤32更新4条有支持；更新本身就是最后步骤的观察，不是另有证据的阶段结束后事件。"
+      }
+    ],
+    "coverage": [
+      {
+        "point_id": "p1",
+        "priority": "key",
+        "text": "The MethodDefinition edit adds printing of nonempty decorators before the static modifier and method.",
+        "status": "partial",
+        "matched_claim_ids": [
+          "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c1"
+        ],
+        "note": "缺少条件和相对 static 的顺序，引用也不完整。"
+      },
+      {
+        "point_id": "p2",
+        "priority": "key",
+        "text": "The node -e attempt reports shell errors and a text.startsWith TypeError with exit 1.",
+        "status": "partial",
+        "matched_claim_ids": [
+          "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c3"
+        ],
+        "note": "保留失败和exit 1，未保留TypeError。"
+      },
+      {
+        "point_id": "p3",
+        "priority": "key",
+        "text": "The subsequent heredoc example using babylon prints the shown OrderLine decorators inline and exits 0.",
+        "status": "partial",
+        "matched_claim_ids": [
+          "690e9bd24c9b2b49f2c60be71ded0c3f409eaffd912186fa06d9a839575d06d0:c5"
+        ],
+        "note": "只有exit 0，未保留具体示例与输出范围。"
+      }
+    ],
+    "failed_response_notes": []
+  },
+  {
+    "job_id": "9bbb22ddb0589f912a7d4a36b3ffac4e5c4bd2d89e17a92001807c0943451341",
+    "category": "type_edit",
+    "status": "ready",
+    "reviewed": true,
+    "reviewer_type": "AI",
+    "claims": [
+      {
+        "claim_id": "9bbb22ddb0589f912a7d4a36b3ffac4e5c4bd2d89e17a92001807c0943451341:c1",
+        "text": "The file /workspace/mui__material-ui-29023/packages/mui-material/src/Tooltip/Tooltip.d.ts has been edited, changing the type of `popper` from `PopperProps` to `Partial<PopperProps>`.",
+        "evidence_ids": [
+          "S27.action.1.1",
+          "S27.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "supported",
+        "issue": "useful",
+        "note": "旧新类型和编辑回执均被引用，核心类型修改准确。"
+      },
+      {
+        "claim_id": "9bbb22ddb0589f912a7d4a36b3ffac4e5c4bd2d89e17a92001807c0943451341:c2",
+        "text": "The version of yarn installed is 1.22.10.",
+        "evidence_ids": [
+          "S28.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "missing_action",
+        "note": "输出只有1.22.10，不能单凭该引用确认是 yarn；配对动作提供了信息但未被引用。"
+      }
+    ],
+    "coverage": [
+      {
+        "point_id": "p1",
+        "priority": "key",
+        "text": "Tooltip.d.ts changes componentsProps.popper from PopperProps to Partial<PopperProps>, retaining TooltipComponentsPropsOverrides.",
+        "status": "full",
+        "matched_claim_ids": [
+          "9bbb22ddb0589f912a7d4a36b3ffac4e5c4bd2d89e17a92001807c0943451341:c1"
+        ],
+        "note": "核心从PopperProps到Partial<PopperProps>的修改准确；未逐字重复未变交集不扣分。"
+      },
+      {
+        "point_id": "p2",
+        "priority": "supporting",
+        "text": "The yarn version query prints 1.22.10.",
+        "status": "partial",
+        "matched_claim_ids": [
+          "9bbb22ddb0589f912a7d4a36b3ffac4e5c4bd2d89e17a92001807c0943451341:c2"
+        ],
+        "note": "版本内容正确，但引用缺少yarn命令以确认对象。"
+      }
+    ],
+    "failed_response_notes": []
+  },
+  {
+    "job_id": "ba9d3ce2982007f8a943aaa193e1faa88753ee092489252e60a87e635d1b08aa",
+    "category": "commit",
+    "status": "ready",
+    "reviewed": true,
+    "reviewer_type": "AI",
+    "claims": [
+      {
+        "claim_id": "ba9d3ce2982007f8a943aaa193e1faa88753ee092489252e60a87e635d1b08aa:c1",
+        "text": "The agent added changes to src/printer.js and committed them with a specific message.",
+        "evidence_ids": [
+          "S35.action.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "partial",
+        "issue": "attempt_as_completed_and_source",
+        "note": "git add/commit 命令只证明尝试，完成应引观察；下一条已有成功记录，此条还重复且无消息内容。"
+      },
+      {
+        "claim_id": "ba9d3ce2982007f8a943aaa193e1faa88753ee092489252e60a87e635d1b08aa:c2",
+        "text": "The commit was successful and resulted in changes to one file, adding 20 lines and removing 1 line.",
+        "evidence_ids": [
+          "S35.observation.1.1"
+        ],
+        "reviewed": true,
+        "reviewer_type": "AI",
+        "support": "supported",
+        "issue": "useful",
+        "note": "提交回执明确1文件、20插入、1删除和退出0；没有升级为功能验证。"
+      }
+    ],
+    "coverage": [
+      {
+        "point_id": "p1",
+        "priority": "key",
+        "text": "Git reports commit f2ded26 with one file changed, 20 insertions and one deletion.",
+        "status": "partial",
+        "matched_claim_ids": [
+          "ba9d3ce2982007f8a943aaa193e1faa88753ee092489252e60a87e635d1b08aa:c2"
+        ],
+        "note": "保留提交成功和改动计数，未保留commit hash。"
+      },
+      {
+        "point_id": "p2",
+        "priority": "key",
+        "text": "The commit message describes inline class-member decorators; its description alone does not verify runtime correctness.",
+        "status": "missing",
+        "matched_claim_ids": [],
+        "note": "没有保留提交消息的具体意图。"
+      }
+    ],
+    "failed_response_notes": []
+  }
+]
