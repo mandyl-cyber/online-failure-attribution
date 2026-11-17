@@ -1,4 +1,5 @@
 from pathlib import Path
+from collections import UserDict
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -24,10 +25,21 @@ class ComparisonTests(unittest.TestCase):
         self.assertTrue(all(m[0]['content']==wrapper.core.INSTRUCTION for m in tok.messages))
         self.assertFalse(any(c['fits'] for c in wrapper.token_preflight(Tokenizer(6145))))
 
-    def test_refuse_non_token_list(self):
+    def test_mapping_counts_tokens_not_mapping_keys(self):
         tok=Tokenizer(1)
-        tok.apply_chat_template=lambda *args,**kwargs: {'input_ids':[1]}
-        with self.assertRaises(ValueError): wrapper.token_preflight(tok)
+        tok.apply_chat_template=lambda *args,**kwargs: UserDict(input_ids=[[1]*6145], attention_mask=[[1]*6145])
+        checks=wrapper.token_preflight(tok)
+        self.assertTrue(all(c['input_tokens']==6145 and not c['fits'] for c in checks))
+
+    def test_tensor_and_single_batch(self):
+        class Tensor:
+            def tolist(self): return [[4,5,6]]
+        self.assertEqual(wrapper.token_ids({'input_ids':Tensor()}),[4,5,6])
+        self.assertEqual(wrapper.token_ids([4,5,6]),[4,5,6])
+
+    def test_refuse_malformed_or_multiple_sequences(self):
+        for value in ({'attention_mask':[1]}, [[1],[2]], [], [True], ['1'], [-1], 'text'):
+            with self.subTest(value=value), self.assertRaises(ValueError): wrapper.token_ids(value)
 
     def test_weight_mismatch_not_silent(self):
         with tempfile.TemporaryDirectory() as tmp:

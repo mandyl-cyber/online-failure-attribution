@@ -1,5 +1,7 @@
 """Run the frozen 6+7 claim requests using the existing local 32B AWQ installation."""
 import argparse
+from collections.abc import Mapping
+from numbers import Integral
 import hashlib
 import json
 import os
@@ -62,6 +64,22 @@ def check_inputs():
     return protocol, baseline
 
 
+def token_ids(value):
+    """Normalize one sequence, including Transformers BatchEncoding and tensors."""
+    if isinstance(value, Mapping):
+        if 'input_ids' not in value:
+            raise ValueError('tokenizer mapping lacks input_ids')
+        value = value['input_ids']
+    if hasattr(value, 'tolist'):
+        value = value.tolist()
+    if isinstance(value, (list, tuple)) and len(value) == 1 and isinstance(value[0], (list, tuple)):
+        value = value[0]
+    if not isinstance(value, (list, tuple)) or not value or any(
+            isinstance(x, bool) or not isinstance(x, Integral) or x < 0 for x in value):
+        raise ValueError('unexpected tokenizer input_ids: expected one nonempty integer sequence')
+    return list(value)
+
+
 def token_preflight(tokenizer, context_limit=8192):
     checks = []
     for arm, root in PACKS.items():
@@ -69,9 +87,8 @@ def token_preflight(tokenizer, context_limit=8192):
         for row in pilot.rows_at(root / 'development.jsonl'):
             messages = [dict(role='system', content=core.INSTRUCTION),
                         dict(role='user', content=core.encoded(row['request']).decode('utf-8'))]
-            ids = tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=True)
-            if not isinstance(ids, list) or any(not isinstance(x, int) for x in ids):
-                raise ValueError('unexpected tokenizer output')
+            ids = token_ids(tokenizer.apply_chat_template(
+                messages, add_generation_prompt=True, tokenize=True, return_dict=False))
             checks.append(dict(arm=arm, job_id=row['job_id'], input_tokens=len(ids),
                                output_budget=output_budget, fits=len(ids)+output_budget<=context_limit))
     return checks

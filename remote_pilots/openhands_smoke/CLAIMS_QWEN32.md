@@ -23,6 +23,8 @@ git pull --ff-only
 
 先逐个核验五个权重SHA-256，再用实际本地tokenizer检查所有请求的输入加输出预算。任一超限则保存 `preflight.json` 并停止，不裁剪、不降输出预算。注意原目的实验输出预算为256；本轮为2048，不能套用先前预检结果。
 
+预检兼容 token 列表、BatchEncoding/input_ids 映射和单批张量返回，不以映射字段数充当 token 数。如果旧版本报 `unexpected tokenizer output`，拉取修复后用 `--out out/swe_claims_qwen32_v1_tokenfix` 重跑，保留原失败目录；旧目录的代码指纹不同，不能直接复用。
+
 即使部分摘要格式/引用失败，也继续完成另一组。结束后自动停止本脚本启动的服务进程组，保留日志；其他服务不受影响。不使用逐步LLM分段，不更改默认划分器或账本。
 
 ## 回传
