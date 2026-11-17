@@ -78,6 +78,20 @@ def preflight(root,model_path,context,out):
     print(dict(total_pairs=len(pairs),eligible_pairs=sum(pairs.values()),report=str(out/'preflight.json')))
 
 
+def check_service(base_url,model):
+    """Fail before reserving jobs; model discovery does not prove generation health."""
+    try:
+        with urllib.request.urlopen(base_url.rstrip('/')+'/models',timeout=10) as response:
+            raw=response.read(100001)
+        if len(raw)>100000: raise ValueError('oversize model listing')
+        listing=core.strict_json(raw.decode())
+        if model not in {item['id'] for item in listing['data']}:
+            raise ValueError('requested model not advertised: '+model)
+    except Exception as exc:
+        raise RuntimeError('Model service unavailable or incompatible at '+base_url+
+                           '; start the 7B service before running. No jobs reserved. '+str(exc)) from exc
+
+
 def run(root,out,check_path,base_url,model):
     protocol,rows,requests=load(root); pre=io.read(check_path)
     if pre['request_sha256']!=protocol['requests_sha256'] or pre['input_sha256']!=protocol['input_sha256']:
@@ -91,6 +105,11 @@ def run(root,out,check_path,base_url,model):
     config=dict(model=model,base_url=base_url,preflight_sha256=core.digest(check_path.read_bytes()),
                 requests_sha256=protocol['requests_sha256'],review_sha256=core.digest((root/'review.json').read_bytes()),
                 runner_sha256=core.digest(Path(__file__).read_bytes().replace(b'\r\n',b'\n')))
+    if any(pre['pair_eligible'][r['job_id']] and reference[r['job_id']]['reviewed'] is True
+           and reference[r['job_id']]['input_complete'] is True
+           and reference[r['job_id']]['reviewer_type'] in ('AI','human')
+           and not (out/(r['job_id']+'_'+r['variant']+'.json')).exists() for r in requests):
+        check_service(base_url,model)
     out.mkdir(parents=True,exist_ok=True)
     if (out/'config.json').exists() and io.read(out/'config.json')!=config: raise ValueError('run config changed')
     io.save(out/'config.json',config)

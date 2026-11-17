@@ -20,6 +20,20 @@ python -m remote_pilots.openhands_smoke.seal_claim_diagnostic preflight \
 
 ## 第二步：首批已审核配对推理
 
+首次回传的 `seal_claim_run_v3` 中 16 次请求均为 Connection refused，零模型响应；输入包与冻结版本一致。此运行只反映服务不可达，不能评估摘要。更新后的脚本在创建任务结果前访问 `/v1/models` 并检查模型名，失败立即退出。该检查仅确认服务发现，不保证随后生成成功。
+
+如服务尚未启动，在独立终端运行并保持终端打开：
+
+```bash
+conda activate agentforesight
+cd ~/online-failure-attribution
+python remote_pilots/qwen_tool_server/server.py \
+  --model-path /home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 \
+  --model-name qwen-local --port 30001 --context-limit 32768
+```
+
+等服务启动后，在另一个终端执行 `curl --fail --max-time 10 http://127.0.0.1:30001/v1/models`，确认存在 qwen-local。保留原失败目录，重跑时使用新的 `--out out/seal_claim_run_v3_retry1`，预检文件可复用。旧失败结果不会被覆盖或自动重试。
+
 只有确认现有 7B 服务使用相同 tokenizer、模板和上下文预算后执行。服务 URL 沿用 30001。实际最多 16 次模型调用，具体取决于两个提示是否都能容纳；剩余请求记为 pending_reference 或 blocked_input，不算模型推理失败。
 
 ```bash

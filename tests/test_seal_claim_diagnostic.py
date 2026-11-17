@@ -4,11 +4,31 @@ import tempfile
 from pathlib import Path
 import unittest
 from unittest.mock import patch
+from io import BytesIO
+from urllib.error import URLError
 from remote_pilots.openhands_smoke import seal_claim_diagnostic as pilot
 from remote_pilots.openhands_smoke.repair_seal_claim_inputs import full_calls
 
 
 class PilotTests(unittest.TestCase):
+    def test_service_model_identity(self):
+        with patch.object(pilot.urllib.request,'urlopen',return_value=BytesIO(b'{"data":[{"id":"qwen-local"}]}')):
+            pilot.check_service('http://localhost:30001/v1','qwen-local')
+        with patch.object(pilot.urllib.request,'urlopen',return_value=BytesIO(b'{"data":[{"id":"wrong"}]}')):
+            with self.assertRaises(RuntimeError): pilot.check_service('http://localhost:30001/v1','qwen-local')
+
+    def test_unavailable_service_reserves_no_jobs(self):
+        protocol,rows,_=pilot.load(pilot.ROOT)
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'preflight.json';out=Path(directory)/'run'
+            pilot.io.save(path,dict(request_sha256=protocol['requests_sha256'],input_sha256=protocol['input_sha256'],
+                                   pair_eligible={j:True for j in rows}))
+            with patch.object(pilot.urllib.request,'urlopen',side_effect=URLError('Connection refused')) as request:
+                with self.assertRaisesRegex(RuntimeError,'No jobs reserved'):
+                    pilot.run(pilot.ROOT,out,path,'http://localhost:1/v1','qwen-local')
+                self.assertEqual(request.call_count,1)
+            self.assertFalse(out.exists())
+
     def test_pack_pairing_and_recovery(self):
         _,rows,requests=pilot.load(pilot.ROOT)
         self.assertEqual((len(rows),len(requests)),(24,48))
