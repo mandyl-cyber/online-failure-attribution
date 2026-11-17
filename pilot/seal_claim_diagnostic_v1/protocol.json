@@ -1,0 +1,31 @@
+{
+  "status": "prepared_only_not_run",
+  "stages": 24,
+  "requests": 48,
+  "instruction_sha256": {
+    "baseline": "78fae6b6a889e6a74fed0969f825458eb3b6035412a7356a10fb2f03089b38fe",
+    "evidence_first": "9ceee2a4558aeb34c643cb1bdf07e5f7dac12fa179e1d6242b8500e3ccfeda79"
+  },
+  "requests_sha256": "b1086ee3330986cecc92922f4e717f106695d8d3f71ae18e1d45d00931d37765",
+  "selection": "one short/median/long stage per train/dev task group, rotating sorted group order",
+  "limits": {
+    "temperature": 0,
+    "max_output_tokens": 2048,
+    "no_silent_truncation": true
+  },
+  "evaluation": [
+    "structural_validity",
+    "severe_factual_errors",
+    "source_correctness",
+    "citation_sufficiency",
+    "required_point_coverage",
+    "output_tokens",
+    "latency"
+  ],
+  "caveats": [
+    "Seen-task diagnostic only; no independent holdout claim.",
+    "Gold stage inputs isolate extraction; online-stage robustness remains untested.",
+    "AI review is not human gold; reference points and judgments are pending.",
+    "Prompt experiment only, not a guarantee of semantic verification."
+  ]
+}
