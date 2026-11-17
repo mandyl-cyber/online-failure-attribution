@@ -19,18 +19,24 @@ def load(root):
     byid={r['job_id']:r for r in rows}
     if len(byid)!=len(rows): raise ValueError('duplicate inputs')
     for row in rows: core.verify_row(row)
+    variants=protocol.get('variants',['baseline','evidence_first'])
+    if len(variants)!=2 or len(set(variants))!=2: raise ValueError('expected two distinct arms')
     seen=set()
     for r in requests:
         key=(r['job_id'],r['variant'])
         if key in seen: raise ValueError('duplicate request')
         seen.add(key)
         row=byid[r['job_id']]
+        expected_input=row['request']
+        if protocol.get('input_transform')=='source_roles_v1' and r['variant']=='source_typed':
+            from segmenter.claim_source_input import render
+            expected_input=render(row)
         if (r['input_sha256']!=row['input_sha256'] or
-            r['messages'][1]!=dict(role='user',content=core.encoded(row['request']).decode()) or
+            r['messages'][1]!=dict(role='user',content=core.encoded(expected_input).decode()) or
             r['messages'][0]['role']!='system' or len(r['messages'])!=2 or
             core.digest(r['messages'][0]['content'].encode())!=protocol['instruction_sha256'][r['variant']]):
             raise ValueError('request does not match frozen input/instruction')
-    if seen!={(j,v) for j in byid for v in ('baseline','evidence_first')}: raise ValueError('unpaired requests')
+    if seen!={(j,v) for j in byid for v in variants}: raise ValueError('unpaired requests')
     return protocol,byid,requests
 
 
@@ -155,7 +161,7 @@ def run(root,out,check_path,base_url,model):
             print(r['variant'],result['status'],flush=True)
     counts=Counter(io.read(out/(r['job_id']+'_'+r['variant']+'.json'))['status'] for r in requests)
     io.save(out/'summary.json',dict(counts=dict(counts),total_requests=len(requests),semantic_quality='pending AI review',
-        caution='Only reviewed, token-eligible pairs called; report selection coverage. Not 24-stage quality.'))
+        caution='Only reviewed, token-eligible pairs called; report selected-stage count and skip coverage, not population accuracy.'))
     print(dict(counts))
 
 
