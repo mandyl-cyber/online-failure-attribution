@@ -15,6 +15,8 @@ from __future__ import annotations
 
 import json
 import re
+import hashlib
+from copy import deepcopy
 from collections import OrderedDict
 from pathlib import Path
 from typing import Any, Iterable, Optional
@@ -50,8 +52,11 @@ def _s(x: Any) -> str:
         return ""
     if isinstance(x, str):
         return x
-    if isinstance(x, list):   # content parts
-        return "\n".join(_s(p.get("text") if isinstance(p, dict) else p) for p in x)
+    if isinstance(x, list):
+        if x and all(isinstance(p,dict) and p.get('type') in ('text','input_text','output_text')
+                     and isinstance(p.get('text'),str) for p in x):
+            return '\n'.join(p['text'] for p in x)
+        return json.dumps(x,ensure_ascii=False)
     try:
         return json.dumps(x, ensure_ascii=False)
     except Exception:
@@ -82,6 +87,10 @@ def build_step(action_ev: dict, obs_ev: Optional[dict], idx: int, rules: Rules) 
     st = Step(idx=idx, role=action_ev.get("source") or "agent", thought=thought, tool=kind)
     st.raw_ref = {"action_id": action_ev.get("id"), "observation_id": (obs_ev or {}).get("id")}
     a = st.attrs
+    # Keep public arguments alongside the human-readable action rendering.
+    # This is evidence, not instructions or a semantic success assertion.
+    a['public_action_args'] = deepcopy({k:v for k,v in args.items()
+                                       if k not in ('thought','_handoff_before')})
     if kind == 'run':
         a['is_input'] = args.get('is_input')
         a['terminal_session'] = args.get('session_id', args.get('terminal_id', 'default'))
@@ -152,7 +161,7 @@ def build_step(action_ev: dict, obs_ev: Optional[dict], idx: int, rules: Rules) 
         st.action = f"delegate {_s(args.get('agent'))}: {_s(args.get('inputs'))}"
     elif kind == "task_tracking":
         st.tool_class = ToolClass.PLAN
-        st.action = _s(args.get("task_list")) or _s(args)
+        st.action = _s({k:v for k,v in args.items() if k not in ('thought','_handoff_before')})
     else:
         st.tool_class = ToolClass.EXEC if kind in ("mcp", "call_tool_mcp") else ToolClass.OTHER
         st.action = _s(args) if args else _s(action_ev.get("message"))
@@ -188,6 +197,10 @@ class OpenHandsStreamAdapter:
         self.task: str = ""
         self._pending: "OrderedDict[Any, list]" = OrderedDict()   # action id -> [action_ev, obs_ev, done]
         self._auto = 0
+        self._seen = {}
+        self._sequence = 0
+        self._arrivals = {}
+        self.diagnostics = []
 
     def _emit_ready(self, force: bool = False) -> list[Step]:
         out = []
@@ -196,13 +209,43 @@ class OpenHandsStreamAdapter:
             if not (done or force):
                 break
             self._pending.popitem(last=False)
-            out.append(build_step(act, obs, self.next_idx, self.rules))
+            step=build_step(act, obs, self.next_idx, self.rules)
+            arrival=self._arrivals.pop(key)
+            flags=[]
+            if obs is None and act.get('action') not in NO_OBS_ACTIONS:
+                flags.append('missing_observation_at_flush')
+            if obs is not None:
+                extras=obs.get('extras') or {}
+                if obs.get('truncated') is True or (isinstance(extras,dict) and extras.get('truncated') is True):
+                    flags.append('upstream_truncation_declared')
+                if re.search(r'(?i)(output (?:has been )?truncated|\[.*?truncated.*?\])',step.observation):
+                    flags.append('possible_truncation_marker')
+            step.attrs['input_integrity']=dict(version=2,action_received_seq=arrival['action'],
+                observation_received_seq=arrival.get('observation'),available_at_seq=self._sequence,
+                sequence_basis='adapter feed order, not native time or step id',
+                pairing=arrival.get('pairing','not_required' if act.get('action') in NO_OBS_ACTIONS else 'missing'),
+                issues=flags,observation_complete=False if flags else None,
+                action_event_sha256=arrival['action_hash'],observation_event_sha256=arrival.get('observation_hash'))
+            out.append(step)
             self.next_idx += 1
         return out
 
     def feed(self, ev: dict) -> list[Step]:
         if not isinstance(ev, dict):
             return []
+        self._sequence+=1
+        digest=hashlib.sha256(json.dumps(ev,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+        event_id=ev.get('id')
+        if event_id is not None:
+            identity=(type(event_id).__name__,str(event_id))
+            if identity in self._seen:
+                if self._seen[identity]!=digest:
+                    self.diagnostics.append(dict(kind='conflicting_duplicate',event_id=event_id,received_seq=self._sequence))
+                    raise ValueError('Conflicting duplicate event ID: '+str(event_id))
+                self.diagnostics.append(dict(kind='duplicate_event',event_id=event_id,received_seq=self._sequence))
+                return []
+            self._seen[identity]=digest
+        ev=deepcopy(ev)
         if _is_action(ev):
             kind, src = ev["action"], ev.get("source")
             if kind in SKIP_ACTIONS:
@@ -227,17 +270,30 @@ class OpenHandsStreamAdapter:
             key = ev.get("id")
             if key is None:
                 self._auto += 1
-                key = f"auto{self._auto}"
+                key = ('adapter_auto', self._auto)
             self._pending[key] = [ev, None, kind in NO_OBS_ACTIONS]
+            self._arrivals[key]=dict(action=self._sequence,action_hash=digest)
             return self._emit_ready()
         if _is_observation(ev):
             cause = ev.get("cause")
             slot = self._pending.get(cause)
+            pair_key=cause
+            pairing='exact_cause'
             if slot is None and cause is None:   # 没有 cause：配给最早一个还没观察的动作
-                slot = next((s for s in self._pending.values() if not s[2]), None)
+                candidates=[(k,s) for k,s in self._pending.items() if not s[2]]
+                if len(candidates)>1:
+                    self.diagnostics.append(dict(kind='ambiguous_observation',event_id=event_id,received_seq=self._sequence))
+                    raise ValueError('Ambiguous observation without cause; multiple pending actions')
+                if candidates:
+                    pair_key,slot=candidates[0];pairing='single_pending_fallback'
             if slot is None:
+                self.diagnostics.append(dict(kind='unmatched_observation',event_id=event_id,cause=cause,received_seq=self._sequence))
                 return []                        # 环境自发的观察（agent_state_changed 等）
+            if slot[2]:
+                self.diagnostics.append(dict(kind='multiple_observations',event_id=event_id,cause=cause,received_seq=self._sequence))
+                raise ValueError('Multiple observations for one action require an explicit streaming adapter')
             slot[1], slot[2] = ev, True
+            self._arrivals[pair_key].update(observation=self._sequence,observation_hash=digest,pairing=pairing)
             return self._emit_ready()
         return []
 

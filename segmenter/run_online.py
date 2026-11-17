@@ -261,6 +261,12 @@ def cmd_follow(a) -> None:
                 break
     except KeyboardInterrupt:
         pass
+    finally:
+        if a.out:
+            diagnostic_dir=Path(a.out)
+            diagnostic_dir.mkdir(parents=True,exist_ok=True)
+            (diagnostic_dir/'input_diagnostics.json').write_text(
+                json.dumps(ad.diagnostics,ensure_ascii=False,indent=2),encoding='utf-8')
     for st in ad.flush():
         if not explicit_task:
             seg.task=ad.task
