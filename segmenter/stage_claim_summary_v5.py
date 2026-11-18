@@ -36,3 +36,24 @@ def validate(response,row):
     for i,claim in enumerate(checked["claims"],1):
         claim["claim_id"] = f'{row["job_id"]}:c{i}'
     return checked
+
+
+def validate_partial(response, row):
+    """Keep supported claims and expose rejected items without hiding incompleteness."""
+    verify_row(row)
+    if not isinstance(response, dict) or set(response) != {"claims"} or not isinstance(response["claims"], list):
+        raise ValueError("Expected an object with a claims list")
+    accepted = []
+    rejected = []
+    for index, raw in enumerate(response["claims"]):
+        try:
+            checked = validate({"claims":[raw]}, row)
+            accepted.extend(checked["claims"])
+        except (ValueError, KeyError, TypeError) as exc:
+            rejected.append(dict(index=index, claim=raw, error=str(exc)))
+    for index, claim in enumerate(accepted, 1):
+        claim["claim_id"] = f'{row["job_id"]}:c{index}'
+    from .stage_claim_facts import missing_critical_facts
+    return dict(claims=accepted, rejected_claims=rejected, incomplete=bool(rejected),
+                missing_critical_fact_ids=missing_critical_facts(accepted,row["observed_facts"]),
+                semantic_quality="pending_review")

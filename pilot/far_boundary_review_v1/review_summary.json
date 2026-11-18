@@ -1,0 +1,19 @@
+{
+  "reviewed": 40,
+  "categories": {
+    "environment_retry": 5,
+    "verification_transition": 5,
+    "plan_bookkeeping": 5,
+    "same_goal_exploration": 11,
+    "insufficient_context": 1,
+    "same_goal_iteration": 5,
+    "setup_exploration": 4,
+    "status_bookkeeping": 2,
+    "delivery_transition": 1,
+    "implementation_transition": 1
+  },
+  "prefix_supported": 0,
+  "prefix_unsupported": 30,
+  "prefix_uncertain": 10,
+  "limitations": "AI local-context review; retrospective gold labels unchanged."
+}

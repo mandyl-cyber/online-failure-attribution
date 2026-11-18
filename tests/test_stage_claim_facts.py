@@ -23,6 +23,19 @@ def claim(text, source_type='tool_observation', action=False):
 
 
 class FactTests(unittest.TestCase):
+    def test_partial_write_and_absence_expression(self):
+        from segmenter import stage_claim_summary_v5 as v5
+        row = v5.build(source("python -m pytest -q",
+            "No module named pytest\n[Command finished with exit code 1]"))
+        response = {"claims":[
+            claim("Executing python -m pytest failed due to the absence of the pytest module."),
+            claim("The test suite ran successfully.")]}
+        checked = v5.validate_partial(response,row)
+        self.assertEqual(len(checked["claims"]),1)
+        self.assertEqual(len(checked["rejected_claims"]),1)
+        self.assertTrue(checked["incomplete"])
+        self.assertEqual(checked["missing_critical_fact_ids"],[])
+
     def test_zero_tests_is_not_pass(self):
         row = v4.build(source('python tests/runtests.py -k target',
                               'Found 0 test(s).\nRan 0 tests in 0.000s\nOK\n[Command finished with exit code 0]'))

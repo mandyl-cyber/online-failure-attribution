@@ -130,7 +130,7 @@ def missing_critical_facts(claims, facts):
     """Return unmentioned high-risk observations; never mutate claims to hide them."""
     patterns = {
         'interrupted': re.compile(r'(?i)interrupt|ctrl\+c|exit\s*(?:code\s*)?130|\^C'),
-        'verification_unavailable': re.compile(r'(?i)command.{0,25}not (?:be )?found|no module named|unavailable|missing pytest|pytest.{0,50}not (?:be )?found'),
+        'verification_unavailable': re.compile(r'(?i)command.{0,25}not (?:be )?found|no module named|unavailable|missing pytest|pytest.{0,50}not (?:be )?found|absence of.{0,30}pytest.{0,15}module'),
         'zero_tests': re.compile(r'(?i)\b(?:0|zero|no)\s+tests?\b'),
         'verification_failed': re.compile(r'(?i)fail|error|exit\s*(?:code\s*)?[1-9]\d*'),
         'runtime_exception': re.compile(r'(?i)exception|error|traceback'),
