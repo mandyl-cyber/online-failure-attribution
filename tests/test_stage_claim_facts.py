@@ -23,6 +23,13 @@ def claim(text, source_type='tool_observation', action=False):
 
 
 class FactTests(unittest.TestCase):
+    def test_inline_script_scoped_execution(self):
+        row = v4.build(source("python - << 'PY'\nprint('done')\nPY",
+                              "done\n[Command finished with exit code 0]"))
+        self.assertEqual(len(v4.validate({"claims":[claim("The pickling tests were executed successfully.")]},row)["claims"]),1)
+        with self.assertRaises(ValueError):
+            v4.validate({"claims":[claim("All tests passed.")]},row)
+
     def test_partial_write_and_absence_expression(self):
         from segmenter import stage_claim_summary_v5 as v5
         row = v5.build(source("python -m pytest -q",

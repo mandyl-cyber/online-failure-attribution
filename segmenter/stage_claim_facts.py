@@ -81,6 +81,8 @@ def extract(source, evidence_map=None):
         elif obs and 'Traceback' in obs and EXCEPTION.search(obs):
             name = EXCEPTION.search(obs).group(1)
             kind, summary = 'runtime_exception', f'The recorded command raised {name}; success is not established.'
+        elif obs and exit_code == 0 and re.search(r'(?i)^\s*python\S*\s+-\s*<<',action):
+            kind, summary = 'script_exit_zero', 'The inline script exited with code zero within its recorded scope.'
         elif obs and re.search(r'(?i)\bfile\s+[^\n]{1,250}\s+has been edited\b', obs):
             kind, summary = 'edit_acknowledged', 'The tool acknowledged a file edit; this does not establish a working fix.'
         elif obs and READ.search(action):
@@ -116,6 +118,12 @@ def guard_claim(claim, evidence_map, facts):
         return None
     if claim['source'] != 'tool_observation':
         return 'unqualified_success_assertion'
+    if (re.search(r'(?i)\b(?:executed|ran) successfully\b',text)
+            and not re.search(r'(?i)\b(?:suite|all tests|patch|fix|passed)\b',text)
+            and any(f['type']=='script_exit_zero' and any(
+                eid in cited and evidence_map[eid]['field']=='observation' for eid in f['evidence_ids'])
+                for f in facts)):
+        return None
     supporting = [fact for fact in facts if fact['type'] == 'verification_pass'
                   and any(eid in cited and evidence_map[eid]['field'] == 'observation'
                           for eid in fact['evidence_ids'])]
