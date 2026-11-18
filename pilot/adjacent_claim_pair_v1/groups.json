@@ -1,0 +1,416 @@
+[
+  {
+    "group_id": "x004",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-12406-31e1b541",
+    "task": "django__django-12406",
+    "envelope": [
+      40,
+      43
+    ],
+    "old_cuts": [
+      4,
+      6,
+      9,
+      13,
+      40,
+      41,
+      44,
+      46
+    ],
+    "new_cuts": [
+      4,
+      6,
+      9,
+      13,
+      40,
+      44,
+      46
+    ],
+    "gold_boundaries": [
+      6,
+      13,
+      21,
+      34,
+      44,
+      45
+    ],
+    "arms": {
+      "original": [
+        "eed1881cadc8cce36ba7f17a7a6215fe084811796a46d4a9e4239e1903871e29",
+        "450dc10c73515b29d0380145b5065189be04db84a1ffc1cec1d07c1ee64a20ed"
+      ],
+      "adjacent": [
+        "33cca360c3fbb04a5a1417b7b4188b46243f7bb87abccf8c5e672adf32c3d5a9"
+      ]
+    }
+  },
+  {
+    "group_id": "x011",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-15382-b02d3059",
+    "task": "django__django-15382",
+    "envelope": [
+      31,
+      35
+    ],
+    "old_cuts": [
+      6,
+      17,
+      31,
+      32,
+      36,
+      39,
+      40,
+      42,
+      46,
+      48
+    ],
+    "new_cuts": [
+      6,
+      17,
+      31,
+      36,
+      39,
+      40,
+      42,
+      46,
+      48
+    ],
+    "gold_boundaries": [
+      6,
+      17,
+      27,
+      39,
+      42
+    ],
+    "arms": {
+      "original": [
+        "d475e36efb63a729c9858877af9be60d56aa8eb0e324fd3488294988e2f3dfec",
+        "514e8e2283ecd04a7af724416802f24e223d7458e167ee99ecdee98b6b75a5a1"
+      ],
+      "adjacent": [
+        "833664793686057a69689385a796c01030a00751b3c2be7970387297c10978d8"
+      ]
+    }
+  },
+  {
+    "group_id": "x012",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-15563-19924064",
+    "task": "django__django-15563",
+    "envelope": [
+      44,
+      46
+    ],
+    "old_cuts": [
+      34,
+      38,
+      44,
+      45,
+      47
+    ],
+    "new_cuts": [
+      34,
+      38,
+      44,
+      47
+    ],
+    "gold_boundaries": [
+      8,
+      12,
+      19,
+      24,
+      30,
+      40,
+      44
+    ],
+    "arms": {
+      "original": [
+        "a4bd8607e6517f8825e57184f0a08887dde32c25c1bc2a5c34fff97bb164b5c1",
+        "45c3cd98323a0533e7cbb754e83b10b2358b5b9c0d884a3affc7bdb63c35d75e"
+      ],
+      "adjacent": [
+        "8bfd0bb8784614acf1232d97f4eb5a175befd8e9222891278ebd4c1e4be399ed"
+      ]
+    }
+  },
+  {
+    "group_id": "x016",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-16032-20a5e8c7",
+    "task": "django__django-16032",
+    "envelope": [
+      22,
+      31
+    ],
+    "old_cuts": [
+      22,
+      23,
+      32,
+      34,
+      40,
+      45,
+      47
+    ],
+    "new_cuts": [
+      22,
+      27,
+      32,
+      34,
+      40,
+      45,
+      47
+    ],
+    "gold_boundaries": [
+      22,
+      28,
+      34
+    ],
+    "arms": {
+      "original": [
+        "004e3a710e81a66aee725e3315b6868cda6f1fae75d92901b731ab52d5f327c4",
+        "1c5f0a52e3c862d8b986d1604049e5e916ab1b83ab18db9ec4ba01f6cba08df5"
+      ],
+      "adjacent": [
+        "6a53a51920c4f9d48e32341a2369a435d5a476db8b2156accf1e9789e396f1b1",
+        "9674bf6aa0c8cd746ee06ebf1982031a44ef8bf08663063d58ec27f4c5f39f1e"
+      ]
+    }
+  },
+  {
+    "group_id": "x017",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-16631-025f3fd2",
+    "task": "django__django-16631",
+    "envelope": [
+      45,
+      46
+    ],
+    "old_cuts": [
+      4,
+      23,
+      25,
+      31,
+      34,
+      36,
+      40,
+      43,
+      45,
+      46
+    ],
+    "new_cuts": [
+      4,
+      23,
+      25,
+      31,
+      34,
+      36,
+      40,
+      43,
+      45
+    ],
+    "gold_boundaries": [
+      4,
+      17,
+      25,
+      36,
+      41
+    ],
+    "arms": {
+      "original": [
+        "9ae3789ecd18741f868e4214bb5a6f27b16004b16e6c51bdcd52cca0141bfdb8",
+        "a667dc020bb635caddf9dccdaef2f4c564a7f47727389bb718d1d3a81c5ab357"
+      ],
+      "adjacent": [
+        "cb1c0b1b7726c7d99d1a8f23ca114be22641d920170b3f611e6f9dc00074a291"
+      ]
+    }
+  },
+  {
+    "group_id": "x023",
+    "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-26342-77c050b8",
+    "task": "matplotlib__matplotlib-26342",
+    "envelope": [
+      35,
+      39
+    ],
+    "old_cuts": [
+      4,
+      27,
+      35,
+      36,
+      40,
+      44,
+      45,
+      48
+    ],
+    "new_cuts": [
+      4,
+      27,
+      35,
+      40,
+      44,
+      45,
+      48
+    ],
+    "gold_boundaries": [
+      4,
+      13,
+      27
+    ],
+    "arms": {
+      "original": [
+        "cf59e72a86e4365492aee477f534cb0345c4745282736b48e3b37a261ab9bdc8",
+        "ee9f1d1bff5acef4b010aa57ea294bb2d9e9f4394b396afabbd8896e3439ec9e"
+      ],
+      "adjacent": [
+        "d372f95122160c9691172dce2608d64da7c5ea83b99d5f9a039f41a0d5f7875b"
+      ]
+    }
+  },
+  {
+    "group_id": "x024",
+    "traj_id": "openhands-OpenAI__GPT-5-pydata__xarray-7229-fd493310",
+    "task": "pydata__xarray-7229",
+    "envelope": [
+      44,
+      45
+    ],
+    "old_cuts": [
+      4,
+      6,
+      8,
+      30,
+      32,
+      35,
+      41,
+      44,
+      45,
+      46
+    ],
+    "new_cuts": [
+      4,
+      6,
+      8,
+      30,
+      32,
+      35,
+      41,
+      44,
+      46
+    ],
+    "gold_boundaries": [
+      6,
+      8,
+      13,
+      23,
+      30,
+      32,
+      36,
+      46
+    ],
+    "arms": {
+      "original": [
+        "951fedba04f6e5e816cbd542b262acc233bdbd5b42bdeba6f5af8756b2ac3464",
+        "528f8667bb1d2721105545ffd959f00a74c19818a0cb8a65d2e8ac5363b456ae"
+      ],
+      "adjacent": [
+        "7dbe10d0792d1be8e53a201eb4c38857a6ed7ee2ab59526a6c52fff37a7118db"
+      ]
+    }
+  },
+  {
+    "group_id": "x032",
+    "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-160342-be2f227f",
+    "task": "microsoft__vscode-160342",
+    "envelope": [
+      38,
+      39
+    ],
+    "old_cuts": [
+      12,
+      20,
+      21,
+      27,
+      30,
+      38,
+      39
+    ],
+    "new_cuts": [
+      12,
+      20,
+      21,
+      27,
+      30,
+      38
+    ],
+    "gold_boundaries": [
+      21,
+      38
+    ],
+    "arms": {
+      "original": [
+        "190cc4b7dd2723639454bdc64d60b00826cc57dbb2815d987f314a1dfd520168",
+        "60d7e8e3f4147532a71e0fde5f90a25956478e067a8d89376611276f2e85c26e"
+      ],
+      "adjacent": [
+        "cfaae11472e89a9e28b77c08d264a9cb23cdd904c3af4c21c4914f4623483cb9"
+      ]
+    }
+  },
+  {
+    "group_id": "x035",
+    "traj_id": "openhands-OpenAI__GPT-5-prettier__prettier-6604-f6c47d03",
+    "task": "prettier__prettier-6604",
+    "envelope": [
+      31,
+      33
+    ],
+    "old_cuts": [
+      4,
+      7,
+      23,
+      24,
+      31,
+      32,
+      34,
+      40,
+      44,
+      51,
+      53,
+      57,
+      61,
+      62
+    ],
+    "new_cuts": [
+      4,
+      7,
+      23,
+      24,
+      31,
+      34,
+      40,
+      44,
+      51,
+      53,
+      57,
+      61,
+      62
+    ],
+    "gold_boundaries": [
+      4,
+      7,
+      9,
+      24,
+      26,
+      32,
+      40,
+      56
+    ],
+    "arms": {
+      "original": [
+        "9e156128f62d410a35e1fa56878dbf00c2b0fc9d7f314ab076aef62026ce54cd",
+        "d85db9ba3262ee47ca6665c2dedb3cf2b5300a2379fb69b51d85cf9e3926a41b"
+      ],
+      "adjacent": [
+        "19b3842e2fa312f4edafb3141e885d6b1c4462ba9b53a678669f2ce8b5f87251"
+      ]
+    }
+  }
+]

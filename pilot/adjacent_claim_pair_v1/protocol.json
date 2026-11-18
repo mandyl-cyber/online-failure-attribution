@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "experiment": "adjacent-stage-claim-pair",
+  "scope": "9 fold0 disagreements among 37 previously unused SWE tasks",
+  "model": "Qwen2.5-32B-Instruct-AWQ (same pinned remote weights for both arms)",
+  "claim_protocol": "stage-claim-summary-v3",
+  "instruction_sha256": "78fae6b6a889e6a74fed0969f825458eb3b6035412a7356a10fb2f03089b38fe",
+  "schema_sha256": "9014233bc2116c123d250549af62593c7e11aeec3deba28d236b2291f874032b",
+  "request_sha256": "b0901a010101d6fad14d47099903481df485b514a08d0635871a01c572fddfa6",
+  "groups_sha256": "0cad103089f3e9f99b6ae2368ba941cb2f2029308cb35ed0c4fb862e3eb0fa14",
+  "boundary_protocol_sha256": "63a915cfda49c08373100a31a69348fcf5e8e33d93618f393eeae8221ac3a5a6",
+  "boundary_result_sha256": "4054b910c0ad79f431a365e3a37d1f77e98f6fb3aa3cf8dbc1491a22b966ebc8",
+  "calls": 28,
+  "groups": 9,
+  "limits": {
+    "context_tokens": 8192,
+    "output_tokens": 2048,
+    "max_request_bytes": 100000,
+    "max_response_bytes": 1000000
+  },
+  "selection": "All fold0 changed tasks; minimal span between common boundaries enclosing changes. No claim-output selection.",
+  "comparison": "Same model/prompt/decoding. Compare fixed union of source steps, grouped into original vs adjacent sealed stages.",
+  "evaluation": [
+    "per-arm schema/provenance success including failures",
+    "claim-level support against cited evidence, AI review clearly labeled",
+    "key fact coverage over same union, reviewed before viewing outputs",
+    "unsupported completion/verification claims",
+    "calls, tokens, request latency, stage seal availability"
+  ],
+  "caveats": [
+    "No human gold semantic claim labels in this pack.",
+    "The nine groups share a previously evaluated boundary model selection.",
+    "Oversize groups must be excluded symmetrically after tokenizer preflight.",
+    "A single merged request can hit context limit when two old stages fit separately."
+  ],
+  "reference_points_sha256": "5eddf80f4ec777921bf931c178a8f2819d0262ade1f923ed2b61bd6ee65db72b",
+  "reference_provenance": "AI review of evidence before model output; selective, not human gold"
+}
