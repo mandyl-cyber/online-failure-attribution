@@ -92,6 +92,7 @@ def run(args):
     out = args.out
     out.mkdir(parents=True, exist_ok=True)
     config = dict(protocol_sha256=old.hash_file(args.inputs/'protocol.json'),
+                  instruction_sha256=v3.digest(v4.INSTRUCTION.encode('utf-8')),
                   requests_sha256=old.hash_file(args.inputs/'requests.jsonl'),
                   runner_sha256=old.hash_file(Path(__file__)),
                   v3_sha256=old.hash_file(Path(v3.__file__)),
