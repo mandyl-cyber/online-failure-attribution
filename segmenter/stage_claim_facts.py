@@ -23,10 +23,10 @@ NO_RUNNER = re.compile(r'(?i)(?:pytest:\s*command not found|no module named pyte
                        r'(?:npm|cargo|go):\s*command not found)')
 PYTEST_PASS = re.compile(r'(?m)^\s*\.+\s*\[100%\]')
 SUCCESS_TEXT = re.compile(r'(?i)\b(?:tests?|suite)\s+(?:\w+\s+){0,8}(?:pass(?:ed)?|succeed(?:ed)?|successful(?:ly)?)\b|'
-                          r'\ball\s+tests?\s+pass(?:ed)?\b|\b(?:fix|patch|change)\b.{0,35}\bverif(?:ied|y)\b')
+                          r'\ball\s+tests?\s+pass(?:ed)?\b|\b(?:fix|patch|change)\s+(?:(?:was|is|has been)\s+)?verified\b')
 TEST_ACTIVITY = re.compile(r'(?i)\b(?:tested|ran\s+tests?|executed\s+tests?)\b')
 QUALIFIED_ASSERTION = re.compile(r'(?i)\b(?:plan|agent|task list|notes|commit message)\b.{0,70}'
-                                 r'\b(?:says?|states?|asserts?|claims?|reports?|describes?)\b|'
+                                 r'\b(?:says?|states?|asserts?|claims?|reports?|describes?|notes?|indicates?)\b|'
                                  r'\b(?:according to|per)\s+(?:the\s+)?(?:plan|agent|task list|notes|commit message)\b')
 
 
@@ -133,7 +133,7 @@ def guard_claim(claim, evidence_map, facts):
                           for eid in fact['evidence_ids'])]
     if not supporting:
         return 'verification_success_without_observed_pass'
-    if re.search(r'(?i)\b(?:fix|patch|change)\b.{0,35}\bverif(?:ied|y)\b', text):
+    if re.search(r'(?i)\b(?:fix|patch|change)\s+(?:(?:was|is|has been)\s+)?verified\b', text):
         return 'patch_correctness_not_established'
     return None
 

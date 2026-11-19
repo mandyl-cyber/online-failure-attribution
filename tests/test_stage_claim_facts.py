@@ -23,6 +23,12 @@ def claim(text, source_type='tool_observation', action=False):
 
 
 class FactTests(unittest.TestCase):
+    def test_plan_titles_are_not_success_claims(self):
+        row=v4.build(source('{"command":"plan","task_list":[]}',"Task list has been updated."))
+        self.assertEqual(len(v4.validate({"claims":[claim(
+            "The task list was updated with Phase 6: Implement fix, Phase 7: Verify fix.",
+            "agent_assertion",True)]},row)["claims"]),1)
+
     def test_wrapped_pytest_and_direct_script(self):
         row = v4.build(source("bash -lc 'PYTHONPATH=src /opt/env/bin/python -bb -m pytest -q a.py'",
             "2 passed in 0.00s\nEXIT:0\n[Command finished with exit code 0]"))
