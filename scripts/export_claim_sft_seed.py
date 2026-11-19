@@ -6,6 +6,48 @@ from segmenter import stage_claim_summary_v5 as core
 
 # Each tuple identifies exact source steps and the fields supporting the reference.
 REFERENCES={
+"be9c3455":[
+("tool_observation","The perm_groups.py edit receipt replaces in-loop deletion with collecting indices and consistently filtering rep_blocks, num_blocks and blocks.",[(11,"observation")]),
+("agent_assertion","The plan marks reading done and repository testing in_progress while later listed phases remain todo.",[(12,"action")]),
+("tool_observation","The script reports DihedralGroup(18) order 36 and degree 18, and Sylow-2 subgroup order 4 for DihedralGroup(18) and DihedralGroup(50), then exits with code 0.",[(13,"observation")])],
+"9cefea22":[
+("tool_observation","The probe prints is_real=False for positive and negative infinity and I, and is_real=None for nan, then exits with code 0.",[(24,"observation")]),
+("tool_observation","The point.py edit receipt adds an is_infinite check to the numeric non-real coordinate rejection condition.",[(25,"observation")])],
+"eb076a47":[
+("tool_observation","The three targeted pytest commands for test_svg, test_polygon and test_do_poly_distance each show a passing dot at 100% and exit code 0.",[(26,"action"),(26,"observation"),(27,"action"),(27,"observation"),(28,"action"),(28,"observation")]),
+("tool_observation","The sympy/geometry/tests invocation shows passing dots at 100%, a dimension-change UserWarning in test_point, and exit code 0.",[(29,"action"),(29,"observation")])],
+"5ae84e44":[
+("tool_observation","The probe prints Point2D(1,2) for both evaluate(False) examples, catches the expected imaginary-coordinate ValueError, prints points with positive and negative infinity, and exits with code 0.",[(30,"observation")]),
+("tool_observation","Git reports commit 2dac3a5d31 changing point.py with 2 insertions and 1 deletion.",[(31,"observation")]),
+("agent_assertion","The final plan marks all phases done and reports geometry tests passing.",[(32,"action")])],
+"f6afc2ce":[
+("tool_observation","After removing tmp_repro_monitor.js, git status still lists monitorStack.js modified and Dockerfile untracked; git then reports commit 89c358b8 changing one file with 5 insertions and 5 deletions.",[(26,"observation"),(27,"observation")]),
+("agent_assertion","The commit message describes null guards for stack monitoring; the plan marks verification done and final review in_progress.",[(27,"action"),(28,"action")])],
+"1d57f599":[
+("tool_observation","The mergeIamTemplates.js edit receipt adds a warning for a truthy iamRoleStatements value that is not an array; the existing array branch still concatenates statements.",[(22,"observation")]),
+("tool_observation","The search finds iamRoleStatements references in mergeIamTemplates.test.js at lines 107 and 125.",[(24,"observation")]),
+("agent_assertion","The plan marks analysis and implementation done and verification in_progress.",[(25,"action")])],
+"69a92348":[
+("tool_observation","The verification script prints DependsOn=testKinesisStreamRoleLogicalId for the logical-ID case and DependsOn=[] for the ARN case, then exits with code 0.",[(26,"observation")]),
+("agent_assertion","The plan reports full-suite failures as environment-related and reports switching to targeted verification; it marks the listed phases done.",[(27,"action")]),
+("tool_observation","After the temporary script removal, git status reports a clean working tree.",[(28,"observation")])],
+"17e5f634":[
+("tool_observation","Git reports commit da8d5eb93 for the modified gettext.py with 8 insertions and 1 deletion.",[(19,"observation"),(20,"observation")]),
+("agent_assertion","The commit message describes deduplicating gettext message locations while preserving order.",[(20,"action")]),
+("agent_assertion","The task notes claim the intl subset was checked, attribute remaining failures to unrelated causes, and change final review from in_progress to done.",[(21,"action"),(22,"action")])],
+"503b46ee":[
+("tool_observation","The initial view reports no task list found.",[(1,"observation")]),
+("agent_assertion","The newly created eight-phase plan changes reading to in_progress while subsequent reproduction, implementation and verification remain todo.",[(2,"action"),(3,"action")])],
+"bcf0f934":[
+("agent_assertion","The Serverless repair plan initially marks all eight phases todo, then moves problem reading to in_progress while later phases remain todo.",[(1,"action"),(3,"action")]),
+("tool_observation","The repository listing shows lib, tests, package.json and node_modules.",[(2,"observation")])],
+"42bd049e":[
+("tool_observation","The tool reports creating tmp_repro_monitor.js, and the Node version probe prints v16.20.2.",[(13,"observation"),(14,"observation")]),
+("tool_observation","Running the monitor reproduction prints Cannot read properties of null (reading 'endsWith'); despite that error text, the command exits with code 0.",[(15,"observation")])],
+"115d4f64":[
+("agent_assertion","Successive task-list updates mark repository testing done, then exploration done, then reproduction done and fix analysis in_progress. Implementation, verification and final review remain todo.",[(16,"action"),(17,"action"),(18,"action")])],
+"5e0d09d6":[
+("tool_observation","Three edit receipts show null guards added before eventStatus.endsWith checks for FAILED, PROGRESS and COMPLETE and before stackStatus.endsWith('ROLLBACK_COMPLETE') in monitorStack.js.",[(19,"observation"),(20,"observation"),(21,"observation")])],
 "3ae14aff":[
 ("tool_observation","Git reports commit 55d97cc5a5 changing config.py with 96 insertions; the subsequent view displays _render_settings handling display values and origins.",[(32,"observation"),(33,"observation")]),
 ("agent_assertion","The commit message describes adding GALAXY_SERVERS configuration to ansible-config dump output.",[(32,"action")])],
