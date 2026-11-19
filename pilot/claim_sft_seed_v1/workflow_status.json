@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "dev": 6,
+    "train": 35
+  },
+  "task_groups": {
+    "train": 18,
+    "dev": 4
+  },
+  "hashes": {
+    "train.jsonl": "04a860a8711c29f16747bd04977beb687eb1594027199c45a0dffb40180170d3",
+    "dev.jsonl": "f32237ed512e8c6ad157af36630dc1fe0c069a0fc91990e56083a9be5643e39e",
+    "ai_review.json": "75e20ea51baa9b1a20bd815949d5c10bf1eaa56efd925d48ad67ce255da57c7f"
+  },
+  "local_gates": "passed",
+  "pending_parent_review": 37,
+  "tokenizer_preflight": "pending target-model tokenizer",
+  "gpu_training": "pending",
+  "paired_generation": "pending",
+  "semantic_acceptance": "pending",
+  "reviewer_type": "AI",
+  "selection": "short-stage evidence-reviewed subset"
+}

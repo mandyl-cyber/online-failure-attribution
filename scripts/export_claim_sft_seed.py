@@ -6,6 +6,20 @@ from segmenter import stage_claim_summary_v5 as core
 
 # Each tuple identifies exact source steps and the fields supporting the reference.
 REFERENCES={
+"c17f6903":[
+("tool_observation","The displayed diff adds recursive mutually-exclusive-group discovery and uses required_dests when building call_command parse_args.",[(27,"observation")]),
+("tool_observation","Git reports commit 9a0899518c changing one file with 16 insertions and 1 deletion.",[(28,"observation")]),
+("agent_assertion","The commit message describes including kwargs for required mutually exclusive groups.",[(28,"action")])],
+"74ac328a":[
+("tool_observation","The pytest command fails because pytest is not found with exit code 127; the first runtests.py command rejects -q and exits with code 2.",[(23,"observation"),(24,"observation")]),
+("tool_observation","The subsequent runtests.py invocations report 126 and 138 tests respectively, both with OK and exit code 0.",[(25,"action"),(25,"observation"),(26,"action"),(26,"observation")])],
+"c01fb31e":[
+("tool_observation","Git reports commit 672e66ba23 changing one file with 4 insertions and 33 deletions.",[(19,"observation")]),
+("agent_assertion","The commit describes removing undocumented PSRP extras and version gates; the plan reports tests could not run because pytest was unavailable and marks final review done.",[(19,"action"),(20,"action")])],
+"7879600a":[
+("tool_observation","Git reports commit a024894cfd for modified basic.py with 4 insertions and 7 deletions.",[(52,"observation"),(53,"observation")]),
+("agent_assertion","The commit describes a selinuxenabled CLI fallback; task notes report constrained verification and mark the listed tasks done.",[(53,"action"),(54,"action")]),
+("tool_observation","The later units.modules.test_apt invocation runs 4 tests and reports 4 NameErrors for undefined expand_pkgspec_from_fnmatches, then exits with code 1.",[(55,"observation")])],
 "be9c3455":[
 ("tool_observation","The perm_groups.py edit receipt replaces in-loop deletion with collecting indices and consistently filtering rep_blocks, num_blocks and blocks.",[(11,"observation")]),
 ("agent_assertion","The plan marks reading done and repository testing in_progress while later listed phases remain todo.",[(12,"action")]),
