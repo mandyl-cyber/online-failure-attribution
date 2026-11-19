@@ -1,0 +1,22 @@
+{
+  "protocol": "claim-sidecar-input-ablation-v1",
+  "examples": 38,
+  "parents": 15,
+  "task_groups": 5,
+  "source": "pilot/claim_sft_reviewed_v2/dev.jsonl",
+  "file_hashes": {
+    "original": "dba4154cd69cf1beb200d0a075fab42a1a36b27e016c728ee7a051a86cb70012",
+    "sidecar_v2": "bcf1114b96424979a90e439c9f5f8ec3ab8335abd0d2214077bfeaa4e9810f08"
+  },
+  "reference_labels_identical": true,
+  "system_prompt_identical": true,
+  "raw_units_identical": true,
+  "only_request_changes": [
+    "observed_facts",
+    "observed_facts_version"
+  ],
+  "model": "Same frozen trained7B NF4+LoRA adapter in both conditions; do not retrain",
+  "labels": "Original v2 dev, not v4_scopefix targets",
+  "semantic_review": "pending_generation_and_review",
+  "scope": "Development input comparison; not independent acceptance or training. Native runtime defaults unchanged."
+}
