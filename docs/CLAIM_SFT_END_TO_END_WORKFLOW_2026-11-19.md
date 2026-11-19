@@ -4,14 +4,14 @@
 
 阶段封口后生成有证据引用的多条 claim，并供账本和后续 failure alarm 使用。先固定现有划分器和输入协议，测量训练对抽取器的影响。
 
-当前 148 个父 stage 中有 86 个完整进入教师生成，78 个的全部子请求通过当时校验。恢复了 77 个 stage 的 117 条原生计划动作。已据原始证据编写 41 个短阶段的 AI 参考，训练 35 条来自 18 个任务组，开发 6 条来自 4 个不同任务组。剩余 37 个多步骤或多块父 stage 仍待全面语义复核。当前短阶段种子集可以用于训练流程试跑，质量结论需要扩充覆盖和独立任务验证。
+当前 148 个父 stage 中有 86 个完整进入教师生成，78 个的全部子请求通过当时校验。恢复了 77 个 stage 的 117 条原生计划动作。已完成这 78 个阶段的 AI 关键事实参考，其中 41 个短阶段和 37 个长或多块阶段。合并导出 100 条训练样本，来自 63 个父阶段、18 个任务组；38 条开发样本来自 15 个父阶段、5 个不同任务组。当前参考覆盖所提供证据中的关键事实，仍需独立质量验收。
 
 ## 顺序与产物
 
 | 步骤 | 执行内容 | 状态与产物 |
 | --- | --- | --- |
 | 1 | 原生证据恢复、分块覆盖与哈希核验 | 已执行，swe_claim_sft_repaired_v1 与 repaired_return 审计 |
-| 2 | 按父 stage 审查来源、数值、失败覆盖与跨块重复，编写参考 | 41 个已完成，37 个待审，claim_sft_seed_v1/ai_review.json |
+| 2 | 按父 stage 审查来源、数值、失败覆盖与跨块重复，编写参考 | 78 个关键事实参考已完成，short seed 与 long_review 的 ai_review.json |
 | 3 | 重建导出、引用与任务隔离检查、保存文件哈希 | 已执行，workflow_status.json |
 | 4 | 目标 7B tokenizer 预检，记录每条训练总长度和生成预算 | 脚本已准备，待远程模型路径 |
 | 5 | 7B QLoRA，回答 token 计算 loss | 脚本已准备，GPU 执行待验证 |
@@ -39,13 +39,13 @@ python -m unittest tests.test_claim_sft_train tests.test_stage_claim_facts tests
 
 ```bash
 git pull --ff-only
-conda run -n agentforesight python -m remote_pilots.openhands_smoke.claim_sft_train preflight --model-path MODEL_DIR --out out/claim_sft_7b_seed_v1
-conda run -n agentforesight python -m remote_pilots.openhands_smoke.claim_sft_train train --model-path MODEL_DIR --out out/claim_sft_7b_seed_v1
+conda run -n agentforesight python -m remote_pilots.openhands_smoke.claim_sft_train preflight --model-path MODEL_DIR --out out/claim_sft_7b_reviewed_v2
+conda run -n agentforesight python -m remote_pilots.openhands_smoke.claim_sft_train train --model-path MODEL_DIR --out out/claim_sft_7b_reviewed_v2
 ```
 
 预检逐条记录真实 token 数，超限样本明确排除，任务隔离在加载数据后检查。训练完成保存 adapter、训练指标、显存峰值，并对合格开发输入生成 base 与 adapter 输出。base 通过禁用同一冻结底座上的 adapter 实现，双方均使用相同的 4-bit 底座。paired_dev_review.json 提供逐条语义复核表。训练 loss 仅用于优化过程诊断。
 
-当前数据只有 35 条训练样本，实际训练步数较少。训练时间和显存应由本次远程日志测量，当前未提供已验证的硬件耗时。脚本支持预检与训练分开执行，配置和数据哈希变化时要求新的输出目录，避免混淆结果。
+当前训练集为 100 条分块或短阶段样本，默认加载 pilot/claim_sft_reviewed_v2。实际训练步数较少。训练时间和显存应由本次远程日志测量，当前未提供已验证的硬件耗时。脚本支持预检与训练分开执行，配置和数据哈希变化时要求新的输出目录，避免混淆结果。
 
 ## 验收口径
 

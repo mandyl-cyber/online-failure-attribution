@@ -2,12 +2,12 @@
 import hashlib
 import json
 from pathlib import Path
-from scripts.export_claim_sft_seed import main as export
+from scripts.export_claim_sft_reviewed import main as export
 
 
 def main():
     export()
-    root=Path("pilot/claim_sft_seed_v1")
+    root=Path("pilot/claim_sft_reviewed_v2")
     rows={split:[json.loads(line) for line in (root/f"{split}.jsonl").read_text(encoding="utf-8").splitlines()]
           for split in ("train","dev")}
     groups={split:{r["group"] for r in records} for split,records in rows.items()}
@@ -27,14 +27,14 @@ def main():
             for claim in response["claims"]:
                 if not claim["evidence_ids"] or not set(claim["evidence_ids"])<=allowed:
                     raise ValueError("Reference citation drift")
-    summary=json.loads((root/"summary.json").read_text())
-    manifest=dict(counts=summary["counts"],task_groups={s:len(v) for s,v in groups.items()},
+    summary=json.loads((root/"protocol.json").read_text())
+    manifest=dict(counts=summary["examples"],task_groups={s:len(v) for s,v in groups.items()},
         hashes={name:hashlib.sha256((root/name).read_bytes()).hexdigest()
-                for name in ("train.jsonl","dev.jsonl","ai_review.json")},
-        local_gates="passed",pending_parent_review=summary["pending_parent_review"],
+                for name in ("train.jsonl","dev.jsonl","protocol.json")},
+        local_gates="passed",pending_parent_review=summary["pending_selected_parent_reviews"],
         tokenizer_preflight="pending target-model tokenizer",gpu_training="pending",
         paired_generation="pending",semantic_acceptance="pending",
-        reviewer_type="AI",selection="short-stage evidence-reviewed subset")
+        reviewer_type="AI",selection="78 complete teacher parent stages and reviewed child projections")
     (root/"workflow_status.json").write_text(json.dumps(manifest,indent=2),encoding="utf-8")
     print(json.dumps(manifest,indent=2))
 

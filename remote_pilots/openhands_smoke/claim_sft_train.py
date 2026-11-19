@@ -29,7 +29,7 @@ def save(path, value):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command",choices=["preflight","train"])
-    parser.add_argument("--data",type=Path,default=Path("pilot/claim_sft_seed_v1"))
+    parser.add_argument("--data",type=Path,default=Path("pilot/claim_sft_reviewed_v2"))
     parser.add_argument("--model-path",type=Path,required=True)
     parser.add_argument("--out",type=Path,default=Path("out/claim_sft_7b_v1"))
     parser.add_argument("--max-length",type=int,default=8192)
@@ -106,7 +106,7 @@ def main():
         learning_rate=1e-4,bf16=True,gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant":False},logging_steps=1,
         save_strategy="epoch",save_total_limit=2,eval_strategy="epoch",
-        report_to="none",seed=args.seed,remove_unused_columns=False)
+        report_to="none",seed=args.seed,remove_unused_columns=False,prediction_loss_only=True)
     trainer=Trainer(model=model,args=training,train_dataset=encoded["train"],
         eval_dataset=encoded["dev"],data_collator=collate)
     trained=trainer.train()
@@ -122,7 +122,9 @@ def main():
     for row in eligible["dev"]:
         ids=tokenizer.apply_chat_template(row["prompt"],tokenize=True,add_generation_prompt=True)
         tensor=torch.tensor([ids],device=model.device)
-        pair=dict(job_id=row["job_id"],group=row["group"],reference=row["completion"][0]["content"])
+        pair=dict(job_id=row["job_id"],group=row["group"],
+                  parent_stage_key=row.get("parent_stage_key",row["job_id"]),
+                  reference=row["completion"][0]["content"])
         for mode in ("base","adapter"):
             context=model.disable_adapter() if mode=="base" else nullcontext()
             before=time.perf_counter()

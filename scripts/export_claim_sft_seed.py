@@ -165,6 +165,8 @@ def main():
             final_response=response,group=entry["metadata"]["group"],split=entry["metadata"]["split"])
         reviews.append(review)
         exported[review["split"]].append(dict(job_id=current["job_id"],group=review["group"],
+            parent_stage_key=base.digest(base.encoded(dict(run_id=row["run_id"],
+                stage=row["source_snapshot"]["stage"]))),
             reviewer_type="AI",prompt=[dict(role="system",content=core.INSTRUCTION),
                 dict(role="user",content=base.encoded(current["request"]).decode("utf-8"))],
             completion=[dict(role="assistant",content=base.encoded(response).decode("utf-8"))]))

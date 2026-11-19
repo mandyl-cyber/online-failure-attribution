@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "dev": 38,
+    "train": 100
+  },
+  "task_groups": {
+    "train": 18,
+    "dev": 5
+  },
+  "hashes": {
+    "train.jsonl": "fdb1e39c89bde8d1fff139525905f3a507bc713a7812dd0dae9aec865d11a954",
+    "dev.jsonl": "dba4154cd69cf1beb200d0a075fab42a1a36b27e016c728ee7a051a86cb70012",
+    "protocol.json": "a495d648ae63a4e099f42c8ba52953cfd0c214ac153010144182f6d13d903bed"
+  },
+  "local_gates": "passed",
+  "pending_parent_review": 0,
+  "tokenizer_preflight": "pending target-model tokenizer",
+  "gpu_training": "pending",
+  "paired_generation": "pending",
+  "semantic_acceptance": "pending",
+  "reviewer_type": "AI",
+  "selection": "78 complete teacher parent stages and reviewed child projections"
+}
