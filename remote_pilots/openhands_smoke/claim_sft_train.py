@@ -5,18 +5,27 @@ import hashlib
 import json
 from pathlib import Path
 import time
+from remote_pilots.openhands_smoke.claims_qwen32 import token_ids
 
 
 def read_rows(path):
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
+def chat_ids(tokenizer, messages, add_generation_prompt):
+    value=tokenizer.apply_chat_template(messages,tokenize=True,
+        add_generation_prompt=add_generation_prompt,return_dict=False)
+    return token_ids(value)
+
+
 def encode_reference(tokenizer, row):
-    prompt = tokenizer.apply_chat_template(row["prompt"], tokenize=True, add_generation_prompt=True)
-    full = tokenizer.apply_chat_template(row["prompt"]+row["completion"], tokenize=True,
-                                        add_generation_prompt=False)
+    prompt = chat_ids(tokenizer,row["prompt"],True)
+    full = chat_ids(tokenizer,row["prompt"]+row["completion"],False)
     if full[:len(prompt)] != prompt or len(full) <= len(prompt):
-        raise ValueError("Chat template does not preserve the assistant prompt prefix")
+        mismatch=next((i for i,(a,b) in enumerate(zip(prompt,full)) if a!=b),
+                      min(len(prompt),len(full)))
+        raise ValueError(f"Chat template token prefix mismatch at {mismatch}; "
+                         f"prompt_tokens={len(prompt)}, full_tokens={len(full)}")
     return dict(input_ids=full, attention_mask=[1]*len(full),
                 labels=[-100]*len(prompt)+full[len(prompt):])
 
@@ -64,7 +73,14 @@ def main():
         encoded[split]=[]
         eligible[split]=[]
         for row in records:
-            item=encode_reference(tokenizer,row)
+            try:
+                item=encode_reference(tokenizer,row)
+            except (ValueError,TypeError) as exc:
+                import transformers
+                save(args.out/"tokenizer_error.json",dict(job_id=row["job_id"],split=split,
+                    tokenizer_class=type(tokenizer).__name__,transformers=transformers.__version__,
+                    error=str(exc)))
+                raise
             prompt_length=item["labels"].count(-100)
             fits=(len(item["input_ids"])<=args.max_length
                   and prompt_length+args.max_new_tokens<=args.max_length
@@ -120,7 +136,7 @@ def main():
     model.config.use_cache=True
     outputs=[]
     for row in eligible["dev"]:
-        ids=tokenizer.apply_chat_template(row["prompt"],tokenize=True,add_generation_prompt=True)
+        ids=chat_ids(tokenizer,row["prompt"],True)
         tensor=torch.tensor([ids],device=model.device)
         pair=dict(job_id=row["job_id"],group=row["group"],
                   parent_stage_key=row.get("parent_stage_key",row["job_id"]),
