@@ -65,6 +65,10 @@ def main():
             runner.body(candidate)["messages"],tokenize=True,add_generation_prompt=True,return_dict=False))
         return len(tokens)+2048 <= 8192
     for meta,row in inputs:
+        if meta.get("known_input_gap"):
+            checks.append(dict(job_id=row["job_id"],input_tokens=None,eligible=False,
+                               split=meta["split"],reason="known_source_input_gap"))
+            continue
         ids = runner.qwen.token_ids(tokenizer.apply_chat_template(
             runner.body(row)["messages"],tokenize=True,add_generation_prompt=True,return_dict=False))
         fits = len(ids)+2048 <= 8192

@@ -61,9 +61,13 @@ def extract(source, evidence_map=None):
         exit_code = _last_int(EXIT, obs)
         test_count = _last_int(RAN, obs)
         if test_count is None:
+            test_count = _last_int(re.compile(r'(?i)\b(\d+)\s+passed\b'),obs)
+        if test_count is None:
             test_count = _last_int(FOUND, obs)
         skipped = _last_int(SKIPPED, obs)
         is_verify = bool(VERIFY.search(action))
+        is_verify = is_verify or bool(re.search(
+            r'(?:^|[\s;&])(?:/[^\s]+/)?python[\d.]*\s+(?:-[\w]+\s+)*-m\s+pytest\b',action))
         kind = summary = None
         if obs and (re.search(r'(?i)\bCTRL\+C\b|\^C\b', obs) or action.strip() == 'C-c' or exit_code == 130):
             kind, summary = 'interrupted', 'The recorded command was interrupted; no successful verification is established.'
@@ -81,7 +85,7 @@ def extract(source, evidence_map=None):
         elif obs and 'Traceback' in obs and EXCEPTION.search(obs):
             name = EXCEPTION.search(obs).group(1)
             kind, summary = 'runtime_exception', f'The recorded command raised {name}; success is not established.'
-        elif obs and exit_code == 0 and re.search(r'(?i)^\s*python\S*\s+-\s*<<',action):
+        elif obs and exit_code == 0 and re.search(r'(?i)^\s*(?:/\S+/)?python[\d.]*\s+(?:-\s*<<|[^\s;]+\.py\b)',action):
             kind, summary = 'script_exit_zero', 'The inline script exited with code zero within its recorded scope.'
         elif obs and re.search(r'(?i)\bfile\s+[^\n]{1,250}\s+has been edited\b', obs):
             kind, summary = 'edit_acknowledged', 'The tool acknowledged a file edit; this does not establish a working fix.'
@@ -109,7 +113,7 @@ def guard_claim(claim, evidence_map, facts):
     cited = set(claim['evidence_ids'])
     cited_steps = {evidence_map[eid]['source_step_id'] for eid in cited}
     if TEST_ACTIVITY.search(text) and claim['source'] == 'tool_observation' and not any(
-            fact['step_id'] in cited_steps and fact['type'].startswith('verification_')
+            fact['step_id'] in cited_steps and (fact['type'].startswith('verification_') or fact['type']=='script_exit_zero')
             for fact in facts):
         return 'test_activity_without_verification_action'
     if not SUCCESS_TEXT.search(text):

@@ -23,6 +23,14 @@ def claim(text, source_type='tool_observation', action=False):
 
 
 class FactTests(unittest.TestCase):
+    def test_wrapped_pytest_and_direct_script(self):
+        row = v4.build(source("bash -lc 'PYTHONPATH=src /opt/env/bin/python -bb -m pytest -q a.py'",
+            "2 passed in 0.00s\nEXIT:0\n[Command finished with exit code 0]"))
+        self.assertEqual(row["observed_facts"][0]["type"],"verification_pass")
+        self.assertEqual(row["observed_facts"][0]["test_count"],2)
+        row = v4.build(source("python /workspace/repro.py","OK, order: 4\n[Command finished with exit code 0]"))
+        self.assertEqual(row["observed_facts"][0]["type"],"script_exit_zero")
+
     def test_inline_script_scoped_execution(self):
         row = v4.build(source("python - << 'PY'\nprint('done')\nPY",
                               "done\n[Command finished with exit code 0]"))
