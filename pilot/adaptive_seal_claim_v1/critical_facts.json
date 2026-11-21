@@ -1,0 +1,924 @@
+{
+  "scope": "Selected critical execution outcomes reviewed before new 7B generation",
+  "exhaustive": false,
+  "human_reviewed": false,
+  "facts": [
+    {
+      "point_id": "x005:S43:observation",
+      "group_id": "x005",
+      "task": "django__django-12663",
+      "source_step_id": 43,
+      "source_sha256": "83a42b3fd0fbc7be0dd3305ec5aea4764992ce00801ad7a53c4aa6e9bb90c6e0",
+      "fact": "The reproduction aborts with RuntimeError because model __main__.A lacks an explicit app_label and is outside INSTALLED_APPS. Exit 1.",
+      "membership": {
+        "immediate": {
+          "job_id": "5ccc4ee27e786e66637be459a9433545d28243d99d115b97133662aa5e65d991",
+          "stage": {
+            "end_step_id": 45,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 3,
+            "start_step_id": 39
+          },
+          "cutoff": 46
+        },
+        "adaptive": {
+          "job_id": "94c57ed6dee1a05ac1a278438d2539b953d978b47b5dec35f8c2aae63710a9b3",
+          "stage": {
+            "end_step_id": 45,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 40
+          },
+          "cutoff": 46
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x005:S44:observation",
+      "group_id": "x005",
+      "task": "django__django-12663",
+      "source_step_id": 44,
+      "source_sha256": "9c174225a1aff68ef8331161d858ad5c72fbf7ece3b24e233be8ddb46d3c1c10",
+      "fact": "A later reproduction aborts with OperationalError: no such table: auth_user. Exit 1.",
+      "membership": {
+        "immediate": {
+          "job_id": "5ccc4ee27e786e66637be459a9433545d28243d99d115b97133662aa5e65d991",
+          "stage": {
+            "end_step_id": 45,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 3,
+            "start_step_id": 39
+          },
+          "cutoff": 46
+        },
+        "adaptive": {
+          "job_id": "94c57ed6dee1a05ac1a278438d2539b953d978b47b5dec35f8c2aae63710a9b3",
+          "stage": {
+            "end_step_id": 45,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 40
+          },
+          "cutoff": 46
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x008:S34:observation",
+      "group_id": "x008",
+      "task": "django__django-13279",
+      "source_step_id": 34,
+      "source_sha256": "b75d301607c8faf8c15e414af16294afd95187b28a8f2783e33a3baac3cd6558",
+      "fact": "The Django test runner aborts importing test_sqlite. Exit 1. This invocation does not establish passing tests.",
+      "membership": {
+        "immediate": {
+          "job_id": "ac85af37cbc3be6a02fccacb0b44f538fc61025996a08c3ac2966085ffa30d44",
+          "stage": {
+            "end_step_id": 34,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 33
+          },
+          "cutoff": 35
+        },
+        "adaptive": {
+          "job_id": "298159d30986171763fcc6f4cfbc991d3f7ee14013fd79c9e8e65f4ddf3ec93b",
+          "stage": {
+            "end_step_id": 35,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 33
+          },
+          "cutoff": 36
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x009:S37:observation",
+      "group_id": "x009",
+      "task": "django__django-13551",
+      "source_step_id": 37,
+      "source_sha256": "d64fe580aecd889bf490d6a32574bf3f47c747ad49206ad2710976bfc44f1f94",
+      "fact": "The runner reports 20 tests, OK, exit 0, using Django installed in /testbed/django.",
+      "membership": {
+        "immediate": {
+          "job_id": "0f421a25716848d8e7eb8cc3fc50c989681766adb96b3daa306317f1bcb5e2e8",
+          "stage": {
+            "end_step_id": 40,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 7,
+            "start_step_id": 37
+          },
+          "cutoff": 41
+        },
+        "adaptive": {
+          "job_id": "39121575e7d948ab4cc864e4abd0fa93222982e5f4765bba63c988ea11254043",
+          "stage": {
+            "end_step_id": 39,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 7,
+            "start_step_id": 37
+          },
+          "cutoff": 41
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x009:S39:observation",
+      "group_id": "x009",
+      "task": "django__django-13551",
+      "source_step_id": 39,
+      "source_sha256": "c97dfada422e5e942dc574d0ebf62141ad51f542d916b5b978d41eb66c98a94f",
+      "fact": "The runner reports 7 tests, OK, exit 0, using Django installed in /testbed/django.",
+      "membership": {
+        "immediate": {
+          "job_id": "0f421a25716848d8e7eb8cc3fc50c989681766adb96b3daa306317f1bcb5e2e8",
+          "stage": {
+            "end_step_id": 40,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 7,
+            "start_step_id": 37
+          },
+          "cutoff": 41
+        },
+        "adaptive": {
+          "job_id": "39121575e7d948ab4cc864e4abd0fa93222982e5f4765bba63c988ea11254043",
+          "stage": {
+            "end_step_id": 39,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 7,
+            "start_step_id": 37
+          },
+          "cutoff": 41
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x012:S45:observation",
+      "group_id": "x012",
+      "task": "django__django-15563",
+      "source_step_id": 45,
+      "source_sha256": "9485c933a0ebf86d989d3b45bfcaa3c52cbf04d62ad5d3e020023ed761e771d8",
+      "fact": "pytest is not found. Exit 127. No tests execute in this invocation.",
+      "membership": {
+        "immediate": {
+          "job_id": "11a4af4aad76161c0cb5212ef27d3f1a38c4d4e9e83b7f819497db63315f5337",
+          "stage": {
+            "end_step_id": 46,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 45
+          },
+          "cutoff": 47
+        },
+        "adaptive": {
+          "job_id": "494f95c74ecdd444cbdf0c5f626972747cdb192e3f6e3f59812445b8e64ccf8d",
+          "stage": {
+            "end_step_id": 48,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 45
+          },
+          "cutoff": 48
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x012:S46:observation",
+      "group_id": "x012",
+      "task": "django__django-15563",
+      "source_step_id": 46,
+      "source_sha256": "88b8783d549abdbe422cd07130cde4c2bbd131779caac0f1448c032ba5c8cc3b",
+      "fact": "python -m pytest fails because the pytest module is absent. Exit 1.",
+      "membership": {
+        "immediate": {
+          "job_id": "11a4af4aad76161c0cb5212ef27d3f1a38c4d4e9e83b7f819497db63315f5337",
+          "stage": {
+            "end_step_id": 46,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 45
+          },
+          "cutoff": 47
+        },
+        "adaptive": {
+          "job_id": "494f95c74ecdd444cbdf0c5f626972747cdb192e3f6e3f59812445b8e64ccf8d",
+          "stage": {
+            "end_step_id": 48,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 45
+          },
+          "cutoff": 48
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x015:S36:observation",
+      "group_id": "x015",
+      "task": "django__django-15957",
+      "source_step_id": 36,
+      "source_sha256": "340c51d15f74e9effaf511023898a780f94607bf7f84c20cc30adbe09807ab05",
+      "fact": "The probe aborts with ImproperlyConfigured because Django settings are not configured. Exit 1.",
+      "membership": {
+        "immediate": {
+          "job_id": "09c652237dd4c7a71468f9a619abc7bd3c5c49a6b268d433050148a0a6e5c658",
+          "stage": {
+            "end_step_id": 41,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 3,
+            "start_step_id": 35
+          },
+          "cutoff": 42
+        },
+        "adaptive": {
+          "job_id": "66543a67a1c67987cacc284dd726723d658f7268f096f121c4edc03f401846dc",
+          "stage": {
+            "end_step_id": 36,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 3,
+            "start_step_id": 35
+          },
+          "cutoff": 38
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x015:S43:observation",
+      "group_id": "x015",
+      "task": "django__django-15957",
+      "source_step_id": 43,
+      "source_sha256": "814e30fff2bbcda5b002ba3844e91a73ee1cad2638e49bc8105770687cf95df8",
+      "fact": "The runner reports 461 tests, OK, 11 skipped and 2 expected failures, exit 0, against /workspace/django__django__4.2/django.",
+      "membership": {
+        "immediate": {
+          "job_id": "b8d221d776fa993425b465c1072db98faefba9fbc5c64563fb9e29e6e0a6b0c0",
+          "stage": {
+            "end_step_id": 43,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 42
+          },
+          "cutoff": 44
+        },
+        "adaptive": {
+          "job_id": "0ad40ddd4f752414eb03a768a1eddec0860183822a703495cb35d994e7d2ea59",
+          "stage": {
+            "end_step_id": 45,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 42
+          },
+          "cutoff": 47
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x015:S45:observation",
+      "group_id": "x015",
+      "task": "django__django-15957",
+      "source_step_id": 45,
+      "source_sha256": "55ba8b949522dc56570c35ff87f7dd3bd08e1f49ad15f986614544e24c18feb9",
+      "fact": "The runner reports 109 tests, OK, exit 0, against /workspace/django__django__4.2/django.",
+      "membership": {
+        "immediate": {
+          "job_id": "219d02e4fe4e8e001d6e9017a009c2254eeba83437756b054c33b82c1df1fafd",
+          "stage": {
+            "end_step_id": 48,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 44
+          },
+          "cutoff": 48
+        },
+        "adaptive": {
+          "job_id": "0ad40ddd4f752414eb03a768a1eddec0860183822a703495cb35d994e7d2ea59",
+          "stage": {
+            "end_step_id": 45,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 42
+          },
+          "cutoff": 47
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x015:S48:observation",
+      "group_id": "x015",
+      "task": "django__django-15957",
+      "source_step_id": 48,
+      "source_sha256": "d53e37836b194dbdf957b81818a502383c7c680b764d74c7d315d9c0048c10b9",
+      "fact": "The runner reports 461 tests, OK, 11 skipped and 2 expected failures, exit 0, against /workspace/django__django__4.2/django.",
+      "membership": {
+        "immediate": {
+          "job_id": "219d02e4fe4e8e001d6e9017a009c2254eeba83437756b054c33b82c1df1fafd",
+          "stage": {
+            "end_step_id": 48,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 44
+          },
+          "cutoff": 48
+        },
+        "adaptive": {
+          "job_id": "b9d66741d804952c9047a94a4fa716e5ac26a0a7b6e837d03e2b4f6b19310e7a",
+          "stage": {
+            "end_step_id": 48,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 6,
+            "start_step_id": 46
+          },
+          "cutoff": 48
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x016:S23:observation",
+      "group_id": "x016",
+      "task": "django__django-16032",
+      "source_step_id": 23,
+      "source_sha256": "051df5c37208ead576899f12baff8ad168bd67bf8608b4cb8dfe7a150da7a5d7",
+      "fact": "pytest is not found. Exit 127.",
+      "membership": {
+        "immediate": {
+          "job_id": "b87b62ab633cc774a2e18f1bbae08971489c088574d2009bc9386a900bcdcc3d",
+          "stage": {
+            "end_step_id": 31,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 3,
+            "start_step_id": 23
+          },
+          "cutoff": 32
+        },
+        "adaptive": {
+          "job_id": "327adc24cd56112c264d0c25d1e4e2193f346e104b9c242530f317d661ac4d47",
+          "stage": {
+            "end_step_id": 26,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 23
+          },
+          "cutoff": 28
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x016:S26:observation",
+      "group_id": "x016",
+      "task": "django__django-16032",
+      "source_step_id": 26,
+      "source_sha256": "a27022b5bf6d4779d2aa3721f37ac2ce297ad0cf04478f4221f906a53d058baf",
+      "fact": "The runner reports Ran 0 tests and OK, exit 0, against /testbed/django. This provides no executed-test evidence.",
+      "membership": {
+        "immediate": {
+          "job_id": "b87b62ab633cc774a2e18f1bbae08971489c088574d2009bc9386a900bcdcc3d",
+          "stage": {
+            "end_step_id": 31,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 3,
+            "start_step_id": 23
+          },
+          "cutoff": 32
+        },
+        "adaptive": {
+          "job_id": "327adc24cd56112c264d0c25d1e4e2193f346e104b9c242530f317d661ac4d47",
+          "stage": {
+            "end_step_id": 26,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 23
+          },
+          "cutoff": 28
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x018:S32:observation",
+      "group_id": "x018",
+      "task": "django__django-16819",
+      "source_step_id": 32,
+      "source_sha256": "ca4099ad04dbf6a837ab4e729e2ffe85be8c44ad8b0e40a83e6b8c2589cb6a58",
+      "fact": "pytest is not found. Exit 127.",
+      "membership": {
+        "immediate": {
+          "job_id": "d550ded7a4765b360c800c121c1236fc74495653219cd6a6fd08f6209d101c90",
+          "stage": {
+            "end_step_id": 33,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 32
+          },
+          "cutoff": 34
+        },
+        "adaptive": {
+          "job_id": "43599b409a67db702c976f36020ce70b692673dd5c37c142ac00d9a07054f57c",
+          "stage": {
+            "end_step_id": 33,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 32
+          },
+          "cutoff": 34
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x018:S33:observation",
+      "group_id": "x018",
+      "task": "django__django-16819",
+      "source_step_id": 33,
+      "source_sha256": "0285f252b90d734e7e580c4c36ff0a2241db72e1a3f639a4d77470aee6604d32",
+      "fact": "The Python interpreter reports No module named pytest. Exit 1.",
+      "membership": {
+        "immediate": {
+          "job_id": "d550ded7a4765b360c800c121c1236fc74495653219cd6a6fd08f6209d101c90",
+          "stage": {
+            "end_step_id": 33,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 32
+          },
+          "cutoff": 34
+        },
+        "adaptive": {
+          "job_id": "43599b409a67db702c976f36020ce70b692673dd5c37c142ac00d9a07054f57c",
+          "stage": {
+            "end_step_id": 33,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 32
+          },
+          "cutoff": 34
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x021:S26:observation",
+      "group_id": "x021",
+      "task": "matplotlib__matplotlib-23299",
+      "source_step_id": 26,
+      "source_sha256": "623ef3f0c44c3330abc00acbe8e5a3a56cea72aa269a18420abc20f4e1ba9d4d",
+      "fact": "The probe shows the figure registry becoming empty after get_backend, then raises AssertionError and exits 1. The Assertion passed text is in the echoed script, not its executed output.",
+      "membership": {
+        "immediate": {
+          "job_id": "2e0bdc65d6d64ee1655a65a64b418be20360daaf83babdd3f59cbdde9c6b506c",
+          "stage": {
+            "end_step_id": 29,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 25
+          },
+          "cutoff": 30
+        },
+        "adaptive": {
+          "job_id": "0b3bfccb6ac459ca69409daf8b46705f109d8a3886b62f8d01cc1dddf332a788",
+          "stage": {
+            "end_step_id": 26,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 25
+          },
+          "cutoff": 28
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x025:S22:observation",
+      "group_id": "x025",
+      "task": "pylint-dev__pylint-4604",
+      "source_step_id": 22,
+      "source_sha256": "00ab3c2260b132a9fd98ad9e7185ffea988537dbfa44b6b0e4aa1ab65ca2e888",
+      "fact": "The test run reports 1 failed, 1384 passed, 59 skipped and 206 deselected, exit 1. recursion_error_3152 is the failed functional test.",
+      "membership": {
+        "immediate": {
+          "job_id": "955d8e9be17b8bb4f01348c6e93438aa6a0fe6b46621f1221ed715d18b70c251",
+          "stage": {
+            "end_step_id": 25,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 22
+          },
+          "cutoff": 26
+        },
+        "adaptive": {
+          "job_id": "1c0b53153392884d9203a7d9094fbf532eb28d81a13eb51197ae418c8c89a608",
+          "stage": {
+            "end_step_id": 25,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 22
+          },
+          "cutoff": 27
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x027:S25:observation",
+      "group_id": "x027",
+      "task": "sphinx-doc__sphinx-11445",
+      "source_step_id": 25,
+      "source_sha256": "72fe9be73d53fce1d0c5a99ebc6aa4bb2218232ce0a157ee1320618e42d2973c",
+      "fact": "The replacement fails because old_str does not occur verbatim. No replacement was performed.",
+      "membership": {
+        "immediate": {
+          "job_id": "fd2629ce48f190b24d84ec8304d6f0495ce675452da02a0c12a1cfa132de5fe2",
+          "stage": {
+            "end_step_id": 27,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 3,
+            "start_step_id": 25
+          },
+          "cutoff": 28
+        },
+        "adaptive": {
+          "job_id": "7d20e3c06f4555bdeee589754b29d216de4819e62855ef8f55172c557185de00",
+          "stage": {
+            "end_step_id": 30,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 25
+          },
+          "cutoff": 31
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x027:S27:observation",
+      "group_id": "x027",
+      "task": "sphinx-doc__sphinx-11445",
+      "source_step_id": 27,
+      "source_sha256": "e11353a609f62a04053cd262b09063c27e55160d4a534a9f5376ed3cdb293d3f",
+      "fact": "Another replacement fails because old_str does not occur verbatim. No replacement was performed.",
+      "membership": {
+        "immediate": {
+          "job_id": "fd2629ce48f190b24d84ec8304d6f0495ce675452da02a0c12a1cfa132de5fe2",
+          "stage": {
+            "end_step_id": 27,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 3,
+            "start_step_id": 25
+          },
+          "cutoff": 28
+        },
+        "adaptive": {
+          "job_id": "7d20e3c06f4555bdeee589754b29d216de4819e62855ef8f55172c557185de00",
+          "stage": {
+            "end_step_id": 30,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 25
+          },
+          "cutoff": 31
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x027:S29:observation",
+      "group_id": "x027",
+      "task": "sphinx-doc__sphinx-11445",
+      "source_step_id": 29,
+      "source_sha256": "72fe9be73d53fce1d0c5a99ebc6aa4bb2218232ce0a157ee1320618e42d2973c",
+      "fact": "The replacement again reports No replacement was performed.",
+      "membership": {
+        "immediate": {
+          "job_id": "9a432b319995b3acddb358cb5e8f0a7648bb7bc60554e6da4ef34757355ca449",
+          "stage": {
+            "end_step_id": 30,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 28
+          },
+          "cutoff": 31
+        },
+        "adaptive": {
+          "job_id": "7d20e3c06f4555bdeee589754b29d216de4819e62855ef8f55172c557185de00",
+          "stage": {
+            "end_step_id": 30,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 25
+          },
+          "cutoff": 31
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x027:S30:observation",
+      "group_id": "x027",
+      "task": "sphinx-doc__sphinx-11445",
+      "source_step_id": 30,
+      "source_sha256": "72fe9be73d53fce1d0c5a99ebc6aa4bb2218232ce0a157ee1320618e42d2973c",
+      "fact": "The replacement again reports No replacement was performed.",
+      "membership": {
+        "immediate": {
+          "job_id": "9a432b319995b3acddb358cb5e8f0a7648bb7bc60554e6da4ef34757355ca449",
+          "stage": {
+            "end_step_id": 30,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 4,
+            "start_step_id": 28
+          },
+          "cutoff": 31
+        },
+        "adaptive": {
+          "job_id": "7d20e3c06f4555bdeee589754b29d216de4819e62855ef8f55172c557185de00",
+          "stage": {
+            "end_step_id": 30,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 5,
+            "start_step_id": 25
+          },
+          "cutoff": 31
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x028:S16:observation",
+      "group_id": "x028",
+      "task": "sphinx-doc__sphinx-8551",
+      "source_step_id": 16,
+      "source_sha256": "72750a56df467c09b6ee99eb963e18f7ee5b6ffaf3a563f5d38532439840deae",
+      "fact": "The test run reports 126 failed, 1485 passed and 21 skipped, exit 1. The invocation is not a passing suite.",
+      "membership": {
+        "immediate": {
+          "job_id": "e1599cc1c0e870f5222de49018c0b90880c74af0e4c1325cdf0a71d0f26a2f2d",
+          "stage": {
+            "end_step_id": 16,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 2,
+            "start_step_id": 14
+          },
+          "cutoff": 17
+        },
+        "adaptive": {
+          "job_id": "b78acaea1b0b6b3b5515438e10e3fd135801df22415b93b9a2ab5b40b22d5145",
+          "stage": {
+            "end_step_id": 16,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 1,
+            "start_step_id": 1
+          },
+          "cutoff": 17
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    },
+    {
+      "point_id": "x031:S19:observation",
+      "group_id": "x031",
+      "task": "microsoft__vscode-153121",
+      "source_step_id": 19,
+      "source_sha256": "7b0d4b47d49376f4a4bde78975ca09dfae8bb514f8135496ad63366ef9ca0eaf",
+      "fact": "The replacement in monospaceLineBreaksComputer.ts fails because old_str does not occur verbatim. No replacement was performed.",
+      "membership": {
+        "immediate": {
+          "job_id": "03df60776331400fd09066ad4b065c2a1c031b5601e7c7fca41ae7d0a86458f1",
+          "stage": {
+            "end_step_id": 25,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 6,
+            "start_step_id": 19
+          },
+          "cutoff": 26
+        },
+        "adaptive": {
+          "job_id": "d9c9611403ea168d3a99f674a09661958e11971ab4a9d343480c7fbd6d7a46e6",
+          "stage": {
+            "end_step_id": 24,
+            "reason": "predicted_boundary",
+            "sealed": true,
+            "stage_id": 7,
+            "start_step_id": 19
+          },
+          "cutoff": 26
+        }
+      },
+      "reviewed": true,
+      "reviewer_type": "AI",
+      "coverage": {
+        "immediate": null,
+        "adaptive": null
+      },
+      "prohibited_inference": "Do not extrapolate command success, edit receipt or agent status into verified correctness."
+    }
+  ],
+  "group_coverage": {
+    "x001": 0,
+    "x005": 2,
+    "x006": 0,
+    "x008": 1,
+    "x009": 2,
+    "x012": 2,
+    "x015": 4,
+    "x016": 2,
+    "x018": 2,
+    "x021": 1,
+    "x023": 0,
+    "x025": 1,
+    "x027": 4,
+    "x028": 1,
+    "x029": 0,
+    "x031": 1,
+    "x033": 0,
+    "x034": 0
+  }
+}

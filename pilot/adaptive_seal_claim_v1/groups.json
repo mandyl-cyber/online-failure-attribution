@@ -1,0 +1,364 @@
+[
+  {
+    "group_id": "x001",
+    "traj_id": "openhands-OpenAI__GPT-5-astropy__astropy-13398-3106f9b1",
+    "task": "astropy__astropy-13398",
+    "envelope": [
+      26,
+      30
+    ],
+    "arms": {
+      "immediate": [
+        "e717d254b33133e45cf29599fe2cca6fd041b941b38b823f21bed76680febbed"
+      ],
+      "adaptive": [
+        "6b3c3f97bcdaada1adb0f351b6796970056390aaae527d4f3f0e8f4b7637bdc8",
+        "c8c76da5b1c943c249d851fbbd5c14ce0073761c9ca071974a693b4522c3facf"
+      ]
+    }
+  },
+  {
+    "group_id": "x005",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-12663-bd7310c4",
+    "task": "django__django-12663",
+    "envelope": [
+      39,
+      45
+    ],
+    "arms": {
+      "immediate": [
+        "5ccc4ee27e786e66637be459a9433545d28243d99d115b97133662aa5e65d991"
+      ],
+      "adaptive": [
+        "679c3a4bdc175aaaf6a6d2120c102fe086ba767d785a8c1e7d8193e5c1225cce",
+        "94c57ed6dee1a05ac1a278438d2539b953d978b47b5dec35f8c2aae63710a9b3"
+      ]
+    }
+  },
+  {
+    "group_id": "x006",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-12858-d5428d4f",
+    "task": "django__django-12858",
+    "envelope": [
+      1,
+      22
+    ],
+    "arms": {
+      "immediate": [
+        "f28dddd93eedd51092ec7580e82d110d58d0152a64a9f4af3ef96720b2a8819f",
+        "8908d9fce40d85c2916a1bbcf657386b401edffa1081ee48a903e7f172117440"
+      ],
+      "adaptive": [
+        "89202fc422dab2ecd4c9ca850713f216ee29a940e3ebacaee3ce264782986a3d"
+      ]
+    }
+  },
+  {
+    "group_id": "x008",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-13279-1ee67b92",
+    "task": "django__django-13279",
+    "envelope": [
+      33,
+      39
+    ],
+    "arms": {
+      "immediate": [
+        "ac85af37cbc3be6a02fccacb0b44f538fc61025996a08c3ac2966085ffa30d44",
+        "4ba453390678857fc4e95e5b499a2e7ce88c829baef3e02f8cf83a80c29163fb",
+        "a2e872d2f93a88a6057e9c21c0b8fdf34bfbc5b49432a09502ec84bf3ec6e155"
+      ],
+      "adaptive": [
+        "298159d30986171763fcc6f4cfbc991d3f7ee14013fd79c9e8e65f4ddf3ec93b",
+        "22a8a644ab497ea33cef68b03be381bc1cf0b4aa15e78366b58c3137e247471b",
+        "c750c3a980704d099e7e0f9288d687ba461de67408b1f6e1d43f8b6baa213e49"
+      ]
+    }
+  },
+  {
+    "group_id": "x009",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-13551-37eed156",
+    "task": "django__django-13551",
+    "envelope": [
+      37,
+      40
+    ],
+    "arms": {
+      "immediate": [
+        "0f421a25716848d8e7eb8cc3fc50c989681766adb96b3daa306317f1bcb5e2e8"
+      ],
+      "adaptive": [
+        "39121575e7d948ab4cc864e4abd0fa93222982e5f4765bba63c988ea11254043",
+        "fd57e4725ed1692a7b0393b1fa1bd1c537554e3d0f6323c679f801830fa4018a"
+      ]
+    }
+  },
+  {
+    "group_id": "x012",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-15563-19924064",
+    "task": "django__django-15563",
+    "envelope": [
+      45,
+      48
+    ],
+    "arms": {
+      "immediate": [
+        "11a4af4aad76161c0cb5212ef27d3f1a38c4d4e9e83b7f819497db63315f5337",
+        "1566c640727b45fbcb2d52adadc0061361431a7201562918db9f1aaa6dc8531c"
+      ],
+      "adaptive": [
+        "494f95c74ecdd444cbdf0c5f626972747cdb192e3f6e3f59812445b8e64ccf8d"
+      ]
+    }
+  },
+  {
+    "group_id": "x015",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-15957-a39a6ef5",
+    "task": "django__django-15957",
+    "envelope": [
+      35,
+      48
+    ],
+    "arms": {
+      "immediate": [
+        "09c652237dd4c7a71468f9a619abc7bd3c5c49a6b268d433050148a0a6e5c658",
+        "b8d221d776fa993425b465c1072db98faefba9fbc5c64563fb9e29e6e0a6b0c0",
+        "219d02e4fe4e8e001d6e9017a009c2254eeba83437756b054c33b82c1df1fafd"
+      ],
+      "adaptive": [
+        "66543a67a1c67987cacc284dd726723d658f7268f096f121c4edc03f401846dc",
+        "9d00c0923a827d103d7e934f8e2f1c20ae313f5a7b6758dbbd5d3fa923ce02a6",
+        "0ad40ddd4f752414eb03a768a1eddec0860183822a703495cb35d994e7d2ea59",
+        "b9d66741d804952c9047a94a4fa716e5ac26a0a7b6e837d03e2b4f6b19310e7a"
+      ]
+    }
+  },
+  {
+    "group_id": "x016",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-16032-20a5e8c7",
+    "task": "django__django-16032",
+    "envelope": [
+      1,
+      31
+    ],
+    "arms": {
+      "immediate": [
+        "21a7bdef4e21fe41ab86fbe1a657a4674b3d878cb67f36996bbf10dc997dd02f",
+        "72be8336490e809edb0e8517162e1b7c161f8e0df94e49c93c388e10a36336fc",
+        "b87b62ab633cc774a2e18f1bbae08971489c088574d2009bc9386a900bcdcc3d"
+      ],
+      "adaptive": [
+        "bd254dcaa5e39e43601d923fd26aed842105c4367ae4f2c5e6ada928d67e0bf2",
+        "a79458d5061a2d430a4ae2076806ff9b710ef9eaf29c351bb14af6412a62a035",
+        "582fddc96e091286438fe7228ef746406fe5f7e5868936d28aef6eedb88d7671",
+        "327adc24cd56112c264d0c25d1e4e2193f346e104b9c242530f317d661ac4d47",
+        "19a30911b3cc37f8136bb345011f5dd0610511d4406c5e3b2b76ea4fd6dd6b52"
+      ]
+    }
+  },
+  {
+    "group_id": "x018",
+    "traj_id": "openhands-OpenAI__GPT-5-django__django-16819-bf405b1f",
+    "task": "django__django-16819",
+    "envelope": [
+      28,
+      44
+    ],
+    "arms": {
+      "immediate": [
+        "943e253a91b667a25e6f933f6a335885988d35192f9ec99dbeb1dad8ba478451",
+        "b77f7c224fe2adceb40704360d15d82ace4a827f81ef20f083e8e7a2335f0125",
+        "d550ded7a4765b360c800c121c1236fc74495653219cd6a6fd08f6209d101c90",
+        "080d5babf3a1e5fc276600531d187aa9da14417f6554629ff41d3c5c7d40b8f8",
+        "de0af459b20fafe981b8a0a7da4e30ec5264efe3824ad4c532b23e00a40dc011",
+        "53027136f8610b2db7d66c297a91a396419130bb2a018221d063e40ae2fa26ad"
+      ],
+      "adaptive": [
+        "ce1327b3067e1c24596811f1e9551dfc622a93373a8b5fac5cf577272197c505",
+        "39087b612b5fad2f352cfb083d9fa490eefc2374f0f6d9aa4e78db370fa33d11",
+        "43599b409a67db702c976f36020ce70b692673dd5c37c142ac00d9a07054f57c",
+        "fb51141b5befd50a21cf74781c7fb851641c33374922597913eb25b657e477be",
+        "505db9d029f66f3e3a4568ccb129d2a5974463b67e1ec24b73cabf97dcfb139d",
+        "91392346e243e66d391c6ac073a654d3e5b1017a2581d9606207bccc2acb5bb3",
+        "fec865600d351e9604cce15ebab72d09351e0371fd8b157414a26bf0d3604b2a"
+      ]
+    }
+  },
+  {
+    "group_id": "x021",
+    "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-23299-b99579d0",
+    "task": "matplotlib__matplotlib-23299",
+    "envelope": [
+      25,
+      29
+    ],
+    "arms": {
+      "immediate": [
+        "2e0bdc65d6d64ee1655a65a64b418be20360daaf83babdd3f59cbdde9c6b506c"
+      ],
+      "adaptive": [
+        "0b3bfccb6ac459ca69409daf8b46705f109d8a3886b62f8d01cc1dddf332a788",
+        "a73fa6bc11849875309bb26aaa28982b7c74300fe667738993f334cb0821ef97"
+      ]
+    }
+  },
+  {
+    "group_id": "x023",
+    "traj_id": "openhands-OpenAI__GPT-5-matplotlib__matplotlib-26342-77c050b8",
+    "task": "matplotlib__matplotlib-26342",
+    "envelope": [
+      4,
+      26
+    ],
+    "arms": {
+      "immediate": [
+        "8eb9fd71d347048e73dddefad426404ef0202b1f122033f0a7ff191e9ff191de"
+      ],
+      "adaptive": [
+        "d5c908de59ce0c50b2fe6183c0e79e0152a7d407773ca43c1dd80964747780b7",
+        "ad67df07a2801f1c6a5c2881032e6ecbf4c0095df086161b14108db7cc152612"
+      ]
+    }
+  },
+  {
+    "group_id": "x025",
+    "traj_id": "openhands-OpenAI__GPT-5-pylint-dev__pylint-4604-4102688b",
+    "task": "pylint-dev__pylint-4604",
+    "envelope": [
+      14,
+      41
+    ],
+    "arms": {
+      "immediate": [
+        "8759ae17bcc094a8dd9f9a19014ee0ed493c92693cff66af2e6e6b56b6a44741",
+        "0167ff28e9038bc5c00b3749bc5338a8b04d6ec736f0a71c4a2e318a6b8e3f0a",
+        "955d8e9be17b8bb4f01348c6e93438aa6a0fe6b46621f1221ed715d18b70c251",
+        "8b26c115d8e3ca35fdf6aa016542e52c57e296b07ac745515f3d464ffa9afd07"
+      ],
+      "adaptive": [
+        "fb5900587cbe61ed2a063ca489437f90e5aeff8db190fff582ac7ae5f89e195c",
+        "1caad86e718b40cf15d06fd8f146b0fc1d6ad0aa99a3d2fe55ff1fdd2d181042",
+        "f629d2d10ab36207a3d21f0839923cd4a0f3d59c974181d68a787819410c96f6",
+        "1c0b53153392884d9203a7d9094fbf532eb28d81a13eb51197ae418c8c89a608",
+        "3dc850fb867dded59f951dd3263df3a8315d65436a0906f4c7b49143bc1263ec",
+        "8be19a95bb8fc46f6bba87ec0b1fbb6d113bdcd501065ec1908f5cc6ca676790"
+      ]
+    }
+  },
+  {
+    "group_id": "x027",
+    "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-11445-6f9d933b",
+    "task": "sphinx-doc__sphinx-11445",
+    "envelope": [
+      1,
+      30
+    ],
+    "arms": {
+      "immediate": [
+        "7183286e8a1d1469cb63e7e6714caa3d09a37ac482e7acf42b00167f6c3eebc0",
+        "7d4676d9960414f93069121a942246a9739e8eebfbd777bd19ad3e0d3361393b",
+        "fd2629ce48f190b24d84ec8304d6f0495ce675452da02a0c12a1cfa132de5fe2",
+        "9a432b319995b3acddb358cb5e8f0a7648bb7bc60554e6da4ef34757355ca449"
+      ],
+      "adaptive": [
+        "f8cd8d6ed3f69a99554e40949d8993d472962175c2e9915a0a02b0832ca61b27",
+        "04cca10a2b6a7b894e98c162acc18f08fcc2a29c1e87661ebbeaa6737a96421d",
+        "de5fce8dd93769b28dede009905aaef66b0814f7f6ff279a289cc5d7bbdf9b02",
+        "a9d983cc94cffe14c324a3095c3e8f23092d1abeb051505c33b2c5e2233983ae",
+        "7d20e3c06f4555bdeee589754b29d216de4819e62855ef8f55172c557185de00"
+      ]
+    }
+  },
+  {
+    "group_id": "x028",
+    "traj_id": "openhands-OpenAI__GPT-5-sphinx-doc__sphinx-8551-41e5e5f0",
+    "task": "sphinx-doc__sphinx-8551",
+    "envelope": [
+      1,
+      16
+    ],
+    "arms": {
+      "immediate": [
+        "49b63c9863621e5fcef3cc276aa6f67b466291641de45fba995b300f107a6b93",
+        "e1599cc1c0e870f5222de49018c0b90880c74af0e4c1325cdf0a71d0f26a2f2d"
+      ],
+      "adaptive": [
+        "b78acaea1b0b6b3b5515438e10e3fd135801df22415b93b9a2ab5b40b22d5145"
+      ]
+    }
+  },
+  {
+    "group_id": "x029",
+    "traj_id": "openhands-OpenAI__GPT-5-sympy__sympy-12489-79c94620",
+    "task": "sympy__sympy-12489",
+    "envelope": [
+      37,
+      38
+    ],
+    "arms": {
+      "immediate": [
+        "437e783e2d1d3940a8c2dbc1c43028fef405e16bc91d9f97131498cd412a2851"
+      ],
+      "adaptive": [
+        "1b863117ad82de737b0a47a085e280584f90730470d8bbeeebe3024e8189a498",
+        "700d52aacf263804b6b7bb3ec377b147b9afb198e4cfacac5f0b62245c58e23f"
+      ]
+    }
+  },
+  {
+    "group_id": "x031",
+    "traj_id": "openhands-OpenAI__GPT-5-microsoft__vscode-153121-9abfbc86",
+    "task": "microsoft__vscode-153121",
+    "envelope": [
+      13,
+      25
+    ],
+    "arms": {
+      "immediate": [
+        "380b1994288ee89a5031dc457d919ce93e68997d2a07eaf68f1c7c6fb43df951",
+        "03df60776331400fd09066ad4b065c2a1c031b5601e7c7fca41ae7d0a86458f1"
+      ],
+      "adaptive": [
+        "c0b12eb1e9b6ccef4995e1a19d4ba24ee01cf3b4ee7c450eeb32393641abc6a9",
+        "d4724fe0cc18e39ddf752c4b020e47c5d173317d1efe2ece9e5ab80b650a13dc",
+        "d9c9611403ea168d3a99f674a09661958e11971ab4a9d343480c7fbd6d7a46e6",
+        "b40386a7009dd3454841ff331ff01538cd517dfa38530dc87cbc7e1b3cf7141b"
+      ]
+    }
+  },
+  {
+    "group_id": "x033",
+    "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-23229-7eece48c",
+    "task": "mui__material-ui-23229",
+    "envelope": [
+      1,
+      12
+    ],
+    "arms": {
+      "immediate": [
+        "ebae8361042d4f0a97bfe2498abe9f10418574d8b59196328a8930e658570ebc"
+      ],
+      "adaptive": [
+        "7702f827ba1d34676ee7e41f12f779705ea96de0fd38cdf2b08acd20069e14ad",
+        "ade4de17e9abe5dc883751e119eb8b216c4dab60371e5f720f49f0d3b9bdcc8d"
+      ]
+    }
+  },
+  {
+    "group_id": "x034",
+    "traj_id": "openhands-OpenAI__GPT-5-mui__material-ui-28186-58517160",
+    "task": "mui__material-ui-28186",
+    "envelope": [
+      4,
+      16
+    ],
+    "arms": {
+      "immediate": [
+        "fc3e91e2909e4532264f02db220c98f97134ffb72a0c4b3402825c541ff7eaf5",
+        "4d8d0fd24cf5ad48bdee09bdb3d7246943597ede79223fb40f3bc7082f9d876e"
+      ],
+      "adaptive": [
+        "c661a5326c8382d4a91ec36afd4fa824b9d3b12053f565c01d60079612369c5b"
+      ]
+    }
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "trajectories": 37,
+  "metrics": {
+    "immediate": {
+      "0": {
+        "tp": 107,
+        "predicted": 265,
+        "gold": 186,
+        "precision": 0.4037735849056604,
+        "recall": 0.5752688172043011,
+        "f1": 0.4745011086474501
+      },
+      "1": {
+        "tp": 116,
+        "predicted": 265,
+        "gold": 186,
+        "precision": 0.4377358490566038,
+        "recall": 0.6236559139784946,
+        "f1": 0.5144124168514412
+      }
+    },
+    "adaptive": {
+      "0": {
+        "tp": 94,
+        "predicted": 277,
+        "gold": 186,
+        "precision": 0.33935018050541516,
+        "recall": 0.5053763440860215,
+        "f1": 0.4060475161987041
+      },
+      "1": {
+        "tp": 117,
+        "predicted": 277,
+        "gold": 186,
+        "precision": 0.4223826714801444,
+        "recall": 0.6290322580645161,
+        "f1": 0.5053995680345572
+      }
+    }
+  },
+  "changed_tasks": 18,
+  "requests": 92,
+  "cut_set_changes": {
+    "confirmed": 257,
+    "revoked": 8,
+    "promoted": 20
+  },
+  "policies": {
+    "immediate": {
+      "threshold": 0.55,
+      "margin": 0.0,
+      "max_delay": 0
+    },
+    "adaptive": {
+      "threshold": 0.55,
+      "margin": 0.1,
+      "max_delay": 1
+    }
+  },
+  "status": "causal_replay_complete_claim_generation_pending",
+  "caveat": "Exploratory policy on previously evaluated tasks. Lagged rescoring reuses frozen weights and requires validation. No claim quality inference yet."
+}

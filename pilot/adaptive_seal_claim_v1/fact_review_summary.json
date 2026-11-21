@@ -1,0 +1,8 @@
+{
+  "groups": 18,
+  "source_equal_groups": 18,
+  "candidate_points": 200,
+  "reviewed_groups": 0,
+  "evidence_coverage": "identical raw records and complete step ranges in both arms",
+  "status": "source_candidate_inventory_complete_semantic_review_pending"
+}

@@ -1,0 +1,25 @@
+{
+  "policies": {
+    "immediate": {
+      "threshold": 0.55,
+      "margin": 0.0,
+      "max_delay": 0
+    },
+    "adaptive": {
+      "threshold": 0.55,
+      "margin": 0.1,
+      "max_delay": 1
+    }
+  },
+  "checkpoint_sha256": "1a1bdcfe8e74c7e2bff2d3e8c4c47c2a6e5d0b5cd2151323c7f2cc7655c9786c",
+  "weights_sha256": "7094f9c1c2f49d1a4f55d7faa4d43ac2ebdcc9ae399f8e2ffd950c05411619fc",
+  "requests_sha256": "55bcde0ef52189db92bebd0377312d3f3e71877be9eb6a2e9cc859a6c450e675",
+  "model": "same frozen 7B adapter for both arms",
+  "max_length": 8192,
+  "max_new_tokens": 512,
+  "scope": "All fold0 policy-disagreement envelopes on the same 37 SWE tasks",
+  "instruction_sha256": "78fae6b6a889e6a74fed0969f825458eb3b6035412a7356a10fb2f03089b38fe",
+  "groups_sha256": "fce795ee0a9ebdda2230268657dad90cd69fd6c13bc284721cededd689d2c8c5",
+  "fact_review_sha256": "9dfe0206ffdeba3fd4cc7c3be14e9cc5fe6a22807107ef68a8c24dba402033c8",
+  "critical_facts_sha256": "4c8c9fc5a6246935136f1ce8a7ca8d541f646736a67a54340b982e7064743e6f"
+}
