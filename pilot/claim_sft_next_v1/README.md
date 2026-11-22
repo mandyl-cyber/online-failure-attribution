@@ -55,3 +55,22 @@ python -u -m remote_pilots.openhands_smoke.claim_prospective run --limit 4
 4. 再安排 SFT：当前旧训练仍 100 条，不为凑数把开发纠错或 56 条既有事实重复塞入训练。新增材料须先完成规范任务映射、证据审查和实际 tokenizer 预检；训练、开发与前瞻验收按任务隔离。若之后使用本轮前瞻任务调方案，它们随即转为开发材料，下一轮必须再换验收任务。
 
 本地复算：`python -m scripts.prepare_claim_next_stage`。它核对来源、生成案例库与任务定义，并在独立临时目录运行作者提供的测试；不加载 GPU 模型。当前相关 42 项回归测试通过，远程真实会话和语义验收仍待完成。
+
+## 前瞻会话已回传并验收（2026-11-23）
+
+已从 GitHub 拉取 `51b767e2` 的原始采集结果。本节更新“真实会话待采集”状态，语义参考及 claim 模型验收仍未完成。
+
+4 个任务共 124 条原生事件、46 个完成工具 step。任务定义／提示及初始化代码哈希一致，可见测试与不可变检查逐字节相同；事件 ID 和文件序列连续，工具观察均 exact-cause 配对，pending 为零，无强制 EOF flush。审计没有运行或查看新的 claim 模型输出。
+
+| 任务 | 控制器 | 运行后的独立测试 |
+| --- | --- | --- |
+| stable_unique | 工具调用标签格式错误退出 | 3 项通过 |
+| bounded_chunks | finished | 4 项中 1 项失败，遗漏末尾部分块 |
+| prefix_totals | 达到 20 步上限退出 | 3 项中 1 项失败，遗漏最后一个累计值 |
+| config_overrides | finished | 4 项通过 |
+
+因此独立测试通过 2/4，控制器正常完成且独立测试通过 1/4；它们都不是摘要准确率。四份日志全部保留，不按任务成败筛选。两个错误退出会话没有补造 finish，后续切分不能擅自将开放末段封成成功阶段。
+
+`verification.log` 是 agent 停止后的外部检查，只用于任务结果审计。冻结在线 claim 参考时，必须以原生动作／观察和当时可用时间为准，不能把这些后验测试结果塞回在线输入；不能仅凭外部测试失败认定 agent 当时已经观察到失败。
+
+复算：`python -m scripts.audit_claim_prospective_collection`。详细结果在 `out/claim_prospective_return_audit_v1/`，包含逐文件哈希、归一化 step 与汇总；同步汇总为 [prospective_collection_audit.json](prospective_collection_audit.json)。下一步先基于原生证据冻结参考，再比较固定 claim 模型，不训练、不用本轮输出反向调整参考。
