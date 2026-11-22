@@ -1,0 +1,11 @@
+{
+  "windows": 25,
+  "tasks": 18,
+  "requests": 78,
+  "historically_token_eligible_windows": 13,
+  "eligible_requests": 41,
+  "reusable_outputs": 35,
+  "new_requests": 6,
+  "selected_critical_facts": 20,
+  "note": "Token counts reused from identical v1 stage inputs. Remote tokenizer preflight still required. Local windows from one task are correlated."
+}

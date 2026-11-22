@@ -1,0 +1,27 @@
+{
+  "policies": {
+    "immediate": {
+      "threshold": 0.55,
+      "margin": 0.0,
+      "max_delay": 0
+    },
+    "adaptive": {
+      "threshold": 0.55,
+      "margin": 0.1,
+      "max_delay": 1
+    }
+  },
+  "checkpoint_sha256": "1a1bdcfe8e74c7e2bff2d3e8c4c47c2a6e5d0b5cd2151323c7f2cc7655c9786c",
+  "weights_sha256": "7094f9c1c2f49d1a4f55d7faa4d43ac2ebdcc9ae399f8e2ffd950c05411619fc",
+  "requests_sha256": "18f317ff69847abbfe3c7bc04e0b71893544810cee74de14b3d8a335dca34451",
+  "model": "same frozen 7B adapter for both arms",
+  "max_length": 8192,
+  "max_new_tokens": 512,
+  "scope": "All common-boundary disagreement windows from the same 18 previously evaluated tasks",
+  "instruction_sha256": "78fae6b6a889e6a74fed0969f825458eb3b6035412a7356a10fb2f03089b38fe",
+  "groups_sha256": "162ffbe13ecce50d498bdf9cde816afb5cd27b98843cbeb2b75c3327ca27a528",
+  "fact_review_sha256": "b5ff0c17ce429c785d78b18cb27a9734af8de1e9ccce008ffa1cef6248c960b0",
+  "critical_facts_sha256": "afe1c99985e5e323c0ea1d82416c59f22cba9b5eaec858312cea2e28b8856b9a",
+  "parent_protocol_sha256": "557ba81703b3224ce71906dc5bca39c7f19d8c7ea725932081d9c9d3cfc3670b",
+  "grouping": "local_common_boundary_windows"
+}

@@ -16,6 +16,8 @@ def main():
     parser.add_argument('--training-run', type=Path, default=Path('out/claim_sft_7b_reviewed_v2'))
     parser.add_argument('--inputs', type=Path, default=Path('pilot/adaptive_seal_claim_v1'))
     parser.add_argument('--out', type=Path, default=Path('out/adaptive_seal_claim_v1'))
+    parser.add_argument('--reuse-results', type=Path, help='Reuse identical requests from a completed v1 result folder')
+    parser.add_argument('--reuse-inputs', type=Path, default=Path('pilot/adaptive_seal_claim_v1'))
     args = parser.parse_args()
     protocol = read(args.inputs / 'protocol.json')
     source = args.inputs / 'requests.jsonl'
@@ -72,6 +74,32 @@ def main():
         return
     if not selected:
         raise ValueError('No complete paired group fits the context budget')
+    if args.reuse_results is not None:
+        old_config = read(args.reuse_results/'config.json')
+        if old_config['adapter_sha256'] != config['adapter_sha256'] or old_config['seed'] != config['seed'] or old_config['facts_version'] != config['facts_version']:
+            raise ValueError('Reuse model/adapter/fact configuration mismatch')
+        for key in ('instruction_sha256','max_length','max_new_tokens'):
+            if old_config['protocol'][key] != protocol[key]:
+                raise ValueError('Reuse prompt or generation budget mismatch')
+        old_source = args.reuse_inputs/'requests.jsonl'
+        if hashlib.sha256(old_source.read_bytes()).hexdigest() != old_config['protocol']['requests_sha256']:
+            raise ValueError('Reuse input pack drift')
+        old_rows = {r['job_id']:r for r in map(core.strict_json,old_source.read_text(encoding='utf-8').splitlines())}
+        by_id = {r['job_id']:r for r in rows}
+        for job_id in sorted(selected):
+            old_path = args.reuse_results/(job_id+'.json')
+            target = args.out/(job_id+'.json')
+            if target.exists() or not old_path.exists():
+                continue
+            if core.encoded(old_rows[job_id]) != core.encoded(by_id[job_id]):
+                raise ValueError('Reuse request content mismatch')
+            previous = read(old_path)
+            if previous['job_id'] != job_id or previous['status'] not in ('ready','failed'):
+                raise ValueError('Invalid prior result identity/status')
+            if previous['status']=='ready' and core.validate(core.strict_json(previous['text']),by_id[job_id]) != previous['claims']:
+                raise ValueError('Prior result provenance mismatch')
+            save(target,dict(previous,reused_from=str(old_path),
+                             reused_result_sha256=hashlib.sha256(old_path.read_bytes()).hexdigest()))
     import torch
     from transformers import AutoModelForCausalLM, BitsAndBytesConfig
     from peft import PeftModel, prepare_model_for_kbit_training
@@ -97,6 +125,7 @@ def main():
                 max_new_tokens=protocol['max_new_tokens'], pad_token_id=tokenizer.pad_token_id)
         tokens = generated[0, tensor.shape[-1]:].tolist()
         result = dict(job_id=job_id, text=tokenizer.decode(tokens, skip_special_tokens=True),
+            input_sha256=by_id[job_id]['input_sha256'], prompt_tokens=tensor.shape[-1], generated_tokens=len(tokens),
             seconds=time.perf_counter()-started, token_limit=len(tokens) >= protocol['max_new_tokens'], status='failed')
         try:
             if result['token_limit']:
@@ -109,7 +138,9 @@ def main():
         print(number, len(order), result['status'], flush=True)
     results = [read(args.out / (j+'.json')) for j in order]
     save(args.out / 'summary.json', dict(requests=len(order), ready=sum(r['status']=='ready' for r in results),
-        semantic_review='pending', eligible_groups=sum(eligibility.values()), total_groups=len(groups)))
+        semantic_review='pending', eligible_groups=sum(eligibility.values()), total_groups=len(groups),
+        reused_requests=sum('reused_from' in r for r in results),
+        timing_scope='Request times may mix reused v1 runs and current generation. Record this when comparing costs.'))
 
 
 if __name__ == '__main__':

@@ -190,10 +190,16 @@ def main():
     parser.add_argument('--root', type=Path, default=Path('.'))
     parser.add_argument('--out', type=Path, default=Path('out/stage_claim_pipeline_v1'))
     parser.add_argument('--adaptive-replay', action='store_true', help='Run neural D0/D1 rescoring and prepare new paired claim jobs')
+    parser.add_argument('--local-windows', action='store_true', help='Prepare common-boundary local windows from the frozen v1 replay')
     args = parser.parse_args()
     root = args.root.resolve()
     args.out.mkdir(parents=True, exist_ok=True)
     state = dict(stages={}, status='running')
+    if args.local_windows:
+        subprocess.run([sys.executable, '-m', 'scripts.prepare_local_seal_windows'], cwd=root, check=True)
+        subprocess.run([sys.executable, '-m', 'remote_pilots.openhands_smoke.adaptive_seal_claims',
+                        'check-inputs', '--inputs', 'pilot/adaptive_seal_local_v2'], cwd=root, check=True)
+        state['stages']['local_windows'] = read(root/'pilot/adaptive_seal_local_v2/report.json')
     if args.adaptive_replay:
         encoder_python = root / '.venv-encoder/Scripts/python.exe'
         python = str(encoder_python) if encoder_python.exists() else sys.executable
@@ -216,6 +222,10 @@ def main():
             raise
         save(args.out / 'summary.json', state)
         print(name, json.dumps(state['stages'][name], ensure_ascii=False), flush=True)
+    if (root/'adaptive_seal_claim_v1/summary.json').exists():
+        subprocess.run([sys.executable, '-m', 'scripts.audit_adaptive_claim_return',
+                        '--out', str(args.out.resolve()/'adaptive_return')], cwd=root, check=True)
+        state['stages']['adaptive_return'] = read(args.out/'adaptive_return/summary.json')
     state['status'] = 'local_diagnostics_complete_with_research_tasks_pending'
     save(args.out / 'summary.json', state)
 
