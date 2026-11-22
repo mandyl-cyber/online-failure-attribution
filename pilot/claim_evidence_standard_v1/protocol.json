@@ -1,0 +1,27 @@
+{
+  "protocol": "claim-evidence-standard-v1",
+  "reviewer_kind": "AI",
+  "cases": 10,
+  "corrected_claims": 8,
+  "added_critical_failures": 2,
+  "reference_inputs": 11,
+  "corrected_inputs": 8,
+  "unchanged_controls": 3,
+  "task_groups": "Three known engineering sessions; canonical benchmark task-group identity not established.",
+  "training_started": false,
+  "training_eligible": false,
+  "independent_acceptance": false,
+  "preserved_runtime_prompts": true,
+  "full_part_targets": true,
+  "target_scope": "Preserve accepted unaffected claims, correct the eight reviewed claims, add two selected failures. Not exhaustive stage-fact gold.",
+  "issue_snapshot_sha256": "9bc0c8e10e8a38a03ff83add7c02e2b55e1fec179686efcfd2c7eca50237c074",
+  "data_sha256": {
+    "cases": "4e5c3301a9f89f3cf7924b3a1819e1d97697c7ca9d278a28401ca0a5e3119ecd",
+    "references": "a3035e502b43bdcb08a9eb80867c891cb7dbcbfb2784b3a11a5fca40e31e164a"
+  },
+  "tokenizer_preflight": {
+    "inputs": 11,
+    "eligible": 11,
+    "max_reference_tokens": 215
+  }
+}

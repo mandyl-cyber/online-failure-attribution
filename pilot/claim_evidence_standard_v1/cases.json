@@ -1,0 +1,403 @@
+[
+  {
+    "case_id": "v4-swe-00000001-c6",
+    "family": "source_is_not_a_diff",
+    "session": "swe",
+    "job": "00000001",
+    "part_index": 3,
+    "bad_claim": {
+      "evidence_ids": [
+        "S7.observation.1.7",
+        "S7.observation.1.8",
+        "S7.observation.1.9",
+        "S7.observation.1.10",
+        "S7.observation.1.11",
+        "S7.observation.1.12",
+        "S7.observation.1.13",
+        "S7.observation.1.14"
+      ],
+      "source": "tool_observation",
+      "text": "The PolyElement.as_expr() method receipt shows no change to the original source."
+    },
+    "reference_claim": {
+      "text": "The rings.py excerpt rebuilds Add expressions by recursively mapping over expr.args.",
+      "source": "tool_observation",
+      "evidence_ids": [
+        "S7.observation.1.7"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "The second page is a source listing around lines 378-599, not an as_expr edit receipt. No before/after evidence establishes no change.",
+    "evidence_refs": [
+      {
+        "record_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+        "source_step_id": 7,
+        "field": "observation",
+        "start": 7060,
+        "end": 8259,
+        "quote": "   378\t            elif expr.is_Add:\n   379\t                return reduce(add, list(map(_rebuild, expr.args)))\n   380\t            elif expr.is_Mul:\n   381\t                return reduce(mul, list(map(_rebuild, expr.args)))\n   382\t            else:\n   383\t                # XXX: Use as_base_exp() to handle Pow(x, n) and also exp(n)\n   384\t                # XXX: E can be a generator e.g. sring([exp(2)]) -> ZZ[E]\n   385\t                base, exp = expr.as_base_exp()\n   386\t                if exp.is_Integer and exp > 1:\n   387\t                    return _rebuild(base)**int(exp)\n   388\t                else:\n   389\t                    return self.ground_new(domain.convert(expr))\n   390\t\n   391\t        return _rebuild(sympify(expr))\n   392\t\n   393\t    def from_expr(self, expr):\n   394\t        mapping = dict(list(zip(self.symbols, self.gens)))\n   395\t\n   396\t        try:\n   397\t            poly = self._rebuild_expr(expr, mapping)\n   398\t        except CoercionFailed:\n   399\t            raise ValueError(\"expected an expression convertible to a polynomial in %s, got %s\" % (self, expr))\n   400\t        else:\n   401\t            return self.ring_new(poly)\n   402\t\n   403\t    def index(self, gen):\n",
+        "content_sha256": "819d395d80411a5b9c8bed10645f0e3f36acc32b76bb1a0e5577ad176be82c37",
+        "availability_seq": 7
+      }
+    ]
+  },
+  {
+    "case_id": "v4-swe-00000001-c9",
+    "family": "object_and_event_identity",
+    "session": "swe",
+    "job": "00000001",
+    "part_index": 6,
+    "bad_claim": {
+      "evidence_ids": [
+        "S10.observation.1.1",
+        "S10.observation.1.2",
+        "S10.observation.1.3",
+        "S10.observation.1.4",
+        "S10.observation.1.5",
+        "S10.observation.1.6",
+        "S10.observation.1.7",
+        "S10.observation.1.8",
+        "S10.observation.1.9",
+        "S10.observation.1.10"
+      ],
+      "source": "tool_observation",
+      "text": "The PolyElement.as_expr() method receipt displays the polyutils.py source."
+    },
+    "reference_claim": {
+      "text": "The polyutils.py excerpt defines parallel_dict_from_expr and _parallel_dict_from_expr.",
+      "source": "tool_observation",
+      "evidence_ids": [
+        "S10.observation.1.4"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "The observation displays polyutils.py, but calling it a PolyElement.as_expr method receipt invents an object/event relationship.",
+    "evidence_refs": [
+      {
+        "record_id": "40ac931cf9f8598360961b44303be3c9",
+        "source_step_id": 10,
+        "field": "observation",
+        "start": 3520,
+        "end": 4704,
+        "quote": "   292\t\n   293\t            monom = tuple(monom)\n   294\t\n   295\t            if monom in poly:\n   296\t                poly[monom] += Mul(*coeff)\n   297\t            else:\n   298\t                poly[monom] = Mul(*coeff)\n   299\t\n   300\t        polys.append(poly)\n   301\t\n   302\t    return polys, tuple(gens)\n   303\t\n   304\t\n   305\tdef _dict_from_expr_if_gens(expr, opt):\n   306\t    \"\"\"Transform an expression into a multinomial form given generators. \"\"\"\n   307\t    (poly,), gens = _parallel_dict_from_expr_if_gens((expr,), opt)\n   308\t    return poly, gens\n   309\t\n   310\t\n   311\tdef _dict_from_expr_no_gens(expr, opt):\n   312\t    \"\"\"Transform an expression into a multinomial form and figure out generators. \"\"\"\n   313\t    (poly,), gens = _parallel_dict_from_expr_no_gens((expr,), opt)\n   314\t    return poly, gens\n   315\t\n   316\t\n   317\tdef parallel_dict_from_expr(exprs, **args):\n   318\t    \"\"\"Transform expressions into a multinomial form. \"\"\"\n   319\t    reps, opt = _parallel_dict_from_expr(exprs, build_options(args))\n   320\t    return reps, opt.gens\n   321\t\n   322\t\n   323\tdef _parallel_dict_from_expr(exprs, opt):\n   324\t    \"\"\"Transform expressions into a multinomial form. \"\"\"\n",
+        "content_sha256": "ea7d0d678cf6f16be0c8e35dab2ca807c9e265b2de18f975a155bb8e2a4e99d1",
+        "availability_seq": 10
+      }
+    ]
+  },
+  {
+    "case_id": "v4-swe-00000005-c1",
+    "family": "commit_message_is_intent",
+    "session": "swe",
+    "job": "00000005",
+    "part_index": 0,
+    "bad_claim": {
+      "evidence_ids": [
+        "S20.observation.1.1"
+      ],
+      "source": "tool_observation",
+      "text": "The commit respects user-supplied symbols in PolyElement.as_expr when provided."
+    },
+    "reference_claim": {
+      "text": "The commit message says it changes PolyElement.as_expr to respect user-supplied symbols.",
+      "source": "agent_assertion",
+      "evidence_ids": [
+        "S20.observation.1.1"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "The observation is a commit receipt/message describing intended behavior. It does not establish that the code actually respects supplied symbols; source/wording should preserve agent intent.",
+    "evidence_refs": [
+      {
+        "record_id": "dd5451fb0f305813d50773542f6f3fc9",
+        "source_step_id": 20,
+        "field": "observation",
+        "start": 0,
+        "end": 576,
+        "quote": "[master 371c94803d] rings: respect user-supplied symbols in PolyElement.as_expr when provided\\n\\nPreviously as_expr always used self.ring.symbols even when a correct number of symbols were passed. Now, if symbols are supplied, use them; otherwise fall back to ring symbols.\\n\\nCo-authored-by: openhands <openhands@all-hands.dev>\n 1 file changed, 3 insertions(+), 2 deletions(-)\n[The command completed with exit code 0.]\n[Current working directory: /workspace/sympy__sympy__1.12]\n[Python interpreter: /opt/miniconda3/envs/testbed/bin/python]\n[Command finished with exit code 0]",
+        "content_sha256": "a88b9476ee25b857ad18b96a6a88a9a72c3ec7af4d65c86e41093c4368471b42",
+        "availability_seq": 20
+      }
+    ]
+  },
+  {
+    "case_id": "v4-swe-00000006-c1",
+    "family": "plan_status_is_agent_assertion",
+    "session": "swe",
+    "job": "00000006",
+    "part_index": 0,
+    "bad_claim": {
+      "evidence_ids": [
+        "S21.observation.1.1",
+        "S22.action.1.1",
+        "S23.observation.1.1",
+        "S24.action.1.1"
+      ],
+      "source": "tool_observation",
+      "text": "The plan marks the reproduction and verification done, then describes the fix and its effects."
+    },
+    "reference_claim": {
+      "text": "The agent task list marks reproduction and verification done; its notes report pytest was unavailable and verification used a direct script.",
+      "source": "agent_assertion",
+      "evidence_ids": [
+        "S21.action.1.1"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "The task-list receipt only acknowledges an update. Other cited observations include echoed agent narratives and a limited reproduction; they do not provide the cited plan statuses or independently verify the narrative effects.",
+    "evidence_refs": [
+      {
+        "record_id": "7963c84a7453ee0458985b406c29b8cc",
+        "source_step_id": 21,
+        "field": "action",
+        "start": 0,
+        "end": 1112,
+        "quote": "{\"command\":\"plan\",\"task_list\":[{\"id\":\"phase2\",\"notes\":\"Reproduction confirmed bug before; after fix, expression uses supplied symbols.\",\"status\":\"done\",\"title\":\"Run tests or minimal reproduction to observe the bug\"},{\"id\":\"phase7\",\"notes\":\"Manual reproduction verified. Could not run pytest; environment lacks pytest command. Verified behavior via direct script.\",\"status\":\"done\",\"title\":\"Verify fix with reproduction script and run relevant tests\"},{\"id\":\"phase8\",\"notes\":\"Ensured minimal change, committed with proper git config and message.\",\"status\":\"done\",\"title\":\"Final review against requirements and commit changes\"},{\"id\":\"phase1\",\"status\":\"done\",\"title\":\"Reading and restating the issue, clarifying requirements\"},{\"id\":\"phase3\",\"status\":\"done\",\"title\":\"Explore codebase to locate PolyElement.as_expr and related files\"},{\"id\":\"phase4\",\"status\":\"done\",\"title\":\"Create a minimal reproduction script to confirm the issue\"},{\"id\":\"phase5\",\"status\":\"done\",\"title\":\"Analyze and plan the fix to PolyElement.as_expr\"},{\"id\":\"phase6\",\"status\":\"done\",\"title\":\"Implement minimal code changes to fix the issue\"}]}",
+        "content_sha256": "3740508233a00ab72a86b5297e844404dd8399ecbedcd08486d20577111c94b9",
+        "availability_seq": 21
+      }
+    ]
+  },
+  {
+    "case_id": "v4-terminal-00000001-c3",
+    "family": "short_circuit_leaves_unknown",
+    "session": "terminal",
+    "job": "00000001",
+    "part_index": 0,
+    "bad_claim": {
+      "evidence_ids": [
+        "S5.observation.1.1"
+      ],
+      "source": "tool_observation",
+      "text": "apt-get reports but apk and yum are not found."
+    },
+    "reference_claim": {
+      "text": "The chained availability probe prints /usr/bin/apt-get; this output does not establish yum availability.",
+      "source": "tool_observation",
+      "evidence_ids": [
+        "S5.action.1.1",
+        "S5.observation.1.1"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "The paired command uses which apt-get && which apk && which yum. Failure at apk can skip yum, so absence of yum is not established.",
+    "evidence_refs": [
+      {
+        "record_id": "a4871d72bbad8ab316661c421162b562",
+        "source_step_id": 5,
+        "field": "action",
+        "start": 0,
+        "end": 44,
+        "quote": "\n\n\nwhich apt-get && which apk && which yum\n\n",
+        "content_sha256": "38d6972ef7f82ee058cc0f40363160ce7c76acb4440278c7f373b346624c5741",
+        "availability_seq": 5
+      },
+      {
+        "record_id": "ba6d3c0769eed8602f421fccc049d5dc",
+        "source_step_id": 5,
+        "field": "observation",
+        "start": 0,
+        "end": 16,
+        "quote": "/usr/bin/apt-get",
+        "content_sha256": "bfca1bbb775c19fc361d7bfb812e7c03808f3ef3659e68904a4b83c4c2013d36",
+        "availability_seq": 5
+      }
+    ]
+  },
+  {
+    "case_id": "v4-terminal-00000002-c1",
+    "family": "package_is_not_interpreter",
+    "session": "terminal",
+    "job": "00000002",
+    "part_index": 1,
+    "bad_claim": {
+      "evidence_ids": [
+        "S10.observation.1.1",
+        "S10.observation.1.2"
+      ],
+      "source": "tool_observation",
+      "text": "The Python 3.12-venv package installs Python 3.12.3 and related dependencies."
+    },
+    "reference_claim": {
+      "text": "The package manager reports setting up python3-setuptools-whl, python3-pip-whl and python3.12-venv.",
+      "source": "tool_observation",
+      "evidence_ids": [
+        "S10.observation.1.2"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "The result installs python3.12-venv, pip/setuptools wheels. It does not show installation of the Python 3.12.3 interpreter itself; package identity and scope are conflated.",
+    "evidence_refs": [
+      {
+        "record_id": "abe9c1d47b305530d6f212bcbe02a2b8",
+        "source_step_id": 10,
+        "field": "observation",
+        "start": 1181,
+        "end": 1720,
+        "quote": "Selecting previously unselected package python3-setuptools-whl.\nPreparing to unpack .../python3-setuptools-whl_68.1.2-2ubuntu1.2_all.deb ...\nUnpacking python3-setuptools-whl (68.1.2-2ubuntu1.2) ...\nSelecting previously unselected package python3.12-venv.\nPreparing to unpack .../python3.12-venv_3.12.3-1ubuntu0.9_amd64.deb ...\nUnpacking python3.12-venv (3.12.3-1ubuntu0.9) ...\nSetting up python3-setuptools-whl (68.1.2-2ubuntu1.2) ...\nSetting up python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...\nSetting up python3.12-venv (3.12.3-1ubuntu0.9) ...",
+        "content_sha256": "16b50ef67b42fb8378c06902fda01b2d9d61072cf9c3574994048f38e9fec755",
+        "availability_seq": 10
+      }
+    ]
+  },
+  {
+    "case_id": "v4-terminal-00000002-c2",
+    "family": "progress_is_not_completion",
+    "session": "terminal",
+    "job": "00000002",
+    "part_index": 1,
+    "bad_claim": {
+      "evidence_ids": [
+        "S11.observation.1.1",
+        "S11.observation.1.2"
+      ],
+      "source": "tool_observation",
+      "text": "Pandas and PyArrow install reports download progress and installation success."
+    },
+    "reference_claim": {
+      "text": "The pip output shows the PyArrow download at 24.3/47.7 MB; this cited output does not show installation completion.",
+      "source": "tool_observation",
+      "evidence_ids": [
+        "S11.observation.1.1",
+        "S11.observation.1.2"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "The cited output ends mid-download. Download progress is supported, installation success is not. The completion guard did not catch this wording.",
+    "evidence_refs": [
+      {
+        "record_id": "375ec72eff0fda03de23387755fc2b4b",
+        "source_step_id": 11,
+        "field": "observation",
+        "start": 0,
+        "end": 1161,
+        "quote": "Collecting pandas\n  Downloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 257.6 kB/s eta 0:00:00\nCollecting pyarrow\n  Downloading pyarrow-22.0.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.2 kB)\nCollecting numpy>=1.26.0 (from pandas)\n  Downloading numpy-2.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)\nCollecting python-dateutil>=2.8.2 (from pandas)\n  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)\nCollecting pytz>=2020.1 (from pandas)\n  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)\nCollecting tzdata>=2022.7 (from pandas)\n  Downloading tzdata-2025.3-py2.py3-none-any.whl.metadata (1.4 kB)\nCollecting six>=1.5 (from python-dateutil>=2.8.2->pandas)\n  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)\nDownloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 878.9 kB/s eta 0:00:00\nDownloading pyarrow-22.0.0-cp312-cp312-manylinux_2_28_x86_64.whl (47.7 MB)\n",
+        "content_sha256": "1420b5948e90d0e09defeb27451755a830ec0bd181aca6602134fbaae238f03c",
+        "availability_seq": 11
+      },
+      {
+        "record_id": "375ec72eff0fda03de23387755fc2b4b",
+        "source_step_id": 11,
+        "field": "observation",
+        "start": 1161,
+        "end": 1240,
+        "quote": "   ━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━ 24.3/47.7 MB 641.3 kB/s eta 0:00:37",
+        "content_sha256": "1420b5948e90d0e09defeb27451755a830ec0bd181aca6602134fbaae238f03c",
+        "availability_seq": 11
+      }
+    ]
+  },
+  {
+    "case_id": "v4-live_smoke-00000004-c2",
+    "family": "edit_request_is_not_receipt",
+    "session": "live_smoke",
+    "job": "00000004",
+    "part_index": 0,
+    "bad_claim": {
+      "evidence_ids": [
+        "S8.action.1.1"
+      ],
+      "source": "agent_assertion",
+      "text": "The edit replaces < with <=."
+    },
+    "reference_claim": {
+      "text": "The agent requests replacing start < merged[-1][1] with start <= merged[-1][1].",
+      "source": "agent_assertion",
+      "evidence_ids": [
+        "S8.action.1.1"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "The cited action requests replacing < with <=. Prefer explicitly requested/proposed wording; this reference alone is not an edit completion receipt.",
+    "evidence_refs": [
+      {
+        "record_id": "adf500986e43379249c84c2f91cded2e",
+        "source_step_id": 8,
+        "field": "action",
+        "start": 0,
+        "end": 135,
+        "quote": "str_replace /workspace/ranges.py\n--- old\n    if merged and start < merged[-1][1]:\n+++ new\n        if merged and start <= merged[-1][1]:",
+        "content_sha256": "29a16eae4126106f581b06928c37cee34e4bbcb1ddba6cfc8f62411582ce22ac",
+        "availability_seq": 8
+      }
+    ]
+  },
+  {
+    "case_id": "v4-terminal-00000002-externally_managed_environment",
+    "family": "externally_managed_environment",
+    "session": "terminal",
+    "job": "00000002",
+    "part_index": 0,
+    "bad_claim": null,
+    "reference_claim": {
+      "text": "The pip command reports an externally-managed-environment error.",
+      "source": "tool_observation",
+      "evidence_ids": [
+        "S7.observation.1.1"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "Critical failure missing from accepted model claims; literal evidence is present within the original seal cutoff.",
+    "evidence_refs": [
+      {
+        "record_id": "09b33ca2c057c15ae4a007a6805c0497",
+        "source_step_id": 7,
+        "field": "observation",
+        "start": 0,
+        "end": 1006,
+        "quote": "error: externally-managed-environment\n\n× This environment is externally managed\n╰─> To install Python packages system-wide, try apt install\n    python3-xyz, where xyz is the package you are trying to\n    install.\n\n    If you wish to install a non-Debian-packaged Python package,\n    create a virtual environment using python3 -m venv path/to/venv.\n    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make\n    sure you have python3-full installed.\n\n    If you wish to install a non-Debian packaged Python application,\n    it may be easiest to use pipx install xyz, which will manage a\n    virtual environment for you. Make sure you have pipx installed.\n\n    See /usr/share/doc/python3.12/README.venv for more information.\n\nnote: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.\nhint: See PEP 668 for the detailed specification.",
+        "content_sha256": "96b454d539d364fa7dfa6df0e2b494a5850ba786e18b887becc948372404b4b1",
+        "availability_seq": 7
+      }
+    ]
+  },
+  {
+    "case_id": "v4-terminal-00000002-venv_creation_failed",
+    "family": "venv_creation_failed",
+    "session": "terminal",
+    "job": "00000002",
+    "part_index": 0,
+    "bad_claim": null,
+    "reference_claim": {
+      "text": "Virtual environment creation fails because ensurepip is not available.",
+      "source": "tool_observation",
+      "evidence_ids": [
+        "S9.observation.1.1"
+      ]
+    },
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "training_eligible": false,
+    "review_note": "Critical failure missing from accepted model claims; literal evidence is present within the original seal cutoff.",
+    "evidence_refs": [
+      {
+        "record_id": "f0190ee31ece6f2dd452dc87dd0044aa",
+        "source_step_id": 9,
+        "field": "observation",
+        "start": 0,
+        "end": 386,
+        "quote": "The virtual environment was not created successfully because ensurepip is not\navailable.  On Debian/Ubuntu systems, you need to install the python3-venv\npackage using the following command.\n\n    apt install python3.12-venv\n\nYou may need to use sudo with that command.  After installing the python3-venv\npackage, recreate your virtual environment.\n\nFailing command: /app/venv/bin/python3",
+        "content_sha256": "33622937764a5a6b53b98a3a24500e16e018e27985cf05ccf055df4fd9be9b37",
+        "availability_seq": 9
+      }
+    ]
+  }
+]

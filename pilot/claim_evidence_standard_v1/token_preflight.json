@@ -1,0 +1,68 @@
+[
+  {
+    "job_id": "evidence-v1-live_smoke-00000003-part0",
+    "prompt_tokens": 2232,
+    "reference_tokens": 92,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-live_smoke-00000004-part0",
+    "prompt_tokens": 1373,
+    "reference_tokens": 78,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-swe-00000001-part3",
+    "prompt_tokens": 5394,
+    "reference_tokens": 43,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-swe-00000001-part6",
+    "prompt_tokens": 6715,
+    "reference_tokens": 46,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-swe-00000003-part0",
+    "prompt_tokens": 3795,
+    "reference_tokens": 122,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-swe-00000005-part0",
+    "prompt_tokens": 2300,
+    "reference_tokens": 46,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-swe-00000006-part0",
+    "prompt_tokens": 5381,
+    "reference_tokens": 100,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-terminal-00000001-part0",
+    "prompt_tokens": 2271,
+    "reference_tokens": 157,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-terminal-00000002-part0",
+    "prompt_tokens": 5733,
+    "reference_tokens": 73,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-terminal-00000002-part1",
+    "prompt_tokens": 4065,
+    "reference_tokens": 215,
+    "fits": true
+  },
+  {
+    "job_id": "evidence-v1-terminal-00000004-part0",
+    "prompt_tokens": 1485,
+    "reference_tokens": 77,
+    "fits": true
+  }
+]
