@@ -1,0 +1,110 @@
+{
+  "sessions": [
+    {
+      "session": "stable_unique",
+      "normalized_steps": 7,
+      "sealed_jobs": 2,
+      "sealed_step_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "native_finish_present": false,
+      "claim_outputs_generated": false
+    },
+    {
+      "session": "bounded_chunks",
+      "normalized_steps": 7,
+      "sealed_jobs": 3,
+      "sealed_step_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "native_finish_present": true,
+      "claim_outputs_generated": false
+    },
+    {
+      "session": "prefix_totals",
+      "normalized_steps": 20,
+      "sealed_jobs": 10,
+      "sealed_step_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "native_finish_present": false,
+      "claim_outputs_generated": false
+    },
+    {
+      "session": "config_overrides",
+      "normalized_steps": 15,
+      "sealed_jobs": 11,
+      "sealed_step_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "native_finish_present": true,
+      "claim_outputs_generated": false
+    }
+  ],
+  "facts": 46,
+  "categories": {
+    "zero_tests": 4,
+    "source_observation": 6,
+    "edit_failed": 8,
+    "edit_acknowledged": 11,
+    "verification_pass": 2,
+    "probe_result": 1,
+    "agent_assertion": 2,
+    "verification_failed": 10,
+    "runtime_exception": 2
+  },
+  "key_outcomes": 33,
+  "sealed_facts": 40,
+  "open_stage_facts": 6,
+  "sealed_jobs": 26,
+  "generation_parts": 26,
+  "input_gaps": 0,
+  "reviewer_kind": "AI",
+  "claim_model_calls": 0,
+  "semantic_references_frozen": true,
+  "limits": [
+    "References are focused AI annotations",
+    "Open-stage facts stay in the denominator report but receive no artificial summary job",
+    "No stage boundary gold or failure alarm labels",
+    "No posthoc verification facts used"
+  ]
+}

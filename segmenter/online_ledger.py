@@ -228,11 +228,12 @@ class OnlineLedger:
             if self.seen[key] != fingerprint:
                 raise ValueError("Conflicting native event ID")
             return False
-        if self.finished:
+        lifecycle_only=('action' not in event and event.get('observation') in ('agent_state_changed','null','recall'))
+        if self.finished and not lifecycle_only:
             raise ValueError("Run already closed")
         validate_event(self.adapter, event)
         self.timeline.receive(event)
-        if "observation" in event and event.get("cause") is not None and event["cause"] not in self.actions:
+        if not lifecycle_only and "observation" in event and event.get("cause") is not None and event["cause"] not in self.actions:
             raise ValueError("Observation precedes its action; ordered source required")
         record = dict(kind="event", event=deepcopy(event), sha256=fingerprint)
         path = self.raw/f"{len(self.seen)+1:08d}.json"

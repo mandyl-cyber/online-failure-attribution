@@ -1,0 +1,210 @@
+[
+  {
+    "job_id": "cbc5de087d72fd1f3f20ff8e29ed34f8",
+    "session": "stable_unique",
+    "parts": 1,
+    "input_tokens": [
+      1949
+    ]
+  },
+  {
+    "job_id": "ca7580d17a22e5562036e66fa4373245",
+    "session": "stable_unique",
+    "parts": 1,
+    "input_tokens": [
+      1333
+    ]
+  },
+  {
+    "job_id": "8322ba22e5fbfb8b1eb1de919d14dc53",
+    "session": "bounded_chunks",
+    "parts": 1,
+    "input_tokens": [
+      1921
+    ]
+  },
+  {
+    "job_id": "5471e38ce0ce13e0139e6a513686b602",
+    "session": "bounded_chunks",
+    "parts": 1,
+    "input_tokens": [
+      1384
+    ]
+  },
+  {
+    "job_id": "06830aa404c891f10f4a68aa25089da4",
+    "session": "bounded_chunks",
+    "parts": 1,
+    "input_tokens": [
+      1876
+    ]
+  },
+  {
+    "job_id": "d05f8318478c13ee8cde93ba8d684d0f",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      1660
+    ]
+  },
+  {
+    "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      2434
+    ]
+  },
+  {
+    "job_id": "de85cf017d7cfb08a94fd6090ce85b48",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      1381
+    ]
+  },
+  {
+    "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      1826
+    ]
+  },
+  {
+    "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      1419
+    ]
+  },
+  {
+    "job_id": "e160bd1c8ea28908980bf85c1c429992",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      1851
+    ]
+  },
+  {
+    "job_id": "2ac9cff691b9111e19be3df0f862fe5f",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      1433
+    ]
+  },
+  {
+    "job_id": "91ea6ef7750d6d4c5081fa5768cd96d8",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      1383
+    ]
+  },
+  {
+    "job_id": "1a8acf67d16d01e472dac2b42e4ba473",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      2142
+    ]
+  },
+  {
+    "job_id": "acfea7523b8d1b908a9444b426117339",
+    "session": "prefix_totals",
+    "parts": 1,
+    "input_tokens": [
+      1449
+    ]
+  },
+  {
+    "job_id": "26715cc67e497c83b13a75d71e78d02b",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      2331
+    ]
+  },
+  {
+    "job_id": "2aec3a7e6fda449066e022139288aa95",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1560
+    ]
+  },
+  {
+    "job_id": "9c80f70a3ab797da8c5730cb7f2ac2f3",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1519
+    ]
+  },
+  {
+    "job_id": "a8650ee93e2f98972f275dd9de667b46",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1315
+    ]
+  },
+  {
+    "job_id": "54bd019ee3db5598d575aa8b3cea1e6d",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1604
+    ]
+  },
+  {
+    "job_id": "9507071be4fa50e64385dd3bc621471a",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1281
+    ]
+  },
+  {
+    "job_id": "1f17652e3e51c57afee74c3b3d0eebf6",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1624
+    ]
+  },
+  {
+    "job_id": "bb3bee42c4fc0aed14ebf8a383bfabb9",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1298
+    ]
+  },
+  {
+    "job_id": "ae6cc8589213f59ab0c11360d49826ad",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1396
+    ]
+  },
+  {
+    "job_id": "df8cf41577f4ab2c17d5fc56ee22b695",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1380
+    ]
+  },
+  {
+    "job_id": "f6babff958eefb02c59f0305d8be14b0",
+    "session": "config_overrides",
+    "parts": 1,
+    "input_tokens": [
+      1529
+    ]
+  }
+]
