@@ -1,0 +1,215 @@
+{
+  "jobs": 19,
+  "receipts": 19,
+  "statuses": {
+    "ready": 16,
+    "partial": 2,
+    "evidence_only": 1
+  },
+  "claims": 42,
+  "identical_claims_to_v3": 16,
+  "generation_parts": 26,
+  "paged_parts": 2,
+  "input_gaps": 0,
+  "rejected_claims": 3,
+  "retained_observations": 11,
+  "signal_counts": {
+    "missing_tool_or_module": 2,
+    "externally_managed_environment": 1,
+    "venv_creation_failed": 1,
+    "zero_tests_reported": 1,
+    "reported_traceback": 2,
+    "replacement_not_performed": 5
+  },
+  "uncited_signals": 2,
+  "generation_seconds_per_part": {
+    "n": 26,
+    "p50": 2.2947662275400944,
+    "p95": 7.6200299970805645,
+    "p99": 8.419747811974958,
+    "maximum": 8.419747811974958
+  },
+  "total_generation_seconds": 86.56282507278956,
+  "peak_gpu_GiB": 10.454312324523926,
+  "sessions": [
+    {
+      "session": "swe",
+      "statuses": {
+        "ready": 6
+      },
+      "cached_recovery_passed": true,
+      "full_timings": {
+        "queue_ms": {
+          "n": 6,
+          "p50": 7540.6358740000005,
+          "p95": 36094.559506,
+          "p99": 36094.559506,
+          "maximum": 36094.559506
+        },
+        "processing_ms": {
+          "n": 6,
+          "p50": 4570.148439,
+          "p95": 36229.215487,
+          "p99": 36229.215487,
+          "maximum": 36229.215487
+        },
+        "queued_to_publication_ms": {
+          "n": 6,
+          "p50": 15354.2253865,
+          "p95": 37523.036062,
+          "p99": 37523.036062,
+          "maximum": 37523.036062
+        },
+        "timing_scope": "Successful persisted batches only, deduplicated by job. Matching clock domains. Median and nearest-rank p95/p99."
+      },
+      "partial_timings": {
+        "queue_ms": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null,
+          "maximum": null
+        },
+        "processing_ms": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null,
+          "maximum": null
+        },
+        "queued_to_publication_ms": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null,
+          "maximum": null
+        },
+        "timing_scope": "Successful persisted batches only, deduplicated by job. Matching clock domains. Median and nearest-rank p95/p99."
+      }
+    },
+    {
+      "session": "terminal",
+      "statuses": {
+        "ready": 4,
+        "partial": 2,
+        "evidence_only": 1
+      },
+      "cached_recovery_passed": true,
+      "full_timings": {
+        "queue_ms": {
+          "n": 4,
+          "p50": 16960.2522295,
+          "p95": 18716.062946,
+          "p99": 18716.062946,
+          "maximum": 18716.062946
+        },
+        "processing_ms": {
+          "n": 4,
+          "p50": 1602.880175,
+          "p95": 3485.216147,
+          "p99": 3485.216147,
+          "maximum": 3485.216147
+        },
+        "queued_to_publication_ms": {
+          "n": 4,
+          "p50": 18398.8205575,
+          "p95": 20032.377722,
+          "p99": 20032.377722,
+          "maximum": 20032.377722
+        },
+        "timing_scope": "Successful persisted batches only, deduplicated by job. Matching clock domains. Median and nearest-rank p95/p99."
+      },
+      "partial_timings": {
+        "queue_ms": {
+          "n": 2,
+          "p50": 7018.507634,
+          "p95": 14034.875998,
+          "p99": 14034.875998,
+          "maximum": 14034.875998
+        },
+        "processing_ms": {
+          "n": 2,
+          "p50": 8212.2514855,
+          "p95": 14152.474018,
+          "p99": 14152.474018,
+          "maximum": 14152.474018
+        },
+        "queued_to_publication_ms": {
+          "n": 2,
+          "p50": 15230.7591195,
+          "p95": 16306.904951,
+          "p99": 16306.904951,
+          "maximum": 16306.904951
+        },
+        "timing_scope": "Successful persisted batches only, deduplicated by job. Matching clock domains. Median and nearest-rank p95/p99."
+      }
+    },
+    {
+      "session": "live_smoke",
+      "statuses": {
+        "ready": 6
+      },
+      "cached_recovery_passed": true,
+      "full_timings": {
+        "queue_ms": {
+          "n": 6,
+          "p50": 1368.596751,
+          "p95": 4718.637883,
+          "p99": 4718.637883,
+          "maximum": 4718.637883
+        },
+        "processing_ms": {
+          "n": 6,
+          "p50": 1705.997341,
+          "p95": 2362.320608,
+          "p99": 2362.320608,
+          "maximum": 2362.320608
+        },
+        "queued_to_publication_ms": {
+          "n": 6,
+          "p50": 2932.676557,
+          "p95": 6322.752786,
+          "p99": 6322.752786,
+          "maximum": 6322.752786
+        },
+        "timing_scope": "Successful persisted batches only, deduplicated by job. Matching clock domains. Median and nearest-rank p95/p99."
+      },
+      "partial_timings": {
+        "queue_ms": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null,
+          "maximum": null
+        },
+        "processing_ms": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null,
+          "maximum": null
+        },
+        "queued_to_publication_ms": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null,
+          "maximum": null
+        },
+        "timing_scope": "Successful persisted batches only, deduplicated by job. Matching clock domains. Median and nearest-rank p95/p99."
+      }
+    }
+  ],
+  "scope": "Three known sessions at 0.05s/event, default phase rules, shared serial 7B. Structural validation is not semantic accuracy. Cached recovery did not force a GPU crash.",
+  "semantic_review": {
+    "reviewer_kind": "AI",
+    "blinded": false,
+    "claims": 42,
+    "judgments": {
+      "supported": 34,
+      "unsupported": 1,
+      "partial": 7
+    },
+    "scope": "All 42 published claims. Cited excerpts with paired actions for interpretation. No human accuracy or exhaustive fact-recall claim. Agent assertions are not independent verification."
+  }
+}

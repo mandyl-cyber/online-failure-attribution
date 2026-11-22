@@ -1,0 +1,499 @@
+[
+  {
+    "session": "swe",
+    "job": "00000001.json",
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "36844f093d1b890ea453eba4d8ae30f3",
+      "evidence_ids": [
+        "b4ef1c956e0c6a1f5d82b8f4406e33db"
+      ],
+      "evidence_refs": [
+        {
+          "end": 8259,
+          "evidence_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+          "quote": "   378\t            elif expr.is_Add:\n   379\t                return reduce(add, list(map(_rebuild, expr.args)))\n   380\t            elif expr.is_Mul:\n   381\t                return reduce(mul, list(map(_rebuild, expr.args)))\n   382\t            else:\n   383\t                # XXX: Use as_base_exp() to handle Pow(x, n) and also exp(n)\n   384\t                # XXX: E can be a generator e.g. sring([exp(2)]) -> ZZ[E]\n   385\t                base, exp = expr.as_base_exp()\n   386\t                if exp.is_Integer and exp > 1:\n   387\t                    return _rebuild(base)**int(exp)\n   388\t                else:\n   389\t                    return self.ground_new(domain.convert(expr))\n   390\t\n   391\t        return _rebuild(sympify(expr))\n   392\t\n   393\t    def from_expr(self, expr):\n   394\t        mapping = dict(list(zip(self.symbols, self.gens)))\n   395\t\n   396\t        try:\n   397\t            poly = self._rebuild_expr(expr, mapping)\n   398\t        except CoercionFailed:\n   399\t            raise ValueError(\"expected an expression convertible to a polynomial in %s, got %s\" % (self, expr))\n   400\t        else:\n   401\t            return self.ring_new(poly)\n   402\t\n   403\t    def index(self, gen):\n",
+          "start": 7060
+        },
+        {
+          "end": 9447,
+          "evidence_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+          "quote": "   404\t        \"\"\"Compute index of ``gen`` in ``self.gens``. \"\"\"\n   405\t        if gen is None:\n   406\t            if self.ngens:\n   407\t                i = 0\n   408\t            else:\n   409\t                i = -1  # indicate impossible choice\n   410\t        elif isinstance(gen, int):\n   411\t            i = gen\n   412\t\n   413\t            if 0 <= i and i < self.ngens:\n   414\t                pass\n   415\t            elif -self.ngens <= i and i <= -1:\n   416\t                i = -i - 1\n   417\t            else:\n   418\t                raise ValueError(\"invalid generator index: %s\" % gen)\n   419\t        elif isinstance(gen, self.dtype):\n   420\t            try:\n   421\t                i = self.gens.index(gen)\n   422\t            except ValueError:\n   423\t                raise ValueError(\"invalid generator: %s\" % gen)\n   424\t        elif isinstance(gen, str):\n   425\t            try:\n   426\t                i = self.symbols.index(gen)\n   427\t            except ValueError:\n   428\t                raise ValueError(\"invalid generator: %s\" % gen)\n   429\t        else:\n   430\t            raise ValueError(\"expected a polynomial generator, an integer, a string or None, got %s\" % gen)\n   431\t\n",
+          "start": 8259
+        },
+        {
+          "end": 10643,
+          "evidence_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+          "quote": "   432\t        return i\n   433\t\n   434\t    def drop(self, *gens):\n   435\t        \"\"\"Remove specified generators from this ring. \"\"\"\n   436\t        indices = set(map(self.index, gens))\n   437\t        symbols = [ s for i, s in enumerate(self.symbols) if i not in indices ]\n   438\t\n   439\t        if not symbols:\n   440\t            return self.domain\n   441\t        else:\n   442\t            return self.clone(symbols=symbols)\n   443\t\n   444\t    def __getitem__(self, key):\n   445\t        symbols = self.symbols[key]\n   446\t\n   447\t        if not symbols:\n   448\t            return self.domain\n   449\t        else:\n   450\t            return self.clone(symbols=symbols)\n   451\t\n   452\t    def to_ground(self):\n   453\t        # TODO: should AlgebraicField be a Composite domain?\n   454\t        if self.domain.is_Composite or hasattr(self.domain, 'domain'):\n   455\t            return self.clone(domain=self.domain.domain)\n   456\t        else:\n   457\t            raise ValueError(\"%s is not a composite domain\" % self.domain)\n   458\t\n   459\t    def to_domain(self):\n   460\t        return PolynomialRing(self)\n   461\t\n   462\t    def to_field(self):\n   463\t        from sympy.polys.fields import FracField\n",
+          "start": 9447
+        },
+        {
+          "end": 11796,
+          "evidence_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+          "quote": "   464\t        return FracField(self.symbols, self.domain, self.order)\n   465\t\n   466\t    @property\n   467\t    def is_univariate(self):\n   468\t        return len(self.gens) == 1\n   469\t\n   470\t    @property\n   471\t    def is_multivariate(self):\n   472\t        return len(self.gens) > 1\n   473\t\n   474\t    def add(self, *objs):\n   475\t        \"\"\"\n   476\t        Add a sequence of polynomials or containers of polynomials.\n   477\t\n   478\t        Examples\n   479\t        ========\n   480\t\n   481\t        >>> from sympy.polys.rings import ring\n   482\t        >>> from sympy.polys.domains import ZZ\n   483\t\n   484\t        >>> R, x = ring(\"x\", ZZ)\n   485\t        >>> R.add([ x**2 + 2*i + 3 for i in range(4) ])\n   486\t        4*x**2 + 24\n   487\t        >>> _.factor_list()\n   488\t        (4, [(x**2 + 6, 1)])\n   489\t\n   490\t        \"\"\"\n   491\t        p = self.zero\n   492\t\n   493\t        for obj in objs:\n   494\t            if is_sequence(obj, include=GeneratorType):\n   495\t                p += self.add(*obj)\n   496\t            else:\n   497\t                p += obj\n   498\t\n   499\t        return p\n   500\t\n   501\t    def mul(self, *objs):\n   502\t        \"\"\"\n",
+          "start": 10643
+        },
+        {
+          "end": 12956,
+          "evidence_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+          "quote": "   503\t        Multiply a sequence of polynomials or containers of polynomials.\n   504\t\n   505\t        Examples\n   506\t        ========\n   507\t\n   508\t        >>> from sympy.polys.rings import ring\n   509\t        >>> from sympy.polys.domains import ZZ\n   510\t\n   511\t        >>> R, x = ring(\"x\", ZZ)\n   512\t        >>> R.mul([ x**2 + 2*i + 3 for i in range(4) ])\n   513\t        x**8 + 24*x**6 + 206*x**4 + 744*x**2 + 945\n   514\t        >>> _.factor_list()\n   515\t        (1, [(x**2 + 3, 1), (x**2 + 5, 1), (x**2 + 7, 1), (x**2 + 9, 1)])\n   516\t\n   517\t        \"\"\"\n   518\t        p = self.one\n   519\t\n   520\t        for obj in objs:\n   521\t            if is_sequence(obj, include=GeneratorType):\n   522\t                p *= self.mul(*obj)\n   523\t            else:\n   524\t                p *= obj\n   525\t\n   526\t        return p\n   527\t\n   528\t    def drop_to_ground(self, *gens):\n   529\t        r\"\"\"\n   530\t        Remove specified generators from the ring and inject them into\n   531\t        its domain.\n   532\t        \"\"\"\n   533\t        indices = set(map(self.index, gens))\n   534\t        symbols = [s for i, s in enumerate(self.symbols) if i not in indices]\n",
+          "start": 11796
+        },
+        {
+          "end": 14144,
+          "evidence_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+          "quote": "   535\t        gens = [gen for i, gen in enumerate(self.gens) if i not in indices]\n   536\t\n   537\t        if not symbols:\n   538\t            return self\n   539\t        else:\n   540\t            return self.clone(symbols=symbols, domain=self.drop(*gens))\n   541\t\n   542\t    def compose(self, other):\n   543\t        \"\"\"Add the generators of ``other`` to ``self``\"\"\"\n   544\t        if self != other:\n   545\t            syms = set(self.symbols).union(set(other.symbols))\n   546\t            return self.clone(symbols=list(syms))\n   547\t        else:\n   548\t            return self\n   549\t\n   550\t    def add_gens(self, symbols):\n   551\t        \"\"\"Add the elements of ``symbols`` as generators to ``self``\"\"\"\n   552\t        syms = set(self.symbols).union(set(symbols))\n   553\t        return self.clone(symbols=list(syms))\n   554\t\n   555\t\n   556\tclass PolyElement(DomainElement, DefaultPrinting, CantSympify, dict):\n   557\t    \"\"\"Element of multivariate distributed polynomial ring. \"\"\"\n   558\t\n   559\t    def new(self, init):\n   560\t        return self.__class__(init)\n   561\t\n   562\t    def parent(self):\n   563\t        return self.ring.to_domain()\n   564\t\n   565\t    def __getnewargs__(self):\n",
+          "start": 12956
+        },
+        {
+          "end": 15321,
+          "evidence_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+          "quote": "   566\t        return (self.ring, list(self.iterterms()))\n   567\t\n   568\t    _hash = None\n   569\t\n   570\t    def __hash__(self):\n   571\t        # XXX: This computes a hash of a dictionary, but currently we don't\n   572\t        # protect dictionary from being changed so any use site modifications\n   573\t        # will make hashing go wrong. Use this feature with caution until we\n   574\t        # figure out how to make a safe API without compromising speed of this\n   575\t        # low-level class.\n   576\t        _hash = self._hash\n   577\t        if _hash is None:\n   578\t            self._hash = _hash = hash((self.ring, frozenset(self.items())))\n   579\t        return _hash\n   580\t\n   581\t    def copy(self):\n   582\t        \"\"\"Return a copy of polynomial self.\n   583\t\n   584\t        Polynomials are mutable; if one is interested in preserving\n   585\t        a polynomial, and one plans to use inplace operations, one\n   586\t        can copy the polynomial. This method makes a shallow copy.\n   587\t\n   588\t        Examples\n   589\t        ========\n   590\t\n   591\t        >>> from sympy.polys.domains import ZZ\n   592\t        >>> from sympy.polys.rings import ring\n   593\t\n",
+          "start": 14144
+        },
+        {
+          "end": 15520,
+          "evidence_id": "b4ef1c956e0c6a1f5d82b8f4406e33db",
+          "quote": "   594\t        >>> R, x, y = ring('x, y', ZZ)\n   595\t        >>> p = (x + y)**2\n   596\t        >>> p1 = p.copy()\n   597\t        >>> p2 = p\n   598\t        >>> p[R.zero_monom] = 3\n   599\t        >>> p\n",
+          "start": 15321
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "61e08b6c8bafd499b823ac399ca09e4d",
+      "kind": "conclusion",
+      "local_id": "c6",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "36844f093d1b890ea453eba4d8ae30f3",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The PolyElement.as_expr() method receipt shows no change to the original source.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "identical_to_v3": false,
+    "reviewer": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "The second page is a source listing around lines 378-599, not an as_expr edit receipt. No before/after evidence establishes no change.",
+    "claim_sha256": "8529dbeb9d95ef8a67cc40e70ff21a695005a9aa52e235b1176a1f67b0dfd5bb"
+  },
+  {
+    "session": "swe",
+    "job": "00000001.json",
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "8a759e56dd6937c352acf4defc31e4ac",
+      "evidence_ids": [
+        "40ac931cf9f8598360961b44303be3c9"
+      ],
+      "evidence_refs": [
+        {
+          "end": 1189,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "Here's the result of running `cat -n` on /workspace/sympy__sympy__1.12/sympy/polys/polyutils.py:\n   200\t                    coeff.append(factor)\n   201\t                else:\n   202\t                    try:\n   203\t                        if opt.series is False:\n   204\t                            base, exp = decompose_power(factor)\n   205\t\n   206\t                            if exp < 0:\n   207\t                                exp, base = -exp, Pow(base, -S.One)\n   208\t                        else:\n   209\t                            base, exp = decompose_power_rat(factor)\n   210\t\n   211\t                        monom[indices[base]] = exp\n   212\t                    except KeyError:\n   213\t                        if not factor.has_free(*opt.gens):\n   214\t                            coeff.append(factor)\n   215\t                        else:\n   216\t                            raise PolynomialError(\"%s contains an element of \"\n   217\t                                                  \"the set of generators.\" % factor)\n   218\t\n   219\t            monom = tuple(monom)\n   220\t\n   221\t            if monom in poly:\n   222\t                poly[monom] += Mul(*coeff)\n   223\t            else:\n",
+          "start": 0
+        },
+        {
+          "end": 2320,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   224\t                poly[monom] = Mul(*coeff)\n   225\t\n   226\t        polys.append(poly)\n   227\t\n   228\t    return polys, opt.gens\n   229\t\n   230\t\n   231\tdef _parallel_dict_from_expr_no_gens(exprs, opt):\n   232\t    \"\"\"Transform expressions into a multinomial form and figure out generators. \"\"\"\n   233\t    if opt.domain is not None:\n   234\t        def _is_coeff(factor):\n   235\t            return factor in opt.domain\n   236\t    elif opt.extension is True:\n   237\t        def _is_coeff(factor):\n   238\t            return factor.is_algebraic\n   239\t    elif opt.greedy is not False:\n   240\t        def _is_coeff(factor):\n   241\t            return factor is S.ImaginaryUnit\n   242\t    else:\n   243\t        def _is_coeff(factor):\n   244\t            return factor.is_number\n   245\t\n   246\t    gens, reprs = set(), []\n   247\t\n   248\t    for expr in exprs:\n   249\t        terms = []\n   250\t\n   251\t        if expr.is_Equality:\n   252\t            expr = expr.lhs - expr.rhs\n   253\t\n   254\t        for term in Add.make_args(expr):\n   255\t            coeff, elements = [], {}\n   256\t\n   257\t            for factor in Mul.make_args(term):\n",
+          "start": 1189
+        },
+        {
+          "end": 3520,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   258\t                if not _not_a_coeff(factor) and (factor.is_Number or _is_coeff(factor)):\n   259\t                    coeff.append(factor)\n   260\t                else:\n   261\t                    if opt.series is False:\n   262\t                        base, exp = decompose_power(factor)\n   263\t\n   264\t                        if exp < 0:\n   265\t                            exp, base = -exp, Pow(base, -S.One)\n   266\t                    else:\n   267\t                        base, exp = decompose_power_rat(factor)\n   268\t\n   269\t                    elements[base] = elements.setdefault(base, 0) + exp\n   270\t                    gens.add(base)\n   271\t\n   272\t            terms.append((coeff, elements))\n   273\t\n   274\t        reprs.append(terms)\n   275\t\n   276\t    gens = _sort_gens(gens, opt=opt)\n   277\t    k, indices = len(gens), {}\n   278\t\n   279\t    for i, g in enumerate(gens):\n   280\t        indices[g] = i\n   281\t\n   282\t    polys = []\n   283\t\n   284\t    for terms in reprs:\n   285\t        poly = {}\n   286\t\n   287\t        for coeff, term in terms:\n   288\t            monom = [0]*k\n   289\t\n   290\t            for base, exp in term.items():\n   291\t                monom[indices[base]] = exp\n",
+          "start": 2320
+        },
+        {
+          "end": 4704,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   292\t\n   293\t            monom = tuple(monom)\n   294\t\n   295\t            if monom in poly:\n   296\t                poly[monom] += Mul(*coeff)\n   297\t            else:\n   298\t                poly[monom] = Mul(*coeff)\n   299\t\n   300\t        polys.append(poly)\n   301\t\n   302\t    return polys, tuple(gens)\n   303\t\n   304\t\n   305\tdef _dict_from_expr_if_gens(expr, opt):\n   306\t    \"\"\"Transform an expression into a multinomial form given generators. \"\"\"\n   307\t    (poly,), gens = _parallel_dict_from_expr_if_gens((expr,), opt)\n   308\t    return poly, gens\n   309\t\n   310\t\n   311\tdef _dict_from_expr_no_gens(expr, opt):\n   312\t    \"\"\"Transform an expression into a multinomial form and figure out generators. \"\"\"\n   313\t    (poly,), gens = _parallel_dict_from_expr_no_gens((expr,), opt)\n   314\t    return poly, gens\n   315\t\n   316\t\n   317\tdef parallel_dict_from_expr(exprs, **args):\n   318\t    \"\"\"Transform expressions into a multinomial form. \"\"\"\n   319\t    reps, opt = _parallel_dict_from_expr(exprs, build_options(args))\n   320\t    return reps, opt.gens\n   321\t\n   322\t\n   323\tdef _parallel_dict_from_expr(exprs, opt):\n   324\t    \"\"\"Transform expressions into a multinomial form. \"\"\"\n",
+          "start": 3520
+        },
+        {
+          "end": 5875,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   325\t    if opt.expand is not False:\n   326\t        exprs = [ expr.expand() for expr in exprs ]\n   327\t\n   328\t    if any(expr.is_commutative is False for expr in exprs):\n   329\t        raise PolynomialError('non-commutative expressions are not supported')\n   330\t\n   331\t    if opt.gens:\n   332\t        reps, gens = _parallel_dict_from_expr_if_gens(exprs, opt)\n   333\t    else:\n   334\t        reps, gens = _parallel_dict_from_expr_no_gens(exprs, opt)\n   335\t\n   336\t    return reps, opt.clone({'gens': gens})\n   337\t\n   338\t\n   339\tdef dict_from_expr(expr, **args):\n   340\t    \"\"\"Transform an expression into a multinomial form. \"\"\"\n   341\t    rep, opt = _dict_from_expr(expr, build_options(args))\n   342\t    return rep, opt.gens\n   343\t\n   344\t\n   345\tdef _dict_from_expr(expr, opt):\n   346\t    \"\"\"Transform an expression into a multinomial form. \"\"\"\n   347\t    if expr.is_commutative is False:\n   348\t        raise PolynomialError('non-commutative expressions are not supported')\n   349\t\n   350\t    def _is_expandable_pow(expr):\n   351\t        return (expr.is_Pow and expr.exp.is_positive and expr.exp.is_Integer\n   352\t                and expr.base.is_Add)\n   353\t\n",
+          "start": 4704
+        },
+        {
+          "end": 7042,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   354\t    if opt.expand is not False:\n   355\t        if not isinstance(expr, (Expr, Eq)):\n   356\t            raise PolynomialError('expression must be of type Expr')\n   357\t        expr = expr.expand()\n   358\t        # TODO: Integrate this into expand() itself\n   359\t        while any(_is_expandable_pow(i) or i.is_Mul and\n   360\t            any(_is_expandable_pow(j) for j in i.args) for i in\n   361\t                Add.make_args(expr)):\n   362\t\n   363\t            expr = expand_multinomial(expr)\n   364\t        while any(i.is_Mul and any(j.is_Add for j in i.args) for i in Add.make_args(expr)):\n   365\t            expr = expand_mul(expr)\n   366\t\n   367\t    if opt.gens:\n   368\t        rep, gens = _dict_from_expr_if_gens(expr, opt)\n   369\t    else:\n   370\t        rep, gens = _dict_from_expr_no_gens(expr, opt)\n   371\t\n   372\t    return rep, opt.clone({'gens': gens})\n   373\t\n   374\t\n   375\tdef expr_from_dict(rep, *gens):\n   376\t    \"\"\"Convert a multinomial form into an expression. \"\"\"\n   377\t    result = []\n   378\t\n   379\t    for monom, coeff in rep.items():\n   380\t        term = [coeff]\n   381\t        for g, m in zip(gens, monom):\n   382\t            if m:\n",
+          "start": 5875
+        },
+        {
+          "end": 8172,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   383\t                term.append(Pow(g, m))\n   384\t\n   385\t        result.append(Mul(*term))\n   386\t\n   387\t    return Add(*result)\n   388\t\n   389\tparallel_dict_from_basic = parallel_dict_from_expr\n   390\tdict_from_basic = dict_from_expr\n   391\tbasic_from_dict = expr_from_dict\n   392\t\n   393\t\n   394\tdef _dict_reorder(rep, gens, new_gens):\n   395\t    \"\"\"Reorder levels using dict representation. \"\"\"\n   396\t    gens = list(gens)\n   397\t\n   398\t    monoms = rep.keys()\n   399\t    coeffs = rep.values()\n   400\t\n   401\t    new_monoms = [ [] for _ in range(len(rep)) ]\n   402\t    used_indices = set()\n   403\t\n   404\t    for gen in new_gens:\n   405\t        try:\n   406\t            j = gens.index(gen)\n   407\t            used_indices.add(j)\n   408\t\n   409\t            for M, new_M in zip(monoms, new_monoms):\n   410\t                new_M.append(M[j])\n   411\t        except ValueError:\n   412\t            for new_M in new_monoms:\n   413\t                new_M.append(0)\n   414\t\n   415\t    for i, _ in enumerate(gens):\n   416\t        if i not in used_indices:\n   417\t            for monom in monoms:\n   418\t                if monom[i]:\n",
+          "start": 7042
+        },
+        {
+          "end": 9353,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   419\t                    raise GeneratorsError(\"unable to drop generators\")\n   420\t\n   421\t    return map(tuple, new_monoms), coeffs\n   422\t\n   423\t\n   424\tclass PicklableWithSlots:\n   425\t    \"\"\"\n   426\t    Mixin class that allows to pickle objects with ``__slots__``.\n   427\t\n   428\t    Examples\n   429\t    ========\n   430\t\n   431\t    First define a class that mixes :class:`PicklableWithSlots` in::\n   432\t\n   433\t        >>> from sympy.polys.polyutils import PicklableWithSlots\n   434\t        >>> class Some(PicklableWithSlots):\n   435\t        ...     __slots__ = ('foo', 'bar')\n   436\t        ...\n   437\t        ...     def __init__(self, foo, bar):\n   438\t        ...         self.foo = foo\n   439\t        ...         self.bar = bar\n   440\t\n   441\t    To make :mod:`pickle` happy in doctest we have to use these hacks::\n   442\t\n   443\t        >>> import builtins\n   444\t        >>> builtins.Some = Some\n   445\t        >>> from sympy.polys import polyutils\n   446\t        >>> polyutils.Some = Some\n   447\t\n   448\t    Next lets see if we can create an instance, pickle it and unpickle::\n   449\t\n   450\t        >>> some = Some('abc', 10)\n   451\t        >>> some.foo, some.bar\n",
+          "start": 8172
+        },
+        {
+          "end": 10538,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   452\t        ('abc', 10)\n   453\t\n   454\t        >>> from pickle import dumps, loads\n   455\t        >>> some2 = loads(dumps(some))\n   456\t\n   457\t        >>> some2.foo, some2.bar\n   458\t        ('abc', 10)\n   459\t\n   460\t    \"\"\"\n   461\t\n   462\t    __slots__ = ()\n   463\t\n   464\t    def __getstate__(self, cls=None):\n   465\t        if cls is None:\n   466\t            # This is the case for the instance that gets pickled\n   467\t            cls = self.__class__\n   468\t\n   469\t        d = {}\n   470\t\n   471\t        # Get all data that should be stored from super classes\n   472\t        for c in cls.__bases__:\n   473\t            # XXX: Python 3.11 defines object.__getstate__ and it does not\n   474\t            # accept any arguments so we need to make sure not to call it with\n   475\t            # an argument here. To be compatible with Python < 3.11 we need to\n   476\t            # be careful not to assume that c or object has a __getstate__\n   477\t            # method though.\n   478\t            getstate = getattr(c, \"__getstate__\", None)\n   479\t            objstate = getattr(object, \"__getstate__\", None)\n   480\t            if getstate is not None and getstate is not objstate:\n",
+          "start": 9353
+        },
+        {
+          "end": 11287,
+          "evidence_id": "40ac931cf9f8598360961b44303be3c9",
+          "quote": "   481\t                d.update(getstate(self, c))\n   482\t\n   483\t        # Get all information that should be stored from cls and return the dict\n   484\t        for name in cls.__slots__:\n   485\t            if hasattr(self, name):\n   486\t                d[name] = getattr(self, name)\n   487\t\n   488\t        return d\n   489\t\n   490\t    def __setstate__(self, d):\n   491\t        # All values that were pickled are now assigned to a fresh instance\n   492\t        for name, value in d.items():\n   493\t            try:\n   494\t                setattr(self, name, value)\n   495\t            except AttributeError:    # This is needed in cases like Rational :> Half\n   496\t                pass\n   497\t\n   498\t\n   499\tclass IntegerPowerable:\n   500\t    r\"\"\"\n",
+          "start": 10538
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "61e08b6c8bafd499b823ac399ca09e4d",
+      "kind": "conclusion",
+      "local_id": "c9",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "8a759e56dd6937c352acf4defc31e4ac",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The PolyElement.as_expr() method receipt displays the polyutils.py source.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "identical_to_v3": false,
+    "reviewer": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The observation displays polyutils.py, but calling it a PolyElement.as_expr method receipt invents an object/event relationship.",
+    "claim_sha256": "b2e1e4da3a73be528e503e665eb7045150124e78bf236ff7bcb2de9d064bdb02"
+  },
+  {
+    "session": "swe",
+    "job": "00000005.json",
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "0df62ea9afa89767764babecb70d4a3e",
+      "evidence_ids": [
+        "dd5451fb0f305813d50773542f6f3fc9"
+      ],
+      "evidence_refs": [
+        {
+          "end": 576,
+          "evidence_id": "dd5451fb0f305813d50773542f6f3fc9",
+          "quote": "[master 371c94803d] rings: respect user-supplied symbols in PolyElement.as_expr when provided\\n\\nPreviously as_expr always used self.ring.symbols even when a correct number of symbols were passed. Now, if symbols are supplied, use them; otherwise fall back to ring symbols.\\n\\nCo-authored-by: openhands <openhands@all-hands.dev>\n 1 file changed, 3 insertions(+), 2 deletions(-)\n[The command completed with exit code 0.]\n[Current working directory: /workspace/sympy__sympy__1.12]\n[Python interpreter: /opt/miniconda3/envs/testbed/bin/python]\n[Command finished with exit code 0]",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "1fa1b48f7e789c5ee32a8896fd0aa8f7",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "0df62ea9afa89767764babecb70d4a3e",
+      "semantic_status": "unreviewed",
+      "stage_id": 5,
+      "stage_incomplete": false,
+      "text": "The commit respects user-supplied symbols in PolyElement.as_expr when provided.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "identical_to_v3": false,
+    "reviewer": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The observation is a commit receipt/message describing intended behavior. It does not establish that the code actually respects supplied symbols; source/wording should preserve agent intent.",
+    "claim_sha256": "02d0bf2e0db201766236bee311463f445d169ba4d94adc3698a28323606b8a0b"
+  },
+  {
+    "session": "swe",
+    "job": "00000006.json",
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "4782dbb75b9a7a5fecda4e806defba7a",
+      "evidence_ids": [
+        "ae00fd6282e23acc3a1735ac406877be",
+        "0f391467fe8222e5aed589c4d56d9fc6",
+        "201cf935098446f94c8a2d44938d30c8",
+        "b9d81007f25d1000ead9493d5fd22e5a"
+      ],
+      "evidence_refs": [
+        {
+          "end": 120,
+          "evidence_id": "ae00fd6282e23acc3a1735ac406877be",
+          "quote": "Task list has been updated with 8 items. Stored in session directory: sessions/7447e8a0-4fa1-44-ba5acf39a20b63d/TASKS.md",
+          "start": 0
+        },
+        {
+          "end": 1175,
+          "evidence_id": "0f391467fe8222e5aed589c4d56d9fc6",
+          "quote": "Here’s how I addressed the issue, step by step.\n\nPhase 1. READING: Restatement and clarification\n- Problem: PolyElement.as_expr() should allow the caller to pass replacement symbols for the polynomial’s generators. Currently, if the correct number of symbols is provided, the method ignores them and uses self.ring.symbols instead. If the wrong number is provided, it raises ValueError.\n- Location: sympy/polys/rings.py, PolyElement.as_expr (around lines 618–624).\n- Behavior to fix: If symbols are provided and the count matches ring.ngens, use the provided symbols. If not provided, fallback to using self.ring.symbols. If provided count is incorrect, raise ValueError.\n- Reproduction: Using ring(\"x,y,z\", ZZ) and symbols(\"u,v,w\"), f.as_expr(U, V, W) should return an expression in u, v, w, not x, y, z.\n- Best practices: Minimal, focused change; ensure no breakage of default behavior when no symbols are passed.\n\nPhase 2. RUNNING: Tests\n- Attempted running pytest for a targeted test; pytest was not available in the environment.\n- Instead, I verified behavior using a minimal reproduction snippet in a Python shell (see Phase 7).\n\nPhase 3. EXPLORATION: Find code to fix\n",
+          "start": 0
+        },
+        {
+          "end": 374,
+          "evidence_id": "201cf935098446f94c8a2d44938d30c8",
+          "quote": "Provided two symbols: u**2 + 2*u*v + v**2 + 1\nWrong count raises: ValueError not enough symbols, expected 2 got 1\nUnivariate mapping: 5*s**3 - 2\nDefault univariate: 5*t**3 - 2\n[The command completed with exit code 0.]\n[Current working directory: /workspace/sympy__sympy__1.12]\n[Python interpreter: /opt/miniconda3/envs/testbed/bin/python]\n[Command finished with exit code 0]",
+          "start": 0
+        },
+        {
+          "end": 1154,
+          "evidence_id": "b9d81007f25d1000ead9493d5fd22e5a",
+          "quote": "Work completed. Summary of actions and results:\n\n1) Issue restated\n- PolyElement.as_expr() should accept user-supplied symbols and use them when the correct number is provided. Previously, even with the correct number of symbols, the method ignored them and used self.ring.symbols.\n\n2) Exploration and identification\n- Located the problematic method in sympy/polys/rings.py around lines 618–624.\n\n3) Fix implemented (minimal and focused)\n- Updated PolyElement.as_expr to only set symbols = self.ring.symbols when no symbols are provided. If symbols are provided, validate their count and use them.\n- Code change in sympy/polys/rings.py:\n  - Before:\n    if symbols and len(symbols) != self.ring.ngens:\n        raise ValueError(...)\n    else:\n        symbols = self.ring.symbols\n  - After:\n    if symbols:\n        if len(symbols) != self.ring.ngens:\n            raise ValueError(...)\n    else:\n        symbols = self.ring.symbols\n\n4) Verification with reproduction scripts\n- Multivariate case:\n  R, x, y, z = ring('x,y,z', ZZ)\n  f = 3*x**2*y - x*y*z + 7*z**3 + 1\n  U, V, W = symbols('u,v,w')\n  f.as_expr(U, V, W) -> 3*u**2*v - u*v*w + 7*w**3 + 1 (correct)\n",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "bcecc439fefeccf9e68b97b45e1d1682",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "4782dbb75b9a7a5fecda4e806defba7a",
+      "semantic_status": "unreviewed",
+      "stage_id": 6,
+      "stage_incomplete": false,
+      "text": "The plan marks the reproduction and verification done, then describes the fix and its effects.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "identical_to_v3": false,
+    "reviewer": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The task-list receipt only acknowledges an update. Other cited observations include echoed agent narratives and a limited reproduction; they do not provide the cited plan statuses or independently verify the narrative effects.",
+    "claim_sha256": "0bb6cc5ad5b924d669e18a1cfcba154e8a400a52351f20374f31080ce20fb8be"
+  },
+  {
+    "session": "terminal",
+    "job": "00000001.json",
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "aded42aec26168f3e2f683b6fdeeedce",
+      "evidence_ids": [
+        "ba6d3c0769eed8602f421fccc049d5dc"
+      ],
+      "evidence_refs": [
+        {
+          "end": 16,
+          "evidence_id": "ba6d3c0769eed8602f421fccc049d5dc",
+          "quote": "/usr/bin/apt-get",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "7e4823ab272902d4aa2c65585d615730",
+      "kind": "conclusion",
+      "local_id": "c3",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "aded42aec26168f3e2f683b6fdeeedce",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "apt-get reports but apk and yum are not found.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "identical_to_v3": false,
+    "reviewer": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The paired command uses which apt-get && which apk && which yum. Failure at apk can skip yum, so absence of yum is not established.",
+    "claim_sha256": "ac376bd9af1c98f50258f19223c70000ed2f119cc84f9b1cc067a7b11cc6c476"
+  },
+  {
+    "session": "terminal",
+    "job": "00000002.json",
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "87785bbaa992db975025aa0a62b83734",
+      "evidence_ids": [
+        "abe9c1d47b305530d6f212bcbe02a2b8"
+      ],
+      "evidence_refs": [
+        {
+          "end": 1181,
+          "evidence_id": "abe9c1d47b305530d6f212bcbe02a2b8",
+          "quote": "Reading package lists... Done\nBuilding dependency tree... Done\nReading state information... Done\nThe following additional packages will be installed:\n  python3-pip-whl python3-setuptools-whl\nThe following NEW packages will be installed:\n  python3-pip-whl python3-setuptools-whl python3.12-venv\n0 upgraded, 3 newly installed, 0 to remove and 23 not upgraded.\nNeed to get 2429 kB of archives.\nAfter this operation, 2777 kB of additional disk space will be used.\nGet:1 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-pip-whl all 24.0+dfsg-1ubuntu1.3 [1707 kB]\nGet:2 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3-setuptools-whl all 68.1.2-2ubuntu1.2 [716 kB]\nGet:3 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 python3.12-venv amd64 3.12.3-1ubuntu0.9 [5674 B]\nFetched 2429 kB in 14s (173 kB/s)\ndebconf: delaying package configuration, since apt-utils is not installed\nSelecting previously unselected package python3-pip-whl.\n(Reading database ... 18476 files and directories currently installed.)\nPreparing to unpack .../python3-pip-whl_24.0+dfsg-1ubuntu1.3_all.deb ...\nUnpacking python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...\n",
+          "start": 0
+        },
+        {
+          "end": 1720,
+          "evidence_id": "abe9c1d47b305530d6f212bcbe02a2b8",
+          "quote": "Selecting previously unselected package python3-setuptools-whl.\nPreparing to unpack .../python3-setuptools-whl_68.1.2-2ubuntu1.2_all.deb ...\nUnpacking python3-setuptools-whl (68.1.2-2ubuntu1.2) ...\nSelecting previously unselected package python3.12-venv.\nPreparing to unpack .../python3.12-venv_3.12.3-1ubuntu0.9_amd64.deb ...\nUnpacking python3.12-venv (3.12.3-1ubuntu0.9) ...\nSetting up python3-setuptools-whl (68.1.2-2ubuntu1.2) ...\nSetting up python3-pip-whl (24.0+dfsg-1ubuntu1.3) ...\nSetting up python3.12-venv (3.12.3-1ubuntu0.9) ...",
+          "start": 1181
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "13146707869eb316618767e7962716fc",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "87785bbaa992db975025aa0a62b83734",
+      "semantic_status": "unreviewed",
+      "stage_id": 2,
+      "stage_incomplete": false,
+      "text": "The Python 3.12-venv package installs Python 3.12.3 and related dependencies.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "identical_to_v3": false,
+    "reviewer": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The result installs python3.12-venv, pip/setuptools wheels. It does not show installation of the Python 3.12.3 interpreter itself; package identity and scope are conflated.",
+    "claim_sha256": "a797c73aec2647efeb9e3cdcb6a43aa53f450e0b25d56e7968346d650041799a"
+  },
+  {
+    "session": "terminal",
+    "job": "00000002.json",
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "b1c802dde64a7e9380f1c1e4ecb434f2",
+      "evidence_ids": [
+        "375ec72eff0fda03de23387755fc2b4b"
+      ],
+      "evidence_refs": [
+        {
+          "end": 1161,
+          "evidence_id": "375ec72eff0fda03de23387755fc2b4b",
+          "quote": "Collecting pandas\n  Downloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 257.6 kB/s eta 0:00:00\nCollecting pyarrow\n  Downloading pyarrow-22.0.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.2 kB)\nCollecting numpy>=1.26.0 (from pandas)\n  Downloading numpy-2.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)\nCollecting python-dateutil>=2.8.2 (from pandas)\n  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)\nCollecting pytz>=2020.1 (from pandas)\n  Downloading pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)\nCollecting tzdata>=2022.7 (from pandas)\n  Downloading tzdata-2025.3-py2.py3-none-any.whl.metadata (1.4 kB)\nCollecting six>=1.5 (from python-dateutil>=2.8.2->pandas)\n  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)\nDownloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)\n   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 878.9 kB/s eta 0:00:00\nDownloading pyarrow-22.0.0-cp312-cp312-manylinux_2_28_x86_64.whl (47.7 MB)\n",
+          "start": 0
+        },
+        {
+          "end": 1240,
+          "evidence_id": "375ec72eff0fda03de23387755fc2b4b",
+          "quote": "   ━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━━━━━━━ 24.3/47.7 MB 641.3 kB/s eta 0:00:37",
+          "start": 1161
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "13146707869eb316618767e7962716fc",
+      "kind": "conclusion",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "b1c802dde64a7e9380f1c1e4ecb434f2",
+      "semantic_status": "unreviewed",
+      "stage_id": 2,
+      "stage_incomplete": false,
+      "text": "Pandas and PyArrow install reports download progress and installation success.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "identical_to_v3": false,
+    "reviewer": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The cited output ends mid-download. Download progress is supported, installation success is not. The completion guard did not catch this wording.",
+    "claim_sha256": "893c9edb1d595eacb9c3b21cec1b4511ea55e31771d40cad4ce0793b8a1a796d"
+  },
+  {
+    "session": "live_smoke",
+    "job": "00000004.json",
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "da30b42727ff77a005fd417a0f5fafd6",
+      "evidence_ids": [
+        "adf500986e43379249c84c2f91cded2e"
+      ],
+      "evidence_refs": [
+        {
+          "end": 135,
+          "evidence_id": "adf500986e43379249c84c2f91cded2e",
+          "quote": "str_replace /workspace/ranges.py\n--- old\n    if merged and start < merged[-1][1]:\n+++ new\n        if merged and start <= merged[-1][1]:",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "2206a6173452cdfc380f07a919d41259",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "da30b42727ff77a005fd417a0f5fafd6",
+      "semantic_status": "unreviewed",
+      "stage_id": 4,
+      "stage_incomplete": false,
+      "text": "The edit replaces < with <=.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "identical_to_v3": false,
+    "reviewer": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The cited action requests replacing < with <=. Prefer explicitly requested/proposed wording; this reference alone is not an edit completion receipt.",
+    "claim_sha256": "fb013f9628344d61b27eb20398812fc08bc27b3d16a0bc189805f4cf82cd17eb"
+  }
+]
