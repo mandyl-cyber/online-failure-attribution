@@ -1,0 +1,10 @@
+{
+  "task_id": "claim-prospective-v1:bounded_chunks",
+  "code_name": "task.py",
+  "test_name": "test_task.py",
+  "code": "def solve(values, size):\n    return [values[i:i+size] for i in range(0,len(values)-size+1,size)]\n",
+  "tests": "import unittest\nfrom task import solve\n\nclass TaskTests(unittest.TestCase):\n    def test_0(self):\n        self.assertEqual(solve([1,2,3,4,5],2), [[1,2],[3,4],[5]])\n    def test_1(self):\n        self.assertEqual(solve([],2), [])\n    def test_2(self):\n        with self.assertRaises(ValueError): solve([1],0)\n    def test_3(self):\n        with self.assertRaises(ValueError): solve([1],-1)\n",
+  "reference_code": "def solve(values, size):\n    if size <= 0:\n        raise ValueError(\"positive size required\")\n    return [values[i:i+size] for i in range(0,len(values),size)]\n",
+  "task": "Fix /workspace/task.py. Split a list into chunks of positive size, preserving order and the final partial chunk. Raise ValueError for size <= 0 and do not mutate input. Inspect the implementation, reproduce failures, edit the saved implementation, run python -m unittest -v and finish. Do not modify test_task.py. No third-party dependencies are needed.",
+  "scope": "Newly authored synthetic engineering task, not a CodeTraceBench sample or semantic claim gold."
+}

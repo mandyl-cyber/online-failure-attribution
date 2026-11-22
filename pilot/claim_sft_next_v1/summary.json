@@ -1,0 +1,41 @@
+{
+  "existing_train_rows": 100,
+  "existing_dev_rows": 38,
+  "train_groups": 18,
+  "dev_groups": 5,
+  "case_bank": 66,
+  "reused_train_facts": 56,
+  "known_development_cases": 10,
+  "new_training_examples": 0,
+  "prospective_tasks": 4,
+  "fixture_preflight": [
+    {
+      "task_id": "claim-prospective-v1:stable_unique",
+      "buggy": 1,
+      "reference": 0
+    },
+    {
+      "task_id": "claim-prospective-v1:bounded_chunks",
+      "buggy": 1,
+      "reference": 0
+    },
+    {
+      "task_id": "claim-prospective-v1:prefix_totals",
+      "buggy": 1,
+      "reference": 0
+    },
+    {
+      "task_id": "claim-prospective-v1:config_overrides",
+      "buggy": 1,
+      "reference": 0
+    }
+  ],
+  "training_started": false,
+  "independent_acceptance_collected": false,
+  "blockers": [
+    "Prospective native agent runs not collected",
+    "Evidence-defined acceptance references not frozen",
+    "Training bank expansion reuses existing reference facts; not additional supervision"
+  ],
+  "next": "Collect new prospective native logs, freeze semantic references, then compare frozen 7B before any retraining."
+}

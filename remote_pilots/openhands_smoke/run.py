@@ -75,13 +75,32 @@ def logged(command, path, quiet=False):
         return process.wait()
 
 
+def load_task_bundle(path=None):
+    if path is None:
+        return dict(task_id='legacy-ranges-smoke',task=TASK,code_name='ranges.py',test_name='test_ranges.py',code=CODE,tests=TESTS)
+    bundle=json.loads(Path(path).read_text(encoding='utf-8'))
+    for field in ('task_id','task','code_name','test_name','code','tests'):
+        if not isinstance(bundle.get(field),str) or not bundle[field]:
+            raise ValueError('Missing task bundle field: '+field)
+    for field in ('code_name','test_name'):
+        name=bundle[field]
+        if '/' in name or '\\' in name or Path(name).name!=name or not name.endswith('.py') or ':' in name:
+            raise ValueError('Task files must be plain Python filenames')
+    if bundle['code_name']==bundle['test_name'] or not bundle['test_name'].startswith('test_'):
+        raise ValueError('Invalid task module/test names')
+    return bundle
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--prompt-mode', choices=('baseline', 'action-guided'), default='baseline')
     parser.add_argument('--quiet', action='store_true', help='Save full logs without printing them')
     parser.add_argument('--collect', action='store_true', help='Create diagnostics zip after the run')
     parser.add_argument('--shadow', action='store_true', help='Start the frozen CPU boundary observer before the agent')
+    parser.add_argument('--task-bundle',type=Path,help='Authored prospective task JSON; never mounts reference solution')
+    parser.add_argument('--out-root',type=Path,default=Path('out/openhands_live_smoke'))
     args = parser.parse_args()
+    bundle=load_task_bundle(args.task_bundle)
     if args.shadow and sys.version_info < (3, 12):
         raise SystemExit('Frozen shadow dependencies require Python >=3.12; use the ofa-shadow-py312 environment.')
     if sys.platform != 'linux':
@@ -94,7 +113,7 @@ def main():
         models = json.load(response)
     if not any(m['id'] == 'qwen-local' for m in models['data']):
         raise SystemExit('qwen-local is not available')
-    base = Path('out/openhands_live_smoke').resolve()
+    base = args.out_root.resolve()
     base.mkdir(parents=True, exist_ok=True)
     run = Path(tempfile.mkdtemp(prefix='run-', dir=base))
     workspace = run / 'workspace'
@@ -102,19 +121,24 @@ def main():
     checks = run / 'checks'
     for directory in (workspace, state, checks):
         directory.mkdir()
-    (workspace / 'ranges.py').write_text(CODE, encoding='utf-8')
-    (workspace / 'test_ranges.py').write_text(TESTS, encoding='utf-8')
-    (checks / 'test_ranges.py').write_text(TESTS, encoding='utf-8')
-    task = TASK + (ACTION_GUIDANCE if args.prompt_mode == 'action-guided' else '')
+    code_name,test_name=bundle['code_name'],bundle['test_name']
+    (workspace / code_name).write_text(bundle['code'], encoding='utf-8')
+    (workspace / test_name).write_text(bundle['tests'], encoding='utf-8')
+    (checks / test_name).write_text(bundle['tests'], encoding='utf-8')
+    task = bundle['task'] + (ACTION_GUIDANCE if args.prompt_mode == 'action-guided' else '')
     (state / 'task.txt').write_text(task, encoding='utf-8')
     # Hash actual saved bytes so platform newline handling cannot imply an edit.
-    initial_code_hash = hashlib.sha256((workspace / 'ranges.py').read_bytes()).hexdigest()
-    initial_test_hash = hashlib.sha256((workspace / 'test_ranges.py').read_bytes()).hexdigest()
+    initial_code_hash = hashlib.sha256((workspace / code_name).read_bytes()).hexdigest()
+    initial_test_hash = hashlib.sha256((workspace / test_name).read_bytes()).hexdigest()
     (run / 'manifest.json').write_text(json.dumps({
         'app_image': APP, 'runtime_image': RUNTIME, 'host_workspace': str(workspace),
-        'max_iterations': 20, 'model': 'qwen-local', 'purpose': 'synthetic transport smoke',
+        'max_iterations': 20, 'model': 'qwen-local',
+        'purpose': 'prospective synthetic claim acceptance collection' if args.task_bundle else 'synthetic transport smoke',
         'prompt_mode': args.prompt_mode, 'task_sha256': hashlib.sha256(task.encode()).hexdigest(),
         'initial_code_sha256': initial_code_hash, 'initial_test_sha256': initial_test_hash,
+        'task_id':bundle['task_id'],'code_name':code_name,'test_name':test_name,
+        'task_bundle_sha256':hashlib.sha256(args.task_bundle.read_bytes()).hexdigest() if args.task_bundle else None,
+        'reference_solution_mounted':False,
     }, indent=2), encoding='utf-8')
     print(f'RUN_DIR={run}', flush=True)
     source = Path(__file__).resolve().parent
@@ -161,10 +185,10 @@ def main():
               'event_directories': events, 'run_directory': str(run),
               'prompt_mode': args.prompt_mode,
               'shadow_exit_code': observer.returncode if observer else None,
-              'implementation_changed': (hashlib.sha256((workspace / 'ranges.py').read_bytes()).hexdigest()
-                                         != initial_code_hash) if (workspace / 'ranges.py').is_file() else None,
-              'visible_tests_unchanged': (hashlib.sha256((workspace / 'test_ranges.py').read_bytes()).hexdigest()
-                                          == initial_test_hash) if (workspace / 'test_ranges.py').is_file() else False}
+              'implementation_changed': (hashlib.sha256((workspace / code_name).read_bytes()).hexdigest()
+                                         != initial_code_hash) if (workspace / code_name).is_file() else None,
+              'visible_tests_unchanged': (hashlib.sha256((workspace / test_name).read_bytes()).hexdigest()
+                                          == initial_test_hash) if (workspace / test_name).is_file() else False}
     (run / 'result.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
     print(json.dumps(result, indent=2), flush=True)
     if args.collect:

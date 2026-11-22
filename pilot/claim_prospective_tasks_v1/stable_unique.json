@@ -1,0 +1,10 @@
+{
+  "task_id": "claim-prospective-v1:stable_unique",
+  "code_name": "task.py",
+  "test_name": "test_task.py",
+  "code": "def solve(values):\n    return sorted(set(values))\n",
+  "tests": "import unittest\nfrom task import solve\n\nclass TaskTests(unittest.TestCase):\n    def test_0(self):\n        self.assertEqual(solve([]), [])\n    def test_1(self):\n        self.assertEqual(solve(['b','a','b','c']), ['b','a','c'])\n    def test_2(self):\n        x=['b','a','b']; before=list(x); solve(x); self.assertEqual(x,before)\n",
+  "reference_code": "def solve(values):\n    return list(dict.fromkeys(values))\n",
+  "task": "Fix /workspace/task.py. Return the unique string values in first-appearance order without mutating the input list; handle empty input. Inspect the implementation, reproduce failures, edit the saved implementation, run python -m unittest -v and finish. Do not modify test_task.py. No third-party dependencies are needed.",
+  "scope": "Newly authored synthetic engineering task, not a CodeTraceBench sample or semantic claim gold."
+}

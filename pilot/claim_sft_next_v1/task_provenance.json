@@ -1,0 +1,153 @@
+{
+  "manifest_sha256": "2b5e4fbd9a0dae81adccb8967088dfc7dd2dcc3a63e83fdbb4415777b060aee7",
+  "mapping_rule": "source group -> existing purpose selection -> trajectory ID -> full manifest task name -> lowercase SHA256",
+  "train_tasks": [
+    {
+      "source_group": "18326d0c2d6211eca2dd76e06b0acdb7904a16c67b3781297a2a01c3ae6211d7",
+      "canonical_group": "31edfb9d97d130ce44a6a557a936081a087bc63af61381454900bf52a3ddca06",
+      "task": "sympy__sympy-19954"
+    },
+    {
+      "source_group": "22aa4ec553acd360f725d644929346e045b1425d5972a6f9414fbcbb519238c0",
+      "canonical_group": "eeb90b6a7b3c47cc589abf2fc069f3d2dc72f69b1d7e6e2c2dbf50c3620bc7e1",
+      "task": "django__django-11749"
+    },
+    {
+      "source_group": "260b76417d9220db6f8f0f3752a91a54663094e512b93b8dc6a8a6496f673498",
+      "canonical_group": "087b9a0fd9e293f57f38030c71ba9f21d422203275a8a217f3dbc41fa68d1c3b",
+      "task": "instance_ansible__ansible-4c5ce5a1a9e79a845aff4978cfeb72a0d4ecf7d6-v1055803c3a812189a1133297f7f5468579283f86"
+    },
+    {
+      "source_group": "317e5baf43c951fe0cc4b239c592fe0ba008363b7bffed4afd2d6848bbc57ab8",
+      "canonical_group": "7c7f16c98c1822fd2cfb30135497daa75775d65265a08353ca2585a041eff2aa",
+      "task": "django__django-15104"
+    },
+    {
+      "source_group": "46497fe1794d217d3e343c971d37c12885b450f20ee39e1b8a424ffec6881634",
+      "canonical_group": "701a40e23c352495de598106de15e90e4c5a43d3187c26f03225e2a6da432510",
+      "task": "sympy__sympy-22714"
+    },
+    {
+      "source_group": "48d5d4e6455ae6308e36705c8f75ef2a36e97fcda532a3ce5ea1393f5974760a",
+      "canonical_group": "2148df9f0586223632eca7a36d77f8fcdcff2854388b297973159787ac574cf0",
+      "task": "django__django-14539"
+    },
+    {
+      "source_group": "5311952a90919e6fb7c15fce81c6b2bad5a9f44d174e858c0b727ec126480c3b",
+      "canonical_group": "822c2fe37f937fd9a40295a4e7b8ae0337f709840a8e3b004be63c319beab5f3",
+      "task": "django__django-14500"
+    },
+    {
+      "source_group": "5dd8e56019abe6c8e7d264b0f4b99577d464101d796bc10f8e63d468e6a5427d",
+      "canonical_group": "a3c9ab2aabd1fab30810cdb7c8303deb1b74240aa9350f8a9aa9dbed7bd13730",
+      "task": "instance_ansible__ansible-1a4644ff15355fd696ac5b9d074a566a80fe7ca3-v30a923fb5c164d6cd18280c02422f75e611e8fb2"
+    },
+    {
+      "source_group": "64bbd7ce8ab9bcb94965b5773cea13c1849bc0bf38c4b5bb5713084115f45160",
+      "canonical_group": "ac538f4a36be5dbfa3ff5223eb9c56662485e980af5dc0546d979b1c65f93faf",
+      "task": "pytest-dev__pytest-7205"
+    },
+    {
+      "source_group": "76ccf807e0d90d0c1865d97ed6b73172c66699259d8dd8c0a12dbdc95114038f",
+      "canonical_group": "4e15e0cfb1899c6cb773163c0f364ede7603edcccf0947343b1c2dd8d3ec7135",
+      "task": "instance_ansible__ansible-949c503f2ef4b2c5d668af0492a5c0db1ab86140-v0f01c69f1e2528b935359cfe578530722bca2c59"
+    },
+    {
+      "source_group": "7ba5d82efc3829611b82cc26995246e547bd1c8356e611bda9aa5a2c324c92b4",
+      "canonical_group": "e4377a0c510ac7c3c633cec073fb7723fea17c9a7a16b070e154545352966648",
+      "task": "serverless__serverless-2576"
+    },
+    {
+      "source_group": "8a98c6fc092c1dd26a8b4310eb7e5a470501536959a4a898b54204bef82cb20c",
+      "canonical_group": "86e904e5922f2ca02774d4610f14e209b17873c24104daf860ef6251b1667774",
+      "task": "pydata__xarray-4966"
+    },
+    {
+      "source_group": "9577a656bdca887bda11b04e5d096a999b63303e223cf29d2123cb9528c4ea23",
+      "canonical_group": "c4b82b5e826f511f670cca94a6518b682747cc906e0e5340d88274e407a40fa0",
+      "task": "astropy__astropy-14539"
+    },
+    {
+      "source_group": "a5665d680f00c4b323f8ee88328f9a21f2d82bd9fc1a4a717f3807d21469ebc3",
+      "canonical_group": "694841f0b66bcd5ad015a0349d085d199245bda5c764c5eb4240813eea0a3eee",
+      "task": "huggingface__transformers-27463"
+    },
+    {
+      "source_group": "aaf7dd167b18c0407f2226a72d6388df2953e53a41e56104d474e62443bb6ee7",
+      "canonical_group": "36fceecd1cc3f9f5fce37e0674ce27b85878bd89d754697f6d3977bfe31bfdc7",
+      "task": "pydata__xarray-6721"
+    },
+    {
+      "source_group": "be47ccda97a3e65a50ec66a9f9b67bcb1b16e54f436431f0b47aa376e677da2c",
+      "canonical_group": "f6275f6e4b824b1a73ea6194499791e7a0534e386d0102cd29c06438d59636cf",
+      "task": "sphinx-doc__sphinx-10466"
+    },
+    {
+      "source_group": "cf154b179a5cd40b8e71138a1929e21f39f854490d8ce581dbc426aec53785d4",
+      "canonical_group": "5a86b1361f5f8c6c5002a793370b755d80cbe4665a2141ee6a4b073fe2517a02",
+      "task": "serverless__serverless-2945"
+    },
+    {
+      "source_group": "d83e871b0a053d5bc567f3643da34ec5ea3ecb40253b975bb15bf944c99d5738",
+      "canonical_group": "4930163b1ff1b59e4aeb07cbe2a44586c76864a9d59c505300676d9fc2aa2d5f",
+      "task": "serverless__serverless-3457"
+    }
+  ],
+  "dev_tasks": [
+    {
+      "source_group": "db5bc813fe51633f3b932e53bcfc0550f7529472d485aec77049b98c2182ce41",
+      "canonical_group": "8bafc742f01a853e6517755d56a72245f8c057ad94f9c4fb00f2e411495cf0c5",
+      "task": "instance_ansible__ansible-cb94c0cc550df9e98f1247bc71d8c2b861c75049-v1055803c3a812189a1133297f7f5468579283f86"
+    },
+    {
+      "source_group": "efd1f6e6227363c8fca2b6bdfab6e6177750ae993e7837f81b5ea1697df994b0",
+      "canonical_group": "869ed4f5f437097436e59f52d9071f4dac22c4c37704793812c296f2d6464687",
+      "task": "pydata__xarray-2905"
+    },
+    {
+      "source_group": "f2c7b68ee659eb0dcd62de127f34871a916285a7b207eecf201795f4f942de76",
+      "canonical_group": "70bfb1ecee05a53b57526654024d9be1fbb055cd49c87e97a13035fdfbc2a374",
+      "task": "microsoft__vscode-153857"
+    },
+    {
+      "source_group": "fdf3c10affaa44c5d227641984458dde0c2d06b51d3129cc6b8e5c8a6dbb1d67",
+      "canonical_group": "d9578a4dcfcaf80792dbcd2909969ce5530836927f138dfd2e88aab505790f76",
+      "task": "matplotlib__matplotlib-25311"
+    },
+    {
+      "source_group": "fe8c5432c2258a9145eb63a3e3284d8e3da4e1b631e0cd47353257256b888c9e",
+      "canonical_group": "06e0e36d52536c957738f6f9d7bd93f9624ff1cd3b7f0f8da3ed2212b08a90fc",
+      "task": "langchain-ai__langchain-19331"
+    }
+  ],
+  "known_development_sessions": [
+    {
+      "session": "swe",
+      "trajectory": "openhands-OpenAI__GPT-5-sympy__sympy-24539-ff71090d",
+      "task": "sympy__sympy-24539",
+      "canonical_group": "64f85d1cd2640ed65024b5a571b90f16bbd97f06ce81c46978a023db35e6d839",
+      "in_train": false,
+      "in_dev": false,
+      "use": "development_only",
+      "novel_to_project": false
+    },
+    {
+      "session": "terminal",
+      "trajectory": "openhands-DeepSeek__DeepSeek-V3.2-csv-to-parquet-0249f56f",
+      "task": "csv-to-parquet",
+      "canonical_group": "021c1858aed7010b4ab32034bb3044a35edc82feed7ac25a77c20c403992e7eb",
+      "in_train": false,
+      "in_dev": false,
+      "use": "development_only",
+      "novel_to_project": false
+    },
+    {
+      "session": "live_smoke",
+      "task": "legacy merge_ranges synthetic smoke",
+      "canonical_group": null,
+      "identity": "Authored smoke definition, not a CodeTraceBench task",
+      "use": "development_only",
+      "novel_to_project": false
+    }
+  ]
+}

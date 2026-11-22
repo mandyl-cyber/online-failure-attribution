@@ -1,0 +1,34 @@
+{
+  "protocol": "claim-prospective-tasks-v1",
+  "tasks": [
+    {
+      "task_id": "claim-prospective-v1:stable_unique",
+      "path": "stable_unique.json",
+      "sha256": "889b825771ac5d45134d272822402ac0d4df76a725e8525bbafe89b14d2642a9"
+    },
+    {
+      "task_id": "claim-prospective-v1:bounded_chunks",
+      "path": "bounded_chunks.json",
+      "sha256": "74d6811baf6f2bfc9445f0f6e7ec4ee79353b22b4d93ef2307577d32b3871d40"
+    },
+    {
+      "task_id": "claim-prospective-v1:prefix_totals",
+      "path": "prefix_totals.json",
+      "sha256": "f0f0963dff338a8624b731b16dfc9f8b8ceb822a2619ee6ba7f65faf633cd1bc"
+    },
+    {
+      "task_id": "claim-prospective-v1:config_overrides",
+      "path": "config_overrides.json",
+      "sha256": "d543dc7a24e0d9ef3aabbcdc0306d2424f37b6e9b36ab577bfb1fef0bb9d3657"
+    }
+  ],
+  "use": "prospective_synthetic_engineering_acceptance",
+  "claim_outputs_generated": false,
+  "semantic_references_frozen": false,
+  "rule": "Collect every selected task including failed/looping agent runs. Freeze evidence-defined references before running claim extraction. Never use for tuning before the acceptance comparison.",
+  "limitations": [
+    "Not CodeTraceBench",
+    "New fixtures are not collected agent trajectories",
+    "No independent acceptance outcome exists yet"
+  ]
+}

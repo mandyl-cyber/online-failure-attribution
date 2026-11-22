@@ -1,0 +1,10 @@
+{
+  "task_id": "claim-prospective-v1:config_overrides",
+  "code_name": "task.py",
+  "test_name": "test_task.py",
+  "code": "def solve(base, overrides):\n    base.update({k:v for k,v in overrides.items() if v})\n    return base\n",
+  "tests": "import unittest\nfrom task import solve\n\nclass TaskTests(unittest.TestCase):\n    def test_0(self):\n        self.assertEqual(solve({'a':1},{'a':0}), {'a':0})\n    def test_1(self):\n        self.assertEqual(solve({'a':True},{'a':False,'b':''}), {'a':False,'b':''})\n    def test_2(self):\n        self.assertEqual(solve({'a':1},{'a':None}), {'a':1})\n    def test_3(self):\n        x={'a':1}; y={'b':2}; z=solve(x,y); self.assertEqual(x,{'a':1}); self.assertEqual(y,{'b':2}); self.assertIsNot(x,z)\n",
+  "reference_code": "def solve(base, overrides):\n    result=dict(base)\n    result.update({k:v for k,v in overrides.items() if v is not None})\n    return result\n",
+  "task": "Fix /workspace/task.py. Return a new dictionary with overrides applied. Ignore only override values equal to None; preserve False, 0 and empty strings. Do not mutate either input. Inspect the implementation, reproduce failures, edit the saved implementation, run python -m unittest -v and finish. Do not modify test_task.py. No third-party dependencies are needed.",
+  "scope": "Newly authored synthetic engineering task, not a CodeTraceBench sample or semantic claim gold."
+}

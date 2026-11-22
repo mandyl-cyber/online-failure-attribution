@@ -22,6 +22,8 @@ def collect(run):
     candidates += list((run / 'state/completions').rglob('*.json'))
     candidates += list((run / 'shadow/input_timing').rglob('*.json'))
     candidates += list((run / 'shadow/input_timing').rglob('*.jsonl'))
+    candidates += list((run / 'workspace').glob('*.py'))
+    candidates += list((run / 'checks').glob('*.py'))
     candidates += [run / 'shadow/latency_report.json']
     files, errors, events = [], [], []
     for path in sorted(set(candidates)):
