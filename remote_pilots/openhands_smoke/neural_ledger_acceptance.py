@@ -5,6 +5,7 @@ from pathlib import Path
 import time
 import math
 import statistics
+from collections import Counter
 
 from scripts.run_stage_claim_pipeline import read,save
 from segmenter.ledger import sha
@@ -118,6 +119,7 @@ def main():
             partition_diagnostics=[dict(job_id=b['job_id'],status=b['status'],
                 input_complete=b['extraction_details']['input_complete'],
                 parts=b['extraction_details']['parts'],oversized_steps=b['extraction_details']['oversized_steps'],
+                unprocessed_pages=b['extraction_details'].get('unprocessed_pages',[]),
                 rejected_claim_count=len(b['extraction_details']['rejected_claims']),
                 duplicate_claim_count=len(b['extraction_details']['duplicate_claims']))
                 for b in batches if 'extraction_details' in b],
@@ -125,6 +127,8 @@ def main():
             recovered_batches_identical=True,terminal_seen=restored.finished,
             **timing,
             signals=sum(len(b.get('observation_signals',[])) for b in batches),
+            signal_counts=dict(Counter(s['kind'] for b in batches for s in b.get('observation_signals',[]))),
+            uncited_signals=sum(len(b.get('uncited_signal_ids',[])) for b in batches),
             claims_needing_review=sum(c.get('semantic_status')=='needs_review' for b in batches for c in b.get('claims',[])),
             generation_metrics=[b.get('metrics',{}) for b in batches],semantic_quality='pending_AI_review')
         reports.append(report)

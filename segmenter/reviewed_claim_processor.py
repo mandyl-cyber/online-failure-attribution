@@ -5,7 +5,7 @@ from pathlib import Path
 
 from .ledger import atomic, encoded, sha
 from . import stage_claim_summary as core
-from .claim_evidence_review import VERSION, citation_issues, review
+from .claim_evidence_review import VERSION, citation_issues, result_scope_issues, review
 
 
 class ReviewedClaimProcessor:
@@ -64,6 +64,7 @@ class ReviewedClaimProcessor:
             quoted = '\n'.join(r['quote'] for r in refs if known[r['evidence_id']]['field']=='observation')
             observed = claim.get('basis')=='tool_observation' or claim.get('epistemic_status')=='observed'
             issues = citation_issues(claim['text'],quoted) if observed else []
+            issues.extend(result_scope_issues(claim['text'],quoted,has_observation=bool(quoted)))
             if observed and not quoted:
                 issues.append(dict(code='no_nonempty_observation_reference'))
             claim['evidence_review'] = dict(version=VERSION,issues=issues,

@@ -113,3 +113,35 @@ SWE 首个部分批次处理约 29.35 秒。上述是每 0.05 秒送入事件、
 下一步顺序：先以保留记录 ID 和原文偏移的分页处理单步大观察；对被隔离的关键失败提供独立、可引用的结构事实，避免摘要只保留后续成功；再约束“动作请求／观察结果”和“进行中／完成”的措辞。验收仍分别记录完整、部分、仅证据和关键失败覆盖。当前不扩大训练或改线上默认划分器。
 
 复算：`python -m scripts.audit_neural_ledger_v3_return`。结果为 `out/neural_ledger_v3_return_audit/summary.json`、`batches.json`、`new_claims.json` 和 `new_claim_ai_review.json`。脚本固定本轮新增 claim 的快照哈希，输出变动时要求重新复核；主 pipeline 已接入该审计入口。原始回传目录保持不变。
+
+## v4：单步分页、失败信号与结果措辞（2026-11-22）
+
+本轮保持 7B 权重、SFT adapter、8192 总预算和 512 输出预算，修复输入和校验链路，不重新训练。
+
+1. **单步分页。**先按完整 step 分块，只有单步仍超限才按既有证据 chunk 二分分页。原始记录、哈希、chunk ID、原文偏移及封口截止不变；模型只能引用当前页可见 ID，不能引用同一步其他页。分页明确提示上下文不完整，不提供由整步推导、却不在当前页可见的 observed_facts。最小页仍超限时记录明确缺口，不截断证据。分页可能缺少配对动作，跨页语义整合仍待验证。
+2. **关键失败独立保留。**新增 `externally_managed_environment` 和 `venv_creation_failed` 观察信号，随原子发布的批次保留原文、偏移、来源及可用时间。即使生成 claim 为空、部分失败或整批失败，信号仍可读取。它们不是模型生成的摘要，也不是 failure alarm；引用重叠只表示引用存在，不证明摘要已经表述了失败。
+3. **完成状态约束。**补充提示，并对“仅动作引用却声称已完成查看”和“下载进度却声称安装完成”等明确模式逐条校验。7B backend 隔离不通过项，保留原文与错误，不替模型改写 source、引用或措辞。其他 backend 的同类问题标为 needs_review。该检查范围很窄，尚不能识别所有语义错误，如将生成器分析误称为系数分析。
+
+本地真实 tokenizer 预检覆盖原来的 19 个阶段：26 个生成块，其中 2 页来自 SWE 第 7 步，输入为 4811 / 5394 token；每块输入加 512 输出预算均不超过 8192。全部原始证据 chunk 恰好覆盖一次，没有剩余缺口。用 v3 冻结输出回放校验，新增隔离 3 条 claim，不代表新提示下的模型表现。两类此前遗漏的环境失败分别命中 1 条。可同步的预检记录见 [v4_preflight.json](v4_preflight.json)。
+
+33 项相关测试通过，包括不可见引用拒绝、分页精确偏移、原生发布和缓存恢复；三会话规则回放也通过 19 个封口任务与恢复检查。规则回放没有加载神经模型，不能用于声称 v4 摘要质量或速度已验收。v3 旧回传审计仍可复算。
+
+远程继续使用现有 RTX 5090 和原来的训练 adapter，无需下载新权重。运行前确认当前目录是仓库；预检的 `--returns` 指向远程现有 v3 结果。使用全新 v4 输出目录，避免处理器身份变化与旧缓存冲突。
+
+```bash
+cd ~/online-failure-attribution
+git pull --ff-only
+conda activate agentforesight
+QWEN7B_DIR=/home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+python -m scripts.preflight_neural_claim_v4 --tokenizer-path "$QWEN7B_DIR" --returns out/neural_ledger_acceptance_v3 --out out/neural_claim_v4_preflight && \
+python -u -m remote_pilots.openhands_smoke.neural_ledger_acceptance run --model-path "$QWEN7B_DIR" --out out/neural_ledger_acceptance_v4
+```
+
+回传 `out/neural_ledger_acceptance_v4/` 整个目录。验收分四层：
+
+- 输入：原封口任务 19 个，逐页预算通过，原始 chunk 覆盖完整，无不可见引用通过校验；若最小页仍超限，必须明确报告缺口。
+- 发布与恢复：19 个任务都有完整、部分或仅证据记录；已发布文件恢复不变。单独统计生成调用数、失败和隔离项，不把部分批次计为完整成功。
+- 内容：复核新增和变动 claim 的引用支持；检查两类环境失败在独立信号中仍可读取，再单独判断摘要是否正确保留失败及后续恢复。信号存在不计为神经摘要命中。
+- 成本：报告完整和部分批次的排队、处理与发布耗时，以及逐块生成时间和 GPU 峰值。v4 预计比 v3 多两次生成；在同样 0.05 秒回放负载下比较，不能用规则延迟替代模型耗时。
+
+当前只完成本地工程验证，远程 v4 生成、AI 语义复核和成本测量待执行。在线 stage 划分器保持现状，本轮不提供新的边界 F1。

@@ -5,6 +5,15 @@ from copy import deepcopy
 
 from . import stage_claim_summary as core
 from . import stage_claim_facts as facts
+from .claim_evidence_review import result_scope_issues
+
+RESULT_POLICY = '''Distinguish requested actions, progress and completed results.
+A view action supports requested a view, not a claim that viewing completed.
+Download progress does not establish package installation completion. Preserve
+failed setup and unresolved results. Only cited observations support completion.'''
+PAGE_POLICY = '''This is one page of a larger step. Original chunk IDs and offsets
+are unchanged. Other pages and paired action context may be absent. Do not infer
+the outcome of the full step from this page. Cite only IDs actually shown here.'''
 
 
 def messages_for(request):
@@ -14,7 +23,29 @@ def messages_for(request):
     row=core.build(source)
     packet=dict(row['request'],observed_facts=facts.extract(source,row['evidence_map']),
                 observed_facts_version=facts.VERSION)
-    return row,[dict(role='system',content=core.INSTRUCTION),dict(role='user',content=core.encoded(packet).decode())]
+    instruction=core.INSTRUCTION
+    if request.get('_claim_policy')=='v4':
+        instruction+='\n'+RESULT_POLICY
+    if '_claim_page_ids' in request:
+        ids=request['_claim_page_ids']
+        if not ids or len(ids)!=len(set(ids)) or any(i not in row['evidence_map'] for i in ids):
+            raise ValueError('Invalid page evidence IDs')
+        packet=deepcopy(packet)
+        for unit in packet['units']:
+            for field in ('action','observation'):
+                parents=[]
+                for parent in unit[field]:
+                    parent['chunks']=[c for c in parent['chunks'] if c['id'] in ids]
+                    if parent['chunks']:
+                        parents.append(parent)
+                unit[field]=parents
+            unit['missing_fields']=[f for f in ('action','observation') if not unit[f]]
+        # Full-record derived facts can expose results outside the visible page.
+        packet['observed_facts']=[]
+        packet['page']=dict(visible_evidence_ids=ids,total_chunks=len(row['evidence_map']),
+                            partial_step_context=True)
+        instruction+='\n'+PAGE_POLICY
+    return row,[dict(role='system',content=instruction),dict(role='user',content=core.encoded(packet).decode())]
 
 
 def convert_response(response,row):
@@ -28,13 +59,22 @@ def convert_response(response,row):
     return dict(claims=claims)
 
 
-def convert_partial(response,row):
+def convert_partial(response,row,allowed_ids=None,enforce_result_scope=False):
     if not isinstance(response,dict) or set(response)!={'claims'} or not isinstance(response['claims'],list):
         raise ValueError('expected claims object')
     accepted,rejected=[],[]
     for index,claim in enumerate(response['claims']):
         try:
-            accepted.extend(convert_response(dict(claims=[claim]),row)['claims'])
+            converted=convert_response(dict(claims=[claim]),row)['claims']
+            if allowed_ids is not None and any(e not in allowed_ids for e in claim['evidence_ids']):
+                raise ValueError('evidence ID not visible on this page')
+            if enforce_result_scope:
+                refs=[row['evidence_map'][eid] for eid in claim['evidence_ids']]
+                quoted='\n'.join(r['quote'] for r in refs if r['field']=='observation')
+                issues=result_scope_issues(claim['text'],quoted,has_observation=any(r['field']=='observation' for r in refs))
+                if issues:
+                    raise ValueError('result_scope: '+','.join(i['code'] for i in issues))
+            accepted.extend(converted)
         except (ValueError,KeyError,TypeError) as error:
             rejected.append(dict(claim_index=index,raw_claim=deepcopy(claim),error=str(error)))
     for index,claim in enumerate(accepted,1):
@@ -61,6 +101,36 @@ def partition_requests(request,fits):
     return parts,oversized
 
 
+def partition_paged_requests(request,fits):
+    """Keep whole-step partitions, paging only single steps that still exceed budget.
+
+    Pages select original chunks; native evidence is never sliced, rehashed or
+    renumbered. Every original chunk is either visible once or an explicit gap.
+    """
+    parts,oversized=partition_requests(request,fits)
+    gaps=[]
+    for sid in oversized:
+        child=deepcopy(request)
+        child['stage'].update(start_step_id=sid,end_step_id=sid)
+        child['evidence']=[e for e in request['evidence'] if e['source_step_id']==sid]
+        ids=list(messages_for(child)[0]['evidence_map'])
+        def visit(selected):
+            page=deepcopy(child)
+            page['_claim_page_ids']=selected
+            if selected and fits(page):
+                parts.append(page)
+            elif len(selected)>1:
+                middle=len(selected)//2
+                visit(selected[:middle])
+                visit(selected[middle:])
+            else:
+                gaps.append(dict(step_id=sid,evidence_ids=selected,reason='minimum_page_exceeds_budget'))
+        visit(ids)
+    parts.sort(key=lambda p:(p['stage']['start_step_id'],
+        list(messages_for(p)[0]['evidence_map']).index(p['_claim_page_ids'][0]) if '_claim_page_ids' in p else -1))
+    return parts,gaps
+
+
 class ClaimSFTBackend:
     mode='local_7b_sft'
 
@@ -73,8 +143,9 @@ class ClaimSFTBackend:
         files=[self.model_path/'config.json',self.adapter_path/'adapter_config.json',*sorted(self.adapter_path.glob('adapter_model.*'))]
         if len(files)<3:
             raise FileNotFoundError('Adapter weights missing')
-        self.identity=core.digest(core.encoded(dict(version='claim-sft-ledger-v3-partial-whole-step',base=str(self.model_path),
+        self.identity=core.digest(core.encoded(dict(version='claim-sft-ledger-v4-original-chunk-pages',base=str(self.model_path),
             files={p.name:core.digest(p.read_bytes()) for p in files},instruction=core.INSTRUCTION,
+            result_policy=RESULT_POLICY,page_policy=PAGE_POLICY,
             max_length=max_length,max_new_tokens=max_new_tokens)))
         self.model=self.tokenizer=None
         self.metrics={}
@@ -95,7 +166,10 @@ class ClaimSFTBackend:
         def fits(child):
             _,messages=messages_for(child)
             return len(chat_ids(self.tokenizer,messages,True))+self.max_new_tokens<=self.max_length
-        parts,oversized=partition_requests(request,fits)
+        request=deepcopy(request)
+        request['_claim_policy']='v4'
+        parts,gaps=partition_paged_requests(request,fits)
+        oversized=sorted({g['step_id'] for g in gaps})
         claims,records,rejections=[],[],[]
         for index,child in enumerate(parts):
             self.metrics,self.raw_output,self.model_request={},None,None
@@ -107,6 +181,7 @@ class ClaimSFTBackend:
             except Exception as error:
                 record=dict(part_index=index,stage=child['stage'],status='failed',error=str(error))
             record.update(raw_output=self.raw_output,metrics=self.metrics,model_request=self.model_request)
+            record['page_evidence_ids']=child.get('_claim_page_ids')
             records.append(record)
         unique,duplicates,seen=[],[],set()
         for claim in claims:
@@ -124,7 +199,7 @@ class ClaimSFTBackend:
         for index,claim in enumerate(claims,1):
             claim['local_id']=f'c{index}'
         self.extraction_details=dict(parts=[{k:v for k,v in r.items() if k not in ('raw_output','model_request')} for r in records],
-            oversized_steps=oversized,rejected_claims=rejections,duplicate_claims=duplicates,input_complete=not oversized,
+            oversized_steps=oversized,unprocessed_pages=gaps,rejected_claims=rejections,duplicate_claims=duplicates,input_complete=not gaps,
             complete=not oversized and not rejections and all(r['status']=='generated' for r in records))
         self.raw_output=records
         self.model_request=None
@@ -172,5 +247,6 @@ class ClaimSFTBackend:
             model_load_seconds=self.load_seconds if loaded_now else 0.,peak_gpu_bytes=torch.cuda.max_memory_allocated())
         if len(tokens)>=self.max_new_tokens:
             raise ValueError('Generation output budget reached')
-        response,self.part_rejections=convert_partial(core.strict_json(self.raw_output),row)
+        response,self.part_rejections=convert_partial(core.strict_json(self.raw_output),row,
+            allowed_ids=request.get('_claim_page_ids'),enforce_result_scope=True)
         return response

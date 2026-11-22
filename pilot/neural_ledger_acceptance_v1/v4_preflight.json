@@ -1,0 +1,80 @@
+{
+  "stages": 19,
+  "generation_parts": 26,
+  "paged_parts": 2,
+  "unresolved_gaps": 0,
+  "added_rejections": 3,
+  "signal_counts": {
+    "missing_tool_or_module": 2,
+    "externally_managed_environment": 1,
+    "venv_creation_failed": 1,
+    "zero_tests_reported": 1,
+    "reported_traceback": 2,
+    "replacement_not_performed": 5
+  },
+  "scope": "CPU actual-tokenizer preflight and replayed v3 responses only; new v4 model outputs and latency not measured.",
+  "paged_stages": [
+    {
+      "session": "swe",
+      "job": "00000001",
+      "pages": [
+        {
+          "stage": {
+            "end_step_id": 7,
+            "stage_id": 1,
+            "start_step_id": 7
+          },
+          "page_evidence_ids": [
+            "S7.action.1.1",
+            "S7.observation.1.1",
+            "S7.observation.1.2",
+            "S7.observation.1.3",
+            "S7.observation.1.4",
+            "S7.observation.1.5",
+            "S7.observation.1.6"
+          ],
+          "input_tokens": 4811
+        },
+        {
+          "stage": {
+            "end_step_id": 7,
+            "stage_id": 1,
+            "start_step_id": 7
+          },
+          "page_evidence_ids": [
+            "S7.observation.1.7",
+            "S7.observation.1.8",
+            "S7.observation.1.9",
+            "S7.observation.1.10",
+            "S7.observation.1.11",
+            "S7.observation.1.12",
+            "S7.observation.1.13",
+            "S7.observation.1.14"
+          ],
+          "input_tokens": 5394
+        }
+      ]
+    }
+  ],
+  "new_quarantined_claims": [
+    {
+      "session": "swe",
+      "job": "00000001",
+      "text": "The rings.py source is viewed from line 1 to 200.",
+      "reason": "result_scope: completed_action_without_observed_result"
+    },
+    {
+      "session": "swe",
+      "job": "00000001",
+      "text": "The PolyUtils.py file is viewed from line 1 to 200.",
+      "reason": "result_scope: completed_action_without_observed_result"
+    },
+    {
+      "session": "terminal",
+      "job": "00000002",
+      "text": "The pip install command downloads pandas, pyarrow, numpy, python-dateutil, pytz, tzdata and six, then installs them.",
+      "reason": "result_scope: installation_completion_absent_from_cited_result"
+    }
+  ],
+  "gpu_v4_status": "pending_remote_execution"
+}
