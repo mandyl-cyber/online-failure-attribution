@@ -291,12 +291,16 @@ def main():
     parser.add_argument('--input-mode', choices=['live', 'replay'], default='live')
     parser.add_argument("--abort", action="store_true", help="Explicitly close as incomplete after reading")
     parser.add_argument("--claim-extractor", choices=["rules", "dry-run"], default="rules")
+    parser.add_argument('--claim-evidence-review', action='store_true', help='Publish exact failure signals and flag unsupported numeric citations')
     parser.add_argument("--boundary-model", help="Trusted local joblib boundary model; keeps legacy model input")
     args = parser.parse_args()
     processor = None
     if args.claim_extractor == "dry-run":
         from .claim_extraction import StageProcessor
         processor = StageProcessor()
+    if args.claim_evidence_review:
+        from .reviewed_claim_processor import ReviewedClaimProcessor
+        processor = ReviewedClaimProcessor(processor)
     runtime = OnlineLedger(args.out, args.run_id, claim_processor=processor, boundary_model=args.boundary_model, input_mode=args.input_mode)
     try:
         for event in _iter_live_events(Path(args.path), args.poll, args.idle):

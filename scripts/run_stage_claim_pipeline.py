@@ -226,6 +226,12 @@ def main():
         subprocess.run([sys.executable, '-m', 'scripts.audit_adaptive_claim_return',
                         '--out', str(args.out.resolve()/'adaptive_return')], cwd=root, check=True)
         state['stages']['adaptive_return'] = read(args.out/'adaptive_return/summary.json')
+    if (root/'adaptive_seal_local_v2/summary.json').exists():
+        subprocess.run([sys.executable, '-m', 'scripts.audit_local_seal_return',
+                        '--out', str(args.out.resolve()/'local_return')], cwd=root, check=True)
+        state['stages']['local_return'] = read(args.out/'local_return/summary.json')
+        subprocess.run([sys.executable, '-m', 'scripts.replay_claim_evidence_review'], cwd=root, check=True)
+        state['stages']['claim_evidence_review'] = read(root/'out/claim_evidence_review_v1/summary.json')
     state['status'] = 'local_diagnostics_complete_with_research_tasks_pending'
     save(args.out / 'summary.json', state)
 

@@ -1,0 +1,41 @@
+{
+  "sessions": [
+    {
+      "session_id": "swe",
+      "path": "swe.jsonl",
+      "sha256": "05aeccfe08f5b565a0c04a481282eec0d4fa001cd2e0280b9e510c9ca7c56951",
+      "events": 48,
+      "source": "eval/online_ledger_smoke_v1/SWE/native_events",
+      "terminal_finish_present": true
+    },
+    {
+      "session_id": "terminal",
+      "path": "terminal.jsonl",
+      "sha256": "6fb2b30a42550e134b8c130b78d3b8a2e507fddfc8642b053f2b6e0f3800f810",
+      "events": 44,
+      "source": "eval/online_ledger_smoke_v1/Terminal-Bench/native_events",
+      "terminal_finish_present": true
+    },
+    {
+      "session_id": "live_smoke",
+      "path": "live_smoke.jsonl",
+      "sha256": "b0c3d1b5d7da18fab0a293927ad79597a936e30a620451577a54ac03cd270fda",
+      "events": 46,
+      "source": "eval/temporal_boundary_v1/external_candidates/ledger_probe/original/native_events",
+      "terminal_finish_present": false
+    }
+  ],
+  "scope": "Three available real event streams, including SWE and Terminal-Bench",
+  "scenario_labels": "Failure/retest/status scenarios require semantic review; session selection is for engineering acceptance.",
+  "replay": "Original event order, configurable replay interval. Open final stage stays open without a terminal event.",
+  "extractor": "Existing 7B SFT adapter bridged to ledger protocol; single worker and shared model",
+  "checks": [
+    "event/step coverage",
+    "sealed jobs vs published batches",
+    "retries and failures",
+    "restart byte identity",
+    "controlled replay queue/generation/publication times",
+    "GPU allocation",
+    "AI semantic review pending"
+  ]
+}
