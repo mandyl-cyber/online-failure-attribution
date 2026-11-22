@@ -104,12 +104,23 @@ def main():
             raise ValueError('Published batches changed after recovery')
         batches=[read(p) for p in restored.results.glob('*.json')]
         success_names={name for name,payload in after.items() if json.loads(payload)['status']=='ready'}
+        partial_names={name for name,payload in after.items() if json.loads(payload)['status']=='partial'}
         timing=successful_timings(directory,success_names)
         jobs=len(list(restored.jobs.glob('*.json')))
         attempts=[read(p) for p in (directory/'review_backend/extraction').glob('*/status.json')]
         report=dict(session=session['session_id'],events=len(events),steps=len(restored.segmenter.steps),
             sealed_jobs=jobs,published_receipts=len(batches),published_batches=len(success_names),
             evidence_only_batches=sum(b['status']=='evidence_only' for b in batches),unpublished_jobs=jobs-len(batches),
+            partial_batches=sum(b['status']=='partial' for b in batches),
+            usable_claim_batches=len(success_names|partial_names),
+            partial_batch_timings=successful_timings(directory,partial_names),
+            generation_parts_attempted=sum(len(b.get('extraction_details',{}).get('parts',[])) for b in batches),
+            partition_diagnostics=[dict(job_id=b['job_id'],status=b['status'],
+                input_complete=b['extraction_details']['input_complete'],
+                parts=b['extraction_details']['parts'],oversized_steps=b['extraction_details']['oversized_steps'],
+                rejected_claim_count=len(b['extraction_details']['rejected_claims']),
+                duplicate_claim_count=len(b['extraction_details']['duplicate_claims']))
+                for b in batches if 'extraction_details' in b],
             failed_extractions=sum(a['status']=='failed' for a in attempts),attempts=sum(a['attempts'] for a in attempts),
             recovered_batches_identical=True,terminal_seen=restored.finished,
             **timing,

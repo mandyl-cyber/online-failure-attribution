@@ -51,3 +51,35 @@ python -u -m remote_pilots.openhands_smoke.neural_ledger_acceptance run --model-
 ```
 
 长stage仍可能无法在8192预算内生成摘要，目前的超限处理是明确失败并保留观察。要恢复该部分语义摘要，后续需要验证完整保留证据的分块抽取或更长上下文预算。
+
+## v2远程回传验收
+
+新一轮GPU运行确认19个封口任务均留下记录，其中14个有效摘要批次和5个仅证据批次。总尝试从上轮24次降到19次，所有失败stage均只尝试一次，状态为不可原样重试。五个仅证据批次完整保留26条观察，原文及哈希与stage输入一致。未发布任务为零。
+
+本地独立核查了原生事件顺序、批次输入和处理器指纹、有效claim的精确引用、失败原始观察及信号偏移。在三会话副本上恢复、drain后，所有正式记录字节不变。恢复验证复用持久化结果，没有调用GPU，也未测试生成中强制崩溃。
+
+14个有效摘要中的24条claim，其文本、basis及引用内容与v1一致，因此沿用上一轮针对相同内容的AI复核。有效摘要仍为14/19。剩余两个预算超限和三个引用类型错误需要继续改善，不能以19条发布记录计为19条有效摘要。
+
+本轮成功生成中位1.62秒、最大8.34秒，GPU累计峰值9.92GiB。成功摘要排队至发布中位数为SWE11.86秒、Terminal-Bench4.73秒、live_smoke2.79秒，最大分别为19.22、5.94、5.39秒。相同控制回放中，Terminal-Bench中位数从6.94降到4.73秒。这是两次小样本运行的观测，尚不能推广为真实agent负载下的稳定收益。
+
+验收结论为失败记录完整性、停止无效重试及缓存恢复已在这三份存档上通过。下一轮先处理长stage的保真分块和引用错误下有效claim的独立校验，分别统计语义摘要完整率、关键事实保留和排队时间。
+
+复算命令为 `python -m scripts.audit_neural_ledger_v2_return`。报告在out/neural_ledger_v2_return_audit/summary.json，失败分项在failures.json。原始回传目录保持原样。
+
+## v3整步分块与逐条claim校验
+
+已实现以完整step为单位的token预算二分。每块保留动作、观察、记录ID、文本和原始封口时间。单步仍超限时记录oversized_steps，保留父stage原始观察。各块独立生成和校验，已通过的claim不因另一块或相邻claim失败而全部丢弃。无效claim及其原始标签、引用、错误写入rejected_claims。只对文本、basis、精确引用均相同的claim去重，丢弃的重复项保存在duplicate_claims。
+
+父批次完整生成且所有claim校验通过时为ready。存在缺口但仍有有效claim时为partial，存在缺口且没有有效claim时为evidence_only。后两类保留完整原始观察，标needs_review。complete描述输入及结构校验完成度，语义质量仍需逐条复核。每批上限64条claim，超出项也保留明确拒绝原因。
+
+CPU使用本地与远程同版本的tokenizer预检了19个stage，计划24个生成块。Terminal超限stage拆成6–9及10–13两个块，均符合8192预算。SWE超限stage可处理1–5、6、8、9、10五块，但第7步单独仍超限，缺口明确保留。旧的三个引用错误输出逐条重校验，可分别保留3、1、0条claim，同时隔离各1条错误项。该结果复用了旧模型输出，新分块摘要尚未GPU生成。
+
+```bash
+cd ~/online-failure-attribution
+git pull --ff-only
+conda activate agentforesight
+QWEN7B_DIR=/home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+python -u -m remote_pilots.openhands_smoke.neural_ledger_acceptance run --model-path "$QWEN7B_DIR" --out out/neural_ledger_acceptance_v3
+```
+
+回传out/neural_ledger_acceptance_v3/。分别验收完整批次、部分批次、仅证据批次、单步缺口、拒绝claim和分块尝试数，不能将部分完成计入完整摘要成功。summary增加partition_diagnostics和partial_batch_timings，原始模型输出按分块保存在attempt日志中。跨块事实关联和语义去重仍待评估。需要进一步处理单步大观察时，应使用保留原文偏移的分页方案。

@@ -30,6 +30,25 @@ def job():
 
 
 class FailureTests(unittest.TestCase):
+    def test_partial_claims_and_rejections_survive_parent_publication(self):
+        class PartialBackend:
+            identity='partial-validation-test'
+            extraction_details=dict(complete=False,rejected_claims=[dict(error='bad source')],oversized_steps=[])
+
+            def extract(self,request):
+                observation=next(e for e in request['evidence'] if e['field']=='observation')
+                return dict(claims=[dict(local_id='c1',kind='open_issue',text='No replacement was performed.',
+                    basis='tool_observation',objects=[],conditions=[],unknowns=[],
+                    evidence_refs=[dict(evidence_id=observation['record_id'],start=0,end=len(observation['text']),quote=observation['text'])])])
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            atomic(root/'job.json',job())
+            result=ReviewedClaimProcessor(StageProcessor(PartialBackend()))(root/'job.json',root/'claims')
+            self.assertEqual(result['status'],'partial')
+            self.assertEqual(len(result['claims']),1)
+            self.assertEqual(len(result['retained_observations']),1)
+            self.assertEqual(result['extraction_details']['rejected_claims'][0]['error'],'bad source')
+
     def test_terminal_failure_does_not_retry_after_restart(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)

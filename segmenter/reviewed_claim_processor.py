@@ -35,7 +35,7 @@ class ReviewedClaimProcessor:
         batch = self.processor(job_path,staging)
         if not batch:
             return batch
-        if batch.get('status')=='ready':
+        if batch.get('status') in ('ready','partial','evidence_only'):
             if batch.get('input_sha256')!=fingerprint:
                 raise ValueError('Backend returned a different stage input')
             result = deepcopy(batch)

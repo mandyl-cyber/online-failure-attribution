@@ -241,6 +241,14 @@ class StageProcessor:
                     claims=claims, edges=[], status="ready", mode=getattr(self.backend, 'mode', 'local_dry_run'),
                     metrics=getattr(self.backend, 'metrics', {}),
                     validation=validation, completed_at_unix=time.time())
+                details=getattr(self.backend,'extraction_details',None)
+                if details is not None:
+                    result['extraction_details']=deepcopy(details)
+                    if not details['complete']:
+                        result['status']='partial' if claims else 'evidence_only'
+                        result['extraction_status']='incomplete'
+                        result['review_status']='needs_review'
+                        result['retained_observations']=[deepcopy(e) for e in job['evidence'] if e['field']=='observation']
                 atomic(target, result)
                 state.update(status="ready", claim_count=len(claims), request_bytes=len(encoded(request)),
                              response_bytes=len(encoded(response)), error=None)
