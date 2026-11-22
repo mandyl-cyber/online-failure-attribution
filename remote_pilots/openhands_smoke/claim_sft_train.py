@@ -35,6 +35,12 @@ def save(path, value):
     path.write_text(json.dumps(value,ensure_ascii=False,indent=2),encoding="utf-8")
 
 
+def require_full_budget(checks):
+    failed=[c['job_id'] for c in checks if not c['eligible']]
+    if failed:
+        raise ValueError(f'{len(failed)} references exceed token budgets; no silent filtering: '+', '.join(failed[:3]))
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command",choices=["preflight","train"])
@@ -45,7 +51,15 @@ def main():
     parser.add_argument("--max-new-tokens",type=int,default=1024)
     parser.add_argument("--epochs",type=float,default=2)
     parser.add_argument("--seed",type=int,default=41)
+    parser.add_argument('--skip-generation',action='store_true',help='Train only; run a separate matched adapter comparison')
     args=parser.parse_args()
+    if (args.data/'protocol.json').exists():
+        protocol=json.loads((args.data/'protocol.json').read_text(encoding='utf-8'))
+        if protocol.get('training_eligible') is False:
+            raise ValueError('This dataset is explicitly development-only, not training data')
+        if protocol.get('protocol')=='claim-binding-sft-v1':
+            from scripts.prepare_claim_binding_sft import verify_package
+            verify_package(args.data)
     from transformers import AutoConfig, AutoTokenizer, set_seed
     set_seed(args.seed)
     model_config=AutoConfig.from_pretrained(str(args.model_path),local_files_only=True)
@@ -93,6 +107,7 @@ def main():
                 eligible[split].append(row)
     save(args.out/"preflight.json",checks)
     print({s:len(encoded[s]) for s in encoded},flush=True)
+    require_full_budget(checks)
     if args.command=="preflight":
         return
     if not encoded["train"] or not encoded["dev"]:
@@ -131,6 +146,10 @@ def main():
     save(args.out/"training_metrics.json",dict(metrics=trained.metrics,
         seconds=time.perf_counter()-started,peak_gpu_bytes=torch.cuda.max_memory_allocated(),
         versions={name:__import__(name).__version__ for name in ("torch","transformers","peft","bitsandbytes")}))
+    if args.skip_generation:
+        save(args.out/'summary.json',dict(train=len(encoded['train']),dev=len(encoded['dev']),paired_outputs=0,
+            semantic_review='pending_matched_adapter_comparison',hardware=torch.cuda.get_device_name(0)))
+        return
     model.eval()
     model.gradient_checkpointing_disable()
     model.config.use_cache=True

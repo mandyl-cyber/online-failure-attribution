@@ -1,0 +1,677 @@
+[
+  {
+    "job_id": "binding-v1:cbc5de087d72fd1f3f20ff8e29ed34f8",
+    "session": "stable_unique",
+    "original_job_id": "cbc5de087d72fd1f3f20ff8e29ed34f8",
+    "input_sha256": "383a0b5b0293b0274cba52af6ef6ebdb2e8764af3d7f64cc8cfa8dabb2acdb36",
+    "bindings": [
+      {
+        "fact_id": "stable_unique:step1:zero_tests",
+        "primary_evidence_ids": [
+          "S1.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S1.action.1.1"
+        ],
+        "category": "zero_tests",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "stable_unique:step2:source_observation",
+        "primary_evidence_ids": [
+          "S2.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S2.action.1.1"
+        ],
+        "category": "source_observation",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "stable_unique:step3:edit_failed",
+        "primary_evidence_ids": [
+          "S3.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S3.action.1.1"
+        ],
+        "category": "edit_failed",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:ca7580d17a22e5562036e66fa4373245",
+    "session": "stable_unique",
+    "original_job_id": "ca7580d17a22e5562036e66fa4373245",
+    "input_sha256": "c271dc08696cd8035c0d82a932ab0b71a8927ec2e1237c1faeee390727175bb3",
+    "bindings": [
+      {
+        "fact_id": "stable_unique:step4:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S4.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S4.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:8322ba22e5fbfb8b1eb1de919d14dc53",
+    "session": "bounded_chunks",
+    "original_job_id": "8322ba22e5fbfb8b1eb1de919d14dc53",
+    "input_sha256": "0126a35ba38281d3b14a46daeb301c8c2b0435c921913b6856a706f6eedcd252",
+    "bindings": [
+      {
+        "fact_id": "bounded_chunks:step1:zero_tests",
+        "primary_evidence_ids": [
+          "S1.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S1.action.1.1"
+        ],
+        "category": "zero_tests",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "bounded_chunks:step2:source_observation",
+        "primary_evidence_ids": [
+          "S2.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S2.action.1.1"
+        ],
+        "category": "source_observation",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "bounded_chunks:step3:probe_result",
+        "primary_evidence_ids": [
+          "S3.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S3.action.1.1"
+        ],
+        "category": "probe_result",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:5471e38ce0ce13e0139e6a513686b602",
+    "session": "bounded_chunks",
+    "original_job_id": "5471e38ce0ce13e0139e6a513686b602",
+    "input_sha256": "ada56216c664167bb58a71d38299b7a98ab9573390aa99a7970d6969db564345",
+    "bindings": [
+      {
+        "fact_id": "bounded_chunks:step4:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S4.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S4.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:06830aa404c891f10f4a68aa25089da4",
+    "session": "bounded_chunks",
+    "original_job_id": "06830aa404c891f10f4a68aa25089da4",
+    "input_sha256": "1d48ba27769311027a11e780e169d2856e738bf3f4f390b04338ff6a8c3dfe57",
+    "bindings": [
+      {
+        "fact_id": "bounded_chunks:step5:zero_tests",
+        "primary_evidence_ids": [
+          "S5.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S5.action.1.1"
+        ],
+        "category": "zero_tests",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "bounded_chunks:step6:agent_assertion",
+        "primary_evidence_ids": [
+          "S6.action.1.1"
+        ],
+        "context_evidence_ids": [],
+        "category": "agent_assertion",
+        "basis": "agent_assertion"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:d05f8318478c13ee8cde93ba8d684d0f",
+    "session": "prefix_totals",
+    "original_job_id": "d05f8318478c13ee8cde93ba8d684d0f",
+    "input_sha256": "d2ffada90896a1613bb259cdd58a05310f348b930760292da4507bc6dca0b604",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step1:verification_failed",
+        "primary_evidence_ids": [
+          "S1.observation.1.1",
+          "S1.observation.1.2"
+        ],
+        "context_evidence_ids": [
+          "S1.action.1.1"
+        ],
+        "category": "verification_failed",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:5dfc3c07e7d2fe21d5df09018c9ab2f5",
+    "session": "prefix_totals",
+    "original_job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+    "input_sha256": "990b437262d79c215345c3d16d3a6ba82a3dfd2c62fba14106b39310be20ecc5",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step2:edit_failed",
+        "primary_evidence_ids": [
+          "S2.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S2.action.1.1"
+        ],
+        "category": "edit_failed",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "prefix_totals:step4:edit_failed",
+        "primary_evidence_ids": [
+          "S4.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S4.action.1.1"
+        ],
+        "category": "edit_failed",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "prefix_totals:step3:source_observation",
+        "primary_evidence_ids": [
+          "S3.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S3.action.1.1"
+        ],
+        "category": "source_observation",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "prefix_totals:step5:source_observation",
+        "primary_evidence_ids": [
+          "S5.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S5.action.1.1"
+        ],
+        "category": "source_observation",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:de85cf017d7cfb08a94fd6090ce85b48",
+    "session": "prefix_totals",
+    "original_job_id": "de85cf017d7cfb08a94fd6090ce85b48",
+    "input_sha256": "1cbe48f3849e243fe4adcacc1f85282a4b7b69b5d3d7ddf4a1ca7d09b158bf8c",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step6:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S6.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S6.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:9ca0b0bf928bbf6cd9382cd03781ab32",
+    "session": "prefix_totals",
+    "original_job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+    "input_sha256": "52866097f00f0de0af62371ec4435cc9829c2b4232346a571ce93dfdeec67538",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step7:verification_failed",
+        "primary_evidence_ids": [
+          "S7.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S7.action.1.1"
+        ],
+        "category": "verification_failed",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "prefix_totals:step8:edit_failed",
+        "primary_evidence_ids": [
+          "S8.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S8.action.1.1"
+        ],
+        "category": "edit_failed",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:24e61f16cbcb7c46980aaaa3b3fcc2bc",
+    "session": "prefix_totals",
+    "original_job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+    "input_sha256": "db922597f22ffa028712f4cfd4f48eec8e0a07924e87fa02fdf26a63313b2c4c",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step9:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S9.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S9.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:e160bd1c8ea28908980bf85c1c429992",
+    "session": "prefix_totals",
+    "original_job_id": "e160bd1c8ea28908980bf85c1c429992",
+    "input_sha256": "094f4addf9d7070869280ea6250d456482678782a2db64c27b3f0dd6876824a3",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step10:verification_failed",
+        "primary_evidence_ids": [
+          "S10.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S10.action.1.1"
+        ],
+        "category": "verification_failed",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "prefix_totals:step11:edit_failed",
+        "primary_evidence_ids": [
+          "S11.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S11.action.1.1"
+        ],
+        "category": "edit_failed",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:2ac9cff691b9111e19be3df0f862fe5f",
+    "session": "prefix_totals",
+    "original_job_id": "2ac9cff691b9111e19be3df0f862fe5f",
+    "input_sha256": "346bb46cf399404ebf2761340e07eeccc7f22a7ef38b26a0bf94f6f89635eca0",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step12:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S12.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S12.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:91ea6ef7750d6d4c5081fa5768cd96d8",
+    "session": "prefix_totals",
+    "original_job_id": "91ea6ef7750d6d4c5081fa5768cd96d8",
+    "input_sha256": "57a7e9b0802ed581e3681539e4aa8180a1405f57a2e7448dd98d2f4433c7b4a2",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step13:verification_failed",
+        "primary_evidence_ids": [
+          "S13.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S13.action.1.1"
+        ],
+        "category": "verification_failed",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:1a8acf67d16d01e472dac2b42e4ba473",
+    "session": "prefix_totals",
+    "original_job_id": "1a8acf67d16d01e472dac2b42e4ba473",
+    "input_sha256": "da02856ee093a7a7375b1a98c50b81a4fdf00cd1f737679d807876cb1ab4a47a",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step14:edit_failed",
+        "primary_evidence_ids": [
+          "S14.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S14.action.1.1"
+        ],
+        "category": "edit_failed",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "prefix_totals:step15:edit_failed",
+        "primary_evidence_ids": [
+          "S15.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S15.action.1.1"
+        ],
+        "category": "edit_failed",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "prefix_totals:step16:edit_failed",
+        "primary_evidence_ids": [
+          "S16.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S16.action.1.1"
+        ],
+        "category": "edit_failed",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:acfea7523b8d1b908a9444b426117339",
+    "session": "prefix_totals",
+    "original_job_id": "acfea7523b8d1b908a9444b426117339",
+    "input_sha256": "aa74567421371ed380ba6b8a2c38fd4ea0cd74a96516cd2ac54f0637ed2bdb3f",
+    "bindings": [
+      {
+        "fact_id": "prefix_totals:step17:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S17.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S17.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:26715cc67e497c83b13a75d71e78d02b",
+    "session": "config_overrides",
+    "original_job_id": "26715cc67e497c83b13a75d71e78d02b",
+    "input_sha256": "3db6773bfae172e5bc8953f1b39b0c9892dcddcf00e470be7d934e5a107cb3e0",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step1:verification_failed",
+        "primary_evidence_ids": [
+          "S1.observation.1.1",
+          "S1.observation.1.2"
+        ],
+        "context_evidence_ids": [
+          "S1.action.1.1"
+        ],
+        "category": "verification_failed",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "config_overrides:step3:source_observation",
+        "primary_evidence_ids": [
+          "S3.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S3.action.1.1"
+        ],
+        "category": "source_observation",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:2aec3a7e6fda449066e022139288aa95",
+    "session": "config_overrides",
+    "original_job_id": "2aec3a7e6fda449066e022139288aa95",
+    "input_sha256": "eb7e825b98e5915f7fb13313f83c565483bd0b0a0913f4e70ccf928c75d69c23",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step5:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S5.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S5.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:9c80f70a3ab797da8c5730cb7f2ac2f3",
+    "session": "config_overrides",
+    "original_job_id": "9c80f70a3ab797da8c5730cb7f2ac2f3",
+    "input_sha256": "71f216c1ca0f785c7839f2a636a657b953fb6292dac8e97f3d46d20254105839",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step6:verification_failed",
+        "primary_evidence_ids": [
+          "S6.observation.1.1",
+          "S6.observation.1.2"
+        ],
+        "context_evidence_ids": [
+          "S6.action.1.1"
+        ],
+        "category": "verification_failed",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:a8650ee93e2f98972f275dd9de667b46",
+    "session": "config_overrides",
+    "original_job_id": "a8650ee93e2f98972f275dd9de667b46",
+    "input_sha256": "7de1f4e0ff8b91395b116e62bc293dc4aa72540df6cc4c5f034c5414afca0adf",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step7:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S7.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S7.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:54bd019ee3db5598d575aa8b3cea1e6d",
+    "session": "config_overrides",
+    "original_job_id": "54bd019ee3db5598d575aa8b3cea1e6d",
+    "input_sha256": "95e0c5c85ec4800f87e4de13dc078a4845e6ab4e2c5981a415e1cdd2d5934b6f",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step8:runtime_exception",
+        "primary_evidence_ids": [
+          "S8.observation.1.1",
+          "S8.observation.1.2"
+        ],
+        "context_evidence_ids": [
+          "S8.action.1.1"
+        ],
+        "category": "runtime_exception",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:9507071be4fa50e64385dd3bc621471a",
+    "session": "config_overrides",
+    "original_job_id": "9507071be4fa50e64385dd3bc621471a",
+    "input_sha256": "e9cf4e8241d1a4785bbc3f38d4dcf0b16556ef6affefcc9ca86cbb2f60150ae8",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step9:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S9.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S9.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:1f17652e3e51c57afee74c3b3d0eebf6",
+    "session": "config_overrides",
+    "original_job_id": "1f17652e3e51c57afee74c3b3d0eebf6",
+    "input_sha256": "81f8ecd54d1bd4bd70ad50ff460afa7a0af945e9e22dc37264e9ef92c8e25c2d",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step10:runtime_exception",
+        "primary_evidence_ids": [
+          "S10.observation.1.1",
+          "S10.observation.1.2"
+        ],
+        "context_evidence_ids": [
+          "S10.action.1.1"
+        ],
+        "category": "runtime_exception",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:bb3bee42c4fc0aed14ebf8a383bfabb9",
+    "session": "config_overrides",
+    "original_job_id": "bb3bee42c4fc0aed14ebf8a383bfabb9",
+    "input_sha256": "a4584cada4e8202a72ca068fad0df93cf6e1b939402df66727d90df76aef6fa0",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step11:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S11.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S11.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:ae6cc8589213f59ab0c11360d49826ad",
+    "session": "config_overrides",
+    "original_job_id": "ae6cc8589213f59ab0c11360d49826ad",
+    "input_sha256": "d7341623cd435cfde0f2902c54d09cf08e3c53d077252e167a6ae573509fb189",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step12:verification_failed",
+        "primary_evidence_ids": [
+          "S12.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S12.action.1.1"
+        ],
+        "category": "verification_failed",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:df8cf41577f4ab2c17d5fc56ee22b695",
+    "session": "config_overrides",
+    "original_job_id": "df8cf41577f4ab2c17d5fc56ee22b695",
+    "input_sha256": "0b04fbbb4e2134c5517abd235989bb8f269bed85c2c71f2834e8ba9eb670b342",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step13:edit_acknowledged",
+        "primary_evidence_ids": [
+          "S13.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S13.action.1.1"
+        ],
+        "category": "edit_acknowledged",
+        "basis": "tool_observation"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  },
+  {
+    "job_id": "binding-v1:f6babff958eefb02c59f0305d8be14b0",
+    "session": "config_overrides",
+    "original_job_id": "f6babff958eefb02c59f0305d8be14b0",
+    "input_sha256": "5fc005c8bc8d6c98af0dad1efa9b14c619e61303728cea1e212d931a55fef8d9",
+    "bindings": [
+      {
+        "fact_id": "config_overrides:step14:verification_pass",
+        "primary_evidence_ids": [
+          "S14.observation.1.1"
+        ],
+        "context_evidence_ids": [
+          "S14.action.1.1"
+        ],
+        "category": "verification_pass",
+        "basis": "tool_observation"
+      },
+      {
+        "fact_id": "config_overrides:step15:agent_assertion",
+        "primary_evidence_ids": [
+          "S15.action.1.1"
+        ],
+        "context_evidence_ids": [],
+        "category": "agent_assertion",
+        "basis": "agent_assertion"
+      }
+    ],
+    "usage": "training_not_acceptance"
+  }
+]

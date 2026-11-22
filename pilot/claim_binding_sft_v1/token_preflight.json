@@ -1,0 +1,1227 @@
+[
+  {
+    "split": "train",
+    "job_id": "a822e651e3b6ee3ea69a5bb2eed52912a6f161b01fc94d8cdda018df09d7a5e5",
+    "prompt_tokens": 5630,
+    "reference_tokens": 186,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "c8f5a6b87b0c33913809c73ac13ec6a4e683f1e3dd5bca757c5a1137d17e18b1",
+    "prompt_tokens": 4541,
+    "reference_tokens": 163,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "b652bf0981605fd39b4ae732ce3cfdb8947e6df02d89644f77e895093bf53c22",
+    "prompt_tokens": 3609,
+    "reference_tokens": 146,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "ec14c40abc1ce39a950a860ffc5287042d2d9f0da0d4a640a7195f2b6511324c",
+    "prompt_tokens": 4376,
+    "reference_tokens": 128,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "c17f6903d89c4bf9a66e17b7a75f4d5d16db0d5f0ba0a79b168168a020ad3e3b",
+    "prompt_tokens": 3563,
+    "reference_tokens": 145,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "c8c84f212dc8e9a923a5333ac9a18138a7b1f7bd41774b8b944c645ad71a5943",
+    "prompt_tokens": 3494,
+    "reference_tokens": 101,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "50c3ed3c236c6d01328fd734822f36a3c80eee7a08544c4fe8d25dfd1e4ddaeb",
+    "prompt_tokens": 2899,
+    "reference_tokens": 106,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "0f16f1a26462de685e4ecfd65e1f9c66f47312314120cf3bd7170611d0745af7",
+    "prompt_tokens": 4666,
+    "reference_tokens": 91,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "1a5bdc98abfbc31cfb4f9069ad2f52f4b1ddf7a3903aa29bb850a8261b0cee98",
+    "prompt_tokens": 5172,
+    "reference_tokens": 116,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "74ac328a570cd9a7045eda6f0e2b49b940449ec7d11e1c1acbbcd28a393cc5c2",
+    "prompt_tokens": 5268,
+    "reference_tokens": 201,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "962db112be1b8df58742929ca6f19f0e9fb857f77fe8a9ac456752eb523b1dd5",
+    "prompt_tokens": 3221,
+    "reference_tokens": 49,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "c01fb31ea074691bcb97700e184493a2359ec265f45da58a46676a4bbbb6c0ab",
+    "prompt_tokens": 4114,
+    "reference_tokens": 126,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "760763b0e12dcf30220f2f5e32e664a57af87b20996949e55c22fef4111f6c4a",
+    "prompt_tokens": 3802,
+    "reference_tokens": 95,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "e73ff525bf005b3752f9a66c6441a6558d00883cc9e5854cf4ca26a553ffe1fb",
+    "prompt_tokens": 4986,
+    "reference_tokens": 120,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "7879600a0383c578c5ac8f3004cac7ef3d9fac339a428ac692079017b78e3629",
+    "prompt_tokens": 6005,
+    "reference_tokens": 206,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "3ae14aff8714b09884b96dd740ab4c98f23603b7d0fb90b5c05db95551e0a8ec",
+    "prompt_tokens": 5265,
+    "reference_tokens": 134,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "bee762f1c54709873ab87f21b0d83a8ddacdccb4869a318170e92ef9286f9547",
+    "prompt_tokens": 4401,
+    "reference_tokens": 56,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "7f8c4f5844531d974be170eb2fa12d0f0c7696966fd18967af27d451103a722c",
+    "prompt_tokens": 4016,
+    "reference_tokens": 114,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "712a66700f5b8f84e0c64204249e0ba5cebedac0eca9e8700e357fad3ff4329b",
+    "prompt_tokens": 5894,
+    "reference_tokens": 193,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "c7e199868cdfaaf7f84da960d3d3f932c6bf6512751624b0ac25b3ddb1fc193e",
+    "prompt_tokens": 6049,
+    "reference_tokens": 103,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "0ff07ecf3d4d5f4b86174c1a5142a72884ea02b56abaceebed84763d07b69f66",
+    "prompt_tokens": 4604,
+    "reference_tokens": 87,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "36c62761270543a35b92d49934e409b64d1391550b8da79d702ef6acfb276471",
+    "prompt_tokens": 5036,
+    "reference_tokens": 165,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "bcf0f934df47517165ca16c15a6665a1e05088c75952b6598f6f6defc9cda069",
+    "prompt_tokens": 5310,
+    "reference_tokens": 105,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "42bd049e5d6b7e4962c7a5570517d12fb6ba9bf1d521d7cceda484cb6fd01d0c",
+    "prompt_tokens": 4133,
+    "reference_tokens": 115,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "115d4f6414388c4478e4ff253d204c734117083bdb37fdf947c43addde3b79e8",
+    "prompt_tokens": 4520,
+    "reference_tokens": 78,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "5e0d09d62b76f7555b4482472cf8887611f22b4595b7d37cc25a41e4a29552c8",
+    "prompt_tokens": 4999,
+    "reference_tokens": 93,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "f6afc2ceaca502f7a0fd993e0118ef7587400c2da461283b8e9b6e837caaa47d",
+    "prompt_tokens": 4550,
+    "reference_tokens": 140,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "1d57f599f1d8adc19c3bc5eb6aea3380b4696013f10c878aa72e9bb580aff6a8",
+    "prompt_tokens": 5587,
+    "reference_tokens": 156,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "69a923481aecbb0c2048bd6cd2f23109c734eef62111085e1fa02d8b08e7f10f",
+    "prompt_tokens": 4834,
+    "reference_tokens": 155,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "17e5f634e4e2a277e0783b1cf29e39bb7b61232bbb09d1be1ebb525133df9f69",
+    "prompt_tokens": 4783,
+    "reference_tokens": 158,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "503b46eeff2db8f4133ea128d427ecda5e0616dced40f6721189564afc1955bf",
+    "prompt_tokens": 3615,
+    "reference_tokens": 87,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "be9c34556bbb5e4c5c7f62381d984c6ba978e846782851544908e82f169d3250",
+    "prompt_tokens": 4663,
+    "reference_tokens": 181,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "9cefea22256039b94e056ba07c000c76d446a29059a273b5c120bf5850e365de",
+    "prompt_tokens": 3640,
+    "reference_tokens": 100,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "eb076a47ead697be69ee3ece039a2028bdfd36a76bb949dbda34e8d38915c081",
+    "prompt_tokens": 4392,
+    "reference_tokens": 192,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "5ae84e442c8ea2bbbe8bc07b7fc86ca53b7aef488fe02b2bcf820732a61b3c50",
+    "prompt_tokens": 4434,
+    "reference_tokens": 161,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "0e5b55cacdf47d41fff803c40ee587847950af4c2d008a37deb9f87e23852599",
+    "prompt_tokens": 4010,
+    "reference_tokens": 108,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "50e38ca8211b48dd5bad8c2701f7949c2f0aea2989c830c58e077d56a414e2a7",
+    "prompt_tokens": 4985,
+    "reference_tokens": 128,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "d60074747ebcb8e80cb664a28e9de2737172813032bbf7fd763765e4773e0f3f",
+    "prompt_tokens": 5336,
+    "reference_tokens": 116,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "cdfd6ced3599c32955ede644017064c74bc29933c6570e996ef64892cc66192d",
+    "prompt_tokens": 4141,
+    "reference_tokens": 149,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "083757ea7cee3d91d06c94c709293ed039f397cf4e149f18943e9a7c7782b0cb",
+    "prompt_tokens": 5554,
+    "reference_tokens": 179,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "88cd7bdc181b518d80e81066634e7d7a3cb1eb620a7452be3b15660af8020d55",
+    "prompt_tokens": 5379,
+    "reference_tokens": 114,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "d73f6c0dd6227e8c6d021e0d5584bfa609f656ecd694ae25eeec3b514913986c",
+    "prompt_tokens": 3829,
+    "reference_tokens": 154,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "9fce73b2477ef5395ae547c62873263d2bc16d74d065ddc918b117e30725a814",
+    "prompt_tokens": 4684,
+    "reference_tokens": 219,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "d7c0cfdab8272675049b69514c21845184a13e5c35256fc5b516a63d63aeab30",
+    "prompt_tokens": 5200,
+    "reference_tokens": 140,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "f49ed7a951853546a96471788a31ec8697b7010c4acc0aad15cebcaa9b762469",
+    "prompt_tokens": 6007,
+    "reference_tokens": 123,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "d9c19f43fb55b2141ed3f3aad8cc1a01ce4fd43a29998e6a3611d698e94f2b78",
+    "prompt_tokens": 5496,
+    "reference_tokens": 74,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "c6ad8663fc0aceca30398688d1f36c8b15c97165c741dbd502660303ac325679",
+    "prompt_tokens": 4215,
+    "reference_tokens": 78,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "0aa70944cfd32caa71033f03c065734f43d72710c2df65e00868a60c99593945",
+    "prompt_tokens": 4541,
+    "reference_tokens": 73,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "b421000e08021a2f978da9d2b5263d77a7b55f3ddd7979485024197012ad9e5a",
+    "prompt_tokens": 4862,
+    "reference_tokens": 85,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "2bd6a46f37e1864833821891e132965f63b1653a95c435b8d1c87e65a1292ac8",
+    "prompt_tokens": 5012,
+    "reference_tokens": 126,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "dc74fc04eb175d0e413979e49843ce728d2114c6a2b9edc65d21d5e66e5b0f00",
+    "prompt_tokens": 4431,
+    "reference_tokens": 86,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "cb39a0f23922bd6ec7f4c893f31ac3b9b84e574ce9fa2514b5c06da397876213",
+    "prompt_tokens": 5251,
+    "reference_tokens": 86,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "a166eb9096c1fb6de28bb2eb4cb8605c4d1eadc301fb68c572599779ed2d0f19",
+    "prompt_tokens": 5640,
+    "reference_tokens": 90,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "adf25ff446ccd3ff838c51e8150ed4a3e0cc386b6c15664f692b4caa7d4c1988",
+    "prompt_tokens": 3221,
+    "reference_tokens": 62,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "e3eebf5918248488493c5056d7686ea284e9e3c7c894f18635af2f8195d24b8d",
+    "prompt_tokens": 5953,
+    "reference_tokens": 123,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "71734bf6c534b856a0edb0d4f7f8ddb68fe088b0a8c2b86942c0c414f2f6d2f8",
+    "prompt_tokens": 3102,
+    "reference_tokens": 55,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "b9711640f47c8ac4f62a411de26dcbfb466fd801b98b012070e5913e9762b364",
+    "prompt_tokens": 3804,
+    "reference_tokens": 63,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "00939d522549ae5f0ef06b17ac3c78738a5343908d2bdc5e72533f13471eb64a",
+    "prompt_tokens": 5981,
+    "reference_tokens": 141,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "2d36219882f41492b7296b5debb524b2b4ecb21bb24032f5caacfceb5e358292",
+    "prompt_tokens": 3899,
+    "reference_tokens": 63,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "e8830df9a3cf95d331c7f596d082c5fa7b88903982fc1d56c31f4a371b508875",
+    "prompt_tokens": 5659,
+    "reference_tokens": 129,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "57b4787811fe09a49d88db67e4b761480a989ea8f399f445ef188deeb0ffe6c5",
+    "prompt_tokens": 4464,
+    "reference_tokens": 54,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "7bd2c5832abbedca0df972171b0391d51a36ac3e3a1e0a7840483d8ef60e75fa",
+    "prompt_tokens": 4713,
+    "reference_tokens": 84,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "211f062b26c78f0bf5d5583e2859a60c1d64fdf6352e1736ca77e4074b21356b",
+    "prompt_tokens": 6142,
+    "reference_tokens": 122,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "704a720c48884e92fdd43b3b9be9726e6f89f123cee428957c98628129604879",
+    "prompt_tokens": 3311,
+    "reference_tokens": 61,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "742b471bc7147c60236edfe5e05d20c218391cf70358d343e3dadefbe9ce24af",
+    "prompt_tokens": 5277,
+    "reference_tokens": 87,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "eb13a0c53ff99d91ed91a1a2f90e789a53b59ee656e86000861a9e987d17acb7",
+    "prompt_tokens": 3747,
+    "reference_tokens": 59,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "cfeb296695c4b8ebb69abcbea855ce00091f0c90a1721f1f06928af32a0d0bd5",
+    "prompt_tokens": 4955,
+    "reference_tokens": 110,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "84060693fff93043dc06029a386926836ea682fdb0599852a59d55a9046b8427",
+    "prompt_tokens": 4099,
+    "reference_tokens": 87,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "11df089f03151cd16a75a275534cba12b64d2ffb2f7be68112529f43f57f37a9",
+    "prompt_tokens": 5754,
+    "reference_tokens": 128,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "4ad41532f45c7be7c69d05f0d81ec56f244a482b334c9ba09bf443ceaf0c225a",
+    "prompt_tokens": 4269,
+    "reference_tokens": 71,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "75131bb67e14ec6f6c1da1488271b4d3a7937f2004223a20132c254061688156",
+    "prompt_tokens": 5699,
+    "reference_tokens": 46,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "817b41b3a0a1f1e1a2ff0e469817a0660d6594e5e7e14c38b2333ef2a196877d",
+    "prompt_tokens": 5941,
+    "reference_tokens": 48,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "5b37321fd63e4f0bf7fb0ef2458cba74e059d87faee448e5d60686ea147ebee9",
+    "prompt_tokens": 5448,
+    "reference_tokens": 40,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "401f598de95fce2b4384d6356857a2a3d6567e97bdfb6082626ed18df657c91a",
+    "prompt_tokens": 6068,
+    "reference_tokens": 84,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "95c372843d77c193ab0ac00b8e74fbf9969c55547d30c77f01329cc311a493ba",
+    "prompt_tokens": 6034,
+    "reference_tokens": 94,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "8ddcd55e359e31e414b5d799a7d0a4cb52a11a341df78ee06143c56e9ef251d8",
+    "prompt_tokens": 5468,
+    "reference_tokens": 88,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "91a352a1946c00340bc9f775afb3e045ddd4b4014f19c950f8d554548e392013",
+    "prompt_tokens": 5584,
+    "reference_tokens": 114,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "afacfca3fdff83cd8c81b8cd408882933dd9713a24b2c411071f8770ab95f98f",
+    "prompt_tokens": 4879,
+    "reference_tokens": 63,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "1a8eddb6bf71c95cce63b178e1ecd7d2d8f956093868dd43976129246400fa56",
+    "prompt_tokens": 4291,
+    "reference_tokens": 57,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "87cb0097a942b5d93ae933c41751abdb9e28865a933bc007fab46bf80d6a4ee2",
+    "prompt_tokens": 5045,
+    "reference_tokens": 118,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "a0ba123cdc7fe5d0966915790a91aaa4ab998c3ddabb5c0d13350bb515d387af",
+    "prompt_tokens": 4653,
+    "reference_tokens": 123,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "09a5128bfd4fe006de095658c5d0fadb502b6b3e6ab19e0e420167acabcc2e85",
+    "prompt_tokens": 6139,
+    "reference_tokens": 200,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "3213a9fb3b33216796b9df99364d3b974170968bae6a592b17af3f4f34f69bcf",
+    "prompt_tokens": 4247,
+    "reference_tokens": 80,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "97a93cf44e3ea589b3bbb862e121cdfe8d31595a584777a115c5a6129d9bb6cc",
+    "prompt_tokens": 4737,
+    "reference_tokens": 81,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "734e876048aa0db1274510eb8c8cd36235e70efc9f5f18c1485f1e78c40d174c",
+    "prompt_tokens": 4175,
+    "reference_tokens": 59,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "c3d6f6eb68041d5632109f9f63da255926bca2d8f5ad55a089ac6c0ce2632ac2",
+    "prompt_tokens": 6125,
+    "reference_tokens": 114,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "146e457170292a14c7dc011255790764139c69c12ef125f49a7fa03e96e62307",
+    "prompt_tokens": 5780,
+    "reference_tokens": 136,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "e607c5baf5ff708aac6a704cd826a5a1aaacc88bf944c30dd8a7c6ad7ce5617c",
+    "prompt_tokens": 3462,
+    "reference_tokens": 81,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "726712cc7e82af11aab123dd056b8640e0c34ea8320e199f3196c8ed0a11b28a",
+    "prompt_tokens": 4560,
+    "reference_tokens": 54,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "e258ad9f0156ce339d6649f2095d5a45c0fa3a63d5d7ea552ac346dfa8d61cfc",
+    "prompt_tokens": 5697,
+    "reference_tokens": 86,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "7bb82326ccf3ab2fa8f293eea91bb73665f2b2c3b7d8598c77205b4f040b0837",
+    "prompt_tokens": 5195,
+    "reference_tokens": 75,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "f2b9221fcc9bf16c6e2d74fb1cad5b518792a8ca831da35c33fa2932f661d5ea",
+    "prompt_tokens": 6132,
+    "reference_tokens": 164,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "9310c416bbf49f77dd5cd618b6c58614c24876bdf34e5512ce29c289cad3f4c7",
+    "prompt_tokens": 4288,
+    "reference_tokens": 61,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "51c67bfa424724d8b91de51d8faeec8fac46ad45c3701fd721a24d6410d07915",
+    "prompt_tokens": 5908,
+    "reference_tokens": 108,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "2fa39ebf6e6df8204e559be6727813a716890b18681a16ed4a2b4960ce695862",
+    "prompt_tokens": 4074,
+    "reference_tokens": 69,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "e5b72c30ad803fb9aedecf8c08029463af10040e69846609985b2be8b04acc5f",
+    "prompt_tokens": 5519,
+    "reference_tokens": 101,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "0329ecb2f3e3617d7d7c829f4ffe042eea8fc27c51c56e11629523bbab25788b",
+    "prompt_tokens": 2747,
+    "reference_tokens": 65,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "dc90b3e02244d3ac953b6a0b212ca3e362710d445f6b8052fc79138bc476e6ab",
+    "prompt_tokens": 5395,
+    "reference_tokens": 208,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "a46907d401aeccedad6c1c8f7d7ec0691f3e13fa5e911a1186de024c2bd79542",
+    "prompt_tokens": 3676,
+    "reference_tokens": 114,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "287a5a1096c64aec735f3d55680db23083887c0f70132d257745c4121751a1be",
+    "prompt_tokens": 5112,
+    "reference_tokens": 203,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:cbc5de087d72fd1f3f20ff8e29ed34f8",
+    "prompt_tokens": 1949,
+    "reference_tokens": 132,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:ca7580d17a22e5562036e66fa4373245",
+    "prompt_tokens": 1333,
+    "reference_tokens": 61,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:8322ba22e5fbfb8b1eb1de919d14dc53",
+    "prompt_tokens": 1921,
+    "reference_tokens": 134,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:5471e38ce0ce13e0139e6a513686b602",
+    "prompt_tokens": 1384,
+    "reference_tokens": 63,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:06830aa404c891f10f4a68aa25089da4",
+    "prompt_tokens": 1876,
+    "reference_tokens": 92,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:d05f8318478c13ee8cde93ba8d684d0f",
+    "prompt_tokens": 1660,
+    "reference_tokens": 59,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:5dfc3c07e7d2fe21d5df09018c9ab2f5",
+    "prompt_tokens": 2434,
+    "reference_tokens": 176,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:de85cf017d7cfb08a94fd6090ce85b48",
+    "prompt_tokens": 1381,
+    "reference_tokens": 63,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:9ca0b0bf928bbf6cd9382cd03781ab32",
+    "prompt_tokens": 1826,
+    "reference_tokens": 117,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:24e61f16cbcb7c46980aaaa3b3fcc2bc",
+    "prompt_tokens": 1419,
+    "reference_tokens": 54,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:e160bd1c8ea28908980bf85c1c429992",
+    "prompt_tokens": 1851,
+    "reference_tokens": 121,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:2ac9cff691b9111e19be3df0f862fe5f",
+    "prompt_tokens": 1433,
+    "reference_tokens": 56,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:91ea6ef7750d6d4c5081fa5768cd96d8",
+    "prompt_tokens": 1383,
+    "reference_tokens": 74,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:1a8acf67d16d01e472dac2b42e4ba473",
+    "prompt_tokens": 2142,
+    "reference_tokens": 147,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:acfea7523b8d1b908a9444b426117339",
+    "prompt_tokens": 1449,
+    "reference_tokens": 56,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:26715cc67e497c83b13a75d71e78d02b",
+    "prompt_tokens": 2331,
+    "reference_tokens": 102,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:2aec3a7e6fda449066e022139288aa95",
+    "prompt_tokens": 1560,
+    "reference_tokens": 54,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:9c80f70a3ab797da8c5730cb7f2ac2f3",
+    "prompt_tokens": 1519,
+    "reference_tokens": 59,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:a8650ee93e2f98972f275dd9de667b46",
+    "prompt_tokens": 1315,
+    "reference_tokens": 54,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:54bd019ee3db5598d575aa8b3cea1e6d",
+    "prompt_tokens": 1604,
+    "reference_tokens": 57,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:9507071be4fa50e64385dd3bc621471a",
+    "prompt_tokens": 1281,
+    "reference_tokens": 54,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:1f17652e3e51c57afee74c3b3d0eebf6",
+    "prompt_tokens": 1624,
+    "reference_tokens": 60,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:bb3bee42c4fc0aed14ebf8a383bfabb9",
+    "prompt_tokens": 1298,
+    "reference_tokens": 56,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:ae6cc8589213f59ab0c11360d49826ad",
+    "prompt_tokens": 1396,
+    "reference_tokens": 52,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:df8cf41577f4ab2c17d5fc56ee22b695",
+    "prompt_tokens": 1380,
+    "reference_tokens": 56,
+    "eligible": true
+  },
+  {
+    "split": "train",
+    "job_id": "binding-v1:f6babff958eefb02c59f0305d8be14b0",
+    "prompt_tokens": 1529,
+    "reference_tokens": 96,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "310be630cc4394e3ca309c2ac01bd591de97d68aed4dfd40437b9f83285a8243",
+    "prompt_tokens": 5944,
+    "reference_tokens": 126,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "c925001d7213cc86a00623f1e48d33a692de3abfbb8d5fa570fc64d4d1a36874",
+    "prompt_tokens": 3615,
+    "reference_tokens": 138,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "13ac042b460c443022c8935d34b08864764bd6de3d8e8b4c88844c51dc6c9716",
+    "prompt_tokens": 3726,
+    "reference_tokens": 62,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "4d46f993a96658311bc32ee6188ecb088e1ebfbdb825acb77f92fddc9c9e627c",
+    "prompt_tokens": 4160,
+    "reference_tokens": 61,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "86c7e0a6010ac3c4bf8e4ca323f0cde15b5773d954fec1fa1ef0a55b103c10c1",
+    "prompt_tokens": 3361,
+    "reference_tokens": 53,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "1953a96b4d34acb7b3513fbc5a5e0993abfbf93dcdbca1ed2d6221478c968ecf",
+    "prompt_tokens": 4439,
+    "reference_tokens": 106,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "29a4e85d6dc55daa2f824c5c168c6e82e05cfc8eb2ec87cf5410f5df40842d85",
+    "prompt_tokens": 5609,
+    "reference_tokens": 89,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "4ea3097fb011d88a89b9a2924600c9f13be109c6fb6070cf9942aa24a01ec958",
+    "prompt_tokens": 6025,
+    "reference_tokens": 95,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "2db2dea22f59b52d2c5126ef4cb3dfd6e34d9b750deca9249b9db776d9c92d87",
+    "prompt_tokens": 3154,
+    "reference_tokens": 39,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "c6a9cdecc152cf597f49542703ae0c082c986f3e8a35a69dbf6662d2dd3f43c3",
+    "prompt_tokens": 5893,
+    "reference_tokens": 140,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "542a46b8f6fd6c19862c874ee63d82b01f42d0f07c6204c2e18608438ec38b1f",
+    "prompt_tokens": 5596,
+    "reference_tokens": 131,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "bf1d8b7dc1ff7aff7a649356e3ee72db5fd1a14e3e91679d1c8178242814b715",
+    "prompt_tokens": 5938,
+    "reference_tokens": 128,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "3f034b1be611b24e81a27fa0f8af96133f5e70a82e34e4d2a2dd9d5ecc48fae0",
+    "prompt_tokens": 3156,
+    "reference_tokens": 43,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "6dc0cd4b13aa2d210cc22ce22470cf87ba6d0f9cff63eb6e86e314e5865dc0b4",
+    "prompt_tokens": 5594,
+    "reference_tokens": 107,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "c16873b3f3448032f9c9c4c886bce9ffa1689720167c471ed4b281a737433129",
+    "prompt_tokens": 3491,
+    "reference_tokens": 47,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "a7f65c0525eb69405678ee52d7f30be3d122d5ed3b686c934507f8845312e5a7",
+    "prompt_tokens": 5386,
+    "reference_tokens": 95,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "c45d0d0378f68c80de03645ecb8472f13345b653f7628d037ceb4281fc66b9ca",
+    "prompt_tokens": 3930,
+    "reference_tokens": 55,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "e416988c9e19587c747ce2a5275d989911692ff762767ad8a6321b6bd9b8eb81",
+    "prompt_tokens": 4996,
+    "reference_tokens": 80,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "9a33227884c176ae2a63bbcc4f3d34751988fce09841acefdbfbcb6ed0c0981c",
+    "prompt_tokens": 5954,
+    "reference_tokens": 148,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "8966684daa963eae37aff50550a617f909d993763611bc7f9fc36845d4ca2286",
+    "prompt_tokens": 4501,
+    "reference_tokens": 76,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "c7332c92c18da851e7b1b4134f69302fc6daf25636d92e105435b797d860b578",
+    "prompt_tokens": 4785,
+    "reference_tokens": 103,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "eaad8cd38e974b82e4cb29692ea2e499d3abc377b472fa835292667ad84e9cbc",
+    "prompt_tokens": 5597,
+    "reference_tokens": 126,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "e2346dd68e948be804368cf1efd42eda60012fb605568b1fc90eeea150000e0c",
+    "prompt_tokens": 3441,
+    "reference_tokens": 51,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "c8bc8e359a077285e6cca6eaf49799d6f9d004e940b7a60ae04be1e0ee96a71d",
+    "prompt_tokens": 4942,
+    "reference_tokens": 103,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "de233c99009e1438c1e684d92b53ec6bf082b3c57431db1d06594c2eca1bf7d1",
+    "prompt_tokens": 4208,
+    "reference_tokens": 78,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "927eae3c972e946859a255f108c318f5e91762ab1d74fa375b9056740b409633",
+    "prompt_tokens": 5878,
+    "reference_tokens": 130,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "e03552a091f44217c099ad180fa401fcac4debbc5a8d1a783b732f8d5e0dfbea",
+    "prompt_tokens": 3905,
+    "reference_tokens": 81,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "7f5480c75e1a6748482a03ead9439e09e66b038b4beb6b56ced7b13a0873e479",
+    "prompt_tokens": 5450,
+    "reference_tokens": 137,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "1466dee1a7c499921351ceee9a79338a4bcb423339bd8df2c2d650b34b4ff720",
+    "prompt_tokens": 4216,
+    "reference_tokens": 81,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "dfb706db469cb6c1e960e7aef5c23a47966dab0abc141364b79778466322232d",
+    "prompt_tokens": 3597,
+    "reference_tokens": 57,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "09f98c77e665615f16fc02f448f44e50fbb5509ebc182b2b9569478986fcd7f9",
+    "prompt_tokens": 5520,
+    "reference_tokens": 136,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "94bde2c3b9f872bd41dcf50f052ee6e81175fc6aae523fee6465a3e88ac4c09d",
+    "prompt_tokens": 4190,
+    "reference_tokens": 116,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "88bf92b38917e6cbf4eb469c916ea19c363afa789ae4a1fca75d3abaa7fc482e",
+    "prompt_tokens": 5240,
+    "reference_tokens": 127,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "005aeb79c2a76eb61385207a2bbb080331e976a9fcc1b2b491efc55b98c238e7",
+    "prompt_tokens": 3431,
+    "reference_tokens": 108,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "6116b960ba38494ff4ef91f9b18158e55cd55b0025ab6de659abdd7972c869cd",
+    "prompt_tokens": 3752,
+    "reference_tokens": 61,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "81775f4e9f9d5ab7471b81502c429baac6ef86c338d7340c6f72441918775b73",
+    "prompt_tokens": 4480,
+    "reference_tokens": 127,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "4766c7500523eefed687338c30c763a6d9caac6e1107ec6e6624539ab93aa479",
+    "prompt_tokens": 3460,
+    "reference_tokens": 69,
+    "eligible": true
+  },
+  {
+    "split": "dev",
+    "job_id": "77165d70f511456ac1f3d97c938c9a21fee3a94d84e34d0120edbd4a19caea68",
+    "prompt_tokens": 4766,
+    "reference_tokens": 145,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-live_smoke-00000003-part0",
+    "prompt_tokens": 2232,
+    "reference_tokens": 92,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-live_smoke-00000004-part0",
+    "prompt_tokens": 1373,
+    "reference_tokens": 78,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-swe-00000001-part3",
+    "prompt_tokens": 5394,
+    "reference_tokens": 43,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-swe-00000001-part6",
+    "prompt_tokens": 6715,
+    "reference_tokens": 46,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-swe-00000003-part0",
+    "prompt_tokens": 3795,
+    "reference_tokens": 122,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-swe-00000005-part0",
+    "prompt_tokens": 2300,
+    "reference_tokens": 46,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-swe-00000006-part0",
+    "prompt_tokens": 5381,
+    "reference_tokens": 100,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-terminal-00000001-part0",
+    "prompt_tokens": 2271,
+    "reference_tokens": 157,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-terminal-00000002-part0",
+    "prompt_tokens": 5733,
+    "reference_tokens": 73,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-terminal-00000002-part1",
+    "prompt_tokens": 4065,
+    "reference_tokens": 215,
+    "eligible": true
+  },
+  {
+    "split": "regression",
+    "job_id": "evidence-v1-terminal-00000004-part0",
+    "prompt_tokens": 1485,
+    "reference_tokens": 77,
+    "eligible": true
+  }
+]
