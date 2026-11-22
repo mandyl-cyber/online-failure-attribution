@@ -22,3 +22,32 @@ python -u -m remote_pilots.openhands_smoke.neural_ledger_acceptance run --model-
 验收要求每个封口任务有可追溯成功批次或明确失败记录，已发布批次恢复不变，引用校验通过，开放末段无隐式封口。语义逐stage检查失败保留、错误完成断言和证据支持，另行填写复核表。
 
 队列、处理和排队至发布耗时使用相同观察进程的单调时钟，回放间隔默认0.05秒。它反映控制回放的负载，和Agent真实工具耗时不同。该间隔是本轮工程选择，可通过--interval调整，新值应使用新输出目录。中途恢复为优雅等待worker结束后的重启，尚未模拟GPU生成中强制杀进程。模型冷启动包含在首次处理耗时内，同时单列model_load_seconds。
+
+## GPU回传复核
+
+三会话138个事件、64个完成step，共19个封口任务。SWE发布5/6，Terminal-Bench发布3/7，live_smoke发布6/6，合计14/19。五个失败中，两个stage输入为25855和9174 token，超过8192总预算，另外三个是观察型claim只引用了动作。失败均在日志中保留。两次相同请求的确定性重试重复了同样错误，需改成预算失败直接退出、引用错误使用明确修复策略或进入待审。
+
+远程报告已发布批次恢复一致，本地核对了原生事件与固定输入一致、正式批次的输入和处理器指纹、精确引用、观察信号原文。对已发布24条claim做定向AI复核，23条获引用支持，一条输出中的“正确表达式”超出了仅打印结果所能直接证明的范围。另有一条commit-message目的描述的source标签需要保留Agent声明属性。该结果仅覆盖成功发布部分，不能当作完整任务的人工准确率或召回率。
+
+单次成功生成的中位耗时1.61秒，最大8.34秒，进程累计GPU峰值约9.92GiB。原summary把失败处理完成事件也计入发布计时，并采用小样本向下取整的分位点，已在脚本修正。本地根据成功落盘批次去重、匹配时钟重算，SWE排队至发布中位11.86秒、最大19.20秒，Terminal-Bench为6.94/8.14秒，live_smoke为2.79/5.34秒。样本量分别只有5、3、6，p95/p99采用最近秩，基本对应最大值。回放每0.05秒送入一个事件形成的队列负载需要与真实agent节奏区分。
+
+本轮证明7B已经走通原生事件、封口、生成、校验和持久化的部分任务，发布完整性仍受上下文和引用错误影响。下一步优先处理这五个失败及无效重试，并保证神经抽取失败时原始失败观察仍可供账本读取，再评估持续运行及报警。
+
+复核脚本为 `python -m scripts.audit_neural_ledger_return`，结果写入out/neural_ledger_acceptance_return_v1/。原始远程回传保持原样，改正后的指标和AI记录单独落盘。
+
+## 失败发布与无效重试修复
+
+7B backend现在将预算、JSON和引用校验等确定性错误标为不可原样重试。StageProcessor会保存失败状态，重启后继续复用该状态，原始输出和错误诊断仍保留。临时运行异常继续使用已有尝试上限。该修改不自动更改claim的source或补猜证据引用。
+
+最终抽取失败时，ReviewedClaimProcessor原子写入status=evidence_only的阶段记录，claims为空，review_status为needs_review，附抽取错误、尝试次数、诊断路径、该stage全部原始观察及已识别信号。信号带来源和封口后的可用时间。成功摘要仍使用status=ready。验收报告分别统计published_receipts、published_batches和evidence_only_batches，避免把仅证据发布计为摘要成功。
+
+复用19个原始回传结果的回归中，得到19条阶段发布记录，其中14条摘要批次和5条仅证据批次。失败批次保留26条原始观察。确定性失败均只调用回归backend一次，恢复后没有重复调用，批次字节不变。这是保存结果的状态机回归，模型实际语义成功数仍为14/19，GPU性能尚未重测。
+
+12项失败状态、发布恢复、既有抽取和计时测试通过。本地复算使用 `python -m scripts.replay_neural_failure_fixes --out out/neural_failure_fixes_v2`。新processor身份与旧会话不同，远程重新验收必须使用新目录。
+
+```bash
+git pull --ff-only
+python -u -m remote_pilots.openhands_smoke.neural_ledger_acceptance run --model-path "$QWEN7B_DIR" --out out/neural_ledger_acceptance_v2
+```
+
+长stage仍可能无法在8192预算内生成摘要，目前的超限处理是明确失败并保留观察。要恢复该部分语义摘要，后续需要验证完整保留证据的分块抽取或更长上下文预算。

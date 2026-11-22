@@ -3,6 +3,8 @@ import argparse
 import json
 from pathlib import Path
 import time
+import math
+import statistics
 
 from scripts.run_stage_claim_pipeline import read,save
 from segmenter.ledger import sha
@@ -13,8 +15,35 @@ from segmenter.reviewed_claim_processor import ReviewedClaimProcessor
 
 def distribution(values):
     values=sorted(values)
-    return dict(n=len(values),**{name:values[min(len(values)-1,int((len(values)-1)*p))] if values else None
-                for name,p in [('p50',.5),('p95',.95),('p99',.99)]})
+    return dict(n=len(values),p50=statistics.median(values) if values else None,
+                p95=values[math.ceil(len(values)*.95)-1] if values else None,
+                p99=values[math.ceil(len(values)*.99)-1] if values else None,
+                maximum=max(values) if values else None)
+
+
+def successful_timings(directory, published_names):
+    timeline=[json.loads(line) for line in (directory/'timing/timeline.jsonl').read_text(encoding='utf-8').splitlines()]
+    starts={}
+    measured=set()
+    queue_ms,processing_ms,publication_ms=[],[],[]
+    for event in timeline:
+        key=(event.get('job'),event['process_id'])
+        if event['kind']=='claim_started':
+            starts[key]=event
+        if event['kind']!='claim_completed' or key not in starts or event['job'] not in published_names or event['job'] in measured:
+            continue
+        measured.add(event['job'])
+        start=starts[key]
+        processing_ms.append((event['monotonic_ns']-start['monotonic_ns'])/1e6)
+        queued_path=directory/'timing'/('queue-'+event['job'])
+        if queued_path.exists():
+            queued=read(queued_path)
+            if queued['process_id']==start['process_id']:
+                queue_ms.append((start['monotonic_ns']-queued['monotonic_ns'])/1e6)
+                publication_ms.append((event['monotonic_ns']-queued['monotonic_ns'])/1e6)
+    return dict(queue_ms=distribution(queue_ms),processing_ms=distribution(processing_ms),
+                queued_to_publication_ms=distribution(publication_ms),
+                timing_scope='Successful persisted batches only, deduplicated by job. Matching clock domains. Median and nearest-rank p95/p99.')
 
 
 def main():
@@ -74,30 +103,16 @@ def main():
         if before!=after:
             raise ValueError('Published batches changed after recovery')
         batches=[read(p) for p in restored.results.glob('*.json')]
-        timeline=[json.loads(line) for line in (directory/'timing/timeline.jsonl').read_text(encoding='utf-8').splitlines()]
-        starts={}
-        queue_ms,processing_ms,publication_ms=[],[],[]
-        for event in timeline:
-            key=(event.get('job'),event['process_id'])
-            if event['kind']=='claim_started':
-                starts[key]=event
-            if event['kind']=='claim_completed' and key in starts:
-                start=starts[key]
-                processing_ms.append((event['monotonic_ns']-start['monotonic_ns'])/1e6)
-                queued_path=directory/'timing'/('queue-'+event['job'])
-                if queued_path.exists():
-                    queued=read(queued_path)
-                    if queued['process_id']==start['process_id']:
-                        queue_ms.append((start['monotonic_ns']-queued['monotonic_ns'])/1e6)
-                        publication_ms.append((event['monotonic_ns']-queued['monotonic_ns'])/1e6)
+        success_names={name for name,payload in after.items() if json.loads(payload)['status']=='ready'}
+        timing=successful_timings(directory,success_names)
         jobs=len(list(restored.jobs.glob('*.json')))
         attempts=[read(p) for p in (directory/'review_backend/extraction').glob('*/status.json')]
         report=dict(session=session['session_id'],events=len(events),steps=len(restored.segmenter.steps),
-            sealed_jobs=jobs,published_batches=len(batches),unpublished_jobs=jobs-len(batches),
+            sealed_jobs=jobs,published_receipts=len(batches),published_batches=len(success_names),
+            evidence_only_batches=sum(b['status']=='evidence_only' for b in batches),unpublished_jobs=jobs-len(batches),
             failed_extractions=sum(a['status']=='failed' for a in attempts),attempts=sum(a['attempts'] for a in attempts),
             recovered_batches_identical=True,terminal_seen=restored.finished,
-            queue_ms=distribution(queue_ms),processing_ms=distribution(processing_ms),
-            queued_to_publication_ms=distribution(publication_ms),
+            **timing,
             signals=sum(len(b.get('observation_signals',[])) for b in batches),
             claims_needing_review=sum(c.get('semantic_status')=='needs_review' for b in batches for c in b.get('claims',[])),
             generation_metrics=[b.get('metrics',{}) for b in batches],semantic_quality='pending_AI_review')

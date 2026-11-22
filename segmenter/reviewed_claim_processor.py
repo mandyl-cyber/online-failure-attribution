@@ -14,13 +14,15 @@ class ReviewedClaimProcessor:
             from .online_ledger import process_job
             processor = process_job
         self.processor = processor
-        self.identity = sha(encoded(dict(version=VERSION,backend=getattr(processor,'identity','rules-v1'))))
+        self.identity = sha(encoded(dict(version=VERSION,failure_policy='terminal-evidence-only-v1',
+                                        backend=getattr(processor,'identity','rules-v1'))))
 
     def __call__(self, job_path, result_dir):
         job_path = Path(job_path)
         job = json.loads(job_path.read_text(encoding='utf-8'))
         fingerprint = sha(encoded(job))
         target = Path(result_dir)/job_path.name
+        target.parent.mkdir(parents=True,exist_ok=True)
         if target.exists():
             previous = json.loads(target.read_text(encoding='utf-8'))
             if previous.get('input_sha256')!=fingerprint or previous.get('evidence_review_identity')!=self.identity:
@@ -31,11 +33,21 @@ class ReviewedClaimProcessor:
         staging = Path(result_dir).parent/'review_backend'/'claim_batches'
         staging.mkdir(parents=True,exist_ok=True)
         batch = self.processor(job_path,staging)
-        if not batch or batch.get('status')!='ready':
+        if not batch:
             return batch
-        if batch.get('input_sha256')!=fingerprint:
-            raise ValueError('Backend returned a different stage input')
-        result = deepcopy(batch)
+        if batch.get('status')=='ready':
+            if batch.get('input_sha256')!=fingerprint:
+                raise ValueError('Backend returned a different stage input')
+            result = deepcopy(batch)
+        elif batch.get('status')=='failed' and batch.get('retryable') is False:
+            result=dict(job_id=job['job_id'],input_sha256=fingerprint,stage=deepcopy(job['stage']),
+                detected_at_seq=job['detected_at_seq'],incomplete=job['incomplete'],claims=[],edges=[],
+                status='evidence_only',extraction_status='failed',extraction_error=batch.get('error'),
+                extraction_attempts=batch.get('attempts'),retryable=False,review_status='needs_review',
+                extraction_audit=f'review_backend/extraction/{job_path.stem}',
+                retained_observations=[deepcopy(e) for e in job['evidence'] if e['field']=='observation'])
+        else:
+            return batch
         row = core.build(job)
         signals = review(dict(claims=[]),row)['observation_signals']
         known = {e['record_id']:e for e in job['evidence']}

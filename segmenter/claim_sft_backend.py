@@ -39,11 +39,17 @@ class ClaimSFTBackend:
         files=[self.model_path/'config.json',self.adapter_path/'adapter_config.json',*sorted(self.adapter_path.glob('adapter_model.*'))]
         if len(files)<3:
             raise FileNotFoundError('Adapter weights missing')
-        self.identity=core.digest(core.encoded(dict(version='claim-sft-ledger-v1',base=str(self.model_path),
+        self.identity=core.digest(core.encoded(dict(version='claim-sft-ledger-v2-terminal-validation-errors',base=str(self.model_path),
             files={p.name:core.digest(p.read_bytes()) for p in files},instruction=core.INSTRUCTION,
             max_length=max_length,max_new_tokens=max_new_tokens)))
         self.model=self.tokenizer=None
         self.metrics={}
+
+    @staticmethod
+    def retryable_error(error):
+        # Generation is deterministic for the same request. Invalid budgets,
+        # JSON and provenance require a changed input or a review decision.
+        return not isinstance(error,(ValueError,KeyError,TypeError))
 
     def extract(self,request):
         import torch

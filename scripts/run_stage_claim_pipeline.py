@@ -232,6 +232,9 @@ def main():
         state['stages']['local_return'] = read(args.out/'local_return/summary.json')
         subprocess.run([sys.executable, '-m', 'scripts.replay_claim_evidence_review'], cwd=root, check=True)
         state['stages']['claim_evidence_review'] = read(root/'out/claim_evidence_review_v1/summary.json')
+    if (root/'neural_ledger_acceptance_v1/summary.json').exists():
+        subprocess.run([sys.executable, '-m', 'scripts.audit_neural_ledger_return'], cwd=root, check=True)
+        state['stages']['neural_ledger_return'] = read(root/'out/neural_ledger_acceptance_return_v1/summary.json')
     state['status'] = 'local_diagnostics_complete_with_research_tasks_pending'
     save(args.out / 'summary.json', state)
 

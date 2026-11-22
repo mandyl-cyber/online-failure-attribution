@@ -210,6 +210,8 @@ class StageProcessor:
             state["status"] = "ready"
             atomic(state_path, state)
             return result
+        if state['status']=='failed' and state.get('retryable') is False:
+            return state
         try:
             request = build_request(job, self.max_input_bytes)
         except (ValueError, KeyError, TypeError) as exc:
@@ -245,8 +247,12 @@ class StageProcessor:
                 atomic(state_path, state)
                 return result
             except Exception as exc:
-                state.update(status="failed", error=f"{type(exc).__name__}: {exc}", retryable=state["attempts"] < self.max_attempts)
+                retry_policy=getattr(self.backend,'retryable_error',None)
+                retryable=state['attempts'] < self.max_attempts and (retry_policy(exc) if retry_policy else True)
+                state.update(status="failed", error=f"{type(exc).__name__}: {exc}", retryable=retryable)
                 atomic(state_path, state)
+                if not retryable:
+                    break
             finally:
                 atomic(audit/f'attempt_{state["attempts"]}.json', dict(
                     raw_output=getattr(self.backend, 'raw_output', None),
