@@ -1,0 +1,56 @@
+{
+  "jobs": 26,
+  "receipts": 26,
+  "statuses": {
+    "ready": 26
+  },
+  "claims": 39,
+  "generation_parts": 26,
+  "rejected_claims": 0,
+  "attempts": 26,
+  "newly_processed": 26,
+  "cache_recovery_checked": 26,
+  "generation_seconds_per_part": {
+    "n": 26,
+    "p50": 1.557113280519843,
+    "p95": 2.7316328500164673,
+    "p99": 3.0868303219322115,
+    "maximum": 3.0868303219322115
+  },
+  "total_generation_seconds": 42.00150447757915,
+  "fresh_call_seconds": {
+    "n": 26,
+    "p50": 1.5815113740391098,
+    "p95": 3.1176746430573985,
+    "p99": 7.310990532976575,
+    "maximum": 7.310990532976575
+  },
+  "peak_gpu_GiB": 8.473251342773438,
+  "reference_sha256": "7a7c90b4c8854105194f147d7b5e2e8978647eda4847f5a962696c50b69b7dbd",
+  "claims_sha256": "fc78d193d58a05e3028f4ddf5ff650ad9927a16749074307ef05578370081162",
+  "scope": "Frozen sealed-job extractor evaluation, not streaming latency, stage F1 or human semantic accuracy. No reference edits or model calls in this audit.",
+  "semantic_review": {
+    "reviewer_kind": "AI",
+    "blinded": false,
+    "claim_judgments": {
+      "supported": 25,
+      "partial": 8,
+      "unsupported": 6
+    },
+    "sealed_fact_coverage": {
+      "full": 17,
+      "partial": 19,
+      "missing": 4
+    },
+    "sealed_key_fact_coverage": {
+      "full": 10,
+      "partial": 16,
+      "missing": 2
+    },
+    "all_key_facts": 33,
+    "open_key_facts": 5,
+    "sealed_negative_outcomes": 20,
+    "coarse_negative_outcomes_retained": 20,
+    "scope": "Single AI review, not human accuracy. Full/partial/missing are explicit semantic judgments. Correct subclauses may cover a fact while another clause makes that claim partial. Coarse failure retention does not certify its cause, condition or diagnostic details."
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "summary": {
+    "reviewer_kind": "AI",
+    "blinded": false,
+    "claim_judgments": {
+      "supported": 25,
+      "partial": 8,
+      "unsupported": 6
+    },
+    "sealed_fact_coverage": {
+      "full": 17,
+      "partial": 19,
+      "missing": 4
+    },
+    "sealed_key_fact_coverage": {
+      "full": 10,
+      "partial": 16,
+      "missing": 2
+    },
+    "all_key_facts": 33,
+    "open_key_facts": 5,
+    "sealed_negative_outcomes": 20,
+    "coarse_negative_outcomes_retained": 20,
+    "scope": "Single AI review, not human accuracy. Full/partial/missing are explicit semantic judgments. Correct subclauses may cover a fact while another clause makes that claim partial. Coarse failure retention does not certify its cause, condition or diagnostic details."
+  },
+  "rows": [
+    {
+      "fact_id": "stable_unique:step1:zero_tests",
+      "session": "stable_unique",
+      "category": "zero_tests",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0001:c1"
+      ],
+      "review_note": "Zero tests explicitly retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "stable_unique:step5:zero_tests",
+      "session": "stable_unique",
+      "category": "zero_tests",
+      "importance": "key_outcome",
+      "eligibility": "open_stage_not_sealed",
+      "coverage": "not_generated_open_stage",
+      "claim_keys": [],
+      "review_note": "No artificial EOF seal; no model job exists for this fact.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "stable_unique:step2:source_observation",
+      "session": "stable_unique",
+      "category": "source_observation",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0001:c1"
+      ],
+      "review_note": "Set-based implementation retained, sorted-return detail omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "stable_unique:step3:edit_failed",
+      "session": "stable_unique",
+      "category": "edit_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0001:c2"
+      ],
+      "review_note": "Failed edit retained, exact old_str mismatch reason not stated.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "stable_unique:step4:edit_acknowledged",
+      "session": "stable_unique",
+      "category": "edit_acknowledged",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0002:c1"
+      ],
+      "review_note": "Edit acknowledged, but the seen dictionary/input-order implementation is not described.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "stable_unique:step6:source_observation",
+      "session": "stable_unique",
+      "category": "source_observation",
+      "importance": "context",
+      "eligibility": "open_stage_not_sealed",
+      "coverage": "not_generated_open_stage",
+      "claim_keys": [],
+      "review_note": "No artificial EOF seal; no model job exists for this fact.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "stable_unique:step7:verification_pass",
+      "session": "stable_unique",
+      "category": "verification_pass",
+      "importance": "key_outcome",
+      "eligibility": "open_stage_not_sealed",
+      "coverage": "not_generated_open_stage",
+      "claim_keys": [],
+      "review_note": "No artificial EOF seal; no model job exists for this fact.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "bounded_chunks:step1:zero_tests",
+      "session": "bounded_chunks",
+      "category": "zero_tests",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0003:c1"
+      ],
+      "review_note": "Zero tests retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "bounded_chunks:step5:zero_tests",
+      "session": "bounded_chunks",
+      "category": "zero_tests",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0005:c1"
+      ],
+      "review_note": "Zero tests retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "bounded_chunks:step2:source_observation",
+      "session": "bounded_chunks",
+      "category": "source_observation",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "missing",
+      "claim_keys": [],
+      "review_note": "Reading the file does not preserve the loop-bound observation.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "bounded_chunks:step3:probe_result",
+      "session": "bounded_chunks",
+      "category": "probe_result",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0003:c1"
+      ],
+      "review_note": "Empty result retained, negative-size condition omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "bounded_chunks:step4:edit_acknowledged",
+      "session": "bounded_chunks",
+      "category": "edit_acknowledged",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0004:c1"
+      ],
+      "review_note": "Generic edit receipt omits both guard and remaining loop bound.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "bounded_chunks:step6:agent_assertion",
+      "session": "bounded_chunks",
+      "category": "agent_assertion",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "missing",
+      "claim_keys": [],
+      "review_note": "The contradictory agent fixed/unverified assertion is omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step1:verification_failed",
+      "session": "prefix_totals",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0006:c1"
+      ],
+      "review_note": "The three failing tests are represented; the claim has a separate chronology error.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step2:edit_failed",
+      "session": "prefix_totals",
+      "category": "edit_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0007:c1"
+      ],
+      "review_note": "Failed replacement retained, reason is misrepresented.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step4:edit_failed",
+      "session": "prefix_totals",
+      "category": "edit_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0007:c1"
+      ],
+      "review_note": "Failed replacement retained, reason is misrepresented.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step3:source_observation",
+      "session": "prefix_totals",
+      "category": "source_observation",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0007:c2"
+      ],
+      "review_note": "The actual signature is retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step5:source_observation",
+      "session": "prefix_totals",
+      "category": "source_observation",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "missing",
+      "claim_keys": [],
+      "review_note": "The in-place mutation in the listed source is not summarized.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step6:edit_acknowledged",
+      "session": "prefix_totals",
+      "category": "edit_acknowledged",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0008:c1"
+      ],
+      "review_note": "Initial zero retained; truncating loop-bound detail omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step7:verification_failed",
+      "session": "prefix_totals",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0009:c1"
+      ],
+      "review_note": "Failure retained; specific actual/expected output is absent.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step10:verification_failed",
+      "session": "prefix_totals",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0011:c1"
+      ],
+      "review_note": "Failure retained, but element direction/index are wrong.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step13:verification_failed",
+      "session": "prefix_totals",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0013:c1"
+      ],
+      "review_note": "One failure retained, actual/expected vector omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step18:verification_failed",
+      "session": "prefix_totals",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "open_stage_not_sealed",
+      "coverage": "not_generated_open_stage",
+      "claim_keys": [],
+      "review_note": "No artificial EOF seal; no model job exists for this fact.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step19:verification_failed",
+      "session": "prefix_totals",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "open_stage_not_sealed",
+      "coverage": "not_generated_open_stage",
+      "claim_keys": [],
+      "review_note": "No artificial EOF seal; no model job exists for this fact.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step20:verification_failed",
+      "session": "prefix_totals",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "open_stage_not_sealed",
+      "coverage": "not_generated_open_stage",
+      "claim_keys": [],
+      "review_note": "No artificial EOF seal; no model job exists for this fact.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step8:edit_failed",
+      "session": "prefix_totals",
+      "category": "edit_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0009:c1"
+      ],
+      "review_note": "Invalid replacement retained; equal-old/new reason omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step11:edit_failed",
+      "session": "prefix_totals",
+      "category": "edit_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0011:c1"
+      ],
+      "review_note": "Invalid replacement retained; equal-old/new reason omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step14:edit_failed",
+      "session": "prefix_totals",
+      "category": "edit_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0014:c1"
+      ],
+      "review_note": "Invalid replacement retained, equal-old/new reason omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step15:edit_failed",
+      "session": "prefix_totals",
+      "category": "edit_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0014:c1"
+      ],
+      "review_note": "Invalid replacement retained, equal-old/new reason omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step16:edit_failed",
+      "session": "prefix_totals",
+      "category": "edit_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0014:c1"
+      ],
+      "review_note": "Invalid replacement retained, equal-old/new reason omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "prefix_totals:step9:edit_acknowledged",
+      "session": "prefix_totals",
+      "category": "edit_acknowledged",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0010:c1"
+      ],
+      "review_note": "Added comment acknowledged in the receipt.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step12:edit_acknowledged",
+      "session": "prefix_totals",
+      "category": "edit_acknowledged",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0012:c1"
+      ],
+      "review_note": "A generic modified-source receipt omits the specific comment; the other claim cites only the action and misstates the initial-zero change.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "prefix_totals:step17:edit_acknowledged",
+      "session": "prefix_totals",
+      "category": "edit_acknowledged",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0015:c1"
+      ],
+      "review_note": "Added comment acknowledged.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "config_overrides:step1:verification_failed",
+      "session": "config_overrides",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0016:c1"
+      ],
+      "review_note": "Three failures and one pass retain the observed scope.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "config_overrides:step6:verification_failed",
+      "session": "config_overrides",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0018:c1"
+      ],
+      "review_note": "The observed suite and two-failure outcome are retained; no claim of general success.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "config_overrides:step12:verification_failed",
+      "session": "config_overrides",
+      "category": "verification_failed",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0024:c1"
+      ],
+      "review_note": "One failure in the observed suite retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "config_overrides:step3:source_observation",
+      "session": "config_overrides",
+      "category": "source_observation",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0016:c2"
+      ],
+      "review_note": "Truthiness is misdescribed as non-null filtering.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "config_overrides:step5:edit_acknowledged",
+      "session": "config_overrides",
+      "category": "edit_acknowledged",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0017:c1"
+      ],
+      "review_note": "The generic edit-acknowledgment fact is retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "config_overrides:step7:edit_acknowledged",
+      "session": "config_overrides",
+      "category": "edit_acknowledged",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0019:c1"
+      ],
+      "review_note": "Edit acknowledgment is retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "config_overrides:step9:edit_acknowledged",
+      "session": "config_overrides",
+      "category": "edit_acknowledged",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0021:c1"
+      ],
+      "review_note": "Edit acknowledgment retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "config_overrides:step11:edit_acknowledged",
+      "session": "config_overrides",
+      "category": "edit_acknowledged",
+      "importance": "context",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0023:c1"
+      ],
+      "review_note": "Edit acknowledgment retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "config_overrides:step8:runtime_exception",
+      "session": "config_overrides",
+      "category": "runtime_exception",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0020:c1"
+      ],
+      "review_note": "IndentationError retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "config_overrides:step10:runtime_exception",
+      "session": "config_overrides",
+      "category": "runtime_exception",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0022:c1"
+      ],
+      "review_note": "IndentationError retained.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": true
+    },
+    {
+      "fact_id": "config_overrides:step13:edit_acknowledged",
+      "session": "config_overrides",
+      "category": "edit_acknowledged",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "partial",
+      "claim_keys": [
+        "0025:c1"
+      ],
+      "review_note": "Edit acknowledged, but copying base and returning result are omitted.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "config_overrides:step14:verification_pass",
+      "session": "config_overrides",
+      "category": "verification_pass",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "full",
+      "claim_keys": [
+        "0026:c1"
+      ],
+      "review_note": "Explicit within-shown-scope success is supported by the native four-test output; no exact verbal numeral is required.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    },
+    {
+      "fact_id": "config_overrides:step15:agent_assertion",
+      "session": "config_overrides",
+      "category": "agent_assertion",
+      "importance": "key_outcome",
+      "eligibility": "sealed_stage",
+      "coverage": "missing",
+      "claim_keys": [],
+      "review_note": "The agent claim that changes were committed is not accurately retained; finish is instead mislabeled as a commit message.",
+      "reviewer_kind": "AI",
+      "coarse_negative_outcome_retained": null
+    }
+  ]
+}

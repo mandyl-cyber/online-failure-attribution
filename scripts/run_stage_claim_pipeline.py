@@ -245,6 +245,10 @@ def main():
         subprocess.run([sys.executable, '-m', 'scripts.audit_neural_ledger_v4_return'], cwd=root, check=True)
         subprocess.run([sys.executable, '-m', 'scripts.review_neural_ledger_v4_return'], cwd=root, check=True)
         state['stages']['neural_ledger_v4_return'] = read(root/'out/neural_ledger_v4_return_audit/summary.json')
+    if (root/'claim_prospective_eval_v1/summary.json').exists():
+        subprocess.run([sys.executable, '-m', 'scripts.audit_claim_prospective_eval_return'], cwd=root, check=True)
+        subprocess.run([sys.executable, '-m', 'scripts.review_claim_prospective_eval_return'], cwd=root, check=True)
+        state['stages']['prospective_claim_return'] = read(root/'out/claim_prospective_eval_return_audit_v1/summary.json')
     state['status'] = 'local_diagnostics_complete_with_research_tasks_pending'
     save(args.out / 'summary.json', state)
 
