@@ -77,8 +77,12 @@ class OnlineLedger:
         self.boundary_events = []
         if boundary_model is not None:
             model_path = Path(boundary_model).resolve(strict=True)
-            from .boundary_model import OnlineBoundaryPredictor
-            self.boundary = OnlineBoundaryPredictor.load(model_path)
+            if model_path.suffix=='.json':
+                from .temporal_boundary import TemporalPredictor
+                self.boundary=TemporalPredictor.load(model_path)
+            else:
+                from .boundary_model import OnlineBoundaryPredictor
+                self.boundary=OnlineBoundaryPredictor.load(model_path)
             config.update(mode="supervised", boundary_model=str(model_path),
                           boundary_sha256=sha(model_path.read_bytes()),
                           boundary_input="adapter-v2-repaired-plan", boundary_feature_version=self.boundary.model.feature_version)
@@ -176,8 +180,13 @@ class OnlineLedger:
             self.ledger.feed(step, payload, step.raw_ref.get("action_id") if payload else None)
             if self.boundary is not None:
                 # Legacy models include action_len and possibly text: do not feed v2 repair.
+                inference_started=time.perf_counter_ns()
                 prediction = self.boundary.feed(step)
-                self.boundary_events.append({k: v for k, v in prediction.items() if k != "emitted_at"})
+                if not self.recovering:
+                    self.timeline.emit('boundary_inference',step_id=step.idx,
+                        inference_ms=(time.perf_counter_ns()-inference_started)/1e6,recovery=False)
+                self.boundary_events.append({k: v for k, v in prediction.items()
+                                             if k not in ("emitted_at", "ms")})
             self.segmenter.feed(fixed)
             for stage in self._selected_stages():
                 if not stage["sealed"]:
@@ -293,7 +302,7 @@ def main():
     parser.add_argument("--abort", action="store_true", help="Explicitly close as incomplete after reading")
     parser.add_argument("--claim-extractor", choices=["rules", "dry-run"], default="rules")
     parser.add_argument('--claim-evidence-review', action='store_true', help='Publish exact failure signals and flag unsupported numeric citations')
-    parser.add_argument("--boundary-model", help="Trusted local joblib boundary model; keeps legacy model input")
+    parser.add_argument("--boundary-model", help="Local joblib or temporal JSON boundary model")
     args = parser.parse_args()
     processor = None
     if args.claim_extractor == "dry-run":

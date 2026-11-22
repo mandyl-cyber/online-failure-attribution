@@ -1,0 +1,899 @@
+{
+  "arms": {
+    "rules": {
+      "processor": "d902b191f748a6ac698fc26a68b12c3c3a78708e4a3eb70ab83d6a322fb5ab83",
+      "sessions": [
+        {
+          "session": "stable_unique",
+          "steps": 7,
+          "sealed_jobs": 2,
+          "open_stages": 1,
+          "stage_lengths": [
+            3,
+            1,
+            3
+          ],
+          "statuses": {
+            "ready": 2
+          },
+          "recovery_passed": true,
+          "timings": {
+            "model_feature_and_inference_ms": {
+              "n": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "maximum": null
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 7,
+              "p50": 11.7913,
+              "p95": 24.942,
+              "p99": 24.942,
+              "maximum": 24.942
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "fact_projection": [
+            {
+              "fact_id": "stable_unique:step1:zero_tests",
+              "importance": "key_outcome",
+              "job_id": "cbc5de087d72fd1f3f20ff8e29ed34f8",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "stable_unique:step5:zero_tests",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "stable_unique:step2:source_observation",
+              "importance": "context",
+              "job_id": "cbc5de087d72fd1f3f20ff8e29ed34f8",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "stable_unique:step3:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "cbc5de087d72fd1f3f20ff8e29ed34f8",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "stable_unique:step4:edit_acknowledged",
+              "importance": "key_outcome",
+              "job_id": "ca7580d17a22e5562036e66fa4373245",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "stable_unique:step6:source_observation",
+              "importance": "context",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "stable_unique:step7:verification_pass",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "session": "bounded_chunks",
+          "steps": 7,
+          "sealed_jobs": 3,
+          "open_stages": 0,
+          "stage_lengths": [
+            3,
+            1,
+            3
+          ],
+          "statuses": {
+            "ready": 3
+          },
+          "recovery_passed": true,
+          "timings": {
+            "model_feature_and_inference_ms": {
+              "n": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "maximum": null
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 7,
+              "p50": 14.5426,
+              "p95": 18.0447,
+              "p99": 18.0447,
+              "maximum": 18.0447
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "fact_projection": [
+            {
+              "fact_id": "bounded_chunks:step1:zero_tests",
+              "importance": "key_outcome",
+              "job_id": "8322ba22e5fbfb8b1eb1de919d14dc53",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step5:zero_tests",
+              "importance": "key_outcome",
+              "job_id": "06830aa404c891f10f4a68aa25089da4",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step2:source_observation",
+              "importance": "context",
+              "job_id": "8322ba22e5fbfb8b1eb1de919d14dc53",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step3:probe_result",
+              "importance": "key_outcome",
+              "job_id": "8322ba22e5fbfb8b1eb1de919d14dc53",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step4:edit_acknowledged",
+              "importance": "key_outcome",
+              "job_id": "5471e38ce0ce13e0139e6a513686b602",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step6:agent_assertion",
+              "importance": "key_outcome",
+              "job_id": "06830aa404c891f10f4a68aa25089da4",
+              "status": "sealed"
+            }
+          ]
+        },
+        {
+          "session": "prefix_totals",
+          "steps": 20,
+          "sealed_jobs": 10,
+          "open_stages": 1,
+          "stage_lengths": [
+            1,
+            4,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1,
+            3,
+            1,
+            3
+          ],
+          "statuses": {
+            "ready": 10
+          },
+          "recovery_passed": true,
+          "timings": {
+            "model_feature_and_inference_ms": {
+              "n": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "maximum": null
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 20,
+              "p50": 18.3062,
+              "p95": 63.872,
+              "p99": 108.9098,
+              "maximum": 108.9098
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "fact_projection": [
+            {
+              "fact_id": "prefix_totals:step1:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "d05f8318478c13ee8cde93ba8d684d0f",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step2:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step4:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step3:source_observation",
+              "importance": "context",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step5:source_observation",
+              "importance": "context",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step6:edit_acknowledged",
+              "importance": "key_outcome",
+              "job_id": "de85cf017d7cfb08a94fd6090ce85b48",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step7:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step10:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "e160bd1c8ea28908980bf85c1c429992",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step13:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "91ea6ef7750d6d4c5081fa5768cd96d8",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step18:verification_failed",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "prefix_totals:step19:verification_failed",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "prefix_totals:step20:verification_failed",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "prefix_totals:step8:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step11:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "e160bd1c8ea28908980bf85c1c429992",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step14:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "1a8acf67d16d01e472dac2b42e4ba473",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step15:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "1a8acf67d16d01e472dac2b42e4ba473",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step16:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "1a8acf67d16d01e472dac2b42e4ba473",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step9:edit_acknowledged",
+              "importance": "context",
+              "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step12:edit_acknowledged",
+              "importance": "context",
+              "job_id": "2ac9cff691b9111e19be3df0f862fe5f",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step17:edit_acknowledged",
+              "importance": "context",
+              "job_id": "acfea7523b8d1b908a9444b426117339",
+              "status": "sealed"
+            }
+          ]
+        },
+        {
+          "session": "config_overrides",
+          "steps": 15,
+          "sealed_jobs": 11,
+          "open_stages": 0,
+          "stage_lengths": [
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "statuses": {
+            "ready": 11
+          },
+          "recovery_passed": true,
+          "timings": {
+            "model_feature_and_inference_ms": {
+              "n": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "maximum": null
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 15,
+              "p50": 15.3213,
+              "p95": 58.0116,
+              "p99": 58.0116,
+              "maximum": 58.0116
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "fact_projection": [
+            {
+              "fact_id": "config_overrides:step1:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "26715cc67e497c83b13a75d71e78d02b",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step6:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "9c80f70a3ab797da8c5730cb7f2ac2f3",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step12:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "ae6cc8589213f59ab0c11360d49826ad",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step3:source_observation",
+              "importance": "context",
+              "job_id": "26715cc67e497c83b13a75d71e78d02b",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step5:edit_acknowledged",
+              "importance": "context",
+              "job_id": "2aec3a7e6fda449066e022139288aa95",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step7:edit_acknowledged",
+              "importance": "context",
+              "job_id": "a8650ee93e2f98972f275dd9de667b46",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step9:edit_acknowledged",
+              "importance": "context",
+              "job_id": "9507071be4fa50e64385dd3bc621471a",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step11:edit_acknowledged",
+              "importance": "context",
+              "job_id": "bb3bee42c4fc0aed14ebf8a383bfabb9",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step8:runtime_exception",
+              "importance": "key_outcome",
+              "job_id": "54bd019ee3db5598d575aa8b3cea1e6d",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step10:runtime_exception",
+              "importance": "key_outcome",
+              "job_id": "1f17652e3e51c57afee74c3b3d0eebf6",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step13:edit_acknowledged",
+              "importance": "key_outcome",
+              "job_id": "df8cf41577f4ab2c17d5fc56ee22b695",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step14:verification_pass",
+              "importance": "key_outcome",
+              "job_id": "f6babff958eefb02c59f0305d8be14b0",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step15:agent_assertion",
+              "importance": "key_outcome",
+              "job_id": "f6babff958eefb02c59f0305d8be14b0",
+              "status": "sealed"
+            }
+          ]
+        }
+      ],
+      "sealed_jobs": 26,
+      "open_stages": 2,
+      "aggregate_timing": {
+        "model_ms": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null,
+          "maximum": null
+        },
+        "ready_to_publish_ms": {
+          "n": 49,
+          "p50": 15.907,
+          "p95": 58.0116,
+          "p99": 108.9098,
+          "maximum": 108.9098
+        }
+      }
+    },
+    "neural": {
+      "processor": "d902b191f748a6ac698fc26a68b12c3c3a78708e4a3eb70ab83d6a322fb5ab83",
+      "sessions": [
+        {
+          "session": "stable_unique",
+          "steps": 7,
+          "sealed_jobs": 2,
+          "open_stages": 1,
+          "stage_lengths": [
+            2,
+            2,
+            3
+          ],
+          "statuses": {
+            "ready": 2
+          },
+          "recovery_passed": true,
+          "timings": {
+            "model_feature_and_inference_ms": {
+              "n": 7,
+              "p50": 1.1041,
+              "p95": 55.9272,
+              "p99": 55.9272,
+              "maximum": 55.9272
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 7,
+              "p50": 16.3302,
+              "p95": 67.3777,
+              "p99": 67.3777,
+              "maximum": 67.3777
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "fact_projection": [
+            {
+              "fact_id": "stable_unique:step1:zero_tests",
+              "importance": "key_outcome",
+              "job_id": "cbc5de087d72fd1f3f20ff8e29ed34f8",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "stable_unique:step5:zero_tests",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "stable_unique:step2:source_observation",
+              "importance": "context",
+              "job_id": "cbc5de087d72fd1f3f20ff8e29ed34f8",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "stable_unique:step3:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "ca7580d17a22e5562036e66fa4373245",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "stable_unique:step4:edit_acknowledged",
+              "importance": "key_outcome",
+              "job_id": "ca7580d17a22e5562036e66fa4373245",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "stable_unique:step6:source_observation",
+              "importance": "context",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "stable_unique:step7:verification_pass",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "session": "bounded_chunks",
+          "steps": 7,
+          "sealed_jobs": 2,
+          "open_stages": 0,
+          "stage_lengths": [
+            3,
+            4
+          ],
+          "statuses": {
+            "ready": 2
+          },
+          "recovery_passed": true,
+          "timings": {
+            "model_feature_and_inference_ms": {
+              "n": 7,
+              "p50": 1.1719,
+              "p95": 22.2463,
+              "p99": 22.2463,
+              "maximum": 22.2463
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 7,
+              "p50": 33.6023,
+              "p95": 51.9591,
+              "p99": 51.9591,
+              "maximum": 51.9591
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "fact_projection": [
+            {
+              "fact_id": "bounded_chunks:step1:zero_tests",
+              "importance": "key_outcome",
+              "job_id": "8322ba22e5fbfb8b1eb1de919d14dc53",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step5:zero_tests",
+              "importance": "key_outcome",
+              "job_id": "5471e38ce0ce13e0139e6a513686b602",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step2:source_observation",
+              "importance": "context",
+              "job_id": "8322ba22e5fbfb8b1eb1de919d14dc53",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step3:probe_result",
+              "importance": "key_outcome",
+              "job_id": "8322ba22e5fbfb8b1eb1de919d14dc53",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step4:edit_acknowledged",
+              "importance": "key_outcome",
+              "job_id": "5471e38ce0ce13e0139e6a513686b602",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "bounded_chunks:step6:agent_assertion",
+              "importance": "key_outcome",
+              "job_id": "5471e38ce0ce13e0139e6a513686b602",
+              "status": "sealed"
+            }
+          ]
+        },
+        {
+          "session": "prefix_totals",
+          "steps": 20,
+          "sealed_jobs": 5,
+          "open_stages": 1,
+          "stage_lengths": [
+            1,
+            6,
+            2,
+            3,
+            5,
+            3
+          ],
+          "statuses": {
+            "ready": 5
+          },
+          "recovery_passed": true,
+          "timings": {
+            "model_feature_and_inference_ms": {
+              "n": 20,
+              "p50": 1.1385,
+              "p95": 4.6135,
+              "p99": 4.6325,
+              "maximum": 4.6325
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 20,
+              "p50": 19.8917,
+              "p95": 36.3488,
+              "p99": 47.2852,
+              "maximum": 47.2852
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "fact_projection": [
+            {
+              "fact_id": "prefix_totals:step1:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "d05f8318478c13ee8cde93ba8d684d0f",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step2:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step4:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step3:source_observation",
+              "importance": "context",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step5:source_observation",
+              "importance": "context",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step6:edit_acknowledged",
+              "importance": "key_outcome",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step7:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step10:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step13:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step18:verification_failed",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "prefix_totals:step19:verification_failed",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "prefix_totals:step20:verification_failed",
+              "importance": "key_outcome",
+              "job_id": null,
+              "status": "open"
+            },
+            {
+              "fact_id": "prefix_totals:step8:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "de85cf017d7cfb08a94fd6090ce85b48",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step11:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step14:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step15:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step16:edit_failed",
+              "importance": "key_outcome",
+              "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step9:edit_acknowledged",
+              "importance": "context",
+              "job_id": "de85cf017d7cfb08a94fd6090ce85b48",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step12:edit_acknowledged",
+              "importance": "context",
+              "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "prefix_totals:step17:edit_acknowledged",
+              "importance": "context",
+              "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+              "status": "sealed"
+            }
+          ]
+        },
+        {
+          "session": "config_overrides",
+          "steps": 15,
+          "sealed_jobs": 6,
+          "open_stages": 0,
+          "stage_lengths": [
+            4,
+            4,
+            2,
+            2,
+            2,
+            1
+          ],
+          "statuses": {
+            "ready": 6
+          },
+          "recovery_passed": true,
+          "timings": {
+            "model_feature_and_inference_ms": {
+              "n": 15,
+              "p50": 1.113,
+              "p95": 5.2804,
+              "p99": 5.2804,
+              "maximum": 5.2804
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 15,
+              "p50": 14.6032,
+              "p95": 38.8126,
+              "p99": 38.8126,
+              "maximum": 38.8126
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "fact_projection": [
+            {
+              "fact_id": "config_overrides:step1:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "26715cc67e497c83b13a75d71e78d02b",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step6:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "2aec3a7e6fda449066e022139288aa95",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step12:verification_failed",
+              "importance": "key_outcome",
+              "job_id": "a8650ee93e2f98972f275dd9de667b46",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step3:source_observation",
+              "importance": "context",
+              "job_id": "26715cc67e497c83b13a75d71e78d02b",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step5:edit_acknowledged",
+              "importance": "context",
+              "job_id": "2aec3a7e6fda449066e022139288aa95",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step7:edit_acknowledged",
+              "importance": "context",
+              "job_id": "2aec3a7e6fda449066e022139288aa95",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step9:edit_acknowledged",
+              "importance": "context",
+              "job_id": "9c80f70a3ab797da8c5730cb7f2ac2f3",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step11:edit_acknowledged",
+              "importance": "context",
+              "job_id": "a8650ee93e2f98972f275dd9de667b46",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step8:runtime_exception",
+              "importance": "key_outcome",
+              "job_id": "2aec3a7e6fda449066e022139288aa95",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step10:runtime_exception",
+              "importance": "key_outcome",
+              "job_id": "9c80f70a3ab797da8c5730cb7f2ac2f3",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step13:edit_acknowledged",
+              "importance": "key_outcome",
+              "job_id": "54bd019ee3db5598d575aa8b3cea1e6d",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step14:verification_pass",
+              "importance": "key_outcome",
+              "job_id": "54bd019ee3db5598d575aa8b3cea1e6d",
+              "status": "sealed"
+            },
+            {
+              "fact_id": "config_overrides:step15:agent_assertion",
+              "importance": "key_outcome",
+              "job_id": "9507071be4fa50e64385dd3bc621471a",
+              "status": "sealed"
+            }
+          ]
+        }
+      ],
+      "sealed_jobs": 15,
+      "open_stages": 2,
+      "aggregate_timing": {
+        "model_ms": {
+          "n": 49,
+          "p50": 1.137,
+          "p95": 7.223,
+          "p99": 55.9272,
+          "maximum": 55.9272
+        },
+        "ready_to_publish_ms": {
+          "n": 49,
+          "p50": 18.7416,
+          "p95": 51.8712,
+          "p99": 67.3777,
+          "maximum": 67.3777
+        }
+      }
+    }
+  },
+  "candidate_json_sha256": "dc0ba41a806c17b191d0beddf3b8b0609ac7b0cd05909dd168c31ba72468f2cc",
+  "semantic_quality": "not_measured_rule_claim_dry_run",
+  "default_replacement": "pending_GPU_claim_quality_and_cost_acceptance",
+  "scope": "Known synthetic development traces. Same claim extractor, frozen policy. Fact projection is input availability, not semantic coverage. No gold stage F1."
+}

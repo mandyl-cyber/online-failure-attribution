@@ -55,9 +55,15 @@ def main():
     parser.add_argument('--model-path',type=Path)
     parser.add_argument('--training-run',type=Path,default=Path('out/claim_sft_7b_reviewed_v2'))
     parser.add_argument('--interval',type=float,default=.05)
+    parser.add_argument('--boundary-model',type=Path,help='Optional fixed JSON GRU or trusted local LR checkpoint')
+    parser.add_argument('--cpu-threads',type=int,help='Set matching PyTorch CPU thread count for controlled arms')
     args=parser.parse_args()
     if args.interval<0:
         parser.error('--interval must be nonnegative')
+    if args.cpu_threads is not None:
+        if args.cpu_threads<1:parser.error('--cpu-threads must be positive')
+        import torch
+        torch.set_num_threads(args.cpu_threads)
     protocol=read(args.inputs/'protocol.json')
     for session in protocol['sessions']:
         if sha((args.inputs/session['path']).read_bytes())!=session['sha256']:
@@ -77,6 +83,9 @@ def main():
     processor=ReviewedClaimProcessor(StageProcessor(backend))
     config=dict(mode=args.command,protocol_sha256=sha((args.inputs/'protocol.json').read_bytes()),
                 processor=processor.identity,interval=args.interval,boundary='existing_phase_rules')
+    if args.boundary_model is not None:
+        config.update(boundary='supervised_candidate',boundary_model_sha256=sha(args.boundary_model.read_bytes()))
+    if args.cpu_threads is not None:config['cpu_threads']=args.cpu_threads
     if (args.out/'config.json').exists() and read(args.out/'config.json')!=config:
         raise ValueError('Acceptance run configuration changed')
     save(args.out/'config.json',config)
@@ -85,7 +94,8 @@ def main():
         directory=args.out/session['session_id']
         events=[json.loads(line) for line in (args.inputs/session['path']).read_text(encoding='utf-8').splitlines()]
         def open_runtime():
-            return OnlineLedger(directory,session['session_id'],claim_processor=processor,input_mode='replay')
+            return OnlineLedger(directory,session['session_id'],claim_processor=processor,input_mode='replay',
+                                boundary_model=args.boundary_model)
         runtime=open_runtime()
         for index,event in enumerate(events):
             runtime.ingest(event)
@@ -97,12 +107,16 @@ def main():
         runtime.drain()
         runtime.close()
         before={p.name:p.read_bytes() for p in runtime.results.glob('*.json')}
+        before_jobs={p.name:p.read_bytes() for p in runtime.jobs.glob('*.json')}
+        before_stages=(directory/'stages.json').read_bytes()
         restored=open_runtime()
         restored.drain()
         restored.close()
         after={p.name:p.read_bytes() for p in restored.results.glob('*.json')}
         if before!=after:
             raise ValueError('Published batches changed after recovery')
+        if before_jobs!={p.name:p.read_bytes() for p in restored.jobs.glob('*.json')} or before_stages!=(directory/'stages.json').read_bytes():
+            raise ValueError('Boundary stages or sealed jobs changed after recovery')
         batches=[read(p) for p in restored.results.glob('*.json')]
         success_names={name for name,payload in after.items() if json.loads(payload)['status']=='ready'}
         partial_names={name for name,payload in after.items() if json.loads(payload)['status']=='partial'}
@@ -110,6 +124,7 @@ def main():
         jobs=len(list(restored.jobs.glob('*.json')))
         attempts=[read(p) for p in (directory/'review_backend/extraction').glob('*/status.json')]
         report=dict(session=session['session_id'],events=len(events),steps=len(restored.segmenter.steps),
+            boundary=config['boundary'],
             sealed_jobs=jobs,published_receipts=len(batches),published_batches=len(success_names),
             evidence_only_batches=sum(b['status']=='evidence_only' for b in batches),unpublished_jobs=jobs-len(batches),
             partial_batches=sum(b['status']=='partial' for b in batches),
@@ -125,6 +140,7 @@ def main():
                 for b in batches if 'extraction_details' in b],
             failed_extractions=sum(a['status']=='failed' for a in attempts),attempts=sum(a['attempts'] for a in attempts),
             recovered_batches_identical=True,terminal_seen=restored.finished,
+            recovered_stages_and_jobs_identical=True,
             **timing,
             signals=sum(len(b.get('observation_signals',[])) for b in batches),
             signal_counts=dict(Counter(s['kind'] for b in batches for s in b.get('observation_signals',[]))),

@@ -1,0 +1,16 @@
+{
+  "source": "temporal_boundary_train_v1/run_fold0/fold0/immediate/model_adjacent.json",
+  "source_json_sha256": "68e2a40aa770bb5d036c67eab75c4c4e62ddbb4648aab26080c5af15309350eb",
+  "model_json_sha256": "dc0ba41a806c17b191d0beddf3b8b0609ac7b0cd05909dd168c31ba72468f2cc",
+  "weights_sha256": "7094f9c1c2f49d1a4f55d7faa4d43ac2ebdcc9ae399f8e2ffd950c05411619fc",
+  "policy": {
+    "threshold": 0.55,
+    "margin": 0.0,
+    "max_delay": 0,
+    "adjacent_threshold": 0.65
+  },
+  "parameters": 190081,
+  "bytes": 764223,
+  "selection": "Preexisting fold0 deployment candidate, not chosen by new end-to-end outputs",
+  "scope": "Exploratory SWE-trained model; not all-data refit and not an independent accuracy result"
+}

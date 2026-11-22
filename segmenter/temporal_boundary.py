@@ -78,10 +78,13 @@ class TemporalNet(nn.Module):
 
 class Confirmation:
     """Resolve oldest candidate first. Every position is considered exactly once."""
-    def __init__(self, threshold=.5, margin=.15, max_delay=2):
+    def __init__(self, threshold=.5, margin=.15, max_delay=2, adjacent_threshold=None):
         if max_delay not in (0,1,2) or not 0 < threshold < 1 or margin < 0:
             raise ValueError('Invalid confirmation configuration')
+        if adjacent_threshold is not None and (max_delay != 0 or not 0 < adjacent_threshold < 1):
+            raise ValueError('Adjacent threshold requires immediate confirmation and a valid threshold')
         self.threshold, self.margin, self.max_delay = threshold, margin, max_delay
+        self.adjacent_threshold = adjacent_threshold
         self.cursor = 1
         self.start = 0
         self.closed = False
@@ -93,11 +96,13 @@ class Confirmation:
         while self.cursor <= t:
             b = self.cursor
             p = float(scorer(b, t, self.start))
-            certain = p <= max(0.,self.threshold-self.margin) or p >= min(1.,self.threshold+self.margin)
+            threshold = (self.adjacent_threshold if self.adjacent_threshold is not None
+                         and self.start > 0 and b == self.start+1 else self.threshold)
+            certain = p <= max(0.,threshold-self.margin) or p >= min(1.,threshold+self.margin)
             expired = t-b >= self.max_delay
             if not (certain or expired or final):
                 break
-            cut = p >= self.threshold
+            cut = p >= threshold
             resolved.append(dict(position=b, observed_at=t, score=p, cut=cut,
                 reason='stream_end' if final else ('confidence' if certain else 'deadline')))
             if cut:

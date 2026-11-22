@@ -1,0 +1,371 @@
+[
+  {
+    "arm": "rules",
+    "session": "bounded_chunks",
+    "job": "00000001.json",
+    "parts": 1,
+    "input_tokens": [
+      1921
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "bounded_chunks",
+    "job": "00000002.json",
+    "parts": 1,
+    "input_tokens": [
+      1384
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "bounded_chunks",
+    "job": "00000003.json",
+    "parts": 1,
+    "input_tokens": [
+      1876
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000001.json",
+    "parts": 1,
+    "input_tokens": [
+      2331
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000002.json",
+    "parts": 1,
+    "input_tokens": [
+      1560
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000003.json",
+    "parts": 1,
+    "input_tokens": [
+      1519
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000004.json",
+    "parts": 1,
+    "input_tokens": [
+      1315
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000005.json",
+    "parts": 1,
+    "input_tokens": [
+      1604
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000006.json",
+    "parts": 1,
+    "input_tokens": [
+      1281
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000007.json",
+    "parts": 1,
+    "input_tokens": [
+      1624
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000008.json",
+    "parts": 1,
+    "input_tokens": [
+      1298
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000009.json",
+    "parts": 1,
+    "input_tokens": [
+      1396
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000010.json",
+    "parts": 1,
+    "input_tokens": [
+      1380
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "job": "00000011.json",
+    "parts": 1,
+    "input_tokens": [
+      1529
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000001.json",
+    "parts": 1,
+    "input_tokens": [
+      1660
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000002.json",
+    "parts": 1,
+    "input_tokens": [
+      2434
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000003.json",
+    "parts": 1,
+    "input_tokens": [
+      1381
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000004.json",
+    "parts": 1,
+    "input_tokens": [
+      1826
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000005.json",
+    "parts": 1,
+    "input_tokens": [
+      1419
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000006.json",
+    "parts": 1,
+    "input_tokens": [
+      1851
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000007.json",
+    "parts": 1,
+    "input_tokens": [
+      1433
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000008.json",
+    "parts": 1,
+    "input_tokens": [
+      1383
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000009.json",
+    "parts": 1,
+    "input_tokens": [
+      2142
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "job": "00000010.json",
+    "parts": 1,
+    "input_tokens": [
+      1449
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "stable_unique",
+    "job": "00000001.json",
+    "parts": 1,
+    "input_tokens": [
+      1949
+    ]
+  },
+  {
+    "arm": "rules",
+    "session": "stable_unique",
+    "job": "00000002.json",
+    "parts": 1,
+    "input_tokens": [
+      1333
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "bounded_chunks",
+    "job": "00000001.json",
+    "parts": 1,
+    "input_tokens": [
+      1921
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "bounded_chunks",
+    "job": "00000002.json",
+    "parts": 1,
+    "input_tokens": [
+      2517
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "job": "00000001.json",
+    "parts": 1,
+    "input_tokens": [
+      2586
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "job": "00000002.json",
+    "parts": 1,
+    "input_tokens": [
+      3511
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "job": "00000003.json",
+    "parts": 1,
+    "input_tokens": [
+      2159
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "job": "00000004.json",
+    "parts": 1,
+    "input_tokens": [
+      1947
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "job": "00000005.json",
+    "parts": 1,
+    "input_tokens": [
+      1885
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "job": "00000006.json",
+    "parts": 1,
+    "input_tokens": [
+      1022
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "job": "00000001.json",
+    "parts": 1,
+    "input_tokens": [
+      1660
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "job": "00000002.json",
+    "parts": 1,
+    "input_tokens": [
+      3700
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "job": "00000003.json",
+    "parts": 1,
+    "input_tokens": [
+      1882
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "job": "00000004.json",
+    "parts": 1,
+    "input_tokens": [
+      2542
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "job": "00000005.json",
+    "parts": 1,
+    "input_tokens": [
+      3489
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "stable_unique",
+    "job": "00000001.json",
+    "parts": 1,
+    "input_tokens": [
+      1582
+    ]
+  },
+  {
+    "arm": "neural",
+    "session": "stable_unique",
+    "job": "00000002.json",
+    "parts": 1,
+    "input_tokens": [
+      1700
+    ]
+  }
+]

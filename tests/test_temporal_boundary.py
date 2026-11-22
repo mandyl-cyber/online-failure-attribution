@@ -92,6 +92,40 @@ class TemporalTests(unittest.TestCase):
         self.assertEqual([x['position'] for x in out],[1,2,3])
         self.assertEqual(out[0]['reason'],'deadline')
 
+    def test_adjacent_threshold_only_after_published_cut(self):
+        c=Confirmation(threshold=.55,margin=0,max_delay=0,adjacent_threshold=.65)
+        self.assertTrue(c.advance(1,lambda b,t,s:.6)[0]['cut'])
+        self.assertFalse(c.advance(2,lambda b,t,s:.6)[0]['cut'])
+        self.assertTrue(c.advance(3,lambda b,t,s:.6)[0]['cut'])
+        self.assertTrue(c.advance(4,lambda b,t,s:.7)[0]['cut'])
+        with self.assertRaises(ValueError):
+            Confirmation(threshold=.55,max_delay=2,adjacent_threshold=.65)
+
+    def test_adjacent_policy_checkpoint_and_ledger_recovery(self):
+        config=dict(threshold=.55,margin=0.,max_delay=0,adjacent_threshold=.65)
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            save_model(constant_net(logit=.4054651081),root/'model',config,{})
+            model=root/'model/model.json'
+            def open_run():
+                return OnlineLedger(root/'run','adjacent-test',background=False,boundary_model=model)
+            ledger=open_run()
+            for i in range(3):
+                ledger.ingest(dict(id=2*i,source='agent',action='run',args={'command':'pytest'}))
+                ledger.ingest(dict(id=2*i+1,observation='run',cause=2*i,content='1 passed'))
+            self.assertEqual([e['boundary_step_id'] for e in ledger.boundary.events],[2])
+            before=(root/'run/stages.json').read_bytes()
+            first_job=(root/'run/stage_jobs/00000001.json').read_bytes()
+            ledger.close()
+            restored=open_run()
+            self.assertEqual((root/'run/stages.json').read_bytes(),before)
+            self.assertEqual((root/'run/stage_jobs/00000001.json').read_bytes(),first_job)
+            restored.ingest(dict(id=6,source='agent',action='run',args={'command':'pytest'}))
+            restored.ingest(dict(id=7,observation='run',cause=6,content='1 passed'))
+            self.assertEqual([e['boundary_step_id'] for e in restored.boundary.events],[2,4])
+            self.assertEqual(len(list((root/'run/stage_jobs').glob('*.json'))),2)
+            restored.close()
+
     def test_prefix_invariance_and_bounded_cache(self):
         torch.manual_seed(3);net=TemporalNet(16)
         xs=np.random.default_rng(4).normal(size=(30,INPUT_DIM)).astype('float32')
