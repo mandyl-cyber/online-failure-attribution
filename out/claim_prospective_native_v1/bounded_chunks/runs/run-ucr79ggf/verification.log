@@ -1,0 +1,27 @@
+test_0 (test_task.TaskTests.test_0) ... FAIL
+test_1 (test_task.TaskTests.test_1) ... ok
+test_2 (test_task.TaskTests.test_2) ... ok
+test_3 (test_task.TaskTests.test_3) ... ok
+
+======================================================================
+FAIL: test_0 (test_task.TaskTests.test_0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/checks/test_task.py", line 6, in test_0
+    self.assertEqual(solve([1,2,3,4,5],2), [[1,2],[3,4],[5]])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [[1, 2], [3, 4]] != [[1, 2], [3, 4], [5]]
+
+Second list contains 1 additional elements.
+First extra element 2:
+[5]
+
+- [[1, 2], [3, 4]]
++ [[1, 2], [3, 4], [5]]
+?                ++++ +
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+FAILED (failures=1)

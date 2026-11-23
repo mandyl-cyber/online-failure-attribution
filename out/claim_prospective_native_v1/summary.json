@@ -1,0 +1,59 @@
+{
+  "selected_total": 4,
+  "attempts_in_requested_prefix": 4,
+  "requested_prefix": 4,
+  "all_selected_attempted": true,
+  "native_sessions_available": 4,
+  "interrupted_attempts": 0,
+  "collection_failed": 0,
+  "agent_tasks_passed": 1,
+  "claim_outputs_generated": false,
+  "semantic_references_frozen": false,
+  "tasks": [
+    {
+      "task_id": "claim-prospective-v1:stable_unique",
+      "bundle_sha256": "889b825771ac5d45134d272822402ac0d4df76a725e8525bbafe89b14d2642a9",
+      "status": "collected",
+      "native_event_files": 20,
+      "driver_exit_code": 1,
+      "run_directory": "stable_unique/runs/run-l6jkwy2u",
+      "controller_exit_code": 1,
+      "verification_exit_code": 0,
+      "visible_tests_unchanged": true
+    },
+    {
+      "task_id": "claim-prospective-v1:bounded_chunks",
+      "bundle_sha256": "74d6811baf6f2bfc9445f0f6e7ec4ee79353b22b4d93ef2307577d32b3871d40",
+      "status": "collected",
+      "native_event_files": 23,
+      "driver_exit_code": 1,
+      "run_directory": "bounded_chunks/runs/run-ucr79ggf",
+      "controller_exit_code": 0,
+      "verification_exit_code": 1,
+      "visible_tests_unchanged": true
+    },
+    {
+      "task_id": "claim-prospective-v1:prefix_totals",
+      "bundle_sha256": "f0f0963dff338a8624b731b16dfc9f8b8ceb822a2619ee6ba7f65faf633cd1bc",
+      "status": "collected",
+      "native_event_files": 46,
+      "driver_exit_code": 1,
+      "run_directory": "prefix_totals/runs/run-mr2g_190",
+      "controller_exit_code": 1,
+      "verification_exit_code": 1,
+      "visible_tests_unchanged": true
+    },
+    {
+      "task_id": "claim-prospective-v1:config_overrides",
+      "bundle_sha256": "d543dc7a24e0d9ef3aabbcdc0306d2424f37b6e9b36ab577bfb1fef0bb9d3657",
+      "status": "collected",
+      "native_event_files": 35,
+      "driver_exit_code": 0,
+      "run_directory": "config_overrides/runs/run-xykq7g67",
+      "controller_exit_code": 0,
+      "verification_exit_code": 0,
+      "visible_tests_unchanged": true
+    }
+  ],
+  "scope": "New synthetic engineering tasks. No semantic claim accuracy. Preserve failed and interrupted attempts; do not select successful runs only."
+}

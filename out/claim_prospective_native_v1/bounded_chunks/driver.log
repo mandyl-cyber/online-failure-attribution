@@ -1,0 +1,15 @@
+RUN_DIR=/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/bounded_chunks/runs/run-ucr79ggf
+{
+  "controller_exit_code": 0,
+  "verification_exit_code": 1,
+  "event_directories": [
+    "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/bounded_chunks/runs/run-ucr79ggf/state/store/sessions/215adebe-96ba-4e-342112cfae029b5/events"
+  ],
+  "run_directory": "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/bounded_chunks/runs/run-ucr79ggf",
+  "prompt_mode": "action-guided",
+  "shadow_exit_code": null,
+  "implementation_changed": true,
+  "visible_tests_unchanged": true
+}
+DIAGNOSTICS=/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/bounded_chunks/runs/run-ucr79ggf-diagnostics-fcc843f4.zip
+collection_errors=0

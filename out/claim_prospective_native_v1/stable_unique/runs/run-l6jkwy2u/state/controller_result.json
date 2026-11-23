@@ -1,0 +1,4 @@
+{
+  "agent_state": "error",
+  "last_error": "BadRequestError: litellm.BadRequestError: OpenAIException - Malformed tool-call tags"
+}

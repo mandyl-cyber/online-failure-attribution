@@ -1,0 +1,26 @@
+test_0 (test_task.TaskTests.test_0) ... ok
+test_1 (test_task.TaskTests.test_1) ... FAIL
+test_2 (test_task.TaskTests.test_2) ... ok
+
+======================================================================
+FAIL: test_1 (test_task.TaskTests.test_1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/checks/test_task.py", line 8, in test_1
+    self.assertEqual(solve([2,-1,4]), [0,2,1,5])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [0, 2, 1] != [0, 2, 1, 5]
+
+Second list contains 1 additional elements.
+First extra element 3:
+5
+
+- [0, 2, 1]
++ [0, 2, 1, 5]
+?         +++
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)

@@ -1,0 +1,12 @@
+{
+  "controller_exit_code": 1,
+  "verification_exit_code": 1,
+  "event_directories": [
+    "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/prefix_totals/runs/run-mr2g_190/state/store/sessions/a751c859-2bac-45-4640a05439d90fd/events"
+  ],
+  "run_directory": "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/prefix_totals/runs/run-mr2g_190",
+  "prompt_mode": "action-guided",
+  "shadow_exit_code": null,
+  "implementation_changed": true,
+  "visible_tests_unchanged": true
+}

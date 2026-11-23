@@ -1,0 +1,11 @@
+{
+  "task_id": "claim-prospective-v1:config_overrides",
+  "bundle_sha256": "d543dc7a24e0d9ef3aabbcdc0306d2424f37b6e9b36ab577bfb1fef0bb9d3657",
+  "status": "collected",
+  "native_event_files": 35,
+  "driver_exit_code": 0,
+  "run_directory": "config_overrides/runs/run-xykq7g67",
+  "controller_exit_code": 0,
+  "verification_exit_code": 0,
+  "visible_tests_unchanged": true
+}

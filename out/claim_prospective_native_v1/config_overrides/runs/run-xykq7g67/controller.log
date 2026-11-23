@@ -1,0 +1,16 @@
+[92m01:22:40 - openhands:INFO[0m: llm_registry.py:87 - [LLM registry 7d7d392f-78ea-4b77-b51f-7cf048a7f4df]: Registering service for agent
+[92m01:22:40 - openhands:INFO[0m: docker_runtime.py:182 - [runtime b122ffb8-69bf-4d-c094652677bec01] Starting runtime with image: ghcr.io/all-hands-ai/runtime@sha256:6791db9f6344908f642ca422bd2328c1a39b667566d95c09c6c64ee22d202ac1
+[92m01:22:40 - openhands:WARNING[0m: docker_runtime.py:454 - [runtime b122ffb8-69bf-4d-c094652677bec01] Using host network mode. If you are using MacOS, please make sure you have the latest version of Docker Desktop and enabled host network feature: https://docs.docker.com/network/drivers/host/#docker-desktop
+[92m01:22:40 - openhands:INFO[0m: docker_runtime.py:494 - [runtime b122ffb8-69bf-4d-c094652677bec01] Starting server with command: ['/openhands/micromamba/bin/micromamba', 'run', '-n', 'openhands', 'poetry', 'run', 'python', '-u', '-m', 'openhands.runtime.action_execution_server', '32460', '--working-dir', '/workspace', '--plugins', 'agent_skills', 'jupyter', '--username', 'openhands', '--user-id', '1000', '--no-enable-browser']
+[92m01:22:40 - openhands:INFO[0m: docker_runtime.py:186 - [runtime b122ffb8-69bf-4d-c094652677bec01] Container started: openhands-runtime-b122ffb8-69bf-4d-c094652677bec01. VSCode URL: None
+[92m01:22:40 - openhands:INFO[0m: docker_runtime.py:197 - [runtime b122ffb8-69bf-4d-c094652677bec01] Waiting for client to become ready at http://localhost:32460...
+[92m01:22:50 - openhands:INFO[0m: docker_runtime.py:203 - [runtime b122ffb8-69bf-4d-c094652677bec01] Runtime is ready.
+[92m01:22:50 - openhands:INFO[0m: base.py:1026 - Successfully configured git: name=openhands, email=openhands@all-hands.dev
+[92m01:22:50 - openhands:INFO[0m: base.py:860 - [runtime b122ffb8-69bf-4d-c094652677bec01] Selected repo: None, loading microagents from /workspace/.openhands/microagents (inside runtime)
+[92m01:22:50 - openhands:INFO[0m: base.py:608 - [runtime b122ffb8-69bf-4d-c094652677bec01] Attempting to list files in repository microagents directory: /workspace/.openhands/microagents
+[92m01:22:50 - openhands:INFO[0m: memory.py:261 - Loading user workspace microagents: []
+[92m01:22:50 - openhands:INFO[0m: state_tracker.py:94 - AgentController b122ffb8-69bf-4d-c094652677bec01 - created new state. start_id: 0
+[92m01:22:50 - openhands:INFO[0m: agent_controller.py:645 - [Agent Controller b122ffb8-69bf-4d-c094652677bec01] Setting agent(CodeActAgent) state from AgentState.LOADING to AgentState.RUNNING
+[92m01:22:50 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m01:23:21 - openhands:INFO[0m: agent_controller.py:645 - [Agent Controller b122ffb8-69bf-4d-c094652677bec01] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.FINISHED
+[92m01:23:21 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats

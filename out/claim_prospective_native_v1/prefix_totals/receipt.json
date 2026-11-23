@@ -1,0 +1,11 @@
+{
+  "task_id": "claim-prospective-v1:prefix_totals",
+  "bundle_sha256": "f0f0963dff338a8624b731b16dfc9f8b8ceb822a2619ee6ba7f65faf633cd1bc",
+  "status": "collected",
+  "native_event_files": 46,
+  "driver_exit_code": 1,
+  "run_directory": "prefix_totals/runs/run-mr2g_190",
+  "controller_exit_code": 1,
+  "verification_exit_code": 1,
+  "visible_tests_unchanged": true
+}

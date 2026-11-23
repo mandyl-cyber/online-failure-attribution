@@ -1,0 +1,11 @@
+{
+  "task_id": "claim-prospective-v1:stable_unique",
+  "bundle_sha256": "889b825771ac5d45134d272822402ac0d4df76a725e8525bbafe89b14d2642a9",
+  "status": "collected",
+  "native_event_files": 20,
+  "driver_exit_code": 1,
+  "run_directory": "stable_unique/runs/run-l6jkwy2u",
+  "controller_exit_code": 1,
+  "verification_exit_code": 0,
+  "visible_tests_unchanged": true
+}

@@ -1,0 +1,11 @@
+{
+  "task_id": "claim-prospective-v1:bounded_chunks",
+  "bundle_sha256": "74d6811baf6f2bfc9445f0f6e7ec4ee79353b22b4d93ef2307577d32b3871d40",
+  "status": "collected",
+  "native_event_files": 23,
+  "driver_exit_code": 1,
+  "run_directory": "bounded_chunks/runs/run-ucr79ggf",
+  "controller_exit_code": 0,
+  "verification_exit_code": 1,
+  "visible_tests_unchanged": true
+}

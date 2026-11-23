@@ -1,0 +1,4 @@
+{
+  "agent_state": "error",
+  "last_error": "RuntimeError: Agent reached maximum iteration. Current iteration: 20, max iteration: 20"
+}

@@ -1,0 +1,10 @@
+Fix /workspace/task.py. Split a list into chunks of positive size, preserving order and the final partial chunk. Raise ValueError for size <= 0 and do not mutate input. Inspect the implementation, reproduce failures, edit the saved implementation, run python -m unittest -v and finish. Do not modify test_task.py. No third-party dependencies are needed.
+
+Execution discipline:
+- Code shown in your reply does not modify files. To apply a proposed fix,
+  actually call str_replace_editor or execute a shell command that writes it.
+- After reproducing a failure and deciding on a fix, perform the edit before
+  rerunning the same test command. Inspect the tool result to confirm the edit.
+- Do not repeatedly run an unchanged read-and-test command while describing
+  edits in prose. If an edit fails, inspect the error and correct the edit call.
+- Keep the tests unchanged. Verify the saved implementation, then finish.

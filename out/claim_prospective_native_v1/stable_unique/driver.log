@@ -1,0 +1,15 @@
+RUN_DIR=/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/stable_unique/runs/run-l6jkwy2u
+{
+  "controller_exit_code": 1,
+  "verification_exit_code": 0,
+  "event_directories": [
+    "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/stable_unique/runs/run-l6jkwy2u/state/store/sessions/7c75b56a-0736-45-c705f8955af3953/events"
+  ],
+  "run_directory": "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/stable_unique/runs/run-l6jkwy2u",
+  "prompt_mode": "action-guided",
+  "shadow_exit_code": null,
+  "implementation_changed": true,
+  "visible_tests_unchanged": true
+}
+DIAGNOSTICS=/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/stable_unique/runs/run-l6jkwy2u-diagnostics-bab12ac6.zip
+collection_errors=0

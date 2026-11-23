@@ -1,0 +1,131 @@
+[92m01:19:40 - openhands:INFO[0m: llm_registry.py:87 - [LLM registry 373a6b37-5a5b-4e15-ac16-ec5b0a0cd164]: Registering service for agent
+[92m01:19:40 - openhands:INFO[0m: docker_runtime.py:182 - [runtime 7c75b56a-0736-45-c705f8955af3953] Starting runtime with image: ghcr.io/all-hands-ai/runtime@sha256:6791db9f6344908f642ca422bd2328c1a39b667566d95c09c6c64ee22d202ac1
+[92m01:19:40 - openhands:WARNING[0m: docker_runtime.py:454 - [runtime 7c75b56a-0736-45-c705f8955af3953] Using host network mode. If you are using MacOS, please make sure you have the latest version of Docker Desktop and enabled host network feature: https://docs.docker.com/network/drivers/host/#docker-desktop
+[92m01:19:40 - openhands:INFO[0m: docker_runtime.py:494 - [runtime 7c75b56a-0736-45-c705f8955af3953] Starting server with command: ['/openhands/micromamba/bin/micromamba', 'run', '-n', 'openhands', 'poetry', 'run', 'python', '-u', '-m', 'openhands.runtime.action_execution_server', '30897', '--working-dir', '/workspace', '--plugins', 'agent_skills', 'jupyter', '--username', 'openhands', '--user-id', '1000', '--no-enable-browser']
+[92m01:19:40 - openhands:INFO[0m: docker_runtime.py:186 - [runtime 7c75b56a-0736-45-c705f8955af3953] Container started: openhands-runtime-7c75b56a-0736-45-c705f8955af3953. VSCode URL: None
+[92m01:19:40 - openhands:INFO[0m: docker_runtime.py:197 - [runtime 7c75b56a-0736-45-c705f8955af3953] Waiting for client to become ready at http://localhost:30897...
+[92m01:19:50 - openhands:INFO[0m: docker_runtime.py:203 - [runtime 7c75b56a-0736-45-c705f8955af3953] Runtime is ready.
+[92m01:19:51 - openhands:INFO[0m: base.py:1026 - Successfully configured git: name=openhands, email=openhands@all-hands.dev
+[92m01:19:51 - openhands:INFO[0m: base.py:860 - [runtime 7c75b56a-0736-45-c705f8955af3953] Selected repo: None, loading microagents from /workspace/.openhands/microagents (inside runtime)
+[92m01:19:51 - openhands:INFO[0m: base.py:608 - [runtime 7c75b56a-0736-45-c705f8955af3953] Attempting to list files in repository microagents directory: /workspace/.openhands/microagents
+[92m01:19:51 - openhands:INFO[0m: memory.py:261 - Loading user workspace microagents: []
+[92m01:19:51 - openhands:INFO[0m: state_tracker.py:94 - AgentController 7c75b56a-0736-45-c705f8955af3953 - created new state. start_id: 0
+[92m01:19:51 - openhands:INFO[0m: agent_controller.py:645 - [Agent Controller 7c75b56a-0736-45-c705f8955af3953] Setting agent(CodeActAgent) state from AgentState.LOADING to AgentState.RUNNING
+[92m01:19:51 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m01:20:11 - openhands:ERROR[0m: agent_controller.py:373 - [Agent Controller 7c75b56a-0736-45-c705f8955af3953] Error while running the agent (session ID: 7c75b56a-0736-45-c705f8955af3953): litellm.BadRequestError: OpenAIException - Malformed tool-call tags
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 745, in completion
+    raise e
+  File "/app/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 673, in completion
+    ) = self.make_sync_openai_chat_completion_request(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        openai_client=openai_client,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        logging_obj=logging_obj,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/app/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/logging_utils.py", line 237, in sync_wrapper
+    result = func(*args, **kwargs)
+  File "/app/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 489, in make_sync_openai_chat_completion_request
+    raise e
+  File "/app/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 471, in make_sync_openai_chat_completion_request
+    raw_response = openai_client.chat.completions.with_raw_response.create(
+        **data, timeout=timeout
+    )
+  File "/app/.venv/lib/python3.13/site-packages/openai/_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/app/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/app/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Malformed tool-call tags', 'type': 'request_or_generation_validation_error'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.13/site-packages/litellm/main.py", line 2125, in completion
+    raise e
+  File "/app/.venv/lib/python3.13/site-packages/litellm/main.py", line 2097, in completion
+    response = openai_chat_completions.completion(
+        model=model,
+    ...<16 lines>...
+        shared_session=shared_session,
+    )
+  File "/app/.venv/lib/python3.13/site-packages/litellm/llms/openai/openai.py", line 756, in completion
+    raise OpenAIError(
+    ...<4 lines>...
+    )
+litellm.llms.openai.common_utils.OpenAIError: Error code: 400 - {'error': {'message': 'Malformed tool-call tags', 'type': 'request_or_generation_validation_error'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/openhands/controller/agent_controller.py", line 371, in _step_with_exception_handling
+    await self._step()
+  File "/app/openhands/controller/agent_controller.py", line 925, in _step
+    raise e
+  File "/app/openhands/controller/agent_controller.py", line 878, in _step
+    action = self.agent.step(self.state)
+  File "/app/openhands/agenthub/codeact_agent/codeact_agent.py", line 219, in step
+    response = self.llm.completion(**params)
+  File "/app/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/app/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/app/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/app/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/app/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/app/openhands/llm/llm.py", line 331, in wrapper
+    resp: ModelResponse = self._completion_unwrapped(*args, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1356, in wrapper
+    raise e
+  File "/app/.venv/lib/python3.13/site-packages/litellm/utils.py", line 1231, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/app/.venv/lib/python3.13/site-packages/litellm/main.py", line 3733, in completion
+    raise exception_type(
+          ~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        extra_kwargs=kwargs,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/app/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2273, in exception_type
+    raise e
+  File "/app/.venv/lib/python3.13/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 448, in exception_type
+    raise BadRequestError(
+    ...<5 lines>...
+    )
+litellm.exceptions.BadRequestError: litellm.BadRequestError: OpenAIException - Malformed tool-call tags
+[92m01:20:11 - openhands:ERROR[0m: loop.py:24 - BadRequestError: litellm.BadRequestError: OpenAIException - Malformed tool-call tags
+[92m01:20:11 - openhands:INFO[0m: agent_controller.py:645 - [Agent Controller 7c75b56a-0736-45-c705f8955af3953] Setting agent(CodeActAgent) state from AgentState.RUNNING to AgentState.ERROR
+[92m01:20:11 - openhands:INFO[0m: conversation_stats.py:65 - Saved conversation stats
+[92m01:20:11 - openhands:INFO[0m: agent_controller.py:645 - [Agent Controller 7c75b56a-0736-45-c705f8955af3953] Setting agent(CodeActAgent) state from AgentState.ERROR to AgentState.ERROR
+Agent did not finish: error; inspect controller.log

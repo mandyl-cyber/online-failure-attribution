@@ -1,0 +1,8 @@
+test_0 (test_task.TaskTests.test_0) ... ok
+test_1 (test_task.TaskTests.test_1) ... ok
+test_2 (test_task.TaskTests.test_2) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

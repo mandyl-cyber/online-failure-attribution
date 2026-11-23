@@ -1,0 +1,17 @@
+{
+  "app_image": "ghcr.io/all-hands-ai/openhands@sha256:00968de77a7b36546413e1f3b5c6b4e2c387d19ade54de7926e10f5b3d265fa6",
+  "runtime_image": "ghcr.io/all-hands-ai/runtime@sha256:6791db9f6344908f642ca422bd2328c1a39b667566d95c09c6c64ee22d202ac1",
+  "host_workspace": "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/stable_unique/runs/run-l6jkwy2u/workspace",
+  "max_iterations": 20,
+  "model": "qwen-local",
+  "purpose": "prospective synthetic claim acceptance collection",
+  "prompt_mode": "action-guided",
+  "task_sha256": "bb8e5e02a255f2e6459b294b87bed653f8ea5c2fd1a484a426c78f35af25819a",
+  "initial_code_sha256": "8c2e8f240475b038e42daf6576ddf9b5d12656854c2c4542968868851d26bcd9",
+  "initial_test_sha256": "9fa34b38b1c4abf8b4c866d9bc26076ea91d14bf3b7a44cb4adb45bcc5b6d634",
+  "task_id": "claim-prospective-v1:stable_unique",
+  "code_name": "task.py",
+  "test_name": "test_task.py",
+  "task_bundle_sha256": "889b825771ac5d45134d272822402ac0d4df76a725e8525bbafe89b14d2642a9",
+  "reference_solution_mounted": false
+}

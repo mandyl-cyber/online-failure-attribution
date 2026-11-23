@@ -1,0 +1,15 @@
+RUN_DIR=/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/config_overrides/runs/run-xykq7g67
+{
+  "controller_exit_code": 0,
+  "verification_exit_code": 0,
+  "event_directories": [
+    "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/config_overrides/runs/run-xykq7g67/state/store/sessions/b122ffb8-69bf-4d-c094652677bec01/events"
+  ],
+  "run_directory": "/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/config_overrides/runs/run-xykq7g67",
+  "prompt_mode": "action-guided",
+  "shadow_exit_code": null,
+  "implementation_changed": true,
+  "visible_tests_unchanged": true
+}
+DIAGNOSTICS=/home/sjtu/online-failure-attribution/out/claim_prospective_native_v1/config_overrides/runs/run-xykq7g67-diagnostics-2492366a.zip
+collection_errors=0
