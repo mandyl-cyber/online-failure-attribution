@@ -1,0 +1,341 @@
+{
+  "arms": {
+    "rules": {
+      "processor": "b9ac750632b1cd8f4bdcc7cc06a385ce374cc5735703615e52c631359bddf053",
+      "interval": 0.05,
+      "sessions": [
+        {
+          "session": "stable_unique",
+          "jobs": 2,
+          "claims": 3,
+          "steps": 7,
+          "open_stages": 1,
+          "recovery_passed": true,
+          "timing": {
+            "model_feature_and_inference_ms": {
+              "n": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "maximum": null
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 7,
+              "p50": 5.556616,
+              "p95": 10.752288,
+              "p99": 10.752288,
+              "maximum": 10.752288
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "queued_to_publication_ms": {
+            "n": 2,
+            "p50": 7001.3786805,
+            "p95": 7459.467631,
+            "p99": 7459.467631,
+            "maximum": 7459.467631
+          }
+        },
+        {
+          "session": "bounded_chunks",
+          "jobs": 3,
+          "claims": 3,
+          "steps": 7,
+          "open_stages": 0,
+          "recovery_passed": true,
+          "timing": {
+            "model_feature_and_inference_ms": {
+              "n": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "maximum": null
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 7,
+              "p50": 4.791293,
+              "p95": 8.005035,
+              "p99": 8.005035,
+              "maximum": 8.005035
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "queued_to_publication_ms": {
+            "n": 3,
+            "p50": 2678.354661,
+            "p95": 3298.6014,
+            "p99": 3298.6014,
+            "maximum": 3298.6014
+          }
+        },
+        {
+          "session": "prefix_totals",
+          "jobs": 10,
+          "claims": 16,
+          "steps": 20,
+          "open_stages": 1,
+          "recovery_passed": true,
+          "timing": {
+            "model_feature_and_inference_ms": {
+              "n": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "maximum": null
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 20,
+              "p50": 5.2970595,
+              "p95": 9.907179,
+              "p99": 11.882375,
+              "maximum": 11.882375
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "queued_to_publication_ms": {
+            "n": 10,
+            "p50": 5436.207521,
+            "p95": 8600.34009,
+            "p99": 8600.34009,
+            "maximum": 8600.34009
+          }
+        },
+        {
+          "session": "config_overrides",
+          "jobs": 11,
+          "claims": 17,
+          "steps": 15,
+          "open_stages": 0,
+          "recovery_passed": true,
+          "timing": {
+            "model_feature_and_inference_ms": {
+              "n": 0,
+              "p50": null,
+              "p95": null,
+              "p99": null,
+              "maximum": null
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 15,
+              "p50": 6.70338,
+              "p95": 10.275153,
+              "p99": 10.275153,
+              "maximum": 10.275153
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "queued_to_publication_ms": {
+            "n": 11,
+            "p50": 5676.58982,
+            "p95": 12599.06477,
+            "p99": 12599.06477,
+            "maximum": 12599.06477
+          }
+        }
+      ],
+      "jobs": 26,
+      "claims": 39,
+      "generation_parts": 26,
+      "total_generation_seconds": 41.85565927566495,
+      "generation_seconds": {
+        "n": 26,
+        "p50": 1.5530011379159987,
+        "p95": 2.7576443990692496,
+        "p99": 3.0703926909482107,
+        "maximum": 3.0703926909482107
+      },
+      "peak_gpu_GiB": 8.473251342773438
+    },
+    "neural": {
+      "processor": "b9ac750632b1cd8f4bdcc7cc06a385ce374cc5735703615e52c631359bddf053",
+      "interval": 0.05,
+      "sessions": [
+        {
+          "session": "stable_unique",
+          "jobs": 2,
+          "claims": 4,
+          "steps": 7,
+          "open_stages": 1,
+          "recovery_passed": true,
+          "timing": {
+            "model_feature_and_inference_ms": {
+              "n": 7,
+              "p50": 0.551085,
+              "p95": 0.795125,
+              "p99": 0.795125,
+              "maximum": 0.795125
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 7,
+              "p50": 5.613379,
+              "p95": 10.374682,
+              "p99": 10.374682,
+              "maximum": 10.374682
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "queued_to_publication_ms": {
+            "n": 2,
+            "p50": 3979.836817,
+            "p95": 6314.051133,
+            "p99": 6314.051133,
+            "maximum": 6314.051133
+          }
+        },
+        {
+          "session": "bounded_chunks",
+          "jobs": 2,
+          "claims": 3,
+          "steps": 7,
+          "open_stages": 0,
+          "recovery_passed": true,
+          "timing": {
+            "model_feature_and_inference_ms": {
+              "n": 7,
+              "p50": 0.480632,
+              "p95": 0.545319,
+              "p99": 0.545319,
+              "maximum": 0.545319
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 7,
+              "p50": 4.12469,
+              "p95": 8.935016,
+              "p99": 8.935016,
+              "maximum": 8.935016
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "queued_to_publication_ms": {
+            "n": 2,
+            "p50": 2624.429712,
+            "p95": 3527.963352,
+            "p99": 3527.963352,
+            "maximum": 3527.963352
+          }
+        },
+        {
+          "session": "prefix_totals",
+          "jobs": 5,
+          "claims": 11,
+          "steps": 20,
+          "open_stages": 1,
+          "recovery_passed": true,
+          "timing": {
+            "model_feature_and_inference_ms": {
+              "n": 20,
+              "p50": 0.4903325,
+              "p95": 0.561104,
+              "p99": 0.588687,
+              "maximum": 0.588687
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 20,
+              "p50": 4.1524355,
+              "p95": 8.569151,
+              "p99": 10.371297,
+              "maximum": 10.371297
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "queued_to_publication_ms": {
+            "n": 5,
+            "p50": 4315.659847,
+            "p95": 8825.679477,
+            "p99": 8825.679477,
+            "maximum": 8825.679477
+          }
+        },
+        {
+          "session": "config_overrides",
+          "jobs": 6,
+          "claims": 10,
+          "steps": 15,
+          "open_stages": 0,
+          "recovery_passed": true,
+          "timing": {
+            "model_feature_and_inference_ms": {
+              "n": 15,
+              "p50": 0.493188,
+              "p95": 0.657132,
+              "p99": 0.657132,
+              "maximum": 0.657132
+            },
+            "ready_to_boundary_published_ms": {
+              "n": 15,
+              "p50": 4.969686,
+              "p95": 10.408942,
+              "p99": 10.408942,
+              "maximum": 10.408942
+            },
+            "scope": "Matching observer process clocks, excluding recovery. Replay, not live latency SLO."
+          },
+          "queued_to_publication_ms": {
+            "n": 6,
+            "p50": 6766.666015000001,
+            "p95": 10197.210524,
+            "p99": 10197.210524,
+            "maximum": 10197.210524
+          }
+        }
+      ],
+      "jobs": 15,
+      "claims": 28,
+      "generation_parts": 15,
+      "total_generation_seconds": 35.45597428781912,
+      "generation_seconds": {
+        "n": 15,
+        "p50": 2.132266831002198,
+        "p95": 4.021415961091407,
+        "p99": 4.021415961091407,
+        "maximum": 4.021415961091407
+      },
+      "peak_gpu_GiB": 9.034706115722656
+    }
+  },
+  "claims_sha256": "c4c93bb77c3d16f35e531211f77b44c22c74eb6ee09ca408e1840d5478b7b6e6",
+  "reference_sha256": "7a7c90b4c8854105194f147d7b5e2e8978647eda4847f5a962696c50b69b7dbd",
+  "scope": "Same known synthetic traces, fixed old 7B SFT, same replay rate and CPU threads. Fewer stages do not establish boundary accuracy. Rule claims exactly match prior review; neural claims require new review.",
+  "semantic_review": {
+    "rules": {
+      "claim_judgments": {
+        "supported": 25,
+        "partial": 8,
+        "unsupported": 6
+      },
+      "sealed_fact_coverage": {
+        "full": 17,
+        "partial": 19,
+        "missing": 4
+      },
+      "sealed_key_fact_coverage": {
+        "full": 10,
+        "partial": 16,
+        "missing": 2
+      },
+      "coarse_negative_outcomes_retained": 20,
+      "sealed_negative_outcomes": 20
+    },
+    "neural": {
+      "claim_judgments": {
+        "supported": 17,
+        "partial": 8,
+        "unsupported": 3
+      },
+      "sealed_fact_coverage": {
+        "full": 17,
+        "missing": 8,
+        "partial": 15
+      },
+      "sealed_key_fact_coverage": {
+        "full": 11,
+        "partial": 13,
+        "missing": 4
+      },
+      "coarse_negative_outcomes_retained": 17,
+      "sealed_negative_outcomes": 20
+    }
+  },
+  "decision": "retain_rule_default_semantic_gate_failed",
+  "review_scope": "Explicit non-blind AI judgments, not human accuracy or independent generalization. Correct subclauses can cover facts in partially wrong claims; coarse negative retention does not establish correct cause/order. Four known synthetic sessions have no stage gold; no boundary F1 measured."
+}

@@ -1,0 +1,1496 @@
+[
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "file": "00000001.json",
+    "job_id": "d05f8318478c13ee8cde93ba8d684d0f",
+    "stage": {
+      "end_step_id": 1,
+      "label": "VERIFY",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 1,
+      "start_step_id": 1
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "3066a3c6c2513cebe8a2199599f7f687",
+      "evidence_ids": [
+        "0f39d6fb588826c716ac142625c6af0b"
+      ],
+      "evidence_refs": [
+        {
+          "end": 1159,
+          "evidence_id": "0f39d6fb588826c716ac142625c6af0b",
+          "quote": "test_0 (test_task.TaskTests.test_0) ... FAIL\ntest_1 (test_task.TaskTests.test_1) ... FAIL\ntest_2 (test_task.TaskTests.test_2) ... FAIL\n\n======================================================================\nFAIL: test_0 (test_task.TaskTests.test_0)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 6, in test_0\n    self.assertEqual(solve([]), [0])\nAssertionError: Lists differ: [] != [0]\n\nSecond list contains 1 additional elements.\nFirst extra element 0:\n0\n\n- []\n+ [0]\n?  +\n\n\n======================================================================\nFAIL: test_1 (test_task.TaskTests.test_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 8, in test_1\n    self.assertEqual(solve([2,-1,4]), [0,2,1,5])\nAssertionError: Lists differ: [2, 1, 5] != [0, 2, 1, 5]\n\nFirst differing element 0:\n2\n0\n\nSecond list contains 1 additional elements.\nFirst extra element 3:\n5\n\n- [2, 1, 5]\n+ [0, 2, 1, 5]\n?  +++\n\n\n======================================================================\n",
+          "start": 0
+        },
+        {
+          "end": 1720,
+          "evidence_id": "0f39d6fb588826c716ac142625c6af0b",
+          "quote": "FAIL: test_2 (test_task.TaskTests.test_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 10, in test_2\n    x=[1,2,3]; before=list(x); solve(x); self.assertEqual(x,before)\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [1, 3, 6] != [1, 2, 3]\n\nFirst differing element 1:\n3\n2\n\n- [1, 3, 6]\n+ [1, 2, 3]\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (failures=3)",
+          "start": 1159
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "d05f8318478c13ee8cde93ba8d684d0f",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "3066a3c6c2513cebe8a2199599f7f687",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The first three tests fail, then test_2 fails.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/prefix_totals/1:c1",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Three tests fail in one run. The added then test_2 fails wording implies an extra temporal event not established by that single result."
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "file": "00000001.json",
+    "job_id": "d05f8318478c13ee8cde93ba8d684d0f",
+    "stage": {
+      "end_step_id": 1,
+      "label": "VERIFY",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 1,
+      "start_step_id": 1
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "de009611311de5fa43ccb365b10429e2",
+      "evidence_ids": [
+        "ef5bf403a75466f4c72a9c3d3784c1e3"
+      ],
+      "evidence_refs": [
+        {
+          "end": 45,
+          "evidence_id": "ef5bf403a75466f4c72a9c3d3784c1e3",
+          "quote": "python -m unittest -v /workspace/test_task.py",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "d05f8318478c13ee8cde93ba8d684d0f",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "de009611311de5fa43ccb365b10429e2",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The command reports three failures.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/prefix_totals/1:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "Only the unittest command is cited; an action request contains no failure count or agent assertion of that count."
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "file": "00000002.json",
+    "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+    "stage": {
+      "end_step_id": 5,
+      "label": "INSPECT",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 2,
+      "start_step_id": 2
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "d28bafcf40e800a4ee2ffdd67df93715",
+      "evidence_ids": [
+        "b332cd839522d633c137530e0bec7958",
+        "391e1bcf2c10ee8454ee9ecbc4a8737e"
+      ],
+      "evidence_refs": [
+        {
+          "end": 211,
+          "evidence_id": "b332cd839522d633c137530e0bec7958",
+          "quote": "ERROR:\nNo replacement was performed, old_str `def solve(nums):\n    total = 0\n    result = []\n    for num in nums:\n        total += num\n        result.append(total)` did not appear verbatim in /workspace/task.py.",
+          "start": 0
+        },
+        {
+          "end": 215,
+          "evidence_id": "391e1bcf2c10ee8454ee9ecbc4a8737e",
+          "quote": "ERROR:\nNo replacement was performed, old_str `def solve(values):\n    total = 0\n    result = []\n    for num in values:\n        total += num\n        result.append(total)` did not appear verbatim in /workspace/task.py.",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "d28bafcf40e800a4ee2ffdd67df93715",
+      "semantic_status": "unreviewed",
+      "stage_id": 2,
+      "stage_incomplete": false,
+      "text": "Two str_replace calls report no replacement because the search string appears only in the original version.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/prefix_totals/2:c1",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Both replacements failed, but the claimed original-version explanation is not what the tool reports: old_str did not appear verbatim."
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "file": "00000003.json",
+    "job_id": "de85cf017d7cfb08a94fd6090ce85b48",
+    "stage": {
+      "end_step_id": 6,
+      "label": "PATCH",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 3,
+      "start_step_id": 6
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "24ddf1f7dfbf9ce143a05392959aeff3",
+      "evidence_ids": [
+        "1414e9b170c73cb4e47b915af4009d53"
+      ],
+      "evidence_refs": [
+        {
+          "end": 333,
+          "evidence_id": "1414e9b170c73cb4e47b915af4009d53",
+          "quote": "str_replace /workspace/task.py\n--- old\ndef solve(values):\n    for i in range(1,len(values)):\n        values[i] += values[i-1]\n    return values\n+++ new\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "de85cf017d7cfb08a94fd6090ce85b48",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "24ddf1f7dfbf9ce143a05392959aeff3",
+      "semantic_status": "unreviewed",
+      "stage_id": 3,
+      "stage_incomplete": false,
+      "text": "The edit marks the new solve function as replacing the old one.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/prefix_totals/3:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The cited edit action proposes old/new function text. It should explicitly say requested rather than imply a completed replacement."
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "file": "00000005.json",
+    "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+    "stage": {
+      "end_step_id": 9,
+      "label": "PATCH",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 5,
+      "start_step_id": 9
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "be2e7c882ec57f35e2856586e2df3f6c",
+      "evidence_ids": [
+        "de08f7084c9a086e7546c7de5191a3e8"
+      ],
+      "evidence_refs": [
+        {
+          "end": 442,
+          "evidence_id": "de08f7084c9a086e7546c7de5191a3e8",
+          "quote": "str_replace /workspace/task.py\n--- old\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n+++ new\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n    # Added comment for clarity",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "be2e7c882ec57f35e2856586e2df3f6c",
+      "semantic_status": "unreviewed",
+      "stage_id": 5,
+      "stage_incomplete": false,
+      "text": "The edit receipt acknowledges the edit.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/prefix_totals/5:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "Only an edit action is cited. It is not a receipt acknowledging completion, regardless of agent_assertion label."
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "file": "00000006.json",
+    "job_id": "e160bd1c8ea28908980bf85c1c429992",
+    "stage": {
+      "end_step_id": 11,
+      "label": "VERIFY",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 6,
+      "start_step_id": 10
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "7fc8fa4da3e254b830928c5378ee7293",
+      "evidence_ids": [
+        "3befe03a41ce5a3806cee574187cbf2b",
+        "769cc12a3a5853a5690848d7f12eb27d"
+      ],
+      "evidence_refs": [
+        {
+          "end": 735,
+          "evidence_id": "3befe03a41ce5a3806cee574187cbf2b",
+          "quote": "test_0 (test_task.TaskTests.test_0) ... ok\ntest_1 (test_task.TaskTests.test_1) ... FAIL\ntest_2 (test_task.TaskTests.test_2) ... ok\n\n======================================================================\nFAIL: test_1 (test_task.TaskTests.test_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 8, in test_1\n    self.assertEqual(solve([2,-1,4]), [0,2,1,5])\nAssertionError: Lists differ: [0, 2, 1] != [0, 2, 1, 5]\n\nSecond list contains 1 additional elements.\nFirst extra element 3:\n5\n\n- [0, 2, 1]\n+ [0, 2, 1, 5]\n?         +++\n\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (failures=1)",
+          "start": 0
+        },
+        {
+          "end": 291,
+          "evidence_id": "769cc12a3a5853a5690848d7f12eb27d",
+          "quote": "ERROR:\nInvalid `new_str` parameter: def solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result. No replacement was performed. `new_str` and `old_str` must be different.",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "e160bd1c8ea28908980bf85c1c429992",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "7fc8fa4da3e254b830928c5378ee7293",
+      "semantic_status": "unreviewed",
+      "stage_id": 6,
+      "stage_incomplete": false,
+      "text": "The first test passes, but test_1 fails with an extra fifth element 5; the replace editor reports invalid parameters.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/prefix_totals/6:c1",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "One test fails, but the missing expected fourth value 5 is described as an extra fifth element. The error direction/index are wrong; invalid edit parameters are supported."
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "file": "00000007.json",
+    "job_id": "2ac9cff691b9111e19be3df0f862fe5f",
+    "stage": {
+      "end_step_id": 12,
+      "label": "PATCH",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 7,
+      "start_step_id": 12
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "823902311a903904a11c965c8b81e5c5",
+      "evidence_ids": [
+        "7075cedbb602028e70423163ddba6185"
+      ],
+      "evidence_refs": [
+        {
+          "end": 442,
+          "evidence_id": "7075cedbb602028e70423163ddba6185",
+          "quote": "str_replace /workspace/task.py\n--- old\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n+++ new\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n    # Added comment for clarity",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "2ac9cff691b9111e19be3df0f862fe5f",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "823902311a903904a11c965c8b81e5c5",
+      "semantic_status": "unreviewed",
+      "stage_id": 7,
+      "stage_incomplete": false,
+      "text": "The edit adds an initial zero to the running total and comments for clarity.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/prefix_totals/7:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The old and new action text both already contain the initial zero. Only the comment is newly added; the change attribution is wrong."
+  },
+  {
+    "arm": "rules",
+    "session": "prefix_totals",
+    "file": "00000008.json",
+    "job_id": "91ea6ef7750d6d4c5081fa5768cd96d8",
+    "stage": {
+      "end_step_id": 13,
+      "label": "VERIFY",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 8,
+      "start_step_id": 13
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "2ecdb52427a581ca90c380e5a08b61cc",
+      "evidence_ids": [
+        "c0acb20298abbc1c91d72033b5941910"
+      ],
+      "evidence_refs": [
+        {
+          "end": 45,
+          "evidence_id": "c0acb20298abbc1c91d72033b5941910",
+          "quote": "python -m unittest -v /workspace/test_task.py",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "91ea6ef7750d6d4c5081fa5768cd96d8",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "2ecdb52427a581ca90c380e5a08b61cc",
+      "semantic_status": "unreviewed",
+      "stage_id": 8,
+      "stage_incomplete": false,
+      "text": "The command reports solve([2,-1,4]) as [0,2,1].",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/prefix_totals/8:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "Only the unittest command is cited, with no solve result. A result in another observation cannot repair this citation."
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "file": "00000001.json",
+    "job_id": "26715cc67e497c83b13a75d71e78d02b",
+    "stage": {
+      "end_step_id": 3,
+      "label": "VERIFY",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 1,
+      "start_step_id": 1
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "c96d53245076f687b6b8a62889592cdc",
+      "evidence_ids": [
+        "4e9cd527c14db87d90e08bd4a3d4893c"
+      ],
+      "evidence_refs": [
+        {
+          "end": 100,
+          "evidence_id": "4e9cd527c14db87d90e08bd4a3d4893c",
+          "quote": "def solve(base, overrides):\n    base.update({k:v for k,v in overrides.items() if v})\n    return base",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "26715cc67e497c83b13a75d71e78d02b",
+      "kind": "conclusion",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "c96d53245076f687b6b8a62889592cdc",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The task.py source shows a solve function that updates base with non-null overrides.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/config_overrides/1:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Filtering with if v excludes False, zero and empty strings, not just None. Non-null is an incorrect characterization."
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "file": "00000001.json",
+    "job_id": "26715cc67e497c83b13a75d71e78d02b",
+    "stage": {
+      "end_step_id": 3,
+      "label": "VERIFY",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 1,
+      "start_step_id": 1
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "38db8ee5e6d467d7b861078fd3e09a36",
+      "evidence_ids": [
+        "7c956c946743c419381407e7dd07a085",
+        "6acd5d96cdf2d08a51dc065d18144d7a"
+      ],
+      "evidence_refs": [
+        {
+          "end": 45,
+          "evidence_id": "7c956c946743c419381407e7dd07a085",
+          "quote": "python -m unittest -v /workspace/test_task.py",
+          "start": 0
+        },
+        {
+          "end": 22,
+          "evidence_id": "6acd5d96cdf2d08a51dc065d18144d7a",
+          "quote": "cat /workspace/task.py",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "26715cc67e497c83b13a75d71e78d02b",
+      "kind": "decision",
+      "local_id": "c3",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "38db8ee5e6d467d7b861078fd3e09a36",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The first command reports failures and the second displays the solve function.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/config_overrides/1:c3",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "Both citations are commands, not observations or agent reports of their results."
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "file": "00000003.json",
+    "job_id": "9c80f70a3ab797da8c5730cb7f2ac2f3",
+    "stage": {
+      "end_step_id": 6,
+      "label": "VERIFY",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 3,
+      "start_step_id": 6
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "d16d1f15a72c1be1468a1a7fcaa7f1ce",
+      "evidence_ids": [
+        "353343d57590ed79fdbdfe6e1bb12e21"
+      ],
+      "evidence_refs": [
+        {
+          "end": 45,
+          "evidence_id": "353343d57590ed79fdbdfe6e1bb12e21",
+          "quote": "python -m unittest -v /workspace/test_task.py",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "9c80f70a3ab797da8c5730cb7f2ac2f3",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "d16d1f15a72c1be1468a1a7fcaa7f1ce",
+      "semantic_status": "unreviewed",
+      "stage_id": 3,
+      "stage_incomplete": false,
+      "text": "The recorded command raises AssertionError.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/config_overrides/3:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "The cited action is only the unittest invocation; it does not contain AssertionError."
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "file": "00000004.json",
+    "job_id": "a8650ee93e2f98972f275dd9de667b46",
+    "stage": {
+      "end_step_id": 7,
+      "label": "PATCH",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 4,
+      "start_step_id": 7
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "52988409c156e4b247e686cf6fb28027",
+      "evidence_ids": [
+        "89f9518edcb62a9265fa447a4c0cc934"
+      ],
+      "evidence_refs": [
+        {
+          "end": 193,
+          "evidence_id": "89f9518edcb62a9265fa447a4c0cc934",
+          "quote": "str_replace /workspace/task.py\n--- old\nbase.update({k:(v if v is not None else k) for k,v in overrides.items()})\n+++ new\nfor k, v in overrides.items():\n    if v is not None:\n        base[k] = v",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "a8650ee93e2f98972f275dd9de667b46",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "52988409c156e4b247e686cf6fb28027",
+      "semantic_status": "unreviewed",
+      "stage_id": 4,
+      "stage_incomplete": false,
+      "text": "The edit replaces the update dict comprehension with a for loop and conditional assignment.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/config_overrides/4:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "This citation shows a requested old/new replacement. It should preserve that action/request status."
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "file": "00000009.json",
+    "job_id": "ae6cc8589213f59ab0c11360d49826ad",
+    "stage": {
+      "end_step_id": 12,
+      "label": "VERIFY",
+      "nodes": [
+        "n1"
+      ],
+      "sealed": true,
+      "stage_id": 9,
+      "start_step_id": 12
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "7531f680fc4bc5a3813a0b73adbc5e4a",
+      "evidence_ids": [
+        "425d9cd3342daccebd722794105441a1"
+      ],
+      "evidence_refs": [
+        {
+          "end": 45,
+          "evidence_id": "425d9cd3342daccebd722794105441a1",
+          "quote": "python -m unittest -v /workspace/test_task.py",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "ae6cc8589213f59ab0c11360d49826ad",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "7531f680fc4bc5a3813a0b73adbc5e4a",
+      "semantic_status": "unreviewed",
+      "stage_id": 9,
+      "stage_incomplete": false,
+      "text": "The command prints the failing test.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/config_overrides/9:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "The command alone does not show that a failing test was printed. The claim improperly reports an outcome from action-only evidence."
+  },
+  {
+    "arm": "rules",
+    "session": "config_overrides",
+    "file": "00000011.json",
+    "job_id": "f6babff958eefb02c59f0305d8be14b0",
+    "stage": {
+      "end_step_id": 15,
+      "label": "VERIFY",
+      "nodes": [
+        "n1",
+        "n2"
+      ],
+      "sealed": true,
+      "stage_id": 11,
+      "start_step_id": 14
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "4fc6ef9bef77653845e5ad3f33891ae4",
+      "evidence_ids": [
+        "ebee2908bee9f67f854f606e78712330",
+        "2a4ccdf5bbefc63c53235fb4dd811b79"
+      ],
+      "evidence_refs": [
+        {
+          "end": 269,
+          "evidence_id": "ebee2908bee9f67f854f606e78712330",
+          "quote": "test_0 (test_task.TaskTests.test_0) ... ok\ntest_1 (test_task.TaskTests.test_1) ... ok\ntest_2 (test_task.TaskTests.test_2) ... ok\ntest_3 (test_task.TaskTests.test_3) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK",
+          "start": 0
+        },
+        {
+          "end": 205,
+          "evidence_id": "2a4ccdf5bbefc63c53235fb4dd811b79",
+          "quote": "The issue has been resolved. The `solve` function now correctly applies overrides without modifying the input dictionaries. All tests passed successfully. The changes have been committed to the repository.",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "f6babff958eefb02c59f0305d8be14b0",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "4fc6ef9bef77653845e5ad3f33891ae4",
+      "semantic_status": "unreviewed",
+      "stage_id": 11,
+      "stage_incomplete": false,
+      "text": "The recorded verification reports success within the shown test scope; the commit message reports resolution and all tests passing.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "rules/config_overrides/11:c1",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Observed test success is supported within its scope. The other citation is an agent finish statement, not a commit message/receipt; source/event attribution is wrong."
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "file": "00000001.json",
+    "job_id": "d05f8318478c13ee8cde93ba8d684d0f",
+    "stage": {
+      "boundary_step_id": 2,
+      "end_step_id": 1,
+      "sealed": true,
+      "sealed_at_step_id": 2,
+      "stage_id": 1,
+      "start_step_id": 1
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "3066a3c6c2513cebe8a2199599f7f687",
+      "evidence_ids": [
+        "0f39d6fb588826c716ac142625c6af0b"
+      ],
+      "evidence_refs": [
+        {
+          "end": 1159,
+          "evidence_id": "0f39d6fb588826c716ac142625c6af0b",
+          "quote": "test_0 (test_task.TaskTests.test_0) ... FAIL\ntest_1 (test_task.TaskTests.test_1) ... FAIL\ntest_2 (test_task.TaskTests.test_2) ... FAIL\n\n======================================================================\nFAIL: test_0 (test_task.TaskTests.test_0)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 6, in test_0\n    self.assertEqual(solve([]), [0])\nAssertionError: Lists differ: [] != [0]\n\nSecond list contains 1 additional elements.\nFirst extra element 0:\n0\n\n- []\n+ [0]\n?  +\n\n\n======================================================================\nFAIL: test_1 (test_task.TaskTests.test_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 8, in test_1\n    self.assertEqual(solve([2,-1,4]), [0,2,1,5])\nAssertionError: Lists differ: [2, 1, 5] != [0, 2, 1, 5]\n\nFirst differing element 0:\n2\n0\n\nSecond list contains 1 additional elements.\nFirst extra element 3:\n5\n\n- [2, 1, 5]\n+ [0, 2, 1, 5]\n?  +++\n\n\n======================================================================\n",
+          "start": 0
+        },
+        {
+          "end": 1720,
+          "evidence_id": "0f39d6fb588826c716ac142625c6af0b",
+          "quote": "FAIL: test_2 (test_task.TaskTests.test_2)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 10, in test_2\n    x=[1,2,3]; before=list(x); solve(x); self.assertEqual(x,before)\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: [1, 3, 6] != [1, 2, 3]\n\nFirst differing element 1:\n3\n2\n\n- [1, 3, 6]\n+ [1, 2, 3]\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (failures=3)",
+          "start": 1159
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "d05f8318478c13ee8cde93ba8d684d0f",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "3066a3c6c2513cebe8a2199599f7f687",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The first three tests fail, then test_2 fails.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/prefix_totals/1:c1",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "One run has three failures; then test_2 fails invents an additional temporal event."
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "file": "00000001.json",
+    "job_id": "d05f8318478c13ee8cde93ba8d684d0f",
+    "stage": {
+      "boundary_step_id": 2,
+      "end_step_id": 1,
+      "sealed": true,
+      "sealed_at_step_id": 2,
+      "stage_id": 1,
+      "start_step_id": 1
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "de009611311de5fa43ccb365b10429e2",
+      "evidence_ids": [
+        "ef5bf403a75466f4c72a9c3d3784c1e3"
+      ],
+      "evidence_refs": [
+        {
+          "end": 45,
+          "evidence_id": "ef5bf403a75466f4c72a9c3d3784c1e3",
+          "quote": "python -m unittest -v /workspace/test_task.py",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "d05f8318478c13ee8cde93ba8d684d0f",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "de009611311de5fa43ccb365b10429e2",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The command reports three failures.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/prefix_totals/1:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "Only a test command is cited, not a result or agent assertion of three failures."
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "file": "00000002.json",
+    "job_id": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+    "stage": {
+      "boundary_step_id": 8,
+      "end_step_id": 7,
+      "sealed": true,
+      "sealed_at_step_id": 8,
+      "stage_id": 2,
+      "start_step_id": 2
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "d28bafcf40e800a4ee2ffdd67df93715",
+      "evidence_ids": [
+        "b332cd839522d633c137530e0bec7958",
+        "3da57c5f521f4748da91cc07e2b8a134",
+        "4b748bb512f5f691843ac7f9d1e577d6",
+        "785de6dd09ed665eaa10ca04618a19f3"
+      ],
+      "evidence_refs": [
+        {
+          "end": 211,
+          "evidence_id": "b332cd839522d633c137530e0bec7958",
+          "quote": "ERROR:\nNo replacement was performed, old_str `def solve(nums):\n    total = 0\n    result = []\n    for num in nums:\n        total += num\n        result.append(total)` did not appear verbatim in /workspace/task.py.",
+          "start": 0
+        },
+        {
+          "end": 20,
+          "evidence_id": "3da57c5f521f4748da91cc07e2b8a134",
+          "quote": "1:def solve(values):",
+          "start": 0
+        },
+        {
+          "end": 202,
+          "evidence_id": "4b748bb512f5f691843ac7f9d1e577d6",
+          "quote": "Here's the result of running `cat -n` on /workspace/task.py:\n     1\tdef solve(values):\n     2\t    for i in range(1,len(values)):\n     3\t        values[i] += values[i-1]\n     4\t    return values\n     5\t\n",
+          "start": 0
+        },
+        {
+          "end": 735,
+          "evidence_id": "785de6dd09ed665eaa10ca04618a19f3",
+          "quote": "test_0 (test_task.TaskTests.test_0) ... ok\ntest_1 (test_task.TaskTests.test_1) ... FAIL\ntest_2 (test_task.TaskTests.test_2) ... ok\n\n======================================================================\nFAIL: test_1 (test_task.TaskTests.test_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 8, in test_1\n    self.assertEqual(solve([2,-1,4]), [0,2,1,5])\nAssertionError: Lists differ: [0, 2, 1] != [0, 2, 1, 5]\n\nSecond list contains 1 additional elements.\nFirst extra element 3:\n5\n\n- [0, 2, 1]\n+ [0, 2, 1, 5]\n?         +++\n\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (failures=1)",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "5dfc3c07e7d2fe21d5df09018c9ab2f5",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "d28bafcf40e800a4ee2ffdd67df93715",
+      "semantic_status": "unreviewed",
+      "stage_id": 2,
+      "stage_incomplete": false,
+      "text": "The first two search-and-replace commands fail because the target function signature differs from the search pattern. The third search-and-replace command reports editing /workspace/task.py but does not report a test pass.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/prefix_totals/2:c1",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Only the first failed replacement had the wrong signature. The second failure and successful edit receipt are uncited; the cited test failure is reduced to no pass."
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "file": "00000003.json",
+    "job_id": "de85cf017d7cfb08a94fd6090ce85b48",
+    "stage": {
+      "boundary_step_id": 10,
+      "end_step_id": 9,
+      "sealed": true,
+      "sealed_at_step_id": 10,
+      "stage_id": 3,
+      "start_step_id": 8
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "24ddf1f7dfbf9ce143a05392959aeff3",
+      "evidence_ids": [
+        "de08f7084c9a086e7546c7de5191a3e8",
+        "cd25647a5ddda9e6c90df82a3237a641"
+      ],
+      "evidence_refs": [
+        {
+          "end": 442,
+          "evidence_id": "de08f7084c9a086e7546c7de5191a3e8",
+          "quote": "str_replace /workspace/task.py\n--- old\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n+++ new\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n    # Added comment for clarity",
+          "start": 0
+        },
+        {
+          "end": 485,
+          "evidence_id": "cd25647a5ddda9e6c90df82a3237a641",
+          "quote": "The file /workspace/task.py has been edited. Here's the result of running `cat -n` on a snippet of /workspace/task.py:\n     1\tdef solve(values):\n     2\t    total = 0\n     3\t    result = [0]  # Add initial zero\n     4\t    for i in range(1, len(values)):\n     5\t        total += values[i-1]\n     6\t        result.append(total)\n     7\t    return result\n     8\t    # Added comment for clarity\n     9\t\nReview the changes and make sure they are as expected. Edit the file again if necessary.",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "de85cf017d7cfb08a94fd6090ce85b48",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "24ddf1f7dfbf9ce143a05392959aeff3",
+      "semantic_status": "unreviewed",
+      "stage_id": 3,
+      "stage_incomplete": false,
+      "text": "The editor displays the same edit twice, with an added comment.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/prefix_totals/3:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Added comment is supported, but two displays/edits are not established by this single action and receipt."
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "file": "00000004.json",
+    "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+    "stage": {
+      "boundary_step_id": 13,
+      "end_step_id": 12,
+      "sealed": true,
+      "sealed_at_step_id": 13,
+      "stage_id": 4,
+      "start_step_id": 10
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "778cd17222c85f9b8433c628a79011a8",
+      "evidence_ids": [
+        "3befe03a41ce5a3806cee574187cbf2b",
+        "769cc12a3a5853a5690848d7f12eb27d",
+        "fa8db2f8775d8a1a5e3f80ddd3af3884"
+      ],
+      "evidence_refs": [
+        {
+          "end": 735,
+          "evidence_id": "3befe03a41ce5a3806cee574187cbf2b",
+          "quote": "test_0 (test_task.TaskTests.test_0) ... ok\ntest_1 (test_task.TaskTests.test_1) ... FAIL\ntest_2 (test_task.TaskTests.test_2) ... ok\n\n======================================================================\nFAIL: test_1 (test_task.TaskTests.test_1)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 8, in test_1\n    self.assertEqual(solve([2,-1,4]), [0,2,1,5])\nAssertionError: Lists differ: [0, 2, 1] != [0, 2, 1, 5]\n\nSecond list contains 1 additional elements.\nFirst extra element 3:\n5\n\n- [0, 2, 1]\n+ [0, 2, 1, 5]\n?         +++\n\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nFAILED (failures=1)",
+          "start": 0
+        },
+        {
+          "end": 291,
+          "evidence_id": "769cc12a3a5853a5690848d7f12eb27d",
+          "quote": "ERROR:\nInvalid `new_str` parameter: def solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result. No replacement was performed. `new_str` and `old_str` must be different.",
+          "start": 0
+        },
+        {
+          "end": 524,
+          "evidence_id": "fa8db2f8775d8a1a5e3f80ddd3af3884",
+          "quote": "The file /workspace/task.py has been edited. Here's the result of running `cat -n` on a snippet of /workspace/task.py:\n     1\tdef solve(values):\n     2\t    total = 0\n     3\t    result = [0]  # Add initial zero\n     4\t    for i in range(1, len(values)):\n     5\t        total += values[i-1]\n     6\t        result.append(total)\n     7\t    return result\n     8\t    # Added comment for clarity\n     9\t    # Added comment for clarity\n    10\t\nReview the changes and make sure they are as expected. Edit the file again if necessary.",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "9ca0b0bf928bbf6cd9382cd03781ab32",
+      "kind": "conclusion",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "778cd17222c85f9b8433c628a79011a8",
+      "semantic_status": "unreviewed",
+      "stage_id": 4,
+      "stage_incomplete": false,
+      "text": "The first test fails, the second passes, and the third fails. The first and third failures report the same output difference.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/prefix_totals/4:c1",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "One test invocation reports pass/fail/pass. The claim invents fail/pass/fail and repeated failures; the next events are edit attempts."
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "file": "00000004.json",
+    "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+    "stage": {
+      "boundary_step_id": 13,
+      "end_step_id": 12,
+      "sealed": true,
+      "sealed_at_step_id": 13,
+      "stage_id": 4,
+      "start_step_id": 10
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "dc8ac2d0a76b70680824c678926d45b8",
+      "evidence_ids": [
+        "23729b6c7f713e3a613281d5d3e6f7c9",
+        "7075cedbb602028e70423163ddba6185"
+      ],
+      "evidence_refs": [
+        {
+          "end": 410,
+          "evidence_id": "23729b6c7f713e3a613281d5d3e6f7c9",
+          "quote": "str_replace /workspace/task.py\n--- old\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n+++ new\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result",
+          "start": 0
+        },
+        {
+          "end": 442,
+          "evidence_id": "7075cedbb602028e70423163ddba6185",
+          "quote": "str_replace /workspace/task.py\n--- old\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n+++ new\ndef solve(values):\n    total = 0\n    result = [0]  # Add initial zero\n    for i in range(1, len(values)):\n        total += values[i-1]\n        result.append(total)\n    return result\n    # Added comment for clarity",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "9ca0b0bf928bbf6cd9382cd03781ab32",
+      "kind": "decision",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "dc8ac2d0a76b70680824c678926d45b8",
+      "semantic_status": "unreviewed",
+      "stage_id": 4,
+      "stage_incomplete": false,
+      "text": "The first edit attempt uses the same old and new strings, and the second edit adds a comment.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/prefix_totals/4:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Actions support proposed replacements, not completion of the second edit."
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "file": "00000004.json",
+    "job_id": "9ca0b0bf928bbf6cd9382cd03781ab32",
+    "stage": {
+      "boundary_step_id": 13,
+      "end_step_id": 12,
+      "sealed": true,
+      "sealed_at_step_id": 13,
+      "stage_id": 4,
+      "start_step_id": 10
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "d6fcf1bc3972c01a4a1e81517ced10e7",
+      "evidence_ids": [
+        "fa8db2f8775d8a1a5e3f80ddd3af3884"
+      ],
+      "evidence_refs": [
+        {
+          "end": 524,
+          "evidence_id": "fa8db2f8775d8a1a5e3f80ddd3af3884",
+          "quote": "The file /workspace/task.py has been edited. Here's the result of running `cat -n` on a snippet of /workspace/task.py:\n     1\tdef solve(values):\n     2\t    total = 0\n     3\t    result = [0]  # Add initial zero\n     4\t    for i in range(1, len(values)):\n     5\t        total += values[i-1]\n     6\t        result.append(total)\n     7\t    return result\n     8\t    # Added comment for clarity\n     9\t    # Added comment for clarity\n    10\t\nReview the changes and make sure they are as expected. Edit the file again if necessary.",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "9ca0b0bf928bbf6cd9382cd03781ab32",
+      "kind": "conclusion",
+      "local_id": "c3",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "d6fcf1bc3972c01a4a1e81517ced10e7",
+      "semantic_status": "unreviewed",
+      "stage_id": 4,
+      "stage_incomplete": false,
+      "text": "The second edit receipt shows the added comment but no change to the solve function.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/prefix_totals/4:c3",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "The comment is visible; an isolated after snapshot does not establish no function change."
+  },
+  {
+    "arm": "neural",
+    "session": "prefix_totals",
+    "file": "00000005.json",
+    "job_id": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+    "stage": {
+      "boundary_step_id": 18,
+      "end_step_id": 17,
+      "sealed": true,
+      "sealed_at_step_id": 18,
+      "stage_id": 5,
+      "start_step_id": 13
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "3a034693395c6fbc58d1f49ae95818d2",
+      "evidence_ids": [
+        "52a6845380d2c5ab4e7d83fa740e3d88"
+      ],
+      "evidence_refs": [
+        {
+          "end": 563,
+          "evidence_id": "52a6845380d2c5ab4e7d83fa740e3d88",
+          "quote": "The file /workspace/task.py has been edited. Here's the result of running `cat -n` on a snippet of /workspace/task.py:\n     1\tdef solve(values):\n     2\t    total = 0\n     3\t    result = [0]  # Add initial zero\n     4\t    for i in range(1, len(values)):\n     5\t        total += values[i-1]\n     6\t        result.append(total)\n     7\t    return result\n     8\t    # Added comment for clarity\n     9\t    # Added comment for clarity\n    10\t    # Added comment for clarity\n    11\t\nReview the changes and make sure they are as expected. Edit the file again if necessary.",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "24e61f16cbcb7c46980aaaa3b3fcc2bc",
+      "kind": "conclusion",
+      "local_id": "c3",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "3a034693395c6fbc58d1f49ae95818d2",
+      "semantic_status": "unreviewed",
+      "stage_id": 5,
+      "stage_incomplete": false,
+      "text": "The final edit receipt reports three added comment lines.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/prefix_totals/5:c3",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Three comment lines are visible, but only one was added by this edit; snapshot is confused with delta."
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "file": "00000001.json",
+    "job_id": "26715cc67e497c83b13a75d71e78d02b",
+    "stage": {
+      "boundary_step_id": 5,
+      "end_step_id": 4,
+      "sealed": true,
+      "sealed_at_step_id": 5,
+      "stage_id": 1,
+      "start_step_id": 1
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "c96d53245076f687b6b8a62889592cdc",
+      "evidence_ids": [
+        "4e9cd527c14db87d90e08bd4a3d4893c"
+      ],
+      "evidence_refs": [
+        {
+          "end": 100,
+          "evidence_id": "4e9cd527c14db87d90e08bd4a3d4893c",
+          "quote": "def solve(base, overrides):\n    base.update({k:v for k,v in overrides.items() if v})\n    return base",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "26715cc67e497c83b13a75d71e78d02b",
+      "kind": "conclusion",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "c96d53245076f687b6b8a62889592cdc",
+      "semantic_status": "unreviewed",
+      "stage_id": 1,
+      "stage_incomplete": false,
+      "text": "The task.py source shows a solve function that updates base with overrides' non-None items.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/config_overrides/1:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "if v is truthiness filtering, not merely non-None filtering."
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "file": "00000004.json",
+    "job_id": "a8650ee93e2f98972f275dd9de667b46",
+    "stage": {
+      "boundary_step_id": 13,
+      "end_step_id": 12,
+      "sealed": true,
+      "sealed_at_step_id": 13,
+      "stage_id": 4,
+      "start_step_id": 11
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "tool_observation",
+      "conditions": [],
+      "entry_id": "52988409c156e4b247e686cf6fb28027",
+      "evidence_ids": [
+        "2438e5c4300d325e5b14cb879740b767"
+      ],
+      "evidence_refs": [
+        {
+          "end": 824,
+          "evidence_id": "2438e5c4300d325e5b14cb879740b767",
+          "quote": "test_0 (test_task.TaskTests.test_0) ... ok\ntest_1 (test_task.TaskTests.test_1) ... ok\ntest_2 (test_task.TaskTests.test_2) ... ok\ntest_3 (test_task.TaskTests.test_3) ... FAIL\n\n======================================================================\nFAIL: test_3 (test_task.TaskTests.test_3)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/test_task.py\", line 12, in test_3\n    x={'a':1}; y={'b':2}; z=solve(x,y); self.assertEqual(x,{'a':1}); self.assertEqual(y,{'b':2}); self.assertIsNot(x,z)\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'a': 1, 'b': 2} != {'a': 1}\n- {'a': 1, 'b': 2}\n+ {'a': 1}\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nFAILED (failures=1)",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "a8650ee93e2f98972f275dd9de667b46",
+      "kind": "conclusion",
+      "local_id": "c2",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "52988409c156e4b247e686cf6fb28027",
+      "semantic_status": "unreviewed",
+      "stage_id": 4,
+      "stage_incomplete": false,
+      "text": "The failure asserts x equals z after applying overrides.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/config_overrides/4:c2",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "unsupported",
+    "review_note": "Failing assertion compares x with its original dictionary, not x with z; the later identity assertion is not the failed assertion."
+  },
+  {
+    "arm": "neural",
+    "session": "config_overrides",
+    "file": "00000006.json",
+    "job_id": "9507071be4fa50e64385dd3bc621471a",
+    "stage": {
+      "end_step_id": 15,
+      "incomplete": false,
+      "reason": "stream_end",
+      "sealed": true,
+      "sealed_at_step_id": 15,
+      "stage_id": 6,
+      "start_step_id": 15
+    },
+    "claim": {
+      "adoption_status": "unknown",
+      "basis": "agent_assertion",
+      "conditions": [],
+      "entry_id": "61e0b5638b7345c469b8a627899ff38d",
+      "evidence_ids": [
+        "2a4ccdf5bbefc63c53235fb4dd811b79"
+      ],
+      "evidence_refs": [
+        {
+          "end": 205,
+          "evidence_id": "2a4ccdf5bbefc63c53235fb4dd811b79",
+          "quote": "The issue has been resolved. The `solve` function now correctly applies overrides without modifying the input dictionaries. All tests passed successfully. The changes have been committed to the repository.",
+          "start": 0
+        }
+      ],
+      "evidence_review": {
+        "issues": [],
+        "status": "narrow_checks_passed",
+        "version": "claim-evidence-review-v2-result-scope"
+      },
+      "extractor": "5ba28e03310053a86e67cfa80ff789262440c9fb574a41d575ec691664e2692a",
+      "generated_from_job": "9507071be4fa50e64385dd3bc621471a",
+      "kind": "decision",
+      "local_id": "c1",
+      "node_type": "claim",
+      "objects": [],
+      "record_id": "61e0b5638b7345c469b8a627899ff38d",
+      "semantic_status": "unreviewed",
+      "stage_id": 6,
+      "stage_incomplete": false,
+      "text": "The commit reports the solve function correctly applies overrides without modifying inputs, all tests pass and the changes are committed.",
+      "unknowns": [
+        "semantic_entailment"
+      ]
+    },
+    "claim_key": "neural/config_overrides/6:c1",
+    "reviewer_kind": "AI",
+    "reviewed": true,
+    "judgment": "partial",
+    "review_note": "Agent-report basis is retained, but a finish statement is still mislabeled as a commit event/receipt."
+  }
+]
