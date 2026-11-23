@@ -1,0 +1,3 @@
+# Frozen byte hashes must survive Windows/Linux checkout and git archive.
+*.json text eol=lf
+checkpoint/weights.pt -text
