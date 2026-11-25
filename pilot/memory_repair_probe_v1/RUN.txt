@@ -1,0 +1,34 @@
+Run from repository root, after git pull --ff-only and conda activate agentforesight.
+Use the original QWEN7B_DIR and TRAIN_RUN from the previous experiment.
+
+python -m segmenter.memory_repair_probe check
+python -m segmenter.memory_repair_probe preflight --model-path "$QWEN7B_DIR" --training-run "$TRAIN_RUN"
+python -u -m segmenter.memory_repair_probe run --model-path "$QWEN7B_DIR" --training-run "$TRAIN_RUN"
+
+All data is frozen and included. Do NOT run prepare on the GPU host.
+Output: out/memory_repair_probe_v1/. Same commands resume cached answers.
+Return the entire output directory, including answers and their ID mappings.
+No new training or claim extraction. Same NF4 base, adapter disabled, greedy
+generation, 7936 input tokens and 256 output tokens per answer.
+
+106 answers across THREE DIFFERENT diagnostics; do not pool their accuracy:
+1. Format: 13 prefix-support cases x original / citation limit only /
+   short IDs plus citation limit. Limits: <=2 references, <=20 words limitations.
+   All other source content is identical. Short IDs map reversibly to originals.
+   Report protocol failures separately from semantic errors; invalid answers
+   remain in the denominator. The short-ID contrast also changes input length.
+2. Provenance: ONE commit-support case x original wording / agent wording /
+   explicit source wording. Same original raw text and agent_assertion basis.
+   All three arms use short IDs and citation limits. Diagnostic only, n=1;
+   this is an inference-time representation edit, not retraining an extractor.
+3. Retrieval: 32 historical event queries x frozen representation / restored
+   target raw record and paired action. The target is cited in the summary but
+   genuinely absent from the raw buffer, at least two steps before the prefix.
+   Selection uses the question's target step and field, not the category label.
+   This is ORACLE TARGET ACCESS: tests reading given the relevant evidence,
+   not learned retrieval quality, current-support accuracy or online alarm recall.
+   Future records are excluded. Both arms use short IDs and the same limits.
+
+Candidate labels are nonblind AI judgments on four project-seen authored tasks.
+Paired semantic citation review and independent tasks are still required.
+No result from these groups establishes end-to-end online failure detection.
