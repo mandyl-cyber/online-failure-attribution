@@ -1,0 +1,35 @@
+Prefix-support diagnostic experiment (development only)
+
+Pull the repository on the GPU host and run from its root:
+
+git pull --ff-only
+conda activate agentforesight
+QWEN7B_DIR=/home/sjtu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+TRAIN_RUN="$PWD/out/claim_sft_7b_reviewed_v2"
+
+python -m segmenter.memory_mechanism_probe check
+python -m segmenter.memory_mechanism_probe preflight --model-path "$QWEN7B_DIR" --training-run "$TRAIN_RUN"
+python -u -m segmenter.memory_mechanism_probe run --model-path "$QWEN7B_DIR" --training-run "$TRAIN_RUN"
+
+Adjust paths if the original base model or training run lives elsewhere.
+Reuse the completed training run containing config.json and adapter/; no training
+or claim extraction is performed. The original NF4 base reads all four arms with
+the adapter disabled. Frozen returned claims are included in packets.jsonl.
+
+13 cases x 4 arms = 52 answer sessions, at most 26 extra lookup calls.
+Arms: raw, learned_claim, reference_atomic_claim, learned_claim_with_lookup.
+Reference input includes focused reference facts plus the recent raw buffer.
+Lookup is model-selected from visible original record IDs. At most two rounds
+and two records per round. Cumulative input is limited to 7936 tokens; each
+generation has at most 256 output tokens. Budget failures remain invalid cases.
+Lookup therefore costs additional compute; this is a mechanism diagnosis,
+not a stage x claim causal estimate or a measured online alarm experiment.
+
+Identical commands resume cached cases. Changed code/config needs a new --out.
+Return the complete out/memory_mechanism_probe_v1/ directory, including config,
+preflight, answers, initializations, summary.json and review_packets.json.
+
+Labels are nonblind AI candidates on four project-seen authored tasks, not
+independent human ground truth. Review semantic support against original records.
+Historical 46-question controls are prepared but not executed by this runner.
+Do not infer generalization or online failure-detection gains from this pilot.
