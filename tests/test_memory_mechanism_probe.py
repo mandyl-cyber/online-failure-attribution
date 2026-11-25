@@ -2,10 +2,22 @@ import unittest
 from copy import deepcopy
 
 from scripts.prepare_memory_mechanism_probe import prefix_records, reference_atoms
-from segmenter.memory_mechanism_probe import evaluate, parse, score
+from segmenter.memory_mechanism_probe import evaluate, parse, score, units_for, arm_messages
 
 
 class MechanismTests(unittest.TestCase):
+    def test_source_selection_is_label_free_and_prefix_bounded(self):
+        packet=dict(raw=[dict(record_id=str(i)+f,source_step_id=i,field=f,text='data')
+                         for i in range(1,5) for f in ('action','observation')],
+                    learned_stage_claims=[dict(type='claims',claims=[dict(text='summary',
+                        evidence_ids=['1observation','2observation','3observation'])])])
+        units=units_for(packet,'learned_claim_with_source')
+        self.assertEqual({r['step'] for r in units[-1]['records']},{2,3})
+        self.assertNotIn('4observation',str(units))
+        c=dict(session='task',prefix_step=4,assertion='passed?',questions=[])
+        self.assertIn('Before answering',arm_messages(c,units,'learned_claim_prompted_lookup')[1]['content'])
+        self.assertNotIn('Before answering',arm_messages(c,units,'learned_claim')[1]['content'])
+
     def test_lookup_fetches_only_selected_visible_source(self):
         import json
         case = dict(case_id='case', session='task', prefix_step=1,

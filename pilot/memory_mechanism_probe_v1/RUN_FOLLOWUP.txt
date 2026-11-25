@@ -1,0 +1,27 @@
+Run from the repository root after git pull --ff-only.
+Use the same agentforesight environment, QWEN7B_DIR and TRAIN_RUN as RUN.txt.
+
+Audit the existing 52 answers (no GPU):
+python -m segmenter.memory_mechanism_probe audit --returns out/memory_mechanism_probe_v1 --out out/memory_mechanism_probe_v1_audit
+
+Preflight and run the 39-answer follow-up in a NEW directory:
+python -m segmenter.memory_mechanism_probe preflight --followup --out out/memory_mechanism_probe_followup_v1 --model-path "$QWEN7B_DIR" --training-run "$TRAIN_RUN"
+python -u -m segmenter.memory_mechanism_probe run --followup --out out/memory_mechanism_probe_followup_v1 --model-path "$QWEN7B_DIR" --training-run "$TRAIN_RUN"
+
+Arms: learned_claim (rerun baseline), learned_claim_prompted_lookup,
+learned_claim_with_source. The prompted arm explicitly asks for a lookup first;
+it does not force one: inspect lookup_calls before interpreting retrieval gains.
+The direct-source arm appends the newest two observation steps referenced in
+the supplied representation, with paired actions, removing existing raw IDs.
+Selection never consults answer labels or the labeled latest test step. This
+heuristic may retrieve irrelevant evidence; check retrieved records per case.
+The direct-source arm can cite paired actions newly made visible by retrieval.
+All arms retain the original cumulative input and output limits. Invalid or
+budget-exhausted answers remain in the denominator. Report costs separately.
+
+New code changes the cache configuration; use the new --out above. The prior
+result directory is read only by audit, never rewritten. Historical 46 controls
+are not part of this follow-up. Neither pilot estimates online alarm efficacy.
+
+Return out/memory_mechanism_probe_v1/, out/memory_mechanism_probe_v1_audit/
+and out/memory_mechanism_probe_followup_v1/ for evidence-level review.
