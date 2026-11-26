@@ -1,0 +1,38 @@
+This is a conservative evidence sidecar prototype, not an enabled online detector.
+Run from repository root after git pull --ff-only. No GPU or model inference.
+
+python -m unittest discover -s tests -p test_evidence_state.py
+python -m scripts.check_evidence_state
+python -m scripts.collect_evidence_state_tasks
+
+Return out/evidence_state_acceptance_v1/ and out/evidence_state_new_tasks_v1/.
+The second command checks controlled fixtures and the existing native unittest
+traces. The third executes four new authored tasks in temporary directories,
+records failing, repaired and regressed runs, and binds versions to exact code
+hashes. These are engineering acceptance tests, not an unseen agent benchmark.
+
+API: EvidenceState.append(fact), query(prefix, object_id, kind, version, limit),
+assess(typed_claim), short_view(query_results). Queries return cited original
+text plus paired command with reversible short IDs. Prefix availability is
+enforced; unknown object/version is never filled from prose.
+
+native_fact requires an upstream native-ID-paired action/observation and trusted
+object/version bindings. Currently it recognizes only a single unittest command
+or a single git commit with success receipt AND exit zero. Other tools, shell
+pipelines and mixed outputs remain unclassified/unknown. Native source metadata
+distinguishes finish/message/think from actual tool observations.
+
+Typed obligations: observed_test_pass (latest displayed run for bound object),
+current_test_pass (exact version, no later edit), commit_confirmed (native tool
+receipt). not_established does not mean false. A passing suite never proves
+general correctness. Same-step ambiguity is conservative. Evidence metadata is
+trusted input: callers must not promote LLM guesses into source/version truth.
+
+For user-supplied JSON arrays of typed facts and typed claims:
+python -m segmenter.evidence_state --facts facts.json --claims claims.json --out out/evidence_state_replay.json
+
+The original stage/claim pipeline and model are unchanged. This sidecar is an
+explicit API seam; native event pairing, semantic object binding, current code
+hash acquisition, arbitrary claim decomposition and end-to-end online alarm
+evaluation still require integration and independent tasks. Do not report
+engineering acceptance scores as failure-detection accuracy.
