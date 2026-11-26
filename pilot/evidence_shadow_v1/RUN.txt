@@ -1,0 +1,41 @@
+Read-only shadow prototype. Does not execute agent commands or intervene.
+From repository root, git pull --ff-only and activate agentforesight.
+No GPU or new model calls are required.
+
+Replay the four existing native pilot logs and compare historical model statuses:
+python -m segmenter.evidence_shadow pilot --model-returns out/memory_mechanism_probe_v1 --out out/evidence_shadow_v1
+
+If old model outputs are elsewhere, change --model-returns; or omit it to replay
+without comparison. It expects the original case_id answer format, not the newer
+job_id-only repair/evidence experiments. No gold labels enter the shadow process.
+
+Replay another native JSONL:
+python -m segmenter.evidence_shadow replay --events /path/to/native.jsonl --session run_name --out out/shadow_run_name
+
+Follow an append-only native JSONL (Ctrl-C stops; input remains read only):
+python -m segmenter.evidence_shadow follow --events /path/to/native.jsonl --session run_name --out out/shadow_live_run_name
+
+Use a NEW output directory on each start. Native event IDs are required. Duplicate
+events are ignored, conflicting IDs fail. EOF never forces pending observations;
+incomplete final lines wait for a newline. Input file must not rotate/truncate
+during follow. Per-step records and summaries are saved as events arrive.
+
+Optional --bindings bindings.json is an array of trusted runtime bindings:
+[{"action_id":1,"object_id":"/workspace/task.py","version":"actual-code-hash","available_event_seq":2,"provenance":"trusted_runtime"}]
+available_event_seq is native input arrival order, not native ID or step number.
+Bindings unavailable when a step is emitted are not backfilled. Do not annotate
+bindings from future source snapshots, LLM guesses or gold answers. Without
+bindings, object/version remain unknown; latest displayed test status can still
+be parsed, but current-version or object-specific support is not established.
+Optional --claims claims.json is an array of typed evidence obligations:
+[{"kind":"current_test_pass","object_id":"/workspace/task.py","version":"actual-code-hash","prefix_step":1}]
+Claims lacking object_id are pending_binding. Supply only prefix-visible claim
+probes; this prototype does not decompose arbitrary agent prose automatically.
+
+Return the entire output directory. Summary reports extraction coverage, unknown
+bindings, pending actions and model-status disagreements (not alarm accuracy).
+Per-step outputs include original command/text, citations, short-ID retrieval
+view, native timestamps and arrival sequence. Claim publication/alarm time is
+explicitly unavailable: no cached batch or offline processing time substitutes
+for actual online publication. Stage/claim publication integration and trusted
+object/version acquisition are still separate unfinished integration work.
