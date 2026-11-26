@@ -144,10 +144,22 @@ def main():
     p.add_argument('--model-path',type=Path)
     p.add_argument('--training-run',type=Path,default=Path('out/claim_sft_7b_reviewed_v2'))
     p.add_argument('--out',type=Path,default=Path('out/memory_repair_probe_v1'))
+    p.add_argument('--evidence',action='store_true',help='Run short-ID source and autonomous retrieval diagnostics')
     args=p.parse_args()
     if args.command=='prepare':
         prepare(); return
     jobs,gold,protocol=load()
+    active_root=ROOT
+    prompt_fn=prompt
+    summary_fn=summarize
+    if args.evidence:
+        from segmenter import memory_evidence_probe as evidence
+        jobs,gold,protocol=evidence.load()
+        active_root=evidence.ROOT
+        prompt_fn=evidence.prompt
+        summary_fn=evidence.summarize
+        if args.out==Path('out/memory_repair_probe_v1'):
+            args.out=Path('out/memory_evidence_probe_v1')
     if args.command=='check':
         print(dict(jobs=len(jobs),model_calls=0)); return
     a.require(args.model_path is not None,'--model-path required')
@@ -159,13 +171,17 @@ def main():
     adapter=args.training_run/'adapter'
     files=[args.model_path/'config.json',adapter/'adapter_config.json',*sorted(adapter.glob('adapter_model.*'))]
     a.require(len(files)>=3,'Adapter missing')
-    config=dict(protocol=a.digest((ROOT/'protocol.json').read_bytes()),code=a.digest(Path(__file__).read_bytes()),
+    config=dict(protocol=a.digest((active_root/'protocol.json').read_bytes()),code=a.digest(Path(__file__).read_bytes()),
         dependencies={n:a.digest((Path(__file__).parent/n).read_bytes()) for n in ('memory_mechanism_probe.py','stage_claim_ablation.py','stage_claim_summary.py')},
         model_path=str(args.model_path.resolve()),files={f.name:a.digest(f.read_bytes()) for f in files},max_input=7936,max_output=256,reader='same NF4 base, adapter disabled')
+    if args.evidence: config['evidence_code']=a.digest(Path(evidence.__file__).read_bytes())
     if (args.out/'config.json').exists():
         a.require(a.read(args.out/'config.json')==config,'Config changed: use new --out')
     a.save(args.out/'config.json',config)
-    checks=[dict(job_id=j['job_id'],tokens=len(tokenize(prompt(j)[0]))) for j in jobs]
+    checks=[dict(job_id=j['job_id'],tokens=len(tokenize(prompt_fn(j)[0]))) for j in jobs]
+    if args.evidence:
+        checks.extend(dict(job_id=j['job_id'],phase='lookup',tokens=len(tokenize(evidence.lookup_prompt(j)[0])))
+                      for j in jobs if j['arm']=='model_lookup')
     a.save(args.out/'preflight.json',dict(checks=checks,model_calls=0))
     a.require(all(c['tokens']<=7936 for c in checks),'Over budget')
     if args.command=='preflight':
@@ -181,13 +197,27 @@ def main():
     model.config.use_cache=True
     a.save(args.out/'initializations'/(str(time.time_ns())+'.json'),dict(seconds=time.perf_counter()-started))
     rows=[]
+    def generate_messages(messages,remaining):
+        ids=tokenize(messages)
+        a.require(len(ids)<=remaining,'cumulative_input_budget_exceeded')
+        tensor=torch.tensor([ids],device=model.device)
+        torch.cuda.synchronize(); started=time.perf_counter()
+        with model.disable_adapter(),torch.inference_mode():
+            output=model.generate(input_ids=tensor,attention_mask=torch.ones_like(tensor),do_sample=False,max_new_tokens=256,pad_token_id=tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id)
+        torch.cuda.synchronize(); seconds=time.perf_counter()-started
+        tokens=output[0,len(ids):].tolist()
+        return tokenizer.decode(tokens,skip_special_tokens=True),len(tokens),len(ids),seconds
     # Interleave arms within each case; all group contrasts are frozen in jobs.json.
     for j in jobs:
-        messages,mapping=prompt(j); ids=tokenize(messages)
+        messages,mapping=prompt_fn(j); ids=tokenize(messages)
         key=a.digest(a.encoded([j,config,messages]))
         path=args.out/'answers'/(j['job_id']+'.json')
         if path.exists():
             r=a.read(path); a.require(r['input_sha256']==key,'Cache changed')
+        elif args.evidence:
+            r=evidence.evaluate(j,generate_messages)
+            r['input_sha256']=key
+            a.save(path,r)
         else:
             tensor=torch.tensor([ids],device=model.device)
             torch.cuda.synchronize(); started=time.perf_counter()
@@ -199,7 +229,7 @@ def main():
             if len(tokens)>=256: answer=dict(valid=False,error='output_limit_reached')
             r=dict(job_id=j['job_id'],group=j['group'],arm=j['arm'],messages=messages,id_mapping=mapping,text=text,answer=answer,input_tokens=len(ids),output_tokens=len(tokens),seconds=seconds,input_sha256=key)
             a.save(path,r)
-        rows.append(r); a.save(args.out/'summary.json',summarize(rows,gold))
+        rows.append(r); a.save(args.out/'summary.json',summary_fn(rows,gold))
         print(dict(completed=len(rows),expected=len(jobs)),flush=True)
 
 

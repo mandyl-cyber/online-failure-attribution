@@ -1,0 +1,34 @@
+From repository root, git pull --ff-only, conda activate agentforesight.
+Use the original QWEN7B_DIR and TRAIN_RUN paths from prior experiments.
+
+python -m segmenter.memory_repair_probe check --evidence
+python -m segmenter.memory_repair_probe preflight --evidence --model-path "$QWEN7B_DIR" --training-run "$TRAIN_RUN"
+python -u -m segmenter.memory_repair_probe run --evidence --model-path "$QWEN7B_DIR" --training-run "$TRAIN_RUN"
+
+Default output is the NEW out/memory_evidence_probe_v1/ directory.
+Return the entire directory, including answers, round prompts, mappings and config.
+Frozen jobs are included; do NOT regenerate them on the GPU host.
+Same NF4 base with original adapter disabled. No training or claim extraction.
+135 answer sessions, at most 45 additional calls; cache resumes whole sessions.
+Same cumulative 7936 input budget and 256 output tokens per call. Failures remain
+in the denominator. Citation-count and explanation-length limits are advisory
+metrics only. JSON/schema, visible citations, and truncation remain strict.
+
+Support group: 13 prefixes x short-ID baseline / explicit source-check prompt /
+two-pass self-review. Source-check adds no raw evidence. Self-review may revise
+or retain its draft; it is the same model, not an independent truth verifier.
+Check unsupported acceptances AND supported rejections. Never assume an agent
+statement is false merely because tool support is absent.
+
+Historical retrieval group: 32 targets x short-ID baseline / model-selected
+lookup / oracle target raw. Model lookup sees the whole prefix record index
+(short ID, step, field), selects <=2 records, then answers with retrieved text.
+It sees the historical question but no gold category, evidence ID or correctness.
+The oracle arm retains the previously frozen target record plus paired action.
+Model lookup can choose already-visible raw: report new_raw_ids and compare
+selection to the historical target after inference. Lookup errors and cumulative
+budget failures remain invalid. Per-call costs and drafts are retained.
+
+These are posthoc diagnostics on four seen authored tasks, not independent
+generalization, online failure detection, or causal stage x claim effects.
+No production detector or original extraction model is changed by this run.
