@@ -1,0 +1,47 @@
+Runtime evidence wiring acceptance; no GPU or model calls.
+From repository root after git pull --ff-only and conda activate agentforesight:
+
+python -m unittest discover -s tests -p test_evidence_runtime.py
+python -m scripts.collect_evidence_runtime
+
+Return the ENTIRE out/evidence_runtime_v1/ directory. Use a new --out to rerun.
+The script actually executes four controlled tasks, repaired/regressed tests,
+and git commits in fresh temporary repositories. Git setup affects only those
+temporary repositories. No trajectory commands from input files are executed.
+
+Each task emits native events, trusted runtime file hashes, explicit stage seal
+callbacks, atomically persisted structured evidence batches, agent-statement
+probes and immutable decision attempts. A statement before required evidence
+publication is pending_publication, then it can be assessed after publication.
+Commit positives require an actually executed git commit, success receipt and
+exit zero. Exact statement templates are handled; arbitrary prose remains
+pending_decomposition. Version changes during commands invalidate the binding.
+
+Integration API in segmenter.evidence_runtime.RuntimeEvidence:
+1. Host calls bind(action_id, tracked_file) BEFORE feeding native action.
+2. Host calls feed(native_event) in arrival order, then seal(stage_id, step)
+   from its actual stage callback.
+3. publish(stage_id, fact_ids) atomically persists a STRUCTURED EVIDENCE SIDECAR
+   batch, then records publication. It is NOT a LoRA claim extraction callback.
+4. After a native message/finish, statement(action_id, exact_text, tracked_file)
+   registers a narrowly typed obligation; decide(item) records a decision.
+5. close() writes a summary. runtime.jsonl and per-step/batch files are retained.
+
+Trust boundary: methods are called by the host, never dispatched from agent log
+text. Bindings track only one declared file, not dependencies or an entire repo.
+Commit object binding is host-declared context; the harness stages the tracked
+file, but arbitrary commit-to-file membership is not verified by this API.
+Before/after hashes cannot detect transient edits during a test. Concurrent
+changes, test/dependency snapshots and exact workspace versioning need a stronger
+host snapshot mechanism before making broad current-version claims.
+
+Timing uses one process monotonic_ns. Actual seal-to-publication duration is the
+evidence_published timestamp minus sealed_at_monotonic_ns. Decisions record
+statement-to-decision duration and latest required publication time. These are
+sidecar instrument timings, not 7B extraction cost or validated alarm lead time.
+
+This is controlled host-wiring acceptance. Statements are SCRIPTED probes and
+stage seals are harness callbacks, not autonomous agent runs or GRU predictions.
+The original GRU/LoRA pipeline is unchanged. Arbitrary claim decomposition and
+real independent agent evaluation remain unfinished. Do not report the 36
+engineering checks as end-to-end failure-detection accuracy.
